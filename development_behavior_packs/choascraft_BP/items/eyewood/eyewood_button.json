@@ -1,0 +1,22 @@
+{
+	"format_version": "1.26.10",
+	"minecraft:item": {
+		"description": {
+			"identifier": "zombie:zc_button",
+			"menu_category": {
+				"category": "construction"
+			}
+		},
+		"components": {
+			"minecraft:max_stack_size": 64,
+			"minecraft:display_name": {
+				"value": "tile.zombie:zc_button.name"
+			},
+			"minecraft:icon": "eyewood_button",
+			"minecraft:block_placer": {
+				"block": "zombie:zc_button",
+				"replace_block_item": true
+			}
+		}
+	}
+}

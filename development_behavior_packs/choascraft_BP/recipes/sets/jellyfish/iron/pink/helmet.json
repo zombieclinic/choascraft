@@ -1,0 +1,27 @@
+{
+  "format_version": "1.21.100",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "zombie:jellyfish_pink_helmet_recipe"
+    },
+    "tags": [ "crafting_table" ],
+    "unlock": [
+      { "item": "minecraft:iron_ingot" },
+      { "item": "zombie:jellyfish_jelly_pink" },
+      { "item": "zombie:jellyfish_jelly_pearl" }
+    ],
+    "pattern": [
+      "III",
+      "IJI",
+      "JPJ"
+    ],
+    "key": {
+      "I": { "item": "minecraft:iron_ingot" },
+      "J": { "item": "zombie:jellyfish_jelly_pink" },
+      "P": { "item": "zombie:jellyfish_jelly_pearl" }
+    },
+    "result": {
+      "item": "zombie:jellyfish_pink_helmet"
+    }
+  }
+}

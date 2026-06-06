@@ -1,0 +1,21 @@
+{
+	"format_version": "1.26.10",
+	"minecraft:recipe_furnace": {
+		"description": {
+			"identifier": "zombie:peeper_meat_cooked_recipe"
+		},
+		"unlock": [
+			{
+				"item": "zombie:peeper_meat"
+			}
+		],
+		"tags": [
+			"furnace",
+			"smoker",
+			"campfire",
+			"soul_campfire"
+		],
+		"input": "zombie:peeper_meat",
+		"output": "zombie:peeper_meat_cooked"
+	}
+}

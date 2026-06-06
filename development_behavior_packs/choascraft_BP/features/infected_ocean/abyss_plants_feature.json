@@ -1,0 +1,26 @@
+{
+	"format_version": "1.13.0",
+	"minecraft:weighted_random_feature": {
+		"description": {
+			"identifier": "zombie:abyss_plants_feature"
+		},
+		"features": [
+			[
+				"zombie:abyss_grass_feature",
+				5
+			],
+			[
+				"zombie:abyss_mushroom_feature",
+				2
+			],
+			[
+				"zombie:abyss_flower_feature",
+				2
+			],
+			[
+				"zombie:abyss_glob_flower_feature",
+				1
+			]
+		]
+	}
+}

@@ -1,0 +1,15 @@
+{
+    "format_version": "1.26.10",
+    "minecraft:item": {
+        "description": {
+            "identifier": "zombie:jellyfish_jelly_pearl",
+            "menu_category": {"category": "items"}
+        },
+        "components": {
+            "minecraft:display_name": {
+                "value": "Jelly Pearl"
+            },
+            "minecraft:icon": "zombie_jellyfish_jelly_pearl"
+        }
+    }
+}

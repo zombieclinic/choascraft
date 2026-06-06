@@ -1,0 +1,8 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:texture_set": {
+		"color": "shark_leggings",
+		"metalness_emissive_roughness": "shark_leggings_mer",
+		"normal": "shark_leggings_normal"
+	}
+}

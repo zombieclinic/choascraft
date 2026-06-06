@@ -1,0 +1,8 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:texture_set": {
+		"color": "eye_flower_3",
+		"metalness_emissive_roughness": "eye_flower_3_mer",
+		"normal": "eye_flower_3_normal"
+	}
+}

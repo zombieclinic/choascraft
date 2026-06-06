@@ -1,0 +1,119 @@
+{
+	"format_version": "1.16.0",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "zombie:king_penguin_spawner",
+			"is_spawnable": true,
+			"is_summonable": true,
+			"is_experimental": false
+		},
+		"component_groups": {
+			"king_penguin": {
+				"minecraft:spawn_entity": {
+					"entities": [
+						{
+							"num_to_spawn": 1,
+							"min_wait_time": 0,
+							"max_wait_time": 0,
+							"single_use": true,
+							"should_leash": false,
+							"spawn_entity": "zombie:king_penguin",
+							"spawn_event": "minecraft:entity_spawned"
+						}
+					]
+				},
+				"minecraft:timer": {
+					"time": [
+						0.1,
+						0.1
+					],
+					"time_down_event": {
+						"event": "despawn"
+					}
+				}
+			},
+			"despawn": {
+				"minecraft:instant_despawn": {
+					"remove_child_entities": false
+				}
+			}
+		},
+		"components": {
+			"minecraft:type_family": {
+				"family": [
+					"mob",
+					"penguin",
+					"aquatic"
+				]
+			},
+			"minecraft:collision_box": {
+				"width": 2,
+				"height": 0.3
+			},
+			"minecraft:conditional_bandwidth_optimization": {},
+			"minecraft:follow_range": {
+				"value": 1024
+			},
+			"minecraft:damage_sensor": {
+				"triggers": {
+					"cause": "fall",
+					"deals_damage": false
+				}
+			},
+			"minecraft:hurt_on_condition": {
+				"damage_conditions": [
+					{
+						"filters": {
+							"test": "in_lava",
+							"subject": "self",
+							"operator": "==",
+							"value": true
+						},
+						"cause": "lava",
+						"damage_per_tick": 4
+					}
+				]
+			},
+			"minecraft:jump.static": {},
+			"minecraft:health": {
+				"value": 1,
+				"max": 1
+			},
+			"minecraft:nameable": {},
+			"minecraft:physics": {},
+			"minecraft:pushable": {
+				"is_pushable": true,
+				"is_pushable_by_piston": true
+			},
+			"minecraft:despawn": {
+				"despawn_from_distance": {}
+			},
+			"minecraft:scale": {
+				"value": 0
+			}
+		},
+		"events": {
+			"minecraft:entity_spawned": {
+				"add": {
+					"component_groups": [
+						"king_penguin"
+					]
+				}
+			},
+			"minecraft:entity_born": {
+				"add": {
+					"component_groups": [
+						"king_penguin"
+					]
+				}
+			},
+			"despawn": {
+				"add": {
+					"component_groups": [
+						"despawn"
+					]
+				}
+			}
+		}
+	}
+}

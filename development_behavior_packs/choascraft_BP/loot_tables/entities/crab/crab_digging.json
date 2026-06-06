@@ -1,0 +1,336 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:coal",
+          "weight": 10
+        },
+        {
+          "type": "item",
+          "name": "minecraft:charcoal",
+          "weight": 8
+        },
+        {
+          "type": "item",
+          "name": "minecraft:raw_copper",
+          "weight": 8
+        },
+        {
+          "type": "item",
+          "name": "minecraft:raw_iron",
+          "weight": 6
+        },
+        {
+          "type": "item",
+          "name": "minecraft:raw_gold",
+          "weight": 4
+        },
+        {
+          "type": "item",
+          "name": "minecraft:iron_nugget",
+          "weight": 10
+        },
+        {
+          "type": "item",
+          "name": "minecraft:gold_nugget",
+          "weight": 8
+        },
+        {
+          "type": "item",
+          "name": "minecraft:iron_ingot",
+          "weight": 3
+        },
+        {
+          "type": "item",
+          "name": "minecraft:gold_ingot",
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:copper_ingot",
+          "weight": 4
+        },
+        {
+          "type": "item",
+          "name": "minecraft:emerald",
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:diamond",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:lapis_lazuli",
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "minecraft:redstone",
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "minecraft:quartz",
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "minecraft:amethyst_shard",
+          "weight": 4
+        },
+        {
+          "type": "item",
+          "name": "minecraft:clay_ball",
+          "weight": 12
+        },
+        {
+          "type": "item",
+          "name": "minecraft:brick",
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "minecraft:flint",
+          "weight": 12
+        },
+        {
+          "type": "item",
+          "name": "minecraft:bone",
+          "weight": 8
+        },
+        {
+          "type": "item",
+          "name": "minecraft:string",
+          "weight": 8
+        },
+        {
+          "type": "item",
+          "name": "minecraft:feather",
+          "weight": 8
+        },
+        {
+          "type": "item",
+          "name": "minecraft:leather",
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "minecraft:paper",
+          "weight": 6
+        },
+        {
+          "type": "item",
+          "name": "minecraft:book",
+          "weight": 3
+        },
+        {
+          "type": "item",
+          "name": "minecraft:name_tag",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:saddle",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:lead",
+          "weight": 3
+        },
+        {
+          "type": "item",
+          "name": "minecraft:fishing_rod",
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:bow",
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:arrow",
+          "weight": 8
+        },
+        {
+          "type": "item",
+          "name": "minecraft:torch",
+          "weight": 8
+        },
+        {
+          "type": "item",
+          "name": "minecraft:glass_bottle",
+          "weight": 6
+        },
+        {
+          "type": "item",
+          "name": "minecraft:experience_bottle",
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:heart_of_the_sea",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:nautilus_shell",
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:prismarine_crystals",
+          "weight": 3
+        },
+        {
+          "type": "item",
+          "name": "minecraft:prismarine_shard",
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "minecraft:turtle_scute",
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:kelp",
+          "weight": 10
+        },
+        {
+          "type": "item",
+          "name": "minecraft:sea_pickle",
+          "weight": 6
+        },
+        {
+          "type": "item",
+          "name": "minecraft:seagrass",
+          "weight": 8
+        },
+        {
+          "type": "item",
+          "name": "minecraft:cod",
+          "weight": 8
+        },
+        {
+          "type": "item",
+          "name": "minecraft:salmon",
+          "weight": 6
+        },
+        {
+          "type": "item",
+          "name": "minecraft:tropical_fish",
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "minecraft:pufferfish",
+          "weight": 3
+        },
+        {
+          "type": "item",
+          "name": "minecraft:golden_apple",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:music_disc_13",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:sniffer_egg",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:archer_pottery_sherd",
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "conditions": [
+        {
+          "condition": "random_chance",
+          "chance": 0.05
+        }
+      ],
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:written_book",
+          "functions": [
+            {
+              "function": "set_book_contents",
+              "author": "Choascraft",
+              "title": "Crab Tide Book",
+              "pages": [
+                "Crab Tide Book\n\nA sandy shore guide for crab watchers, shell crafters, and treasure hunters of Choascraft.",
+                "Fact 1\n\nCrabs are crustaceans. Their bodies are protected by a hard outside shell called an exoskeleton.",
+                "Fact 2\n\nMost crabs have ten legs. The front pair are claws used for defense, feeding, and grabbing objects.",
+                "Fact 3\n\nCrabs grow by molting. They shed the old shell and hide while the new shell hardens.",
+                "Fact 4\n\nMany crabs walk sideways because of how their leg joints bend, though some can move forward and backward too.",
+                "Fact 5\n\nCrabs breathe with gills. Even land crabs need moisture so their gills can keep working.",
+                "Fact 6\n\nMany crabs are scavengers and omnivores. They clean up beaches by eating bits of plants, animals, and leftovers.",
+                "Fact 7\n\nCrab eyes often sit on stalks. This gives them a wide view while much of the body stays low or hidden.",
+                "Fact 8\n\nSome crabs can regrow lost legs or claws across later molts.",
+                "Fact 9\n\nFemale crabs often carry eggs tucked under the abdomen until the young are ready to hatch.",
+                "Fact 10\n\nBurrows help crabs avoid heat, predators, and dry air. A good patch of sand is worth guarding.",
+                "Choascraft Crabs\n\nCrabs spawn around sand and red sand beaches in small groups. About 1 in 3 natural crabs spawn as babies. They can walk, swim, return to land, and attack for 3 damage.",
+                "Crab Drops\n\nCrabs can drop Crab Legs, Crab Claw, Crab Shell, Crab Eyes, and the rare Crab Orb.",
+                "Crab Buckets\n\nUse a bucket on a crab to scoop it up into a Crab Bucket. Place it later when you want to move a crab safely.",
+                "Crab Breeding\n\nAdult crabs breed with tropical fish buckets. Babies grow over time and can follow nearby adult crabs. Feed baby crabs rotten flesh or tropical fish buckets to help them grow faster.",
+                "Treasure Digging\n\nReady adult crabs are tempted by rotten flesh. Use rotten flesh on one to make it search sand or red sand for treasure. After feeding, the crab has a 30 second cooldown.",
+                "Treasure Notes\n\nThe treasure pool has 50 normal Minecraft items. An enchanted golden apple can also appear as a 1 in 100 bonus.",
+                "Crab Cooking\n\nCook Crab Legs in a furnace, smoker, campfire, or soul campfire to make Steamed Crab Legs.",
+                "Crafting Key\n\nI = Iron Ingot\nS = Crab Shell\nO = Crab Orb\nC = Crab Claw\nL = Crab Legs\nE = Crab Eyes\n. = empty slot",
+                "Crab Sword\n\nPattern:\n.C.\nSIO\n.L.\n\nResult: Crab Sword",
+                "Crab Helmet\n\nPattern:\nIII\nISI\nSOS\n\nResult: Crab Helmet",
+                "Crab Chestplate\n\nPattern:\nIOI\nSES\nIII\n\nResult: Crab Chestplate",
+                "Crab Leggings\n\nPattern:\nIII\nIOI\nISI\n\nResult: Crab Leggings",
+                "Crab Boots\n\nPattern:\nISI\nISI\nIOI\n\nResult: Crab Boots",
+                "Netherite Crab Gear\n\nUse a smithing table with a netherite upgrade template, crab gear, and a netherite ingot.",
+                "Tide Note\n\nHand-feed rotten flesh instead of dropping it. If the crab is on cooldown, it will not be tempted by rotten flesh until the cooldown finishes.",
+                "Treasure Loot Odds\n\nEach dig rolls 1 normal treasure item. Total normal pool weight: 249. Percent chances are approximate.\n\nBonus rolls can add extra loot.",
+                "Common Treasure\n\nClay Ball w12 4.82%\nFlint w12 4.82%\nCoal w10 4.02%\nIron Nugget w10 4.02%\nKelp w10 4.02%",
+                "Uncommon Treasure A\n\nCharcoal w8 3.21%\nRaw Copper w8 3.21%\nGold Nugget w8 3.21%\nBone w8 3.21%\nString w8 3.21%",
+                "Uncommon Treasure B\n\nFeather w8 3.21%\nArrow w8 3.21%\nTorch w8 3.21%\nSeagrass w8 3.21%\nCod w8 3.21%",
+                "Mid Treasure A\n\nRaw Iron w6 2.41%\nPaper w6 2.41%\nGlass Bottle w6 2.41%\nSea Pickle w6 2.41%\nSalmon w6 2.41%",
+                "Mid Treasure B\n\nLapis Lazuli w5 2.01%\nRedstone w5 2.01%\nQuartz w5 2.01%\nBrick w5 2.01%\nLeather w5 2.01%",
+                "Mid Treasure C\n\nPrismarine Shard w5 2.01%\nTropical Fish w5 2.01%\nRaw Gold w4 1.61%\nCopper Ingot w4 1.61%\nAmethyst Shard w4 1.61%",
+                "Rare Treasure A\n\nIron Ingot w3 1.20%\nLead w3 1.20%\nBook w3 1.20%\nPrismarine Crystals w3 1.20%\nPufferfish w3 1.20%",
+                "Rare Treasure B\n\nGold Ingot w2 0.80%\nEmerald w2 0.80%\nFishing Rod w2 0.80%\nBow w2 0.80%\nExperience Bottle w2 0.80%",
+                "Rare Treasure C\n\nNautilus Shell w2 0.80%\nTurtle Scute w2 0.80%\nArcher Pottery Sherd w2 0.80%",
+                "Very Rare Treasure\n\nDiamond w1 0.40%\nName Tag w1 0.40%\nSaddle w1 0.40%\nHeart of the Sea w1 0.40%\nGolden Apple w1 0.40%",
+                "Very Rare Treasure 2\n\nMusic Disc 13 w1 0.40%\nSniffer Egg w1 0.40%\n\nBonus Rolls:\nCrab Tide Book 5%\nEnchanted Golden Apple 1%"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "conditions": [
+        {
+          "condition": "random_chance",
+          "chance": 0.01
+        }
+      ],
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:enchanted_golden_apple"
+        }
+      ]
+    }
+  ]
+}

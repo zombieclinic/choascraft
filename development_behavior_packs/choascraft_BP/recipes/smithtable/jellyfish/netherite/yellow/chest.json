@@ -1,0 +1,18 @@
+{
+ "format_version": "1.26.10",
+ "minecraft:recipe_smithing_transform": {
+  "description": {
+    "identifier": "zombie:smithing_netherite_jellyfish_yellow_chest"
+   },
+  "unlock": [
+      { "item": "minecraft:iron_ingot" },
+      { "item": "zombie:jellyfish_jelly_yellow" }
+    ],
+  "tags": [ "smithing_table" ],
+
+   "template": "minecraft:netherite_upgrade_smithing_template",
+   "base": "zombie:jellyfish_yellow_chest",
+   "addition": "minecraft:netherite_ingot",
+   "result": "zombie:jellyfish_netherite_yellow_chest"
+ }
+}

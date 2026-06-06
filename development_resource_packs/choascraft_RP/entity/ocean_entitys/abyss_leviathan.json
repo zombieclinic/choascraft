@@ -1,0 +1,37 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "zombie:abyss_leviathan",
+			"materials": {
+				"default": "entity_alphablend"
+			},
+			"textures": {
+				"default": "textures/e/al/abyss_leviathan"
+			},
+			"geometry": {
+				"default": "geometry.abyss_leviathan"
+			},
+			"render_controllers": [
+				"controller.render.abyss_leviathan"
+			],
+			"spawn_egg": {
+				"base_color": "#07111f",
+				"overlay_color": "#2b6f8f"
+			},
+			"animations": {
+				"controller": "controller.animation.abyss_leviathan",
+				"idle": "animation.abyss_leviathan.idle",
+				"walk": "animation.abyss_leviathan.walk",
+				"attack": "animation.abyss_leviathan.attack"
+			},
+			"scripts": {
+				"animate": [
+					{
+						"controller": "(1.0)"
+					}
+				]
+			}
+		}
+	}
+}

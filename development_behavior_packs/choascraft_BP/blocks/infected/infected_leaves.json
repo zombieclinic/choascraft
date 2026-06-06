@@ -1,0 +1,66 @@
+{
+  "format_version": "1.21.100",
+  "minecraft:block": {
+    "description": {
+      "identifier": "zombie:infected_leaves",
+      "states": {
+        "zombie:player_placed": [
+          false,
+          true
+        ]
+      },
+        "menu_category": { "category": "nature" }
+    },
+    "permutations": [
+      {
+        "condition": "!query.block_state('zombie:player_placed')",
+        "components": {
+          "zombie:decayable_leaves": {
+            "radius": 4
+          }
+        }
+      }
+    ],
+    "components": {
+      "minecraft:flammable": { "destroy_chance_modifier": 20, "catch_chance_modifier": 5 },
+      "minecraft:display_name": "Infected Leaves",
+       "minecraft:destructible_by_mining": {
+        "seconds_to_destroy": 0.5
+      },
+      "minecraft:destructible_by_explosion": {
+        "explosion_resistance": 0.5
+      },
+      "minecraft:liquid_detection": {
+        "detection_rules": [
+          {
+            "liquid_type": "water",
+            "can_contain_liquid": true,
+            "on_liquid_touches": "no_reaction"
+          }
+        ]
+      },
+      "tag:minecraft:is_shears_item_destructible": {},
+      "minecraft:map_color": "#3C44AA",
+      "minecraft:geometry": "minecraft:geometry.full_block",
+      "minecraft:material_instances": {
+        "*": {
+          "texture": "zombie_infected_leaves",
+          "render_method": "blend_to_opaque",
+          "tint_method": "default_foliage",
+          "ambient_occlusion": true,
+          "face_dimming": true,
+          "isotropic": true
+        }
+      },
+      "tag:zombie:infected_leaves": {},
+      "tag:zombie:custom_leaves": {},
+      "tag:leaves": {},
+      "tag:minecraft:is_hoe_item_destructible": {},
+      "minecraft:loot": "loot_tables/blocks/infected_leaves.json",
+      "minecraft:redstone_conductivity": {"allows_wire_to_step_down": true,
+    "redstone_conductor": false},
+    "minecraft:light_dampening": 2
+    }
+  }
+}
+  

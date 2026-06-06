@@ -1,0 +1,8 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:texture_set": {
+		"color": "Jellyfish_transparent",
+		"metalness_emissive_roughness": "Jellyfish_transparent_mer",
+		"normal": "Jellyfish_transparent_normal"
+	}
+}

@@ -1,0 +1,20 @@
+{
+  "format_version": "1.26.10",
+  "minecraft:item": {
+    "description": {
+      "identifier": "zombie:bucket_of_oil",
+      "menu_category": {
+        "category": "items"
+      }
+    },
+    "components": {
+      "minecraft:icon": "bucket_of_oil",
+      "minecraft:display_name": {
+        "value": "Bucket of Oil"
+      },
+      "minecraft:fuel": {
+        "duration": 5000
+      }
+    }
+  }
+}

@@ -1,0 +1,8 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:texture_set": {
+		"color": "crab_helmet",
+		"metalness_emissive_roughness": "crab_helmet_mer",
+		"normal": "crab_helmet_normal"
+	}
+}

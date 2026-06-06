@@ -1,0 +1,18 @@
+{
+ "format_version": "1.26.10",
+ "minecraft:recipe_smithing_transform": {
+  "description": {
+    "identifier": "zombie:smithing_netherite_jellyfish_black_leggings"
+   },
+  "unlock": [
+      { "item": "minecraft:iron_ingot" },
+      { "item": "zombie:jellyfish_jelly_black" }
+    ],
+  "tags": [ "smithing_table" ],
+
+   "template": "minecraft:netherite_upgrade_smithing_template",
+   "base": "zombie:jellyfish_black_leggings",
+   "addition": "minecraft:netherite_ingot",
+   "result": "zombie:jellyfish_netherite_black_leggings"
+ }
+}

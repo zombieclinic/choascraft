@@ -1,0 +1,8 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:texture_set": {
+		"color": "shark_helmet",
+		"metalness_emissive_roughness": "shark_helmet_mer",
+		"normal": "shark_helmet_normal"
+	}
+}

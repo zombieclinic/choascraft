@@ -1,0 +1,26 @@
+{
+  "format_version": "1.26.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "zombie:greatwhite_shark_boots_recipe"
+    },
+    "tags": [ "crafting_table" ],
+    "unlock": [
+      { "item": "minecraft:iron_ingot" },
+      { "item": "zombie:shark_fin" }
+    ],
+    "pattern": [
+      "IFI",
+      "IFI",
+      "ITI"
+    ],
+    "key": {
+      "I": { "item": "minecraft:iron_ingot" },
+      "F": { "item": "zombie:shark_fin" },
+      "T": { "item": "zombie:shark_tooth" }
+    },
+    "result": {
+      "item": "zombie:greatwhite_shark_boots"
+    }
+  }
+}

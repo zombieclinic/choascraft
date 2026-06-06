@@ -1,0 +1,27 @@
+{
+  "format_version": "1.21.100",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "zombie:crab_chest_recipe"
+    },
+    "tags": [ "crafting_table" ],
+    "unlock": [
+      { "item": "minecraft:iron_ingot" },
+      { "item": "zombie:crab_shell" }
+    ],
+    "pattern": [
+      "IHI",
+      "BCB",
+      "III"
+    ],
+    "key": {
+      "I": { "item": "minecraft:iron_ingot" },
+      "B": { "item": "zombie:crab_shell" },
+      "C": { "item": "zombie:crab_eyes" },
+      "H": { "item": "zombie:crab_orb" }
+    },
+    "result": {
+      "item": "zombie:crab_chest"
+    }
+  }
+}

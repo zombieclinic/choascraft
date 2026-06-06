@@ -1,0 +1,23 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:ore_feature": {
+    "description": {
+      "identifier": "zombie:sporestone_patch_feature"
+    },
+    "count": 24,
+    "replace_rules": [
+      {
+        "places_block": "zombie:infected_sporestone",
+        "may_replace": [
+          "zombie:infected_stone",
+          "zombie:infected_gravel",
+          "zombie:infected_sand",
+          "minecraft:stone",
+          "minecraft:deepslate",
+          "minecraft:gravel",
+          "minecraft:sand"
+        ]
+      }
+    ]
+  }
+}

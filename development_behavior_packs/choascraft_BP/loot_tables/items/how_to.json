@@ -1,0 +1,73 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:written_book",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "set_book_contents",
+              "author": "Choascraft",
+              "title": "Choascraft Guide",
+              "pages": [
+                "Choascraft Guide\n\nA survival guide for the ocean mobs, drops, crafting recipes, armor sets, swords, taming, riding, and netherite upgrades in this pack.",
+                "Drop Rules\n\nMost custom mob loot tables roll 1 item per kill. Higher weight means more common. Rare items have low weight.",
+                "Shark Drops\n\nGreatwhite sharks and hammerheads drop:\nShark Meat w10\nShark Tooth w10\nShark Fin w6\nShark Hide w6\nShark Eye w1\nTheir books are mob-specific.",
+                "Orca Drops\n\nOrcas can drop:\nOrca Bone w10\nOrca Meat w10\nOrca Tooth w10\nOrca Blubber w4\nOrca Shard w4\nOrca Heart w1\nOrca Book w1",
+                "Zombie Orca Drops\n\nZombie orcas use the orca table, but drop Rotten Orca Blubber instead of normal Orca Blubber.",
+                "Crab Drops\n\nCrabs can drop:\nCrab Legs w10\nCrab Claw w8\nCrab Shell w8\nCrab Eyes w4\nCrab Orb w1",
+                "Guide Books\n\nPeepers and each jellyfish color now have rare guide books. Greatwhite and hammerhead sharks have separate books with their own facts.",
+                "Food and Cooking\n\nShark and Orca Meat are low food. Crab Legs are edible and can be cooked into Steamed Crab Legs. Furnace recipes: Shark Meat -> Shark Meat Cooked, Crab Legs -> Steamed Crab Legs. Orca Meat Cooked has no recipe found.",
+                "Recipe Key\n\nAll armor and swords below use a crafting table unless the page says smithing table.\n\nI = iron ingot\n. = empty slot",
+                "Shark Sword\n\nPattern:\n.T.\nFIH\n.E.\n\nT=Shark Tooth\nF=Shark Fin\nH=Shark Hide\nE=Shark Eye\nResult: Greatwhite Shark Blade",
+                "Shark Helmet\n\nPattern:\nIII\nITI\nTET\n\nT=Shark Tooth\nE=Shark Eye\nResult: Greatwhite Shark Helmet",
+                "Shark Chestplate\n\nPattern:\nIEI\nFHF\nIII\n\nE=Shark Eye\nF=Shark Fin\nH=Shark Hide\nResult: Greatwhite Shark Chestplate",
+                "Shark Leggings\n\nPattern:\nIII\nIEI\nIHI\n\nE=Shark Eye\nH=Shark Hide\nResult: Greatwhite Shark Leggings",
+                "Shark Boots\n\nPattern:\nIFI\nIFI\nITI\n\nF=Shark Fin\nT=Shark Tooth\nResult: Greatwhite Shark Boots",
+                "Orca Core\n\nCraft an Orca Core with a row of:\nShard - Heart - Shard\n\nThis core is used in orca sword and chest recipes.",
+                "Orca Sword\n\nPattern:\n.T.\nSIC\n.B.\n\nT=Orca Tooth\nS=Orca Shard\nC=Ohow_to_Book.rca Core\nB=Orca Bone\nResult: Orca Blade",
+                "Orca Helmet\n\nPattern:\nIII\nISI\nSHS\n\nS=Orca Shard\nH=Orca Heart\nResult: Orca Helmet",
+                "Orca Chestplate\n\nPattern:\nIHI\nSCS\nIII\n\nH=Orca Heart\nS=Orca Shard\nC=Orca Core\nResult: Orca Chestplate",
+                "Orca Leggings\n\nPattern:\nIII\nIHI\nISI\n\nH=Orca Heart\nS=Orca Shard\nResult: Orca Leggings",
+                "Orca Boots\n\nPattern:\nISI\nISI\nIHI\n\nS=Orca Shard\nH=Orca Heart\nResult: Orca Boots",
+                "Crab Sword\n\nPattern:\n.C.\nSIO\n.L.\n\nC=Crab Claw\nS=Crab Shell\nO=Crab Orb\nL=Crab Legs\nResult: Crab Sword",
+                "Crab Helmet\n\nPattern:\nIII\nISI\nSOS\n\nS=Crab Shell\nO=Crab Orb\nResult: Crab Helmet",
+                "Crab Chestplate\n\nPattern:\nIOI\nSES\nIII\n\nO=Crab Orb\nS=Crab Shell\nE=Crab Eyes\nResult: Crab Chestplate",
+                "Crab Leggings\n\nPattern:\nIII\nIOI\nISI\n\nO=Crab Orb\nS=Crab Shell\nResult: Crab Leggings",
+                "Crab Boots\n\nPattern:\nISI\nISI\nIOI\n\nS=Crab Shell\nO=Crab Orb\nResult: Crab Boots",
+                "Jellyfish Colors\n\nJellyfish armor comes in yellow, pink, green, and black. Use the matching color jelly for that set.",
+                "Jellyfish Helmet\n\nPattern:\nIII\nIJI\nJPJ\n\nJ=matching Jelly\nP=Jelly Pearl\nResult: matching Jellyfish Helmet",
+                "Jellyfish Chestplate\n\nPattern:\nIPI\nJCJ\nIII\n\nJ=matching Jelly\nP=Jelly Pearl\nC=Jelly Cyst\nResult: matching Jellyfish Chestplate",
+                "Jellyfish Leggings\n\nPattern:\nIII\nIPI\nIJI\n\nJ=matching Jelly\nP=Jelly Pearl\nResult: matching Jellyfish Leggings",
+                "Jellyfish Boots\n\nPattern:\nIJI\nIJI\nIPI\n\nJ=matching Jelly\nP=Jelly Pearl\nResult: matching Jellyfish Boots",
+                "Netherite Upgrades\n\nUse a smithing table:\nNetherite Upgrade Template + base item + Netherite Ingot -> netherite item.",
+                "Shark and Crab Netherite\n\nUpgrade Greatwhite Shark Sword/armor and Crab Sword/armor with a template, base item, and netherite ingot.",
+                "Orca Netherite\n\nUpgrade Orca Helmet, Chestplate, Leggings, and Boots with a netherite ingot.\n\nNo orca sword smithing recipe was found.",
+                "Jellyfish Netherite\n\nUpgrade yellow, pink, green, and black jellyfish armor pieces with a netherite ingot.",
+                "Recipe Note\n\nJelly Sword and Jelly Netherite Sword items exist, but no crafting or smithing recipe was found in the current recipe files.",
+                "Systems\n\nCustom swords have durability and Unbreaking support. This pack adds peepers, jellyfish, crabs, orcas, zombie orcas, greatwhite sharks, and hammerheads.",
+                "Peepers\n\nPeepers spawn underwater in oceans and rivers, in groups of 3 to 6. They have color and size variants and can breed with kelp.",
+                "Jellyfish\n\nA master jellyfish spawner picks black, green, purple, or yellow jellyfish. Jellyfish hurt nearby non-jellyfish mobs with area damage.",
+                "Crabs\n\nCrabs spawn on sand and red sand at beaches in groups of 2 to 4. About 1 in 3 natural crabs spawn as babies. They walk, swim, return to land, and attack for 3 damage.",
+                "Crab Utility\n\nReady adult crabs are tempted by rotten flesh. Use rotten flesh on one to make it search sand or red sand for treasure, then wait 30 seconds before feeding it again. Crabs breed with tropical fish buckets. Baby crabs grow faster when fed rotten flesh or tropical fish buckets. Use a bucket on a crab to get a Crab Bucket item.",
+                "Orcas\n\nOrcas spawn underwater in ocean biomes in groups of 1 to 2. They can breach, swim in pods, be leashed, and be healed with cod, salmon, or tropical fish.",
+                "Orca Taming and Storage\n\nTame orcas with cod, salmon, or tropical fish. Tamed orcas use saddles, accept chests, breed with salmon, and give water breathing while saddled.",
+                "Zombie Orcas\n\nZombie orcas spawn only in infected oceans. They notice players within 4 blocks, chase up to 10 blocks, have 60 health, attack for 5 damage, and drop the zombie-orca loot table.",
+                "Sharks\n\nGreatwhites spawn alone in non-frozen oceans. Hammerheads spawn 1 to 2 in oceans that are not frozen or cold. Zombie sharks spawn in infected oceans, notice players within 4 blocks, chase up to 10 blocks, and have 60 health.",
+                "Shark Taming\n\nGreatwhite and hammerhead sharks can be tamed with cod, salmon, or tropical fish. Tamed sharks can be saddled, ridden, chested, and bred with salmon.",
+                "Zombie Skins\n\nTamed orcas and sharks can use Zombie Vial for a zombie skin. Golden apples trigger the cure event back toward the cured look.",
+                "Spawn Heights\n\nMost ocean mobs spawn from about Y25 to Y63. Zombie orcas spawn lower, about Y20 to Y55. Crabs spawn around beach height Y60 to Y75.",
+                "Quick Progression\n\n1. Hunt crabs, sharks, and orcas for rare parts.\n2. Craft iron-tier ocean gear.\n3. Use smithing templates and netherite ingots to upgrade.",
+                "Rare Parts\n\nMost important rare parts:\nShark Eye\nOrca Heart\nCrab Orb\nJelly Pearl\nJelly Cyst\n\nThese unlock stronger armor and weapons.",
+                "End of Guide\n\nUse the ocean, beaches, and deep water to collect each set's materials. Bring food, armor, and a way back to air."
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

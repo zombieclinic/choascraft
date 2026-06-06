@@ -1,0 +1,25 @@
+{
+    "format_version": "1.26.10",
+    "minecraft:item": {
+        "description": {
+            "identifier": "zombie:jellyfish_jelly_jelly",
+            "menu_category": {"category": "items", "group": "minecraft:itemGroup.name.rawFood"}
+        },
+        "components": {
+            "minecraft:display_name": {
+                "value": "Jelly"
+            },
+            "minecraft:icon": "zombie_jellyfish_jelly_jelly",
+            "minecraft:food": {
+                    "can_always_eat": false,
+                    "nutrition": 2,
+                    "saturation_modifier": 4
+                },
+                "minecraft:use_modifiers": {
+                    "emit_vibrations": true,
+                    "movement_modifier": 1,
+                    "use_duration": 1
+                }
+        }
+    }
+}

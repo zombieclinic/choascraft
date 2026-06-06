@@ -1,0 +1,34 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "zombie:crab_leg",
+          "weight": 10
+        },
+        {
+          "type": "item",
+          "name": "zombie:crab_claw",
+          "weight": 8
+        },
+        {
+          "type": "item",
+          "name": "zombie:crab_shell",
+          "weight": 8
+        },
+        {
+          "type": "item",
+          "name": "zombie:crab_eyes",
+          "weight": 4
+        },
+        {
+          "type": "item",
+          "name": "zombie:crab_orb",
+          "weight": 1
+        }
+      ]
+    }
+  ]
+}

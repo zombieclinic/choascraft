@@ -1,0 +1,257 @@
+{
+	"format_version": "1.26.10",
+	"minecraft:block": {
+		"description": {
+			"identifier": "zombie:eyewood_tree_sapling",
+			"states": {
+				"zombie:growth_stage": {
+					"values": {
+						"min": 0,
+						"max": 4
+					}
+				}
+			},
+			"menu_category": {
+				"category": "nature",
+				"group": "minecraft:itemGroup.name.sapling"
+			}
+		},
+		"permutations": [
+			{
+				"condition": "query.block_state('zombie:growth_stage') == 0",
+				"components": {
+					"minecraft:geometry": "geometry.zombie.eyewood_tree_sapling_0",
+					"minecraft:selection_box": {
+						"origin": [
+							-1,
+							0,
+							-1
+						],
+						"size": [
+							2,
+							2,
+							2
+						]
+					},
+					"minecraft:collision_box": {
+						"origin": [
+							-1,
+							0,
+							-1
+						],
+						"size": [
+							2,
+							2,
+							2
+						]
+					}
+				}
+			},
+			{
+				"condition": "query.block_state('zombie:growth_stage') == 1",
+				"components": {
+					"minecraft:geometry": "geometry.zombie.eyewood_tree_sapling_1",
+					"minecraft:selection_box": {
+						"origin": [
+							-2.025,
+							0,
+							-2
+						],
+						"size": [
+							4,
+							4,
+							4
+						]
+					},
+					"minecraft:collision_box": {
+						"origin": [
+							-2.025,
+							0,
+							-2
+						],
+						"size": [
+							4,
+							4,
+							4
+						]
+					}
+				}
+			},
+			{
+				"condition": "query.block_state('zombie:growth_stage') == 2",
+				"components": {
+					"minecraft:geometry": "geometry.zombie.eyewood_tree_sapling_2",
+					"minecraft:selection_box": {
+						"origin": [
+							-2.025,
+							0,
+							-2
+						],
+						"size": [
+							4,
+							8,
+							4
+						]
+					},
+					"minecraft:collision_box": {
+						"origin": [
+							-2.025,
+							0,
+							-2
+						],
+						"size": [
+							4,
+							8,
+							4
+						]
+					}
+				}
+			},
+			{
+				"condition": "query.block_state('zombie:growth_stage') == 3",
+				"components": {
+					"minecraft:geometry": "geometry.zombie.eyewood_tree_sapling_3",
+					"minecraft:selection_box": {
+						"origin": [
+							-7,
+							0,
+							-8
+						],
+						"size": [
+							14.525,
+							13,
+							15
+						]
+					},
+					"minecraft:collision_box": {
+						"origin": [
+							-7,
+							0,
+							-8
+						],
+						"size": [
+							14.525,
+							13,
+							15
+						]
+					}
+				}
+			},
+			{
+				"condition": "query.block_state('zombie:growth_stage') == 4",
+				"components": {
+					"minecraft:geometry": "geometry.zombie.eyewood_tree_sapling_4",
+					"minecraft:selection_box": {
+						"origin": [
+							-7,
+							0,
+							-8
+						],
+						"size": [
+							14.525,
+							16,
+							15
+						]
+					},
+					"minecraft:collision_box": {
+						"origin": [
+							-7,
+							0,
+							-8
+						],
+						"size": [
+							14.525,
+							16,
+							15
+						]
+					}
+				}
+			}
+		],
+		"components": {
+			"minecraft:destructible_by_mining": {
+				"seconds_to_destroy": 0.0
+			},
+			"minecraft:destructible_by_explosion": {
+				"explosion_resistance": 0.0
+			},
+			"minecraft:flammable": {
+				"catch_chance_modifier": 60,
+				"destroy_chance_modifier": 100
+			},
+			"minecraft:geometry": "geometry.zombie.eyewood_tree_sapling_0",
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "eyewood_tree_sapling",
+					"render_method": "alpha_test",
+					"face_dimming": false,
+					"ambient_occlusion": false
+				}
+			},
+			"minecraft:item_visual": {
+				"geometry": "geometry.zombie.eyewood_tree_sapling_4",
+				"material_instances": {
+					"*": {
+						"texture": "eyewood_tree_sapling",
+						"render_method": "alpha_test",
+						"face_dimming": false,
+						"ambient_occlusion": false
+					}
+				}
+			},
+			"minecraft:light_dampening": 0,
+			"minecraft:liquid_detection": {
+				"detection_rules": [
+					{
+						"liquid_type": "water",
+						"can_contain_liquid": true,
+						"on_liquid_touches": "no_reaction"
+					}
+				]
+			},
+			"minecraft:placement_filter": {
+				"conditions": [
+					{
+						"allowed_faces": [
+							"up"
+						],
+						"block_filter": [
+							"minecraft:sand",
+							"minecraft:gravel",
+							"minecraft:clay",
+							"minecraft:dirt",
+							"zombie:infected_gravel",
+							"zombie:infected_sand",
+							"zombie:infected_stone"
+						]
+					}
+				]
+			},
+			"minecraft:tick": {
+				"looping": true,
+				"interval_range": [
+					600,
+					1200
+				]
+			},
+			"zombie:eyewood_tree_sapling_growth": {
+				"stage_state": "zombie:growth_stage",
+				"max_stage": 4,
+				"feature": "zombie:eyewood_tree_feature",
+				"growth_chance": 0.45,
+				"valid_base_blocks": [
+					"minecraft:sand",
+					"minecraft:gravel",
+					"minecraft:clay",
+					"minecraft:dirt",
+					"zombie:infected_gravel",
+					"zombie:infected_sand",
+					"zombie:infected_stone"
+				]
+			},
+			"tag:zombie:eyewood_tree_sapling": {},
+			"tag:sapling": {},
+			"tag:plant": {}
+		}
+	}
+}

@@ -1,0 +1,14 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_brewing_mix": {
+    "description": {
+      "identifier": "zombie:brew_bucket_of_oil_pengun_blubber"
+    },
+    "tags": [
+      "brewing_stand"
+    ],
+    "input": "minecraft:bucket",
+    "reagent": "zombie:pengun_blubber",
+    "output": "zombie:bucket_of_oil"
+  }
+}

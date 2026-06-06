@@ -1,0 +1,24 @@
+{
+  "format_version": "1.26.10",
+  "minecraft:recipe_furnace": {
+    "description": {
+      "identifier": "zombie:steamed_crab_leg_recipe"
+    },
+    "unlock": [
+      {
+        "item": "minecraft:iron_ingot"
+      },
+      {
+        "item": "zombie:crab_leg"
+      }
+    ],
+    "tags": [
+      "furnace",
+      "smoker",
+      "campfire",
+      "soul_campfire"
+    ],
+    "input": "zombie:crab_leg",
+    "output": "zombie:steamed_crab_leg"
+  }
+}

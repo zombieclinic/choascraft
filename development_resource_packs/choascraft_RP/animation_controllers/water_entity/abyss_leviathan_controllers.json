@@ -1,0 +1,52 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.abyss_leviathan": {
+			"initial_state": "idle",
+			"states": {
+				"idle": {
+					"animations": [
+						"idle"
+					],
+					"transitions": [
+						{
+							"attack": "variable.attack_time >= 0.01"
+						},
+						{
+							"walk": "query.modified_move_speed > 0.03"
+						}
+					],
+					"blend_transition": 0.2
+				},
+				"walk": {
+					"animations": [
+						"walk"
+					],
+					"transitions": [
+						{
+							"attack": "variable.attack_time >= 0.01"
+						},
+						{
+							"idle": "query.modified_move_speed <= 0.03"
+						}
+					],
+					"blend_transition": 0.2
+				},
+				"attack": {
+					"animations": [
+						"attack"
+					],
+					"transitions": [
+						{
+							"walk": "query.any_animation_finished && query.modified_move_speed > 0.03"
+						},
+						{
+							"idle": "query.any_animation_finished"
+						}
+					],
+					"blend_transition": 0.05
+				}
+			}
+		}
+	}
+}

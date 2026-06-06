@@ -1,0 +1,23 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:attachable": {
+		"description": {
+			"identifier": "zombie:crab_netherite_boots",
+			"render_controllers": ["controller.render.armor"],
+			"materials": {
+				"default": "entity_alphatest",
+				"enchanted": "entity_alphatest_glint"
+			},
+			"textures": {
+				"default": "textures/a/cb/nb/netherite_boots",
+				"enchanted": "textures/misc/enchanted_item_glint"
+			},
+			"geometry": {
+				"default": "geometry.crab_boots"
+			},
+			"scripts": {
+				"parent_setup": "variable.boot_layer_visible = 0.0;"
+			}
+		}
+	}
+}

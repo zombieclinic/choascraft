@@ -1,0 +1,41 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "zombie:crab",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/e/cr/crab2"
+			},
+			"geometry": {
+				"default": "geometry.crab2"
+			},
+			"render_controllers": [
+				"controller.render.default"
+			],
+			"spawn_egg": {
+				"base_color": "#C90A0A",
+				"overlay_color": "#C58A23"
+			},
+			"animations": {
+				"activate": "animation.crab2.walk",
+				"claw1": "animation.crab2.claws",
+				"controller": "controller.animation.zombie_crabs.claw",
+				"claw2": "animation.crab2.claw2",
+				"digging": "animation.crab2.digging"
+			},
+			"scripts": {
+				"animate": [
+					{
+						"activate": "query.ground_speed"
+					},
+					{
+						"controller": "(1.0)"
+					}
+				]
+			}
+		}
+	}
+}

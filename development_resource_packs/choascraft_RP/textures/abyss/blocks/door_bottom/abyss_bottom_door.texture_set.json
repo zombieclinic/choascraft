@@ -1,0 +1,8 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:texture_set": {
+		"color": "abyss_bottom_door",
+		"metalness_emissive_roughness": "abyss_bottom_door_mer",
+		"normal": "abyss_bottom_door_normal"
+	}
+}

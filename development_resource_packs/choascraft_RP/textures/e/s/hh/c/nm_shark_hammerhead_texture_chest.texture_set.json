@@ -1,0 +1,8 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:texture_set": {
+		"color": "nm_shark_hammerhead_texture_chest",
+		"metalness_emissive_roughness": "nm_shark_hammerhead_texture_chest_mer",
+		"normal": "nm_shark_hammerhead_texture_chest_normal"
+	}
+}

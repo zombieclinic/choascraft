@@ -1,0 +1,20 @@
+{
+  "format_version": "1.26.10",
+  "minecraft:recipe_furnace": {
+    "description": {
+      "identifier": "zombie:shark_meat_cooked_recipe"
+    },
+    "unlock": [
+      { "item": "minecraft:iron_ingot" },
+      { "item": "zombie:shark_meat" }
+    ],
+    "tags": [
+      "furnace",
+      "smoker",
+      "campfire",
+      "soul_campfire"
+    ],
+    "input": "zombie:shark_meat",
+    "output": "zombie:shark_meat_cooked"
+  }
+}

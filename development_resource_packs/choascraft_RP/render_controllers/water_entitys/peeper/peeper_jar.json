@@ -1,0 +1,25 @@
+//bridge-file-version: #20
+{
+	"format_version": "1.8.0",
+	"render_controllers": {
+		"controller.render.peeper_jar": {
+			"materials": [
+				{
+					"*": "Material.default"
+				}
+			],
+			"textures": [
+				"Texture.default"
+			],
+			"geometry": "Array.skins_geo[query.is_item_name_any('slot.weapon.mainhand', 0, 'zombie:peeper_jar_item')]",
+			"arrays": {
+				"geometries": {
+					"Array.skins_geo": [
+						"Geometry.default",
+						"Geometry.right_hand"
+					]
+				}
+			}
+		}
+	}
+}

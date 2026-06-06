@@ -1,0 +1,30 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.orca": {
+      "geometry": "geometry.default",
+      "materials": [
+        {
+          "*": "material.default"
+        }
+      ],
+      "textures": [
+        "array.variants[query.variant + query.skin_id * 2 + query.mark_variant * 4]"
+      ],
+      "arrays": {
+        "textures": {
+          "Array.variants": [
+            "Texture.default",
+            "Texture.nochest",
+            "Texture.nosaddle_chest",
+            "Texture.saddled_and_chested",
+            "Texture.zombie",
+            "Texture.zombie_saddle",
+            "Texture.zombie_chest",
+            "Texture.zombie_chest_saddle"
+          ]
+        }
+      }
+    }
+  }
+}

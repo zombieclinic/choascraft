@@ -1,0 +1,27 @@
+{
+  "format_version": "1.21.100",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "zombie:jellyfish_black_leggings_recipe"
+    },
+    "tags": [ "crafting_table" ],
+    "unlock": [
+      { "item": "minecraft:iron_ingot" },
+      { "item": "zombie:jellyfish_jelly_black" },
+      { "item": "zombie:jellyfish_jelly_pearl" }
+    ],
+    "pattern": [
+      "III",
+      "IPI",
+      "IJI"
+    ],
+    "key": {
+      "I": { "item": "minecraft:iron_ingot" },
+      "J": { "item": "zombie:jellyfish_jelly_black" },
+      "P": { "item": "zombie:jellyfish_jelly_pearl" }
+    },
+    "result": {
+      "item": "zombie:jellyfish_black_leggings"
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+    "format_version": "1.26.10",
+    "minecraft:item": {
+        "description": {
+            "identifier": "zombie:shark_meat",
+            "menu_category": {"category": "items", "group": "minecraft:itemGroup.name.rawFood"}
+        },
+        "components": {
+            "minecraft:icon": "zombie_shark_meat",
+            "minecraft:display_name": {
+                "value": "Shark Meat"
+            },
+            "minecraft:food": {
+                "can_always_eat": false,
+                "nutrition": 1,
+                "saturation_modifier": 0.1
+            },
+            "minecraft:use_animation": "eat",
+            "minecraft:use_modifiers": {
+                "emit_vibrations": true,
+                "movement_modifier": 0,
+                "use_duration": 1
+            }
+        }
+    }
+}

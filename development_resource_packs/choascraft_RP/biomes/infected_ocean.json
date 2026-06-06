@@ -1,0 +1,29 @@
+{
+	"format_version": "1.26.20",
+	"minecraft:client_biome": {
+		"description": {
+			"identifier": "zombie:infected_ocean"
+		},
+		"components": {
+			"minecraft:sky_color": {
+				"sky_color": "#b61bbe"
+			},
+			"minecraft:atmosphere_identifier": {
+  			"atmosphere_identifier": "zombie:infected_ocean_atmospherics"
+			},
+			"minecraft:fog_appearance": {
+				"fog_identifier": "zombie:fog_infected_ocean"
+			},
+			"minecraft:water_appearance": {
+				"surface_color": "#470749",
+				"surface_opacity": 0.9
+			},
+			"minecraft:grass_appearance": {
+				"color": "#821295"
+			},
+			"minecraft:foliage_appearance": {
+				"color": "#a77e15"
+			}
+		}
+	}
+}

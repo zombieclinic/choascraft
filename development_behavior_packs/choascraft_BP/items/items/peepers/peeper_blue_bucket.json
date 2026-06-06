@@ -1,0 +1,18 @@
+{
+    "format_version": "1.26.10",
+    "minecraft:item": {
+        "description": {
+            "identifier": "zombie:peeper_blue_bucket",
+            "menu_category": {"category": "items"}
+        },
+        "components": {
+            "minecraft:icon": "zombie_peeper_blue_bucket",
+            "minecraft:display_name": {
+                "value": "Blue Peeper Bucket"
+            },
+            "minecraft:entity_placer": {
+                "entity": "zombie:peeper<zombie:bucket_blue>"
+            }
+        }
+    }
+}

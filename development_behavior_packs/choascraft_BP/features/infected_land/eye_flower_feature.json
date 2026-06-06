@@ -1,0 +1,41 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:single_block_feature": {
+    "description": {
+      "identifier": "zombie:eye_flower_feature"
+    },
+    "places_block": {
+      "name": "zombie:eye_flower",
+      "states": {
+        "zombie:growth_stage": 3,
+        "zombie:eye_flower_part": "bottom"
+      }
+    },
+    "enforce_survivability_rules": true,
+    "enforce_placement_rules": true,
+    "may_replace": [
+      "minecraft:air",
+      "minecraft:tallgrass",
+      "minecraft:fern",
+      "zombie:abyss_grass",
+      "zombie:abyss_mushroom",
+      "zombie:abyss_glob_flower",
+      "zombie:abyss_flower",
+      "zombie:black_grass",
+      "zombie:sporepod"
+    ],
+    "may_attach_to": {
+      "bottom": [
+        "zombie:infected_grass_block",
+        "zombie:infected_dirt",
+        "zombie:infected_gravel",
+        "zombie:infected_sand",
+        "zombie:infected_sporestone",
+        "zombie:infected_stone",
+        "minecraft:dirt",
+        "minecraft:grass_block",
+        "minecraft:stone"
+      ]
+    }
+  }
+}

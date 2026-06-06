@@ -1,0 +1,25 @@
+{
+	"format_version": "1.16.0",
+	"sound_definitions": {
+	
+		"zombie.orca.ambient": {
+			
+			"category": "neutral",
+			"sounds": [
+				"sounds/ocean_entites/orca/ambint_1",
+				"sounds/ocean_entites/orca/ambint_2",
+				"sounds/ocean_entites/orca/ambint_3",
+				"sounds/ocean_entites/orca/ambint_4"
+					]
+					
+		},
+		"zombie.orca.hurt": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/ocean_entites/orca/orca_hurt",
+				"sounds/ocean_entites/orca/orca_hurt_1"
+			]
+		}
+  }
+}
+

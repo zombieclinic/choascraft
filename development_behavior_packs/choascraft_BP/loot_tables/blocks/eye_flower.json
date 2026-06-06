@@ -1,0 +1,52 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "zombie:eye_flower_seed",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "conditions": [
+        {
+          "condition": "match_tool",
+          "enchantments": [
+            {
+              "enchantment": "looting",
+              "levels": {
+                "range_min": 3,
+                "range_max": 3
+              }
+            }
+          ]
+        },
+        {
+          "condition": "random_chance",
+          "chance": 0.5
+        }
+      ],
+      "entries": [
+        {
+          "type": "item",
+          "name": "zombie:eye_flower_seed",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

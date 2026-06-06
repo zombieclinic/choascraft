@@ -1,0 +1,29 @@
+{
+  "format_version": "1.26.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "zombie:crab_sword_recipe"
+    },
+    "tags": [ "crafting_table" ],
+    "unlock": [
+      { "item": "minecraft:iron_ingot" },
+      { "item": "zombie:crab_claw" },
+      { "item": "zombie:crab_orb" }
+    ],
+    "pattern": [
+      " T ",
+      "JIH",
+      " S "
+    ],
+    "key": {
+      "J": { "item": "zombie:crab_shell" },
+      "H": { "item": "zombie:crab_orb" },
+      "I": { "item": "minecraft:iron_ingot" },
+      "T": { "item": "zombie:crab_claw" },
+      "S": { "item": "zombie:crab_leg" }
+    },
+    "result": {
+      "item": "zombie:crab_sword"
+    }
+  }
+}

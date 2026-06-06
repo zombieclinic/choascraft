@@ -1,0 +1,29 @@
+{
+	"format_version": "1.26.10",
+	"minecraft:item": {
+		"description": {
+			"identifier": "zombie:peeper_meat_cooked",
+			"menu_category": {
+				"category": "items",
+				"group": "minecraft:itemGroup.name.cookedFood"
+			}
+		},
+		"components": {
+			"minecraft:icon": "zombie_peeper_meat_cooked",
+			"minecraft:display_name": {
+				"value": "Cooked Peeper Meat"
+			},
+			"minecraft:food": {
+				"can_always_eat": false,
+				"nutrition": 5,
+				"saturation_modifier": 0.6
+			},
+			"minecraft:use_animation": "eat",
+			"minecraft:use_modifiers": {
+				"emit_vibrations": true,
+				"movement_modifier": 0,
+				"use_duration": 1
+			}
+		}
+	}
+}

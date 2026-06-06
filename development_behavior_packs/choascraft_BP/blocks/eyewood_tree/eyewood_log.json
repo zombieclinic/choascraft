@@ -1,0 +1,118 @@
+{
+	"format_version": "1.26.10",
+	"minecraft:block": {
+		"description": {
+			"identifier": "zombie:eyewood_log",
+			"traits": {
+				"minecraft:placement_position": {
+					"enabled_states": [
+						"minecraft:block_face"
+					]
+				}
+			},
+			"menu_category": {
+				"category": "nature",
+				"group": "minecraft:itemGroup.name.log"
+			}
+		},
+		"permutations": [
+			{
+				"condition": "query.block_state('minecraft:block_face') == 'north'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							90,
+							0,
+							0
+						]
+					}
+				}
+			},
+			{
+				"condition": "query.block_state('minecraft:block_face') == 'south'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							90,
+							0,
+							0
+						]
+					}
+				}
+			},
+			{
+				"condition": "query.block_state('minecraft:block_face') == 'east'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							90,
+							-90
+						]
+					}
+				}
+			},
+			{
+				"condition": "query.block_state('minecraft:block_face') == 'west'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							90,
+							-90
+						]
+					}
+				}
+			}
+		],
+		"components": {
+			"minecraft:destructible_by_mining": {
+				"seconds_to_destroy": 2.0
+			},
+			"minecraft:destructible_by_explosion": {
+				"explosion_resistance": 3.0
+			},
+			"minecraft:flammable": {
+				"catch_chance_modifier": 5,
+				"destroy_chance_modifier": 20
+			},
+			"minecraft:geometry": "minecraft:geometry.full_block",
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "eyewood_tree_side",
+					"render_method": "opaque"
+				},
+				"up": {
+					"texture": "eyewood_tree_top",
+					"render_method": "opaque"
+				},
+				"down": {
+					"texture": "eyewood_tree_top",
+					"render_method": "opaque"
+				}
+			},
+			"minecraft:item_visual": {
+				"geometry": "minecraft:geometry.full_block",
+				"material_instances": {
+					"*": {
+						"texture": "eyewood_tree_side",
+						"render_method": "opaque"
+					},
+					"up": {
+						"texture": "eyewood_tree_top",
+						"render_method": "opaque"
+					},
+					"down": {
+						"texture": "eyewood_tree_top",
+						"render_method": "opaque"
+					}
+				}
+			},
+			"tag:zombie:eyewood_log": {},
+			"tag:zombie:custom_log": {},
+			"tag:log": {},
+			"tag:wood": {},
+			"tag:minecraft:is_axe_item_destructible": {}
+		}
+	}
+}

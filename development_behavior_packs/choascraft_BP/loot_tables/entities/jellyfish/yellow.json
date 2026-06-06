@@ -1,0 +1,86 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "zombie:jellyfish_jelly_yellow"
+        }
+      ]
+    },
+    {
+      "conditions": [
+        {
+          "condition": "random_chance",
+          "chance": 0.12
+        }
+      ],
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "zombie:jellyfish_jelly_pearl"
+        }
+      ]
+    },
+    {
+      "conditions": [
+        {
+          "condition": "random_chance",
+          "chance": 0.18
+        }
+      ],
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:slime_ball"
+        }
+      ]
+    },
+    {
+      "conditions": [
+        {
+          "condition": "random_chance",
+          "chance": 0.05
+        }
+      ],
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:written_book",
+          "functions": [
+            {
+              "function": "set_book_contents",
+              "author": "Choascraft",
+              "title": "Yellow Jellyfish Guide",
+              "pages": [
+                "Yellow Jellyfish Guide\n\nA Choascraft guide for yellow jellyfish facts, hazards, parts, and jellyfish gear.",
+                "Fact 1\n\nJellyfish are soft-bodied animals with no bones, brain, or heart.",
+                "Fact 2\n\nMost jellyfish drift with currents, but they can pulse their bell to move through water.",
+                "Fact 3\n\nTheir tentacles can carry stinging cells used for defense and catching prey.",
+                "Fact 4\n\nSome jellyfish live near the surface, while others drift in deeper water.",
+                "Fact 5\n\nJellyfish sense light, gravity, and touch with simple nerve structures.",
+                "Fact 6\n\nEven without a brain, jellyfish can respond quickly to their surroundings.",
+                "Choascraft Yellow Jellyfish\n\nYellow jellyfish are one of the jellyfish variants chosen by the master jellyfish spawner.",
+                "Hazard\n\nJellyfish hurt nearby non-jellyfish mobs with area damage. Give them room in the water.",
+                "Movement\n\nJellyfish swim, wander, idle, avoid threats, and flock with other water mobs.",
+                "Parts\n\nJellyfish parts are used for colored jellyfish armor. Yellow gear uses Yellow Jelly.",
+                "Rare Parts\n\nJelly Pearl and Jelly Cyst are important rare parts for stronger jellyfish equipment.",
+                "Crafting Key\n\nI = Iron Ingot\nJ = matching Jelly\nP = Jelly Pearl\nC = Jelly Cyst",
+                "Helmet\n\nPattern:\nIII\nIJI\nJPJ\n\nResult: matching Jellyfish Helmet",
+                "Chestplate\n\nPattern:\nIPI\nJCJ\nIII\n\nResult: matching Jellyfish Chestplate",
+                "Leggings\n\nPattern:\nIII\nIPI\nIJI\n\nResult: matching Jellyfish Leggings",
+                "Boots\n\nPattern:\nIJI\nIJI\nIPI\n\nResult: matching Jellyfish Boots",
+                "Netherite\n\nUse a smithing table with jellyfish armor and a netherite ingot to upgrade it.",
+                "Diver Note\n\nYellow jellyfish are bright warnings in the water. Admire first, approach never."
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

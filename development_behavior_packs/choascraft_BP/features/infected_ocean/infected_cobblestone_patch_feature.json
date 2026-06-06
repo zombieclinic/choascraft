@@ -1,0 +1,23 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:ore_feature": {
+    "description": {
+      "identifier": "zombie:infected_cobblestone_patch_feature"
+    },
+    "count": 28,
+    "replace_rules": [
+      {
+        "places_block": "zombie:infected_cobblestone",
+        "may_replace": [
+          "zombie:infected_stone",
+          "zombie:infected_gravel",
+          "zombie:infected_sand",
+          "minecraft:stone",
+          "minecraft:deepslate",
+          "minecraft:cobblestone",
+          "minecraft:gravel"
+        ]
+      }
+    ]
+  }
+}

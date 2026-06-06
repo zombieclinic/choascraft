@@ -1,0 +1,73 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "zombie:shark_meat",
+          "weight": 10
+        },
+        {
+          "type": "item",
+          "name": "zombie:shark_tooth",
+          "weight": 10
+        },
+        {
+          "type": "item",
+          "name": "zombie:shark_fin",
+          "weight": 6
+        },
+        {
+          "type": "item",
+          "name": "zombie:shark_hide",
+          "weight": 6
+        },
+        {
+          "type": "item",
+          "name": "zombie:shark_eye",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:written_book",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "set_book_contents",
+              "author": "Choascraft",
+              "title": "Hammerhead Guide",
+              "pages": [
+                "Hammerhead Guide\n\nA Choascraft guide for hammerhead shark facts, taming, riding, drops, and gear.",
+                "Fact 1\n\nHammerhead sharks are named for their wide hammer-shaped heads.",
+                "Fact 2\n\nThe wide head helps spread their senses across a larger area while searching for prey.",
+                "Fact 3\n\nHammerheads use electroreception to sense hidden animals, including prey buried in sand.",
+                "Fact 4\n\nTheir eyes sit near the ends of the head, giving them a broad view of the water around them.",
+                "Fact 5\n\nSome hammerheads travel in schools, especially around warm coastal waters and seamounts.",
+                "Fact 6\n\nHammerheads eat fish, squid, crustaceans, and rays depending on the species and habitat.",
+                "Fact 7\n\nThe head shape can help them turn sharply and pin prey against the sea floor.",
+                "Fact 8\n\nLike other sharks, hammerheads have cartilage skeletons and replace teeth through life.",
+                "Choascraft Hammerheads\n\nHammerhead sharks spawn in small groups in oceans that are not frozen or cold.",
+                "Wild Hunters\n\nA rare wild hammerhead can spawn as a player hunter. It will not hunt players while a player is riding it.",
+                "Taming\n\nHammerhead sharks can be tamed with cod, salmon, or tropical fish.",
+                "Riding\n\nTamed hammerheads can be saddled and ridden. Saddled sharks give water breathing while mounted.",
+                "Storage\n\nTamed hammerheads can accept chests, giving them storage for long ocean trips.",
+                "Breeding\n\nTamed hammerheads breed with salmon. Baby sharks grow over time and follow nearby parents.",
+                "Drops\n\nHammerheads use shark drops: Shark Meat, Shark Tooth, Shark Fin, Shark Hide, and the rare Shark Eye.",
+                "Cooking\n\nShark Meat can be cooked in a furnace, smoker, or campfire to make Cooked Shark Meat.",
+                "Crafting Key\n\nI = Iron Ingot\nT = Shark Tooth\nF = Shark Fin\nH = Shark Hide\nE = Shark Eye\n. = empty slot",
+                "Shark Sword\n\nPattern:\n.T.\nFIH\n.E.\n\nResult: Greatwhite Shark Sword",
+                "Shark Helmet\n\nPattern:\nIII\nITI\nTET\n\nResult: Greatwhite Shark Helmet",
+                "Shark Chestplate\n\nPattern:\nIEI\nFHF\nIII\n\nResult: Greatwhite Shark Chestplate",
+                "Shark Leggings\n\nPattern:\nIII\nIEI\nIHI\n\nResult: Greatwhite Shark Leggings",
+                "Shark Boots\n\nPattern:\nIFI\nIFI\nITI\n\nResult: Greatwhite Shark Boots",
+                "Netherite Shark Gear\n\nUse a smithing table with a netherite upgrade template, shark gear, and a netherite ingot.",
+                "Captain Note\n\nA hammerhead reads the water with its whole head. If one turns toward you, pay attention."
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

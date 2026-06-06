@@ -1,0 +1,141 @@
+{
+  "pools": [
+    {
+      "conditions": [
+        {
+          "condition": "random_chance",
+          "chance": 0.75
+        }
+      ],
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "zombie:fish_bone",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 2
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "conditions": [
+        {
+          "condition": "random_chance",
+          "chance": 0.7
+        }
+      ],
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "zombie:pengiun_meat",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 2
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "conditions": [
+        {
+          "condition": "random_chance",
+          "chance": 0.08
+        }
+      ],
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "zombie:pengiun_egg"
+        }
+      ]
+    },
+    {
+      "conditions": [
+        {
+          "condition": "random_chance",
+          "chance": 0.15
+        }
+      ],
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "zombie:pengun_blubber",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "conditions": [
+        {
+          "condition": "random_chance",
+          "chance": 0.05
+        }
+      ],
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:written_book",
+          "functions": [
+            {
+              "function": "set_book_contents",
+              "author": "Choascraft",
+              "title": "Penguin Guide",
+              "pages": [
+                "Penguin Guide\n\nNotes from the cold-water keepers, fish counters, egg watchers, and oil brewers of Choascraft.",
+                "Fact 1\n\nPenguins are birds, but they do not fly. Their wings work like strong flippers for swimming.",
+                "Fact 2\n\nTheir black back and pale belly are countershading. From above and below, the pattern helps them blend into the water.",
+                "Fact 3\n\nPenguins eat ocean food such as fish, squid, and krill. Different species hunt different prey.",
+                "Fact 4\n\nDense feathers trap air and help keep cold water away from the skin.",
+                "Fact 5\n\nPenguins molt by replacing old feathers. During a heavy molt, many stay on land until the new coat is ready.",
+                "Fact 6\n\nMany penguins recognize mates and chicks by voice, even in crowded colonies.",
+                "Fact 7\n\nPenguin chicks hatch with soft down. They need time before they are ready for the water.",
+                "Fact 8\n\nPenguins can drink salty seawater. Special glands help remove extra salt from the body.",
+                "Fact 9\n\nOn land penguins may walk, hop, or slide. In water they become fast, accurate hunters.",
+                "Fact 10\n\nPenguin nests can be made from stones, plants, burrows, or simple open ground depending on the species.",
+                "Choascraft Drops\n\nPenguins can drop Fish Bone and Penguin Meat. They may rarely drop a Penguin Egg or Penguin Blubber.",
+                "Cooking\n\nPenguin Meat can be cooked in a furnace, smoker, or campfire to make Cooked Penguin Meat.",
+                "Oil Recipe\n\nUse a brewing stand:\nInput: Bucket\nReagent: Penguin Blubber\nResult: Bucket of Oil",
+                "Oil Power\n\nBucket of Oil is a strong fuel source. Save it for long smelting runs and big projects.",
+                "Breeding\n\nAdult penguins breed with cod, salmon, or tropical fish. A pregnant penguin looks for land and lays a Penguin Egg Block.",
+                "Eggs\n\nPenguin eggs hatch after a short wait. The egg breaks and a baby king penguin appears.",
+                "Babies\n\nBaby penguins grow over time and get larger as they age. Feed cod, salmon, or tropical fish to help them grow.",
+                "Taming Babies\n\nBaby penguins can be tamed with cod, salmon, or tropical fish. Tamed penguins follow their owner after growing up.",
+                "Golden Dandelion\n\nUse minecraft:golden_dandelion on a baby penguin to pause and reset growth so it stays little.",
+                "Follow Mode\n\nA tamed penguin with normal eyes follows its owner. Interact with it to switch modes.",
+                "Hunt Mode\n\nA tamed penguin with red eyes is hunting. It searches water, attacks fish, and can pick up floating items.",
+                "Fish Gifts\n\nWhen a tamed hunting penguin catches a fish, it returns to its owner and gives a Fish Bone.",
+                "Loose Items\n\nA hunting penguin can pick up floating items in water and bring them back to its owner.",
+                "Mode Toggle\n\nInteract with a tamed penguin again to leave hunt mode and return to follow mode.",
+                "Guild Note\n\nRespect the colony, watch the ice, and keep fish ready. A good penguin keeper wastes nothing."
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

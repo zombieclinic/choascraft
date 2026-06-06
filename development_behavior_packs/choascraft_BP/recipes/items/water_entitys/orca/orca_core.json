@@ -1,0 +1,25 @@
+{
+  "format_version": "1.21.100",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "zombie:orca_core_recipe"
+    },
+    "tags": [ "crafting_table" ],
+    "unlock": [
+      { "item": "minecraft:iron_ingot" },
+      { "item": "zombie:orca_shard" }
+    ],
+    "pattern": [
+      "",
+      "BIB",
+      ""
+    ],
+    "key": {
+      "I": { "item": "zombie:orca_heart" },
+      "B": { "item": "zombie:orca_shard" }
+    },
+    "result": {
+      "item": "zombie:orca_core"
+    }
+  }
+}

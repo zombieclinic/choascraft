@@ -1,0 +1,66 @@
+{
+	"format_version": "1.26.10",
+	"minecraft:item": {
+		"description": {
+			"identifier": "zombie:jelly_sword",
+			"menu_category": {
+				"category": "equipment",
+				"group": "minecraft:itemGroup.name.sword"
+			}
+		},
+		"components": {
+			"minecraft:display_name": {
+				"value": "Jelly Sword"
+			},
+			"zombie:item_durability":{},
+			"minecraft:max_stack_size": 1,
+			"minecraft:icon": "zombie_jellyfish_jelly_sword",
+			"minecraft:damage": 7,
+			"minecraft:hand_equipped": true,
+			"minecraft:use_modifiers": {
+				"use_duration": 0.8,
+				"movement_modifier": 0.85
+			},
+			
+			"minecraft:should_despawn": true,
+			"minecraft:enchantable": {
+				"slot": "sword",
+				"value": 18
+			},
+			"minecraft:durability": {
+				"max_durability": 474,
+				"damage_chance": {"min": 50,"max": 100}
+			},
+			"minecraft:repairable": {
+				"repair_items": [
+					{
+						"items": ["iron_ingot"],
+						"repair_amount": 59
+					},
+					{
+						"items": ["zombie:jellyfish_jelly_cyst"],
+						"repair_amount": 62
+					},
+					{
+						"items": ["zombie:jellyfish_jelly_pearl"],
+						"repair_amount": 130
+					}
+				]
+			}, 
+			"minecraft:tags": {
+                "tags": [
+                   "minecraft:is_sword",
+                   "minecraft:transformable_items"
+                ]
+            },
+            "minecraft:digger": {
+                "use_efficiency": true,
+                "destroy_speeds": [
+                    { "block": "minecraft:web",          "speed": 15 },
+                    { "block": "minecraft:bamboo",          "speed": 10 },
+                    { "block": "minecraft:bamboo_sapling",  "speed": 10 }
+                ]
+            }
+        }
+    }
+}

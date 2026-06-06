@@ -1,0 +1,8 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:texture_set": {
+		"color": "jellysword_netherite",
+		"metalness_emissive_roughness": "jellysword_netherite_mer",
+		"normal": "jellysword_netherite_normal"
+	}
+}

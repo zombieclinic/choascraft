@@ -1,0 +1,8 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:texture_set": {
+		"color": "hh_chest_saddle",
+		"metalness_emissive_roughness": "hh_chest_saddle_mer",
+		"normal": "hh_chest_saddle_normal"
+	}
+}

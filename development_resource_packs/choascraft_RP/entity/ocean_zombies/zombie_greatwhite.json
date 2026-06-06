@@ -1,0 +1,36 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "zombie:zombie_greatwhite_shark",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/e/s/gw/zg/zombie_shark_great_white_texture"
+			},
+			"geometry": {
+				"default": "geometry.greatwhite"
+			},
+			"render_controllers": [
+				"controller.render.default"
+			],
+			"spawn_egg": {
+				"base_color": "#38434C",
+				"overlay_color": "#6F1414"
+			},
+			"animations": {
+				"idle": "animation.greatwhite_idle",
+				"swim": "animation.greatwhite_walk",
+				"death": "animation.greatwhite_death",
+				"bite": "animation.greatwhite_bite",
+				"contoller": "controller.animation.zombie_hammerhead"
+			},
+			"scripts": {
+				"animate": [
+					"contoller"
+				]
+			}
+		}
+	}
+}

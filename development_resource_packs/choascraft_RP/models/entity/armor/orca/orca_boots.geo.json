@@ -1,0 +1,69 @@
+{
+	"format_version": "1.16.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.orca_boots",
+				"texture_width": 32,
+				"texture_height": 32,
+				"visible_bounds_width": 3,
+				"visible_bounds_height": 2.5,
+				"visible_bounds_offset": [0, 0.75, 0]
+			},
+			"bones": [
+				{
+					"name": "leg_right",
+					"pivot": [-1.9, 12, 0]
+				},
+				{
+					"name": "boot_right",
+					"parent": "leg_right",
+					"pivot": [-1.9, 12, 0],
+					"binding": "'rightleg'",
+					"cubes": [
+						{
+							"origin": [-3.9, 0, -2],
+							"size": [4, 12, 4],
+							"inflate": 1,
+							"uv": {
+								"north": {"uv": [4, 4], "uv_size": [4, 12]},
+								"east": {"uv": [0, 4], "uv_size": [4, 12]},
+								"south": {"uv": [12, 4], "uv_size": [4, 12]},
+								"west": {"uv": [8, 4], "uv_size": [4, 12]},
+								"up": {"uv": [4, 0], "uv_size": [4, 4]},
+								"down": {"uv": [8, 4], "uv_size": [4, -4]}
+							}
+						},
+						{
+							"origin": [-4.9, -1, -7],
+							"size": [6, 1.15, 4],
+							"uv": {
+								"north": {"uv": [16, 5], "uv_size": [6, 1]},
+								"east": {"uv": [16, 5], "uv_size": [4, 1]},
+								"south": {"uv": [26, 5], "uv_size": [6, 1]},
+								"west": {"uv": [22, 5], "uv_size": [4, 1]},
+								"up": {"uv": [16, 1], "uv_size": [6, 4]},
+								"down": {"uv": [22, 5], "uv_size": [6, -4]}
+							}
+						}
+					]
+				},
+				{
+					"name": "leg_left",
+					"pivot": [1.9, 12, 0],
+					"rotation": [-0.1, 0, 0]
+				},
+				{
+					"name": "boot_left",
+					"parent": "leg_left",
+					"pivot": [1.9, 12, 0],
+					"binding": "'leftleg'",
+					"cubes": [
+						{"origin": [-0.1, 0, -2], "size": [4, 12, 4], "inflate": 1, "uv": [0, 0], "mirror": true},
+						{"origin": [-1.1, -1, -7], "size": [6, 1.15, 4], "uv": [12, 1]}
+					]
+				}
+			]
+		}
+	]
+}

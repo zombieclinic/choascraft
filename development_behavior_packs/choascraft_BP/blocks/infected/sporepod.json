@@ -1,0 +1,129 @@
+{
+  "format_version": "1.26.10",
+  "minecraft:block": {
+    "description": {
+      "identifier": "zombie:sporepod",
+      "states": {
+        "zombie:growth_stage": {
+          "values": {
+            "min": 0,
+            "max": 2
+          }
+        },
+        "zombie:sporepod_part": [
+          "bottom",
+          "middle",
+          "top"
+        ]
+      },
+      "menu_category": {
+        "category": "nature",
+        "group": "minecraft:itemGroup.name.mushroom"
+      }
+    },
+    "permutations": [
+      {
+        "condition": "query.block_state('zombie:sporepod_part') == 'bottom'",
+        "components": {
+          "minecraft:loot": "loot_tables/blocks/sporepod.json",
+          "zombie:sporepod_growth": {},
+          "minecraft:placement_filter": {
+            "conditions": [
+              {
+                "allowed_faces": [
+                  "up"
+                ],
+                "block_filter": [
+                  "zombie:infected_grass_block",
+                  "zombie:infected_dirt",
+                  "zombie:infected_gravel",
+                  "zombie:infected_sand",
+                  "zombie:infected_sporestone",
+                  "zombie:infected_stone"
+                ]
+              }
+            ]
+          },
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "sporepod_bottom",
+              "render_method": "alpha_test",
+              "face_dimming": false,
+              "ambient_occlusion": false
+            }
+          }
+        }
+      },
+      {
+        "condition": "query.block_state('zombie:sporepod_part') == 'middle'",
+        "components": {
+          "minecraft:loot": "loot_tables/blocks/empty.json",
+          "zombie:sporepod_growth": {},
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "sporepod_middle",
+              "render_method": "alpha_test",
+              "face_dimming": false,
+              "ambient_occlusion": false
+            }
+          }
+        }
+      },
+      {
+        "condition": "query.block_state('zombie:sporepod_part') == 'top'",
+        "components": {
+          "minecraft:loot": "loot_tables/blocks/empty.json",
+          "zombie:sporepod_growth": {},
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "sporepod_top",
+              "render_method": "alpha_test",
+              "face_dimming": false,
+              "ambient_occlusion": false
+            }
+          }
+        }
+      }
+    ],
+    "components": {
+      "minecraft:display_name": "tile.zombie:sporepod.name",
+      "minecraft:collision_box": false,
+      "minecraft:selection_box": true,
+      "minecraft:tick": {
+        "looping": true,
+        "interval_range": [
+          1200,
+          1200
+        ]
+      },
+      "minecraft:geometry": "geometry.zombie_abysscrossplants",
+      "minecraft:material_instances": {
+        "*": {
+          "texture": "sporepod_bottom",
+          "render_method": "alpha_test",
+          "face_dimming": false,
+          "ambient_occlusion": false
+        }
+      },
+      "minecraft:destructible_by_mining": {
+        "seconds_to_destroy": 0.0
+      },
+      "minecraft:destructible_by_explosion": {
+        "explosion_resistance": 0.0
+      },
+      "minecraft:liquid_detection": {
+        "detection_rules": [
+          {
+            "liquid_type": "water",
+            "can_contain_liquid": true,
+            "on_liquid_touches": "no_reaction"
+          }
+        ]
+      },
+      "minecraft:light_dampening": 0,
+      "minecraft:replaceable": {},
+      "tag:plant": {},
+      "tag:minecraft:crop": {}
+    }
+  }
+}

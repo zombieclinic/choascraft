@@ -1,0 +1,36 @@
+{
+	"format_version": "1.8.0",
+	"render_controllers": {
+		"controller.render.peeper": {
+			"arrays": {
+				"textures": {
+					"Array.variants": [
+						"Texture.default",
+						"Texture.blue",
+						"Texture.purple",
+						"Texture.red"
+					]
+				}
+			},
+			"geometry": "geometry.default",
+			"materials": [
+				{
+					"*": "material.default"
+				}
+			],
+			"textures": [
+				"array.variants[query.variant]"
+			],
+			"uv_anim": {
+				"offset": [
+					0,
+					"math.mod(math.floor(query.life_time*10),32)/32"
+				],
+				"scale": [
+					1,
+					0.03125
+				]
+			}
+		}
+	}
+}

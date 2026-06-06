@@ -1,0 +1,8 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:texture_set": {
+		"color": "jellyfish_chest_green",
+		"metalness_emissive_roughness": "jellyfish_chest_green_mer",
+		"normal": "jellyfish_chest_green_normal"
+	}
+}

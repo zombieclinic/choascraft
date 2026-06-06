@@ -1,0 +1,29 @@
+{
+    "format_version": "1.10.0",
+    "animation_controllers": {
+       "controller.animation.zombie_jelly_fish": {
+			"states": {
+				"default": {
+                    "animations": [
+                        "idle"
+                    ],
+					"transitions": [
+						{
+							"swim": "query.ground_speed"
+						}
+					]
+				},
+				"swim": {
+					"animations": [
+					"swim"
+					],
+					"transitions": [
+						{
+							"default": "query.all_animations_finished"
+						}
+					]
+				}
+			}
+		}
+	}
+}

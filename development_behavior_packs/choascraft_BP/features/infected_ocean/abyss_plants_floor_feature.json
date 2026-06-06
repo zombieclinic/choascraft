@@ -1,0 +1,24 @@
+{
+	"format_version": "1.16.0",
+	"minecraft:snap_to_surface_feature": {
+		"description": {
+			"identifier": "zombie:abyss_plants_floor_feature"
+		},
+		"feature_to_snap": "zombie:scatter_abyss_plants_feature",
+		"vertical_search_range": 80,
+		"surface": "floor",
+		"allow_air_placement": true,
+		"allow_underwater_placement": true,
+		"allowed_surface_blocks": [
+			{
+				"name": "zombie:infected_sand"
+			},
+			{
+				"name": "zombie:infected_gravel"
+			},
+			{
+				"name": "zombie:infected_stone"
+			}
+		]
+	}
+}

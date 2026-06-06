@@ -1,0 +1,18 @@
+{
+    "format_version": "1.26.10",
+    "minecraft:item": {
+        "description": {
+            "identifier": "zombie:peeper_purple_bucket",
+            "menu_category": {"category": "items"}
+        },
+        "components": {
+            "minecraft:icon": "zombie_peeper_purple_bucket",
+            "minecraft:display_name": {
+                "value": "Purple Peeper Bucket"
+            },
+            "minecraft:entity_placer": {
+                "entity": "zombie:peeper<zombie:bucket_purple>"
+            }
+        }
+    }
+}

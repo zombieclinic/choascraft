@@ -1,0 +1,8 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:texture_set": {
+		"color": "orcaleggings",
+		"metalness_emissive_roughness": "orcaleggings_mer",
+		"normal": "orcaleggings_normal"
+	}
+}

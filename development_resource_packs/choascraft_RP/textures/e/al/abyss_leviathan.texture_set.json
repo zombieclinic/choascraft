@@ -1,0 +1,8 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:texture_set": {
+		"color": "abyss_leviathan",
+		"metalness_emissive_roughness": "abyss_leviathan_mer",
+		"normal": "abyss_leviathan_normal"
+	}
+}

@@ -1,0 +1,18 @@
+{
+ "format_version": "1.26.10",
+ "minecraft:recipe_smithing_transform": {
+  "description": {
+    "identifier": "minecraft:smithing_netherite_crab_sword"
+   },
+  "unlock": [
+      { "item": "minecraft:iron_ingot" },
+      { "item": "zombie:crab_shell" }
+    ],
+  "tags": [ "smithing_table" ],
+  
+   "template": "minecraft:netherite_upgrade_smithing_template",
+   "base": "zombie:crab_sword",
+   "addition": "minecraft:netherite_ingot",
+   "result": "zombie:crab_netherite_sword"
+ }
+}

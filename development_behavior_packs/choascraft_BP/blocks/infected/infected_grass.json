@@ -1,0 +1,37 @@
+{
+  "format_version": "1.21.100",
+  "minecraft:block": {
+    "description": {
+      "identifier": "zombie:infected_grass_block",
+      "menu_category": {
+        "category": "construction"
+      }
+    },
+    "components": {
+      "minecraft:display_name": "Infected Grass Block",
+      "minecraft:destructible_by_mining": {
+        "seconds_to_destroy": 0.6
+      },
+      "minecraft:destructible_by_explosion": {
+        "explosion_resistance": 0.6
+      },
+      "minecraft:map_color": "#556B2F",
+      "minecraft:geometry": "minecraft:geometry.full_block",
+      "minecraft:material_instances": {
+        "*": {
+          "texture": "infected_grass_side",
+          "render_method": "opaque"
+        },
+        "up": {
+          "texture": "infected_grass_top",
+          "render_method": "opaque"
+        },
+        "down": {
+          "texture": "infected_dirt",
+          "render_method": "opaque"
+        }
+      },
+    "minecraft:redstone_conductivity": {"allows_wire_to_step_down": true, "redstone_conductor": true}
+    }
+  }
+}

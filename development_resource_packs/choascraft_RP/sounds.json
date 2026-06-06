@@ -1,0 +1,20 @@
+{
+	"individual_event_sounds" : {
+	  "events" :{}
+	}, 
+	
+	"block_sounds" : {},
+  
+	"entity_sounds": {
+	  "entities": {
+		"zombie:orca": {
+			"events": {
+				"hurt": "zombie.orca.hurt",
+				"ambient": "zombie.orca.ambient"
+			},
+			"pitch": [0.8, 1.2],
+			"volume": 1
+		}
+	  }
+	}
+  }

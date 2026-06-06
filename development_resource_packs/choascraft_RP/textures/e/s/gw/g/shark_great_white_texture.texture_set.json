@@ -1,0 +1,8 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:texture_set": {
+		"color": "shark_great_white_texture",
+		"metalness_emissive_roughness": "shark_great_white_texture_mer",
+		"normal": "shark_great_white_texture_normal"
+	}
+}

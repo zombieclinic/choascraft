@@ -1,0 +1,72 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.zombie_peeper.swim": {
+			"loop": true,
+			"animation_length": 1,
+			"bones": {
+				"body": {
+					"rotation": {
+						"0.0": [0, -3, 0],
+						"0.5": [0, 1, 0],
+						"1.0": [0, -3, 0]
+					}
+				},
+				"tail1": {
+					"rotation": {
+						"0.0": [0, 3.25, 0],
+						"0.5": [0, -4.75, 0],
+						"1.0": [0, 3.25, 0]
+					}
+				},
+				"tail2": {
+					"rotation": {
+						"0.0": [0, 6.5, 0],
+						"0.5": [0, -9.5, 0],
+						"1.0": [0, 6.5, 0]
+					}
+				},
+				"tail3": {
+					"rotation": {
+						"0.0": [0, 9, 0],
+						"0.5": [0, -10.25, 0],
+						"1.0": [0, 9, 0]
+					}
+				},
+				"tail4": {
+					"rotation": {
+						"0.0": [0, 8.75, 0],
+						"0.5": [0, -11.25, 0],
+						"1.0": [0, 8.75, 0]
+					}
+				}
+			}
+		},
+		"animation.zombie_peeper.first": {
+			"loop": true,
+			"bones": {
+				"peeper": {
+					"position": [0, 0, -1.5]
+				},
+				"fish": {
+					"rotation": [122.39936, 14.02846, -20.9057],
+					"position": [-6, 7.75, 1.425],
+					"scale": [0.4, 0.4, 0.4]
+				}
+			}
+		},
+		"animation.zombie_peeper.3rd": {
+			"loop": true,
+			"bones": {
+				"fish": {
+					"rotation": [92.5, 0, 0],
+					"position": [-6, 4.825, 0],
+					"scale": [0.4, 0.4, 0.4]
+				},
+				"peeper": {
+					"position": [0, 1.075, -0.9]
+				}
+			}
+		}
+	}
+}

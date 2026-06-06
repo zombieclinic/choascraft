@@ -1,0 +1,23 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:attachable": {
+		"description": {
+			"identifier": "zombie:orca_netherite_leggings",
+			"render_controllers": ["controller.render.armor"],
+			"materials": {
+				"default": "entity_alphatest",
+				"enchanted": "entity_alphatest_glint"
+			},
+			"textures": {
+				"default": "textures/a/o/nl/netherite_leggings",
+				"enchanted": "textures/misc/enchanted_item_glint"
+			},
+			"geometry": {
+				"default": "geometry.orcaleggings"
+			},
+			"scripts": {
+				"parent_setup": "variable.leg_layer_visible = 0.0;"
+			}
+		}
+	}
+}

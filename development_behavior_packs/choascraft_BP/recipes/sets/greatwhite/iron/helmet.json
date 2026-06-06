@@ -1,0 +1,26 @@
+{
+  "format_version": "1.26.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "zombie:greatwhite_shark_helmet_recipe"
+    },
+    "tags": [ "crafting_table" ],
+    "unlock": [
+      { "item": "minecraft:iron_ingot" },
+      { "item": "zombie:shark_tooth" }
+    ],
+    "pattern": [
+      "III",
+      "ITI",
+      "TET"
+    ],
+    "key": {
+      "I": { "item": "minecraft:iron_ingot" },
+      "T": { "item": "zombie:shark_tooth" },
+      "E": { "item": "zombie:shark_eye" }
+    },
+    "result": {
+      "item": "zombie:greatwhite_shark_helmet"
+    }
+  }
+}

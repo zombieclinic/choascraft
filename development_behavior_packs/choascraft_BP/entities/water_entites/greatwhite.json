@@ -1,0 +1,686 @@
+{
+  "format_version": "1.26.10",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "zombie:greatwhite_shark",
+      "is_spawnable": false,
+      "is_summonable": true,
+      "spawn_category": "misc"
+    },
+    "component_groups": {
+      "leashed_shark": {
+        "minecraft:persistent": {}
+      },
+      "zombie_skin": {
+        "minecraft:mark_variant": {
+          "value": 1
+        }
+      },
+      "cured_shark": {
+        "minecraft:mark_variant": {
+          "value": 0
+        }
+      },
+      "aggresive":{
+            "minecraft:behavior.nearest_attackable_target": {
+				"priority": 0,
+				"entity_types": [
+					{
+						"filters": 
+                        {
+                            "all_of": [
+                                {
+                                    "test": "is_family",
+                                    "value": "player",
+                                    "subject": "other"
+                                },
+                                {
+                                    "test": "is_riding",
+                                    "value": false,
+                                    "subject": "other"
+                                },
+                                {
+                                    "test": "rider_count",
+                                    "subject": "self",
+                                    "operator": "==",
+                                    "value": 0
+                                }
+                            ]
+                        },
+						"max_dist": 16
+					}
+				],
+				"must_see": true
+			},
+            "minecraft:behavior.melee_attack": {
+                "melee_fov": 90,
+                "track_target": false,
+                "random_stop_interval": 0,
+                "reach_multiplier": 2,
+                "attack_once": false,
+                "require_complete_path": false,
+                "cooldown_time": 2
+            }
+      },
+      "wild_shark": {
+        "minecraft:behavior.mount_pathing": {
+          "priority": 0,
+          "speed_multiplier": 1.5,
+          "target_dist": 0.0,
+          "track_target": true
+        },
+        "minecraft:variant": {
+          "value": 0
+        },
+        "minecraft:behavior.hurt_by_target": {
+          "priority": 1
+        },
+        "minecraft:behavior.run_around_like_crazy": {
+          "priority": 2,
+          "speed_multiplier": 1.2
+        },
+        "minecraft:rideable": {
+          "seat_count": 1,
+          "crouching_skip_interact": true,
+          "family_types": [
+            "player",
+            "undead"
+          ],
+          "pull_in_entities": true,
+          "rider_can_interact": false,
+          "interact_text": "action.interact.ride.shark",
+          "seats": {
+            "position": [
+              0,
+              1,
+              0.3
+            ]
+          }
+        },
+        "minecraft:tamemount": {
+          "min_temper": 0,
+          "max_temper": 100,
+          "feed_text": "action.interact.feed",
+          "ride_text": "action.interact.mount",
+          "feed_items": [
+            {
+              "item": "tropical_fish",
+              "temper_mod": 3
+            },
+            {
+              "item": "cod",
+              "temper_mod": 3
+            },
+            {
+              "item": "salmon",
+              "temper_mod": 3
+            }
+          ],
+          "auto_reject_items": [
+            {
+              "item": "pufferfish"
+            },
+            {
+              "item": "saddle"
+            }
+          ],
+          "tame_event": {
+            "event": "shark:on_tame",
+            "target": "self"
+          }
+        }
+      },
+      "tamed_shark": {
+        "minecraft:behavior.breed": {
+					"priority": 1,
+					"speed_multiplier": 1
+				},
+        "minecraft:breedable": {
+              "require_tame": false,
+              "breeds_with": {
+                  "zombie:greatwhite_shark": {
+                      "baby_type": "zombie:greatwhite_shark",
+                      "breed_event": {
+                          "event": "minecraft:entity_born",
+                          "target": "baby"
+                      }
+                  }
+              },
+              "breed_items": [
+                  "minecraft:salmon"
+              ]
+          },
+        "minecraft:interact": {
+          "interactions": [
+            {
+              "play_sounds": "armor.equip_generic",
+              "on_interact": {
+                "filters": {
+                  "all_of": [
+                    {
+                      "test": "is_family",
+                      "subject": "other",
+                      "value": "player"
+                    },
+                    {
+                      "test": "has_equipment",
+                      "domain": "hand",
+                      "subject": "other",
+                      "value": "chest"
+                    }
+                  ]
+                },
+                "event": "chested",
+                "target": "self"
+              },
+              "use_item": true,
+              "interact_text": "action.interact.attachchest"
+            },
+            {
+              "play_sounds": "converted_to_zombified",
+              "use_item": true,
+              "on_interact": {
+                "filters": {
+                  "all_of": [
+                    {
+                      "test": "is_family",
+                      "subject": "other",
+                      "value": "player"
+                    },
+                    {
+                      "test": "has_equipment",
+                      "domain": "hand",
+                      "subject": "other",
+                      "value": "zombie:zombie_vial"
+                    }
+                  ]
+                },
+                "event": "zombie_skin",
+                "target": "self"
+              }
+            },
+             {
+              "play_sounds": "converted_to_zombified",
+              "use_item": true,
+              "on_interact": {
+                "filters": {
+                  "all_of": [
+                    {
+                      "test": "is_family",
+                      "subject": "other",
+                      "value": "player"
+                    },
+                    {
+                      "test": "has_equipment",
+                      "domain": "hand",
+                      "subject": "other",
+                      "value": "minecraft:golden_apple"
+                    }
+                  ]
+                },
+                "event": "cure_zombie",
+                "target": "self"
+              }
+            }
+          ]
+        },
+        "minecraft:equippable": {
+          "slots": [
+            {
+              "slot": 0,
+              "item": "saddle",
+              "accepted_items": [
+                "saddle"
+              ],
+              "on_equip": {
+                "event": "saddled"
+              },
+              "on_unequip": {
+                "event": "unsaddled"
+              }
+            }
+          ]
+        },
+        "minecraft:is_tamed": {},
+        "minecraft:rideable": {
+          "seat_count": 1,
+          "crouching_skip_interact": true,
+          "rider_can_interact": true,
+          "family_types": [
+            "player"
+          ],
+          "interact_text": "action.interact.ride.Shark",
+          "seats": {
+            "position": [
+              0,
+              1,
+              0.3
+            ]
+          }
+        },
+        "minecraft:behavior.player_ride_tamed": {}
+      },
+      "unsaddled_shark": {
+        "minecraft:variant": {
+          "value": 0
+        }
+      },
+      "saddled_shark": {
+        "minecraft:variant": {
+          "value": 1
+        },
+        "minecraft:mob_effect": {
+          "ambient": true,
+          "mob_effect": "water_breathing",
+          "effect_range": 3,
+          "cooldown_time": 10,
+          "effect_time": 10
+        },
+        "minecraft:free_camera_controlled": {
+          "strafe_speed_modifier": 1.0,
+          "backwards_movement_modifier": 0.5
+        },
+        "minecraft:vertical_movement_action": {
+          "vertical_velocity": 0.5
+        }
+      },
+      "unchested_shark": {
+        "minecraft:skin_id": {
+          "value": 0
+        }
+      },
+      "chested_shark": {
+        "minecraft:skin_id": {
+          "value": 1
+        },
+        "minecraft:is_chested": {}
+      },
+      "baby_shark": {
+        "minecraft:attack": {
+          "damage": 3
+        },
+        "minecraft:scale_by_age": {
+          "end_scale": 2,
+          "start_scale": 0.25
+        },
+        "minecraft:health": {
+          "value": 10,
+          "max": 10
+        },
+        "minecraft:behavior.follow_parent": {
+          "priority": 0
+        },
+        "minecraft:ageable": {
+          "duration": 2400,
+          "feed_items": [
+            "salmon",
+            "cod",
+            "tropical_fish"
+          ],
+          "grow_up": {
+            "event": "shark_growup",
+            "target": "self"
+          }
+        }
+      },
+      "adult_shark": {
+        "minecraft:attack": {
+          "damage": 8
+        },
+        "minecraft:health": {
+          "value": 60,
+          "max": 60
+        },
+        "minecraft:scale": {
+          "value": 2
+        }
+      }
+    },
+    "components": {
+      "minecraft:is_hidden_when_invisible": {},
+      "minecraft:loot": {
+        "table": "loot_tables/entities/shark/greatwhite.json"
+      },
+      "minecraft:breathable": {
+        "total_supply": 15,
+        "suffocate_time": -20,
+        "inhale_time": 0,
+        "breathes_air": false,
+        "breathes_water": true,
+        "breathes_lava": false,
+        "generates_bubbles": true
+      },
+      
+      "minecraft:behavior.melee_box_attack": {
+        "can_spread_on_fire": true,
+        "priority": 3
+      },
+      "minecraft:behavior.swim_wander": {
+        "interval": 0.00833,
+        "look_ahead": 3,
+        "priority": 0,
+        "speed_multiplier": 1.5,
+        "wander_time": 60
+      },
+      "minecraft:behavior.random_swim": {
+        "priority": 3,
+        "speed_multiplier": 1,
+        "xz_dist": 32,
+        "y_dist": 8,
+        "interval": 60
+      },
+      "minecraft:navigation.generic": {
+        "is_amphibious": true,
+        "can_path_over_water": false,
+        "can_swim": true,
+        "can_walk": false,
+        "can_breach": true,
+        "can_sink": false
+      },
+      "minecraft:behavior.random_breach": {
+        "priority": 6,
+        "interval": 50,
+        "xz_dist": 10,
+        "y_dist": 7,
+        "cooldown_time": 2
+      },
+      "minecraft:inventory": {
+        "container_type": "horse",
+        "private": false,
+        "can_be_siphoned_from": false,
+        "inventory_size": 16,
+        "restrict_to_owner": false
+      },
+      "minecraft:nameable": {
+        "allow_name_tag_renaming": true,
+        "always_show": false
+      },
+      "minecraft:type_family": {
+        "family": [
+          "shark",
+          "mob",
+          "whale",
+          "aquatic"
+        ]
+      },
+      "minecraft:collision_box": {
+        "width": 4,
+        "height": 1
+      },
+      "minecraft:hurt_on_condition": {
+        "damage_conditions": [
+          {
+            "filters": {
+              "test": "in_lava",
+              "subject": "self",
+              "operator": "==",
+              "value": true
+            },
+            "cause": "lava",
+            "damage_per_tick": 4
+          }
+        ]
+      },
+      "minecraft:follow_range": {
+        "value": 48,
+        "max": 48
+      },
+      "minecraft:experience_reward": {
+        "on_death": "!query.is_baby && query.last_hit_by_player ? Math.Random(1,10) : 0"
+      },
+      "minecraft:behavior.swim_idle": {
+        "priority": 5,
+        "idle_time": 5,
+        "success_rate": 0.1
+      },
+      "minecraft:movement.sway": {
+        "sway_amplitude": 0.05,
+        "sway_frequency": 0.5,
+        "max_turn": 30
+      },
+      "minecraft:underwater_movement": {
+        "value": 0.1
+      },
+      "minecraft:jump.static": {
+        "jump_power": 0.25
+      },
+      "minecraft:despawn": {
+        "despawn_from_distance": {}
+      },
+      "minecraft:behavior.avoid_mob_type": {
+        "priority": 2,
+        "entity_types": [
+          {
+            "filters": {
+              "any_of": [
+                {
+                  "test": "is_family",
+                  "subject": "other",
+                  "value": "guardian_elder"
+                },
+                {
+                  "test": "is_family",
+                  "subject": "other",
+                  "value": "guardian"
+                }
+              ]
+            },
+            "max_dist": 8,
+            "walk_speed_multiplier": 1,
+            "sprint_speed_multiplier": 1
+          }
+        ],
+        "probability_per_strength": 0.14
+      },
+      "minecraft:behavior.move_to_water": {
+        "priority": 0,
+        "search_range": 15,
+        "search_height": 5
+      },
+      "minecraft:behavior.hurt_by_target": {
+        "priority": 1
+      },
+      "minecraft:flocking": {
+        "in_water": true,
+        "match_variants": false,
+        "use_center_of_mass": true,
+        "low_flock_limit": 2,
+        "high_flock_limit": 5,
+        "goal_weight": 1.5,
+        "loner_chance": 0.15,
+        "influence_radius": 14,
+        "separation_weight": 2.4,
+        "separation_threshold": 4.5,
+        "cohesion_weight": 1.2,
+        "cohesion_threshold": 10,
+        "innner_cohesion_threshold": 5,
+        "breach_influence": 0.25,
+        "min_height": 2,
+        "max_height": 18,
+        "block_distance": 3,
+        "block_weight": 1.5
+      },
+      "minecraft:physics": {
+        "has_collision": true,
+        "has_gravity": true,
+        "push_towards_closest_space": true
+      },
+      "minecraft:leashable": {
+         "can_be_cut": true,
+          "can_be_stolen": true,
+        "on_leash": {
+          "event": "shark_leashed",
+          "target": "self"
+        },
+        "on_unleash": {
+          "event": "shark_unleashed",
+          "target": "self"
+        },
+        "on_unleash_interact_only": false,
+        "presets": [
+          {
+            "soft_distance": 8,
+            "hard_distance": 14,
+            "max_distance": 22,
+            "spring_type": "quad_dampened"
+          }
+        ]
+      },
+      "minecraft:conditional_bandwidth_optimization": {},
+      "minecraft:healable": {
+        "force_use": false,
+        "items": [
+          {
+            "item": "cod",
+            "heal_amount": 30
+          },
+          {
+            "heal_amount": 30,
+            "item": "salmon"
+          },
+          {
+            "heal_amount": 30,
+            "item": "tropical_fish"
+          }
+        ]
+      }
+    },
+    "events": {
+      "minecraft:entity_spawned": {
+        "randomize": [
+          {
+            "weight": 19,
+            "add": {
+              "component_groups": [
+                "wild_shark",
+                "adult_shark"
+              ]
+            }
+          },
+          {
+            "weight": 1,
+            "add": {
+              "component_groups": [
+                "wild_shark",
+                "adult_shark",
+                "aggresive"
+              ]
+            }
+          }
+        ]
+      },
+      "shark_growup": {
+        "remove": {
+          "component_groups": [
+            "baby_shark"
+          ]
+        },
+        "add": {
+          "component_groups": [
+            "adult_shark",
+            "wild_shark"
+          ]
+        }
+      },
+      "shark:on_tame": {
+        "remove": {
+          "component_groups": [
+            "wild_shark",
+            "aggresive"
+          ]
+        },
+        "add": {
+          "component_groups": [
+            "tamed_shark"
+          ]
+        }
+      },
+      "saddled": {
+        "add": {
+          "component_groups": [
+            "saddled_shark"
+          ]
+        },
+        "remove": {
+          "component_groups": [
+            "unsaddled_shark"
+          ]
+        }
+      },
+      "unsaddled": {
+        "add": {
+          "component_groups": [
+            "unsaddled_shark"
+          ]
+        },
+        "remove": {
+          "component_groups": [
+            "saddled_shark"
+          ]
+        }
+      },
+      "chested": {
+        "add": {
+          "component_groups": [
+            "chested_shark"
+          ]
+        },
+        "remove": {
+          "component_groups": [
+            "unchested_shark"
+          ]
+        }
+      },
+      "unchested": {
+        "remove": {
+          "component_groups": [
+            "chested_shark"
+          ]
+        },
+        "add": {
+          "component_groups": [
+            "unchested_shark"
+          ]
+        }
+      },
+      "shark_leashed": {
+        "add": {
+          "component_groups": [
+            "leashed_shark"
+          ]
+        }
+      },
+      "shark_unleashed": {
+        "remove": {
+          "component_groups": [
+            "leashed_shark"
+          ]
+        }
+      },
+      "zombie_skin": {
+        "remove": {
+          "component_groups": [
+            "cured_shark"
+          ]
+        },
+        "add": {
+          "component_groups": [
+            "zombie_skin"
+          ]
+        }
+      },
+      "cure_zombie": {
+        "remove": {
+          "component_groups": [
+            "zombie_skin"
+          ]
+        },
+        "add": {
+          "component_groups": [
+            "cured_shark"
+          ]
+        }
+      }
+    }
+  }
+}

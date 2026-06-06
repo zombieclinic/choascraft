@@ -1,0 +1,37 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "zombie:king_penguin",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/e/pg/k/king_penguin",
+				"hunt": "textures/e/pg/kh/king_penguin_huntmode"
+			},
+			"geometry": {
+				"default": "geometry.zombie.king_penguin"
+			},
+			"render_controllers": [
+				"controller.render.king_penguin"
+			],
+			"spawn_egg": {
+				"base_color": "#1B1D22",
+				"overlay_color": "#F2B447"
+			},
+			"animations": {
+				"idle": "animation.zombie.king_penguin.idle",
+				"walk": "animation.zombie.king_penguin.walk",
+				"swim": "animation.zombie.king_penguin.swim",
+				"sitting": "animation.zombie.king_penguin.sit",
+				"controller": "controller.animation.zombie.king_penguin"
+			},
+			"scripts": {
+				"animate": [
+					"controller"
+				]
+			}
+		}
+	}
+}

@@ -1,0 +1,8 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:texture_set": {
+		"color": "peeper",
+		"metalness_emissive_roughness": "peeper_mer",
+		"normal": "peeper_normal"
+	}
+}

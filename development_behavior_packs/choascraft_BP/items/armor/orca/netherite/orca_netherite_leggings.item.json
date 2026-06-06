@@ -1,0 +1,51 @@
+{
+	"format_version": "1.20.50",
+	"minecraft:item": {
+		"description": {
+			"identifier": "zombie:orca_netherite_leggings",
+			"menu_category": {
+				"category": "equipment",
+				"group": "itemGroup.name.leggings"
+			}
+		},
+		"components": {
+			"minecraft:display_name": {
+				"value": "Orca Netherite Leggings"
+			},
+			"minecraft:max_stack_size": 1,
+			"minecraft:icon": "zombie_orca_netherite_leggings",
+			"minecraft:wearable": {
+				"slot": "slot.armor.legs",
+				"protection": 6
+			},
+			"minecraft:enchantable": {
+				"slot": "armor_legs",
+				"value": 14
+			},
+			"minecraft:durability": {
+				"max_durability": 344,
+				 "damage_chance": {
+					"min": 20,
+					"max": 100
+				}
+			},
+			"minecraft:damage_absorption": {"absorbable_causes": ["drowning"]},
+			"minecraft:repairable": {
+				"repair_items": [
+					{
+						"items": ["iron_ingot"],
+						"repair_amount": 61
+					},
+					{
+						"items": ["zombie:orca_shard"],
+						"repair_amount": 62
+					},
+					{
+						"items": ["zombie:orca_core"],
+						"repair_amount": 130
+					}
+				]
+			}
+		}
+	}
+}

@@ -1,0 +1,8 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:texture_set": {
+		"color": "infected_teeth",
+		"metalness_emissive_roughness": "infected_teeth_mer",
+		"normal": "infected_teeth_normal"
+	}
+}

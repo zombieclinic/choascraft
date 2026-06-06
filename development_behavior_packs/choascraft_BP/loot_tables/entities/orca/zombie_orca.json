@@ -1,0 +1,88 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "zombie:orca_bone",
+          "weight": 10
+        },
+        {
+          "type": "item",
+          "name": "zombie:orca_meat",
+          "weight": 10
+        },
+        {
+          "type": "item",
+          "name": "zombie:orca_tooth",
+          "weight": 10
+        },
+        {
+          "type": "item",
+          "name": "zombie:orca_blubber_rotten",
+          "weight": 4
+        },
+        {
+          "type": "item",
+          "name": "zombie:orca_shard",
+          "weight": 4
+        },
+        {
+          "type": "item",
+          "name": "zombie:orca_heart",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:written_book",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "set_book_contents",
+              "author": "Choascraft",
+              "title": "The Orca Book",
+              "pages": [
+                "The Orca Book\n\nA Choascraft guide for orca facts, ocean keeping, riding, storage, breeding, and gear.",
+                "Fact 1\n\nOrcas are dolphins. They are the largest members of the dolphin family.",
+                "Fact 2\n\nOrcas live in oceans around the world, from cold polar water to warmer seas.",
+                "Fact 3\n\nTheir black and white colors help with countershading, making them harder to spot from above or below.",
+                "Fact 4\n\nOrcas are apex predators. They can hunt fish, squid, seals, sharks, and other ocean animals.",
+                "Fact 5\n\nMany orcas live in social pods with strong family bonds and learned hunting traditions.",
+                "Fact 6\n\nOrcas communicate with clicks, whistles, and calls. Some groups have their own dialects.",
+                "Fact 7\n\nEcholocation helps orcas find prey and navigate when water is dark or murky.",
+                "Fact 8\n\nYoung orcas learn from adults, including where to travel and how to hunt.",
+                "Fact 9\n\nA tall dorsal fin helps stabilize an orca while swimming.",
+                "Fact 10\n\nOrcas breathe air, so even ocean hunters must return to the surface.",
+                "Fact 11\n\nOrcas can travel long distances and may change areas when food becomes scarce.",
+                "Fact 12\n\nHealthy orca populations are tied to healthy oceans and enough prey.",
+                "Choascraft Orcas\n\nOrcas spawn underwater in ocean biomes in small pods. They swim, flock, breach, and wander through deep water.",
+                "Wild Behavior\n\nWild orcas can be leashed and ridden while untamed, but they are not fully controlled until tamed.",
+                "Taming\n\nTame orcas with cod, salmon, or tropical fish. Tamed orcas become safer companions.",
+                "Healing\n\nOrcas can be healed with cod, salmon, and tropical fish.",
+                "Saddles\n\nUse a saddle on a tamed orca to make it ride-ready. Sneak or interact to manage saddle and chest actions.",
+                "Riding\n\nA saddled tamed orca can be ridden and controlled by its owner.",
+                "Water Breathing\n\nA saddled orca gives water breathing while mounted, making long ocean travel easier.",
+                "Storage\n\nUse a chest on a tamed orca to give it inventory space for ocean trips.",
+                "Breeding\n\nTamed orcas breed with salmon. Baby orcas grow over time and follow their parents.",
+                "Babies\n\nBaby orcas are smaller, weaker, and grow with age until they reach full size.",
+                "Drops\n\nOrcas can drop Orca Bone, Orca Meat, Orca Tooth, Orca Blubber, Orca Shard, and the rare Orca Heart.",
+                "Zombie Orcas\n\nZombie orcas use the same general drop set, but Rotten Orca Blubber replaces normal blubber.",
+                "Oil Recipe\n\nUse a brewing stand:\nInput: Bucket\nReagent: Orca Blubber\nResult: Bucket of Oil",
+                "Orca Core\n\nCraft an Orca Core with:\nShard - Heart - Shard\n\nThis core is used in orca gear recipes.",
+                "Crafting Key\n\nI = Iron Ingot\nT = Orca Tooth\nS = Orca Shard\nC = Orca Core\nB = Orca Bone\nH = Orca Heart",
+                "Orca Sword\n\nPattern:\n.T.\nSIC\n.B.\n\nResult: Orca Sword",
+                "Orca Helmet\n\nPattern:\nIII\nISI\nSHS\n\nResult: Orca Helmet",
+                "Orca Chestplate\n\nPattern:\nIHI\nSCS\nIII\n\nResult: Orca Chestplate",
+                "Orca Leggings\n\nPattern:\nIII\nIHI\nISI\n\nResult: Orca Leggings",
+                "Orca Boots\n\nPattern:\nISI\nISI\nIHI\n\nResult: Orca Boots",
+                "Netherite Orca Gear\n\nUse a smithing table with orca gear and a netherite ingot.",
+                "Keeper Note\n\nFeed it, saddle it, chest it, and respect the pod. The ocean is friendlier with a trained orca."
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

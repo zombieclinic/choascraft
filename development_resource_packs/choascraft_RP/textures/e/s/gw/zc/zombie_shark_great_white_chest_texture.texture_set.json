@@ -1,0 +1,8 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:texture_set": {
+		"color": "zombie_shark_great_white_chest_texture",
+		"metalness_emissive_roughness": "zombie_shark_great_white_chest_texture_mer",
+		"normal": "zombie_shark_great_white_chest_texture_normal"
+	}
+}

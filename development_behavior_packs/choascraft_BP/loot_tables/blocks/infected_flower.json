@@ -1,0 +1,124 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "conditions": [
+        {
+          "condition": "random_chance",
+          "chance": 0.35
+        }
+      ],
+      "entries": [
+        {
+          "type": "item",
+          "name": "zombie:infected_eye",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "conditions": [
+        {
+          "condition": "match_tool",
+          "enchantments": [
+            {
+              "enchantment": "looting",
+              "levels": {
+                "range_min": 1,
+                "range_max": 3
+              }
+            }
+          ]
+        },
+        {
+          "condition": "random_chance",
+          "chance": 0.35
+        }
+      ],
+      "entries": [
+        {
+          "type": "item",
+          "name": "zombie:infected_eye",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "conditions": [
+        {
+          "condition": "match_tool",
+          "enchantments": [
+            {
+              "enchantment": "looting",
+              "levels": {
+                "range_min": 2,
+                "range_max": 3
+              }
+            }
+          ]
+        },
+        {
+          "condition": "random_chance",
+          "chance": 0.25
+        }
+      ],
+      "entries": [
+        {
+          "type": "item",
+          "name": "zombie:infected_eye",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "conditions": [
+        {
+          "condition": "match_tool",
+          "enchantments": [
+            {
+              "enchantment": "looting",
+              "levels": {
+                "range_min": 3,
+                "range_max": 3
+              }
+            }
+          ]
+        },
+        {
+          "condition": "random_chance",
+          "chance": 0.15
+        }
+      ],
+      "entries": [
+        {
+          "type": "item",
+          "name": "zombie:infected_eye",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

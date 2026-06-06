@@ -1,0 +1,8 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:texture_set": {
+		"color": "jellyfish_boots_green",
+		"metalness_emissive_roughness": "jellyfish_boots_green_mer",
+		"normal": "jellyfish_boots_green_normal"
+	}
+}

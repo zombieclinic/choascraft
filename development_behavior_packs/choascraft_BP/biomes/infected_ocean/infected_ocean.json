@@ -1,0 +1,62 @@
+{
+	"format_version": "1.26.20",
+	"minecraft:biome": {
+		"description": {
+			"identifier": "zombie:infected_ocean"
+		},
+		"components": {
+			"minecraft:climate": {
+				"downfall": 0.8,
+				"snow_accumulation": [
+					0.0,
+					0.0
+				],
+				"temperature": 0.55
+			},
+			"minecraft:overworld_height": {
+				"noise_type": "deep_ocean"
+			},
+			"minecraft:map_tints": {
+				"grass": {
+					"type": "tint",
+					"tint": "#821295"
+				},
+				"foliage": "#5d1766"
+			},
+			"minecraft:replace_biomes": {
+				"replacements": [
+					{
+						"dimension": "minecraft:overworld",
+						"targets": [
+							"minecraft:deep_ocean",
+							"minecraft:deep_lukewarm_ocean",
+							"minecraft:deep_warm_ocean"
+						],
+						"amount": 1,
+						"noise_frequency_scale": 0.025
+					}
+				]
+			},
+			"minecraft:surface_builder": {
+				"builder": {
+					"type": "minecraft:overworld",
+					"sea_floor_depth": 0,
+					"sea_floor_material": "zombie:infected_gravel",
+					"foundation_material": "zombie:infected_stone",
+					"mid_material": "zombie:infected_sand",
+					"top_material": "zombie:infected_sand",
+					"sea_material": "minecraft:water"
+				}
+			},
+			"minecraft:tags": {
+				"tags": [
+					"deep",
+					"infected_ocean",
+					"monster",
+					"spawns_more_frequent_drowned",
+					"spawns_reduced_water_ambient_mobs"
+				]
+			}
+		}
+	}
+}

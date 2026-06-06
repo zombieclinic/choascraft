@@ -1,0 +1,27 @@
+{
+	"format_version": "1.8.0",
+	"render_controllers": {
+		"controller.render.jelly_fish": {
+			"geometry": "geometry.default",
+			"materials": [
+				{
+					"*": "material.default",
+                    "*head" : "material.head"
+				}
+			],
+			"textures": [
+				"texture.default"
+			],
+			"uv_anim": {
+				"offset": [
+					0,
+					"math.mod(math.floor(query.life_time*10),32)/32"
+				],
+				"scale": [
+					1,
+					0.03125
+				]
+			}
+		}
+	}
+}

@@ -1,0 +1,63 @@
+{
+	"format_version": "1.20.50",
+	"minecraft:item": {
+		"description": {
+			"identifier": "zombie:jellyfish_netherite_black_chest",
+			"menu_category": {
+				"category": "equipment",
+				"group": "itemGroup.name.chestplate"
+			}
+		},
+		"components": {
+			"minecraft:display_name": {
+				"value": "Netherite Black Jellyfish Chestplate"
+			},
+			"minecraft:damage_absorption": {
+				"absorbable_causes": ["drowning"]
+			},
+			"minecraft:max_stack_size": 1,
+			"minecraft:icon": "zombie_jellyfish_netherite_black_chest",
+			"minecraft:wearable": {
+				"slot": "slot.armor.chest",
+				"protection": 8
+			},
+			"minecraft:enchantable": {
+				"slot": "armor_torso",
+				"value": 14
+			},
+			"minecraft:durability": {
+				"max_durability": 359,
+				"damage_chance": {
+					"min": 20,
+					"max": 100
+				}
+			},
+			"minecraft:tags": {
+				"tags": [
+					"minecraft:transformable_items",
+					"minecraft:is_armor"
+				]
+			},
+			"minecraft:repairable": {
+				"repair_items": [
+					{
+						"items": ["iron_ingot"],
+						"repair_amount": 62
+					},
+					{
+						"items": ["zombie:jellyfish_jelly_black"],
+						"repair_amount": 62
+					},
+					{
+						"items": ["zombie:jellyfish_jelly_pearl"],
+						"repair_amount": 130
+					},
+					{
+						"items": ["zombie:jellyfish_jelly_cyst"],
+						"repair_amount": 130
+					}
+				]
+			}
+		}
+	}
+}

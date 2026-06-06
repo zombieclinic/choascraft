@@ -1,0 +1,26 @@
+{
+  "format_version": "1.21.100",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "zombie:orca_helmet_recipe"
+    },
+    "tags": [ "crafting_table" ],
+    "unlock": [
+      { "item": "minecraft:iron_ingot" },
+      { "item": "zombie:orca_tooth" }
+    ],
+    "pattern": [
+      "III",
+      "ITI",
+      "TJT"
+    ],
+    "key": {
+      "I": { "item": "minecraft:iron_ingot" },
+      "T": { "item": "zombie:orca_shard" },
+      "J": { "item": "zombie:orca_heart" }
+    },
+    "result": {
+      "item": "zombie:orca_helmet"
+    }
+  }
+}

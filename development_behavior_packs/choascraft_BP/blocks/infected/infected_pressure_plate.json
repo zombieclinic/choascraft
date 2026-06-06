@@ -1,0 +1,165 @@
+{
+	"format_version": "1.26.10",
+	"minecraft:block": {
+		"description": {
+			"identifier": "zombie:infected_pressure_plate",
+			"menu_category": {
+				"category": "construction",
+				"group": "minecraft:itemGroup.name.pressurePlate"
+			},
+			"traits": {
+				"minecraft:placement_direction": {
+					"enabled_states": [
+						"minecraft:cardinal_direction"
+					]
+				}
+			},
+			"states": {
+				"zombie:powered": [
+					false,
+					true
+				]
+			}
+		},
+		"components": {
+			"minecraft:display_name": "tile.zombie:infected_pressure_plate.name",
+			"minecraft:geometry": {
+				"identifier": "geometry.zcpressureplate",
+				"bone_visibility": {
+					"plate_off": "!q.block_state('zombie:powered')",
+					"plate_on": "q.block_state('zombie:powered')"
+				}
+			},
+			"minecraft:item_visual": {
+				"geometry": {
+					"identifier": "geometry.zcpressureplate",
+					"bone_visibility": {
+						"plate_off": true,
+						"plate_on": false
+					}
+				},
+				"material_instances": {
+					"*": {
+						"texture": "infected_planks",
+						"render_method": "opaque"
+					}
+				}
+			},
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "infected_planks",
+					"render_method": "opaque"
+				}
+			},
+			"minecraft:selection_box": {
+				"origin": [
+					-7,
+					0,
+					-7
+				],
+				"size": [
+					14,
+					1,
+					14
+				]
+			},
+			"minecraft:collision_box": {
+				"origin": [
+					-7,
+					0,
+					-7
+				],
+				"size": [
+					14,
+					1,
+					14
+				]
+			},
+			"minecraft:destructible_by_mining": {
+				"seconds_to_destroy": 0.5
+			},
+			"minecraft:destructible_by_explosion": {
+				"explosion_resistance": 0.5
+			},
+			"minecraft:flammable": {
+				"catch_chance_modifier": 5,
+				"destroy_chance_modifier": 20
+			},
+			"tag:minecraft:is_axe_item_destructible": {},
+			"tag:wood": {},
+			"zc:pressureplate": {
+				"block_state": "zombie:powered"
+			},
+			"minecraft:tick": {
+				"interval_range": [2,3],
+				"looping": true
+			}
+		},
+		"permutations": [
+			{
+				"condition": "!q.block_state('zombie:powered') && q.block_state('minecraft:cardinal_direction') == 'north'",
+				"components": {
+					"minecraft:transformation": { "rotation": [0, 0, 0] },
+					"minecraft:selection_box": { "origin": [-7, 0, -7], "size": [14, 1, 14] },
+					"minecraft:redstone_producer": { "power": 0, "strongly_powered_face": "down" }
+				}
+			},
+			{
+				"condition": "!q.block_state('zombie:powered') && q.block_state('minecraft:cardinal_direction') == 'south'",
+				"components": {
+					"minecraft:transformation": { "rotation": [0, 180, 0] },
+					"minecraft:selection_box": { "origin": [-7, 0, -7], "size": [14, 1, 14] },
+					"minecraft:redstone_producer": { "power": 0, "strongly_powered_face": "down" }
+				}
+			},
+			{
+				"condition": "!q.block_state('zombie:powered') && q.block_state('minecraft:cardinal_direction') == 'east'",
+				"components": {
+					"minecraft:transformation": { "rotation": [0, 90, 0] },
+					"minecraft:selection_box": { "origin": [-7, 0, -7], "size": [14, 1, 14] },
+					"minecraft:redstone_producer": { "power": 0, "strongly_powered_face": "down" }
+				}
+			},
+			{
+				"condition": "!q.block_state('zombie:powered') && q.block_state('minecraft:cardinal_direction') == 'west'",
+				"components": {
+					"minecraft:transformation": { "rotation": [0, 270, 0] },
+					"minecraft:selection_box": { "origin": [-7, 0, -7], "size": [14, 1, 14] },
+					"minecraft:redstone_producer": { "power": 0, "strongly_powered_face": "down" }
+				}
+			},
+			{
+				"condition": "q.block_state('zombie:powered') && q.block_state('minecraft:cardinal_direction') == 'north'",
+				"components": {
+					"minecraft:transformation": { "rotation": [0, 0, 0] },
+					"minecraft:selection_box": { "origin": [-7, 0, -7], "size": [14, 0.5, 14] },
+					"minecraft:redstone_producer": { "power": 15, "strongly_powered_face": "down" }
+				}
+			},
+			{
+				"condition": "q.block_state('zombie:powered') && q.block_state('minecraft:cardinal_direction') == 'south'",
+				"components": {
+					"minecraft:transformation": { "rotation": [0, 180, 0] },
+					"minecraft:selection_box": { "origin": [-7, 0, -7], "size": [14, 0.5, 14] },
+					"minecraft:redstone_producer": { "power": 15, "strongly_powered_face": "down" }
+				}
+			},
+			{
+				"condition": "q.block_state('zombie:powered') && q.block_state('minecraft:cardinal_direction') == 'east'",
+				"components": {
+					"minecraft:transformation": { "rotation": [0, 90, 0] },
+					"minecraft:selection_box": { "origin": [-7, 0, -7], "size": [14, 0.5, 14] },
+					"minecraft:redstone_producer": { "power": 15, "strongly_powered_face": "down" }
+				}
+			},
+			{
+				"condition": "q.block_state('zombie:powered') && q.block_state('minecraft:cardinal_direction') == 'west'",
+				"components": {
+					"minecraft:transformation": { "rotation": [0, 270, 0] },
+					"minecraft:selection_box": { "origin": [-7, 0, -7], "size": [14, 0.5, 14] },
+					"minecraft:redstone_producer": { "power": 15, "strongly_powered_face": "down" }
+				}
+			}
+		]
+	}
+}

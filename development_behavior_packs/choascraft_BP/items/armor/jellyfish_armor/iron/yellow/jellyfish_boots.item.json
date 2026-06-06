@@ -1,0 +1,48 @@
+{
+	"format_version": "1.20.50",
+	"minecraft:item": {
+		"description": {
+			"identifier": "zombie:jellyfish_yellow_boots",
+			"menu_category": {
+				"category": "equipment",
+				"group": "itemGroup.name.boots"
+			}
+		},
+		"components": {
+			"minecraft:display_name": {
+				"value": "Yellow Jellyfish Boots"
+			},
+			"minecraft:tags": {
+				"tags": [
+					"minecraft:transformable_items",
+					"minecraft:is_armor"
+				]
+			},
+			"minecraft:max_stack_size": 1,
+			"minecraft:icon": "zombie_jellyfish_yellow_boots",
+			"minecraft:wearable": {
+				"slot": "slot.armor.feet",
+				"protection": 2
+			},
+			"minecraft:enchantable": {
+				"slot": "armor_feet",
+				"value": 15
+			},
+			"minecraft:durability": {
+				"max_durability": 251,
+				 "damage_chance": {
+					"min": 20,
+					"max": 100
+				}
+			},
+			"minecraft:repairable": {
+				"repair_items": [
+					{
+						"items": ["iron_ingot"],
+						"repair_amount": 62
+					}
+				]
+			}
+		}
+	}
+}

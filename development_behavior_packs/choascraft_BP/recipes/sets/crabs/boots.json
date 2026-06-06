@@ -1,0 +1,26 @@
+{
+  "format_version": "1.21.100",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "zombie:crab_boots_recipe"
+    },
+    "tags": [ "crafting_table" ],
+    "unlock": [
+      { "item": "minecraft:iron_ingot" },
+      { "item": "zombie:crab_shell" }
+    ],
+    "pattern": [
+      "IBI",
+      "IBI",
+      "IJI"
+    ],
+    "key": {
+      "I": { "item": "minecraft:iron_ingot" },
+      "B": { "item": "zombie:crab_shell" },
+      "J": { "item": "zombie:crab_orb" }
+    },
+    "result": {
+      "item": "zombie:crab_boots"
+    }
+  }
+}

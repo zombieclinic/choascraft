@@ -1,0 +1,96 @@
+{
+	"format_version": [1, 0, 0],
+	"zombie:abyss_flower": {
+		"sound": "grass"
+	},
+	"zombie:abyss_glob_flower": {
+		"sound": "grass"
+	},
+	"zombie:abyss_grass": {
+		"sound": "grass"
+	},
+	"zombie:abyss_mushroom": {
+		"sound": "grass"
+	},
+	"zombie:black_grass": {
+		"sound": "grass"
+	},
+	"zombie:sporepod": {
+		"sound": "grass"
+	},
+	"zombie:eyewood_door": {
+		"sound": "wood"
+	},
+	"zombie:eyewood_fence": {
+		"sound": "wood"
+	},
+	"zombie:eyewood_fence_gate": {
+		"sound": "wood"
+	},
+	"zombie:eyewood_log": {
+		"sound": "wood"
+	},
+	"zombie:eyewood_planks": {
+		"sound": "wood"
+	},
+	"zombie:eyewood_pressureplate": {
+		"sound": "wood"
+	},
+	"zombie:eyewood_slab": {
+		"sound": "wood"
+	},
+	"zombie:eyewood_stairs": {
+		"sound": "wood"
+	},
+	"zombie:eyewood_trapdoor": {
+		"sound": "wood"
+	},
+	"zombie:eyewood_tree_leaves": {
+		"sound": "grass"
+	},
+	"zombie:eyewood_tree_sapling": {
+		"sound": "grass"
+	},
+	"zombie:glow_flower": {
+		"sound": "grass"
+	},
+	"zombie:infected_flower": {
+		"sound": "grass"
+	},
+	"zombie:eye_flower": {
+		"sound": "grass"
+	},
+	"zombie:infected_cobblestone": {
+		"sound": "stone"
+	},
+	"zombie:infected_dirt": {
+		"sound": "gravel"
+	},
+	"zombie:infected_door": {
+		"sound": "wood"
+	},
+	"zombie:infected_gravel": {
+		"sound": "gravel"
+	},
+	"zombie:infected_sand": {
+		"sound": "sand"
+	},
+	"zombie:infected_sporestone": {
+		"sound": "stone"
+	},
+	"zombie:infected_stone": {
+		"sound": "stone"
+	},
+	"zombie:infected_teeth": {
+		"sound": "bone_block"
+	},
+	"zombie:pengiun_egg_block": {
+		"sound": "turtle_egg"
+	},
+	"zombie:stripped_eyewood_log": {
+		"sound": "wood"
+	},
+	"zombie:zc_button": {
+		"sound": "wood"
+	}
+}

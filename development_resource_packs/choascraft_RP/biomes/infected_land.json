@@ -1,0 +1,16 @@
+{
+  "format_version": "1.26.20",
+  "minecraft:client_biome": {
+    "description": {
+      "identifier": "zombie:infected_land"
+    },
+    "components": {
+      "minecraft:grass_appearance": {
+        "color": "#821295"
+      },
+      "minecraft:foliage_appearance": {
+        "color": "#5d1766"
+      }
+    }
+  }
+}

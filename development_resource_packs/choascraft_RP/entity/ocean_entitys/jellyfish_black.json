@@ -1,0 +1,35 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "zombie:black_jelly_fish",
+			"materials": {
+				"default": "enderman",
+				"head" :"entity_alphablend"
+			},
+			"textures": {
+				"default": "textures/e/jf/bk/Jellyfish_2_transparent"
+			},
+			"geometry": {
+				"default": "geometry.jellyfish_purple"
+			},
+			"render_controllers": [
+				"controller.render.jelly_fish"
+			],
+			"spawn_egg": {
+				"base_color": "#000000",
+				"overlay_color": "#1a9db4"
+			},
+			"animations": {
+				"idle": "animation.jellyfish_idle",
+				"swim": "animation.jellyfish_swim",
+				"controller": "controller.animation.zombie_jelly_fish"
+			},
+			"scripts": {
+				"animate": [
+			"controller"
+				]
+			}
+		}
+	}
+}

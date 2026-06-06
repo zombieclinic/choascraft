@@ -1,0 +1,29 @@
+{
+  "format_version": "1.21.100",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "zombie:orca_sword_recipe"
+    },
+    "tags": [ "crafting_table" ],
+    "unlock": [
+      { "item": "minecraft:iron_ingot" },
+      { "item": "zombie:orca_tooth" },
+      { "item": "zombie:orca_core" }
+    ],
+    "pattern": [
+      " T ",
+      "JIH",
+      " S "
+    ],
+    "key": {
+      "J": { "item": "zombie:orca_shard" },
+      "H": { "item": "zombie:orca_core" },
+      "I": { "item": "minecraft:iron_ingot" },
+      "T": { "item": "zombie:orca_tooth" },
+      "S": { "item": "zombie:orca_bone" }
+    },
+    "result": {
+      "item": "zombie:orca_sword"
+    }
+  }
+}

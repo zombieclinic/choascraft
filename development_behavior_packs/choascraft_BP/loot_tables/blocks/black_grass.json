@@ -1,0 +1,61 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "conditions": [
+        {
+          "condition": "match_tool",
+          "count": 1,
+          "minecraft:match_tool_filter_none": [
+            "minecraft:is_shears"
+          ],
+          "enchantments": [
+            {
+              "enchantment": "silk_touch",
+              "levels": {
+                "range_min": 1,
+                "range_max": 1
+              }
+            }
+          ]
+        }
+      ],
+      "entries": [
+        {
+          "type": "item",
+          "name": "zombie:black_grass",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "conditions": [
+        {
+          "condition": "match_tool",
+          "count": 1,
+          "minecraft:match_tool_filter_all": [
+            "minecraft:is_shears"
+          ]
+        }
+      ],
+      "entries": [
+        {
+          "type": "item",
+          "name": "zombie:black_grass",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

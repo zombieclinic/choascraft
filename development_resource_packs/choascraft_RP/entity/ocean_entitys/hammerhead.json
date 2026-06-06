@@ -1,0 +1,43 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "zombie:hammerhead_shark",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/e/s/hh/h/nm_shark_hammerhead_texture",
+				"saddled_and_chested": "textures/e/s/hh/cs/hh_chest_saddle",
+				"nochest": "textures/e/s/hh/sd/nm_shark_hammerhead_texture_saddle",
+				"nosaddle_chest": "textures/e/s/hh/c/nm_shark_hammerhead_texture_chest",
+				"zombie": "textures/e/s/hh/zh/zombie_shark_hammerhead_texture",
+				"zombie_saddle": "textures/e/s/hh/zs/zombie_shark_hammerhead_texture_saddle",
+				"zombie_chest": "textures/e/s/hh/zc/zombie_shark_hammerhead_texture_chest",
+				"zombie_chest_saddle": "textures/e/s/hh/zcs/zombie_shark_hammerhead_texture_chest_saddle"
+			},
+			"geometry": {
+				"default": "geometry.hammerhead"
+			},
+			"render_controllers": [
+				"controller.render.orca"
+			],
+			"spawn_egg": {
+				"base_color": "#5410f3",
+				"overlay_color": "#1a9db4"
+			},
+			"animations": {
+				"idle": "animation.hammerhead_idle",
+				"swim": "animation.hammerhead_walk",
+				"death": "animation.hammerhead.death",
+				"bite": "animation.hammerhead_bite",
+				"contoller": "controller.animation.zombie_hammerhead"
+			},
+			"scripts": {
+				"animate": [
+			"contoller"
+				]
+			}
+		}
+	}
+}

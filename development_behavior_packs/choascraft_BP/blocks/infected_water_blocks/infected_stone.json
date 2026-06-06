@@ -1,0 +1,33 @@
+{
+	"format_version": "1.26.10",
+	"minecraft:block": {
+		"description": {
+			"identifier": "zombie:infected_stone",
+			"menu_category": {
+				"category": "nature",
+				"group": "minecraft:itemGroup.name.stone"
+			}
+		},
+		"components": {
+			"minecraft:display_name": "Infected Stone",
+			"minecraft:collision_box": true,
+			"minecraft:selection_box": true,
+			"minecraft:geometry": "minecraft:geometry.full_block",
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "infected_stone",
+					"render_method": "opaque"
+				}
+			},
+			"minecraft:destructible_by_mining": {
+				"seconds_to_destroy": 1.5
+			},
+			"minecraft:destructible_by_explosion": {
+				"explosion_resistance": 6.0
+			},
+			"minecraft:map_color": "#5f5963",
+			"tag:minecraft:is_pickaxe_item_destructible": {},
+			"minecraft:loot": "loot_tables/blocks/infected_stone.json"
+		}
+	}
+}

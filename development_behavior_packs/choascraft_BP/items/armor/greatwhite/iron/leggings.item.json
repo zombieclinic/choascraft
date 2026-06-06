@@ -1,0 +1,56 @@
+{
+	"format_version": "1.20.50",
+	"minecraft:item": {
+		"description": {
+			"identifier": "zombie:greatwhite_shark_leggings",
+			"menu_category": {
+				"category": "equipment",
+				"group": "itemGroup.name.leggings"
+			}
+		},
+		"components": {
+			"minecraft:display_name": {
+				"value": "Greatwhite Shark Leggings"
+			},
+			"minecraft:tags": {
+				"tags": [
+					"minecraft:transformable_items",
+					"minecraft:is_armor"
+				]
+			},
+			"minecraft:max_stack_size": 1,
+			"minecraft:icon": "zombie_greatwhite_leggings_icon",
+			"minecraft:wearable": {
+				"slot": "slot.armor.legs",
+				"protection": 5
+			},
+			"minecraft:enchantable": {
+				"slot": "armor_legs",
+				"value": 14
+			},
+			"minecraft:durability": {
+				"max_durability": 244,
+				 "damage_chance": {
+					"min": 20,
+					"max": 100
+				}
+			},
+			"minecraft:repairable": {
+				"repair_items": [
+					{
+						"items": ["iron_ingot"],
+						"repair_amount": 61
+					},
+					{
+						"items": ["zombie:orca_shard"],
+						"repair_amount": 62
+					},
+					{
+						"items": ["zombie:orca_core"],
+						"repair_amount": 130
+					}
+				]
+			}
+		}
+	}
+}

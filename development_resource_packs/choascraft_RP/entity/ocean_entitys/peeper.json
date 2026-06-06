@@ -1,0 +1,37 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "zombie:peeper",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"blue": "textures/e/pp/b/blue_peeper",
+				"default": "textures/e/pp/g/peeper",
+				"purple": "textures/e/pp/p/purple_peeper",
+				"red": "textures/e/pp/r/red_peeper"
+			},
+			"geometry": {
+				"default": "geometry.zombie_peeper"
+			},
+			"animations": {
+				"swim": "animation.zombie_peeper.swim"
+			},
+			"render_controllers": [
+				"controller.render.peeper"
+			],
+			"spawn_egg": {
+				"base_color": "#3B552D",
+				"overlay_color": "#1778D2"
+			},
+			"scripts": {
+				"animate": [
+					{
+						"swim": "query.modified_move_speed>=0.01"
+					}
+				]
+			}
+		}
+	}
+}
