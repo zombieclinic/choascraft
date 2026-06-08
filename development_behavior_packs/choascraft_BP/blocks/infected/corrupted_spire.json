@@ -1,0 +1,221 @@
+{
+  "format_version": "1.26.10",
+  "minecraft:block": {
+    "description": {
+      "identifier": "zombie:corrupted_spire",
+      "states": {
+        "zombie:growth_stage": {
+          "values": {
+            "min": 0,
+            "max": 3
+          }
+        },
+        "zombie:spire_complete": [
+          false,
+          true
+        ]
+      },
+      "menu_category": {
+        "category": "nature",
+        "group": "minecraft:itemGroup.name.crop"
+      }
+    },
+    "permutations": [
+      {
+        "condition": "query.block_state('zombie:growth_stage') == 0 && !query.block_state('zombie:spire_complete')",
+        "components": {
+          "minecraft:tick": {
+            "looping": true,
+            "interval_range": [
+              3600,
+              6000
+            ]
+          },
+          "zombie:corrupted_spire_growth": {}
+        }
+      },
+      {
+        "condition": "query.block_state('zombie:growth_stage') == 0",
+        "components": {
+          "minecraft:geometry": "geometry.zombie_corrupted_spire_0",
+          "minecraft:placement_filter": {
+            "conditions": [
+              {
+                "allowed_faces": [
+                  "up"
+                ],
+                "block_filter": [
+                  "zombie:infected_grass_block",
+                  "zombie:infected_dirt",
+                  "zombie:infected_gravel",
+                  "zombie:infected_sand",
+                  "zombie:infected_sporestone",
+                  "zombie:infected_stone"
+                ]
+              }
+            ]
+          },
+          "minecraft:selection_box": {
+            "origin": [
+              -8,
+              0,
+              -8
+            ],
+            "size": [
+              16,
+              16,
+              16
+            ]
+          },
+          "minecraft:destructible_by_mining": {
+            "seconds_to_destroy": 2.0
+          },
+          "minecraft:destructible_by_explosion": {
+            "explosion_resistance": 6.0
+          }
+        }
+      },
+      {
+        "condition": "query.block_state('zombie:growth_stage') == 1",
+        "components": {
+          "minecraft:geometry": "geometry.zombie_corrupted_spire_1",
+          "minecraft:placement_filter": {
+            "conditions": [
+              {
+                "allowed_faces": [
+                  "up"
+                ],
+                "block_filter": [
+                  "zombie:corrupted_spire"
+                ]
+              }
+            ]
+          },
+          "minecraft:selection_box": {
+            "origin": [
+              -8,
+              0,
+              -8
+            ],
+            "size": [
+              16,
+              16,
+              16
+            ]
+          },
+          "minecraft:destructible_by_mining": {
+            "seconds_to_destroy": 1.5
+          },
+          "minecraft:destructible_by_explosion": {
+            "explosion_resistance": 1.5
+          }
+        }
+      },
+      {
+        "condition": "query.block_state('zombie:growth_stage') == 2",
+        "components": {
+          "minecraft:geometry": "geometry.zombie_corrupted_spire_2",
+          "minecraft:placement_filter": {
+            "conditions": [
+              {
+                "allowed_faces": [
+                  "up"
+                ],
+                "block_filter": [
+                  "zombie:corrupted_spire"
+                ]
+              }
+            ]
+          },
+          "minecraft:selection_box": {
+            "origin": [
+              -8,
+              0,
+              -8
+            ],
+            "size": [
+              16,
+              16,
+              16
+            ]
+          },
+          "minecraft:destructible_by_mining": {
+            "seconds_to_destroy": 1.5
+          },
+          "minecraft:destructible_by_explosion": {
+            "explosion_resistance": 1.5
+          }
+        }
+      },
+      {
+        "condition": "query.block_state('zombie:growth_stage') == 3",
+        "components": {
+          "minecraft:geometry": "geometry.zombie_corrupted_spire_3",
+          "minecraft:placement_filter": {
+            "conditions": [
+              {
+                "allowed_faces": [
+                  "up"
+                ],
+                "block_filter": [
+                  "zombie:corrupted_spire"
+                ]
+              }
+            ]
+          },
+          "minecraft:selection_box": {
+            "origin": [
+              -8,
+              0,
+              -8
+            ],
+            "size": [
+              16,
+              16,
+              16
+            ]
+          },
+          "minecraft:destructible_by_mining": {
+            "seconds_to_destroy": 1.5
+          },
+          "minecraft:destructible_by_explosion": {
+            "explosion_resistance": 1.5
+          }
+        }
+      }
+    ],
+    "components": {
+      "minecraft:display_name": "tile.zombie:corrupted_spire.name",
+      "minecraft:collision_box": false,
+      "minecraft:selection_box": true,
+      "minecraft:geometry": "geometry.zombie_corrupted_spire_0",
+      "minecraft:material_instances": {
+        "*": {
+          "texture": "zc_corrupted_spire",
+          "render_method": "alpha_test",
+          "face_dimming": false,
+          "ambient_occlusion": false
+        }
+      },
+      "minecraft:loot": "loot_tables/blocks/empty.json",
+      "zombie:corrupted_spire_break": {},
+      "minecraft:destructible_by_mining": {
+        "seconds_to_destroy": 2.0
+      },
+      "minecraft:destructible_by_explosion": {
+        "explosion_resistance": 6.0
+      },
+      "minecraft:liquid_detection": {
+        "detection_rules": [
+          {
+            "liquid_type": "water",
+            "can_contain_liquid": true,
+            "on_liquid_touches": "no_reaction"
+          }
+        ]
+      },
+      "minecraft:light_dampening": 0,
+      "tag:minecraft:is_pickaxe_item_destructible": {}
+    }
+  }
+}

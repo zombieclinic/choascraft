@@ -1,0 +1,103 @@
+{
+    "format_version": "1.10.0",
+    "animation_controllers": {
+        "controller.animation.zombie_spitter": {
+            "initial_state": "spawn",
+            "states": {
+                "spawn": {
+                    "animations": ["spawn"],
+                    "transitions": [
+                      {
+                        "idle" : "query.all_animations_finished"
+                      }
+                    ],
+                    "sound_effects": [{"effect": "scream"}]
+                },
+                "idle": {
+                    "animations": [
+                        "idle"
+                    ],
+                    "transitions": [{
+                        "walk": "query.variant == 2 && query.ground_speed"
+                    },
+                    {
+                        "run": "query.variant == 3 && query.ground_speed"
+                    },
+                    {   "death": "query.variant == 4"},
+                    {
+                        "attack": "variable.attack_time>=0.01"
+                    },
+                    {
+                        "range_attack": "query.is_charged"
+                    }
+            ]
+                },
+                "walk": {
+                    "animations": ["walk"],
+                    "transitions": [{
+                        "idle" : "!query.ground_speed"
+                    },
+                    {
+                        "run": "query.variant == 3 && query.ground_speed"
+                    },
+                    {   
+                        "death": "query.variant == 4"
+                    },
+                    {
+                        "attack": "variable.attack_time>=0.01"
+                    },
+                    {
+                        "range_attack": "query.is_charged"
+                    }
+                ]
+                },
+                "run": {
+                    "animations": ["run"],
+                    "transitions": [
+                        {
+                            "idle": "!query.ground_speed"
+                        },
+                        {
+                            "death": "query.variant == 4"
+                        },
+                        {
+                            "range_attack": "variable.attack_time>=0.01"
+                        },
+                        {
+                            "attack": "query.is_charged"
+                        }
+                        ]
+                },
+                "death": {
+                    "animations": ["death"]
+                },
+                "attack": {
+                    "animations": ["attack"],
+                    "transitions": [
+                        {
+                            "idle": "query.all_animations_finished"
+                        },
+                        {
+                            "walk": "query.variant == 2 && query.ground_speed && query.all_animations_finished"
+                        },
+                        {
+                            "run": "query.variant == 3 && query.ground_speed && query.all_animations_finished"
+                        },
+                        {   
+                            "death": "query.variant == 4"
+                        }
+
+                    ]
+                },
+                "range_attack": {
+                    "animations": ["spit"],
+                    "transitions": [
+                        {
+                            "idle": "query.all_animations_finished"
+                        }
+                    ]
+                }
+            }
+        }
+    }
+}

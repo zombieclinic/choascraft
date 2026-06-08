@@ -19,6 +19,34 @@
 				"sounds/ocean_entites/orca/orca_hurt",
 				"sounds/ocean_entites/orca/orca_hurt_1"
 			]
+		},
+		"zombie_walker_born": {
+			"category": "neutral",
+			"sounds": ["sounds/monsters/zombie_walker/zombie_born"]
+		},
+		"zombie.walker.hurt": {
+			"category": "neutral",
+			"sounds": ["sounds/monsters/zombie_walker/hurt"]
+		},
+		"zombie.walker.scream": {
+			"category": "neutral",
+			"sounds": ["sounds/monsters/zombie_walker/scream", "sounds/monsters/zombie_walker/scream2", "sounds/monsters/zombie_walker/scream3"]
+		},
+		"zombie.impaler.hurt": {
+			"category": "neutral",
+			"sounds": ["sounds/monsters/impaler/impaler_hurt_1", "sounds/monsters/impaler/impaler_hurt_2", "sounds/monsters/impaler/impaler_hurt_3"]
+		},
+		"zombie_impaler.scream": {
+			"category": "hostile",
+			"sounds": ["sounds/monsters/impaler/impaler_scream", "sounds/monsters/impaler/impaler_scream2", "sounds/monsters/impaler/impaler_scream3","sounds/monsters/impaler/impaler_scream4","sounds/monsters/impaler/impaler_scream_5"]
+		},
+		"zombie.crusher.charge": {
+			"category": "hostile",
+			"sounds": ["sounds/monsters/impaler/impaler_scream", "sounds/monsters/impaler/impaler_scream2", "sounds/monsters/impaler/impaler_scream3"]
+		},
+		"zombie.crusher.impact": {
+			"category": "hostile",
+			"sounds": ["sounds/monsters/zombie_walker/hurt"]
 		}
   }
 }

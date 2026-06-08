@@ -1,0 +1,73 @@
+{
+  "format_version": "1.26.10",
+  "minecraft:block": {
+    "description": {
+      "identifier": "zombie:infected_goo_plant",
+      "menu_category": {
+        "category": "nature",
+        "group": "minecraft:itemGroup.name.grass"
+      }
+    },
+    "components": {
+      "minecraft:display_name": "tile.zombie:infected_goo_plant.name",
+      "minecraft:collision_box": false,
+      "minecraft:selection_box": {
+        "origin": [
+          -8,
+          0,
+          -8
+        ],
+        "size": [
+          16,
+          16,
+          16
+        ]
+      },
+      "minecraft:geometry": "geometry.zombie_abysscrossplants",
+      "minecraft:material_instances": {
+        "*": {
+          "texture": "infected_goo",
+          "render_method": "alpha_test",
+          "face_dimming": false,
+          "ambient_occlusion": false
+        }
+      },
+      "minecraft:destructible_by_mining": {
+        "seconds_to_destroy": 0.0
+      },
+      "minecraft:destructible_by_explosion": {
+        "explosion_resistance": 0.0
+      },
+      "minecraft:loot": "loot_tables/blocks/infected_goo_plant.json",
+      "minecraft:liquid_detection": {
+        "detection_rules": [
+          {
+            "liquid_type": "water",
+            "can_contain_liquid": true,
+            "on_liquid_touches": "no_reaction"
+          }
+        ]
+      },
+      "minecraft:placement_filter": {
+        "conditions": [
+          {
+            "allowed_faces": [
+              "up"
+            ],
+            "block_filter": [
+              "zombie:infected_grass_block",
+              "zombie:infected_dirt",
+              "zombie:infected_gravel",
+              "zombie:infected_sand",
+              "zombie:infected_sporestone",
+              "zombie:infected_stone"
+            ]
+          }
+        ]
+      },
+      "minecraft:replaceable": {},
+      "tag:minecraft:is_shears_item_destructible": {},
+      "tag:plant": {}
+    }
+  }
+}

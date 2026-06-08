@@ -1,0 +1,32 @@
+{
+    "format_version": "1.21.70",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "zombie:impaler",
+            "materials": {
+                "default": "entity_alphatest"
+            },
+            "textures": {
+                "default": "textures/monsters/zombies/zc_impaler"
+            },
+            "geometry": {
+                "default": "geometry.zombie_impaler"
+            },
+          "animations": {
+                "spawn" : "animation.zombie_walker_spawn",
+				"walk": "animation.impaler_walk",
+				"idle": "animation.impaler_idle",
+                "run": "animation.impaler_run",
+                "attack": "animation.impaler_melee",
+                "death": "animation.zombie_walker_death",
+                "spike" : "animation.impaler_conjure_spike",
+                "contoller": "controller.animation.zombie_impaler"
+			},
+            "sound_effects": {"scream": "zombie_walker_born"},
+            "render_controllers": ["controller.render.default"],
+            "scripts": {
+        "animate": ["contoller"]
+            }
+        }
+    }
+}

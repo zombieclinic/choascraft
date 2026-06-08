@@ -1,0 +1,34 @@
+{
+    "format_version": "1.21.70",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "zombie:crusher",
+            "materials": {
+                "default": "entity_alphatest"
+            },
+            "textures": {
+                "default": "textures/monsters/zombies/zc_crusher"
+            },
+            "geometry": {
+                "default": "geometry.zombie_crusher"
+            },
+          "animations": {
+                "spawn" : "animation.zombie_walker_spawn",
+				"walk": "animation.zombie_crusher_walk",
+				"idle": "animation.zombie_crusher_idle",
+                "attack": "animation.zombie_crusher_melee_attack",
+                "death": "animation.zombie_crusher_death",
+                "waiting" : "animation.zombie_walker_waiting",
+                "charging" : "animation.zombie_crusher_charge",
+                "charg_hit": "animation.zombie_crusher_charge_hit",
+                "walk_attack": "animation.zombie_crusher_attack_walk",
+                "contoller": "controller.animation.zombie_crusher"
+			},
+            "sound_effects": {"scream": "zombie_walker_born"},
+            "render_controllers": ["controller.render.default"],
+            "scripts": {
+        "animate": ["contoller"]
+            }
+        }
+    }
+}

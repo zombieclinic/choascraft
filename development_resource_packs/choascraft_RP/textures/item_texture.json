@@ -78,6 +78,45 @@
 		"zombie_vial": {
 			"textures": "textures/items/zombie_stuff/zombie_vial"
 		},
+		"zombie_infected_goo": {
+			"textures": "textures/items/infect_armor/infected_goo"
+		},
+		"zombie_infected_tablet": {
+			"textures": "textures/items/infect_armor/infected_tablet"
+		},
+		"zombie_infected_crystal": {
+			"textures": "textures/items/infect_armor/infected_crystal"
+		},
+		"zombie_infected_sword": {
+			"textures": "textures/items/infect_armor/infected_sword"
+		},
+		"zombie_infected_axe": {
+			"textures": "textures/items/infect_armor/infected_axe"
+		},
+		"zombie_infected_helmet_icon": {
+			"textures": "textures/items/infect_armor/infected_helmet_icon"
+		},
+		"zombie_infected_chestplate_icon": {
+			"textures": "textures/items/infect_armor/infected_chestplate_icon"
+		},
+		"zombie_infected_leggings_icon": {
+			"textures": "textures/items/infect_armor/infected_leggings_icon"
+		},
+		"zombie_infected_boots_icon": {
+			"textures": "textures/items/infect_armor/infected_boots_icon"
+		},
+		"zombie_helmet_trim": {
+			"textures": "textures/items/infect_armor/infected_helmet"
+		},
+		"zombie_chestplate_trim": {
+			"textures": "textures/items/infect_armor/infected_chestplate"
+		},
+		"zombie_leggings_trim": {
+			"textures": "textures/items/infect_armor/infected_leggings"
+		},
+		"zombie_boots_trim": {
+			"textures": "textures/items/infect_armor/infected_boots"
+		},
 		"zombie_crab_helmet": {
 			"textures": "textures/a/cb/h/crab_helmet_icon"
 		},

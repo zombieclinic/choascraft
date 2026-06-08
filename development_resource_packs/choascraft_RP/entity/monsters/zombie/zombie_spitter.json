@@ -1,0 +1,32 @@
+{
+    "format_version": "1.21.70",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "zombie:spitter",
+            "materials": {
+                "default": "entity_alphatest"
+            },
+            "textures": {
+                "default": "textures/monsters/zombies/zc_spitter"
+            },
+            "geometry": {
+                "default": "geometry.zombie_spitter"
+            },
+          "animations": {
+                "spawn" : "animation.zombie_walker_spawn",
+				"walk": "animation.zombie_spitter_walk",
+				"idle": "animation.zombie_spitter_idle",
+                "run": "animation.zombie_spitter_run",
+                "attack": "animation.zombie_spitter_melee",
+                "death": "animation.zombie_spitter_death",
+                "spit": "animation.zombie_spitter_spit",
+                "contoller": "controller.animation.zombie_spitter"
+			},
+            "sound_effects": {"scream": "zombie_walker_born"},
+            "render_controllers": ["controller.render.default"],
+            "scripts": {
+        "animate": ["contoller"]
+            }
+        }
+    }
+}

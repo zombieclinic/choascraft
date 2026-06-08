@@ -15,8 +15,14 @@
 	"zombie:black_grass": {
 		"sound": "grass"
 	},
+	"zombie:infected_goo_plant": {
+		"sound": "slime"
+	},
 	"zombie:sporepod": {
 		"sound": "grass"
+	},
+	"zombie:corrupted_spire": {
+		"sound": "stone"
 	},
 	"zombie:eyewood_door": {
 		"sound": "wood"

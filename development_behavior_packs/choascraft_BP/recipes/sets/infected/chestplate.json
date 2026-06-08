@@ -1,0 +1,41 @@
+{
+  "format_version": "1.21.100",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "zombie:infected_chestplate_recipe"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "unlock": [
+      {
+        "item": "zombie:infected_tablet"
+      },
+      {
+        "item": "zombie:infected_goo"
+      }
+    ],
+    "pattern": [
+      "GTG",
+      "GIG",
+      "EGE"
+    ],
+    "key": {
+      "G": {
+        "item": "zombie:infected_goo"
+      },
+      "T": {
+        "item": "zombie:infected_tablet"
+      },
+      "E": {
+        "item": "zombie:infected_eye"
+      },
+      "I": {
+        "item": "minecraft:iron_chestplate"
+      }
+    },
+    "result": {
+      "item": "zombie:infected_chestplate"
+    }
+  }
+}

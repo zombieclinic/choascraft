@@ -1,0 +1,8 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:texture_set": {
+    "color": "zc_corrupted_spire",
+    "metalness_emissive_roughness": "zc_corrupted_spire_mer",
+    "normal": "zc_corrupted_spire_normal"
+  }
+}

@@ -1,0 +1,16 @@
+{
+    "format_version": "1.21.100",
+    "minecraft:item": {
+        "description": {
+            "identifier": "zombie:infected_tablet",
+            "menu_category": {"category": "nature"}
+        },
+        "components": {
+            "minecraft:display_name": {
+                "value": "Infected Tablet"
+            },
+            "minecraft:icon": "zombie_infected_tablet",
+            "tag:minecraft:transform_materials": {}
+        }
+    }
+} 

@@ -1,0 +1,25 @@
+{
+    "format_version": "1.21.70",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "zombie:zombie_spawn",
+            "materials": {
+                "default": "entity_alphatest"
+            },
+            "textures": {
+                "default": "textures/monsters/zombies/zombie_spawner"
+            },
+            "geometry": {
+                "default": "geometry.zombie_spawn"
+            },
+            "animations": {
+                "controller": "controller.animation.zombie_spawner",
+                "waiting": "animation.zombie_spawn.waiting",
+                "spawn": "animation.zombie_spawn.spawn"
+            },
+            "scripts": {"animate": ["controller"]},
+            "render_controllers": ["controller.render.default"]
+                    
+        }
+    }
+}

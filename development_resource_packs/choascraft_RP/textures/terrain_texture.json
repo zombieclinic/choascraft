@@ -65,11 +65,17 @@
 		"sporepod_top": {
 			"textures": "textures/i/plants/sporepod/sporepod_top"
 		},
+		"zc_corrupted_spire": {
+			"textures": "textures/zombies/zc_corrupted_spire"
+		},
 		"abyss_grass": {
 			"textures": "textures/abyss/plants/grass/abyss_grass"
 		},
 		"black_grass": {
 			"textures": "textures/i/bg/black_grass"
+		},
+		"infected_goo": {
+			"textures": "textures/items/infect_armor/infected_goo"
 		},
 		"abyss_glob_flower": {
 			"textures": "textures/abyss/plants/glob_flower/abyss_glob_flower"

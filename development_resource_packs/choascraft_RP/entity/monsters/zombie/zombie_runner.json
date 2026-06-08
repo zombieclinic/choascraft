@@ -1,0 +1,32 @@
+{
+    "format_version": "1.21.70",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "zombie:runner",
+            "materials": {
+                "default": "entity_alphatest"
+            },
+            "textures": {
+                "default": "textures/monsters/zombies/zc_runner"
+            },
+            "geometry": {
+                "default": "geometry.zombie_runner"
+            },
+          "animations": {
+                "spawn" : "animation.zombie_walker_spawn",
+				"walk": "animation.zombie_runner_walk",
+				"idle": "animation.zombie_runner_idle",
+                "run": "animation.zombie_runner_run",
+                "attack": "animation.zombie_runner_melee",
+                "death": "animation.zombie_runner_death",
+                "waiting" : "animation.zombie_walker_waiting",
+                "contoller": "controller.animation.zombie_walker"
+			},
+            "sound_effects": {"scream": "zombie_walker_born"},
+            "render_controllers": ["controller.render.default"],
+            "scripts": {
+        "animate": ["contoller"]
+            }
+        }
+    }
+}

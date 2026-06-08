@@ -1,0 +1,52 @@
+{
+	"format_version": "1.21.100",
+	"minecraft:item": {
+		"description": {
+			"identifier": "zombie:infected_boots",
+			"menu_category": {
+				"category": "equipment",
+				"group": "minecraft:itemGroup.name.boots"
+			}
+		},
+		"components": {
+			 "minecraft:display_name": {
+                "value": "Infected Boots"
+            },
+			"minecraft:max_stack_size": 1,
+			"minecraft:tags": {
+				"tags": [
+					"minecraft:is_armor",
+					"minecraft:trimmable_armors"
+				]
+			},
+			"minecraft:icon": {
+				"textures": {
+					"default": "zombie_infected_boots_icon",
+					"icon_trim": "zombie_boots_trim"
+				}
+			},
+			"minecraft:wearable": {
+				"slot": "slot.armor.feet",
+				"protection": 3
+			},
+			"minecraft:enchantable": {
+				"slot": "armor_feet",
+				"value": 14
+			},
+			"minecraft:durability": {
+				"max_durability": 700
+			},
+			"minecraft:repairable": {
+				"repair_items": [
+					{
+						"items": ["iron_ingot"],
+						"repair_amount": 48
+					}
+				]
+			},
+			"minecraft:fuel": {
+				"duration": 800
+			}
+		}
+	}
+}

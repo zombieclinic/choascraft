@@ -1,0 +1,52 @@
+{
+	"format_version": "1.21.100",
+	"minecraft:item": {
+		"description": {
+			"identifier": "zombie:infected_chestplate",
+			"menu_category": {
+				"category": "equipment",
+				"group": "minecraft:itemGroup.name.chestplate"
+			}
+		},
+		"components": {
+			 "minecraft:display_name": {
+                "value": "Infected chestplate"
+            },
+			"minecraft:max_stack_size": 1,
+			"minecraft:tags": {
+				"tags": [
+					"minecraft:is_armor",
+					"minecraft:trimmable_armors"
+				]
+			},
+			"minecraft:icon": {
+				"textures": {
+					"default": "zombie_infected_chestplate_icon",
+					"icon_trim": "zombie_chestplate_trim"
+				}
+			},
+			"minecraft:wearable": {
+				"slot": "slot.armor.chest",
+				"protection": 8
+			},
+			"minecraft:enchantable": {
+				"slot": "armor_torso",
+				"value": 12
+			},
+			"minecraft:durability": {
+				"max_durability": 1000
+			},
+			"minecraft:repairable": {
+				"repair_items": [
+					{
+						"items": ["iron_ingot"],
+						"repair_amount": 58
+					}
+				]
+			},
+			"minecraft:fuel": {
+				"duration": 800
+			}
+		}
+	}
+}

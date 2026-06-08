@@ -1,0 +1,48 @@
+{
+    "format_version": "1.21.100",
+    "minecraft:item": {
+        "description": {
+            "identifier": "zombie:infected_sword",
+                      "menu_category": {
+				"category": "equipment",
+				"group": "minecraft:itemGroup.name.sword"
+			}
+        },
+        "components": {
+            "minecraft:enchantable": {
+                "slot": "sword",
+                "value": 10
+            },
+            "minecraft:rarity": "rare",
+            "zombie:infected_attack": {},
+            "minecraft:icon": "zombie_infected_sword",
+            "minecraft:hand_equipped": true,
+            "minecraft:durability": {
+                "damage_chance": {
+                    "min": 10,
+                    "max": 50
+                },
+                "max_durability": 2031
+            },
+            "minecraft:display_name": {
+                "value": "Infected Sword"
+            },
+            "minecraft:damage": {
+                "value": 7
+            },
+              "minecraft:tags": {
+                "tags": [
+                   "minecraft:is_sword"
+                ]
+            },
+            "minecraft:digger": {
+                "use_efficiency": true,
+                "destroy_speeds": [
+                    { "block": "minecraft:web",          "speed": 15 },
+                    { "block": "minecraft:bamboo",          "speed": 10 },
+                    { "block": "minecraft:bamboo_sapling",  "speed": 10 }
+                ]
+            }
+        }
+    }
+}

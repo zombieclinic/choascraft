@@ -1,0 +1,121 @@
+{
+	"format_version": "1.21.70",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "zombie:spit",
+			"is_spawnable": false,
+			"is_summonable": true,
+			"is_experimental": false,
+			"runtime_identifier": "minecraft:arrow",
+			"animations": {
+				"scrip": "controller.animation.zombie_spit"
+			},
+			"scripts": {
+				"animate": [
+					"scrip"
+				]
+			}
+		},
+		"component_groups": {
+			"zombie": {
+				"minecraft:skin_id": {
+					"value": 1
+				}
+			},
+			"despawn": {
+				"minecraft:instant_despawn": {}
+			}
+		},
+		"components": {
+			"minecraft:collision_box": {
+				"width": 1,
+				"height": 0.25
+			},
+			"minecraft:hurt_on_condition": {
+				"damage_conditions": [
+					{
+						"filters": {
+							"test": "in_lava",
+							"subject": "self",
+							"operator": "==",
+							"value": true
+						},
+						"cause": "lava",
+						"damage_per_tick": 4
+					}
+				]
+			},
+			"minecraft:projectile": {
+				"on_hit": {
+					"impact_damage": {
+						"damage": [
+							3,
+							10
+						],
+						"knockback": true,
+						"semi_random_diff_damage": false,
+						"destroy_on_hit": false
+					},
+					"mob_effect": {
+						"effect": "poison",
+						"duration": 5,
+						"amplifier": 0
+					},
+					"definition_event": {
+						"event_trigger": {
+							"target": "self",
+							"event": "zombie"
+						}
+					}
+				},
+				"hit_sound": "bubble.downinside",
+				"power": 1.6,
+				"gravity": 0.05,
+				"uncertainty_base": 16,
+				"uncertainty_multiplier": 4,
+				"anchor": 1,
+				"should_bounce": false,
+				"offset": [
+					0,
+					-0.1,
+					0
+				]
+			},
+			"minecraft:physics": {},
+			"minecraft:pushable": {
+				"is_pushable": false,
+				"is_pushable_by_piston": false
+			},
+			"minecraft:conditional_bandwidth_optimization": {
+				"default_values": {
+					"max_optimized_distance": 80,
+					"max_dropped_ticks": 10,
+					"use_motion_prediction_hints": true
+				}
+			},
+			"minecraft:despawn": {
+				"despawn_from_inactivity": true,
+				"min_range_inactivity_timer": 5,
+				"despawn_from_distance": {
+					"max_distance": 25
+				}
+			}
+		},
+		"events": {
+			"zombie": {
+				"add": {
+					"component_groups": [
+						"zombie"
+					]
+				}
+			},
+			"despawn": {
+				"add": {
+					"component_groups": [
+						"despawn"
+					]
+				}
+			}
+		}
+	}
+}

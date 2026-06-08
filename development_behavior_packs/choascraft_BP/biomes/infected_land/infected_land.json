@@ -39,7 +39,7 @@
               "minecraft:redwood_taiga_mutated",
               "minecraft:swampland"
             ],
-            "amount": 0.4,
+            "amount": 0.2,
             "noise_frequency_scale": 0.055
           }
         ]
@@ -59,7 +59,6 @@
         "tags": [
           "forest",
           "infected_land",
-          "monster",
           "overworld"
         ]
       }

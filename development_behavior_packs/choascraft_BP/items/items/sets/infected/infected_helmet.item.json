@@ -1,0 +1,52 @@
+{
+	"format_version": "1.21.100",
+	"minecraft:item": {
+		"description": {
+			"identifier": "zombie:infected_helmet",
+			"menu_category": {
+				"category": "equipment",
+				"group": "minecraft:itemGroup.name.helmet"
+			}
+		},
+		"components": {
+			 "minecraft:display_name": {
+                "value": "Infected goo"
+            },
+			"minecraft:max_stack_size": 1,
+			"minecraft:wearable": {
+				"slot": "slot.armor.head",
+				"protection": 3
+			},
+			"minecraft:tags": {
+				"tags": [
+					"minecraft:is_armor",
+					"minecraft:trimmable_armors"
+				]
+			},
+			"minecraft:icon": {
+				"textures": {
+					"default": "zombie_infected_helmet_icon",
+					"icon_trim": "zombie_helmet_trim"
+				}
+			},
+			"minecraft:enchantable": {
+				"slot": "armor_head",
+				"value": 14
+			},
+			"minecraft:durability": {
+				"max_durability": 700
+			},
+			"minecraft:repairable": {
+				"repair_items": [
+					{
+						"items": ["iron_ingot"],
+						"repair_amount": 64
+					}
+				]
+			},
+			"minecraft:fuel": {
+				"duration": 800
+			}
+		}
+	}
+}

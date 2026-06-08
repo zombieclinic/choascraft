@@ -14,6 +14,30 @@
 			},
 			"pitch": [0.8, 1.2],
 			"volume": 1
+		},
+		"zombie:walker": {
+			"events": {
+				"hurt": "zombie.walker.hurt",
+				"ambient": "zombie.walker.scream"
+			},
+			"pitch": [0.8, 1.2],
+			"volume": 1
+		},
+		"zombie:impaler": {
+			"events": {
+				"hurt": "zombie.walker.hurt",
+				"ambient": "zombie.walker.scream"
+			}
+		},
+		"zombie:crusher": {
+			"events": {
+				"hurt": "zombie.walker.hurt",
+				"ambient": "zombie.walker.scream",
+				"pre_ram": "zombie.crusher.charge",
+				"ram_impact": "zombie.crusher.impact"
+			},
+			"pitch": [0.75, 0.95],
+			"volume": 1.2
 		}
 	  }
 	}

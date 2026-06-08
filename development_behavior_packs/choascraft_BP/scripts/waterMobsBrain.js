@@ -8,16 +8,19 @@ import {InfectedFlowerGrowthComponent, InfectedFlowerTickComponent} from "./bloc
 import {EyeFlowerGrowthComponent, EyeFlowerTickComponent} from "./blocks/eyeFlowerGrowth.js"
 import {AbyssFlowerSeedFoodComponent} from "./items/abyssFlowerSeedFood.js"
 import {SporepodGrowthComponent} from "./blocks/sporepodGrowth.js"
+import {CorruptedSpireBreakComponent, CorruptedSpireGrowthComponent} from "./blocks/corruptedSpireGrowth.js"
 import {SporeFoodComponent} from "./items/sporeFood.js"
 import {EyewoodDoorComponent, EyewoodFenceGateToggleComponent, EyewoodSlabPrePlaceComponent, EyewoodTrapdoorToggleComponent} from "./blocks/eyewoodWoodInteractions.js"
 import { ZcButtonComponent, ZcButtonReleaseTickComponent } from "./blocks/buttonInteractions.js";
 import { ZcPressurePlateComponent } from "./blocks/pressurePlate.js";
 import { ConnectedStairsComponent } from "./blocks/connectedStairs.js"
+import {infectedAttack} from "./items/infected.js"
 
 
 
 // ——— define your component‐lists ———
 const BLOCK_COMPONENTS = [
+  ["zombie:infected_attack", infectedAttack ],
   ["zombie:pengiun_egg_hatch", EggHatchTickingComponent],
   ["zombie:decayable_leaves", CustomLeafDecayComponent],
   ["zombie:eyewood_tree_sapling_growth", EyewoodSaplingGrowthComponent],
@@ -27,6 +30,8 @@ const BLOCK_COMPONENTS = [
   ["zombie:eye_flower_growth", EyeFlowerGrowthComponent],
   ["zombie:eye_flower_tick", EyeFlowerTickComponent],
   ["zombie:sporepod_growth", SporepodGrowthComponent],
+  ["zombie:corrupted_spire_growth", CorruptedSpireGrowthComponent],
+  ["zombie:corrupted_spire_break", CorruptedSpireBreakComponent],
   ["zombie:slab_pre_place", EyewoodSlabPrePlaceComponent],
   ["zombie:door_toggle", EyewoodDoorComponent],
   ["zombie:trapdoor_toggle", EyewoodTrapdoorToggleComponent],

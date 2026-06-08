@@ -1,0 +1,99 @@
+{
+    "format_version": "1.10.0",
+    "animation_controllers": {
+        "controller.animation.zombie_crusher": {
+            "initial_state": "spawn",
+            "states": {
+                "spawn": {
+                    "animations": ["spawn"],
+                    "transitions": [
+                      {
+                        "idle" : "query.all_animations_finished"
+                      }
+                    ],
+                    "sound_effects": [{"effect": "scream"}]
+                },
+                "idle": {
+                    "animations": [
+                        "idle"
+                    ],
+                    "transitions": [
+                    {
+                        "death": "query.health <= 0.0"
+                    },
+                    {
+                        "walk": "query.ground_speed"
+                    },
+                    {
+                        "attack": "variable.attack_time>=0.01"
+                    },
+                    {   "charging": "query.is_ram_attacking"}
+            ]
+                },
+                "walk": {
+                    "animations": ["walk"],
+                    "transitions": [
+                    {   
+                       "death": "query.health <= 0.0"
+                    },
+                    {
+                        "idle" : "!query.ground_speed"
+                    },
+                    {
+                        "attack": "variable.attack_time>=0.01"
+                    },
+                    {
+                        "charging": "query.is_ram_attacking"
+                    }
+                ]
+                },
+                "death": {
+                    "animations": ["death"]
+                },
+                "attack": {
+                    "animations": ["attack","walk_attack"
+                ],
+                    "transitions": [
+                        {   
+                            "death": "query.health <= 0.0"
+                        },
+                        {
+                            "charging": "query.is_ram_attacking"
+                        },
+                        {
+                            "idle": "query.all_animations_finished"
+                        },
+                        {
+                            "walk": "query.ground_speed && query.all_animations_finished"
+                        }
+                    ]
+                },
+                "charging": {
+                    "animations": ["charging"],
+                    "transitions": [
+                        {   
+                            "death": "query.health <= 0.0"
+                        },
+                        {
+                            "charg_hit": "!query.is_ram_attacking"
+                        }
+                    ]
+                },
+                "charg_hit": {
+                    "animations": ["charg_hit"],
+                    "transitions": [
+                        {   
+                            "death": "query.health <= 0.0"
+                        },
+                        {
+                            "walk": "query.ground_speed && query.all_animations_finished"
+                        },
+                        {
+                        "idle": "query.all_animations_finished"
+                        }
+                    ]
+                }
+            }
+        }
+    }
+}
