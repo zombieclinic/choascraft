@@ -13,7 +13,7 @@ import {CorruptedSpireBreakComponent, CorruptedSpireGrowthComponent} from "./blo
 import {SporeFoodComponent} from "./items/sporeFood.js"
 import {EyewoodDoorComponent, EyewoodFenceGateToggleComponent, EyewoodSlabPrePlaceComponent, EyewoodTrapdoorToggleComponent} from "./blocks/eyewoodWoodInteractions.js"
 import { ZcButtonComponent, ZcButtonReleaseTickComponent } from "./blocks/buttonInteractions.js";
-import { ZcPressurePlateComponent } from "./blocks/pressurePlate.js";
+import { ZcPressurePlateComponent, ZcPressurePlateReleaseTickComponent } from "./blocks/pressurePlate.js";
 import { ConnectedStairsComponent } from "./blocks/connectedStairs.js"
 import {infectedAttack} from "./items/infected.js"
 
@@ -40,6 +40,7 @@ const BLOCK_COMPONENTS = [
   ["zombie:button_press", ZcButtonComponent],
   ["zombie:button_release_tick", ZcButtonReleaseTickComponent],
   ["zc:pressureplate", ZcPressurePlateComponent],
+  ["zc:pressureplate_release_tick", ZcPressurePlateReleaseTickComponent],
   ["arctic:connectedStairs", ConnectedStairsComponent]
 ];
 

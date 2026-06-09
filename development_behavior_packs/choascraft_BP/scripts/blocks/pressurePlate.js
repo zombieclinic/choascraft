@@ -7,38 +7,50 @@ export class ZcPressurePlateComponent {
 		}
 	}
 
+	onStepOn(event, component) {
+		if (!event.entity) return;
+
+		const block = event.block;
+		if (!block) return;
+
+		const poweredState = component?.params?.block_state ?? DEFAULT_POWERED_STATE;
+
+		setPowered(block, poweredState, true);
+	}
+}
+
+export class ZcPressurePlateReleaseTickComponent {
 	onTick(event, component) {
 		const block = event.block;
 		if (!block) return;
 
 		const poweredState = component?.params?.block_state ?? DEFAULT_POWERED_STATE;
-		const shouldBePowered = hasPlayerOnPlate(block);
+		if (!block.permutation.getState(poweredState)) return;
 
-		setPowered(block, poweredState, shouldBePowered);
+		setPowered(block, poweredState, hasEntityOnPlate(block));
 	}
 }
 
-function hasPlayerOnPlate(block) {
+function hasEntityOnPlate(block) {
 	const center = block.center();
 
-	const players = block.dimension.getEntities({
-		type: "minecraft:player",
+	const entities = block.dimension.getEntities({
 		location: center,
 		maxDistance: 1.5
 	});
 
-	return players.some(player => isPlayerOnPlate(player, block.location));
+	return entities.some(entity => isEntityOnPlate(entity, block.location));
 }
 
-function isPlayerOnPlate(player, blockLocation) {
-	const { x, y, z } = player.location;
+function isEntityOnPlate(entity, blockLocation) {
+	const { x, y, z } = entity.location;
 
 	return x >= blockLocation.x
 		&& x < blockLocation.x + 1
 		&& z >= blockLocation.z
 		&& z < blockLocation.z + 1
-		&& y >= blockLocation.y
-		&& y < blockLocation.y + 1.2;
+		&& y >= blockLocation.y - 0.25
+		&& y < blockLocation.y + 1.5;
 }
 
 function setPowered(block, poweredState, powered) {

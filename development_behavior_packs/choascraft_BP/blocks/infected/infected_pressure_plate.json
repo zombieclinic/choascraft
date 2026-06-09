@@ -71,7 +71,7 @@
 				],
 				"size": [
 					14,
-					1,
+					4,
 					14
 				]
 			},
@@ -89,10 +89,6 @@
 			"tag:wood": {},
 			"zc:pressureplate": {
 				"block_state": "zombie:powered"
-			},
-			"minecraft:tick": {
-				"interval_range": [2,3],
-				"looping": true
 			}
 		},
 		"permutations": [
@@ -101,6 +97,7 @@
 				"components": {
 					"minecraft:transformation": { "rotation": [0, 0, 0] },
 					"minecraft:selection_box": { "origin": [-7, 0, -7], "size": [14, 1, 14] },
+					"minecraft:collision_box": { "origin": [-7, 0, -7], "size": [14, 4, 14] },
 					"minecraft:redstone_producer": { "power": 0, "strongly_powered_face": "down" }
 				}
 			},
@@ -109,6 +106,7 @@
 				"components": {
 					"minecraft:transformation": { "rotation": [0, 180, 0] },
 					"minecraft:selection_box": { "origin": [-7, 0, -7], "size": [14, 1, 14] },
+					"minecraft:collision_box": { "origin": [-7, 0, -7], "size": [14, 4, 14] },
 					"minecraft:redstone_producer": { "power": 0, "strongly_powered_face": "down" }
 				}
 			},
@@ -117,6 +115,7 @@
 				"components": {
 					"minecraft:transformation": { "rotation": [0, 90, 0] },
 					"minecraft:selection_box": { "origin": [-7, 0, -7], "size": [14, 1, 14] },
+					"minecraft:collision_box": { "origin": [-7, 0, -7], "size": [14, 4, 14] },
 					"minecraft:redstone_producer": { "power": 0, "strongly_powered_face": "down" }
 				}
 			},
@@ -125,6 +124,7 @@
 				"components": {
 					"minecraft:transformation": { "rotation": [0, 270, 0] },
 					"minecraft:selection_box": { "origin": [-7, 0, -7], "size": [14, 1, 14] },
+					"minecraft:collision_box": { "origin": [-7, 0, -7], "size": [14, 4, 14] },
 					"minecraft:redstone_producer": { "power": 0, "strongly_powered_face": "down" }
 				}
 			},
@@ -133,7 +133,10 @@
 				"components": {
 					"minecraft:transformation": { "rotation": [0, 0, 0] },
 					"minecraft:selection_box": { "origin": [-7, 0, -7], "size": [14, 0.5, 14] },
-					"minecraft:redstone_producer": { "power": 15, "strongly_powered_face": "down" }
+					"minecraft:collision_box": false,
+					"minecraft:redstone_producer": { "power": 15, "strongly_powered_face": "down" },
+					"zc:pressureplate_release_tick": { "block_state": "zombie:powered" },
+					"minecraft:tick": { "interval_range": [2, 3], "looping": true }
 				}
 			},
 			{
@@ -141,7 +144,10 @@
 				"components": {
 					"minecraft:transformation": { "rotation": [0, 180, 0] },
 					"minecraft:selection_box": { "origin": [-7, 0, -7], "size": [14, 0.5, 14] },
-					"minecraft:redstone_producer": { "power": 15, "strongly_powered_face": "down" }
+					"minecraft:collision_box": false,
+					"minecraft:redstone_producer": { "power": 15, "strongly_powered_face": "down" },
+					"zc:pressureplate_release_tick": { "block_state": "zombie:powered" },
+					"minecraft:tick": { "interval_range": [2, 3], "looping": true }
 				}
 			},
 			{
@@ -149,7 +155,10 @@
 				"components": {
 					"minecraft:transformation": { "rotation": [0, 90, 0] },
 					"minecraft:selection_box": { "origin": [-7, 0, -7], "size": [14, 0.5, 14] },
-					"minecraft:redstone_producer": { "power": 15, "strongly_powered_face": "down" }
+					"minecraft:collision_box": false,
+					"minecraft:redstone_producer": { "power": 15, "strongly_powered_face": "down" },
+					"zc:pressureplate_release_tick": { "block_state": "zombie:powered" },
+					"minecraft:tick": { "interval_range": [2, 3], "looping": true }
 				}
 			},
 			{
@@ -157,7 +166,10 @@
 				"components": {
 					"minecraft:transformation": { "rotation": [0, 270, 0] },
 					"minecraft:selection_box": { "origin": [-7, 0, -7], "size": [14, 0.5, 14] },
-					"minecraft:redstone_producer": { "power": 15, "strongly_powered_face": "down" }
+					"minecraft:collision_box": false,
+					"minecraft:redstone_producer": { "power": 15, "strongly_powered_face": "down" },
+					"zc:pressureplate_release_tick": { "block_state": "zombie:powered" },
+					"minecraft:tick": { "interval_range": [2, 3], "looping": true }
 				}
 			}
 		]
