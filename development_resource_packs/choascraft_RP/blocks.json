@@ -81,6 +81,9 @@
 	"zombie:infected_sand": {
 		"sound": "sand"
 	},
+	"zombie:infected_slab": {
+		"sound": "wood"
+	},
 	"zombie:infected_sporestone": {
 		"sound": "stone"
 	},

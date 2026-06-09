@@ -8,9 +8,12 @@ const TRAPDOOR_OPEN_STATE = "zombie:open";
 const DOOR_OPEN_STATE = "zombie:open";
 const DOOR_UPPER_STATE = "zombie:upper";
 const DOOR_HINGE_STATE = "zombie:hinge";
-const EYEWOOD_SLAB_ID = "zombie:eyewood_slab";
 const EYEWOOD_DOOR_ID = "zombie:eyewood_door";
 const WOOD_USE_SOUND = "use.wood";
+const SLAB_ITEM_IDS = new Set([
+	"zombie:eyewood_slab",
+	"zombie:infected_slab"
+]);
 
 const STRIPPABLE_BLOCKS = {
 	"zombie:eyewood_log": "zombie:stripped_eyewood_log",
@@ -255,9 +258,9 @@ function tryStackSlab(event) {
 	const { block, blockFace: face, player, itemStack } = event;
 	if (!block || !player || !itemStack) return;
 
-	if (itemStack.typeId !== EYEWOOD_SLAB_ID) return;
+	if (!isSlabItem(itemStack)) return;
 
-	if (block.typeId === EYEWOOD_SLAB_ID && STACK_FACES.has(face)) {
+	if (block.typeId === itemStack.typeId && block.hasTag(SLAB_TAG) && STACK_FACES.has(face)) {
 		const isDouble = block.permutation.getState(DOUBLE_SLAB_STATE);
 		const verticalHalf = block.permutation.getState("minecraft:vertical_half");
 
@@ -270,7 +273,7 @@ function tryStackSlab(event) {
 
 	const neighbor = FACE_NEIGHBORS[face]?.(block);
 	if (!neighbor) return;
-	if (neighbor.typeId !== EYEWOOD_SLAB_ID) return;
+	if (neighbor.typeId !== itemStack.typeId || !neighbor.hasTag(SLAB_TAG)) return;
 	if (neighbor.permutation.getState(DOUBLE_SLAB_STATE)) return;
 
 	event.cancel = true;
@@ -294,6 +297,10 @@ function transformIntoDoubleSlab(block, player) {
 			consumeMainhandItem(player);
 		} catch {}
 	});
+}
+
+function isSlabItem(itemStack) {
+	return itemStack.hasTag(SLAB_TAG) || SLAB_ITEM_IDS.has(itemStack.typeId);
 }
 
 function getGatePivotDirection(block, player) {

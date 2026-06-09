@@ -66,6 +66,7 @@ tile.zombie:infected_stone.name=Infected Stone
 tile.zombie:infected_door.name=Infected Door
 tile.zombie:infected_gravel.name=Infected Gravel
 tile.zombie:infected_sand.name=Infected Sand
+tile.zombie:infected_slab.name=Infected Slab
 tile.zombie:abyss_mushroom.name=Abyss Mushroom
 tile.zombie:abyss_grass.name=Abyss Grass
 tile.zombie:black_grass.name=Black Grass

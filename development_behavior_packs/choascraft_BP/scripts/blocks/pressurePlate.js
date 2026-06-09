@@ -8,14 +8,11 @@ export class ZcPressurePlateComponent {
 	}
 
 	onStepOn(event, component) {
-		if (!event.entity) return;
+		pressPlate(event, component);
+	}
 
-		const block = event.block;
-		if (!block) return;
-
-		const poweredState = component?.params?.block_state ?? DEFAULT_POWERED_STATE;
-
-		setPowered(block, poweredState, true);
+	onEntityFallOn(event, component) {
+		pressPlate(event, component);
 	}
 }
 
@@ -51,6 +48,17 @@ function isEntityOnPlate(entity, blockLocation) {
 		&& z < blockLocation.z + 1
 		&& y >= blockLocation.y - 0.25
 		&& y < blockLocation.y + 1.5;
+}
+
+function pressPlate(event, component) {
+	if (!event.entity) return;
+
+	const block = event.block;
+	if (!block) return;
+
+	const poweredState = component?.params?.block_state ?? DEFAULT_POWERED_STATE;
+
+	setPowered(block, poweredState, true);
 }
 
 function setPowered(block, poweredState, powered) {
