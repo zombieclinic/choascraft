@@ -2,6 +2,7 @@ import {system} from "@minecraft/server";
 import {DurabilityHandler} from "./items/durability/durability.js"
 import {EggHatchTickingComponent} from "./blocks/eggs.js"
 import {CustomLeafDecayComponent} from "./blocks/leavesDecay.js"
+import {EyewoodLeavesRenderComponent} from "./blocks/eyewoodLeavesRender.js"
 import {EyewoodSaplingGrowthComponent} from "./blocks/eyewoodSaplingGrowth.js"
 import {AbyssFlowerCropComponent} from "./blocks/abyssFlowerCrop.js"
 import {InfectedFlowerGrowthComponent, InfectedFlowerTickComponent} from "./blocks/infectedFlowerGrowth.js"
@@ -20,9 +21,9 @@ import {infectedAttack} from "./items/infected.js"
 
 // ——— define your component‐lists ———
 const BLOCK_COMPONENTS = [
-  ["zombie:infected_attack", infectedAttack ],
   ["zombie:pengiun_egg_hatch", EggHatchTickingComponent],
   ["zombie:decayable_leaves", CustomLeafDecayComponent],
+  ["zombie:eyewood_leaves_render", EyewoodLeavesRenderComponent],
   ["zombie:eyewood_tree_sapling_growth", EyewoodSaplingGrowthComponent],
   ["zombie:abyss_flower_crop", AbyssFlowerCropComponent],
   ["zombie:infected_flower_growth", InfectedFlowerGrowthComponent],
@@ -43,6 +44,7 @@ const BLOCK_COMPONENTS = [
 ];
 
 const ITEM_COMPONENTS = [
+ ["zombie:infected_attack", infectedAttack ],
  ["zombie:item_durability", DurabilityHandler],
  ["zombie:abyss_flower_seed_food", AbyssFlowerSeedFoodComponent],
  ["zombie:spore_food", SporeFoodComponent]

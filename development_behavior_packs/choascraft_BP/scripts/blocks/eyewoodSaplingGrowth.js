@@ -2,6 +2,12 @@ import { BlockPermutation, EquipmentSlot, system } from "@minecraft/server";
 
 const BONE_MEAL = "minecraft:bone_meal";
 const AIR = "minecraft:air";
+const DRY_LEAF_STATE = "zombie:dry_player_placed";
+const DRY_TREE_RENDER_BLOCKS = new Set([
+	"zombie:eyewood_tree_leaves",
+	"zombie:glow_flower"
+]);
+const WATER_BLOCKS = new Set(["minecraft:water", "minecraft:flowing_water"]);
 const DEFAULT_STAGE_STATE = "zombie:growth_stage";
 const DEFAULT_MAX_STAGE = 4;
 const DEFAULT_FEATURE = "zombie:eyewood_tree_feature";
@@ -92,12 +98,18 @@ function getGrowthStage(block, stageState) {
 }
 
 function placeTreeFeature(block, dimension, feature) {
-	const location = block.location;
+	const location = { ...block.location };
 	const saplingPermutation = block.permutation;
+	const drySapling = !isWater(block);
 
 	try {
 		block.setPermutation(BlockPermutation.resolve(AIR));
 		dimension.placeFeature(feature, location, true);
+
+		if (drySapling) {
+			system.run(() => markDryTreeBlocks(dimension, location));
+		}
+
 		return true;
 	} catch {
 		try {
@@ -109,6 +121,25 @@ function placeTreeFeature(block, dimension, feature) {
 		}
 
 		return false;
+	}
+}
+
+function markDryTreeBlocks(dimension, origin) {
+	const radius = 18;
+	const minY = Math.max(dimension.heightRange?.min ?? -64, origin.y);
+	const maxY = Math.min(dimension.heightRange?.max ?? 320, origin.y + 28);
+
+	for (let x = origin.x - radius; x <= origin.x + radius; x++) {
+		for (let y = minY; y <= maxY; y++) {
+			for (let z = origin.z - radius; z <= origin.z + radius; z++) {
+				try {
+					const block = dimension.getBlock({ x, y, z });
+					if (!DRY_TREE_RENDER_BLOCKS.has(block?.typeId)) continue;
+
+					block.setPermutation(block.permutation.withState(DRY_LEAF_STATE, true));
+				} catch {}
+			}
+		}
 	}
 }
 
@@ -137,6 +168,15 @@ function isOnValidBase(block, dimension, validBaseBlocks) {
 	} catch {
 		return false;
 	}
+}
+
+function isWater(block) {
+	return !!block && (
+		WATER_BLOCKS.has(block.typeId) ||
+		block.isLiquid === true ||
+		block.isWaterlogged === true ||
+		block.isWaterLogged === true
+	);
 }
 
 function isCreative(player) {

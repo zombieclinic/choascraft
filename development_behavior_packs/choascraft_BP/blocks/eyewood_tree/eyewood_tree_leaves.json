@@ -7,6 +7,10 @@
 				"zombie:player_placed": [
 					false,
 					true
+				],
+				"zombie:dry_player_placed": [
+					false,
+					true
 				]
 			},
 			"menu_category": {
@@ -20,6 +24,17 @@
 				"components": {
 					"zombie:decayable_leaves": {
 						"radius": 4
+					}
+				}
+			},
+			{
+				"condition": "query.block_state('zombie:dry_player_placed')",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "eyewood_tree_leaves",
+							"render_method": "blend_to_opaque"
+						}
 					}
 				}
 			}
@@ -51,6 +66,7 @@
 					"render_method": "opaque"
 				}
 			},
+			"zombie:eyewood_leaves_render": {},
 			"tag:zombie:eyewood_tree_leaves": {},
 			"tag:zombie:custom_leaves": {},
 			"tag:leaves": {},

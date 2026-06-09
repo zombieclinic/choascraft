@@ -3,11 +3,30 @@
 	"minecraft:block": {
 		"description": {
 			"identifier": "zombie:glow_flower",
+			"states": {
+				"zombie:dry_player_placed": [
+					false,
+					true
+				]
+			},
 			"menu_category": {
 				"category": "nature",
 				"group": "minecraft:itemGroup.name.flower"
 			}
 		},
+		"permutations": [
+			{
+				"condition": "query.block_state('zombie:dry_player_placed')",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "glow_flower",
+							"render_method": "blend_to_opaque"
+						}
+					}
+				}
+			}
+		],
 		"components": {
 			"minecraft:display_name": "Glow Flower",
 			"minecraft:destructible_by_mining": {
@@ -38,6 +57,7 @@
 					"render_method": "opaque"
 				}
 			},
+			"zombie:eyewood_leaves_render": {},
 			"minecraft:loot": "loot_tables/blocks/glow_flower.json"
 		}
 	}

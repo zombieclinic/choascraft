@@ -77,8 +77,11 @@
 			"minecraft:gravel",
 			"minecraft:clay",
 			"minecraft:dirt",
+			"zombie:infected_grass_block",
+			"zombie:infected_dirt",
 			"zombie:infected_gravel",
 			"zombie:infected_sand",
+			"zombie:infected_sporestone",
 			"zombie:infected_stone"
 		],
 		"may_grow_on": [
@@ -86,8 +89,11 @@
 			"minecraft:gravel",
 			"minecraft:clay",
 			"minecraft:dirt",
+			"zombie:infected_grass_block",
+			"zombie:infected_dirt",
 			"zombie:infected_gravel",
 			"zombie:infected_sand",
+			"zombie:infected_sporestone",
 			"zombie:infected_stone"
 		],
 		"may_replace": [

@@ -12,12 +12,13 @@
           "max": "hard"
         },
         "minecraft:spawns_on_surface": {},
-        "minecraft:weight": {
-          "default": 8
+        "minecraft:spawns_underground": {},
+        "minecraft:brightness_filter": {
+          "max": 1,
+          "min": 0
         },
-        "minecraft:density_limit": {
-          "surface": 6,
-          "underground": 0
+        "minecraft:weight": {
+          "default": 50
         },
         "minecraft:herd": {
           "min_size": 1,
