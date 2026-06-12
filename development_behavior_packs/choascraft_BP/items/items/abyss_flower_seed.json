@@ -33,7 +33,8 @@
 				"movement_modifier": 0,
 				"use_duration": 1
 			},
-			"zombie:abyss_flower_seed_food": {}
+			"zombie:abyss_flower_seed_food": {},
+			"zombie:raw_food_sickness": {}
 		}
 	}
 }

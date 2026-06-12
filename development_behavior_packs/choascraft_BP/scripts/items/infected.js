@@ -7,6 +7,12 @@ import {
   Player,
 } from "@minecraft/server";
 
+function isValid(entity) {
+  if (!entity) return false;
+  if (typeof entity.isValid === "function") return entity.isValid();
+  return entity.isValid !== false;
+}
+
 export class infectedAttack {
   constructor() {}
 
@@ -62,7 +68,7 @@ export class infectedAttack {
 
     for (let i = 0; i < SECONDS; i++) {
       system.runTimeout(() => {
-        if (!target.isValid()) return;
+        if (!isValid(target)) return;
         try {
           // New signature
           target.applyDamage(1, { cause: EntityDamageCause.magic, damagingEntity: attacker });
@@ -75,7 +81,7 @@ export class infectedAttack {
 
     // remove anti-stack tag after it finishes
     system.runTimeout(() => {
-      if (target.isValid()) target.removeTag(TAG);
+      if (isValid(target)) target.removeTag(TAG);
     }, SECONDS * TPS + 1);
   }
 }

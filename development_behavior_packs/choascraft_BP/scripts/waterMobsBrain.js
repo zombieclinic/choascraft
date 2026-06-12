@@ -11,11 +11,14 @@ import {AbyssFlowerSeedFoodComponent} from "./items/abyssFlowerSeedFood.js"
 import {SporepodGrowthComponent} from "./blocks/sporepodGrowth.js"
 import {CorruptedSpireBreakComponent, CorruptedSpireGrowthComponent} from "./blocks/corruptedSpireGrowth.js"
 import {SporeFoodComponent} from "./items/sporeFood.js"
+import {RawFoodSicknessComponent} from "./items/rawFoodSickness.js"
 import {EyewoodDoorComponent, EyewoodFenceGateToggleComponent, EyewoodSlabPrePlaceComponent, EyewoodTrapdoorToggleComponent} from "./blocks/eyewoodWoodInteractions.js"
 import { ZcButtonComponent, ZcButtonReleaseTickComponent } from "./blocks/buttonInteractions.js";
 import { ZcPressurePlateComponent, ZcPressurePlateReleaseTickComponent } from "./blocks/pressurePlate.js";
 import { ConnectedStairsComponent } from "./blocks/connectedStairs.js"
 import {infectedAttack} from "./items/infected.js"
+import "./entities/omniusBrain.js"
+import "./entities/zombieDeathAnimations.js"
 
 
 
@@ -48,7 +51,8 @@ const ITEM_COMPONENTS = [
  ["zombie:infected_attack", infectedAttack ],
  ["zombie:item_durability", DurabilityHandler],
  ["zombie:abyss_flower_seed_food", AbyssFlowerSeedFoodComponent],
- ["zombie:spore_food", SporeFoodComponent]
+ ["zombie:spore_food", SporeFoodComponent],
+ ["zombie:raw_food_sickness", RawFoodSicknessComponent]
 ];
 
 system.beforeEvents.startup.subscribe(({ blockComponentRegistry, itemComponentRegistry }) => {

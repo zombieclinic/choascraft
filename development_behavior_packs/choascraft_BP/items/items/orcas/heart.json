@@ -11,10 +11,7 @@
             "minecraft:display_name": {
                 "value": "Orca Heart"
             },
-            "minecraft:stacked_by_data": true,
-            "minecraft:fuel": {
-                "duration": 500
-            }
+            "minecraft:stacked_by_data": true
         }
     }
 }

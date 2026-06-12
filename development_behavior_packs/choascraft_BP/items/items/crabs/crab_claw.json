@@ -20,7 +20,8 @@
                 "emit_vibrations": true,
                 "movement_modifier": 0,
                 "use_duration": 1
-             }
+             },
+             "zombie:raw_food_sickness": {}
         }
     }
     

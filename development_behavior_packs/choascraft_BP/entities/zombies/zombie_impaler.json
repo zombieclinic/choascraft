@@ -170,7 +170,7 @@
             "max": 150
           },
           "minecraft:movement": {
-            "value": 0.1
+            "value": 0.12
           },
           "minecraft:damage_sensor": {
             "triggers": [
@@ -219,10 +219,25 @@
             "value": 0.27
           }
         },
-        "death": { "minecraft:variant": {
-          "value": 4
+        "death": {
+          "minecraft:variant": {
+            "value": 4
+          },
+          "minecraft:damage_sensor": {
+            "triggers": [
+              {
+                "deals_damage": false
+              }
+            ]
+          },
+          "minecraft:timer": {
+            "time": 2,
+            "time_down_event": {
+              "event": "finish_death_animation",
+              "target": "self"
+            }
+          }
         }
-      }
       },
   
       "components": {
@@ -236,7 +251,7 @@
         "minecraft:nameable": {
         },
         "minecraft:type_family": {
-          "family": [ "mutated_zombie", "undead", "monster", "mob, infected"]
+          "family": [ "mutated_zombie", "undead", "monster", "mob", "infected" ]
         },
         "minecraft:collision_box": {
           "width": 0.6,
@@ -339,8 +354,15 @@
             "component_groups": [
               "stage_2",
               "spawn",
-              "stage_3"
+              "stage_3",
+              "range",
+              "melee"
             ]
+          }
+        },
+        "finish_death_animation": {
+          "queue_command": {
+            "command": "kill @s"
           }
         },
         "stage_2": {

@@ -1,0 +1,8 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:texture_set": {
+		"color": "red_wood_saplin_4",
+		"metalness_emissive_roughness": "red_wood_saplin_4_mer",
+		"normal": "red_wood_saplin_4_normal"
+	}
+}

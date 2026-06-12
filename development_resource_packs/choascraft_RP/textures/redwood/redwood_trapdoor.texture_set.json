@@ -1,0 +1,8 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:texture_set": {
+		"color": "redwood_trapdoor",
+		"metalness_emissive_roughness": "redwood_trapdoor_mer",
+		"normal": "redwood_trapdoor_normal"
+	}
+}

@@ -1,0 +1,48 @@
+{
+	"format_version": "1.21.70",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "zombie:omnius_raser",
+			"is_spawnable": false,
+			"is_summonable": true
+		},
+		"components": {
+			"minecraft:collision_box": {
+				"width": 0.1,
+				"height": 0.1
+			},
+			"minecraft:scale": {
+				"value": 1.15
+			},
+			"minecraft:timer": {
+				"time": 4.5,
+				"time_down_event": {
+					"event": "zc:despawn",
+					"target": "self"
+				}
+			},
+			"minecraft:physics": {
+				"has_gravity": false,
+				"has_collision": false
+			},
+			"minecraft:pushable": {
+				"is_pushable": false,
+				"is_pushable_by_piston": false
+			}
+		},
+		"events": {
+			"zc:despawn": {
+				"add": {
+					"component_groups": [
+						"zc:despawn"
+					]
+				}
+			}
+		},
+		"component_groups": {
+			"zc:despawn": {
+				"minecraft:instant_despawn": {}
+			}
+		}
+	}
+}

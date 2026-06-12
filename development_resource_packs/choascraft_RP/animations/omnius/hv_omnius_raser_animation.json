@@ -1,0 +1,25 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.omnius_spawn": {
+			"animation_length": 3.5,
+			"override_previous_animation": true,
+			"bones": {
+				"bone": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"2.5": [0, 720, 0]
+					},
+					"position": [0, 0, 0],
+					"scale": {
+						"0.0": [0, 1, 0],
+						"0.2": [2, 1, 2],
+						"2.2": [2, 1, 2],
+						"2.45": [0, 1, 0],
+						"2.5": [0, 0, 0]
+					}
+				}
+			}
+		}
+	}
+}

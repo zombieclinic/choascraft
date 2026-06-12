@@ -12,8 +12,8 @@
                 "value": "Orca Tooth"
             },
             "minecraft:stacked_by_data": true,
-            "minecraft:fuel": {
-                "duration": 500
+            "minecraft:compostable": {
+                "composting_chance": 80
             }
         }
     }

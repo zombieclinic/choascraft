@@ -20,7 +20,8 @@
                 "minecraft:display_name": {
                     "value": "Crab Legs"
                 },
-                "minecraft:use_animation": "eat"
+                "minecraft:use_animation": "eat",
+                "zombie:raw_food_sickness": {}
             }
     }
 }
