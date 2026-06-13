@@ -1,0 +1,472 @@
+{
+	"format_version": "1.16.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.bear_leggings",
+				"texture_width": 64,
+				"texture_height": 64,
+				"visible_bounds_width": 3,
+				"visible_bounds_height": 3.5,
+				"visible_bounds_offset": [
+					0,
+					1.25,
+					0
+				]
+			},
+			"bones": [
+				{
+					"name": "body",
+					"pivot": [
+						0,
+						24,
+						0
+					]
+				},
+				{
+					"name": "belt",
+					"parent": "body",
+					"pivot": [
+						0,
+						12,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-4,
+								12,
+								-2
+							],
+							"size": [
+								8,
+								12,
+								4
+							],
+							"inflate": 0.51,
+							"uv": [
+								0,
+								0
+							]
+						},
+						{
+							"origin": [
+								-4,
+								6.3,
+								2.175
+							],
+							"size": [
+								8,
+								10.15,
+								0.325
+							],
+							"inflate": 0.51,
+							"pivot": [
+								-0.3,
+								11.3,
+								3.175
+							],
+							"rotation": [
+								5,
+								0,
+								0
+							],
+							"uv": {
+								"north": {
+									"uv": [
+										51,
+										26
+									],
+									"uv_size": [
+										8,
+										10
+									]
+								},
+								"east": {
+									"uv": [
+										53,
+										24
+									],
+									"uv_size": [
+										1,
+										10
+									]
+								},
+								"south": {
+									"uv": [
+										55,
+										14
+									],
+									"uv_size": [
+										8,
+										10
+									]
+								},
+								"west": {
+									"uv": [
+										53,
+										24
+									],
+									"uv_size": [
+										1,
+										10
+									]
+								},
+								"up": {
+									"uv": [
+										54,
+										34
+									],
+									"uv_size": [
+										-1,
+										-10
+									]
+								},
+								"down": {
+									"uv": [
+										54,
+										34
+									],
+									"uv_size": [
+										-1,
+										-10
+									]
+								}
+							}
+						},
+						{
+							"origin": [
+								-4.525,
+								6.25,
+								-2
+							],
+							"size": [
+								0,
+								10.15,
+								3.975
+							],
+							"inflate": 0.51,
+							"pivot": [
+								-4.525,
+								11.325,
+								0.0625
+							],
+							"rotation": [
+								0,
+								0,
+								5
+							],
+							"uv": {
+								"north": {
+									"uv": [
+										49,
+										37
+									],
+									"uv_size": [
+										0,
+										10
+									]
+								},
+								"east": {
+									"uv": [
+										46,
+										14
+									],
+									"uv_size": [
+										3,
+										10
+									]
+								},
+								"south": {
+									"uv": [
+										52,
+										37
+									],
+									"uv_size": [
+										0,
+										10
+									]
+								},
+								"west": {
+									"uv": [
+										49,
+										37
+									],
+									"uv_size": [
+										3,
+										10
+									]
+								},
+								"up": {
+									"uv": [
+										49,
+										34
+									],
+									"uv_size": [
+										0,
+										3
+									]
+								},
+								"down": {
+									"uv": [
+										49,
+										37
+									],
+									"uv_size": [
+										0,
+										-3
+									]
+								}
+							}
+						},
+						{
+							"origin": [
+								4.55,
+								6.25,
+								-2
+							],
+							"size": [
+								0,
+								10.15,
+								3.975
+							],
+							"inflate": 0.51,
+							"pivot": [
+								4.55,
+								11.325,
+								0.0625
+							],
+							"rotation": [
+								0,
+								0,
+								-5
+							],
+							"uv": {
+								"north": {
+									"uv": [
+										49,
+										37
+									],
+									"uv_size": [
+										0,
+										10
+									]
+								},
+								"east": {
+									"uv": [
+										48,
+										26
+									],
+									"uv_size": [
+										3,
+										10
+									]
+								},
+								"south": {
+									"uv": [
+										52,
+										37
+									],
+									"uv_size": [
+										0,
+										10
+									]
+								},
+								"west": {
+									"uv": [
+										46,
+										14
+									],
+									"uv_size": [
+										3,
+										10
+									]
+								},
+								"up": {
+									"uv": [
+										49,
+										34
+									],
+									"uv_size": [
+										0,
+										3
+									]
+								},
+								"down": {
+									"uv": [
+										49,
+										37
+									],
+									"uv_size": [
+										0,
+										-3
+									]
+								}
+							}
+						},
+						{
+							"origin": [
+								-4,
+								6.125,
+								-2.5
+							],
+							"size": [
+								8,
+								10.15,
+								0.325
+							],
+							"inflate": 0.51,
+							"pivot": [
+								-0.3,
+								11.125,
+								-1.5
+							],
+							"rotation": [
+								-5,
+								0,
+								0
+							],
+							"uv": {
+								"north": {
+									"uv": [
+										47,
+										14
+									],
+									"uv_size": [
+										8,
+										10
+									]
+								},
+								"east": {
+									"uv": [
+										53,
+										24
+									],
+									"uv_size": [
+										1,
+										10
+									]
+								},
+								"south": {
+									"uv": [
+										54,
+										27
+									],
+									"uv_size": [
+										8,
+										10
+									]
+								},
+								"west": {
+									"uv": [
+										53,
+										24
+									],
+									"uv_size": [
+										1,
+										10
+									]
+								},
+								"up": {
+									"uv": [
+										54,
+										34
+									],
+									"uv_size": [
+										-1,
+										-10
+									]
+								},
+								"down": {
+									"uv": [
+										54,
+										34
+									],
+									"uv_size": [
+										-1,
+										-10
+									]
+								}
+							}
+						}
+					]
+				},
+				{
+					"name": "leg_right",
+					"pivot": [
+						-1.9,
+						12,
+						0
+					]
+				},
+				{
+					"name": "leggings_right",
+					"parent": "leg_right",
+					"pivot": [
+						-1.9,
+						12,
+						0
+					],
+					"binding": "'rightleg'",
+					"cubes": [
+						{
+							"origin": [
+								-3.9,
+								0,
+								-2
+							],
+							"size": [
+								4,
+								12,
+								4
+							],
+							"inflate": 0.5,
+							"uv": [
+								0,
+								16
+							]
+						}
+					]
+				},
+				{
+					"name": "leg_left",
+					"pivot": [
+						1.9,
+						12,
+						0
+					]
+				},
+				{
+					"name": "leggings_left",
+					"parent": "leg_left",
+					"pivot": [
+						1.9,
+						12,
+						0
+					],
+					"binding": "'leftleg'",
+					"cubes": [
+						{
+							"origin": [
+								-0.1,
+								0,
+								-2
+							],
+							"size": [
+								4,
+								12,
+								4
+							],
+							"inflate": 0.5,
+							"uv": [
+								0,
+								16
+							],
+							"mirror": true
+						}
+					]
+				}
+			]
+		}
+	]
+}

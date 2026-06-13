@@ -1,0 +1,175 @@
+{
+	"format_version": "1.26.10",
+	"minecraft:block": {
+		"description": {
+			"identifier": "zombie:redwood_slab",
+			"traits": {
+				"minecraft:placement_position": {
+					"enabled_states": [
+						"minecraft:vertical_half"
+					]
+				}
+			},
+			"states": {
+				"zombie:double": [
+					false,
+					true
+				]
+			},
+			"menu_category": {
+				"category": "construction",
+				"group": "minecraft:itemGroup.name.slab"
+			}
+		},
+		"permutations": [
+			{
+				"condition": "query.block_state('minecraft:vertical_half') == 'bottom' && !query.block_state('zombie:double')",
+				"components": {
+					"minecraft:collision_box": {
+						"origin": [
+							-8,
+							0,
+							-8
+						],
+						"size": [
+							16,
+							8,
+							16
+						]
+					},
+					"minecraft:selection_box": {
+						"origin": [
+							-8,
+							0,
+							-8
+						],
+						"size": [
+							16,
+							8,
+							16
+						]
+					}
+				}
+			},
+			{
+				"condition": "query.block_state('minecraft:vertical_half') == 'top' && !query.block_state('zombie:double')",
+				"components": {
+					"minecraft:collision_box": {
+						"origin": [
+							-8,
+							8,
+							-8
+						],
+						"size": [
+							16,
+							8,
+							16
+						]
+					},
+					"minecraft:selection_box": {
+						"origin": [
+							-8,
+							8,
+							-8
+						],
+						"size": [
+							16,
+							8,
+							16
+						]
+					}
+				}
+			},
+			{
+				"condition": "query.block_state('zombie:double')",
+				"components": {
+					"minecraft:geometry": "minecraft:geometry.full_block",
+					"minecraft:light_dampening": 15,
+					"minecraft:collision_box": {
+						"origin": [
+							-8,
+							0,
+							-8
+						],
+						"size": [
+							16,
+							16,
+							16
+						]
+					},
+					"minecraft:selection_box": {
+						"origin": [
+							-8,
+							0,
+							-8
+						],
+						"size": [
+							16,
+							16,
+							16
+						]
+					},
+					"minecraft:redstone_conductivity": {
+						"redstone_conductor": true
+					},
+					"minecraft:loot": "loot_tables/blocks/double_redwood_slab.json"
+				}
+			}
+		],
+		"components": {
+			"minecraft:geometry": {
+				"identifier": "geometry.zombie.eyewood_slab",
+				"bone_visibility": {
+					"bottom_slab": "query.block_state('minecraft:vertical_half') == 'bottom'",
+					"top_slab": "query.block_state('minecraft:vertical_half') == 'top'"
+				}
+			},
+			"minecraft:item_visual": {
+				"geometry": {
+					"identifier": "geometry.zombie.eyewood_slab",
+					"bone_visibility": {
+						"bottom_slab": true,
+						"top_slab": false
+					}
+				},
+				"material_instances": {
+					"*": {
+						"texture": "redwood_planks",
+						"render_method": "opaque"
+					}
+				}
+			},
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "redwood_planks",
+					"render_method": "opaque"
+				}
+			},
+			"minecraft:destructible_by_mining": {
+				"seconds_to_destroy": 2.0
+			},
+			"minecraft:destructible_by_explosion": {
+				"explosion_resistance": 3.0
+			},
+			"minecraft:loot": "loot_tables/blocks/redwood_slab.json",
+			"minecraft:flammable": {
+				"catch_chance_modifier": 5,
+				"destroy_chance_modifier": 20
+			},
+			"minecraft:light_dampening": 1,
+			"minecraft:liquid_detection": {
+				"detection_rules": [
+					{
+						"liquid_type": "water",
+						"can_contain_liquid": true,
+						"on_liquid_touches": "blocking"
+					}
+				]
+			},
+			"tag:zombie:slab": {},
+			"tag:wood": {},
+			"tag:minecraft:is_axe_item_destructible": {},
+			"zombie:slab_pre_place": {}
+		}
+	}
+}

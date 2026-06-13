@@ -176,6 +176,36 @@
 		"infected_tree_log_stripped_top": {
 			"textures": "textures/i/ts/t"
 		},
+		"redwood_planks": {
+			"textures": "textures/redwood/redwood_planks"
+		},
+		"redwood_log": {
+			"textures": "textures/redwood/redwood_log"
+		},
+		"redwood_log_top": {
+			"textures": "textures/redwood/redwood_log_top"
+		},
+		"stripped_redwood_log": {
+			"textures": "textures/redwood/redwood_stripped_log"
+		},
+		"stripped_redwood_log_top": {
+			"textures": "textures/redwood/redwood_stripped_top"
+		},
+		"redwood_leaf": {
+			"textures": "textures/redwood/redwood_leaf"
+		},
+		"redwood_door_bottom": {
+			"textures": "textures/redwood/redwood_door_bottom"
+		},
+		"redwood_door_top": {
+			"textures": "textures/redwood/redwood_door_top"
+		},
+		"redwood_trapdoor": {
+			"textures": "textures/redwood/redwood_trapdoor"
+		},
+		"red_wood_saplin": {
+			"textures": "textures/redwood/red_wood_saplin"
+		},
 		"eyewood_button": {
 			"textures": "textures/abyss/blocks/eye_wood_button_icon"
 		}

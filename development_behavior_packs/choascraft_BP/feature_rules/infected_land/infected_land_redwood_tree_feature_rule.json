@@ -1,0 +1,22 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:feature_rules": {
+    "description": {
+      "identifier": "zombie:infected_land_redwood_tree_feature_rule",
+      "places_feature": "zombie:redwood_tree_floor_feature"
+    },
+    "conditions": {
+      "placement_pass": "after_surface_pass",
+      "minecraft:biome_filter": [
+        { "test": "has_biome_tag", "operator": "==", "value": "infected_land" }
+      ]
+    },
+    "distribution": {
+      "iterations": 2,
+      "coordinate_eval_order": "zyx",
+      "x": { "distribution": "uniform", "extent": [0, 15] },
+      "z": { "distribution": "uniform", "extent": [0, 15] },
+      "y": { "distribution": "uniform", "extent": [60, 130] }
+    }
+  }
+}

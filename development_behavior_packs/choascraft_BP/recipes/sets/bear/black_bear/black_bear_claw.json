@@ -1,0 +1,38 @@
+{
+	"format_version": "1.21.40",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "zombie:black_bear_claws_recipe"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"J",
+			"IC",
+			"XX"
+		],
+		"key": {
+			"X": {
+				"item": "minecraft:iron_ingot"
+			},
+			"I": {
+				"item": "zombie:bear_black_fur"
+			},
+			"J": {
+				"item": "zombie:bear_claw_item"
+			},
+			"C": {
+				"item": "minecraft:lead"
+			}
+		},
+		"unlock": [
+			{
+				"item": "minecraft:iron_ingot"
+			}
+		],
+		"result": {
+			"item": "zombie:black_bear_claws"
+		}
+	}
+}

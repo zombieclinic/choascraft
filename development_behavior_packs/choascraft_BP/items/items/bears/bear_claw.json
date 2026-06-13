@@ -1,0 +1,21 @@
+{
+	"format_version": "1.20.40",
+	"minecraft:item": {
+		"description": {
+			"identifier": "zombie:bear_claw_item",
+			"category": "nature"
+		},
+		"components": {
+			"minecraft:icon": {
+				"texture": "zombie_bear_claw"
+			},
+			"minecraft:display_name": {
+				"value": "Bear Claw"
+			},
+			"minecraft:projectile": {
+				"projectile_entity": "zombie:bear_claw_ammo",
+				"minimum_critical_power": 1
+			}
+		}
+	}
+}

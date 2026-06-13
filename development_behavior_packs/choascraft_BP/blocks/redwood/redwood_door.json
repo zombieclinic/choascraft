@@ -1,0 +1,289 @@
+{
+	"format_version": "1.26.10",
+	"minecraft:block": {
+		"description": {
+			"identifier": "zombie:redwood_door",
+			"traits": {
+				"minecraft:placement_direction": {
+					"enabled_states": [
+						"minecraft:cardinal_direction"
+					]
+				}
+			},
+			"states": {
+				"zombie:open": [
+					false,
+					true
+				],
+				"zombie:upper": [
+					false,
+					true
+				],
+				"zombie:hinge": [
+					false,
+					true
+				]
+			},
+			"menu_category": {
+				"category": "construction",
+				"group": "minecraft:itemGroup.name.door"
+			}
+		},
+		"permutations": [
+			{
+				"condition": "query.block_state('minecraft:cardinal_direction') == 'north'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							0,
+							0
+						]
+					}
+				}
+			},
+			{
+				"condition": "query.block_state('minecraft:cardinal_direction') == 'south'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							180,
+							0
+						]
+					}
+				}
+			},
+			{
+				"condition": "query.block_state('minecraft:cardinal_direction') == 'east'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							270,
+							0
+						]
+					}
+				}
+			},
+			{
+				"condition": "query.block_state('minecraft:cardinal_direction') == 'west'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							90,
+							0
+						]
+					}
+				}
+			},
+			{
+				"condition": "query.block_state('zombie:open') && !query.block_state('zombie:hinge')",
+				"components": {
+					"minecraft:collision_box": {
+						"origin": [
+							5,
+							0,
+							-8
+						],
+						"size": [
+							3,
+							16,
+							16
+						]
+					},
+					"minecraft:selection_box": {
+						"origin": [
+							5,
+							0,
+							-8
+						],
+						"size": [
+							3,
+							16,
+							16
+						]
+					}
+				}
+			},
+			{
+				"condition": "query.block_state('zombie:open') && query.block_state('zombie:hinge')",
+				"components": {
+					"minecraft:collision_box": {
+						"origin": [
+							-8,
+							0,
+							-8
+						],
+						"size": [
+							3,
+							16,
+							16
+						]
+					},
+					"minecraft:selection_box": {
+						"origin": [
+							-8,
+							0,
+							-8
+						],
+						"size": [
+							3,
+							16,
+							16
+						]
+					}
+				}
+			},
+			{
+				"condition": "!query.block_state('zombie:upper')",
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.zombie.eyewood_door",
+						"bone_visibility": {
+							"door_open": "query.block_state('zombie:open') && !query.block_state('zombie:hinge')",
+							"door_closed": "!query.block_state('zombie:open') && !query.block_state('zombie:hinge')",
+							"door_open_flipped": "query.block_state('zombie:open') && query.block_state('zombie:hinge')",
+							"door_closed_flipped": "!query.block_state('zombie:open') && query.block_state('zombie:hinge')"
+						}
+					},
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "redwood_door_bottom",
+							"render_method": "alpha_test"
+						}
+					},
+					"minecraft:loot": "loot_tables/blocks/redwood_door.json"
+				}
+			},
+			{
+				"condition": "query.block_state('zombie:upper')",
+				"components": {
+					"minecraft:movable": {
+						"movement_type": "immovable"
+					},
+					"minecraft:placement_filter": {
+						"conditions": [
+							{
+								"allowed_faces": [
+									"up"
+								],
+								"block_filter": [
+									"zombie:redwood_door"
+								]
+							}
+						]
+					},
+					"minecraft:loot": "loot_tables/blocks/empty.json",
+					"minecraft:geometry": {
+						"identifier": "geometry.zombie.eyewood_door",
+						"bone_visibility": {
+							"door_open": "query.block_state('zombie:open') && !query.block_state('zombie:hinge')",
+							"door_closed": "!query.block_state('zombie:open') && !query.block_state('zombie:hinge')",
+							"door_open_flipped": "query.block_state('zombie:open') && query.block_state('zombie:hinge')",
+							"door_closed_flipped": "!query.block_state('zombie:open') && query.block_state('zombie:hinge')"
+						}
+					},
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "redwood_door_top",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			}
+		],
+		"components": {
+			"minecraft:display_name": "Redwood Door",
+			"zombie:door_toggle": {
+				"block_state": "zombie:open",
+				"enable_sound": "open.wooden_door",
+				"disable_sound": "close.wooden_door"
+			},
+			"minecraft:redstone_consumer": {
+				"min_power": 0
+			},
+			"minecraft:geometry": {
+				"identifier": "geometry.zombie.eyewood_door"
+			},
+			"minecraft:item_visual": {
+				"geometry": "geometry.zombie.eyewood_door_item",
+				"material_instances": {
+					"*": {
+						"texture": "redwood_door_bottom",
+						"render_method": "alpha_test"
+					},
+					"bottom": {
+						"texture": "redwood_door_bottom",
+						"render_method": "alpha_test"
+					},
+					"top": {
+						"texture": "redwood_door_top",
+						"render_method": "alpha_test"
+					}
+				}
+			},
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "redwood_door_bottom",
+					"render_method": "alpha_test"
+				}
+			},
+			"minecraft:collision_box": {
+				"origin": [
+					-8,
+					0,
+					5
+				],
+				"size": [
+					16,
+					16,
+					3
+				]
+			},
+			"minecraft:selection_box": {
+				"origin": [
+					-8,
+					0,
+					5
+				],
+				"size": [
+					16,
+					16,
+					3
+				]
+			},
+			"minecraft:movable": {
+				"movement_type": "popped"
+			},
+			"minecraft:redstone_conductivity": {
+				"redstone_conductor": true
+			},
+			"minecraft:destructible_by_mining": {
+				"seconds_to_destroy": 3.0
+			},
+			"minecraft:destructible_by_explosion": {
+				"explosion_resistance": 3.0
+			},
+			"minecraft:flammable": {
+				"catch_chance_modifier": 5,
+				"destroy_chance_modifier": 20
+			},
+			"minecraft:liquid_detection": {
+				"detection_rules": [
+					{
+						"liquid_type": "water",
+						"can_contain_liquid": true,
+						"on_liquid_touches": "no_reaction"
+					}
+				]
+			},
+			"tag:zombie:door": {},
+			"tag:minecraft:is_axe_item_destructible": {},
+			"tag:one_way_collidable": {},
+			"tag:wood": {}
+		}
+	}
+}
+

@@ -12,12 +12,14 @@ const EYEWOOD_DOOR_ID = "zombie:eyewood_door";
 const WOOD_USE_SOUND = "use.wood";
 const SLAB_ITEM_IDS = new Set([
 	"zombie:eyewood_slab",
-	"zombie:infected_slab"
+	"zombie:infected_slab",
+	"zombie:redwood_slab"
 ]);
 
 const STRIPPABLE_BLOCKS = {
 	"zombie:eyewood_log": "zombie:stripped_eyewood_log",
-	"zombie:infected_tree_log": "zombie:infected_tree_log_stripped"
+	"zombie:infected_tree_log": "zombie:infected_tree_log_stripped",
+	"zombie:redwood_log": "zombie:stripped_redwood_log"
 };
 
 const FACE_NEIGHBORS = {

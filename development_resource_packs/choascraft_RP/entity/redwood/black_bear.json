@@ -1,0 +1,39 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "zombie:black_bear",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/rwmobs/bears/black_bear"
+			},
+			"geometry": {
+				"default": "geometry.bear"
+			},
+			"render_controllers": [
+				"controller.render.default"
+			],
+			"spawn_egg": {
+				"base_color": "#161311",
+				"overlay_color": "#6b4b32"
+			},
+			"animations": {
+				"controller": "controller.animation.bear",
+				"walk1": "animation.bear.walk",
+				"roar1": "animation.bear.roar",
+				"attack1": "animation.bear.attack",
+				"idle1": "animation.bear.idle",
+				"start_sleep1": "animation.bear.start_sleep",
+				"sleep": "animation.bear.sleep",
+				"end_sleep1": "animation.bear.end_sleep"
+			},
+			"scripts": {
+				"animate": [
+					"controller"
+				]
+			}
+		}
+	}
+}

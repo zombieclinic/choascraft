@@ -1,0 +1,31 @@
+{
+	"format_version": "1.21.40",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "zombie:black_bear_boots_recipe"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"XIX",
+			"X X"
+		],
+		"key": {
+			"X": {
+				"item": "minecraft:iron_ingot"
+			},
+			"I": {
+				"item": "zombie:bear_black_fur"
+			}
+		},
+		"unlock": [
+			{
+				"item": "minecraft:iron_ingot"
+			}
+		],
+		"result": {
+			"item": "zombie:black_bear_boots"
+		}
+	}
+}

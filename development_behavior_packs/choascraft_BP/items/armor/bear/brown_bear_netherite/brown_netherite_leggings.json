@@ -1,0 +1,59 @@
+{
+	"format_version": "1.21.40",
+	"minecraft:item": {
+		"description": {
+			"identifier": "zombie:brown_netherite_bear_leggings",
+			"menu_category": {
+				"category": "equipment",
+				"group": "itemGroup.name.leggings"
+			}
+		},
+		"components": {
+			"minecraft:max_stack_size": 1,
+			"minecraft:icon": {
+				"textures": {
+					"default": "zombie_neatherite_brown_bear_leggings"
+				}
+			},
+			"minecraft:wearable": {
+				"slot": "slot.armor.legs",
+				"protection": 6
+			},
+			"minecraft:enchantable": {
+				"slot": "armor_legs",
+				"value": 15
+			},
+			"minecraft:durability": {
+				"max_durability": 1000
+			},
+			"minecraft:hover_text_color": "light_purple",
+			"minecraft:tags": {
+				"tags": [
+					"minecraft:transformable_items",
+					"minecraft:is_armor"
+				]
+			},
+			"minecraft:repairable": {
+				"repair_items": [
+					{
+						"items": [
+							"zombie:bear_claw_item",
+							"zombie:bear_brown_fur",
+							"minecraft:lead",
+							"zombie:brown_bear_leggings"
+						],
+						"repair_amount": "math.random(2,25)"
+					}
+				]
+			},
+			"minecraft:display_name": {
+				"value": "Brown Netherite Bear Leggings"
+			},
+			"minecraft:damage_absorption": {
+				"absorbable_causes": [
+					"freezing"
+				]
+			}
+		}
+	}
+}

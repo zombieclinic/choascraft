@@ -1,0 +1,55 @@
+{
+	"format_version": "1.21.40",
+	"minecraft:item": {
+		"description": {
+			"identifier": "zombie:brown_bear_boots",
+			"menu_category": {
+				"category": "equipment",
+				"group": "itemGroup.name.boots"
+			}
+		},
+		"components": {
+			"minecraft:max_stack_size": 1,
+			"minecraft:icon": "zombie_brown_bear_boots",
+			"minecraft:wearable": {
+				"slot": "slot.armor.feet",
+				"protection": 2
+			},
+			"minecraft:enchantable": {
+				"slot": "armor_feet",
+				"value": 15
+			},
+			"minecraft:durability": {
+				"max_durability": 400
+			},
+			"minecraft:tags": {
+				"tags": [
+					"minecraft:transformable_items",
+					"minecraft:is_armor"
+				]
+			},
+			"minecraft:repairable": {
+				"repair_items": [
+					{
+						"items": [
+							"zombie:bear_claw_item",
+							"zombie:bear_brown_fur",
+							"minecraft:lead",
+							"zombie:brown_bear_boots"
+						],
+						"repair_amount": "math.random(2,25)"
+					}
+				]
+			},
+			"minecraft:hover_text_color": "green",
+			"minecraft:display_name": {
+				"value": "Brown Bear Boots"
+			},
+			"minecraft:damage_absorption": {
+				"absorbable_causes": [
+					"freezing"
+				]
+			}
+		}
+	}
+}

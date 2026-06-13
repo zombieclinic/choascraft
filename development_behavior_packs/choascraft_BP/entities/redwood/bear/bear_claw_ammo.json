@@ -1,0 +1,112 @@
+{
+	"format_version": "1.19.10",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "zombie:bear_claw_ammo",
+			"is_spawnable": false,
+			"is_summonable": true,
+			"runtime_identifier": "arrow",
+			"animations": {
+				"play_animation": "controller.animation.bear_ammo"
+			},
+			"scripts": {
+				"animate": [
+					"play_animation"
+				]
+			}
+		},
+		"components": {
+			"minecraft:collision_box": {
+				"width": 0.25,
+				"height": 0.25
+			},
+			"minecraft:hurt_on_condition": {
+				"damage_conditions": [
+					{
+						"filters": {
+							"test": "in_lava",
+							"subject": "self",
+							"operator": "==",
+							"value": true
+						},
+						"cause": "lava",
+						"damage_per_tick": 4
+					}
+				]
+			},
+			"minecraft:physics": {},
+			"minecraft:pushable": {
+				"is_pushable": false,
+				"is_pushable_by_piston": true
+			},
+			"minecraft:conditional_bandwidth_optimization": {
+				"default_values": {
+					"max_optimized_distance": 80,
+					"max_dropped_ticks": 7,
+					"use_motion_prediction_hints": true
+				}
+			},
+			"minecraft:projectile": {
+				"on_hit": {
+					"impact_damage": {
+						"damage": [
+							6,
+							10
+						],
+						"knockback": true,
+						"destroy_on_hit": true
+					},
+					"stick_in_ground": {
+						"shake_time": 0
+					},
+					"definition_event": {
+						"event_trigger": {
+							"event": "timer"
+						}
+					}
+				},
+				"hit_sound": "bow.hit",
+				"power": 2.5,
+				"gravity": 0.05,
+				"uncertainty_base": 16,
+				"uncertainty_multiplier": 4,
+				"anchor": 1,
+				"should_bounce": true,
+				"offset": [
+					-0.02,
+					-0.1,
+					0
+				]
+			}
+		},
+		"events": {
+			"despawn": {
+				"add": {
+					"component_groups": [
+						"despawn"
+					]
+				}
+			},
+			"timer": {
+				"add": {
+					"component_groups": [
+						"timer"
+					]
+				}
+			}
+		},
+		"component_groups": {
+			"despawn": {
+				"minecraft:instant_despawn": {}
+			},
+			"timer": {
+				"minecraft:timer": {
+					"time": 1,
+					"time_down_event": {
+						"event": "despawn"
+					}
+				}
+			}
+		}
+	}
+}

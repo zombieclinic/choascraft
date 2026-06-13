@@ -1,0 +1,15 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": { "identifier": "zombie:redwood_slab" },
+    "tags": [ "crafting_table" ],
+    "pattern": [ "###" ],
+    "key": { "#": { "item": "zombie:redwood_planks" } },
+    "result": [
+      { "item": "zombie:redwood_slab", "count": 6 }
+    ],
+    "unlock": [
+      { "item": "zombie:redwood_planks" }
+    ]
+  }
+}

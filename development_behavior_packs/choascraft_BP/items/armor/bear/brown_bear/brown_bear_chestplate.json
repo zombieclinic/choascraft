@@ -1,0 +1,58 @@
+{
+	"format_version": "1.21.40",
+	"minecraft:item": {
+		"description": {
+			"identifier": "zombie:brown_bear_chestplate",
+			"menu_category": {
+				"category": "equipment",
+				"group": "itemGroup.name.chestplate"
+			}
+		},
+		"components": {
+			"minecraft:max_stack_size": 1,
+			"minecraft:wearable": {
+				"slot": "slot.armor.chest",
+				"protection": 4
+			},
+			"minecraft:enchantable": {
+				"slot": "armor_torso",
+				"value": 15
+			},
+			"minecraft:durability": {
+				"max_durability": 500
+			},
+			"minecraft:fuel": {
+				"duration": 115
+			},
+			"minecraft:icon": "zombie_brown_bear_chestplate2",
+			"minecraft:hover_text_color": "green",
+			"minecraft:repairable": {
+				"repair_items": [
+					{
+						"items": [
+							"zombie:bear_claw_item",
+							"zombie:bear_brown_fur",
+							"minecraft:lead",
+							"zombie:brown_bear_chestplate"
+						],
+						"repair_amount": "math.random(2,25)"
+					}
+				]
+			},
+			"minecraft:display_name": {
+				"value": "Brown Bear Chestplate"
+			},
+			"minecraft:tags": {
+				"tags": [
+					"minecraft:transformable_items",
+					"minecraft:is_armor"
+				]
+			},
+			"minecraft:damage_absorption": {
+				"absorbable_causes": [
+					"freezing"
+				]
+			}
+		}
+	}
+}

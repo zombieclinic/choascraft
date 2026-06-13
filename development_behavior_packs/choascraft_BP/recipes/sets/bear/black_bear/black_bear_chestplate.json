@@ -1,0 +1,32 @@
+{
+	"format_version": "1.20.10",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "zombie:black_bear_chestplate_recipe"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"XIX",
+			"XXX",
+			"XXX"
+		],
+		"key": {
+			"X": {
+				"item": "minecraft:iron_ingot"
+			},
+			"I": {
+				"item": "zombie:bear_black_fur"
+			}
+		},
+		"unlock": [
+			{
+				"item": "minecraft:iron_ingot"
+			}
+		],
+		"result": {
+			"item": "zombie:black_bear_chestplate"
+		}
+	}
+}

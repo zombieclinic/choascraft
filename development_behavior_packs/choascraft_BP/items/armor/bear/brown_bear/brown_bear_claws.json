@@ -1,0 +1,96 @@
+{
+	"format_version": "1.21.40",
+	"minecraft:item": {
+		"description": {
+			"identifier": "zombie:brown_bear_claws",
+			"menu_category": {
+				"category": "equipment",
+				"group": "itemGroup.name.sword"
+			}
+		},
+		"components": {
+			"minecraft:enchantable": {
+				"slot": "sword",
+				"value": 20
+			},
+			"minecraft:hand_equipped": true,
+			"minecraft:should_despawn": true,
+			"minecraft:display_name": {
+				"value": "Brown Bear Claws"
+			},
+			"minecraft:projectile": {
+				"minimum_critical_power": 1.25,
+				"projectile_entity": "zombie:bear_claw_ammo"
+			},
+			"minecraft:hover_text_color": "green",
+			"minecraft:icon": "zombie_brown_bearclaw",
+			"minecraft:damage": 6,
+			"minecraft:digger": {
+				"destroy_speeds": [
+					{
+						"speed": 15,
+						"block": "minecraft:web"
+					},
+					{
+						"speed": 15,
+						"block": "minecraft:bamboo"
+					},
+					{
+						"speed": 15,
+						"block": "minecraft:bee_nest"
+					},
+					{
+						"speed": 15,
+						"block": "minecraft:dirt"
+					},
+					{
+						"speed": 15,
+						"block": "minecraft:grass_block"
+					}
+				]
+			},
+			"minecraft:durability": {
+				"max_durability": 2031
+			},
+			"minecraft:repairable": {
+				"repair_items": [
+					{
+						"items": [
+							"zombie:brown_bear_claws",
+							"zombie:bear_claw_item",
+							"zombie:bear_brown_fur",
+							"minecraft:lead"
+						],
+						"repair_amount": "math.random(2,25)"
+					}
+				]
+			},
+			"minecraft:max_stack_size": 1,
+			"minecraft:shooter": {
+				"ammunition": [
+					{
+						"item": "zombie:bear_claw_item",
+						"use_offhand": true,
+						"search_inventory": true,
+						"use_in_creative": true
+					}
+				],
+				"scale_power_by_draw_duration": false,
+				"max_draw_duration": 1
+			},
+			"minecraft:use_modifiers": {
+				"use_duration": 10,
+				"movement_modifier": 1
+			},
+			"minecraft:custom_components": [
+				"zombie:bearcheck",
+				"zombie:onhitdamage"
+			],
+			"minecraft:tags": {
+				"tags": [
+					"minecraft:is_sword"
+				]
+			}
+		}
+	}
+}

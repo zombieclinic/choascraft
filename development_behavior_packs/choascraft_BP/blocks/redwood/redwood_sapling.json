@@ -1,0 +1,54 @@
+{
+  "format_version": "1.26.10",
+  "minecraft:block": {
+    "description": {
+      "identifier": "zombie:redwood_sapling",
+      "states": {
+        "zombie:growth_stage": { "values": { "min": 0, "max": 4 } }
+      },
+      "menu_category": {
+        "category": "nature",
+        "group": "minecraft:itemGroup.name.sapling"
+      }
+    },
+    "components": {
+      "minecraft:display_name": "Redwood Sapling",
+      "minecraft:destructible_by_mining": { "seconds_to_destroy": 0 },
+      "minecraft:destructible_by_explosion": { "explosion_resistance": 0 },
+      "minecraft:flammable": { "catch_chance_modifier": 60, "destroy_chance_modifier": 100 },
+      "minecraft:geometry": "geometry.red_wood_saplin",
+      "minecraft:material_instances": {
+        "*": { "texture": "red_wood_saplin", "render_method": "alpha_test", "face_dimming": false, "ambient_occlusion": false }
+      },
+      "minecraft:item_visual": {
+        "geometry": "geometry.red_wood_saplin",
+        "material_instances": {
+          "*": { "texture": "red_wood_saplin", "render_method": "alpha_test", "face_dimming": false, "ambient_occlusion": false }
+        }
+      },
+      "minecraft:selection_box": { "origin": [-6, 0, -6], "size": [12, 16, 12] },
+      "minecraft:collision_box": false,
+      "minecraft:loot": "loot_tables/blocks/redwood_sapling.json",
+      "minecraft:light_dampening": 0,
+      "minecraft:placement_filter": {
+        "conditions": [
+          {
+            "allowed_faces": [ "up" ],
+            "block_filter": [ "minecraft:grass_block", "minecraft:dirt", "minecraft:coarse_dirt", "minecraft:podzol", "zombie:infected_grass_block", "zombie:infected_dirt", "zombie:infected_block", "zombie:infected_sporestone" ]
+          }
+        ]
+      },
+      "minecraft:tick": { "looping": true, "interval_range": [600, 1200] },
+      "zombie:eyewood_tree_sapling_growth": {
+        "stage_state": "zombie:growth_stage",
+        "max_stage": 4,
+        "feature": "zombie:redwood_tree_feature",
+        "growth_chance": 0.45,
+        "valid_base_blocks": [ "minecraft:grass_block", "minecraft:dirt", "minecraft:coarse_dirt", "minecraft:podzol", "zombie:infected_grass_block", "zombie:infected_dirt", "zombie:infected_block", "zombie:infected_sporestone" ]
+      },
+      "tag:zombie:redwood_sapling": {},
+      "tag:sapling": {},
+      "tag:plant": {}
+    }
+  }
+}

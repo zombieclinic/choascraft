@@ -1,0 +1,38 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "zombie:heartwood",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/rwmobs/heartwood_redwood"
+			},
+			"geometry": {
+				"default": "geometry.zombie_Heartwood"
+			},
+			"render_controllers": [
+				"controller.render.default"
+			],
+			"spawn_egg": {
+				"base_color": "#6b2e1f",
+				"overlay_color": "#d06b28"
+			},
+			"animations": {
+				"idle": "animation.pumpkin_monster.idle",
+				"walk": "animation.pumpkin_monster.walk"
+			},
+			"scripts": {
+				"animate": [
+					{
+						"walk": "query.ground_speed"
+					},
+					{
+						"idle": "!query.ground_speed"
+					}
+				]
+			}
+		}
+	}
+}

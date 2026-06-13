@@ -1,0 +1,96 @@
+{
+	"format_version": "1.21.90",
+	"minecraft:item": {
+		"description": {
+			"identifier": "zombie:black_bear_claws",
+			"menu_category": {
+				"category": "equipment",
+				"group": "minecraft:itemGroup.name.sword"
+			}
+		},
+		"components": {
+			"minecraft:enchantable": {
+				"slot": "sword",
+				"value": 20
+			},
+			"minecraft:hand_equipped": true,
+			"minecraft:should_despawn": true,
+			"minecraft:display_name": {
+				"value": "Black Bear Claws"
+			},
+			"minecraft:hover_text_color": "green",
+			"minecraft:icon": "zombie_black_bearclaw",
+			"minecraft:damage": 6,
+			"minecraft:digger": {
+				"destroy_speeds": [
+					{
+						"speed": 15,
+						"block": "minecraft:web"
+					},
+					{
+						"speed": 15,
+						"block": "minecraft:bamboo"
+					},
+					{
+						"speed": 15,
+						"block": "minecraft:bee_nest"
+					},
+					{
+						"speed": 15,
+						"block": "minecraft:dirt"
+					},
+					{
+						"speed": 15,
+						"block": "minecraft:grass_block"
+					}
+				]
+			},
+			"minecraft:durability": {
+				"max_durability": 2031
+			},
+			"minecraft:repairable": {
+				"repair_items": [
+					{
+						"items": [
+							"zombie:black_bear_claws",
+							"zombie:bear_claw_item",
+							"zombie:bear_black_fur",
+							"minecraft:lead"
+						],
+						"repair_amount": "math.floor(query.max_durability * (0.20 + math.random(0.0, 1.0) * 0.10))"
+					}
+				]
+			},
+			"minecraft:max_stack_size": 1,
+			"minecraft:projectile": {
+				"minimum_critical_power": 1.25,
+				"projectile_entity": "zombie:bear_claw_ammo"
+			},
+			"minecraft:shooter": {
+				"ammunition": [
+					{
+						"item": "zombie:bear_claw_item",
+						"use_offhand": false,
+						"search_inventory": true,
+						"use_in_creative": true
+					}
+				],
+				"scale_power_by_draw_duration": false,
+				"max_draw_duration": 10
+			},
+			"minecraft:use_modifiers": {
+				"use_duration": 10,
+				"movement_modifier": 1
+			},
+			"minecraft:custom_components": [
+				"zombie:bearcheck",
+				"zombie:onhitdamage"
+			],
+			"minecraft:tags": {
+				"tags": [
+					"minecraft:is_sword"
+				]
+			}
+		}
+	}
+}

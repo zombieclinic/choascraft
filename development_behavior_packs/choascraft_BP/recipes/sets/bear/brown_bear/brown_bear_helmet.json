@@ -1,0 +1,31 @@
+{
+	"format_version": "1.20.10",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "zombie:brown_bear_helmet_recipe"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"XXX",
+			"XIX"
+		],
+		"key": {
+			"X": {
+				"item": "minecraft:iron_ingot"
+			},
+			"I": {
+				"item": "zombie:bear_brown_fur"
+			}
+		},
+		"unlock": [
+			{
+				"item": "minecraft:iron_ingot"
+			}
+		],
+		"result": {
+			"item": "zombie:brown_bear_helmet"
+		}
+	}
+}

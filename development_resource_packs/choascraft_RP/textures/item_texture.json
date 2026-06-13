@@ -410,6 +410,66 @@
 		},
 		"zombie_sunking_captain_sword": {
 			"textures": "textures/a/sc/s/captions_sunkin_sword"
+		},
+		"zombie_bear_claw": {
+			"textures": "textures/items/bear_armor/bear_claw_icon"
+		},
+		"zombie_bear_raw": {
+			"textures": "textures/items/bears/bear_raw_meat"
+		},
+		"zombie_bear_cooked": {
+			"textures": "textures/items/bears/bear_cooked_meat"
+		},
+		"zombie_bear_rotten": {
+			"textures": "textures/items/bears/bear_rotten_meat"
+		},
+		"zombie_brown_bear_fur": {
+			"textures": "textures/items/bears/brown_bear_fur"
+		},
+		"zombie_black_bear_fur": {
+			"textures": "textures/items/bears/black_bear_fur"
+		},
+		"zombie_brown_bear_leggings": {
+			"textures": "textures/items/bear_armor/brown_leggings_icon"
+		},
+		"zombie_brown_bear_helment": {
+			"textures": "textures/items/bear_armor/bear_helment"
+		},
+		"zombie_brown_bearclaw": {
+			"textures": "textures/items/bear_armor/bear_claw_icon"
+		},
+		"zombie_brown_bear_chestplate2": {
+			"textures": "textures/items/bear_armor/brown_armor_chestplate_icon"
+		},
+		"zombie_brown_bear_boots": {
+			"textures": "textures/items/bear_armor/brown_bear_boots_icon"
+		},
+		"zombie_black_bear_leggings": {
+			"textures": "textures/items/bear_armor/black_bear_leggings_icon"
+		},
+		"zombie_black_bear_helment": {
+			"textures": "textures/items/bear_armor/black_bear_helmet_icon"
+		},
+		"zombie_black_bearclaw": {
+			"textures": "textures/items/bear_armor/black_bear_claw_icon"
+		},
+		"zombie_black_bear_chestplate": {
+			"textures": "textures/items/bear_armor/black_chestplate_icon"
+		},
+		"zombie_black_bear_boots": {
+			"textures": "textures/items/bear_armor/black_bear_boots_icon"
+		},
+		"zombie_neatherite_brown_bear_helment": {
+			"textures": "textures/items/bear_armor/bear_neather_helment"
+		},
+		"zombie_neatherite_brown_bear_leggings": {
+			"textures": "textures/items/bear_armor/brown_netherite_leggings_icon"
+		},
+		"zombie_neatherite_black_bear_leggings": {
+			"textures": "textures/items/bear_armor/black_neatherite_leggings_icon"
+		},
+		"zombie_black_bear_helmet": {
+			"textures": "textures/items/bear_armor/black_netherite_helmet_icon"
 		}
 	}
 }

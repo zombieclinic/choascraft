@@ -101,5 +101,44 @@
 	},
 	"zombie:zc_button": {
 		"sound": "wood"
+	},
+	"zombie:redwood_door": {
+		"sound": "wood"
+	},
+	"zombie:redwood_button": {
+		"sound": "wood"
+	},
+	"zombie:redwood_fence": {
+		"sound": "wood"
+	},
+	"zombie:redwood_fence_gate": {
+		"sound": "wood"
+	},
+	"zombie:redwood_leaves": {
+		"sound": "grass"
+	},
+	"zombie:redwood_log": {
+		"sound": "wood"
+	},
+	"zombie:redwood_planks": {
+		"sound": "wood"
+	},
+	"zombie:redwood_pressure_plate": {
+		"sound": "wood"
+	},
+	"zombie:redwood_sapling": {
+		"sound": "grass"
+	},
+	"zombie:redwood_slab": {
+		"sound": "wood"
+	},
+	"zombie:redwood_stairs": {
+		"sound": "wood"
+	},
+	"zombie:redwood_trapdoor": {
+		"sound": "wood"
+	},
+	"zombie:stripped_redwood_log": {
+		"sound": "wood"
 	}
 }

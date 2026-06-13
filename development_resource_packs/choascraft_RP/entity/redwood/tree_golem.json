@@ -1,0 +1,37 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "zombie:tree_golem",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/rwmobs/Tree_golem"
+			},
+			"geometry": {
+				"default": "geometry.wood_golem"
+			},
+			"render_controllers": [
+				"controller.render.default"
+			],
+			"spawn_egg": {
+				"base_color": "#5a3320",
+				"overlay_color": "#2f6b32"
+			},
+			"animations": {
+				"controller": "controller.animation.golem_tree",
+				"walk": "animation.wood_golem.walk",
+				"shoot": "animation.wood_golem.shoot",
+				"idle": "animation.wood_golem.idle",
+				"spawn": "animation.wood_golem.spawn",
+				"death": "animation.wood_golem.despawn"
+			},
+			"scripts": {
+				"animate": [
+					"controller"
+				]
+			}
+		}
+	}
+}
