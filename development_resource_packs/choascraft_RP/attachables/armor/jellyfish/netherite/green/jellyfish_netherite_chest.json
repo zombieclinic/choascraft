@@ -9,7 +9,7 @@
 				"enchanted": "entity_alphatest_glint"
 			},
 			"textures": {
-				"default": "textures/a/jf/gn/nc/netherite_chest",
+				"default": "textures/armor/jellyfish/green/netheritechest/netherite_chest",
 				"enchanted": "textures/misc/enchanted_item_glint"
 			},
 			"geometry": {

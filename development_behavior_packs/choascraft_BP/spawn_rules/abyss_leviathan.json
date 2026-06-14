@@ -10,7 +10,7 @@
 				"minecraft:spawns_on_surface": {},
 				"minecraft:spawns_underwater": {},
 				"minecraft:weight": {
-					"default": 0.1
+					"default": 1
 				},
 				"minecraft:brightness_filter": {
 					"max": 0,

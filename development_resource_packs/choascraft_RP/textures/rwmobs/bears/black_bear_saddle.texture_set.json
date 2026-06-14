@@ -1,0 +1,8 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:texture_set": {
+		"color": "black_bear_saddle",
+		"metalness_emissive_roughness": "black_bear_saddle_mer",
+		"normal": "black_bear_saddle_normal"
+	}
+}

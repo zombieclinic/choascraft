@@ -1,5 +1,5 @@
 {
-	"format_version": "1.16.0",
+	"format_version": "1.26.20",
 	"minecraft:entity": {
 		"description": {
 			"identifier": "zombie:zombie_hammerhead_shark_spawner",
@@ -58,7 +58,7 @@
 			"minecraft:damage_sensor": {
 				"triggers": {
 					"cause": "fall",
-					"deals_damage": false
+					"deals_damage": "no"
 				}
 			},
 			"minecraft:hurt_on_condition": {
@@ -82,10 +82,6 @@
 			},
 			"minecraft:nameable": {},
 			"minecraft:physics": {},
-			"minecraft:pushable": {
-				"is_pushable": true,
-				"is_pushable_by_piston": true
-			},
 			"minecraft:despawn": {
 				"despawn_from_distance": {}
 			},

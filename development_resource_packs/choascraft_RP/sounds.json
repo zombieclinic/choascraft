@@ -38,6 +38,46 @@
 			},
 			"pitch": [0.75, 0.95],
 			"volume": 1.2
+		},
+		"zombie:brown_bear": {
+			"events": {
+				"ambient": "mob.bear.say",
+				"hurt": "mob.bear.hurt",
+				"death": "mob.bear.death",
+				"attack": "mob.bear.attack"
+			},
+			"pitch": [0.85, 1.1],
+			"volume": 1
+		},
+		"zombie:black_bear": {
+			"events": {
+				"ambient": "mob.bear.say",
+				"hurt": "mob.bear.hurt",
+				"death": "mob.bear.death",
+				"attack": "mob.bear.attack"
+			},
+			"pitch": [0.9, 1.15],
+			"volume": 1
+		},
+		"zombie:zombie_brown_bear": {
+			"events": {
+				"ambient": "mob.bear.say",
+				"hurt": "mob.bear.hurt",
+				"death": "mob.bear.death",
+				"attack": "mob.bear.attack"
+			},
+			"pitch": [0.7, 0.95],
+			"volume": 1.1
+		},
+		"zombie:zombie_black_bear": {
+			"events": {
+				"ambient": "mob.bear.say",
+				"hurt": "mob.bear.hurt",
+				"death": "mob.bear.death",
+				"attack": "mob.bear.attack"
+			},
+			"pitch": [0.75, 1],
+			"volume": 1.1
 		}
 	  }
 	}

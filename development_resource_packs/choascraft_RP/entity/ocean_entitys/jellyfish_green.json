@@ -8,7 +8,7 @@
 				"head" :"entity_alphablend"
 			},
 			"textures": {
-				"default": "textures/e/jf/gn/Jellyfish_transparent"
+				"default": "textures/entity/jellyfish/green/green"
 			},
 			"geometry": {
 				"default": "geometry.green_jelly_fish"

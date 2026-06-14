@@ -7,7 +7,7 @@
 				"default": "entity_alphatest"
 			},
 			"textures": {
-				"default": "textures/e/s/gw/zg/zombie_shark_great_white_texture"
+				"default": "textures/entity/greatwhite/zombie/zombie"
 			},
 			"geometry": {
 				"default": "geometry.greatwhite"

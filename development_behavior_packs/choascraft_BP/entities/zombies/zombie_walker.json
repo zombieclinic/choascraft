@@ -1,5 +1,5 @@
 {
-    "format_version": "1.21.0",
+    "format_version": "1.26.20",
     "minecraft:entity": {
       "description": {
         "identifier": "zombie:walker",
@@ -107,7 +107,7 @@
           "minecraft:damage_sensor": {
             "triggers": [
               {
-                "deals_damage": false
+                "deals_damage": "no"
               }
             ]
           },
@@ -253,10 +253,6 @@
           ]
         },
         "minecraft:physics": {
-        },
-        "minecraft:pushable": {
-          "is_pushable": true,
-          "is_pushable_by_piston": true
         },
         "minecraft:conditional_bandwidth_optimization": {
         }

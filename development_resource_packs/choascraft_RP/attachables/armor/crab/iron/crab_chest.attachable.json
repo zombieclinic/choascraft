@@ -9,7 +9,7 @@
 				"enchanted": "entity_alphatest_glint"
 			},
 			"textures": {
-				"default": "textures/a/cb/c/crab_chest",
+				"default": "textures/armor/crab/chest/crab_chest",
 				"enchanted": "textures/misc/enchanted_item_glint"
 			},
 			"geometry": {

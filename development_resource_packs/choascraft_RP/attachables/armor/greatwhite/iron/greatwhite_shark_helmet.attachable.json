@@ -9,7 +9,7 @@
 				"enchanted": "entity_alphatest_glint"
 			},
 			"textures": {
-				"default": "textures/a/gw/h/shark_helmet",
+				"default": "textures/armor/greatwhite/helmet/shark_helmet",
 				"enchanted": "textures/misc/enchanted_item_glint"
 			},
 			"geometry": {

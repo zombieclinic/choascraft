@@ -11,7 +11,7 @@
 				"enchanted": "entity_alphatest_glint"
 			},
 			"textures": {
-				"default": "textures/a/sc/l/sunking_captain_leggings",
+				"default": "textures/armor/sunkingcaptains/leggings/sunking_captain_leggings",
 				"enchanted": "textures/misc/enchanted_item_glint"
 			},
 			"geometry": {

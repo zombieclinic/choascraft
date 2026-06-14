@@ -1,8 +1,0 @@
-{
-	"format_version": "1.16.100",
-	"minecraft:texture_set": {
-		"color": "sporepod_middle",
-		"metalness_emissive_roughness": "sporepod_middle_mer",
-		"normal": "sporepod_middle_normal"
-	}
-}

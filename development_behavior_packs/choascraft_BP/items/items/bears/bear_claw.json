@@ -1,14 +1,14 @@
 {
-	"format_version": "1.20.40",
+	"format_version": "1.26.20",
 	"minecraft:item": {
 		"description": {
 			"identifier": "zombie:bear_claw_item",
-			"category": "nature"
+			"menu_category": {
+				"category": "nature"
+			}
 		},
 		"components": {
-			"minecraft:icon": {
-				"texture": "zombie_bear_claw"
-			},
+			"minecraft:icon": "zombie_bear_claw",
 			"minecraft:display_name": {
 				"value": "Bear Claw"
 			},

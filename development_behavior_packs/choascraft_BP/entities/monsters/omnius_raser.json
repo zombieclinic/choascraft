@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.70",
+	"format_version": "1.26.20",
 	"minecraft:entity": {
 		"description": {
 			"identifier": "zombie:omnius_raser",
@@ -24,10 +24,6 @@
 			"minecraft:physics": {
 				"has_gravity": false,
 				"has_collision": false
-			},
-			"minecraft:pushable": {
-				"is_pushable": false,
-				"is_pushable_by_piston": false
 			}
 		},
 		"events": {

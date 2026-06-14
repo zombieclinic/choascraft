@@ -8,7 +8,7 @@
 				"default": "entity_alphatest"
 			},
 			"textures": {
-				"default": "textures/e/o/zo/orca_zombie"
+				"default": "textures/entity/orca/zombie/zombie"
 				
 				
 			},

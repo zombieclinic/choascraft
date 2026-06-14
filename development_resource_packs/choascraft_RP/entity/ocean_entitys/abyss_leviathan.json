@@ -7,7 +7,7 @@
 				"default": "entity_alphablend"
 			},
 			"textures": {
-				"default": "textures/e/al/abyss_leviathan"
+				"default": "textures/entity/leviathan/abyssleviathan"
 			},
 			"geometry": {
 				"default": "geometry.abyss_leviathan"

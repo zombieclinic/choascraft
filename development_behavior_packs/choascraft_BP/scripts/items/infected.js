@@ -85,3 +85,6 @@ export class infectedAttack {
     }, SECONDS * TPS + 1);
   }
 }
+
+
+

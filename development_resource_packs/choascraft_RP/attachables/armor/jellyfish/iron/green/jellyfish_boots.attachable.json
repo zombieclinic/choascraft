@@ -9,7 +9,7 @@
 				"enchanted": "entity_alphatest_glint"
 			},
 			"textures": {
-				"default": "textures/a/jf/gn/b/jellyfish_boots_green",
+				"default": "textures/armor/jellyfish/green/boots/jellyfish_boots_green",
 				"enchanted": "textures/misc/enchanted_item_glint"
 			},
 			"geometry": {

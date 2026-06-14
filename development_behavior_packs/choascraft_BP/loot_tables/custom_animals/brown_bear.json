@@ -1,61 +1,99 @@
 {
-	"pools": [
-		{
-			"rolls": 1,
-			"entries": [
-				{
-					"type": "item",
-					"name": "zombie:bear_raw_meat",
-					"weight": 1,
-					"functions": [
-						{
-							"function": "set_count",
-							"count": {
-								"min": 1,
-								"max": 3
-							}
-						}
-					]
-				}
-			]
-		},
-		{
-			"rolls": 1,
-			"entries": [
-				{
-					"type": "item",
-					"name": "zombie:bear_brown_fur",
-					"weight": 1,
-					"functions": [
-						{
-							"function": "set_count",
-							"count": {
-								"min": 0,
-								"max": 2
-							}
-						}
-					]
-				}
-			]
-		},
-		{
-			"rolls": 1,
-			"entries": [
-				{
-					"type": "item",
-					"name": "zombie:bear_claw_item",
-					"weight": 1,
-					"functions": [
-						{
-							"function": "set_count",
-							"count": {
-								"min": 0,
-								"max": 2
-							}
-						}
-					]
-				}
-			]
-		}
-	]
+    "pools":  [
+                  {
+                      "rolls":  1,
+                      "entries":  [
+                                      {
+                                          "type":  "item",
+                                          "name":  "zombie:bear_raw_meat",
+                                          "weight":  1,
+                                          "functions":  [
+                                                            {
+                                                                "function":  "set_count",
+                                                                "count":  {
+                                                                              "min":  1,
+                                                                              "max":  3
+                                                                          }
+                                                            }
+                                                        ]
+                                      }
+                                  ]
+                  },
+                  {
+                      "rolls":  1,
+                      "entries":  [
+                                      {
+                                          "type":  "item",
+                                          "name":  "zombie:bear_brown_fur",
+                                          "weight":  1,
+                                          "functions":  [
+                                                            {
+                                                                "function":  "set_count",
+                                                                "count":  {
+                                                                              "min":  0,
+                                                                              "max":  2
+                                                                          }
+                                                            }
+                                                        ]
+                                      }
+                                  ]
+                  },
+                  {
+                      "rolls":  1,
+                      "entries":  [
+                                      {
+                                          "type":  "item",
+                                          "name":  "zombie:bear_claw_item",
+                                          "weight":  1,
+                                          "functions":  [
+                                                            {
+                                                                "function":  "set_count",
+                                                                "count":  {
+                                                                              "min":  0,
+                                                                              "max":  2
+                                                                          }
+                                                            }
+                                                        ]
+                                      }
+                                  ]
+                  },
+                  {
+                      "conditions":  [
+                                         {
+                                             "condition":  "random_chance",
+                                             "chance":  0.08
+                                         }
+                                     ],
+                      "rolls":  1,
+                      "entries":  [
+                                      {
+                                          "type":  "item",
+                                          "name":  "minecraft:written_book",
+                                          "functions":  [
+                                                            {
+                                                                "function":  "set_book_contents",
+                                                                "author":  "Choascraft",
+                                                                "title":  "Brown Bear Guide",
+                                                                "pages":  [
+                                                                              "Brown Bear Guide\n\nA Choascraft guide for brown bear facts, redwood encounters, drops, armor, claws, and netherite upgrades.",
+                                                                              "Fact 1\n\nBrown bears are powerful omnivores. They can eat plants, fish, insects, roots, berries, and meat.",
+                                                                              "Fact 2\n\nMany brown bears gain large fat reserves before winter. Food matters most before cold seasons arrive.",
+                                                                              "Fact 3\n\nBears have strong noses and can smell food from far away.",
+                                                                              "Fact 4\n\nBears may stand upright to smell and see better, not only to threaten.",
+                                                                              "Choascraft Brown Bears\n\nBrown bears roam the redwood wilderness. They are tempted by salmon but cannot currently be tamed.",
+                                                                              "Combat\n\nBrown bears have heavy melee damage and a stomp-style attack. Respect the reach and do not crowd them.",
+                                                                              "Drops\n\nBrown bears drop Bear Raw Meat, Brown Bear Fur, and Bear Claw items. Meat and parts can roll in separate pools.",
+                                                                              "Food\n\nBear Raw Meat can be cooked into Bear Cooked Meat. Zombie bears drop Bear Rotten Meat instead.",
+                                                                              "Brown Bear Gear\n\nBrown Bear Fur and Bear Claw items are used to craft the brown bear armor set and brown bear claws.",
+                                                                              "Crafting\n\nCraft Brown Bear Helmet, Chestplate, Leggings, Boots, and Brown Bear Claws from bear parts. The exact recipes are in the bear recipe folder.",
+                                                                              "Bear Claws\n\nBrown Bear Claws are wearable/usable claw gear. Bear Claw items also act as repair material for bear gear.",
+                                                                              "Netherite Bear Gear\n\nUpgrade brown bear armor with smithing recipes to make Brown Netherite Bear gear.",
+                                                                              "Keeper Note\n\nSalmon gets their attention. It does not make them yours. Bring armor before studying one up close."
+                                                                          ]
+                                                            }
+                                                        ]
+                                      }
+                                  ]
+                  }
+              ]
 }

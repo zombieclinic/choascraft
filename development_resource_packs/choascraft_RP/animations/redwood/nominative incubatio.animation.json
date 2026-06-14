@@ -1,0 +1,29 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.nominative_incubatio.firstperson": {
+			"loop": true,
+			"bones": {
+				"bb_main": {
+					"position": [
+						-6,
+						11,
+						0
+					]
+				}
+			}
+		},
+		"animation.nominative_incubatio.thrid": {
+			"loop": true,
+			"bones": {
+				"bb_main": {
+					"position": [
+						-6,
+						11,
+						-3
+					]
+				}
+			}
+		}
+	}
+}

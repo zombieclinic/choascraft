@@ -1,0 +1,8 @@
+{
+    "format_version":  "1.16.100",
+    "minecraft:texture_set":  {
+                                  "color":  "bottomdoor",
+                                  "metalness_emissive_roughness":  "bottomdoor_mer",
+                                  "normal":  "bottomdoor_normal"
+                              }
+}

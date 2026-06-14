@@ -7,14 +7,14 @@
 				"default": "entity_alphatest"
 			},
 			"textures": {
-				"default": "textures/e/s/hh/h/nm_shark_hammerhead_texture",
-				"saddled_and_chested": "textures/e/s/hh/cs/hh_chest_saddle",
-				"nochest": "textures/e/s/hh/sd/nm_shark_hammerhead_texture_saddle",
-				"nosaddle_chest": "textures/e/s/hh/c/nm_shark_hammerhead_texture_chest",
-				"zombie": "textures/e/s/hh/zh/zombie_shark_hammerhead_texture",
-				"zombie_saddle": "textures/e/s/hh/zs/zombie_shark_hammerhead_texture_saddle",
-				"zombie_chest": "textures/e/s/hh/zc/zombie_shark_hammerhead_texture_chest",
-				"zombie_chest_saddle": "textures/e/s/hh/zcs/zombie_shark_hammerhead_texture_chest_saddle"
+				"default": "textures/entity/hammerhead/hammerhead/hammerhead",
+				"saddled_and_chested": "textures/entity/hammerhead/chestsaddle/chestsaddle",
+				"nochest": "textures/entity/hammerhead/saddle/saddle",
+				"nosaddle_chest": "textures/entity/hammerhead/chest/chest",
+				"zombie": "textures/entity/hammerhead/zombie/zombie",
+				"zombie_saddle": "textures/entity/hammerhead/zombiesaddle/zombiesaddle",
+				"zombie_chest": "textures/entity/hammerhead/zombiechest/zombiechest",
+				"zombie_chest_saddle": "textures/entity/hammerhead/zombiechestsaddle/zombiechestsaddle"
 			},
 			"geometry": {
 				"default": "geometry.hammerhead"

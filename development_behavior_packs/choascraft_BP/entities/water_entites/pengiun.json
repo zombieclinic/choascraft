@@ -1,5 +1,5 @@
 {
-	"format_version": "1.26.10",
+	"format_version": "1.26.20",
 	"minecraft:entity": {
 		"description": {
 			"identifier": "zombie:king_penguin",
@@ -274,8 +274,7 @@
 					"max_dist": 16,
 					"search_height": 8,
 					"goal_radius": 1.5,
-					"speed_multiplier": 1.15,
-					"stop_if_holding_item": true
+					"speed_multiplier": 1.15
 				},
 				"minecraft:behavior.nearest_attackable_target": {
 					"priority": 1,

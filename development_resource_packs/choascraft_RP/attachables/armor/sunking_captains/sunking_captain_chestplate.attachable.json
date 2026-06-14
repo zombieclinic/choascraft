@@ -11,7 +11,7 @@
 				"enchanted": "entity_alphatest_glint"
 			},
 			"textures": {
-				"default": "textures/a/sc/c/chestplate",
+				"default": "textures/armor/sunkingcaptains/chest/chestplate",
 				"enchanted": "textures/misc/enchanted_item_glint"
 			},
 			"geometry": {

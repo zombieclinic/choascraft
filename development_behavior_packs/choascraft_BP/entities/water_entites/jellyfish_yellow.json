@@ -1,5 +1,5 @@
 {
-  "format_version": "1.21.70",
+  "format_version": "1.26.20",
   "minecraft:entity": {
     "description": {
       "identifier": "zombie:yellow_jelly_fish",
@@ -133,10 +133,6 @@
 		},
 		"minecraft:physics": {
 			"has_gravity": true
-		},
-		"minecraft:pushable": {
-			"is_pushable": true,
-			"is_pushable_by_piston": true
 		},
 		"minecraft:movement.sway": {
 			"sway_amplitude": 0

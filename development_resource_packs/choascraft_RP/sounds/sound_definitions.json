@@ -47,6 +47,55 @@
 		"zombie.crusher.impact": {
 			"category": "hostile",
 			"sounds": ["sounds/monsters/zombie_walker/hurt"]
+		},
+		"mob.bear.death": {
+			"category": "hostile",
+			"sounds": [
+				"sounds/bearsounds/bearsound_death_1",
+				"sounds/bearsounds/bearsound_death_2",
+				"sounds/bearsounds/bearsound_death_3",
+				"sounds/bearsounds/bearsound_death_4"
+			]
+		},
+		"mob.bear.hurt": {
+			"category": "hostile",
+			"sounds": [
+				"sounds/bearsounds/bearsound_hurt_1",
+				"sounds/bearsounds/bearsound_hurt_2",
+				"sounds/bearsounds/bearsound_hurt_3",
+				"sounds/bearsounds/bearsound_hurt_4"
+			]
+		},
+		"mob.bear.say": {
+			"category": "hostile",
+			"sounds": [
+				"sounds/bearsounds/bearsound_say_1",
+				"sounds/bearsounds/bearsound_say_2",
+				"sounds/bearsounds/bearsound_say_3",
+				"sounds/bearsounds/bearsound_say_4",
+				"sounds/bearsounds/bearsound_say_5",
+				"sounds/bearsounds/bearsound_say_6",
+				"sounds/bearsounds/bearsound_say_7"
+			]
+		},
+		"mob.bear.roar": {
+			"category": "hostile",
+			"sounds": [
+				"sounds/bearsounds/bearsound_roar_1",
+				"sounds/bearsounds/bearsound_roar_2",
+				"sounds/bearsounds/bearsound_roar_3",
+				"sounds/bearsounds/bearsound_roar_4",
+				"sounds/bearsounds/bearsound_roar_5"
+			]
+		},
+		"mob.bear.attack": {
+			"category": "hostile",
+			"sounds": [
+				"sounds/bearsounds/bearsound_attack_1",
+				"sounds/bearsounds/bearsound_attack_2",
+				"sounds/bearsounds/bearsound_attack_3",
+				"sounds/bearsounds/bearsound_attack_4"
+			]
 		}
   }
 }

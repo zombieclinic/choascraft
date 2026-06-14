@@ -7,7 +7,7 @@
 				"default": "entity_alphatest"
 			},
 			"textures": {
-				"default": "textures/e/s/hh/zh/zombie_shark_hammerhead_texture"
+				"default": "textures/entity/hammerhead/zombie/zombie"
 			},
 			"geometry": {
 				"default": "geometry.hammerhead"

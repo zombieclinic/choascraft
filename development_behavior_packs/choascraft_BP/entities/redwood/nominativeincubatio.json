@@ -1,0 +1,122 @@
+{
+	"format_version": "1.26.20",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "zombie:nominativeincubatio_e",
+			"is_spawnable": false,
+			"is_summonable": true,
+			"is_experimental": false,
+			"runtime_identifier": "minecraft:arrow"
+		},
+		"component_groups": {
+			"mob": {
+				"minecraft:area_attack": {
+					"damage_range": 3,
+					"damage_per_tick": 1,
+					"cause": "entity_attack",
+					"entity_filter": {
+						"any_of": [
+							{
+								"subject": "other",
+								"test": "is_family",
+								"value": "monster"
+							}
+						]
+					}
+				},
+				"minecraft:timer": {
+					"time": [
+						2,
+						2
+					],
+					"time_down_event": {
+						"event": "despawn"
+					}
+				}
+			},
+			"despawn": {
+				"minecraft:instant_despawn": {}
+			}
+		},
+		"components": {
+			"minecraft:type_family": {
+				"family": [
+					"magic",
+					"irongolem"
+				]
+			},
+			"minecraft:health": {
+				"max": 1000,
+				"value": 1000
+			},
+			"minecraft:scale": {
+				"value": 1
+			},
+			"minecraft:projectile": {
+				"on_hit": {
+					"impact_damage": {
+						"damage": 5,
+						"knockback": true
+					},
+					"particle_on_hit": {
+						"particle_type": "heart"
+					},
+					"definition_event": {
+						"event_trigger": {
+							"event": "hurt",
+							"target": "self"
+						}
+					},
+					"stick_in_ground": {
+						"shake_time": 0.2
+					}
+				},
+				"anchor": 0,
+				"power": 0.6,
+				"gravity": 0.19,
+				"angle_offset": 0,
+				"offset": [
+					0,
+					0.5,
+					0
+				]
+			},
+			"minecraft:environment_sensor": {
+				"triggers": [
+					{
+						"filters": {
+							"subject": "self",
+							"test": "in_water",
+							"value": true
+						},
+						"event": "despawn"
+					}
+				]
+			},
+			"minecraft:physics": {
+				"has_collision": true,
+				"has_gravity": true
+			},
+			"minecraft:collision_box": {
+				"width": 0.2,
+				"height": 0.2
+			}
+		},
+		"events": {
+			"hurt": {
+				"add": {
+					"component_groups": [
+						"mob"
+					]
+				}
+			},
+			"despawn": {
+				"add": {
+					"component_groups": [
+						"despawn"
+					]
+				}
+			}
+		}
+	}
+}

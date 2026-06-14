@@ -9,7 +9,7 @@
 				"head" :"entity_alphablend"
 			},
 			"textures": {
-				"default": "textures/e/jf/pk/Jellyfish_4_transparent"
+				"default": "textures/entity/jellyfish/pink/pink"
 			},
 			"geometry": {
 				"default": "geometry.jellyfish_black"

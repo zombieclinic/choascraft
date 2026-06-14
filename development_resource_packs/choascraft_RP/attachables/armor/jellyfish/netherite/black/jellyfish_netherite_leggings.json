@@ -9,7 +9,7 @@
 				"enchanted": "entity_alphatest_glint"
 			},
 			"textures": {
-				"default": "textures/a/jf/bk/nl/netherite_leggings",
+				"default": "textures/armor/jellyfish/black/netheriteleggings/netherite_leggings",
 				"enchanted": "textures/misc/enchanted_item_glint"
 			},
 			"geometry": {

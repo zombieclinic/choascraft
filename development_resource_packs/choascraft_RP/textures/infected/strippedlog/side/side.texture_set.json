@@ -1,0 +1,8 @@
+{
+    "format_version":  "1.16.100",
+    "minecraft:texture_set":  {
+                                  "color":  "side",
+                                  "metalness_emissive_roughness":  "side_mer",
+                                  "normal":  "side_normal"
+                              }
+}

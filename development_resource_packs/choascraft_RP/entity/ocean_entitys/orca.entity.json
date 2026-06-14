@@ -7,14 +7,14 @@
 				"default": "entity_alphatest"
 			},
 			"textures": {
-				"default": "textures/e/o/o/orca",
-				"saddled_and_chested": "textures/e/o/ocs/orca_chest_saddle",
-				"nochest": "textures/e/o/os/orca_saddle",
-				"nosaddle_chest": "textures/e/o/oc/orca_chest",
-				"zombie": "textures/e/o/zo/orca_zombie",
-				"zombie_saddle": "textures/e/o/ozs/orca_zombie_saddle",
-				"zombie_chest": "textures/e/o/ozc/orca_zombie_chest",
-				"zombie_chest_saddle": "textures/e/o/ozcs/orca_zombie_saddle_chest"
+				"default": "textures/entity/orca/orca/orca",
+				"saddled_and_chested": "textures/entity/orca/chestsaddle/chestsaddle",
+				"nochest": "textures/entity/orca/saddle/saddle",
+				"nosaddle_chest": "textures/entity/orca/chest/chest",
+				"zombie": "textures/entity/orca/zombie/zombie",
+				"zombie_saddle": "textures/entity/orca/zombiesaddle/zombiesaddle",
+				"zombie_chest": "textures/entity/orca/zombiechest/zombiechest",
+				"zombie_chest_saddle": "textures/entity/orca/zombiechestsaddle/zombiechestsaddle"
 				
 				
 			},

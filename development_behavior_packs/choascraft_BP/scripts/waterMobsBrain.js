@@ -19,6 +19,7 @@ import { ConnectedStairsComponent } from "./blocks/connectedStairs.js"
 import {infectedAttack} from "./items/infected.js"
 import "./entities/omniusBrain.js"
 import "./entities/zombieDeathAnimations.js"
+import {bearArmorChanceEffect} from "./items/bearattack.js"
 
 
 
@@ -48,6 +49,7 @@ const BLOCK_COMPONENTS = [
 ];
 
 const ITEM_COMPONENTS = [
+ ["zombie:bear_attack", bearArmorChanceEffect],
  ["zombie:infected_attack", infectedAttack ],
  ["zombie:item_durability", DurabilityHandler],
  ["zombie:abyss_flower_seed_food", AbyssFlowerSeedFoodComponent],

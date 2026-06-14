@@ -7,8 +7,8 @@
 				"default": "entity_alphatest"
 			},
 			"textures": {
-				"default": "textures/e/pg/k/king_penguin",
-				"hunt": "textures/e/pg/kh/king_penguin_huntmode"
+				"default": "textures/entity/penguin/king/king",
+				"hunt": "textures/entity/penguin/kinghunt/kinghunt"
 			},
 			"geometry": {
 				"default": "geometry.zombie.king_penguin"

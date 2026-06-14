@@ -1,8 +1,0 @@
-{
-	"format_version": "1.16.100",
-	"minecraft:texture_set": {
-		"color": "orca_zombie_saddle_chest",
-		"metalness_emissive_roughness": "orca_zombie_saddle_chest_mer",
-		"normal": "orca_zombie_saddle_chest_normal"
-	}
-}

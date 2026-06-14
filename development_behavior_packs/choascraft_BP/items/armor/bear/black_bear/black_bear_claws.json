@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.90",
+	"format_version": "1.26.20",
 	"minecraft:item": {
 		"description": {
 			"identifier": "zombie:black_bear_claws",
@@ -48,6 +48,7 @@
 			"minecraft:durability": {
 				"max_durability": 2031
 			},
+			"zombie:bear_attack": {},
 			"minecraft:repairable": {
 				"repair_items": [
 					{
@@ -82,10 +83,6 @@
 				"use_duration": 10,
 				"movement_modifier": 1
 			},
-			"minecraft:custom_components": [
-				"zombie:bearcheck",
-				"zombie:onhitdamage"
-			],
 			"minecraft:tags": {
 				"tags": [
 					"minecraft:is_sword"

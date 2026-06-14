@@ -1,8 +1,0 @@
-{
-	"format_version": "1.16.100",
-	"minecraft:texture_set": {
-		"color": "crab2",
-		"metalness_emissive_roughness": "crab2_mer",
-		"normal": "crab2_normal"
-	}
-}

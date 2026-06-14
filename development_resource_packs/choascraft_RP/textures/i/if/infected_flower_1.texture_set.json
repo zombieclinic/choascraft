@@ -1,8 +1,0 @@
-{
-	"format_version": "1.16.100",
-	"minecraft:texture_set": {
-		"color": "infected_flower_1",
-		"metalness_emissive_roughness": "infected_flower_1_mer",
-		"normal": "infected_flower_1_normal"
-	}
-}

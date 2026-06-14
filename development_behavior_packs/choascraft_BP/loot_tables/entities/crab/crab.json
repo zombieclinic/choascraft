@@ -1,34 +1,68 @@
 {
-  "pools": [
-    {
-      "rolls": 1,
-      "entries": [
-        {
-          "type": "item",
-          "name": "zombie:crab_leg",
-          "weight": 10
-        },
-        {
-          "type": "item",
-          "name": "zombie:crab_claw",
-          "weight": 8
-        },
-        {
-          "type": "item",
-          "name": "zombie:crab_shell",
-          "weight": 8
-        },
-        {
-          "type": "item",
-          "name": "zombie:crab_eyes",
-          "weight": 4
-        },
-        {
-          "type": "item",
-          "name": "zombie:crab_orb",
-          "weight": 1
-        }
-      ]
-    }
-  ]
+    "pools":  [
+                  {
+                      "rolls":  1,
+                      "entries":  [
+                                      {
+                                          "type":  "item",
+                                          "name":  "zombie:crab_leg",
+                                          "weight":  10
+                                      },
+                                      {
+                                          "type":  "item",
+                                          "name":  "zombie:crab_claw",
+                                          "weight":  8
+                                      },
+                                      {
+                                          "type":  "item",
+                                          "name":  "zombie:crab_shell",
+                                          "weight":  8
+                                      },
+                                      {
+                                          "type":  "item",
+                                          "name":  "zombie:crab_eyes",
+                                          "weight":  4
+                                      },
+                                      {
+                                          "type":  "item",
+                                          "name":  "zombie:crab_orb",
+                                          "weight":  1
+                                      },
+                                      {
+                                          "type":  "item",
+                                          "name":  "minecraft:written_book",
+                                          "functions":  [
+                                                            {
+                                                                "function":  "set_book_contents",
+                                                                "author":  "Choascraft",
+                                                                "title":  "Crab Field Guide",
+                                                                "pages":  [
+                                                                              "Crab Field Guide\n\nA Choascraft guide for crab facts, beach behavior, digging, drops, food, buckets, swords, armor, and netherite upgrades.",
+                                                                              "Fact 1\n\nCrabs are crustaceans with hard outer shells, jointed legs, and claws used for defense, feeding, and display.",
+                                                                              "Fact 2\n\nMany crabs walk sideways because their legs bend best in that direction, though some can move forward too.",
+                                                                              "Fact 3\n\nReal crabs molt as they grow. After shedding the old shell, the new shell hardens over time.",
+                                                                              "Fact 4\n\nCrabs use gills. Many shore crabs can survive out of water for a while if their gills stay moist.",
+                                                                              "Choascraft Crabs\n\nCrabs spawn on sand and red sand at beaches in groups of 2 to 4. About one in three natural crabs spawn as babies.",
+                                                                              "Behavior\n\nCrabs walk, swim, return to land, idle, wander, and attack for 3 damage. They are small, but groups can be annoying.",
+                                                                              "Breeding\n\nCrabs breed with tropical fish buckets. Babies grow faster when fed rotten flesh or tropical fish buckets.",
+                                                                              "Digging\n\nReady adult crabs are tempted by rotten flesh. Feed one rotten flesh on sand or red sand and it can dig up treasure. It needs about 30 seconds before digging again.",
+                                                                              "Buckets\n\nUse a bucket on a crab to collect it as a Crab Bucket item. This is useful for moving crabs to beaches or pens.",
+                                                                              "Drops\n\nCrabs can drop Crab Legs, Crab Claw, Crab Shell, Crab Eyes, and the rare Crab Orb.",
+                                                                              "Food\n\nCrab Legs are edible. Cook them in a furnace, smoker, or campfire to make Steamed Crab Legs.",
+                                                                              "Crafting Key\n\nI = Iron Ingot\nC = Crab Claw\nS = Crab Shell\nO = Crab Orb\nL = Crab Legs\nE = Crab Eyes",
+                                                                              "Crab Sword\n\nPattern:\n.C.\nSIO\n.L.\n\nResult: Crab Sword",
+                                                                              "Crab Helmet\n\nPattern:\nIII\nISI\nSOS\n\nResult: Crab Helmet",
+                                                                              "Crab Chestplate\n\nPattern:\nIOI\nSES\nIII\n\nResult: Crab Chestplate",
+                                                                              "Crab Leggings\n\nPattern:\nIII\nIOI\nISI\n\nResult: Crab Leggings",
+                                                                              "Crab Boots\n\nPattern:\nISI\nISI\nIOI\n\nResult: Crab Boots",
+                                                                              "Netherite Crab Gear\n\nUse a smithing table with a netherite upgrade template, crab gear, and a netherite ingot.",
+                                                                              "Beach Note\n\nA crab with rotten flesh is a tiny prospector. Give it sand, time, and enough room to work."
+                                                                          ]
+                                                            }
+                                                        ],
+                                          "weight":  1
+                                      }
+                                  ]
+                  }
+              ]
 }

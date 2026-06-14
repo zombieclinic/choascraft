@@ -1,11 +1,11 @@
 {
-	"format_version": "1.20.50",
+	"format_version": "1.26.20",
 	"minecraft:item": {
 		"description": {
 			"identifier": "zombie:crab_netherite_boots",
 			"menu_category": {
 				"category": "equipment",
-				"group": "itemGroup.name.boots"
+				"group": "minecraft:itemGroup.name.boots"
 			}
 		},
 		"components": {

@@ -1,61 +1,99 @@
 {
-	"pools": [
-		{
-			"rolls": 1,
-			"entries": [
-				{
-					"type": "item",
-					"name": "zombie:bear_raw_meat",
-					"weight": 1,
-					"functions": [
-						{
-							"function": "set_count",
-							"count": {
-								"min": 1,
-								"max": 3
-							}
-						}
-					]
-				}
-			]
-		},
-		{
-			"rolls": 1,
-			"entries": [
-				{
-					"type": "item",
-					"name": "zombie:bear_black_fur",
-					"weight": 1,
-					"functions": [
-						{
-							"function": "set_count",
-							"count": {
-								"min": 0,
-								"max": 2
-							}
-						}
-					]
-				}
-			]
-		},
-		{
-			"rolls": 1,
-			"entries": [
-				{
-					"type": "item",
-					"name": "zombie:bear_claw_item",
-					"weight": 1,
-					"functions": [
-						{
-							"function": "set_count",
-							"count": {
-								"min": 0,
-								"max": 2
-							}
-						}
-					]
-				}
-			]
-		}
-	]
+    "pools":  [
+                  {
+                      "rolls":  1,
+                      "entries":  [
+                                      {
+                                          "type":  "item",
+                                          "name":  "zombie:bear_raw_meat",
+                                          "weight":  1,
+                                          "functions":  [
+                                                            {
+                                                                "function":  "set_count",
+                                                                "count":  {
+                                                                              "min":  1,
+                                                                              "max":  3
+                                                                          }
+                                                            }
+                                                        ]
+                                      }
+                                  ]
+                  },
+                  {
+                      "rolls":  1,
+                      "entries":  [
+                                      {
+                                          "type":  "item",
+                                          "name":  "zombie:bear_black_fur",
+                                          "weight":  1,
+                                          "functions":  [
+                                                            {
+                                                                "function":  "set_count",
+                                                                "count":  {
+                                                                              "min":  0,
+                                                                              "max":  2
+                                                                          }
+                                                            }
+                                                        ]
+                                      }
+                                  ]
+                  },
+                  {
+                      "rolls":  1,
+                      "entries":  [
+                                      {
+                                          "type":  "item",
+                                          "name":  "zombie:bear_claw_item",
+                                          "weight":  1,
+                                          "functions":  [
+                                                            {
+                                                                "function":  "set_count",
+                                                                "count":  {
+                                                                              "min":  0,
+                                                                              "max":  2
+                                                                          }
+                                                            }
+                                                        ]
+                                      }
+                                  ]
+                  },
+                  {
+                      "conditions":  [
+                                         {
+                                             "condition":  "random_chance",
+                                             "chance":  0.08
+                                         }
+                                     ],
+                      "rolls":  1,
+                      "entries":  [
+                                      {
+                                          "type":  "item",
+                                          "name":  "minecraft:written_book",
+                                          "functions":  [
+                                                            {
+                                                                "function":  "set_book_contents",
+                                                                "author":  "Choascraft",
+                                                                "title":  "Black Bear Guide",
+                                                                "pages":  [
+                                                                              "Black Bear Guide\n\nA Choascraft guide for black bear facts, redwood behavior, drops, armor, claws, and netherite upgrades.",
+                                                                              "Fact 1\n\nBlack bears are adaptable omnivores. They eat berries, nuts, insects, fish, carrion, and other foods.",
+                                                                              "Fact 2\n\nBlack bears are often good climbers. Claws help them grip bark and tear into food sources.",
+                                                                              "Fact 3\n\nTheir coat color can vary in real life, but Choascraft separates this bear as the black bear line.",
+                                                                              "Fact 4\n\nBears avoid wasting energy when food is scarce, but they can move quickly when threatened.",
+                                                                              "Choascraft Black Bears\n\nBlack bears live in the redwood wilds. They are tempted by salmon but cannot currently be tamed.",
+                                                                              "Combat\n\nBlack bears hit hard and use stomp attacks. Fighting one without gear is a short lesson.",
+                                                                              "Drops\n\nBlack bears drop Bear Raw Meat, Black Bear Fur, and Bear Claw items.",
+                                                                              "Food\n\nBear Raw Meat can be cooked into Bear Cooked Meat. Rotten meat comes from zombie bears.",
+                                                                              "Black Bear Gear\n\nBlack Bear Fur and Bear Claw items craft black bear armor and black bear claws.",
+                                                                              "Crafting\n\nCraft Black Bear Helmet, Chestplate, Leggings, Boots, and Black Bear Claws from bear parts. Recipes are in the bear recipe folder.",
+                                                                              "Bear Claws\n\nBear Claw items repair bear gear and support claw equipment recipes.",
+                                                                              "Netherite Bear Gear\n\nUpgrade black bear armor with smithing recipes to make Black Netherite Bear gear.",
+                                                                              "Field Note\n\nIf the forest goes quiet, count your salmon and step carefully."
+                                                                          ]
+                                                            }
+                                                        ]
+                                      }
+                                  ]
+                  }
+              ]
 }

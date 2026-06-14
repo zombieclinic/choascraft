@@ -7,10 +7,10 @@
 				"default": "entity_alphatest"
 			},
 			"textures": {
-				"blue": "textures/e/pp/b/blue_peeper",
-				"default": "textures/e/pp/g/peeper",
-				"purple": "textures/e/pp/p/purple_peeper",
-				"red": "textures/e/pp/r/red_peeper"
+				"blue": "textures/entity/peeper/blue/blue",
+				"default": "textures/entity/peeper/green/green",
+				"purple": "textures/entity/peeper/purple/purple",
+				"red": "textures/entity/peeper/red/red"
 			},
 			"geometry": {
 				"default": "geometry.zombie_peeper"

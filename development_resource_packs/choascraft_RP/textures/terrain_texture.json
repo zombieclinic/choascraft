@@ -54,16 +54,16 @@
 			"textures": "textures/abyss/plants/mushroom/abyss_mushroom"
 		},
 		"infected_mushroom": {
-			"textures": "textures/i/m/m"
+			"textures": "textures/infected/mushroom/mushroom"
 		},
 		"sporepod_bottom": {
-			"textures": "textures/i/plants/sporepod/sporepod_bottom"
+			"textures": "textures/infected/plants/sporepod/bottom"
 		},
 		"sporepod_middle": {
-			"textures": "textures/i/plants/sporepod/sporepod_middle"
+			"textures": "textures/infected/plants/sporepod/middle"
 		},
 		"sporepod_top": {
-			"textures": "textures/i/plants/sporepod/sporepod_top"
+			"textures": "textures/infected/plants/sporepod/top"
 		},
 		"zc_corrupted_spire": {
 			"textures": "textures/zombies/zc_corrupted_spire"
@@ -72,7 +72,7 @@
 			"textures": "textures/abyss/plants/grass/abyss_grass"
 		},
 		"black_grass": {
-			"textures": "textures/i/bg/black_grass"
+			"textures": "textures/infected/blackgrass/blackgrass"
 		},
 		"infected_goo": {
 			"textures": "textures/items/infect_armor/infected_goo"
@@ -96,40 +96,40 @@
 			"textures": "textures/abyss/flowers/flower_4/abyss_flower_4"
 		},
 		"infected_flower_0": {
-			"textures": "textures/i/if/infected_flower_0"
+			"textures": "textures/infected/flower/flower0"
 		},
 		"infected_flower_1": {
-			"textures": "textures/i/if/infected_flower_1"
+			"textures": "textures/infected/flower/flower1"
 		},
 		"infected_flower_2": {
-			"textures": "textures/i/if/infected_flower_2"
+			"textures": "textures/infected/flower/flower2"
 		},
 		"infected_flower_3": {
-			"textures": "textures/i/if/infected_flower_03"
+			"textures": "textures/infected/flower/flower3"
 		},
 		"infected_flower_4": {
-			"textures": "textures/i/if/infected_flower_4"
+			"textures": "textures/infected/flower/flower4"
 		},
 		"infected_flower_top": {
-			"textures": "textures/i/if/infected_flower_top"
+			"textures": "textures/infected/flower/top"
 		},
 		"eye_flower_0": {
-			"textures": "textures/i/ef/eye_flower_0"
+			"textures": "textures/infected/eyeflower/flower0"
 		},
 		"eye_flower_1": {
-			"textures": "textures/i/ef/eye_flower_1"
+			"textures": "textures/infected/eyeflower/flower1"
 		},
 		"eye_flower_2": {
-			"textures": "textures/i/ef/eye_flower_2"
+			"textures": "textures/infected/eyeflower/flower2"
 		},
 		"eye_flower_3": {
-			"textures": "textures/i/ef/eye_flower_3"
+			"textures": "textures/infected/eyeflower/flower3"
 		},
 		"eye_flower": {
-			"textures": "textures/i/ef/eye_flower"
+			"textures": "textures/infected/eyeflower/flower"
 		},
 		"eye_flower_top": {
-			"textures": "textures/i/ef/eye_flower_top"
+			"textures": "textures/infected/eyeflower/top"
 		},
 		"infected_cobblestone":{
 			"textures": "textures/abyss/floor/cobblestone/infected_cobblestone"
@@ -144,37 +144,37 @@
 			"textures": "textures/abyss/floor/sporestone/sporestone"
 		},
 		"infected_planks":{
-			"textures": "textures/i/p/p"
+			"textures": "textures/infected/planks/planks"
 		},
 		"infected_top_door": {
-			"textures": "textures/i/d/t/infected_top_door"
+			"textures": "textures/infected/door/top/topdoor"
 		},
 		"infected_bottom_door": {
-			"textures": "textures/i/d/b/infected_bottom_door"
+			"textures": "textures/infected/door/bottom/bottomdoor"
 		},
 		"infected_block":{
-			"textures": "textures/i/b/b"
+			"textures": "textures/infected/block/block"
 		},
 		"infected_grass_top":{
-			"textures": "textures/i/g/t"
+			"textures": "textures/infected/grass/top/top"
 		},
 		"infected_grass_side":{
-			"textures": "textures/i/g/s"
+			"textures": "textures/infected/grass/side/side"
 		},
 		"zombie_infected_leaves": {
-			"textures": "textures/i/l/l"
+			"textures": "textures/infected/leaves/leaves"
 		},
 		"infected_tree_log": {
-			"textures": "textures/i/t/s"
+			"textures": "textures/infected/log/side/side"
 		},
 		"infected_tree_log_top": {
-			"textures": "textures/i/t/t"
+			"textures": "textures/infected/log/top/top"
 		},
 		"infected_tree_log_stripped": {
-			"textures": "textures/i/ts/s"
+			"textures": "textures/infected/strippedlog/side/side"
 		},
 		"infected_tree_log_stripped_top": {
-			"textures": "textures/i/ts/t"
+			"textures": "textures/infected/strippedlog/top/top"
 		},
 		"redwood_planks": {
 			"textures": "textures/redwood/redwood_planks"

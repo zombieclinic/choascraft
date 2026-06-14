@@ -1,0 +1,8 @@
+{
+    "format_version":  "1.16.100",
+    "minecraft:texture_set":  {
+                                  "color":  "zombiesaddle",
+                                  "metalness_emissive_roughness":  "zombiesaddle_mer",
+                                  "normal":  "zombiesaddle_normal"
+                              }
+}

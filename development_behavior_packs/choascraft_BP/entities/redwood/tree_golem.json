@@ -1,43 +1,13 @@
-//bridge-file-version: #79
 {
-	"format_version": "1.19.10",
+	"format_version": "1.26.20",
 	"minecraft:entity": {
 		"description": {
 			"identifier": "zombie:tree_golem",
 			"is_spawnable": true,
 			"is_summonable": true,
-			"is_experimental": false,
+			"is_experimental": false
 		},
-		"component_groups": {
-			"alive": {
-				"minecraft:timer": {
-					"time": [
-						20,
-						20
-					],
-					"time_down_event": {
-						"event": "animation"
-					}
-				}
-			},
-			"despawn": {
-				"minecraft:instant_despawn": {}
-			},
-			"animation": {
-				"minecraft:skin_id": {
-					"value": 8
-				},
-				"minecraft:timer": {
-					"time": [
-						1,
-						1
-					],
-					"time_down_event": {
-						"event": "despawn"
-					}
-				}
-			}
-		},
+		"component_groups": {},
 		"components": {
 			"minecraft:is_hidden_when_invisible": {},
 			"minecraft:type_family": {
@@ -48,6 +18,7 @@
 				]
 			},
 			"minecraft:nameable": {},
+			"minecraft:persistent": {},
 			"minecraft:collision_box": {
 				"width": 1,
 				"height": 1.2
@@ -91,9 +62,13 @@
 				"value": 1
 			},
 			"minecraft:leashable": {
-				"soft_distance": 4,
-				"hard_distance": 6,
-				"max_distance": 10
+				"presets": [
+					{
+						"soft_distance": 4,
+						"hard_distance": 6,
+						"max_distance": 10
+					}
+				]
 			},
 			"minecraft:behavior.move_towards_target": {
 				"priority": 2,
@@ -116,10 +91,6 @@
 			"minecraft:physics": {
 				"has_collision": true,
 				"has_gravity": true
-			},
-			"minecraft:pushable": {
-				"is_pushable": true,
-				"is_pushable_by_piston": true
 			},
 			"minecraft:conditional_bandwidth_optimization": {},
 			"minecraft:loot": {
@@ -178,41 +149,8 @@
 				"burst_shots": 2,
 				"burst_interval": 0.4,
 				"speed_multiplier": 0.1
-			},
-			"minecraft:despawn": {
-				"despawn_from_simulation_edge": true,
-				"despawn_from_distance": {}
 			}
 		},
-		"events": {
-			"minecraft:entity_spawned": {
-				"add": {
-					"component_groups": [
-						"alive"
-					]
-				}
-			},
-			"minecraft:entity_born": {
-				"add": {
-					"component_groups": [
-						"alive"
-					]
-				}
-			},
-			"despawn": {
-				"add": {
-					"component_groups": [
-						"despawn"
-					]
-				}
-			},
-			"animation": {
-				"add": {
-					"component_groups": [
-						"animation"
-					]
-				}
-			}
-		}
+		"events": {}
 	}
 }

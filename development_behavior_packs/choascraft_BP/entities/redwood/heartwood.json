@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.10",
+	"format_version": "1.26.20",
 	"minecraft:entity": {
 		"description": {
 			"identifier": "zombie:heartwood",
@@ -56,16 +56,26 @@
 				"entity_types": [
 					{
 						"filters": {
-							"any_of": [
+							"all_of": [
 								{
-									"test": "is_family",
-									"subject": "other",
-									"value": "player"
+									"any_of": [
+										{
+											"test": "is_family",
+											"subject": "other",
+											"value": "player"
+										},
+										{
+											"test": "is_family",
+											"subject": "other",
+											"value": "monster"
+										}
+									]
 								},
 								{
 									"test": "is_family",
 									"subject": "other",
-									"value": "monster"
+									"operator": "!=",
+									"value": "heartwood"
 								}
 							]
 						},
@@ -89,10 +99,6 @@
 				"priority": 8
 			},
 			"minecraft:physics": {},
-			"minecraft:pushable": {
-				"is_pushable": true,
-				"is_pushable_by_piston": true
-			},
 			"minecraft:despawn": {
 				"despawn_from_distance": {}
 			},

@@ -1,8 +1,0 @@
-{
-	"format_version": "1.16.100",
-	"minecraft:texture_set": {
-		"color": "t",
-		"metalness_emissive_roughness": "t_mer",
-		"normal": "t_normal"
-	}
-}

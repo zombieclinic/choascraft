@@ -1,11 +1,11 @@
 {
-	"format_version": "1.20.50",
+	"format_version": "1.26.20",
 	"minecraft:item": {
 		"description": {
 			"identifier": "zombie:jellyfish_netherite_black_helmet",
 			"menu_category": {
 				"category": "equipment",
-				"group": "itemGroup.name.helmet"
+				"group": "minecraft:itemGroup.name.helmet"
 			}
 		},
 		"components": {

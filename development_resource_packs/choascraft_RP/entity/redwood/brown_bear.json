@@ -29,6 +29,9 @@
 				"sleep": "animation.bear.sleep",
 				"end_sleep1": "animation.bear.end_sleep"
 			},
+			"sound_effects": {
+				"roar": "mob.bear.roar"
+			},
 			"scripts": {
 				"animate": [
 					"controller"

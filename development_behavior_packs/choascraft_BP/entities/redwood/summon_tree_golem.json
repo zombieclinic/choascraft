@@ -1,6 +1,5 @@
-//bridge-file-version: #48
 {
-	"format_version": "1.20.70",
+	"format_version": "1.26.20",
 	"minecraft:entity": {
 		"description": {
 			"identifier": "zombie:summon_golem_tree",
@@ -56,10 +55,6 @@
 				]
 			},
 			"minecraft:physics": {},
-			"minecraft:pushable": {
-				"is_pushable": true,
-				"is_pushable_by_piston": true
-			},
 			"minecraft:conditional_bandwidth_optimization": {
 				"default_values": {
 					"max_optimized_distance": 100,
@@ -71,7 +66,7 @@
 				"triggers": [
 					{
 						"cause": "entity_explosion",
-						"deals_damage": false
+						"deals_damage": "no"
 					}
 				]
 			},

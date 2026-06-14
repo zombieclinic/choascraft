@@ -9,7 +9,7 @@
 				"enchanted": "entity_alphatest_glint"
 			},
 			"textures": {
-				"default": "textures/a/gw/nh/netherite_helmet",
+				"default": "textures/armor/greatwhite/netheritehelmet/netherite_helmet",
 				"enchanted": "textures/misc/enchanted_item_glint"
 			},
 			"geometry": {

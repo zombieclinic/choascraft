@@ -9,7 +9,7 @@
 				"enchanted": "entity_alphatest_glint"
 			},
 			"textures": {
-				"default": "textures/a/jf/yw/h/jellyfish_helmet_Yellow",
+				"default": "textures/armor/jellyfish/yellow/helmet/jellyfish_helmet_Yellow",
 				"enchanted": "textures/misc/enchanted_item_glint"
 			},
 			"geometry": {

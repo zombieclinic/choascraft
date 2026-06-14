@@ -1,11 +1,11 @@
 {
-	"format_version": "1.21.40",
+	"format_version": "1.26.20",
 	"minecraft:item": {
 		"description": {
 			"identifier": "zombie:black_bear_chestplate",
 			"menu_category": {
 				"category": "equipment",
-				"group": "itemGroup.name.chestplate"
+				"group": "minecraft:itemGroup.name.chestplate"
 			}
 		},
 		"components": {

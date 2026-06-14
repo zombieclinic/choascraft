@@ -1,5 +1,5 @@
 {
-	"format_version": "1.19.10",
+	"format_version": "1.26.20",
 	"minecraft:entity": {
 		"description": {
 			"identifier": "zombie:zombie_black_bear",
@@ -13,6 +13,7 @@
 					"value": 2
 				},
 				"minecraft:entity_sensor": {
+					"relative_range": false,
 					"subsensors": [
 						{
 							"event": "wake_up",
@@ -46,8 +47,8 @@
 				},
 				"minecraft:timer": {
 					"time": [
-						2,
-						2
+						0.75,
+						0.75
 					],
 					"time_down_event": {
 						"event": "awake"
@@ -77,7 +78,7 @@
 				},
 				"minecraft:behavior.look_at_player": {
 					"priority": 5,
-					"target_distance": 8,
+					"look_distance": 8,
 					"probability": 0.04
 				},
 				"minecraft:behavior.nearest_attackable_target": {
@@ -157,16 +158,12 @@
 			},
 			"minecraft:behavior.look_at_player": {
 				"priority": 5,
-				"target_distance": 6,
+				"look_distance": 6,
 				"probability": 0.02
 			},
 			"minecraft:physics": {
 				"has_collision": true,
 				"has_gravity": true
-			},
-			"minecraft:pushable": {
-				"is_pushable": true,
-				"is_pushable_by_piston": true
 			},
 			"minecraft:conditional_bandwidth_optimization": {},
 			"minecraft:scale": {

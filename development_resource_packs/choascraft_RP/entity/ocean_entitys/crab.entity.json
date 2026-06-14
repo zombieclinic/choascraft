@@ -7,7 +7,7 @@
 				"default": "entity_alphatest"
 			},
 			"textures": {
-				"default": "textures/e/cr/crab2"
+				"default": "textures/entity/crab/crab"
 			},
 			"geometry": {
 				"default": "geometry.crab2"

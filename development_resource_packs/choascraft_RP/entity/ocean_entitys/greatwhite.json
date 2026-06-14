@@ -7,14 +7,14 @@
 				"default": "entity_alphatest"
 			},
 			"textures": {
-				"default": "textures/e/s/gw/g/shark_great_white_texture",
-				"saddled_and_chested": "textures/e/s/gw/cs/shark_great_white_chest_saddle_texture",
-				"nochest": "textures/e/s/gw/sd/shark_great_white_saddle_texture",
-				"nosaddle_chest": "textures/e/s/gw/c/shark_great_white_chest_texture",
-				"zombie": "textures/e/s/gw/zg/zombie_shark_great_white_texture",
-				"zombie_saddle": "textures/e/s/gw/zs/zombie_shark_great_white_saddle_texture",
-				"zombie_chest": "textures/e/s/gw/zc/zombie_shark_great_white_chest_texture",
-				"zombie_chest_saddle": "textures/e/s/gw/zcs/zombie_shark_great_white_chest_saddle_texture"
+				"default": "textures/entity/greatwhite/greatwhite/greatwhite",
+				"saddled_and_chested": "textures/entity/greatwhite/chestsaddle/chestsaddle",
+				"nochest": "textures/entity/greatwhite/saddle/saddle",
+				"nosaddle_chest": "textures/entity/greatwhite/chest/chest",
+				"zombie": "textures/entity/greatwhite/zombie/zombie",
+				"zombie_saddle": "textures/entity/greatwhite/zombiesaddle/zombiesaddle",
+				"zombie_chest": "textures/entity/greatwhite/zombiechest/zombiechest",
+				"zombie_chest_saddle": "textures/entity/greatwhite/zombiechestsaddle/zombiechestsaddle"
 			},
 			"geometry": {
 				"default": "geometry.greatwhite"

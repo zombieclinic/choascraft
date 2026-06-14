@@ -1,5 +1,5 @@
 {
-    "format_version": "1.21.0",
+    "format_version": "1.26.20",
     "minecraft:entity": {
       "description": {
         "identifier": "zombie:crusher",
@@ -126,10 +126,10 @@
             "knockback_height": 0.04,
             "pre_ram_sound": "pre_ram",
             "ram_impact_sound": "ram_impact",
-            "cooldown_range": [
-              6,
-              10
-            ],
+            "cooldown_range": {
+              "min": 6,
+              "max": 10
+            },
             "on_start": [
               {
                 "event": "start_event",
@@ -148,7 +148,7 @@
           "minecraft:damage_sensor": {
             "triggers": [
               {
-                "deals_damage": false
+                "deals_damage": "no"
               }
             ]
           },
@@ -291,10 +291,6 @@
           ]
         },
         "minecraft:physics": {
-        },
-        "minecraft:pushable": {
-          "is_pushable": true,
-          "is_pushable_by_piston": true
         },
         "minecraft:conditional_bandwidth_optimization": {
         }
