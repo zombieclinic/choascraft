@@ -19,6 +19,7 @@ import { ConnectedStairsComponent } from "./blocks/connectedStairs.js"
 import {infectedAttack} from "./items/infected.js"
 import "./entities/omniusBrain.js"
 import "./entities/zombieDeathAnimations.js"
+import "./items/bearShield.js"
 import {bearArmorChanceEffect} from "./items/bearattack.js"
 
 

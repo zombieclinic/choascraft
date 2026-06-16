@@ -459,6 +459,12 @@
 		"zombie_black_bear_boots": {
 			"textures": "textures/items/bear_armor/black_bear_boots_icon"
 		},
+		"zombie_brown_bear_shield": {
+			"textures": "textures/items/bear_armor/brown_sheild_icon"
+		},
+		"zombie_black_bear_shield": {
+			"textures": "textures/items/bear_armor/black_sheild_icon"
+		},
 		"zombie_neatherite_brown_bear_helment": {
 			"textures": "textures/items/bear_armor/brown_netherite_helmet_icon"
 		},

@@ -1,0 +1,45 @@
+{
+	"format_version": "1.26.20",
+	"minecraft:item": {
+		"description": {
+			"identifier": "zombie:black_bear_shield",
+			"menu_category": {
+				"category": "equipment"
+			}
+		},
+		"components": {
+			"minecraft:max_stack_size": 1,
+			"minecraft:display_name": {
+				"value": "Black Bear Shield"
+			},
+			"minecraft:tags": {
+				"tags": [
+					"zombie:is_shield"
+				]
+			},
+			"minecraft:hover_text_color": "green",
+			"minecraft:icon": "zombie_black_bear_shield",
+			"minecraft:hand_equipped": true,
+			"minecraft:allow_off_hand": true,
+			"minecraft:wearable": {
+				"slot": "slot.weapon.offhand"
+			},
+			"minecraft:durability": {
+				"max_durability": 500
+			},
+			"minecraft:repairable": {
+				"repair_items": [
+					{
+						"items": [
+							"zombie:bear_claw_item",
+							"zombie:bear_black_fur",
+							"minecraft:lead",
+							"zombie:black_bear_shield"
+						],
+						"repair_amount": "math.random(2,25)"
+					}
+				]
+			}
+		}
+	}
+}
