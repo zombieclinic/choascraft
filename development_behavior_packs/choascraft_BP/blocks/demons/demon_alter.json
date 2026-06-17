@@ -1,0 +1,41 @@
+{"format_version": "1.21.70",
+"minecraft:block": {
+    "description": {
+        "identifier": "zombie:demon_alter",
+        "menu_category": {
+            "category": "nature"
+        }
+    },
+    "components": {
+        "minecraft:destructible_by_explosion": true,
+        "minecraft:collision_box": true,
+        "minecraft:selection_box": true,
+        "minecraft:destructible_by_mining": {
+            "seconds_to_destroy": 0.5
+        },
+        "minecraft:geometry": "geometry.demon_alter",
+        "minecraft:material_instances": {
+            "*": {
+                "texture": "zombie_demon_alter",
+                "render_method": "opaque"
+            },
+            "top": {
+                "texture": "zombie_demon_alter_top",
+                "render_method": "opaque"
+            },
+            "planstar": {
+                "texture": "zombie_demon_alter_top_planstar",
+                "render_method": "opaque"
+            }
+        },
+        "minecraft:map_color":"#8B4513",
+        "minecraft:display_name": "Demon Alter",
+        "minecraft:flammable": false,
+        "minecraft:redstone_conductivity": {
+            "allows_wire_to_step_down": true,
+            "redstone_conductor": true
+        },
+        "tag:minecraft:is_pickaxe_item_destructible": {}
+        }
+}
+}

@@ -1,0 +1,16 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": { "identifier": "zombie:demon_plank_slab" },
+    "tags": [ "crafting_table" ],
+    "pattern": [ "###" ],
+    "key": { "#": { "item": "zombie:demon_planks" } },
+    "result": [
+      { "item": "zombie:demon_plank_slab", "count": 6 }
+    ],
+    "unlock": [
+      { "item": "zombie:demon_planks" }
+    ]
+  }
+}
+

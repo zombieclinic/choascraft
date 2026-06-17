@@ -16,6 +16,7 @@ import {EyewoodDoorComponent, EyewoodFenceGateToggleComponent, EyewoodSlabPrePla
 import { ZcButtonComponent, ZcButtonReleaseTickComponent } from "./blocks/buttonInteractions.js";
 import { ZcPressurePlateComponent, ZcPressurePlateReleaseTickComponent } from "./blocks/pressurePlate.js";
 import { ConnectedStairsComponent } from "./blocks/connectedStairs.js"
+import { HellfireTrapstoneComponent } from "./blocks/hellfireTrapstone.js";
 import {infectedAttack} from "./items/infected.js"
 import "./entities/omniusBrain.js"
 import "./entities/zombieDeathAnimations.js"
@@ -46,6 +47,7 @@ const BLOCK_COMPONENTS = [
   ["zombie:button_release_tick", ZcButtonReleaseTickComponent],
   ["zc:pressureplate", ZcPressurePlateComponent],
   ["zc:pressureplate_release_tick", ZcPressurePlateReleaseTickComponent],
+  ["zombie:hellfire_trapstone", HellfireTrapstoneComponent],
   ["arctic:connectedStairs", ConnectedStairsComponent]
 ];
 

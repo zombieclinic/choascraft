@@ -1,213 +1,294 @@
 {
-	"resource_pack_name": "choascraft",
-	"texture_name": "atlas.terrain",
-	"texture_data": {
-		"pengiun_egg": {
-			"textures": "textures/items/water/pengiuns/pengiun_egg"
-		},
-		"eyewood_tree_top": {
-			"textures": "textures/abyss/tree/log_top/eyewood_tree_top"
-		},
-		"eyewood_tree_side": {
-			"textures": "textures/abyss/tree/log_side/eyewood_tree_side"
-		},
-		"eyewood_tree_leaves": {
-			"textures": "textures/abyss/tree/leaves/eyewood_tree_leaves"
-		},
-		"eyewood_tree_sapling": {
-			"textures": "textures/abyss/tree/sapling/eyewood_tree_sapling"
-		},
-		"stripped_eyewood_log": {
-			"textures": "textures/abyss/tree/stripped_side/stripped_abyss_wood"
-		},
-		"eyewood_planks": {
-			"textures": "textures/abyss/blocks/planks/eyewood_planks"
-		},
-		"abyss_trap_door_top": {
-			"textures": "textures/abyss/blocks/trapdoor/abyss_trap_door_top"
-		},
-		"abyss_trap_door_side": {
-			"textures": "textures/abyss/blocks/trapdoor/abyss_trap_door_side"
-		},
-		"abyss_trap_door_bottom": {
-			"textures": "textures/abyss/blocks/trapdoor/abyss_trap_door_bottom"
-		},
-		"abyss_top_door": {
-			"textures": "textures/abyss/blocks/door_top/abyss_top_door"
-		},
-		"abyss_bottom_door": {
-			"textures": "textures/abyss/blocks/door_bottom/abyss_bottom_door"
-		},
-		"glow_flower": {
-			"textures": "textures/abyss/plants/glow_flower/glow_flower"
-		},
-		"infected_stone": {
-			"textures": "textures/abyss/floor/stone/infected_stone"
-		},
-		"infected_gravel": {
-			"textures": "textures/abyss/floor/gravel/infected_gravel"
-		},
-		"infected_sand": {
-			"textures": "textures/abyss/floor/sand/infected_sand"
-		},
-		"abyss_mushroom": {
-			"textures": "textures/abyss/plants/mushroom/abyss_mushroom"
-		},
-		"infected_mushroom": {
-			"textures": "textures/infected/mushroom/mushroom"
-		},
-		"sporepod_bottom": {
-			"textures": "textures/infected/plants/sporepod/bottom"
-		},
-		"sporepod_middle": {
-			"textures": "textures/infected/plants/sporepod/middle"
-		},
-		"sporepod_top": {
-			"textures": "textures/infected/plants/sporepod/top"
-		},
-		"zc_corrupted_spire": {
-			"textures": "textures/zombies/zc_corrupted_spire"
-		},
-		"abyss_grass": {
-			"textures": "textures/abyss/plants/grass/abyss_grass"
-		},
-		"black_grass": {
-			"textures": "textures/infected/blackgrass/blackgrass"
-		},
-		"infected_goo": {
-			"textures": "textures/items/infect_armor/infected_goo"
-		},
-		"abyss_glob_flower": {
-			"textures": "textures/abyss/plants/glob_flower/abyss_glob_flower"
-		},
-		"abyss_flower_0": {
-			"textures": "textures/abyss/flowers/flower_0/abyss_flower_0"
-		},
-		"abyss_flower_1": {
-			"textures": "textures/abyss/flowers/flower_1/abyss_flower_1"
-		},
-		"abyss_flower_2": {
-			"textures": "textures/abyss/flowers/flower_2/abyss_flower_2"
-		},
-		"abyss_flower_3": {
-			"textures": "textures/abyss/flowers/flower_3/abyss_flower_3"
-		},
-		"abyss_flower_4": {
-			"textures": "textures/abyss/flowers/flower_4/abyss_flower_4"
-		},
-		"infected_flower_0": {
-			"textures": "textures/infected/flower/flower0"
-		},
-		"infected_flower_1": {
-			"textures": "textures/infected/flower/flower1"
-		},
-		"infected_flower_2": {
-			"textures": "textures/infected/flower/flower2"
-		},
-		"infected_flower_3": {
-			"textures": "textures/infected/flower/flower3"
-		},
-		"infected_flower_4": {
-			"textures": "textures/infected/flower/flower4"
-		},
-		"infected_flower_top": {
-			"textures": "textures/infected/flower/top"
-		},
-		"eye_flower_0": {
-			"textures": "textures/infected/eyeflower/flower0"
-		},
-		"eye_flower_1": {
-			"textures": "textures/infected/eyeflower/flower1"
-		},
-		"eye_flower_2": {
-			"textures": "textures/infected/eyeflower/flower2"
-		},
-		"eye_flower_3": {
-			"textures": "textures/infected/eyeflower/flower3"
-		},
-		"eye_flower": {
-			"textures": "textures/infected/eyeflower/flower"
-		},
-		"eye_flower_top": {
-			"textures": "textures/infected/eyeflower/top"
-		},
-		"infected_cobblestone":{
-			"textures": "textures/abyss/floor/cobblestone/infected_cobblestone"
-		},
-		"infected_dirt":{
-			"textures": "textures/abyss/floor/dirt/infected_dirt"
-		},
-		"infected_teeth":{
-			"textures": "textures/abyss/floor/teeth/infected_teeth"
-		},
-		"infected_sporestone":{
-			"textures": "textures/abyss/floor/sporestone/sporestone"
-		},
-		"infected_planks":{
-			"textures": "textures/infected/planks/planks"
-		},
-		"infected_top_door": {
-			"textures": "textures/infected/door/top/topdoor"
-		},
-		"infected_bottom_door": {
-			"textures": "textures/infected/door/bottom/bottomdoor"
-		},
-		"infected_block":{
-			"textures": "textures/infected/block/block"
-		},
-		"infected_grass_top":{
-			"textures": "textures/infected/grass/top/top"
-		},
-		"infected_grass_side":{
-			"textures": "textures/infected/grass/side/side"
-		},
-		"zombie_infected_leaves": {
-			"textures": "textures/infected/leaves/leaves"
-		},
-		"infected_tree_log": {
-			"textures": "textures/infected/log/side/side"
-		},
-		"infected_tree_log_top": {
-			"textures": "textures/infected/log/top/top"
-		},
-		"infected_tree_log_stripped": {
-			"textures": "textures/infected/strippedlog/side/side"
-		},
-		"infected_tree_log_stripped_top": {
-			"textures": "textures/infected/strippedlog/top/top"
-		},
-		"redwood_planks": {
-			"textures": "textures/redwood/redwood_planks"
-		},
-		"redwood_log": {
-			"textures": "textures/redwood/redwood_log"
-		},
-		"redwood_log_top": {
-			"textures": "textures/redwood/redwood_log_top"
-		},
-		"stripped_redwood_log": {
-			"textures": "textures/redwood/redwood_stripped_log"
-		},
-		"stripped_redwood_log_top": {
-			"textures": "textures/redwood/redwood_stripped_top"
-		},
-		"redwood_leaf": {
-			"textures": "textures/redwood/redwood_leaf"
-		},
-		"redwood_door_bottom": {
-			"textures": "textures/redwood/redwood_door_bottom"
-		},
-		"redwood_door_top": {
-			"textures": "textures/redwood/redwood_door_top"
-		},
-		"redwood_trapdoor": {
-			"textures": "textures/redwood/redwood_trapdoor"
-		},
-		"red_wood_saplin": {
-			"textures": "textures/redwood/red_wood_saplin"
-		},
-		"eyewood_button": {
-			"textures": "textures/abyss/blocks/eye_wood_button_icon"
-		}
-	}
+    "resource_pack_name":  "choascraft",
+    "texture_name":  "atlas.terrain",
+    "texture_data":  {
+                         "pengiun_egg":  {
+                                             "textures":  "textures/items/water/pengiuns/pengiun_egg"
+                                         },
+                         "eyewood_tree_top":  {
+                                                  "textures":  "textures/abyss/tree/log_top/eyewood_tree_top"
+                                              },
+                         "eyewood_tree_side":  {
+                                                   "textures":  "textures/abyss/tree/log_side/eyewood_tree_side"
+                                               },
+                         "eyewood_tree_leaves":  {
+                                                     "textures":  "textures/abyss/tree/leaves/eyewood_tree_leaves"
+                                                 },
+                         "eyewood_tree_sapling":  {
+                                                      "textures":  "textures/abyss/tree/sapling/eyewood_tree_sapling"
+                                                  },
+                         "stripped_eyewood_log":  {
+                                                      "textures":  "textures/abyss/tree/stripped_side/stripped_abyss_wood"
+                                                  },
+                         "eyewood_planks":  {
+                                                "textures":  "textures/abyss/blocks/planks/eyewood_planks"
+                                            },
+                         "abyss_trap_door_top":  {
+                                                     "textures":  "textures/abyss/blocks/trapdoor/abyss_trap_door_top"
+                                                 },
+                         "abyss_trap_door_side":  {
+                                                      "textures":  "textures/abyss/blocks/trapdoor/abyss_trap_door_side"
+                                                  },
+                         "abyss_trap_door_bottom":  {
+                                                        "textures":  "textures/abyss/blocks/trapdoor/abyss_trap_door_bottom"
+                                                    },
+                         "abyss_top_door":  {
+                                                "textures":  "textures/abyss/blocks/door_top/abyss_top_door"
+                                            },
+                         "abyss_bottom_door":  {
+                                                   "textures":  "textures/abyss/blocks/door_bottom/abyss_bottom_door"
+                                               },
+                         "glow_flower":  {
+                                             "textures":  "textures/abyss/plants/glow_flower/glow_flower"
+                                         },
+                         "infected_stone":  {
+                                                "textures":  "textures/abyss/floor/stone/infected_stone"
+                                            },
+                         "infected_gravel":  {
+                                                 "textures":  "textures/abyss/floor/gravel/infected_gravel"
+                                             },
+                         "infected_sand":  {
+                                               "textures":  "textures/abyss/floor/sand/infected_sand"
+                                           },
+                         "abyss_mushroom":  {
+                                                "textures":  "textures/abyss/plants/mushroom/abyss_mushroom"
+                                            },
+                         "infected_mushroom":  {
+                                                   "textures":  "textures/infected/mushroom/mushroom"
+                                               },
+                         "sporepod_bottom":  {
+                                                 "textures":  "textures/infected/plants/sporepod/bottom"
+                                             },
+                         "sporepod_middle":  {
+                                                 "textures":  "textures/infected/plants/sporepod/middle"
+                                             },
+                         "sporepod_top":  {
+                                              "textures":  "textures/infected/plants/sporepod/top"
+                                          },
+                         "zc_corrupted_spire":  {
+                                                    "textures":  "textures/zombies/zc_corrupted_spire"
+                                                },
+                         "abyss_grass":  {
+                                             "textures":  "textures/abyss/plants/grass/abyss_grass"
+                                         },
+                         "black_grass":  {
+                                             "textures":  "textures/infected/blackgrass/blackgrass"
+                                         },
+                         "infected_goo":  {
+                                              "textures":  "textures/items/infect_armor/infected_goo"
+                                          },
+                         "abyss_glob_flower":  {
+                                                   "textures":  "textures/abyss/plants/glob_flower/abyss_glob_flower"
+                                               },
+                         "abyss_flower_0":  {
+                                                "textures":  "textures/abyss/flowers/flower_0/abyss_flower_0"
+                                            },
+                         "abyss_flower_1":  {
+                                                "textures":  "textures/abyss/flowers/flower_1/abyss_flower_1"
+                                            },
+                         "abyss_flower_2":  {
+                                                "textures":  "textures/abyss/flowers/flower_2/abyss_flower_2"
+                                            },
+                         "abyss_flower_3":  {
+                                                "textures":  "textures/abyss/flowers/flower_3/abyss_flower_3"
+                                            },
+                         "abyss_flower_4":  {
+                                                "textures":  "textures/abyss/flowers/flower_4/abyss_flower_4"
+                                            },
+                         "infected_flower_0":  {
+                                                   "textures":  "textures/infected/flower/flower0"
+                                               },
+                         "infected_flower_1":  {
+                                                   "textures":  "textures/infected/flower/flower1"
+                                               },
+                         "infected_flower_2":  {
+                                                   "textures":  "textures/infected/flower/flower2"
+                                               },
+                         "infected_flower_3":  {
+                                                   "textures":  "textures/infected/flower/flower3"
+                                               },
+                         "infected_flower_4":  {
+                                                   "textures":  "textures/infected/flower/flower4"
+                                               },
+                         "infected_flower_top":  {
+                                                     "textures":  "textures/infected/flower/top"
+                                                 },
+                         "eye_flower_0":  {
+                                              "textures":  "textures/infected/eyeflower/flower0"
+                                          },
+                         "eye_flower_1":  {
+                                              "textures":  "textures/infected/eyeflower/flower1"
+                                          },
+                         "eye_flower_2":  {
+                                              "textures":  "textures/infected/eyeflower/flower2"
+                                          },
+                         "eye_flower_3":  {
+                                              "textures":  "textures/infected/eyeflower/flower3"
+                                          },
+                         "eye_flower":  {
+                                            "textures":  "textures/infected/eyeflower/flower"
+                                        },
+                         "eye_flower_top":  {
+                                                "textures":  "textures/infected/eyeflower/top"
+                                            },
+                         "infected_cobblestone":  {
+                                                      "textures":  "textures/abyss/floor/cobblestone/infected_cobblestone"
+                                                  },
+                         "infected_dirt":  {
+                                               "textures":  "textures/abyss/floor/dirt/infected_dirt"
+                                           },
+                         "infected_teeth":  {
+                                                "textures":  "textures/abyss/floor/teeth/infected_teeth"
+                                            },
+                         "infected_sporestone":  {
+                                                     "textures":  "textures/abyss/floor/sporestone/sporestone"
+                                                 },
+                         "infected_planks":  {
+                                                 "textures":  "textures/infected/planks/planks"
+                                             },
+                         "infected_top_door":  {
+                                                   "textures":  "textures/infected/door/top/topdoor"
+                                               },
+                         "infected_bottom_door":  {
+                                                      "textures":  "textures/infected/door/bottom/bottomdoor"
+                                                  },
+                         "infected_block":  {
+                                                "textures":  "textures/infected/block/block"
+                                            },
+                         "infected_grass_top":  {
+                                                    "textures":  "textures/infected/grass/top/top"
+                                                },
+                         "infected_grass_side":  {
+                                                     "textures":  "textures/infected/grass/side/side"
+                                                 },
+                         "zombie_infected_leaves":  {
+                                                        "textures":  "textures/infected/leaves/leaves"
+                                                    },
+                         "infected_tree_log":  {
+                                                   "textures":  "textures/infected/log/side/side"
+                                               },
+                         "infected_tree_log_top":  {
+                                                       "textures":  "textures/infected/log/top/top"
+                                                   },
+                         "infected_tree_log_stripped":  {
+                                                            "textures":  "textures/infected/strippedlog/side/side"
+                                                        },
+                         "infected_tree_log_stripped_top":  {
+                                                                "textures":  "textures/infected/strippedlog/top/top"
+                                                            },
+                         "redwood_planks":  {
+                                                "textures":  "textures/redwood/redwood_planks"
+                                            },
+                         "redwood_log":  {
+                                             "textures":  "textures/redwood/redwood_log"
+                                         },
+                         "redwood_log_top":  {
+                                                 "textures":  "textures/redwood/redwood_log_top"
+                                             },
+                         "stripped_redwood_log":  {
+                                                      "textures":  "textures/redwood/redwood_stripped_log"
+                                                  },
+                         "stripped_redwood_log_top":  {
+                                                          "textures":  "textures/redwood/redwood_stripped_top"
+                                                      },
+                         "redwood_leaf":  {
+                                              "textures":  "textures/redwood/redwood_leaf"
+                                          },
+                         "redwood_door_bottom":  {
+                                                     "textures":  "textures/redwood/redwood_door_bottom"
+                                                 },
+                         "redwood_door_top":  {
+                                                  "textures":  "textures/redwood/redwood_door_top"
+                                              },
+                         "redwood_trapdoor":  {
+                                                  "textures":  "textures/redwood/redwood_trapdoor"
+                                              },
+                         "red_wood_saplin":  {
+                                                 "textures":  "textures/redwood/red_wood_saplin"
+                                             },
+                         "eyewood_button":  {
+                                                "textures":  "textures/abyss/blocks/eye_wood_button_icon"
+                                            },
+                         "zombie_hell_log":  {
+                                                 "textures":  "textures/demon/hell_log"
+                                             },
+                         "zombie_hell_log2":  {
+                                                  "textures":  "textures/demon/hell_log2"
+                                              },
+                         "zombie_demon_log_top":  {
+                                                      "textures":  "textures/demon/hell_log_top"
+                                                  },
+                         "zombie_hell_stripped_1":  {
+                                                        "textures":  "textures/demon/hell_stripped_1"
+                                                    },
+                         "zombie_hell_log_stripped_2":  {
+                                                            "textures":  "textures/demon/hell_log_stripped_2"
+                                                        },
+                         "zombie_hell_plank":  {
+                                                   "textures":  "textures/demon/plank"
+                                               },
+                         "zombie_demon_trapdoor":  {
+                                                       "textures":  "textures/demon/trapdoor"
+                                                   },
+                         "zombie_demon_door_bottom":  {
+                                                          "textures":  "textures/demon/demon_door_bottom"
+                                                      },
+                         "zombie_demon_door_top":  {
+                                                       "textures":  "textures/demon/demon_door_top"
+                                                   },
+                         "zombie_demon_fence":  {
+                                                    "textures":  "textures/demon/demon_fence"
+                                                },
+                         "zombie_hellfire_trapstone":  {
+                                                           "textures":  "textures/demon/hellfire_trapstone"
+                                                       },
+                         "zombie_hellfire_spikes":  {
+                                                        "textures":  "textures/demon/spike"
+                                                    },
+                         "zombie_demon_dirt":  {
+                                                   "textures":  "textures/demon/demon_dirt"
+                                               },
+                         "zombie_demon_grass":  {
+                                                    "textures":  "textures/demon/demon_grass"
+                                                },
+                         "zombie_demon_grass_top":  {
+                                                        "textures":  "textures/demon/demon_grass_top"
+                                                    },
+                         "zombie_demon_stone":  {
+                                                    "textures":  "textures/demon/demon_stone"
+                                                },
+                         "zombie_demon_stone_brick":  {
+                                                          "textures":  "textures/demon/demon_stone_brick"
+                                                      },
+                         "zombie_demon_steel_block":  {
+                                                          "textures":  "textures/demon/demon_steel_block"
+                                                      },
+                         "zombie_chiseled_demon_steel_block":  {
+                                                                   "textures":  "textures/demon/chiseled_demon_steel_block"
+                                                               },
+                         "zombie_demon_steel_chiseled":  {
+                                                            "textures":  "textures/demon/chiseled_demon_steel_block"
+                                                        },
+                         "zombie_demon_steel_ore":  {
+                                                       "textures":  "textures/demon/demon_steel_ore"
+                                                   },
+                         "zombie_steel_ore":  {
+                                                  "textures":  "textures/demon/demon_steel_ore"
+                                              },
+                         "zombie_demon_chest":  {
+                                                   "textures":  "textures/demon/choas_chest"
+                                               },
+                         "zombie_hell_lamp":  {
+                                                  "textures":  "textures/demon/hell_lamp"
+                                              },
+                         "zombie_demon_alter":  {
+                                                    "textures":  "textures/demon/demon_alter_side_1"
+                                                },
+                         "zombie_demon_alter_top":  {
+                                                        "textures":  "textures/demon/demon_alter_top"
+                                                    },
+                         "zombie_demon_alter_top_planstar":  {
+                                                                 "textures":  "textures/demon/demon_alter_top_planstar"
+                                              }
+                     }
 }

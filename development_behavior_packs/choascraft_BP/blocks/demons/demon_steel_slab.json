@@ -1,0 +1,112 @@
+{
+	"format_version": "1.26.10",
+	"minecraft:block": {
+		"description": {
+			"identifier": "zombie:demon_steel_slab",
+			"traits": {
+				"minecraft:placement_position": {
+					"enabled_states": [
+						"minecraft:vertical_half"
+					]
+				}
+			},
+			"states": {
+				"zombie:double": [
+					false,
+					true
+				]
+			},
+			"menu_category": {
+				"category": "construction",
+				"group": "minecraft:itemGroup.name.slab"
+			}
+		},
+		"permutations": [
+			{
+				"condition": "query.block_state('minecraft:vertical_half') == 'bottom' && !query.block_state('zombie:double')",
+				"components": {
+					"minecraft:collision_box": {
+						"origin": [-8, 0, -8],
+						"size": [16, 8, 16]
+					},
+					"minecraft:selection_box": {
+						"origin": [-8, 0, -8],
+						"size": [16, 8, 16]
+					}
+				}
+			},
+			{
+				"condition": "query.block_state('minecraft:vertical_half') == 'top' && !query.block_state('zombie:double')",
+				"components": {
+					"minecraft:collision_box": {
+						"origin": [-8, 8, -8],
+						"size": [16, 8, 16]
+					},
+					"minecraft:selection_box": {
+						"origin": [-8, 8, -8],
+						"size": [16, 8, 16]
+					}
+				}
+			},
+			{
+				"condition": "query.block_state('zombie:double')",
+				"components": {
+					"minecraft:geometry": "minecraft:geometry.full_block",
+					"minecraft:collision_box": true,
+					"minecraft:selection_box": true,
+					"minecraft:redstone_conductivity": {
+						"redstone_conductor": true
+					}
+				}
+			}
+		],
+		"components": {
+			"minecraft:display_name": "Demon Steel Slab",
+			"minecraft:geometry": {
+				"identifier": "geometry.zombie.eyewood_slab",
+				"bone_visibility": {
+					"bottom_slab": "query.block_state('minecraft:vertical_half') == 'bottom'",
+					"top_slab": "query.block_state('minecraft:vertical_half') == 'top'"
+				}
+			},
+			"minecraft:item_visual": {
+				"geometry": {
+					"identifier": "geometry.zombie.eyewood_slab",
+					"bone_visibility": {
+						"bottom_slab": true,
+						"top_slab": false
+					}
+				},
+				"material_instances": {
+					"*": {
+						"texture": "zombie_demon_steel_block",
+						"render_method": "opaque"
+					}
+				}
+			},
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "zombie_demon_steel_block",
+					"render_method": "opaque"
+				}
+			},
+			"minecraft:destructible_by_mining": {
+				"seconds_to_destroy": 3
+			},
+			"minecraft:destructible_by_explosion": true,
+			"minecraft:light_dampening": 1,
+			"minecraft:liquid_detection": {
+				"detection_rules": [
+					{
+						"liquid_type": "water",
+						"can_contain_liquid": true,
+						"on_liquid_touches": "blocking"
+					}
+				]
+			},
+			"tag:zombie:slab": {},
+			"tag:minecraft:is_pickaxe_item_destructible": {},
+			"zombie:slab_pre_place": {}
+		}
+	}
+}

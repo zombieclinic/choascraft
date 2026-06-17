@@ -1,0 +1,16 @@
+{
+  "format_version": "1.26.30",
+  "minecraft:client_biome": {
+    "description": {
+      "identifier": "zombie:demon_biome"
+    },
+    "components": {
+      "minecraft:grass_appearance": {
+        "color": "#4c1010"
+      },
+      "minecraft:foliage_appearance": {
+        "color": "#661010"
+      }
+    }
+  }
+}

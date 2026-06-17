@@ -1,0 +1,28 @@
+{
+    "format_version": "1.21.60",
+    "minecraft:block": {
+        "description": {
+            "identifier": "zombie:demon_steel",
+            "menu_category": {
+                "category": "nature"
+            }
+    },
+            "components": {
+                "minecraft:collision_box": true,
+                "minecraft:destructible_by_explosion": true,
+                "minecraft:display_name": "Demon Steel",
+                "minecraft:material_instances": {
+                    "*": {
+                        "texture": "zombie_demon_steel_block",
+                        "render_method": "opaque"
+                    }
+                },
+                "minecraft:light_emission": 1,
+                "minecraft:map_color": "#000000",
+                "minecraft:flammable": false,
+                "minecraft:destructible_by_mining": {"seconds_to_destroy": 1},
+                "tag:minecraft:is_pickaxe_item_destructible": {},
+                "minecraft:selection_box": true
+            }
+    }       
+}

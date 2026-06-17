@@ -1,0 +1,50 @@
+{
+	"format_version": "1.21.70",
+	"minecraft:block": {
+		"description": {
+			"identifier": "zombie:corrupted_grass",
+			"menu_category": {
+				"category": "nature"
+			}
+		},
+		"components": {
+			"minecraft:display_name": "Corrupted Grass",
+			"minecraft:geometry": "minecraft:geometry.full_block",
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "zombie_demon_grass",
+					"render_method": "opaque"
+				},
+				"up": {
+					"texture": "zombie_demon_grass_top",
+					"render_method": "opaque"
+				},
+				"down": {
+					"texture": "zombie_demon_dirt",
+					"render_method": "opaque"
+				}
+			},
+			"minecraft:collision_box": true,
+			"minecraft:selection_box": true,
+			"minecraft:destructible_by_mining": {
+				"seconds_to_destroy": 0.5
+			},
+			"minecraft:destructible_by_explosion": true,
+			"minecraft:flammable": false,
+			"minecraft:placement_filter": {
+				"conditions": [
+					{
+						"allowed_faces": [
+							"up"
+						],
+						"block_filter": [
+							"zombie:demon_dirt",
+							"zombie:demon_grass_no_tick"
+						]
+					}
+				]
+			},
+			"tag:minecraft:is_shovel_item_destructible": {}
+		}
+	}
+}

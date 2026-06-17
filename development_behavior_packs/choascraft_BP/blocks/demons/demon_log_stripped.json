@@ -1,0 +1,71 @@
+{
+    "format_version": "1.21.60",
+    "minecraft:block": {
+        "description": {
+            "identifier": "zombie:demon_log_stripped",
+           	"traits": {
+				"minecraft:placement_direction": {
+					"enabled_states": [
+						"minecraft:facing_direction"
+					]
+				}
+			},
+			"menu_category": {
+				"category": "nature",
+				"group": "minecraft:itemGroup.name.log"
+			}
+    },
+            "components": {
+                "minecraft:geometry": "minecraft:geometry.full_block",
+			    "minecraft:material_instances": {
+				"*": {
+					"texture": "zombie_hell_stripped_1",
+					"ambient_occlusion": true,
+					"face_dimming": true,
+					"render_method": "opaque"
+				},
+				"up": {
+					"texture": "zombie_demon_log_top"
+				},
+				"down": {
+					"texture": "zombie_demon_log_top"
+				}
+			},
+                "minecraft:collision_box": true,
+                "minecraft:destructible_by_explosion": true,
+                "minecraft:display_name": "Stripped Ashen Hellbark Log",
+                "minecraft:light_emission": 1,
+                "minecraft:map_color": "#000000",
+                "minecraft:flammable": false,
+                "minecraft:destructible_by_mining": {"seconds_to_destroy": 1},
+                "tag:minecraft:is_axe_item_destructible": {},
+                "minecraft:selection_box": true
+            },
+            	"permutations": [
+			{
+				"condition": "q.block_state('minecraft:facing_direction') == 'up' || q.block_state('minecraft:facing_direction') == 'down' ",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [0, 0, 0]
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('minecraft:facing_direction') == 'east' || q.block_state('minecraft:facing_direction') == 'west' ",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [0, 0, 90]
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('minecraft:facing_direction') == 'north' || q.block_state('minecraft:facing_direction') == 'south' ",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [90, 0, 0]
+					}
+				}
+			}
+		]
+	}
+}

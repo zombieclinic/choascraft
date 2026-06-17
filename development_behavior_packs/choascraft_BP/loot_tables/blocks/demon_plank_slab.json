@@ -1,0 +1,14 @@
+{
+    "pools":  [
+                  {
+                      "rolls":  1,
+                      "entries":  [
+                                      {
+                                          "type":  "item",
+                                          "name":  "zombie:demon_plank_slab",
+                                          "weight":  1
+                                      }
+                                  ]
+                  }
+              ]
+}

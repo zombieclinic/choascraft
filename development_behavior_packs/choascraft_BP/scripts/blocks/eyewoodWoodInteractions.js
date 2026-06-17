@@ -13,13 +13,18 @@ const WOOD_USE_SOUND = "use.wood";
 const SLAB_ITEM_IDS = new Set([
 	"zombie:eyewood_slab",
 	"zombie:infected_slab",
-	"zombie:redwood_slab"
+	"zombie:redwood_slab",
+	"zombie:demon_plank_slab",
+	"zombie:demon_stone_slab",
+	"zombie:demon_steel_slab"
 ]);
 
 const STRIPPABLE_BLOCKS = {
 	"zombie:eyewood_log": "zombie:stripped_eyewood_log",
 	"zombie:infected_tree_log": "zombie:infected_tree_log_stripped",
-	"zombie:redwood_log": "zombie:stripped_redwood_log"
+	"zombie:redwood_log": "zombie:stripped_redwood_log",
+	"zombie:demon_log": "zombie:demon_log_stripped",
+	"zombie:demon_fire_log": "zombie:demon_fire_log_stripped"
 };
 
 const FACE_NEIGHBORS = {
