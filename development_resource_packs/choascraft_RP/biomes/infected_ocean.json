@@ -1,5 +1,5 @@
 {
-	"format_version": "1.26.20",
+	"format_version": "1.26.30",
 	"minecraft:client_biome": {
 		"description": {
 			"identifier": "zombie:infected_ocean"

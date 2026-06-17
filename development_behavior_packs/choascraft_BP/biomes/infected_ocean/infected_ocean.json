@@ -1,5 +1,5 @@
 {
-	"format_version": "1.26.20",
+	"format_version": "1.26.30",
 	"minecraft:biome": {
 		"description": {
 			"identifier": "zombie:infected_ocean"
@@ -46,6 +46,44 @@
 					"mid_material": "zombie:infected_sand",
 					"top_material": "zombie:infected_sand",
 					"sea_material": "minecraft:water"
+				}
+			},
+			"minecraft:subsurface_builder": {
+				"builder": {
+					"type": "minecraft:noise_gradient",
+					"noise_descriptor": {
+						"name": "zombie:infected_ocean_subsurface",
+						"first_octave": -6,
+						"amplitudes": [1.0, 0.5, 0.25, 0.125]
+					},
+					"non_replaceable_blocks": [
+						"minecraft:air",
+						"minecraft:water",
+						"minecraft:lava",
+						"minecraft:bedrock"
+					],
+					"noise_block_specifiers": [
+						{
+							"range": { "min": 0.0, "max": 0.325 },
+							"block": "zombie:infected_stone"
+						},
+						{
+							"range": { "min": 0.325, "max": 0.575 },
+							"block": "zombie:infected_sporestone"
+						},
+						{
+							"range": { "min": 0.575, "max": 0.7 },
+							"block": "zombie:infected_dirt"
+						},
+						{
+							"range": { "min": 0.7, "max": 0.86 },
+							"block": "zombie:infected_cobblestone"
+						},
+						{
+							"range": { "min": 0.86, "max": 1.0 },
+							"block": "zombie:infected_gravel"
+						}
+					]
 				}
 			},
 			"minecraft:tags": {

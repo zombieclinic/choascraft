@@ -1,0 +1,8 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:texture_set": {
+		"color": "demon_door_bottom",
+		"metalness_emissive_roughness": "demon_door_bottom_mer",
+		"normal": "demon_door_bottom_normal"
+	}
+}

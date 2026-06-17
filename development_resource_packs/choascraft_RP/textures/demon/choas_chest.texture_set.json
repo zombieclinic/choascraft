@@ -1,0 +1,8 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:texture_set": {
+		"color": "choas_chest",
+		"metalness_emissive_roughness": "choas_chest_mer",
+		"normal": "choas_chest_normal"
+	}
+}

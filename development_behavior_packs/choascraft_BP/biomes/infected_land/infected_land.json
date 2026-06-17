@@ -1,5 +1,5 @@
 {
-  "format_version": "1.26.20",
+  "format_version": "1.26.30",
   "minecraft:biome": {
     "description": {
       "identifier": "zombie:infected_land"
@@ -12,6 +12,13 @@
           0.0
         ],
         "temperature": 0.75
+      },
+      "minecraft:multinoise_generation_rules": {
+        "target_temperature": 0.0,
+        "target_humidity": 0.0,
+        "target_altitude": 0.0,
+        "target_weirdness": 0.0,
+        "weight": 0.15
       },
       "minecraft:overworld_height": {
         "noise_type": "default"
@@ -28,19 +35,13 @@
           {
             "dimension": "minecraft:overworld",
             "targets": [
-              "minecraft:plains",
               "minecraft:forest",
               "minecraft:birch_forest",
               "minecraft:roofed_forest",
-              "minecraft:flower_forest",
-              "minecraft:meadow",
-              "minecraft:taiga",
-              "minecraft:mega_taiga",
-              "minecraft:redwood_taiga_mutated",
-              "minecraft:swampland"
+              "minecraft:taiga"
             ],
             "amount": 0.2,
-            "noise_frequency_scale": 0.055
+            "noise_frequency_scale": 0.30
           }
         ]
       },
@@ -48,11 +49,45 @@
         "builder": {
           "type": "minecraft:overworld",
           "sea_floor_depth": 0,
-          "sea_floor_material": "minecraft:dirt",
-          "foundation_material": "minecraft:stone",
-          "mid_material": "minecraft:dirt",
+          "sea_floor_material": "zombie:infected_dirt",
+          "foundation_material": "zombie:infected_block",
+          "mid_material": "zombie:infected_dirt",
           "top_material": "zombie:infected_grass_block",
           "sea_material": "minecraft:water"
+        }
+      },
+      "minecraft:subsurface_builder": {
+        "builder": {
+          "type": "minecraft:noise_gradient",
+          "noise_descriptor": {
+            "name": "zombie:infected_land_subsurface",
+            "first_octave": -7,
+            "amplitudes": [1.0, 0.5, 0.25, 0.125]
+          },
+          "non_replaceable_blocks": [
+            "minecraft:air",
+            "minecraft:water",
+            "minecraft:lava",
+            "minecraft:bedrock"
+          ],
+          "noise_block_specifiers": [
+            {
+              "range": { "min": 0.0, "max": 0.29 },
+              "block": "minecraft:stone"
+            },
+            {
+              "range": { "min": 0.29, "max": 0.59 },
+              "block": "zombie:infected_dirt"
+            },
+            {
+              "range": { "min": 0.59, "max": 0.84 },
+              "block": "zombie:infected_block"
+            },
+            {
+              "range": { "min": 0.84, "max": 1.0 },
+              "block": "zombie:corrupted_spire"
+            }
+          ]
         }
       },
       "minecraft:tags": {

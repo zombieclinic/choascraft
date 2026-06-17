@@ -1,5 +1,5 @@
 {
-  "format_version": "1.26.20",
+  "format_version": "1.26.30",
   "minecraft:biome": {
     "description": {
       "identifier": "zombie:redwood_forest"
@@ -40,6 +40,40 @@
           "mid_material": "minecraft:dirt",
           "top_material": "minecraft:grass_block",
           "sea_material": "minecraft:water"
+        }
+      },
+      "minecraft:subsurface_builder": {
+        "builder": {
+          "type": "minecraft:noise_gradient",
+          "noise_descriptor": {
+            "name": "zombie:redwood_forest_subsurface",
+            "first_octave": -7,
+            "amplitudes": [1.0, 0.5, 0.25, 0.125]
+          },
+          "non_replaceable_blocks": [
+            "minecraft:air",
+            "minecraft:water",
+            "minecraft:lava",
+            "minecraft:bedrock"
+          ],
+          "noise_block_specifiers": [
+            {
+              "range": { "min": 0.0, "max": 0.275 },
+              "block": "minecraft:stone"
+            },
+            {
+              "range": { "min": 0.275, "max": 0.575 },
+              "block": "minecraft:dirt"
+            },
+            {
+              "range": { "min": 0.575, "max": 0.775 },
+              "block": "minecraft:coarse_dirt"
+            },
+            {
+              "range": { "min": 0.775, "max": 1.0 },
+              "block": "minecraft:moss_block"
+            }
+          ]
         }
       },
       "minecraft:tags": {

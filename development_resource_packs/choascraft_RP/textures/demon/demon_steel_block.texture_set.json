@@ -1,0 +1,8 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:texture_set": {
+		"color": "demon_steel_block",
+		"metalness_emissive_roughness": "demon_steel_block_mer",
+		"normal": "demon_steel_block_normal"
+	}
+}

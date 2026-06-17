@@ -1,0 +1,8 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:texture_set": {
+		"color": "demon_stone",
+		"metalness_emissive_roughness": "demon_stone_mer",
+		"normal": "demon_stone_normal"
+	}
+}

@@ -1,0 +1,8 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:texture_set": {
+		"color": "demon_fence",
+		"metalness_emissive_roughness": "demon_fence_mer",
+		"normal": "demon_fence_normal"
+	}
+}
