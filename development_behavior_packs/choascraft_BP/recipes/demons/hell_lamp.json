@@ -1,0 +1,37 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "zombie:hell_lamp"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      " I ",
+      "ITI",
+      " I "
+    ],
+    "key": {
+      "I": {
+        "item": "zombie:demon_steel_ingot"
+      },
+      "T": {
+        "item": "minecraft:torch"
+      }
+    },
+    "result": [
+      {
+        "item": "zombie:hell_lamp"
+      }
+    ],
+    "unlock": [
+      {
+        "item": "zombie:demon_steel_ingot"
+      },
+      {
+        "item": "minecraft:torch"
+      }
+    ]
+  }
+}

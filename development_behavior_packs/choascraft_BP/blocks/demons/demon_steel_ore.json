@@ -23,7 +23,8 @@
                 "minecraft:destructible_by_mining": {"seconds_to_destroy": 1},
                 "tag:minecraft:is_pickaxe_item_destructible": {},
                 "minecraft:selection_box": true,
-                "minecraft:loot": "loot_tables/empty.json"
+                "minecraft:loot": "loot_tables/empty.json",
+                "zombie:demon_steel_ore_drop": {}
             }
     }       
 }

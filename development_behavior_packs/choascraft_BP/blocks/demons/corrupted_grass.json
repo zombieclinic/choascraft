@@ -9,28 +9,44 @@
 		},
 		"components": {
 			"minecraft:display_name": "Corrupted Grass",
-			"minecraft:geometry": "minecraft:geometry.full_block",
+			"minecraft:collision_box": false,
+			"minecraft:selection_box": {
+				"origin": [
+					-4,
+					0,
+					-4
+				],
+				"size": [
+					8,
+					12,
+					8
+				]
+			},
+			"minecraft:geometry": "geometry.zombie_abysscrossplants",
 			"minecraft:material_instances": {
 				"*": {
-					"texture": "zombie_demon_grass",
-					"render_method": "opaque"
-				},
-				"up": {
-					"texture": "zombie_demon_grass_top",
-					"render_method": "opaque"
-				},
-				"down": {
-					"texture": "zombie_demon_dirt",
-					"render_method": "opaque"
+					"texture": "zombie_corrupted_grass",
+					"render_method": "alpha_test",
+					"face_dimming": false,
+					"ambient_occlusion": false
 				}
 			},
-			"minecraft:collision_box": true,
-			"minecraft:selection_box": true,
 			"minecraft:destructible_by_mining": {
-				"seconds_to_destroy": 0.5
+				"seconds_to_destroy": 0.0
 			},
-			"minecraft:destructible_by_explosion": true,
+			"minecraft:destructible_by_explosion": {
+				"explosion_resistance": 0.0
+			},
 			"minecraft:flammable": false,
+			"minecraft:liquid_detection": {
+				"detection_rules": [
+					{
+						"liquid_type": "water",
+						"can_contain_liquid": false,
+						"on_liquid_touches": "broken"
+					}
+				]
+			},
 			"minecraft:placement_filter": {
 				"conditions": [
 					{
@@ -44,7 +60,9 @@
 					}
 				]
 			},
-			"tag:minecraft:is_shovel_item_destructible": {}
+			"minecraft:replaceable": {},
+			"tag:minecraft:is_shears_item_destructible": {},
+			"tag:plant": {}
 		}
 	}
 }

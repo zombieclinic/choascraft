@@ -1,0 +1,13 @@
+{
+  "format_version": "1.26.10",
+  "minecraft:recipe_furnace": {
+    "description": {
+      "identifier": "zombie:raw_demon_steel_to_nugget_blast_furnace"
+    },
+    "tags": [
+      "blast_furnace"
+    ],
+    "input": "zombie:raw_demon_steel",
+    "output": "zombie:demon_steel_nugget"
+  }
+}

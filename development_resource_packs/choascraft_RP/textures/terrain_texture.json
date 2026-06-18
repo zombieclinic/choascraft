@@ -254,6 +254,9 @@
                          "zombie_demon_grass_top":  {
                                                         "textures":  "textures/demon/demon_grass_top"
                                                     },
+                         "zombie_corrupted_grass":  {
+                                                        "textures":  "textures/demon/grass/corrupted_grass_5"
+                                                    },
                          "zombie_demon_stone":  {
                                                     "textures":  "textures/demon/demon_stone"
                                                 },

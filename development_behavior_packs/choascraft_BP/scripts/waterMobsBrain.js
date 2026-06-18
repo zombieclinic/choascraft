@@ -17,6 +17,7 @@ import { ZcButtonComponent, ZcButtonReleaseTickComponent } from "./blocks/button
 import { ZcPressurePlateComponent, ZcPressurePlateReleaseTickComponent } from "./blocks/pressurePlate.js";
 import { ConnectedStairsComponent } from "./blocks/connectedStairs.js"
 import { HellfireTrapstoneComponent } from "./blocks/hellfireTrapstone.js";
+import { DemonSteelOreDropComponent } from "./blocks/demonSteelOreDrops.js";
 import {infectedAttack} from "./items/infected.js"
 import "./entities/omniusBrain.js"
 import "./entities/zombieDeathAnimations.js"
@@ -48,6 +49,7 @@ const BLOCK_COMPONENTS = [
   ["zc:pressureplate", ZcPressurePlateComponent],
   ["zc:pressureplate_release_tick", ZcPressurePlateReleaseTickComponent],
   ["zombie:hellfire_trapstone", HellfireTrapstoneComponent],
+  ["zombie:demon_steel_ore_drop", DemonSteelOreDropComponent],
   ["arctic:connectedStairs", ConnectedStairsComponent]
 ];
 

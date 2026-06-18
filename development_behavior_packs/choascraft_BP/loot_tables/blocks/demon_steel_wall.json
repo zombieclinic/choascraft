@@ -1,0 +1,14 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "zombie:demon_steel_wall",
+          "weight": 1
+        }
+      ]
+    }
+  ]
+}

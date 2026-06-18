@@ -2,11 +2,11 @@
   "format_version": "1.13.0",
   "minecraft:feature_rules": {
     "description": {
-      "identifier": "zombie:ashen_hellbark_tree_feature_rule",
-      "places_feature": "zombie:ashen_hellbark_tree_floor_feature"
+      "identifier": "zombie:demon_steel_ore_feature_rule",
+      "places_feature": "zombie:demon_steel_ore_feature"
     },
     "conditions": {
-      "placement_pass": "after_surface_pass",
+      "placement_pass": "underground_pass",
       "minecraft:biome_filter": [
         {
           "test": "has_biome_tag",
@@ -16,27 +16,27 @@
       ]
     },
     "distribution": {
-      "iterations": 0.55,
+      "iterations": 25,
       "coordinate_eval_order": "zyx",
       "x": {
         "distribution": "uniform",
         "extent": [
-          0,
+         -15,
           15
         ]
       },
       "z": {
         "distribution": "uniform",
         "extent": [
-          0,
+          -15,
           15
         ]
       },
       "y": {
         "distribution": "uniform",
         "extent": [
-          55,
-          120
+          -64,
+          200
         ]
       }
     }

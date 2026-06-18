@@ -4,9 +4,9 @@
         "description": {
             "identifier": "zombie:demon_log_stripped",
            	"traits": {
-				"minecraft:placement_direction": {
+				"minecraft:placement_position": {
 					"enabled_states": [
-						"minecraft:facing_direction"
+						"minecraft:block_face"
 					]
 				}
 			},
@@ -43,26 +43,18 @@
             },
             	"permutations": [
 			{
-				"condition": "q.block_state('minecraft:facing_direction') == 'up' || q.block_state('minecraft:facing_direction') == 'down' ",
-				"components": {
-					"minecraft:transformation": {
-						"rotation": [0, 0, 0]
-					}
-				}
-			},
-			{
-				"condition": "q.block_state('minecraft:facing_direction') == 'east' || q.block_state('minecraft:facing_direction') == 'west' ",
-				"components": {
-					"minecraft:transformation": {
-						"rotation": [0, 0, 90]
-					}
-				}
-			},
-			{
-				"condition": "q.block_state('minecraft:facing_direction') == 'north' || q.block_state('minecraft:facing_direction') == 'south' ",
+				"condition": "q.block_state('minecraft:block_face') == 'north' || q.block_state('minecraft:block_face') == 'south' ",
 				"components": {
 					"minecraft:transformation": {
 						"rotation": [90, 0, 0]
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('minecraft:block_face') == 'east' || q.block_state('minecraft:block_face') == 'west' ",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [0, 90, -90]
 					}
 				}
 			}

@@ -1,0 +1,37 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "zombie:demon_stone_brick"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "#I",
+      "I#"
+    ],
+    "key": {
+      "#": {
+        "item": "zombie:demon_stone"
+      },
+      "I": {
+        "item": "zombie:demon_steel_ingot"
+      }
+    },
+    "result": [
+      {
+        "item": "zombie:demon_stone_brick",
+        "count": 4
+      }
+    ],
+    "unlock": [
+      {
+        "item": "zombie:demon_stone"
+      },
+      {
+        "item": "zombie:demon_steel_ingot"
+      }
+    ]
+  }
+}

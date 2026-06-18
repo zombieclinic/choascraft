@@ -1,0 +1,30 @@
+{
+  "format_version": "1.21.70",
+  "minecraft:block": {
+    "description": {
+      "identifier": "zombie:hell_lamp",
+      "menu_category": {
+        "category": "items"
+      }
+    },
+    "components": {
+      "minecraft:display_name": "Hell Lamp",
+      "minecraft:geometry": "geometry.hell_lamp",
+      "minecraft:material_instances": {
+        "*": {
+          "texture": "zombie_hell_lamp",
+          "render_method": "opaque"
+        }
+      },
+      "minecraft:collision_box": true,
+      "minecraft:selection_box": true,
+      "minecraft:destructible_by_mining": {
+        "seconds_to_destroy": 0.5
+      },
+      "minecraft:destructible_by_explosion": true,
+      "minecraft:light_emission": 15,
+      "minecraft:flammable": false,
+      "tag:minecraft:is_pickaxe_item_destructible": {}
+    }
+  }
+}

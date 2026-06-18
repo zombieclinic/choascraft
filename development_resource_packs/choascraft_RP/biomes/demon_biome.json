@@ -10,6 +10,19 @@
       },
       "minecraft:foliage_appearance": {
         "color": "#661010"
+      },
+      "minecraft:sky_color": {
+				"sky_color": "#661010"
+			},
+      "minecraft:water_identifier": {
+        "water_identifier": "zombie:hell_water"
+      },
+      "minecraft:water_appearance": {
+				"surface_color": "#2b0000",
+				"surface_opacity": 0.95
+			},
+      "minecraft:fog_appearance": {
+        "fog_identifier": "zombie:fog_hell_biome"
       }
     }
   }

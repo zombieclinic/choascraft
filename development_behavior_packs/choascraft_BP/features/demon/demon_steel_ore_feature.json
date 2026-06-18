@@ -1,0 +1,17 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:ore_feature": {
+    "description": {
+      "identifier": "zombie:demon_steel_ore_feature"
+    },
+    "count": 8,
+    "replace_rules": [
+      {
+        "places_block": "zombie:demon_steel_ore",
+        "may_replace": [
+          "zombie:demon_stone"
+        ]
+      }
+    ]
+  }
+}

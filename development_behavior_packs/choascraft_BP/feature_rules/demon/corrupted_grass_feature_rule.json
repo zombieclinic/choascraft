@@ -2,8 +2,8 @@
   "format_version": "1.13.0",
   "minecraft:feature_rules": {
     "description": {
-      "identifier": "zombie:ashen_hellbark_tree_feature_rule",
-      "places_feature": "zombie:ashen_hellbark_tree_floor_feature"
+      "identifier": "zombie:corrupted_grass_feature_rule",
+      "places_feature": "zombie:corrupted_grass_floor_feature"
     },
     "conditions": {
       "placement_pass": "after_surface_pass",
@@ -16,7 +16,7 @@
       ]
     },
     "distribution": {
-      "iterations": 0.55,
+      "iterations": 10,
       "coordinate_eval_order": "zyx",
       "x": {
         "distribution": "uniform",

@@ -1,6 +1,5 @@
 import { BlockPermutation, EquipmentSlot, ItemStack, system, world } from "@minecraft/server";
 
-const BLOCK_FACE_STATE = "minecraft:block_face";
 const SLAB_TAG = "zombie:slab";
 const DOOR_TAG = "zombie:door";
 const DOUBLE_SLAB_STATE = "zombie:double";
@@ -250,10 +249,8 @@ function tryStripWood(event) {
 
 	system.run(() => {
 		try {
-			const blockFace = block.permutation.getState(BLOCK_FACE_STATE);
-
-			block.setType(strippedType);
-			block.setPermutation(block.permutation.withState(BLOCK_FACE_STATE, blockFace));
+			const states = block.permutation.getAllStates();
+			block.setPermutation(BlockPermutation.resolve(strippedType, states));
 			block.dimension.playSound(WOOD_USE_SOUND, block.location);
 		} catch {}
 	});

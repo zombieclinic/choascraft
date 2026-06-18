@@ -1,0 +1,78 @@
+{
+  "format_version": "1.21.90",
+  "minecraft:fog_settings": {
+    "description": {
+      "identifier": "zombie:fog_hell_biome"
+    },
+    "distance": {
+      "air": {
+        "fog_start": 0.22,
+        "fog_end": 0.78,
+        "fog_color": "#4c1010",
+        "render_distance_type": "render"
+      },
+      "water": {
+        "fog_start": 0.0,
+        "fog_end": 24.0,
+        "fog_color": "#2b0808",
+        "render_distance_type": "fixed"
+      },
+      "weather": {
+        "fog_start": 0.10,
+        "fog_end": 0.48,
+        "fog_color": "#661010",
+        "render_distance_type": "render"
+      },
+      "lava": {
+        "fog_start": 0.0,
+        "fog_end": 0.85,
+        "fog_color": "#b32616",
+        "render_distance_type": "fixed"
+      },
+      "lava_resistance": {
+        "fog_start": 2.0,
+        "fog_end": 5.0,
+        "fog_color": "#3a0808",
+        "render_distance_type": "fixed"
+      }
+    },
+    "volumetric": {
+      "density": {
+        "air": {
+          "max_density": 0.105,
+          "uniform": true
+        },
+        "water": {
+          "max_density": 0.18,
+          "uniform": true
+        }
+      },
+      "media_coefficients": {
+        "air": {
+          "scattering": [
+            0.080,
+            0.025,
+            0.018
+          ],
+          "absorption": [
+            0.030,
+            0.012,
+            0.010
+          ]
+        },
+        "water": {
+          "scattering": [
+            0.070,
+            0.020,
+            0.015
+          ],
+          "absorption": [
+            0.040,
+            0.015,
+            0.012
+          ]
+        }
+      }
+    }
+  }
+}

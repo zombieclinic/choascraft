@@ -155,11 +155,7 @@
 		"sound": "gravel"
 	},
 	"zombie:corrupted_grass": {
-		"textures": {
-			"up": "zombie_demon_grass_top",
-			"down": "zombie_demon_dirt",
-			"side": "zombie_demon_grass"
-		},
+		"textures": "zombie_corrupted_grass",
 		"sound": "grass"
 	},
 	"zombie:demon_stone": {
@@ -189,6 +185,18 @@
 	"zombie:demon_steel_slab": {
 		"textures": "zombie_demon_steel_block",
 		"sound": "metal"
+	},
+	"zombie:demon_steel_stairs": {
+		"textures": "zombie_demon_steel_block",
+		"sound": "metal"
+	},
+	"zombie:demon_steel_wall": {
+		"textures": "zombie_demon_steel_block",
+		"sound": "metal"
+	},
+	"zombie:hell_lamp": {
+		"textures": "zombie_hell_lamp",
+		"sound": "lantern"
 	},
 	"zombie:demon_log": {
 		"textures": {

@@ -87,6 +87,15 @@
 		"zombie_infected_crystal": {
 			"textures": "textures/items/infect_armor/infected_crystal"
 		},
+		"zombie_raw_demon_steel": {
+			"textures": "textures/demon/demon_steel_raw"
+		},
+		"zombie_demon_steel_nugget": {
+			"textures": "textures/demon/demon_steel_nugget"
+		},
+		"zombie_demon_steel_ingot": {
+			"textures": "textures/demon/demon_steel_ingot"
+		},
 		"zombie_infected_sword": {
 			"textures": "textures/items/infect_armor/infected_sword"
 		},

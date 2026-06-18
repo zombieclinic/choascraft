@@ -44,7 +44,7 @@
           "foundation_material": "zombie:demon_stone",
           "mid_material": "zombie:demon_dirt",
           "top_material": "zombie:demon_grass_no_tick",
-          "sea_material": "minecraft:lava"
+          "sea_material": "minecraft:water"
         }
       },
       "minecraft:subsurface_builder": {

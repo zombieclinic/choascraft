@@ -1,0 +1,18 @@
+{
+  "format_version": "1.21.100",
+  "minecraft:item": {
+    "description": {
+      "identifier": "zombie:demon_steel_nugget",
+      "menu_category": {
+        "category": "items",
+        "group": "minecraft:itemGroup.name.rawMaterials"
+      }
+    },
+    "components": {
+      "minecraft:display_name": {
+        "value": "Demon Steel Nugget"
+      },
+      "minecraft:icon": "zombie_demon_steel_nugget"
+    }
+  }
+}

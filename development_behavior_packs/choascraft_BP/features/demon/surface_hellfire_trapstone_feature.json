@@ -1,0 +1,18 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:ore_feature": {
+    "description": {
+      "identifier": "zombie:surface_hellfire_trapstone_feature"
+    },
+    "count": 20,
+    "replace_rules": [
+      {
+        "places_block": "zombie:hellfire_trapstone",
+        "may_replace": [
+          "zombie:demon_grass_no_tick",
+          "zombie:demon_dirt"
+        ]
+      }
+    ]
+  }
+}
