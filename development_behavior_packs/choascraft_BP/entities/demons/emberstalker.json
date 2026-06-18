@@ -1,0 +1,162 @@
+{
+  "format_version": "1.26.20",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "zombie:emberstalker",
+      "is_summonable": true,
+      "is_spawnable": true
+    },
+    "components": {
+      "minecraft:scale": {
+        "value": 2
+      },
+      "minecraft:movement.basic": {},
+      "minecraft:experience_reward": {
+        "on_death": "query.last_hit_by_player ? 5 + (query.equipment_count * Math.Random(1,3)) : 0"
+      },
+       "minecraft:fire_immune": {},
+       "minecraft:type_family": {
+        "family": ["demon","monster"]
+      },
+      "minecraft:navigation.walk": {
+        "is_amphibious": true,
+        "can_pass_doors": true,
+        "can_walk": true,
+        "can_break_doors": true
+      },
+      "minecraft:behavior.nearest_attackable_target": {
+        "priority": 2,
+        "must_see": true,
+        "reselect_targets": true,
+        "entity_types": [
+          {
+            "filters": {
+              "test": "is_family",
+              "subject": "other",
+              "value": "player"
+            },
+            "max_dist": 16
+          },
+          {
+            "filters": {
+              "test": "is_family",
+              "subject": "other",
+              "value": "irongolem"
+            },
+            "max_dist": 16
+          }
+        ]
+      },
+      "minecraft:jump.static": {},
+      "minecraft:can_climb": {},
+      "minecraft:health": {
+        "value": 60,
+        "max": 60
+      },
+      "minecraft:nameable": {},
+      "minecraft:physics": {
+        "has_collision": true,
+        "has_gravity": true
+      },
+       "minecraft:behavior.random_stroll": {
+              "priority": 7,
+              "speed_multiplier": 1
+            },
+            "minecraft:behavior.look_at_player": {
+              "priority": 8,
+              "look_distance": 6,
+              "probability": 0.02
+            },
+            "minecraft:behavior.random_look_around": {
+              "priority": 9
+            },
+            "minecraft:behavior.hurt_by_target": {
+              "priority": 1
+            },
+      "minecraft:movement": {
+        "value": 0.25
+      },
+      "minecraft:collision_box": {
+        "width": 0.6,
+        "height": 1.9
+      },
+      "minecraft:behavior.ranged_attack": {
+        "priority": 0,
+        "attack_interval_min": 1.0,
+        "attack_interval_max": 3.0,
+        "attack_radius": 15.0
+      },
+      "minecraft:shooter": {
+        "def": "zombie:demon_arrow",
+        "sound": "bow"
+      },
+      "minecraft:entity_sensor": {
+        "relative_range": false,
+        "subsensors": [
+          {
+            "range": [2, 2],
+            "event_filters": {
+              "all_of": [
+                {
+                  "subject": "other",
+                  "test": "is_family",
+                  "value": "demon_arrow"
+                }
+              ]
+            },
+            "event": "fire_arrow"
+          }
+        ]
+      }
+    },
+    "component_groups": {
+      "arrow_detected": {
+        "minecraft:skin_id": {
+          "value": 1
+        },
+        "minecraft:timer": {
+          "time": 0.2,
+          "time_down_event": {
+            "event": "look_for_arrow",
+            "target": "self"
+          }
+        }
+      },
+      "looking_for_arrow": {
+        "minecraft:skin_id": {
+          "value": 0
+        }
+      }
+    },
+    "events": {
+      "fire_arrow": {
+        "sequence": [
+          {
+            "remove": {
+              "component_groups": ["looking_for_arrow"]
+            }
+          },
+          {
+            "add": {
+              "component_groups": ["arrow_detected"]
+            }
+          }
+        ]
+      },
+      "look_for_arrow": {
+        "sequence": [
+          {
+            "remove": {
+              "component_groups": ["arrow_detected"]
+            }
+          },
+          {
+            "add": {
+              "component_groups": ["looking_for_arrow"]
+            }
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,56 @@
+{
+    "format_version": "1.26.20",
+    "animation_controllers": {
+        "controller.animation.hell_brute": {
+            "initial_state": "idle",
+            "states": {
+                "idle": {
+                    "animations": [
+                        "idle"
+                    ],
+                    "transitions": [
+                    {
+                        "walk": "query.ground_speed"
+                    },
+                    {
+                        "attack_idle": "variable.attack_time>=0.01"
+                    }
+            ]
+                },
+                "walk": {
+                    "animations": ["walk"],
+                    "transitions": [
+                    {
+                        "idle" : "!query.ground_speed"
+                    },
+                    {
+                        "attack": "variable.attack_time>=0.01"
+                    }
+                ]
+                },
+                "attack": {
+                    "animations": ["attack_1", "attack_walk"],
+                    "transitions": [
+                        {
+                            "idle": "query.all_animations_finished"
+                        },
+                        {
+                            "walk": "query.ground_speed && query.all_animations_finished"
+                        }
+                    ]
+                },
+                "attack_idle": {
+                    "animations": ["attack_1"],
+                    "transitions": [  
+                    {
+                        "idle": "query.all_animations_finished"
+                    },
+                    {
+                        "walk": "query.ground_speed && query.all_animations_finished"
+                    }  
+                ]
+                }
+            }
+        }
+    }
+}

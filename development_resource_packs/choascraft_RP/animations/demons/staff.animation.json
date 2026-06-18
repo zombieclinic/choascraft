@@ -1,0 +1,14 @@
+{
+	"format_version": "1.26.20",
+	"animations": {
+		"animation.demon_staff.fpp_idle": {
+			"loop": true,
+			"bones": {
+				"group": {
+					"rotation": [51.1085, 41.42891, -35.51142],
+					"position": [5.98363, -14.40122, 7.26643]
+				}
+			}
+		}
+	}
+}

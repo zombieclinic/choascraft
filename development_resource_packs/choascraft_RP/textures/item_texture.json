@@ -485,6 +485,69 @@
 		},
 		"zombie_black_bear_helmet": {
 			"textures": "textures/items/bear_armor/black_netherite_helmet_icon"
+		},
+		"zombie_chaos_shovel": {
+			"textures": "textures/demon/item_mob/pickaxe_icon"
+		},
+		"zombie_chaos_arrow": {
+			"textures": "textures/demon/item_mob/chaos_arrow_icon"
+		},
+		"zombie_chaos_axe": {
+			"textures": "textures/demon/item_mob/chaos_axe_icon"
+		},
+		"zombie_chaos_bfc_arrow": {
+			"textures": "textures/demon/item_mob/chaos_bfc_arrow_icon"
+		},
+		"zombie_ui_book": {
+			"textures": "textures/demon/item_mob/chaos_gear"
+		},
+		"zombie_chaos_bow": {
+			"textures": "textures/demon/item_mob/chaos_bow_icon"
+		},
+		"zombie_chaos_crossbow": {
+			"textures": "textures/demon/item_mob/chaos_crossbow_icon"
+		},
+		"zombie_chaos_hammer": {
+			"textures": "textures/demon/item_mob/chaos_hammer_icon"
+		},
+		"zombie_chaos_helmet": {
+			"textures": "textures/demon/item_mob/chaos_hat"
+		},
+		"zombie_chaos_hoe": {
+			"textures": "textures/demon/item_mob/chaos_hoe_icon"
+		},
+		"zombie_chaos_key": {
+			"textures": "textures/demon/item_mob/chaos_key_icon"
+		},
+		"zombie_chaos_pickaxe": {
+			"textures": "textures/demon/item_mob/pickaxe_icon"
+		},
+		"zombie_chaos_scythe": {
+			"textures": "textures/demon/item_mob/knife_icon"
+		},
+		"zombie_chaos_shield": {
+			"textures": "textures/demon/item_mob/chaos_shield_icon"
+		},
+		"zombie_chaos_spear": {
+			"textures": "textures/demon/item_mob/chaos_spear_icon"
+		},
+		"zombie_chaos_staff": {
+			"textures": "textures/demon/item_mob/chaos_staff_icon"
+		},
+		"zombie_chaos_sword": {
+			"textures": "textures/demon/item_mob/chaos_sword_icon"
+		},
+		"zombie_chaos_wings": {
+			"textures": "textures/demon/item_mob/chaos_wings_icon"
+		},
+		"zombie_coffin_backpack": {
+			"textures": "textures/demon/item_mob/coffin_backpack_icon"
+		},
+		"zombie_fishing_rod": {
+			"textures": "textures/demon/item_mob/fishing_rod_icon"
+		},
+		"zombie_fishing_casted_rod": {
+			"textures": "textures/demon/item_mob/fishing_rod_casted_icon"
 		}
 	}
 }

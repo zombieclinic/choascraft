@@ -1,0 +1,14 @@
+{
+	"format_version": "1.26.20",
+	"animations": {
+		"animation.zombie_chaos_arrow.particle": {
+			"loop": true,
+			"animation_length": 5,
+			"particle_effects": {
+				"0.0": {
+					"effect": "chaos_arrow"
+				}
+			}
+		}
+	}
+}

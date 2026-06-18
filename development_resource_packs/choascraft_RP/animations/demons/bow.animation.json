@@ -1,0 +1,84 @@
+{
+	"format_version": "1.26.20",
+	"animations": {
+		"animation.chaos_bow.fpp_idle": {
+			"loop": true,
+			"bones": {
+				"Weapon": {
+					"rotation": [-1.59995, 60.03008, -46.91427],
+					"position": [15.12425, -5.92984, 6.02861]
+				}
+			}
+		},
+		"animation.bow.tpp_fire_start": {
+			"animation_length": 180.4,
+			"bones": {
+				"root": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.1": [0, "v.is_first_person?0:-53.33", 0],
+						"0.3": [0, "v.is_first_person?0:-60", 0]
+					},
+					"position": {
+						"0.0": [0, 0, 0],
+						"0.1": [0, "v.is_first_person?0:-1.89", 0],
+						"0.3": [0, "v.is_first_person?0:-2.125", 0]
+					}
+				},
+				"head": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.1": ["v.is_first_person?0:4.44", "v.is_first_person?0:19.56", 0],
+						"0.3": ["v.is_first_person?0:5", "v.is_first_person?0:22", 0]
+					}
+				},
+				"leftArm": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.1": ["v.is_first_person?0:-104.25", "v.is_first_person?0:62.28", "v.is_first_person?0:-23.33"],
+						"0.3": ["v.is_first_person?0:-103.5", "v.is_first_person?0:29", "v.is_first_person?0:-26.25"]
+					},
+					"position": {
+						"0.0": [0, 0, 0],
+						"0.1": ["v.is_first_person?0:-2.45837", "v.is_first_person?0:-0.33779", "v.is_first_person?0:-0.72352"],
+						"0.3": ["v.is_first_person?0:1.42011", "v.is_first_person?0:0.15436", "v.is_first_person?0:1.31294"]
+					}
+				},
+				"rightArm": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.1": ["v.is_first_person?0:-81.33", "v.is_first_person?0:53.78", "v.is_first_person?0:16"],
+						"0.3": ["v.is_first_person?0:-91.5", "v.is_first_person?0:60.5", "v.is_first_person?0:0"]
+					},
+					"position": {
+						"0.0": [0, 0, 0],
+						"0.1": ["v.is_first_person?0:-0.6112", "v.is_first_person?0:-0.19059", "v.is_first_person?0:-4.19081"],
+						"0.3": ["v.is_first_person?0:-1.71233", "v.is_first_person?0:0.08115", "v.is_first_person?0:-3.2667"]
+					}
+				},
+				"rightItem": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.0667": [0, 0, "v.is_first_person?0:35"],
+						"0.3": ["v.is_first_person?0:0", "v.is_first_person?0:0", "v.is_first_person?0:10"]
+					},
+					"position": {
+						"0.0": [0, 0, 0],
+						"0.0667": ["v.is_first_person?0:6.49795", "v.is_first_person?0:-1.36217", "v.is_first_person?0:6.77651"],
+						"0.3": ["v.is_first_person?0:5.4070505083", "v.is_first_person?0:-0.5701537115", "v.is_first_person?0:-5.12048"]
+					}
+				},
+				"Weapon": {
+					"rotation": {
+						"0.0": ["v.is_first_person?0:0", "v.is_first_person?0:0", "v.is_first_person?0:0"],
+						"0.3": ["v.is_first_person?0:2.43469", "v.is_first_person?0:-3.10632", "v.is_first_person?0:4.11273"]
+					},
+					"position": {
+						"0.0": ["v.is_first_person?0:0", "v.is_first_person?0:0", "v.is_first_person?0:0"],
+						"0.3": ["v.is_first_person?0:-14.225", "v.is_first_person?0:-1.6", 0]
+					}
+				}
+			}
+		}
+	}
+}

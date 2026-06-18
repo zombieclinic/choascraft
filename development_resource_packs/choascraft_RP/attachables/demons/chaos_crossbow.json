@@ -1,0 +1,38 @@
+{
+    "format_version": "1.26.20",
+    "minecraft:attachable": {
+        "description": {
+            "identifier": "zombie:chaos_crossbow",
+            "materials": {
+                "enchanted": "entity_alphatest_glint",
+                "default": "entity_alphatest"
+            },
+            "geometry": {
+                "default": "geometry.demon_crossbow",
+                
+                "state_1": "geometry.demon_crossbow_0",
+                "state_2": "geometry.demon_crossbow_1",
+                "state_3": "geometry.demon_crossbow_2",
+                "state_4": "geometry.demon_crossbow_charged"
+            },
+           "textures": {
+                "default" : "textures/demon/item_mob/chaos_gear",
+                 "enchanted": "textures/misc/enchanted_item_glint"
+            },
+            "render_controllers": [
+                "controller.render.chaos_crossbow"
+            ],
+            "animations": { "fpp_idle": "animation.demon_crossbow.fpp_idle"},
+            
+            "scripts": {
+                    "pre_animation": [
+  "variable.is_using = query.main_hand_item_use_duration > 0.0;",
+  "variable.charge_amount = variable.is_using ? math.clamp((query.main_hand_item_max_duration - (query.main_hand_item_use_duration - query.frame_alpha + 1.0)) / 10.0, 0.0, 1.0) : 0.0;",
+  "variable.animation_frame = variable.is_using ? math.floor(variable.charge_amount * 3.99) : 0;"
+],
+            "animate": [
+                {"fpp_idle": "c.is_first_person"}
+            ] }
+        }
+    }
+}

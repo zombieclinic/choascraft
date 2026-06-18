@@ -1,0 +1,26 @@
+{
+    "format_version":  "1.26.20",
+    "minecraft:item":  {
+                           "description":  {
+                                               "identifier":  "zombie:chaos_fishing_rod",
+                                               "menu_category":  {
+                                                                     "category":  "equipment",
+                                                                     "group":  "minecraft:itemGroup.name.chaos"
+                                                                 }
+                                           },
+                           "components":  {
+                                              "minecraft:icon":  "zombie_fishing_rod",
+                                              "minecraft:display_name":  {
+                                                                             "value":  "Choas Rod"
+                                                                         },
+                                              "minecraft:use_modifiers":  {
+                                                                              "movement_modifier":  0,
+                                                                              "use_duration":  20
+                                                                          },
+                                              "minecraft:cooldown":  {
+                                                                         "category":  "chaos_axe",
+                                                                         "duration":  1
+                                                                     }
+                                          }
+                       }
+}

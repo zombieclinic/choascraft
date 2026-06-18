@@ -1,0 +1,14 @@
+{
+	"format_version": "1.26.20",
+	"animations": {
+		"animation.demon_key.fpp_idle": {
+			"loop": true,
+			"bones": {
+				"group": {
+					"rotation": [63.85946, 38.86967, -10.29354],
+					"position": [-7.43849, -23.64458, -10.56421]
+				}
+			}
+		}
+	}
+}

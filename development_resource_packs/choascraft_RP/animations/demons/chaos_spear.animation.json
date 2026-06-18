@@ -1,0 +1,14 @@
+{
+	"format_version": "1.26.20",
+	"animations": {
+		"animation.demon_spear.fpp_idle": {
+			"loop": true,
+			"bones": {
+				"group": {
+					"rotation": [52.57972, 64.70031, -1.17986],
+					"position": [8.92149, -15.11397, 7.54817]
+				}
+			}
+		}
+	}
+}

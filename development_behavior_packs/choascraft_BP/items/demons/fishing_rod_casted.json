@@ -1,0 +1,26 @@
+{
+    "format_version":  "1.26.20",
+    "minecraft:item":  {
+                           "description":  {
+                                               "identifier":  "zombie:chaos_fishing_rod_casted",
+                                               "menu_category":  {
+                                                                     "category":  "none",
+                                                                     "is_hidden_in_commands":  true
+                                                                 }
+                                           },
+                           "components":  {
+                                              "minecraft:icon":  "zombie_fishing_casted_rod",
+                                              "minecraft:display_name":  {
+                                                                             "value":  "Chaos Rod"
+                                                                         },
+                                              "minecraft:use_modifiers":  {
+                                                                              "movement_modifier":  0,
+                                                                              "use_duration":  20
+                                                                          },
+                                              "minecraft:cooldown":  {
+                                                                         "category":  "chaos_axe",
+                                                                         "duration":  1
+                                                                     }
+                                          }
+                       }
+}

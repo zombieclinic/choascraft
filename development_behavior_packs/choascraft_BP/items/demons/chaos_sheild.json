@@ -1,0 +1,29 @@
+{
+    "format_version": "1.26.20",
+    "minecraft:item": {
+        "description": {
+            "identifier": "zombie:chaos_shield",
+            "menu_category": {
+                "category": "equipment",
+                "group": "minecraft:itemGroup.name.chaos"
+            }
+        },
+        "components": {
+            "minecraft:icon": "zombie_chaos_shield",
+            "minecraft:use_modifiers": {
+                "movement_modifier": 1,
+                "use_duration": 3600
+            },
+            "minecraft:durability": {
+                "damage_chance": {
+                    "min": 10,
+                    "max": 50
+                },
+                "max_durability": 36
+            },
+            "minecraft:display_name": {
+                "value": "Chaos Shield"
+            }
+        }
+    }
+}

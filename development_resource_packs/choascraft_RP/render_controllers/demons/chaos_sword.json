@@ -1,0 +1,14 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.chaos_sword": {
+      "geometry": "query.property('zombie:summon_timer') == 20 ? geometry.greatsword : query.property('zombie:summon_timer') >= 10 ? geometry.sword : geometry.knife",
+      "materials": [
+        { "*": "material.default" }
+      ],
+      "textures": [
+        "texture.default"
+      ]
+    }
+  }
+}

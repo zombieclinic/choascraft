@@ -1,0 +1,27 @@
+{
+    "format_version": "1.26.20",
+    "minecraft:attachable": {
+        "description": {
+            "identifier": "zombie:chaos_pickaxe",
+            "materials": {
+                "enchanted": "entity_alphatest_glint",
+                "default": "entity_alphatest"
+            },
+            "geometry": {
+                "default": "geometry.demon_pickaxe"
+            },
+           "textures": {
+                "default" : "textures/demon/item_mob/chaos_gear",
+                 "enchanted": "textures/misc/enchanted_item_glint"
+            },
+            
+            "render_controllers": [
+                "controller.render.item_default"
+            ],
+             "animations": { "fpp": "animation.demon_pickaxe.fpp_idle"},
+            "scripts": {"animate": [
+                {"fpp": "c.is_first_person"}
+            ]}
+        }
+    }
+}

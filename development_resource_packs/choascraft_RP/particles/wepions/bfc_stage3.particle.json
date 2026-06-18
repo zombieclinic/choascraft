@@ -1,0 +1,54 @@
+{
+	"format_version": "1.10.0",
+	"particle_effect": {
+		"description": {
+			"identifier": "zombie:choas_stage_3",
+			"basic_render_parameters": {
+				"material": "particles_add",
+				"texture": "textures/particles/choas/choas_magic"
+			}
+		},
+		"events": {
+			"explo_2": {}
+		},
+		"components": {
+			"minecraft:emitter_rate_instant": {
+				"num_particles": 35
+			},
+			"minecraft:emitter_lifetime_expression": {},
+			"minecraft:emitter_shape_point": {
+				"offset": [0, 0.5, 0]
+			},
+			"minecraft:particle_lifetime_expression": {
+				"max_lifetime": "math.random(0.5,1.5)"
+			},
+			"minecraft:particle_initial_speed": "math.random_integer(60,25)",
+			"minecraft:particle_motion_dynamic": {
+				"linear_acceleration": ["math.random(-25,25)", "math.random(-25,25)", "math.random(-25,25)"],
+				"linear_drag_coefficient": "math.random_integer(5,7)"
+			},
+			"minecraft:particle_appearance_billboard": {
+				"size": ["0.25/variable.particle_age", 0.25],
+				"facing_camera_mode": "lookat_direction",
+				"uv": {
+					"texture_width": 16,
+					"texture_height": 16,
+					"uv": [0, 0],
+					"uv_size": [16, 16]
+				}
+			},
+			"minecraft:particle_appearance_tinting": {
+				"color": {
+					"interpolant": "v.particle_age / v.particle_lifetime",
+					"gradient": {
+						"0.0": "#00FFFFFF",
+						"0.1": "#F09CFF64",
+						"0.36": "#D4A9FFBE",
+						"0.66": "#E382FF5B",
+						"1.0": "#00DBFFFE"
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,25 @@
+{
+    "format_version":  "1.26.20",
+    "minecraft:item":  {
+                           "description":  {
+                                               "identifier":  "zombie:chaos_book",
+                                               "menu_category":  {
+                                                                     "category":  "equipment",
+                                                                     "group":  "minecraft:itemGroup.name.sword"
+                                                                 }
+                                           },
+                           "components":  {
+                                              "minecraft:hand_equipped":  true,
+                                              "minecraft:should_despawn":  true,
+                                              "minecraft:rarity":  "rare",
+                                              "minecraft:display_name":  {
+                                                                             "value":  "Liber Chaotica"
+                                                                         },
+                                              "minecraft:icon":  "zombie_ui_book",
+                                              "minecraft:use_modifiers":  {
+                                                                              "movement_modifier":  1,
+                                                                              "use_duration":  100
+                                                                          }
+                                          }
+                       }
+}

@@ -1,0 +1,30 @@
+{
+    "format_version": "1.26.20",
+    "minecraft:attachable": {
+        "description": {
+            "identifier": "zombie:chaos_spear",
+            "materials": {
+                "enchanted": "entity_alphatest_glint",
+                "default": "entity_alphatest"
+            },
+            "geometry": {
+                "default": "geometry.demon_spear"
+            },
+           "textures": {
+                "default" : "textures/demon/item_mob/chaos_gear",
+                 "enchanted": "textures/misc/enchanted_item_glint"
+            },
+            
+            "render_controllers": [
+                "controller.render.item_default"
+            ],
+             "animations": {
+				"fpp_idle": "animation.demon_spear.fpp_idle"
+
+			},
+             "scripts": {"animate": [
+                {"fpp_idle": "c.is_first_person"}
+            ]}
+        }
+    }
+}

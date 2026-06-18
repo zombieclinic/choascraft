@@ -1,0 +1,140 @@
+{
+    "format_version":  "1.26.20",
+    "minecraft:entity":  {
+                             "description":  {
+                                                 "identifier":  "zombie:chaos_bfc_arrow_entity",
+                                                 "is_summonable":  true,
+                                                 "is_spawnable":  true,
+                                                 "runtime_identifier":  "arrow",
+                                                 "animations":  {
+                                                                    "fire":  "controller.animation.bfc_ammo"
+                                                                },
+                                                 "scripts":  {
+                                                                 "animate":  [
+                                                                                 "fire"
+                                                                             ]
+                                                             }
+                                             },
+                             "component_groups":  {
+                                                      "zombie":  {
+                                                                     "minecraft:skin_id":  {
+                                                                                               "value":  1
+                                                                                           },
+                                                                     "minecraft:timer":  {
+                                                                                             "time":  1,
+                                                                                             "time_down_event":  {
+                                                                                                                     "event":  "despawn",
+                                                                                                                     "target":  "self"
+                                                                                                                 }
+                                                                                         }
+                                                                 },
+                                                      "despawn":  {
+                                                                      "minecraft:instant_despawn":  {
+
+                                                                                                    }
+                                                                  }
+                                                  },
+                             "components":  {
+                                                "minecraft:type_family":  {
+                                                                              "family":  [
+                                                                                             "demon_arrow"
+                                                                                         ]
+                                                                          },
+                                                "minecraft:collision_box":  {
+                                                                                "width":  1,
+                                                                                "height":  0.25
+                                                                            },
+                                                "minecraft:hurt_on_condition":  {
+                                                                                    "damage_conditions":  [
+                                                                                                              {
+                                                                                                                  "filters":  {
+                                                                                                                                  "test":  "in_lava",
+                                                                                                                                  "subject":  "self",
+                                                                                                                                  "operator":  "==",
+                                                                                                                                  "value":  true
+                                                                                                                              },
+                                                                                                                  "cause":  "lava",
+                                                                                                                  "damage_per_tick":  4
+                                                                                                              }
+                                                                                                          ]
+                                                                                },
+                                                "minecraft:environment_sensor":  {
+                                                                                     "triggers":  [
+                                                                                                      {
+                                                                                                          "event":  "despawn",
+                                                                                                          "target":  "self",
+                                                                                                          "filters":  {
+                                                                                                                          "test":  "in_water",
+                                                                                                                          "value":  true
+                                                                                                                      }
+                                                                                                      }
+                                                                                                  ]
+                                                                                 },
+                                                "minecraft:projectile":  {
+                                                                             "on_hit":  {
+                                                                                            "impact_damage":  {
+                                                                                                                  "damage":  [
+                                                                                                                                 3,
+                                                                                                                                 10
+                                                                                                                             ],
+                                                                                                                  "knockback":  true,
+                                                                                                                  "semi_random_diff_damage":  false,
+                                                                                                                  "destroy_on_hit":  false
+                                                                                                              },
+                                                                                            "definition_event":  {
+                                                                                                                     "event_trigger":  {
+                                                                                                                                           "target":  "self",
+                                                                                                                                           "event":  "zombie"
+                                                                                                                                       }
+                                                                                                                 }
+                                                                                        },
+                                                                             "hit_sound":  "attack.strong",
+                                                                             "power":  2,
+                                                                             "gravity":  0.02,
+                                                                             "shoot_target":  true,
+                                                                             "uncertainty_base":  1,
+                                                                             "uncertainty_multiplier":  4,
+                                                                             "anchor":  1,
+                                                                             "should_bounce":  false,
+                                                                             "offset":  [
+                                                                                            -0.2,
+                                                                                            -0.1,
+                                                                                            0
+                                                                                        ]
+                                                                         },
+                                                "minecraft:physics":  {
+
+                                                                      },
+                                                "minecraft:conditional_bandwidth_optimization":  {
+                                                                                                     "default_values":  {
+                                                                                                                            "max_optimized_distance":  80,
+                                                                                                                            "max_dropped_ticks":  10,
+                                                                                                                            "use_motion_prediction_hints":  true
+                                                                                                                        }
+                                                                                                 },
+                                                "minecraft:despawn":  {
+                                                                          "despawn_from_inactivity":  true,
+                                                                          "min_range_inactivity_timer":  5,
+                                                                          "despawn_from_distance":  {
+                                                                                                        "max_distance":  25
+                                                                                                    }
+                                                                      }
+                                            },
+                             "events":  {
+                                            "zombie":  {
+                                                           "add":  {
+                                                                       "component_groups":  [
+                                                                                                "zombie"
+                                                                                            ]
+                                                                   }
+                                                       },
+                                            "despawn":  {
+                                                            "add":  {
+                                                                        "component_groups":  [
+                                                                                                 "despawn"
+                                                                                             ]
+                                                                    }
+                                                        }
+                                        }
+                         }
+}
