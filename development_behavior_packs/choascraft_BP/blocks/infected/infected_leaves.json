@@ -1,5 +1,5 @@
 {
-  "format_version": "1.21.100",
+  "format_version": "1.26.20",
   "minecraft:block": {
     "description": {
       "identifier": "zombie:infected_leaves",
@@ -9,7 +9,9 @@
           true
         ]
       },
-        "menu_category": { "category": "nature" }
+      "menu_category": {
+        "category": "nature"
+      }
     },
     "permutations": [
       {
@@ -22,9 +24,12 @@
       }
     ],
     "components": {
-      "minecraft:flammable": { "destroy_chance_modifier": 20, "catch_chance_modifier": 5 },
+      "minecraft:flammable": {
+        "destroy_chance_modifier": 20,
+        "catch_chance_modifier": 5
+      },
       "minecraft:display_name": "Infected Leaves",
-       "minecraft:destructible_by_mining": {
+      "minecraft:destructible_by_mining": {
         "seconds_to_destroy": 0.5
       },
       "minecraft:destructible_by_explosion": {
@@ -39,7 +44,6 @@
           }
         ]
       },
-      "tag:minecraft:is_shears_item_destructible": {},
       "minecraft:map_color": "#3C44AA",
       "minecraft:geometry": "minecraft:geometry.full_block",
       "minecraft:material_instances": {
@@ -47,20 +51,24 @@
           "texture": "zombie_infected_leaves",
           "render_method": "blend_to_opaque",
           "tint_method": "default_foliage",
-          "ambient_occlusion": true,
+          "ambient_occlusion": 1,
           "face_dimming": true,
           "isotropic": true
         }
       },
-      "tag:zombie:infected_leaves": {},
-      "tag:zombie:custom_leaves": {},
-      "tag:leaves": {},
-      "tag:minecraft:is_hoe_item_destructible": {},
       "minecraft:loot": "loot_tables/blocks/infected_leaves.json",
-      "minecraft:redstone_conductivity": {"allows_wire_to_step_down": true,
-    "redstone_conductor": false},
-    "minecraft:light_dampening": 2
+      "minecraft:redstone_conductivity": {
+        "allows_wire_to_step_down": true,
+        "redstone_conductor": false
+      },
+      "minecraft:light_dampening": 2,
+      "minecraft:tags": [
+        "minecraft:is_shears_item_destructible",
+        "zombie:infected_leaves",
+        "zombie:custom_leaves",
+        "leaves",
+        "minecraft:is_hoe_item_destructible"
+      ]
     }
   }
 }
-  

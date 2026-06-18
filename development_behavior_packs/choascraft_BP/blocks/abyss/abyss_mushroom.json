@@ -1,73 +1,75 @@
 {
-	"format_version": "1.26.10",
-	"minecraft:block": {
-		"description": {
-			"identifier": "zombie:abyss_mushroom",
-			"menu_category": {
-				"category": "nature",
-				"group": "minecraft:itemGroup.name.mushroom"
-			}
-		},
-		"components": {
-			"minecraft:collision_box": false,
-			"minecraft:selection_box": {
-				"origin": [
-					-4,
-					0,
-					-4
-				],
-				"size": [
-					8,
-					9,
-					8
-				]
-			},
-			"minecraft:geometry": "geometry.zombie_abysscrossplants",
-			"minecraft:material_instances": {
-				"*": {
-					"texture": "abyss_mushroom",
-					"render_method": "alpha_test",
-					"face_dimming": false,
-					"ambient_occlusion": false
-				}
-			},
-			"minecraft:destructible_by_mining": {
-				"seconds_to_destroy": 0.0
-			},
-			"minecraft:destructible_by_explosion": {
-				"explosion_resistance": 0.0
-			},
-			"minecraft:liquid_detection": {
-				"detection_rules": [
-					{
-						"liquid_type": "water",
-						"can_contain_liquid": true,
-						"on_liquid_touches": "no_reaction"
-					}
-				]
-			},
-			"minecraft:placement_filter": {
-				"conditions": [
-					{
-						"allowed_faces": [
-							"up"
-						],
-						"block_filter": [
-							"minecraft:sand",
-							"minecraft:gravel",
-							"minecraft:clay",
-							"minecraft:dirt",
-							"zombie:infected_grass_block",
-							"zombie:infected_gravel",
-							"zombie:infected_sand",
-							"zombie:infected_stone"
-						]
-					}
-				]
-			},
-			"minecraft:light_dampening": 0,
-			"minecraft:replaceable": {},
-			"tag:plant": {}
-		}
-	}
+  "format_version": "1.26.20",
+  "minecraft:block": {
+    "description": {
+      "identifier": "zombie:abyss_mushroom",
+      "menu_category": {
+        "category": "nature",
+        "group": "minecraft:itemGroup.name.mushroom"
+      }
+    },
+    "components": {
+      "minecraft:collision_box": false,
+      "minecraft:selection_box": {
+        "origin": [
+          -4,
+          0,
+          -4
+        ],
+        "size": [
+          8,
+          9,
+          8
+        ]
+      },
+      "minecraft:geometry": "geometry.zombie_abysscrossplants",
+      "minecraft:material_instances": {
+        "*": {
+          "texture": "abyss_mushroom",
+          "render_method": "alpha_test",
+          "face_dimming": false,
+          "ambient_occlusion": 0
+        }
+      },
+      "minecraft:destructible_by_mining": {
+        "seconds_to_destroy": 0.0
+      },
+      "minecraft:destructible_by_explosion": {
+        "explosion_resistance": 0.0
+      },
+      "minecraft:liquid_detection": {
+        "detection_rules": [
+          {
+            "liquid_type": "water",
+            "can_contain_liquid": true,
+            "on_liquid_touches": "no_reaction"
+          }
+        ]
+      },
+      "minecraft:placement_filter": {
+        "conditions": [
+          {
+            "allowed_faces": [
+              "up"
+            ],
+            "block_filter": [
+              "minecraft:sand",
+              "minecraft:gravel",
+              "minecraft:clay",
+              "minecraft:dirt",
+              "zombie:infected_grass_block",
+              "zombie:infected_gravel",
+              "zombie:infected_sand",
+              "zombie:infected_stone"
+            ]
+          }
+        ]
+      },
+      "minecraft:light_dampening": 0,
+      "minecraft:replaceable": {},
+      "minecraft:tags": [
+        "plant"
+      ]
+    }
+  }
 }

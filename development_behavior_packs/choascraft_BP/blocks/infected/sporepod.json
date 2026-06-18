@@ -1,5 +1,5 @@
 {
-  "format_version": "1.26.10",
+  "format_version": "1.26.20",
   "minecraft:block": {
     "description": {
       "identifier": "zombie:sporepod",
@@ -49,7 +49,7 @@
               "texture": "sporepod_bottom",
               "render_method": "alpha_test",
               "face_dimming": false,
-              "ambient_occlusion": false
+              "ambient_occlusion": 0
             }
           }
         }
@@ -64,7 +64,7 @@
               "texture": "sporepod_middle",
               "render_method": "alpha_test",
               "face_dimming": false,
-              "ambient_occlusion": false
+              "ambient_occlusion": 0
             }
           }
         }
@@ -79,7 +79,7 @@
               "texture": "sporepod_top",
               "render_method": "alpha_test",
               "face_dimming": false,
-              "ambient_occlusion": false
+              "ambient_occlusion": 0
             }
           }
         }
@@ -102,7 +102,7 @@
           "texture": "sporepod_bottom",
           "render_method": "alpha_test",
           "face_dimming": false,
-          "ambient_occlusion": false
+          "ambient_occlusion": 0
         }
       },
       "minecraft:destructible_by_mining": {
@@ -122,8 +122,10 @@
       },
       "minecraft:light_dampening": 0,
       "minecraft:replaceable": {},
-      "tag:plant": {},
-      "tag:minecraft:crop": {}
+      "minecraft:tags": [
+        "plant",
+        "minecraft:crop"
+      ]
     }
   }
 }

@@ -1,5 +1,5 @@
 {
-  "format_version": "1.26.10",
+  "format_version": "1.26.20",
   "minecraft:block": {
     "description": {
       "identifier": "zombie:eye_flower",
@@ -64,7 +64,7 @@
               "texture": "eye_flower_top",
               "render_method": "alpha_test",
               "face_dimming": false,
-              "ambient_occlusion": false
+              "ambient_occlusion": 0
             }
           }
         }
@@ -89,7 +89,7 @@
               "texture": "eye_flower_0",
               "render_method": "alpha_test",
               "face_dimming": false,
-              "ambient_occlusion": false
+              "ambient_occlusion": 0
             }
           }
         }
@@ -114,7 +114,7 @@
               "texture": "eye_flower_1",
               "render_method": "alpha_test",
               "face_dimming": false,
-              "ambient_occlusion": false
+              "ambient_occlusion": 0
             }
           }
         }
@@ -139,7 +139,7 @@
               "texture": "eye_flower_2",
               "render_method": "alpha_test",
               "face_dimming": false,
-              "ambient_occlusion": false
+              "ambient_occlusion": 0
             }
           }
         }
@@ -164,7 +164,7 @@
               "texture": "eye_flower_3",
               "render_method": "alpha_test",
               "face_dimming": false,
-              "ambient_occlusion": false
+              "ambient_occlusion": 0
             }
           }
         }
@@ -191,7 +191,7 @@
           "texture": "eye_flower_0",
           "render_method": "alpha_test",
           "face_dimming": false,
-          "ambient_occlusion": false
+          "ambient_occlusion": 0
         }
       },
       "minecraft:destructible_by_mining": {
@@ -231,8 +231,10 @@
       },
       "minecraft:light_dampening": 0,
       "minecraft:replaceable": {},
-      "tag:minecraft:crop": {},
-      "tag:plant": {}
+      "minecraft:tags": [
+        "minecraft:crop",
+        "plant"
+      ]
     }
   }
 }

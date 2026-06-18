@@ -1,64 +1,83 @@
 {
-	"format_version": "1.26.10",
-	"minecraft:block": {
-		"description": {
-			"identifier": "zombie:pengiun_egg_block",
-			"menu_category": {
-				"category": "nature",
-				"group": "minecraft:itemGroup.name.nature"
-			}
-		},
-		"components": {
-			"minecraft:destructible_by_mining": {
-				"seconds_to_destroy": 0.5
-			},
-			"minecraft:destructible_by_explosion": {
-				"explosion_resistance": 0.5
-			},
-			"minecraft:geometry": "geometry.zombie.pengiun_egg_block",
-			"minecraft:material_instances": {
-				"*": {
-					"texture": "pengiun_egg",
-					"render_method": "alpha_test"
-				}
-			},
-			"minecraft:random_offset": {
-				"x": {
-					"steps": 0,
-					"range": {
-						"min": -6,
-						"max": 6
-					}
-				},
-				"y": {
-					"steps": 3,
-					"range": {
-						"min": 0,
-						"max": 0
-					}
-				},
-				"z": {
-					"steps": 0,
-					"range": {
-						"min": -6,
-						"max": 6
-					}
-				}
-			},
-			"minecraft:tick": {
-				"interval_range": [5,10],
-				"looping": true
-			},
-			"zombie:pengiun_egg_hatch": {},
-			"minecraft:collision_box": {
-				"origin": [-2, 0, -2],
-				"size": [4, 5, 4]
-			},
-			"minecraft:selection_box": {
-				"origin": [-2, 0, -2],
-				"size": [4, 5, 4]
-			},
-			"minecraft:loot": "loot_tables/blocks/pengiun_egg_block.json"
-		}
-	}
+  "format_version": "1.26.20",
+  "minecraft:block": {
+    "description": {
+      "identifier": "zombie:pengiun_egg_block",
+      "menu_category": {
+        "category": "nature",
+        "group": "minecraft:itemGroup.name.nature"
+      }
+    },
+    "components": {
+      "minecraft:destructible_by_mining": {
+        "seconds_to_destroy": 0.5
+      },
+      "minecraft:destructible_by_explosion": {
+        "explosion_resistance": 0.5
+      },
+      "minecraft:geometry": "geometry.zombie.pengiun_egg_block",
+      "minecraft:material_instances": {
+        "*": {
+          "texture": "pengiun_egg",
+          "render_method": "alpha_test"
+        }
+      },
+      "minecraft:random_offset": {
+        "x": {
+          "steps": 0,
+          "range": {
+            "min": -6,
+            "max": 6
+          }
+        },
+        "y": {
+          "steps": 3,
+          "range": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "z": {
+          "steps": 0,
+          "range": {
+            "min": -6,
+            "max": 6
+          }
+        }
+      },
+      "minecraft:tick": {
+        "interval_range": [
+          5,
+          10
+        ],
+        "looping": true
+      },
+      "zombie:pengiun_egg_hatch": {},
+      "minecraft:collision_box": {
+        "origin": [
+          -2,
+          0,
+          -2
+        ],
+        "size": [
+          4,
+          5,
+          4
+        ]
+      },
+      "minecraft:selection_box": {
+        "origin": [
+          -2,
+          0,
+          -2
+        ],
+        "size": [
+          4,
+          5,
+          4
+        ]
+      },
+      "minecraft:loot": "loot_tables/blocks/pengiun_egg_block.json"
+    }
+  }
 }

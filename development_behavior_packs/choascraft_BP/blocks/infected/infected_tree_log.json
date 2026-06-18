@@ -1,124 +1,126 @@
 {
-  "format_version": "1.21.100",
+  "format_version": "1.26.20",
   "minecraft:block": {
     "description": {
       "identifier": "zombie:infected_tree_log",
       "menu_category": {
         "category": "nature",
-				"group": "minecraft:itemGroup.name.log"
+        "group": "minecraft:itemGroup.name.log"
       },
-      	"traits": {
-				"minecraft:placement_position": {
-					"enabled_states": [
-						"minecraft:block_face"
-					]
-				}
-			}
+      "traits": {
+        "minecraft:placement_position": {
+          "enabled_states": [
+            "minecraft:block_face"
+          ]
+        }
+      }
     },
     "components": {
-		"minecraft:light_dampening": 15,
-		"minecraft:geometry": "minecraft:geometry.full_block",
-		"minecraft:destructible_by_explosion": {
-			"explosion_resistance": 10
-		},
-		"minecraft:destructible_by_mining": {
-			"seconds_to_destroy": 2
-		},
-		"minecraft:redstone_conductivity": {
-			"redstone_conductor": true
-		},
-		"minecraft:flammable": {
-			"catch_chance_modifier": 5,
-			"destroy_chance_modifier": 5
-		},
-		"minecraft:material_instances": {
-			"*": {
-				"texture": "infected_tree_log",
-				"render_method": "opaque"
-			},
-			"up": {
-				"texture": "infected_tree_log_top",
-				"render_method": "opaque"
-			},
-			"down": {
-				"texture": "infected_tree_log_top",
-				"render_method": "opaque"
-			}
-		},
-		"minecraft:item_visual": {
-			"geometry": "minecraft:geometry.full_block",
-			"material_instances": {
-				"*": {
-					"texture": "infected_tree_log",
-					"render_method": "opaque"
-				},
-				"up": {
-					"texture": "infected_tree_log_top",
-					"render_method": "opaque"
-				},
-				"down": {
-					"texture": "infected_tree_log_top",
-					"render_method": "opaque"
-				}
-			}
-		},
-		"tag:minecraft:is_axe_item_destructible": {},
-		"tag:zombie:is_strippable": {},
-		"tag:zombie:infected_tree_log": {},
-		"tag:zombie:custom_log": {},
-		"tag:log": {},
-		"tag:wood": {},
-		"minecraft:display_name": "Infected Log"
+      "minecraft:light_dampening": 15,
+      "minecraft:geometry": "minecraft:geometry.full_block",
+      "minecraft:destructible_by_explosion": {
+        "explosion_resistance": 10
+      },
+      "minecraft:destructible_by_mining": {
+        "seconds_to_destroy": 2
+      },
+      "minecraft:redstone_conductivity": {
+        "redstone_conductor": true
+      },
+      "minecraft:flammable": {
+        "catch_chance_modifier": 5,
+        "destroy_chance_modifier": 5
+      },
+      "minecraft:material_instances": {
+        "*": {
+          "texture": "infected_tree_log",
+          "render_method": "opaque"
+        },
+        "up": {
+          "texture": "infected_tree_log_top",
+          "render_method": "opaque"
+        },
+        "down": {
+          "texture": "infected_tree_log_top",
+          "render_method": "opaque"
+        }
+      },
+      "minecraft:item_visual": {
+        "geometry": "minecraft:geometry.full_block",
+        "material_instances": {
+          "*": {
+            "texture": "infected_tree_log",
+            "render_method": "opaque"
+          },
+          "up": {
+            "texture": "infected_tree_log_top",
+            "render_method": "opaque"
+          },
+          "down": {
+            "texture": "infected_tree_log_top",
+            "render_method": "opaque"
+          }
+        }
+      },
+      "minecraft:display_name": "Infected Log",
+      "minecraft:tags": [
+        "minecraft:is_axe_item_destructible",
+        "zombie:is_strippable",
+        "zombie:infected_tree_log",
+        "zombie:custom_log",
+        "log",
+        "wood"
+      ]
     },
-     "permutations": [
-			{
-				"condition": "query.block_state('minecraft:block_face') == 'north'",
-				"components": {
-					"minecraft:transformation": {
-						"rotation": [
-							90,
-							0,
-							0
-						]
-					}
-				}
-			},
-			{
-				"condition": "query.block_state('minecraft:block_face') == 'south'",
-				"components": {
-					"minecraft:transformation": {
-						"rotation": [
-							90,
-							0,
-							0
-						]
-					}
-				}
-			},
-			{
-				"condition": "query.block_state('minecraft:block_face') == 'east'",
-				"components": {
-					"minecraft:transformation": {
-						"rotation": [
-							0,
-							90,
-							-90
-						]
-					}
-				}
-			},
-			{
-				"condition": "query.block_state('minecraft:block_face') == 'west'",
-				"components": {
-					"minecraft:transformation": {
-						"rotation": [
-							0,
-							90,
-							-90
-						]
-					}
-				}
-			}
-		]
-	}
+    "permutations": [
+      {
+        "condition": "query.block_state('minecraft:block_face') == 'north'",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [
+              90,
+              0,
+              0
+            ]
+          }
+        }
+      },
+      {
+        "condition": "query.block_state('minecraft:block_face') == 'south'",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [
+              90,
+              0,
+              0
+            ]
+          }
+        }
+      },
+      {
+        "condition": "query.block_state('minecraft:block_face') == 'east'",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [
+              0,
+              90,
+              -90
+            ]
+          }
+        }
+      },
+      {
+        "condition": "query.block_state('minecraft:block_face') == 'west'",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [
+              0,
+              90,
+              -90
+            ]
+          }
+        }
+      }
+    ]
+  }
 }

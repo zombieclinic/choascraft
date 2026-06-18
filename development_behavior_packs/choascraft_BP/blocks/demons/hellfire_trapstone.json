@@ -1,36 +1,41 @@
 {
-	"format_version": "1.21.70",
-	"minecraft:block": {
-		"description": {
-			"identifier": "zombie:hellfire_trapstone",
-			"menu_category": {
-				"category": "nature"
-			}
-		},
-		"components": {
-			"minecraft:destructible_by_explosion": true,
-			"minecraft:collision_box": true,
-			"minecraft:selection_box": true,
-			"minecraft:destructible_by_mining": {
-				"seconds_to_destroy": 0.5
-			},
-			"minecraft:map_color": "#8B4513",
-			"minecraft:display_name": "Hellfire Trapstone",
-			"minecraft:flammable": false,
-			"minecraft:material_instances": {
-				"*": {
-					"texture": "zombie_hellfire_trapstone",
-					"render_method": "opaque"
-				}
-			},
-			"minecraft:redstone_conductivity": {
-				"allows_wire_to_step_down": false,
-				"redstone_conductor": false
-			},
-			"tag:minecraft:is_pickaxe_item_destructible": {},
-			"zombie:hellfire_trapstone": {
-				"damage": 4
-			}
-		}
-	}
+  "format_version": "1.26.20",
+  "minecraft:block": {
+    "description": {
+      "identifier": "zombie:hellfire_trapstone",
+      "menu_category": {
+        "category": "nature"
+      }
+    },
+    "components": {
+      "minecraft:destructible_by_explosion": true,
+      "minecraft:collision_box": true,
+      "minecraft:selection_box": true,
+      "minecraft:destructible_by_mining": {
+        "seconds_to_destroy": 0.5
+      },
+      "minecraft:map_color": "#8B4513",
+      "minecraft:display_name": "Hellfire Trapstone",
+      "minecraft:flammable": false,
+      "minecraft:material_instances": {
+        "*": {
+          "texture": "zombie_hellfire_trapstone",
+          "render_method": "opaque"
+        }
+      },
+      "minecraft:redstone_conductivity": {
+        "allows_wire_to_step_down": false,
+        "redstone_conductor": false
+      },
+      "zombie:hellfire_trapstone": {
+        "damage": 4
+      },
+      "minecraft:geometry": {
+        "identifier": "minecraft:geometry.full_block"
+      },
+      "minecraft:tags": [
+        "minecraft:is_pickaxe_item_destructible"
+      ]
+    }
+  }
 }

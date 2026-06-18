@@ -1,5 +1,5 @@
 {
-  "format_version": "1.21.60",
+  "format_version": "1.26.20",
   "minecraft:block": {
     "description": {
       "identifier": "zombie:eyewood_stairs",
@@ -50,7 +50,7 @@
           "texture": "eyewood_planks",
           "render_method": "opaque",
           "face_dimming": true,
-          "ambient_occlusion": true
+          "ambient_occlusion": 1
         }
       },
       "minecraft:selection_box": {
@@ -80,12 +80,14 @@
       "minecraft:destructible_by_mining": {
         "seconds_to_destroy": 0.75
       },
-      "tag:minecraft:is_shovel_item_destructible": {},
       "minecraft:destructible_by_explosion": true,
-      "tag:minecraft:dirt": {},
-      "tag:custom:connected_stairs": {},
-      "tag:minecraft:diamond_tier_destructible": {},
-      "minecraft:light_dampening": 0
+      "minecraft:light_dampening": 0,
+      "minecraft:tags": [
+        "minecraft:is_shovel_item_destructible",
+        "minecraft:dirt",
+        "custom:connected_stairs",
+        "minecraft:diamond_tier_destructible"
+      ]
     },
     "permutations": [
       {

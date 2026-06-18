@@ -1,75 +1,93 @@
 {
-    "format_version": "1.21.70",
-    "minecraft:block": {
-        "description": {
-            "identifier": "zombie:demon_alter",
-            "menu_category": {
-                "category": "nature"
-            },
-            "traits": {
-                "minecraft:placement_direction": {
-                    "enabled_states": [
-                        "minecraft:cardinal_direction"
-                    ]
-                }
-            }
-        },
+  "format_version": "1.26.20",
+  "minecraft:block": {
+    "description": {
+      "identifier": "zombie:demon_alter",
+      "menu_category": {
+        "category": "nature"
+      },
+      "traits": {
+        "minecraft:placement_direction": {
+          "enabled_states": [
+            "minecraft:cardinal_direction"
+          ]
+        }
+      }
+    },
+    "components": {
+      "minecraft:destructible_by_explosion": true,
+      "minecraft:collision_box": true,
+      "minecraft:selection_box": true,
+      "minecraft:destructible_by_mining": {
+        "seconds_to_destroy": 0.5
+      },
+      "minecraft:geometry": "geometry.demon_alter",
+      "minecraft:material_instances": {
+        "*": {
+          "texture": "zombie_demon_alter_top",
+          "render_method": "opaque"
+        }
+      },
+      "minecraft:map_color": "#8B4513",
+      "minecraft:display_name": "Demon Alter",
+      "minecraft:flammable": false,
+      "minecraft:redstone_conductivity": {
+        "allows_wire_to_step_down": true,
+        "redstone_conductor": true
+      },
+      "minecraft:tags": [
+        "minecraft:is_pickaxe_item_destructible"
+      ]
+    },
+    "permutations": [
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'north'",
         "components": {
-            "minecraft:destructible_by_explosion": true,
-            "minecraft:collision_box": true,
-            "minecraft:selection_box": true,
-            "minecraft:destructible_by_mining": {
-                "seconds_to_destroy": 0.5
-            },
-            "minecraft:geometry": "geometry.demon_alter",
-            "minecraft:material_instances": {
-                "*": {
-                    "texture": "zombie_demon_alter_top",
-                    "render_method": "opaque"
-                }
-            },
-            "minecraft:map_color": "#8B4513",
-            "minecraft:display_name": "Demon Alter",
-            "minecraft:flammable": false,
-            "minecraft:redstone_conductivity": {
-                "allows_wire_to_step_down": true,
-                "redstone_conductor": true
-            },
-            "tag:minecraft:is_pickaxe_item_destructible": {}
-        },
-        "permutations": [
-            {
-                "condition": "q.block_state('minecraft:cardinal_direction') == 'north'",
-                "components": {
-                    "minecraft:transformation": {
-                        "rotation": [0, 0, 0]
-                    }
-                }
-            },
-            {
-                "condition": "q.block_state('minecraft:cardinal_direction') == 'south'",
-                "components": {
-                    "minecraft:transformation": {
-                        "rotation": [0, 180, 0]
-                    }
-                }
-            },
-            {
-                "condition": "q.block_state('minecraft:cardinal_direction') == 'east'",
-                "components": {
-                    "minecraft:transformation": {
-                        "rotation": [0, 90, 0]
-                    }
-                }
-            },
-            {
-                "condition": "q.block_state('minecraft:cardinal_direction') == 'west'",
-                "components": {
-                    "minecraft:transformation": {
-                        "rotation": [0, 270, 0]
-                    }
-                }
-            }
-        ]
-    }
+          "minecraft:transformation": {
+            "rotation": [
+              0,
+              0,
+              0
+            ]
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'south'",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [
+              0,
+              180,
+              0
+            ]
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'east'",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [
+              0,
+              90,
+              0
+            ]
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'west'",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [
+              0,
+              270,
+              0
+            ]
+          }
+        }
+      }
+    ]
+  }
 }

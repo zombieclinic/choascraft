@@ -1,228 +1,230 @@
 {
-	"format_version": "1.26.10",
-	"minecraft:block": {
-		"description": {
-			"identifier": "zombie:abyss_flower",
-			"states": {
-				"zombie:growth_stage": {
-					"values": {
-						"min": 0,
-						"max": 4
-					}
-				}
-			},
-			"menu_category": {
-				"category": "nature",
-				"group": "minecraft:itemGroup.name.flower"
-			}
-		},
-		"permutations": [
-			{
-				"condition": "query.block_state('zombie:growth_stage') < 4",
-				"components": {
-					"minecraft:tick": {
-						"looping": true,
-						"interval_range": [
-							2400,
-							6000
-						]
-					},
-					"zombie:abyss_flower_crop": {
-						"stage_state": "zombie:growth_stage",
-						"max_stage": 4,
-						"valid_base_blocks": [
-							"zombie:infected_grass_block",
-							"zombie:infected_gravel",
-							"zombie:infected_sand",
-							"zombie:infected_stone"
-						]
-					}
-				}
-			},
-			{
-				"condition": "query.block_state('zombie:growth_stage') == 0",
-				"components": {
-					"minecraft:selection_box": {
-						"origin": [
-							-4,
-							0,
-							-4
-						],
-						"size": [
-							8,
-							3,
-							8
-						]
-					},
-					"minecraft:material_instances": {
-						"*": {
-							"texture": "abyss_flower_0",
-							"render_method": "alpha_test",
-							"face_dimming": false,
-							"ambient_occlusion": false
-						}
-					}
-				}
-			},
-			{
-				"condition": "query.block_state('zombie:growth_stage') == 1",
-				"components": {
-					"minecraft:selection_box": {
-						"origin": [
-							-4,
-							0,
-							-4
-						],
-						"size": [
-							8,
-							5,
-							8
-						]
-					},
-					"minecraft:material_instances": {
-						"*": {
-							"texture": "abyss_flower_1",
-							"render_method": "alpha_test",
-							"face_dimming": false,
-							"ambient_occlusion": false
-						}
-					}
-				}
-			},
-			{
-				"condition": "query.block_state('zombie:growth_stage') == 2",
-				"components": {
-					"minecraft:selection_box": {
-						"origin": [
-							-4,
-							0,
-							-4
-						],
-						"size": [
-							8,
-							8,
-							8
-						]
-					},
-					"minecraft:material_instances": {
-						"*": {
-							"texture": "abyss_flower_2",
-							"render_method": "alpha_test",
-							"face_dimming": false,
-							"ambient_occlusion": false
-						}
-					}
-				}
-			},
-			{
-				"condition": "query.block_state('zombie:growth_stage') == 3",
-				"components": {
-					"minecraft:selection_box": {
-						"origin": [
-							-4,
-							0,
-							-4
-						],
-						"size": [
-							8,
-							10,
-							8
-						]
-					},
-					"minecraft:material_instances": {
-						"*": {
-							"texture": "abyss_flower_3",
-							"render_method": "alpha_test",
-							"face_dimming": false,
-							"ambient_occlusion": false
-						}
-					}
-				}
-			},
-			{
-				"condition": "query.block_state('zombie:growth_stage') == 4",
-				"components": {
-					"minecraft:selection_box": {
-						"origin": [
-							-4,
-							0,
-							-4
-						],
-						"size": [
-							8,
-							12,
-							8
-						]
-					},
-					"minecraft:material_instances": {
-						"*": {
-							"texture": "abyss_flower_4",
-							"render_method": "alpha_test",
-							"face_dimming": false,
-							"ambient_occlusion": false
-						}
-					}
-				}
-			}
-		],
-		"components": {
-			"minecraft:collision_box": false,
-			"minecraft:selection_box": {
-				"origin": [
-					-4,
-					0,
-					-4
-				],
-				"size": [
-					8,
-					12,
-					8
-				]
-			},
-			"minecraft:geometry": "geometry.zombie_abysscrossplants",
-			"minecraft:material_instances": {
-				"*": {
-					"texture": "abyss_flower_0",
-					"render_method": "alpha_test",
-					"face_dimming": false,
-					"ambient_occlusion": false
-				}
-			},
-			"minecraft:destructible_by_mining": {
-				"seconds_to_destroy": 0.0
-			},
-			"minecraft:destructible_by_explosion": {
-				"explosion_resistance": 0.0
-			},
-			"minecraft:liquid_detection": {
-				"detection_rules": [
-					{
-						"liquid_type": "water",
-						"can_contain_liquid": true,
-						"on_liquid_touches": "no_reaction"
-					}
-				]
-			},
-			"minecraft:placement_filter": {
-				"conditions": [
-					{
-						"allowed_faces": [
-							"up"
-						],
-						"block_filter": [
-							"zombie:infected_grass_block",
-							"zombie:infected_gravel",
-							"zombie:infected_sand",
-							"zombie:infected_stone"
-						]
-					}
-				]
-			},
-			"minecraft:light_dampening": 0,
-			"minecraft:replaceable": {},
-			"tag:minecraft:crop": {},
-			"tag:plant": {},
-			"minecraft:loot": "loot_tables/blocks/abyss_flower.json"
-		}
-	}
+  "format_version": "1.26.20",
+  "minecraft:block": {
+    "description": {
+      "identifier": "zombie:abyss_flower",
+      "states": {
+        "zombie:growth_stage": {
+          "values": {
+            "min": 0,
+            "max": 4
+          }
+        }
+      },
+      "menu_category": {
+        "category": "nature",
+        "group": "minecraft:itemGroup.name.flower"
+      }
+    },
+    "permutations": [
+      {
+        "condition": "query.block_state('zombie:growth_stage') < 4",
+        "components": {
+          "minecraft:tick": {
+            "looping": true,
+            "interval_range": [
+              2400,
+              6000
+            ]
+          },
+          "zombie:abyss_flower_crop": {
+            "stage_state": "zombie:growth_stage",
+            "max_stage": 4,
+            "valid_base_blocks": [
+              "zombie:infected_grass_block",
+              "zombie:infected_gravel",
+              "zombie:infected_sand",
+              "zombie:infected_stone"
+            ]
+          }
+        }
+      },
+      {
+        "condition": "query.block_state('zombie:growth_stage') == 0",
+        "components": {
+          "minecraft:selection_box": {
+            "origin": [
+              -4,
+              0,
+              -4
+            ],
+            "size": [
+              8,
+              3,
+              8
+            ]
+          },
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "abyss_flower_0",
+              "render_method": "alpha_test",
+              "face_dimming": false,
+              "ambient_occlusion": 0
+            }
+          }
+        }
+      },
+      {
+        "condition": "query.block_state('zombie:growth_stage') == 1",
+        "components": {
+          "minecraft:selection_box": {
+            "origin": [
+              -4,
+              0,
+              -4
+            ],
+            "size": [
+              8,
+              5,
+              8
+            ]
+          },
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "abyss_flower_1",
+              "render_method": "alpha_test",
+              "face_dimming": false,
+              "ambient_occlusion": 0
+            }
+          }
+        }
+      },
+      {
+        "condition": "query.block_state('zombie:growth_stage') == 2",
+        "components": {
+          "minecraft:selection_box": {
+            "origin": [
+              -4,
+              0,
+              -4
+            ],
+            "size": [
+              8,
+              8,
+              8
+            ]
+          },
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "abyss_flower_2",
+              "render_method": "alpha_test",
+              "face_dimming": false,
+              "ambient_occlusion": 0
+            }
+          }
+        }
+      },
+      {
+        "condition": "query.block_state('zombie:growth_stage') == 3",
+        "components": {
+          "minecraft:selection_box": {
+            "origin": [
+              -4,
+              0,
+              -4
+            ],
+            "size": [
+              8,
+              10,
+              8
+            ]
+          },
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "abyss_flower_3",
+              "render_method": "alpha_test",
+              "face_dimming": false,
+              "ambient_occlusion": 0
+            }
+          }
+        }
+      },
+      {
+        "condition": "query.block_state('zombie:growth_stage') == 4",
+        "components": {
+          "minecraft:selection_box": {
+            "origin": [
+              -4,
+              0,
+              -4
+            ],
+            "size": [
+              8,
+              12,
+              8
+            ]
+          },
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "abyss_flower_4",
+              "render_method": "alpha_test",
+              "face_dimming": false,
+              "ambient_occlusion": 0
+            }
+          }
+        }
+      }
+    ],
+    "components": {
+      "minecraft:collision_box": false,
+      "minecraft:selection_box": {
+        "origin": [
+          -4,
+          0,
+          -4
+        ],
+        "size": [
+          8,
+          12,
+          8
+        ]
+      },
+      "minecraft:geometry": "geometry.zombie_abysscrossplants",
+      "minecraft:material_instances": {
+        "*": {
+          "texture": "abyss_flower_0",
+          "render_method": "alpha_test",
+          "face_dimming": false,
+          "ambient_occlusion": 0
+        }
+      },
+      "minecraft:destructible_by_mining": {
+        "seconds_to_destroy": 0.0
+      },
+      "minecraft:destructible_by_explosion": {
+        "explosion_resistance": 0.0
+      },
+      "minecraft:liquid_detection": {
+        "detection_rules": [
+          {
+            "liquid_type": "water",
+            "can_contain_liquid": true,
+            "on_liquid_touches": "no_reaction"
+          }
+        ]
+      },
+      "minecraft:placement_filter": {
+        "conditions": [
+          {
+            "allowed_faces": [
+              "up"
+            ],
+            "block_filter": [
+              "zombie:infected_grass_block",
+              "zombie:infected_gravel",
+              "zombie:infected_sand",
+              "zombie:infected_stone"
+            ]
+          }
+        ]
+      },
+      "minecraft:light_dampening": 0,
+      "minecraft:replaceable": {},
+      "minecraft:loot": "loot_tables/blocks/abyss_flower.json",
+      "minecraft:tags": [
+        "minecraft:crop",
+        "plant"
+      ]
+    }
+  }
 }

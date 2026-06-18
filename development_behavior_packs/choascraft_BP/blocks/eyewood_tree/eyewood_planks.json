@@ -1,43 +1,45 @@
 {
-	"format_version": "1.26.10",
-	"minecraft:block": {
-		"description": {
-			"identifier": "zombie:eyewood_planks",
-			"menu_category": {
-				"category": "construction",
-				"group": "minecraft:itemGroup.name.planks"
-			}
-		},
-		"components": {
-			"minecraft:light_dampening": 15,
-			"minecraft:geometry": "minecraft:geometry.full_block",
-			"minecraft:item_visual": {
-				"geometry": "minecraft:geometry.full_block",
-				"material_instances": {
-					"*": {
-						"texture": "eyewood_planks",
-						"render_method": "opaque"
-					}
-				}
-			},
-			"minecraft:material_instances": {
-				"*": {
-					"texture": "eyewood_planks",
-					"render_method": "opaque"
-				}
-			},
-			"minecraft:destructible_by_mining": {
-				"seconds_to_destroy": 2.0
-			},
-			"minecraft:destructible_by_explosion": {
-				"explosion_resistance": 3.0
-			},
-			"minecraft:flammable": {
-				"catch_chance_modifier": 5,
-				"destroy_chance_modifier": 20
-			},
-			"tag:minecraft:is_axe_item_destructible": {},
-			"tag:wood": {}
-		}
-	}
+  "format_version": "1.26.20",
+  "minecraft:block": {
+    "description": {
+      "identifier": "zombie:eyewood_planks",
+      "menu_category": {
+        "category": "construction",
+        "group": "minecraft:itemGroup.name.planks"
+      }
+    },
+    "components": {
+      "minecraft:light_dampening": 15,
+      "minecraft:geometry": "minecraft:geometry.full_block",
+      "minecraft:item_visual": {
+        "geometry": "minecraft:geometry.full_block",
+        "material_instances": {
+          "*": {
+            "texture": "eyewood_planks",
+            "render_method": "opaque"
+          }
+        }
+      },
+      "minecraft:material_instances": {
+        "*": {
+          "texture": "eyewood_planks",
+          "render_method": "opaque"
+        }
+      },
+      "minecraft:destructible_by_mining": {
+        "seconds_to_destroy": 2.0
+      },
+      "minecraft:destructible_by_explosion": {
+        "explosion_resistance": 3.0
+      },
+      "minecraft:flammable": {
+        "catch_chance_modifier": 5,
+        "destroy_chance_modifier": 20
+      },
+      "minecraft:tags": [
+        "minecraft:is_axe_item_destructible",
+        "wood"
+      ]
+    }
+  }
 }

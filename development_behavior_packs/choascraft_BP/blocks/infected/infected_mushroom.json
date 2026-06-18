@@ -1,5 +1,5 @@
 {
-  "format_version": "1.21.100",
+  "format_version": "1.26.20",
   "minecraft:block": {
     "description": {
       "identifier": "zombie:infected_mushroom",
@@ -8,29 +8,31 @@
       }
     },
     "components": {
-      "minecraft:flammable": { "destroy_chance_modifier": 20, "catch_chance_modifier": 5 },
+      "minecraft:flammable": {
+        "destroy_chance_modifier": 20,
+        "catch_chance_modifier": 5
+      },
       "minecraft:display_name": "Infected Mushroom",
-       "minecraft:destructible_by_mining": {
+      "minecraft:destructible_by_mining": {
         "seconds_to_destroy": 1
       },
-      "minecraft:collision_box":false,
-      "minecraft:selection_box":true,
+      "minecraft:collision_box": false,
+      "minecraft:selection_box": true,
       "minecraft:geometry": "geometry.zombie_abysscrossplants",
       "minecraft:material_instances": {
-			"*":
-            {
-				"texture": "infected_mushroom",
-				"render_method": "alpha_test"
-			}
-		},
-      
+        "*": {
+          "texture": "infected_mushroom",
+          "render_method": "alpha_test"
+        }
+      },
       "minecraft:destructible_by_explosion": {
         "explosion_resistance": 1200
       },
       "minecraft:map_color": "#1D1D21",
-      
-    "minecraft:redstone_conductivity": {"allows_wire_to_step_down": true,
-    "redstone_conductor": true} 
+      "minecraft:redstone_conductivity": {
+        "allows_wire_to_step_down": true,
+        "redstone_conductor": true
+      }
     }
   }
 }

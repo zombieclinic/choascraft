@@ -1,5 +1,5 @@
 {
-  "format_version": "1.21.70",
+  "format_version": "1.26.20",
   "minecraft:block": {
     "description": {
       "identifier": "zombie:hell_lamp",
@@ -24,7 +24,9 @@
       "minecraft:destructible_by_explosion": true,
       "minecraft:light_emission": 15,
       "minecraft:flammable": false,
-      "tag:minecraft:is_pickaxe_item_destructible": {}
+      "minecraft:tags": [
+        "minecraft:is_pickaxe_item_destructible"
+      ]
     }
   }
 }

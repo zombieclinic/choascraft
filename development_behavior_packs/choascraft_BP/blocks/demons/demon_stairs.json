@@ -1,5 +1,5 @@
 {
-  "format_version": "1.21.60",
+  "format_version": "1.26.20",
   "minecraft:block": {
     "description": {
       "identifier": "zombie:demon_stairs",
@@ -50,7 +50,7 @@
           "texture": "zombie_hell_plank",
           "render_method": "opaque",
           "face_dimming": true,
-          "ambient_occlusion": true
+          "ambient_occlusion": 1
         }
       },
       "minecraft:selection_box": {
@@ -81,12 +81,14 @@
         "seconds_to_destroy": 0.75
       },
       "minecraft:loot": "loot_tables/blocks/demon_stairs.json",
-      "tag:minecraft:is_axe_item_destructible": {},
       "minecraft:destructible_by_explosion": true,
-      "tag:wood": {},
-      "tag:custom:connected_stairs": {},
-      "tag:minecraft:diamond_tier_destructible": {},
-      "minecraft:light_dampening": 0
+      "minecraft:light_dampening": 0,
+      "minecraft:tags": [
+        "minecraft:is_axe_item_destructible",
+        "wood",
+        "custom:connected_stairs",
+        "minecraft:diamond_tier_destructible"
+      ]
     },
     "permutations": [
       {
@@ -1899,4 +1901,3 @@
     ]
   }
 }
-

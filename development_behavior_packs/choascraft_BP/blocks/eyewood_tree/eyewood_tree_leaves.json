@@ -1,77 +1,79 @@
 {
-	"format_version": "1.26.10",
-	"minecraft:block": {
-		"description": {
-			"identifier": "zombie:eyewood_tree_leaves",
-			"states": {
-				"zombie:player_placed": [
-					false,
-					true
-				],
-				"zombie:dry_player_placed": [
-					false,
-					true
-				]
-			},
-			"menu_category": {
-				"category": "nature",
-				"group": "minecraft:itemGroup.name.leaves"
-			}
-		},
-		"permutations": [
-			{
-				"condition": "!query.block_state('zombie:player_placed')",
-				"components": {
-					"zombie:decayable_leaves": {
-						"radius": 4
-					}
-				}
-			},
-			{
-				"condition": "query.block_state('zombie:dry_player_placed')",
-				"components": {
-					"minecraft:material_instances": {
-						"*": {
-							"texture": "eyewood_tree_leaves",
-							"render_method": "blend_to_opaque"
-						}
-					}
-				}
-			}
-		],
-		"components": {
-			"minecraft:destructible_by_mining": {
-				"seconds_to_destroy": 0.2
-			},
-			"minecraft:destructible_by_explosion": {
-				"explosion_resistance": 0.2
-			},
-			"minecraft:flammable": {
-				"catch_chance_modifier": 30,
-				"destroy_chance_modifier": 60
-			},
-			"minecraft:liquid_detection": {
-				"detection_rules": [
-					{
-						"liquid_type": "water",
-						"can_contain_liquid": true,
-						"on_liquid_touches": "no_reaction"
-					}
-				]
-			},
-			"minecraft:geometry": "minecraft:geometry.full_block",
-			"minecraft:material_instances": {
-				"*": {
-					"texture": "eyewood_tree_leaves",
-					"render_method": "opaque"
-				}
-			},
-			"zombie:eyewood_leaves_render": {},
-			"tag:zombie:eyewood_tree_leaves": {},
-			"tag:zombie:custom_leaves": {},
-			"tag:leaves": {},
-			"tag:minecraft:is_hoe_item_destructible": {},
-			"minecraft:loot": "loot_tables/blocks/eyewood_tree_leaves.json"
-		}
-	}
+  "format_version": "1.26.20",
+  "minecraft:block": {
+    "description": {
+      "identifier": "zombie:eyewood_tree_leaves",
+      "states": {
+        "zombie:player_placed": [
+          false,
+          true
+        ],
+        "zombie:dry_player_placed": [
+          false,
+          true
+        ]
+      },
+      "menu_category": {
+        "category": "nature",
+        "group": "minecraft:itemGroup.name.leaves"
+      }
+    },
+    "permutations": [
+      {
+        "condition": "!query.block_state('zombie:player_placed')",
+        "components": {
+          "zombie:decayable_leaves": {
+            "radius": 4
+          }
+        }
+      },
+      {
+        "condition": "query.block_state('zombie:dry_player_placed')",
+        "components": {
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "eyewood_tree_leaves",
+              "render_method": "blend_to_opaque"
+            }
+          }
+        }
+      }
+    ],
+    "components": {
+      "minecraft:destructible_by_mining": {
+        "seconds_to_destroy": 0.2
+      },
+      "minecraft:destructible_by_explosion": {
+        "explosion_resistance": 0.2
+      },
+      "minecraft:flammable": {
+        "catch_chance_modifier": 30,
+        "destroy_chance_modifier": 60
+      },
+      "minecraft:liquid_detection": {
+        "detection_rules": [
+          {
+            "liquid_type": "water",
+            "can_contain_liquid": true,
+            "on_liquid_touches": "no_reaction"
+          }
+        ]
+      },
+      "minecraft:geometry": "minecraft:geometry.full_block",
+      "minecraft:material_instances": {
+        "*": {
+          "texture": "eyewood_tree_leaves",
+          "render_method": "opaque"
+        }
+      },
+      "zombie:eyewood_leaves_render": {},
+      "minecraft:loot": "loot_tables/blocks/eyewood_tree_leaves.json",
+      "minecraft:tags": [
+        "zombie:eyewood_tree_leaves",
+        "zombie:custom_leaves",
+        "leaves",
+        "minecraft:is_hoe_item_destructible"
+      ]
+    }
+  }
 }

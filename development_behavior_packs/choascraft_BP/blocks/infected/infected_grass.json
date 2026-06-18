@@ -1,5 +1,5 @@
 {
-  "format_version": "1.21.100",
+  "format_version": "1.26.20",
   "minecraft:block": {
     "description": {
       "identifier": "zombie:infected_grass_block",
@@ -31,7 +31,10 @@
           "render_method": "opaque"
         }
       },
-    "minecraft:redstone_conductivity": {"allows_wire_to_step_down": true, "redstone_conductor": true}
+      "minecraft:redstone_conductivity": {
+        "allows_wire_to_step_down": true,
+        "redstone_conductor": true
+      }
     }
   }
 }
