@@ -7,7 +7,7 @@
 		},
 "conditions": [
       {
-        "minecraft:spawns_on_surface": {},
+        
         "minecraft:spawns_underwater": {},
 
         "minecraft:weight": {
@@ -18,12 +18,8 @@
           "max": 64
         },
         "minecraft:herd": {
-          "min_size": 3,
-          "max_size": 5
-        },
-        "minecraft:density_limit": {
-          "surface": 5,
-          "underground": 0
+          "min_size": 1,
+          "max_size": 1
         },
         "minecraft:biome_filter": [
           { "test": "has_biome_tag", "operator": "==", "value": "ocean" },

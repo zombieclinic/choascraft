@@ -1,60 +1,59 @@
-{"format_version": "1.26.20",
-"minecraft:entity":
-    {
-        "description": {
-            "identifier": "zombie:corrupted_spire",
-            "is_spawnable": true,
-            "is_summonable": true,
-            "spawn_category": "monster"
-        },
-        "component_groups": {
-            "timer": {
-                "minecraft:timer": {
-                    "time": 2,
-                    "looping": true,
-                    "time_down_event": {
-                        "event": "death",
-                        "target": "self"
-                    }
-                }
-            },
-            "despawn": {
-                "minecraft:instant_despawn": {
-                    "remove_child_entities": false
-                }
-            }
-
-        },
-        "components": {
-            "minecraft:health": {
-                "value": 30,
-                "max": 30
-            },
-            "minecraft:area_attack": {
-                "damage_per_tick": 1,
-                "damage_range": 3,
-                "cause": "magic"
-            },
-            "minecraft:collision_box": {
-                "height": 1,
-                "width": 1
-            }
-        },
-        "events": {
-            "minecraft:entity_spawned": {
-                "add": {
-                    "component_groups": [
-                        "timer"
-                    ]
-                }
-            },
-            "death": {
-                "add": {
-                    "component_groups": [
-                        "despawn"
-                    ]
-                }
-            }
+{
+  "format_version": "1.26.30",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "zombie:corrupted_spire",
+      "is_spawnable": false,
+      "is_summonable": true,
+      "spawn_category": "monster"
+    },
+    "component_groups": {
+      "timer": {
+        "minecraft:timer": {
+          "time": 2,
+          "looping": true,
+          "time_down_event": {
+            "event": "death",
+            "target": "self"
+          }
         }
+      },
+      "despawn": {
+        "minecraft:instant_despawn": {
+          "remove_child_entities": false
+        }
+      }
+    },
+    "components": {
+      "minecraft:health": {
+        "value": 30,
+        "max": 30
+      },
+      "minecraft:area_attack": {
+        "damage_per_tick": 1,
+        "damage_range": 3,
+        "cause": "magic"
+      },
+      "minecraft:collision_box": {
+        "height": 1,
+        "width": 1
+      }
+    },
+    "events": {
+      "minecraft:entity_spawned": {
+        "add": {
+          "component_groups": [
+            "timer"
+          ]
+        }
+      },
+      "death": {
+        "add": {
+          "component_groups": [
+            "despawn"
+          ]
+        }
+      }
     }
+  }
 }

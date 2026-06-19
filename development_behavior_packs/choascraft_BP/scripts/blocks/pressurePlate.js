@@ -22,7 +22,6 @@ export class ZcPressurePlateReleaseTickComponent {
 		if (!block) return;
 
 		const poweredState = component?.params?.block_state ?? DEFAULT_POWERED_STATE;
-		if (!block.permutation.getState(poweredState)) return;
 
 		setPowered(block, poweredState, hasEntityOnPlate(block));
 	}

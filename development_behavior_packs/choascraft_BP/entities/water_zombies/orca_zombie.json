@@ -1,62 +1,62 @@
 {
-    "format_version": "1.26.20",
-    "minecraft:entity": {
-        "description": {
-            "identifier": "zombie:orca_zombie",
-            "is_spawnable": false,
-            "is_summonable": true
+  "format_version": "1.26.30",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "zombie:orca_zombie",
+      "is_spawnable": false,
+      "is_summonable": true
+    },
+    "component_groups": {
+      "leashed_orca": {
+        "minecraft:persistent": {}
+      },
+      "zombie_orca_proximity_targeting": {
+        "minecraft:behavior.nearest_attackable_target": {
+          "priority": 1,
+          "must_see": true,
+          "reselect_targets": true,
+          "within_radius": 6,
+          "must_see_forget_duration": 8,
+          "entity_types": [
+            {
+              "filters": {
+                "test": "is_family",
+                "subject": "other",
+                "value": "player"
+              },
+              "max_dist": 6
+            }
+          ]
         },
-        "component_groups": {
-            "leashed_orca": {
-                "minecraft:persistent": {}
-            },
-            "zombie_orca_proximity_targeting": {
-                "minecraft:behavior.nearest_attackable_target": {
-                    "priority": 1,
-                    "must_see": true,
-                    "reselect_targets": true,
-                    "within_radius": 6,
-                    "must_see_forget_duration": 8,
-                    "entity_types": [
-                        {
-                            "filters": {
-                                "test": "is_family",
-                                "subject": "other",
-                                "value": "player"
-                            },
-                            "max_dist": 6
-                        }
-                    ]
-                },
-                "minecraft:on_target_acquired": {
-                    "event": "zombie:start_chasing",
-                    "target": "self"
-                }
-            },
-            "zombie_orca_chasing_player": {
-                "minecraft:behavior.nearest_attackable_target": {
-                    "priority": 1,
-                    "must_see": true,
-                    "reselect_targets": true,
-                    "within_radius": 10,
-                    "must_see_forget_duration": 8,
-                    "entity_types": [
-                        {
-                            "filters": {
-                                "test": "is_family",
-                                "subject": "other",
-                                "value": "player"
-                            },
-                            "max_dist": 10
-                        }
-                    ]
-                },
-                "minecraft:on_target_escape": {
-                    "event": "zombie:stop_chasing",
-                    "target": "self"
-                }
-            },
-             "wild_orca": {
+        "minecraft:on_target_acquired": {
+          "event": "zombie:start_chasing",
+          "target": "self"
+        }
+      },
+      "zombie_orca_chasing_player": {
+        "minecraft:behavior.nearest_attackable_target": {
+          "priority": 1,
+          "must_see": true,
+          "reselect_targets": true,
+          "within_radius": 10,
+          "must_see_forget_duration": 8,
+          "entity_types": [
+            {
+              "filters": {
+                "test": "is_family",
+                "subject": "other",
+                "value": "player"
+              },
+              "max_dist": 10
+            }
+          ]
+        },
+        "minecraft:on_target_escape": {
+          "event": "zombie:stop_chasing",
+          "target": "self"
+        }
+      },
+      "wild_orca": {
         "minecraft:behavior.mount_pathing": {
           "priority": 0,
           "speed_multiplier": 1.5,
@@ -74,7 +74,7 @@
           "seat_count": 1,
           "crouching_skip_interact": true,
           "family_types": [
-			      "undead"
+            "undead"
           ],
           "pull_in_entities": true,
           "rider_can_interact": false,
@@ -88,205 +88,205 @@
           }
         }
       }
+    },
+    "components": {
+      "minecraft:loot": {
+        "table": "loot_tables/entities/orca/zombie_orca.json"
+      },
+      "minecraft:breathable": {
+        "total_supply": 15,
+        "suffocate_time": 0,
+        "inhale_time": 0,
+        "breathes_air": false,
+        "breathes_water": true,
+        "breathes_lava": false,
+        "generates_bubbles": true
+      },
+      "minecraft:behavior.melee_box_attack": {
+        "can_spread_on_fire": true,
+        "priority": 3
+      },
+      "minecraft:attack": {
+        "damage": 5
+      },
+      "minecraft:health": {
+        "value": 60,
+        "max": 60
+      },
+      "minecraft:navigation.generic": {
+        "is_amphibious": true,
+        "can_path_over_water": false,
+        "can_swim": true,
+        "can_walk": false,
+        "can_breach": true,
+        "can_sink": false
+      },
+      "minecraft:inventory": {
+        "container_type": "horse",
+        "private": false,
+        "can_be_siphoned_from": false,
+        "inventory_size": 16,
+        "restrict_to_owner": false
+      },
+      "minecraft:nameable": {
+        "allow_name_tag_renaming": true,
+        "always_show": false
+      },
+      "minecraft:type_family": {
+        "family": [
+          "orca",
+          "mob",
+          "whale",
+          "aquatic"
+        ]
+      },
+      "minecraft:collision_box": {
+        "width": 1.25,
+        "height": 0.25
+      },
+      "minecraft:scale": {
+        "value": 2
+      },
+      "minecraft:hurt_on_condition": {
+        "damage_conditions": [
+          {
+            "filters": {
+              "test": "in_lava",
+              "subject": "self",
+              "operator": "==",
+              "value": true
+            },
+            "cause": "lava",
+            "damage_per_tick": 4
+          }
+        ]
+      },
+      "minecraft:follow_range": {
+        "value": 10,
+        "max": 10
+      },
+      "minecraft:experience_reward": {
+        "on_death": "!query.is_baby \u0026\u0026 query.last_hit_by_player ? Math.Random(1,10) : 0"
+      },
+      "minecraft:behavior.swim_idle": {
+        "priority": 5,
+        "idle_time": 5,
+        "success_rate": 1.0
+      },
+      "minecraft:movement.sway": {
+        "sway_amplitude": 0.05,
+        "sway_frequency": 0.5,
+        "max_turn": 30
+      },
+      "minecraft:underwater_movement": {
+        "value": 0.14
+      },
+      "minecraft:jump.static": {
+        "jump_power": 0.25
+      },
+      "minecraft:despawn": {
+        "despawn_from_distance": {}
+      },
+      "minecraft:physics": {
+        "has_collision": true,
+        "has_gravity": true,
+        "push_towards_closest_space": true
+      },
+      "minecraft:leashable": {
+        "can_be_cut": true,
+        "can_be_stolen": true,
+        "on_leash": {
+          "event": "orca_leashed",
+          "target": "self"
         },
-        "components": {
-            "minecraft:loot": {
-                "table": "loot_tables/entities/orca/zombie_orca.json"
-            },
-            "minecraft:breathable": {
-                "total_supply": 15,
-                "suffocate_time": -20,
-                "inhale_time": 0,
-                "breathes_air": false,
-                "breathes_water": true,
-                "breathes_lava": false,
-                "generates_bubbles": true
-            },
-            "minecraft:behavior.melee_box_attack": {
-                "can_spread_on_fire": true,
-                "priority": 3
-            },
-            "minecraft:attack": {
-                "damage": 5
-            },
-            "minecraft:health": {
-                "value": 60,
-                "max": 60
-            },
-            "minecraft:navigation.generic": {
-                "is_amphibious": true,
-                "can_path_over_water": false,
-                "can_swim": true,
-                "can_walk": false,
-                "can_breach": true,
-                "can_sink": false
-            },
-            "minecraft:inventory": {
-                "container_type": "horse",
-                "private": false,
-                "can_be_siphoned_from": false,
-                "inventory_size": 16,
-                "restrict_to_owner": false
-            },
-            "minecraft:nameable": {
-                "allow_name_tag_renaming": true,
-                "always_show": false
-            },
-            "minecraft:type_family": {
-                "family": [
-                    "orca",
-                    "mob",
-                    "whale",
-                    "aquatic"
-                ]
-            },
-            "minecraft:collision_box": {
-                "width": 1.25,
-                "height": 0.25
-            },
-            "minecraft:scale": {
-                "value": 2
-            },
-            "minecraft:hurt_on_condition": {
-                "damage_conditions": [
-                    {
-                        "filters": {
-                            "test": "in_lava",
-                            "subject": "self",
-                            "operator": "==",
-                            "value": true
-                        },
-                        "cause": "lava",
-                        "damage_per_tick": 4
-                    }
-                ]
-            },
-            "minecraft:follow_range": {
-                "value": 10,
-                "max": 10
-            },
-            "minecraft:experience_reward": {
-                "on_death": "!query.is_baby && query.last_hit_by_player ? Math.Random(1,10) : 0"
-            },
-            "minecraft:behavior.swim_idle": {
-                "priority": 5,
-                "idle_time": 5,
-                "success_rate": 1.0
-            },
-            "minecraft:movement.sway": {
-                "sway_amplitude": 0.05,
-                "sway_frequency": 0.5,
-                "max_turn": 30
-            },
-            "minecraft:underwater_movement": {
-                "value": 0.14
-            },
-            "minecraft:jump.static": {
-                "jump_power": 0.25
-            },
-            "minecraft:despawn": {
-                "despawn_from_distance": {}
-            },
-            "minecraft:physics": {
-                "has_collision": true,
-                "has_gravity": true,
-                "push_towards_closest_space": true
-            },
-            "minecraft:leashable": {
-                "can_be_cut": true,
-                "can_be_stolen": true,
-                "on_leash": {
-                    "event": "orca_leashed",
-                    "target": "self"
-                },
-                "on_unleash": {
-                    "event": "orca_unleashed",
-                    "target": "self"
-                },
-                "on_unleash_interact_only": false,
-                "presets": [
-                    {
-                        "soft_distance": 8,
-                        "hard_distance": 14,
-                        "max_distance": 22,
-                        "spring_type": "quad_dampened"
-                    }
-                ]
-            },
-            "minecraft:conditional_bandwidth_optimization": {},
-            "minecraft:healable": {
-                "force_use": false,
-                "items": [
-                    {
-                        "item": "cod",
-                        "heal_amount": 30
-                    },
-                    {
-                        "heal_amount": 30,
-                        "item": "salmon"
-                    },
-                    {
-                        "heal_amount": 30,
-                        "item": "tropical_fish"
-                    }
-                ]
-            }
+        "on_unleash": {
+          "event": "orca_unleashed",
+          "target": "self"
         },
-        "events": {
-            "minecraft:entity_spawned": {
-                "add": {
-                    "component_groups": [
-                        "wild_orca",
-                        "zombie_orca_proximity_targeting"
-                    ]
-                }
-            },
-            "minecraft:entity_born": {
-                "add": {
-                    "component_groups": [
-                        "wild_orca",
-                        "zombie_orca_proximity_targeting"
-                    ]
-                }
-            },
-            "zombie:start_chasing": {
-                "remove": {
-                    "component_groups": [
-                        "zombie_orca_proximity_targeting"
-                    ]
-                },
-                "add": {
-                    "component_groups": [
-                        "zombie_orca_chasing_player"
-                    ]
-                }
-            },
-            "zombie:stop_chasing": {
-                "remove": {
-                    "component_groups": [
-                        "zombie_orca_chasing_player"
-                    ]
-                },
-                "add": {
-                    "component_groups": [
-                        "zombie_orca_proximity_targeting"
-                    ]
-                }
-            },
-            "orca_leashed": {
-                "add": {
-                    "component_groups": [
-                        "leashed_orca"
-                    ]
-                }
-            },
-            "orca_unleashed": {
-                "remove": {
-                    "component_groups": [
-                        "leashed_orca"
-                    ]
-                }
-            }
+        "on_unleash_interact_only": false,
+        "presets": [
+          {
+            "soft_distance": 8,
+            "hard_distance": 14,
+            "max_distance": 22,
+            "spring_type": "quad_dampened"
+          }
+        ]
+      },
+      "minecraft:conditional_bandwidth_optimization": {},
+      "minecraft:healable": {
+        "force_use": false,
+        "items": [
+          {
+            "item": "cod",
+            "heal_amount": 30
+          },
+          {
+            "heal_amount": 30,
+            "item": "salmon"
+          },
+          {
+            "heal_amount": 30,
+            "item": "tropical_fish"
+          }
+        ]
+      }
+    },
+    "events": {
+      "minecraft:entity_spawned": {
+        "add": {
+          "component_groups": [
+            "wild_orca",
+            "zombie_orca_proximity_targeting"
+          ]
         }
+      },
+      "minecraft:entity_born": {
+        "add": {
+          "component_groups": [
+            "wild_orca",
+            "zombie_orca_proximity_targeting"
+          ]
+        }
+      },
+      "zombie:start_chasing": {
+        "remove": {
+          "component_groups": [
+            "zombie_orca_proximity_targeting"
+          ]
+        },
+        "add": {
+          "component_groups": [
+            "zombie_orca_chasing_player"
+          ]
+        }
+      },
+      "zombie:stop_chasing": {
+        "remove": {
+          "component_groups": [
+            "zombie_orca_chasing_player"
+          ]
+        },
+        "add": {
+          "component_groups": [
+            "zombie_orca_proximity_targeting"
+          ]
+        }
+      },
+      "orca_leashed": {
+        "add": {
+          "component_groups": [
+            "leashed_orca"
+          ]
+        }
+      },
+      "orca_unleashed": {
+        "remove": {
+          "component_groups": [
+            "leashed_orca"
+          ]
+        }
+      }
     }
+  }
 }

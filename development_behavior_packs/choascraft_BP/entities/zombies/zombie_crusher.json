@@ -1,409 +1,429 @@
 {
-    "format_version": "1.26.20",
-    "minecraft:entity": {
-      "description": {
-        "identifier": "zombie:crusher",
-        "spawn_category": "monster",
-        "is_spawnable": true,
-        "is_summonable": true
-      },
-      "component_groups": {
-        "attack_cooldown": {
-          "minecraft:attack_cooldown": {
-            "attack_cooldown_time": [
-              2,
-              4
-            ],
-            "attack_cooldown_complete_event": {
-              "event": "attack_cooldown_complete_event",
-              "target": "self"
-            }
-          }
-        },
-        "spawn" : {
-          "minecraft:on_death": "death",
-          "minecraft:variant": {
-            "value": 1
-          },
-          "minecraft:timer": {
-            "time": 1,
-            "time_down_event": {
-              "event": "stage_2"
-              
-            }
-          },
-          "minecraft:health": {
-            "value": 70,
-            "max": 70
-          }
-        },
-        "stage_2": {
-          "minecraft:behavior.delayed_attack": {
-            "attack_duration": 3,
-            "hit_delay_pct": 0.1,
-            "reach_multiplier": 3
-          },
-          "minecraft:on_death": "death",
-          "minecraft:collision_box": {
-            "width": 0.6,
-            "height": 1.9
-          },
-          "minecraft:variant": {
-            "value": 2
-          },
-          "minecraft:movement.basic": {
-          },
-          "minecraft:navigation.walk": {
-            "is_amphibious": true,
-            "can_pass_doors": true,
-            "can_walk": true,
-            "can_break_doors": true
-          },
-          "minecraft:jump.static": {
-          },
-          "minecraft:can_climb": {
-          },
-          "minecraft:health": {
-            "value": 70,
-            "max": 70
-          },
-          "minecraft:movement": {
-            "value": 0.10
-          },
-          "minecraft:damage_sensor": {
-            "triggers": [
-              {
-                "on_damage": {
-                  "filters": [
-                    {
-                      "test": "actor_health",
-                      "value": 50,
-                      "subject": "self",
-                      "operator": "<="
-                    }
-                  ],
-                  "event": "stage_3"
-                }
-              }
-            ]
-          }
-        },
-        "stage_3": {
-          "minecraft:on_death": "death",
-          "minecraft:collision_box": {
-            "width": 0.6,
-            "height": 1.9
-          },
-          "minecraft:variant": {
-            "value": 3
-          },
-          "minecraft:movement.basic": {
-          },
-          "minecraft:navigation.walk": {
-            "is_amphibious": true,
-            "can_pass_doors": true,
-            "can_walk": true,
-            "can_break_doors": true
-          },
-          "minecraft:jump.static": {
-          },
-          "minecraft:can_climb": {
-          },
-          "minecraft:health": {
-            "value": 70,
-            "max": 70
-          },
-          "minecraft:movement": {
-            "value": 0.25
-          },
-          "minecraft:behavior.ram_attack": {
-            "priority": 1,
-            "run_speed": 1.4,
-            "ram_speed": 1.65,
-            "min_ram_distance": 5,
-            "ram_distance": 9,
-            "knockback_force": 2.5,
-            "knockback_height": 0.04,
-            "pre_ram_sound": "pre_ram",
-            "ram_impact_sound": "ram_impact",
-            "cooldown_range": {
-              "min": 6,
-              "max": 10
-            },
-            "on_start": [
-              {
-                "event": "start_event",
-                "target": "self"
-              }
-            ]
-          }
-        },
-        "death": {
-          "minecraft:skin_id": {
-            "value": 1
-          },
-          "minecraft:variant": {
-            "value": 4
-          },
-          "minecraft:damage_sensor": {
-            "triggers": [
-              {
-                "deals_damage": "no"
-              }
-            ]
-          },
-          "minecraft:timer": {
-            "time": 2,
-            "time_down_event": {
-              "event": "finish_death_animation",
-              "target": "self"
-            }
-          }
-        },
-        "minecraft:zombie_baby": {
-          "minecraft:experience_reward": {
-            "on_death": "query.last_hit_by_player ? 12 + (query.equipment_count * Math.Random(1,3)) : 0"
-          },
-          "minecraft:is_baby": {},
-          "minecraft:scale": {
-            "value": 0.5
-          }
-        },
-  
-        "minecraft:zombie_adult": {
-          "minecraft:experience_reward": {
-            "on_death": "query.last_hit_by_player ? 5 + (query.equipment_count * Math.Random(1,3)) : 0"
+  "format_version": "1.26.30",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "zombie:crusher",
+      "spawn_category": "monster",
+      "is_spawnable": false,
+      "is_summonable": true
+    },
+    "component_groups": {
+      "attack_cooldown": {
+        "minecraft:attack_cooldown": {
+          "attack_cooldown_time": [
+            2,
+            4
+          ],
+          "attack_cooldown_complete_event": {
+            "event": "attack_cooldown_complete_event",
+            "target": "self"
           }
         }
       },
-  
-      "components": {
-        "minecraft:on_death": "event:death",
-        "minecraft:annotation.break_door": {
+      "spawn": {
+        "minecraft:on_death": "death",
+        "minecraft:variant": {
+          "value": 1
         },
-        "minecraft:is_hidden_when_invisible": {
+        "minecraft:timer": {
+          "time": 1,
+          "time_down_event": {
+            "event": "stage_2"
+          }
         },
-        "minecraft:nameable": {
+        "minecraft:health": {
+          "value": 70,
+          "max": 70
+        }
+      },
+      "stage_2": {
+        "minecraft:behavior.delayed_attack": {
+          "attack_duration": 3,
+          "hit_delay_pct": 0.1,
+          "reach_multiplier": 3
         },
-        "minecraft:type_family": {
-          "family": [ "mutated_zombie", "undead", "monster", "mob" ]
-        },
+        "minecraft:on_death": "death",
         "minecraft:collision_box": {
           "width": 0.6,
           "height": 1.9
         },
-        "minecraft:burns_in_daylight": {
+        "minecraft:variant": {
+          "value": 2
         },
-        "minecraft:hurt_on_condition": {
-          "damage_conditions": [
+        "minecraft:movement.basic": {},
+        "minecraft:navigation.walk": {
+          "is_amphibious": true,
+          "can_pass_doors": true,
+          "can_walk": true,
+          "can_break_doors": true
+        },
+        "minecraft:jump.static": {},
+        "minecraft:can_climb": {},
+        "minecraft:health": {
+          "value": 70,
+          "max": 70
+        },
+        "minecraft:movement": {
+          "value": 0.10
+        },
+        "minecraft:damage_sensor": {
+          "triggers": [
             {
-              "filters": { "test": "in_lava", "subject": "self", "operator": "==", "value": true },
-              "cause": "lava",
-              "damage_per_tick": 4
-            }
-          ]
-        },
-        "minecraft:breathable": {
-          "total_supply": 15,
-          "suffocate_time": 0,
-          "breathes_air": true,
-          "breathes_water": true
-        },
-        "minecraft:attack": {
-          "damage": 8
-        },
-        "minecraft:loot": {
-          "table": "loot_tables/monsters/infected_zombie.json"
-        }, 
-  
-      "minecraft:despawn": {
-        "despawn_from_distance": {}
-       },
-        "minecraft:behavior.stomp_turtle_egg": {
-          "priority": 4,
-          "speed_multiplier": 1,
-          "search_range": 10,
-          "search_height": 2,
-          "goal_radius": 1.14,
-          "interval": 20
-        },
-        "minecraft:behavior.random_stroll": {
-          "priority": 7,
-          "speed_multiplier": 1
-        },
-        "minecraft:behavior.look_at_player": {
-          "priority": 8,
-          "look_distance": 6,
-          "probability": 0.02
-        },
-        "minecraft:behavior.random_look_around": {
-          "priority": 9
-        },
-        "minecraft:behavior.hurt_by_target": {
-          "priority": 1,
-          "entity_types": [
-            {
-              "filters": {
-                "test": "is_family",
-                "subject": "other",
-                "operator": "!=",
-                "value": "breeze"
+              "on_damage": {
+                "filters": [
+                  {
+                    "test": "actor_health",
+                    "value": 50,
+                    "subject": "self",
+                    "operator": "\u003c="
+                  }
+                ],
+                "event": "stage_3"
               }
             }
           ]
+        }
+      },
+      "stage_3": {
+        "minecraft:on_death": "death",
+        "minecraft:collision_box": {
+          "width": 0.6,
+          "height": 1.9
         },
-        "minecraft:behavior.nearest_attackable_target": {
-          "priority": 2,
-          "must_see": true,
-          "reselect_targets": true,
-          "within_radius": 25.0,
-          "must_see_forget_duration": 17.0,
-          "entity_types": [
+        "minecraft:variant": {
+          "value": 3
+        },
+        "minecraft:movement.basic": {},
+        "minecraft:navigation.walk": {
+          "is_amphibious": true,
+          "can_pass_doors": true,
+          "can_walk": true,
+          "can_break_doors": true
+        },
+        "minecraft:jump.static": {},
+        "minecraft:can_climb": {},
+        "minecraft:health": {
+          "value": 70,
+          "max": 70
+        },
+        "minecraft:movement": {
+          "value": 0.25
+        },
+        "minecraft:behavior.ram_attack": {
+          "priority": 1,
+          "run_speed": 1.4,
+          "ram_speed": 1.65,
+          "min_ram_distance": 5,
+          "ram_distance": 9,
+          "knockback_force": 2.5,
+          "knockback_height": 0.04,
+          "pre_ram_sound": "pre_ram",
+          "ram_impact_sound": "ram_impact",
+          "cooldown_range": {
+            "min": 6,
+            "max": 10
+          },
+          "on_start": [
             {
-              "filters": {
-                "any_of": [
-                  { "test": "is_family", "subject": "other", "value": "player" },
-                  { "test": "is_family", "subject": "other", "value": "snowgolem" },
-                  { "test": "is_family", "subject": "other", "value": "irongolem" }
-                ]
-              },
-              "max_dist": 35
-            },
+              "event": "start_event",
+              "target": "self"
+            }
+          ]
+        }
+      },
+      "death": {
+        "minecraft:skin_id": {
+          "value": 1
+        },
+        "minecraft:variant": {
+          "value": 4
+        },
+        "minecraft:damage_sensor": {
+          "triggers": [
             {
-              "filters": {
-                "any_of": [
-                  { "test": "is_family", "subject": "other", "value": "villager" },
-                  { "test": "is_family", "subject": "other", "value": "wandering_trader" }
-                ]
-              },
-              "max_dist": 35,
-              "must_see": false
-            },
-            {
-              "filters": {
-                "all_of": [
-                  { "test": "is_family", "subject": "other", "value": "baby_turtle" },
-                  { "test": "in_water", "subject": "other", "operator": "!=", "value": true }
-                ]
-              },
-              "max_dist": 35
+              "deals_damage": "no"
             }
           ]
         },
-        "minecraft:physics": {
-        },
-        "minecraft:conditional_bandwidth_optimization": {
+        "minecraft:timer": {
+          "time": 2,
+          "time_down_event": {
+            "event": "finish_death_animation",
+            "target": "self"
+          }
         }
       },
-  
-      "events": {
-        "death": {
-          "add": {
-            "component_groups":[
-              "death"
-            ]
-          },
-          "remove": {
-            "component_groups": [
-              "stage_2",
-              "spawn",
-              "stage_3",
-              "attack_cooldown"
-            ]
-          }
+      "minecraft:zombie_baby": {
+        "minecraft:experience_reward": {
+          "on_death": "query.last_hit_by_player ? 12 + (query.equipment_count * Math.Random(1,3)) : 0"
         },
-        "finish_death_animation": {
-          "queue_command": {
-            "command": "kill @s"
+        "minecraft:is_baby": {},
+        "minecraft:scale": {
+          "value": 0.5
+        }
+      },
+      "minecraft:zombie_adult": {
+        "minecraft:experience_reward": {
+          "on_death": "query.last_hit_by_player ? 5 + (query.equipment_count * Math.Random(1,3)) : 0"
+        }
+      }
+    },
+    "components": {
+      "minecraft:on_death": "event:death",
+      "minecraft:annotation.break_door": {},
+      "minecraft:is_hidden_when_invisible": {},
+      "minecraft:nameable": {},
+      "minecraft:type_family": {
+        "family": [
+          "mutated_zombie",
+          "undead",
+          "monster",
+          "mob"
+        ]
+      },
+      "minecraft:collision_box": {
+        "width": 0.6,
+        "height": 1.9
+      },
+      "minecraft:burns_in_daylight": {},
+      "minecraft:hurt_on_condition": {
+        "damage_conditions": [
+          {
+            "filters": {
+              "test": "in_lava",
+              "subject": "self",
+              "operator": "==",
+              "value": true
+            },
+            "cause": "lava",
+            "damage_per_tick": 4
           }
-        },
-        "stage_2": {
-          "add": {
-            "component_groups": [
-              "stage_2"
-            ]
-          },
-          "remove": {
-            "component_groups": [
-              "spawn"
-            ]
+        ]
+      },
+      "minecraft:breathable": {
+        "total_supply": 15,
+        "suffocate_time": 0,
+        "breathes_air": true,
+        "breathes_water": true
+      },
+      "minecraft:attack": {
+        "damage": 8
+      },
+      "minecraft:loot": {
+        "table": "loot_tables/monsters/infected_zombie.json"
+      },
+      "minecraft:despawn": {
+        "despawn_from_distance": {}
+      },
+      "minecraft:behavior.stomp_turtle_egg": {
+        "priority": 4,
+        "speed_multiplier": 1,
+        "search_range": 10,
+        "search_height": 2,
+        "goal_radius": 1.14,
+        "interval": 20
+      },
+      "minecraft:behavior.random_stroll": {
+        "priority": 7,
+        "speed_multiplier": 1
+      },
+      "minecraft:behavior.look_at_player": {
+        "priority": 8,
+        "look_distance": 6,
+        "probability": 0.02
+      },
+      "minecraft:behavior.random_look_around": {
+        "priority": 9
+      },
+      "minecraft:behavior.hurt_by_target": {
+        "priority": 1,
+        "entity_types": [
+          {
+            "filters": {
+              "test": "is_family",
+              "subject": "other",
+              "operator": "!=",
+              "value": "breeze"
+            }
           }
-        },
-        "stage_3":{
-          "add" : {
-            "component_groups": [
-              "stage_3"
-            ]
-          },
-          "remove": {
-            "component_groups": [
-              "stage_2"
-            ]
-          }
-        }, 
-        "minecraft:entity_spawned": {
-          "sequence": [
-            {
-              "randomize": [
+        ]
+      },
+      "minecraft:behavior.nearest_attackable_target": {
+        "priority": 2,
+        "must_see": true,
+        "reselect_targets": true,
+        "within_radius": 25.0,
+        "must_see_forget_duration": 17.0,
+        "entity_types": [
+          {
+            "filters": {
+              "any_of": [
                 {
-                  "weight": 380,
-                  "remove": {},
-                  "add": {
-                    "component_groups": [
-                      "minecraft:zombie_adult"
-                    ]
-                  }
+                  "test": "is_family",
+                  "subject": "other",
+                  "value": "player"
                 },
                 {
-                  "weight": 17,
-                  "remove": {
-                  },
-                  "add": {
-                    "component_groups": [
-                      "minecraft:zombie_baby"
-                    ]
-  
-                  }
+                  "test": "is_family",
+                  "subject": "other",
+                  "value": "snowgolem"
+                },
+                {
+                  "test": "is_family",
+                  "subject": "other",
+                  "value": "irongolem"
                 }
               ]
             },
-            {
-              "add": {
-                "component_groups": [
-                  "spawn"
-                ]
-              }
-            }
+            "max_dist": 35
+          },
+          {
+            "filters": {
+              "any_of": [
+                {
+                  "test": "is_family",
+                  "subject": "other",
+                  "value": "villager"
+                },
+                {
+                  "test": "is_family",
+                  "subject": "other",
+                  "value": "wandering_trader"
+                }
+              ]
+            },
+            "max_dist": 35,
+            "must_see": false
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "is_family",
+                  "subject": "other",
+                  "value": "baby_turtle"
+                },
+                {
+                  "test": "in_water",
+                  "subject": "other",
+                  "operator": "!=",
+                  "value": true
+                }
+              ]
+            },
+            "max_dist": 35
+          }
+        ]
+      },
+      "minecraft:physics": {},
+      "minecraft:conditional_bandwidth_optimization": {}
+    },
+    "events": {
+      "death": {
+        "add": {
+          "component_groups": [
+            "death"
           ]
         },
-        "minecraft:as_adult": {
-          "add": {
-            "component_groups": [
-              "minecraft:zombie_adult"
-            ]
-          }
+        "remove": {
+          "component_groups": [
+            "stage_2",
+            "spawn",
+            "stage_3",
+            "attack_cooldown"
+          ]
+        }
+      },
+      "finish_death_animation": {
+        "queue_command": {
+          "command": "kill @s"
+        }
+      },
+      "stage_2": {
+        "add": {
+          "component_groups": [
+            "stage_2"
+          ]
         },
-        "minecraft:as_baby": {
-          "add": {
-            "component_groups": [
-              "minecraft:zombie_baby"
-            ]
-          }
+        "remove": {
+          "component_groups": [
+            "spawn"
+          ]
+        }
+      },
+      "stage_3": {
+        "add": {
+          "component_groups": [
+            "stage_3"
+          ]
         },
-        "start_event": {
-          "add": {
-            "component_groups": [
-              "attack_cooldown"
+        "remove": {
+          "component_groups": [
+            "stage_2"
+          ]
+        }
+      },
+      "minecraft:entity_spawned": {
+        "sequence": [
+          {
+            "randomize": [
+              {
+                "weight": 380,
+                "remove": {},
+                "add": {
+                  "component_groups": [
+                    "minecraft:zombie_adult"
+                  ]
+                }
+              },
+              {
+                "weight": 17,
+                "remove": {},
+                "add": {
+                  "component_groups": [
+                    "minecraft:zombie_baby"
+                  ]
+                }
+              }
             ]
+          },
+          {
+            "add": {
+              "component_groups": [
+                "spawn"
+              ]
+            }
           }
-        },
-        "attack_cooldown_complete_event": {
-          "remove": {
-            "component_groups": [
-              "attack_cooldown"
-            ]
-          }
+        ]
+      },
+      "minecraft:as_adult": {
+        "add": {
+          "component_groups": [
+            "minecraft:zombie_adult"
+          ]
+        }
+      },
+      "minecraft:as_baby": {
+        "add": {
+          "component_groups": [
+            "minecraft:zombie_baby"
+          ]
+        }
+      },
+      "start_event": {
+        "add": {
+          "component_groups": [
+            "attack_cooldown"
+          ]
+        }
+      },
+      "attack_cooldown_complete_event": {
+        "remove": {
+          "component_groups": [
+            "attack_cooldown"
+          ]
         }
       }
     }
   }
+}

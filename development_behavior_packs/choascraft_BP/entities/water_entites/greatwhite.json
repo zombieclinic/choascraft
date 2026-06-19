@@ -1,5 +1,5 @@
 {
-  "format_version": "1.26.20",
+  "format_version": "1.26.30",
   "minecraft:entity": {
     "description": {
       "identifier": "zombie:greatwhite_shark",
@@ -21,46 +21,45 @@
           "value": 0
         }
       },
-      "aggresive":{
-            "minecraft:behavior.nearest_attackable_target": {
-				"priority": 0,
-				"entity_types": [
-					{
-						"filters": 
-                        {
-                            "all_of": [
-                                {
-                                    "test": "is_family",
-                                    "value": "player",
-                                    "subject": "other"
-                                },
-                                {
-                                    "test": "is_riding",
-                                    "value": false,
-                                    "subject": "other"
-                                },
-                                {
-                                    "test": "rider_count",
-                                    "subject": "self",
-                                    "operator": "==",
-                                    "value": 0
-                                }
-                            ]
-                        },
-						"max_dist": 16
-					}
-				],
-				"must_see": true
-			},
-            "minecraft:behavior.melee_attack": {
-                "melee_fov": 90,
-                "track_target": false,
-                "random_stop_interval": 0,
-                "reach_multiplier": 2,
-                "attack_once": false,
-                "require_complete_path": false,
-                "cooldown_time": 2
+      "aggresive": {
+        "minecraft:behavior.nearest_attackable_target": {
+          "priority": 0,
+          "entity_types": [
+            {
+              "filters": {
+                "all_of": [
+                  {
+                    "test": "is_family",
+                    "value": "player",
+                    "subject": "other"
+                  },
+                  {
+                    "test": "is_riding",
+                    "value": false,
+                    "subject": "other"
+                  },
+                  {
+                    "test": "rider_count",
+                    "subject": "self",
+                    "operator": "==",
+                    "value": 0
+                  }
+                ]
+              },
+              "max_dist": 16
             }
+          ],
+          "must_see": true
+        },
+        "minecraft:behavior.melee_attack": {
+          "melee_fov": 90,
+          "track_target": false,
+          "random_stop_interval": 0,
+          "reach_multiplier": 2,
+          "attack_once": false,
+          "require_complete_path": false,
+          "cooldown_time": 2
+        }
       },
       "wild_shark": {
         "minecraft:behavior.mount_pathing": {
@@ -132,24 +131,24 @@
       },
       "tamed_shark": {
         "minecraft:behavior.breed": {
-					"priority": 1,
-					"speed_multiplier": 1
-				},
+          "priority": 1,
+          "speed_multiplier": 1
+        },
         "minecraft:breedable": {
-              "require_tame": false,
-              "breeds_with": {
-                  "zombie:greatwhite_shark": {
-                      "baby_type": "zombie:greatwhite_shark",
-                      "breed_event": {
-                          "event": "minecraft:entity_born",
-                          "target": "baby"
-                      }
-                  }
-              },
-              "breed_items": [
-                  "minecraft:salmon"
-              ]
+          "require_tame": false,
+          "breeds_with": {
+            "zombie:greatwhite_shark": {
+              "baby_type": "zombie:greatwhite_shark",
+              "breed_event": {
+                "event": "minecraft:entity_born",
+                "target": "baby"
+              }
+            }
           },
+          "breed_items": [
+            "minecraft:salmon"
+          ]
+        },
         "minecraft:interact": {
           "interactions": [
             {
@@ -199,7 +198,7 @@
                 "target": "self"
               }
             },
-             {
+            {
               "play_sounds": "converted_to_zombified",
               "use_item": true,
               "on_interact": {
@@ -343,14 +342,13 @@
       },
       "minecraft:breathable": {
         "total_supply": 15,
-        "suffocate_time": -20,
+        "suffocate_time": 0,
         "inhale_time": 0,
         "breathes_air": false,
         "breathes_water": true,
         "breathes_lava": false,
         "generates_bubbles": true
       },
-      
       "minecraft:behavior.melee_box_attack": {
         "can_spread_on_fire": true,
         "priority": 3
@@ -426,7 +424,7 @@
         "max": 48
       },
       "minecraft:experience_reward": {
-        "on_death": "!query.is_baby && query.last_hit_by_player ? Math.Random(1,10) : 0"
+        "on_death": "!query.is_baby \u0026\u0026 query.last_hit_by_player ? Math.Random(1,10) : 0"
       },
       "minecraft:behavior.swim_idle": {
         "priority": 5,
@@ -506,8 +504,8 @@
         "push_towards_closest_space": true
       },
       "minecraft:leashable": {
-         "can_be_cut": true,
-          "can_be_stolen": true,
+        "can_be_cut": true,
+        "can_be_stolen": true,
         "on_leash": {
           "event": "shark_leashed",
           "target": "self"

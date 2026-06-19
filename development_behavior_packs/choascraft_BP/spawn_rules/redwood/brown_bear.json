@@ -2,11 +2,12 @@
 	"format_version": "1.8.0",
 	"minecraft:spawn_rules": {
 		"description": {
-			"identifier": "zombie:brown_bear",
+			"identifier": "zombie:brown_bear_spawner",
 			"population_control": "animal"
 		},
 		"conditions": [
 			{
+				"minecraft:difficulty_filter": {"min": "easy", "max": "hard"},
 				"minecraft:spawns_on_surface": {},
 				"minecraft:weight": {
 					"default": 8

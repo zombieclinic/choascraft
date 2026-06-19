@@ -96,6 +96,21 @@
 		"zombie_demon_steel_ingot": {
 			"textures": "textures/demon/demon_steel_ingot"
 		},
+		"zombie_hell_sword": {
+			"textures": "textures/demon/item_mob/hell_sword"
+		},
+		"zombie_emberberrys": {
+			"textures": "textures/demon/plants/emberberrys"
+		},
+		"zombie_currupted_xp_orb": {
+			"textures": "textures/demon/drops/currupted_xp_orb"
+		},
+		"zombie_demon_ash": {
+			"textures": "textures/demon/drops/demon_ash"
+		},
+		"zombie_demon_heart": {
+			"textures": "textures/demon/drops/demon_heart"
+		},
 		"zombie_infected_sword": {
 			"textures": "textures/items/infect_armor/infected_sword"
 		},

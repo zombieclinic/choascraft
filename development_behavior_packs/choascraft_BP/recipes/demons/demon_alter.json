@@ -1,0 +1,41 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "zombie:demon_alter"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      " A ",
+      "DHD",
+      "DDD"
+    ],
+    "key": {
+      "A": {
+        "item": "zombie:demon_ash"
+      },
+      "D": {
+        "item": "zombie:demon_steel_ingot"
+      },
+      "H": {
+        "item": "zombie:demon_heart"
+      }
+    },
+    "result": [
+      {
+        "item": "zombie:demon_alter",
+        "count": 1
+      }
+    ],
+    "unlock": [
+      {
+        "item": "zombie:demon_heart"
+      },
+      {
+        "item": "zombie:demon_ash"
+      }
+    ]
+  }
+}

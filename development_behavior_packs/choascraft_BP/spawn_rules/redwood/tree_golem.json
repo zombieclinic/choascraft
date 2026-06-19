@@ -2,7 +2,7 @@
 	"format_version": "1.8.0",
 	"minecraft:spawn_rules": {
 		"description": {
-			"identifier": "zombie:tree_golem",
+			"identifier": "zombie:tree_golem_spawner",
 			"population_control": "animal"
 		},
 		"conditions": [

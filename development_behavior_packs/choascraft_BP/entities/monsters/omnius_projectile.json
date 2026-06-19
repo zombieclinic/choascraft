@@ -1,50 +1,49 @@
 {
-	"format_version": "1.26.20",
-	"minecraft:entity": {
-		"description": {
-			"identifier": "zombie:omnius_projectile",
-			"is_spawnable": false,
-			"is_summonable": true,
-			"runtime_identifier": "minecraft:arrow"
-		},
-		"components": {
-			"minecraft:collision_box": {
-				"width": 0.6,
-				"height": 0.6
-			},
-			"minecraft:projectile": {
-				"on_hit": {
-					"impact_damage": {
-						"damage": 12,
-						"knockback": true,
-						"destroy_on_hit": true
-					},
-					"mob_effect": {
-						"effect": "slowness",
-						"duration": 3,
-						"amplifier": 1
-					}
-				},
-				"power": 2.2,
-				"gravity": 0.01,
-				"uncertainty_base": 2,
-				"uncertainty_multiplier": 1,
-				"anchor": 1,
-				"should_bounce": false,
-				"offset": [
-					0,
-					0.8,
-					0
-				]
-			},
-			"minecraft:physics": {},
-			"minecraft:despawn": {
-				"despawn_from_inactivity": true,
-				"min_range_inactivity_timer": 4,
-				"despawn_from_distance": {
-					"max_distance": 64
-				}
-			}
-		}
-	}
+  "format_version": "1.26.30",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "zombie:omnius_projectile",
+      "is_spawnable": false,
+      "is_summonable": true
+    },
+    "components": {
+      "minecraft:collision_box": {
+        "width": 0.6,
+        "height": 0.6
+      },
+      "minecraft:projectile": {
+        "on_hit": {
+          "impact_damage": {
+            "damage": 12,
+            "knockback": true,
+            "destroy_on_hit": true
+          },
+          "mob_effect": {
+            "effect": "slowness",
+            "duration": 3,
+            "amplifier": 1
+          }
+        },
+        "power": 2.2,
+        "gravity": 0.01,
+        "uncertainty_base": 2,
+        "uncertainty_multiplier": 1,
+        "anchor": 1,
+        "should_bounce": false,
+        "offset": [
+          0,
+          0.8,
+          0
+        ]
+      },
+      "minecraft:physics": {},
+      "minecraft:despawn": {
+        "despawn_from_inactivity": true,
+        "min_range_inactivity_timer": 4,
+        "despawn_from_distance": {
+          "max_distance": 64
+        }
+      }
+    }
+  }
 }

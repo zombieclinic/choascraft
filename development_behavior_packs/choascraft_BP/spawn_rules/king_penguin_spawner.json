@@ -19,10 +19,6 @@
 					"min_size": 2,
 					"max_size": 5
 				},
-				"minecraft:distance_filter": {
-					"min": 24,
-					"max": 96
-				},
 				"minecraft:height_filter": {
 					"min": 60,
 					"max": 90

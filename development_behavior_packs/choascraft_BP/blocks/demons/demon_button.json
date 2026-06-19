@@ -176,12 +176,40 @@
           },
           "minecraft:redstone_producer": {
             "power": 0,
-            "strongly_powered_face": "north"
+            "strongly_powered_face": "south"
           }
         }
       },
       {
         "condition": "!q.block_state('zombie:powered') && q.block_state('minecraft:block_face') == 'east'",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [
+              0,
+              -90,
+              0
+            ]
+          },
+          "minecraft:selection_box": {
+            "origin": [
+              -3,
+              6,
+              6
+            ],
+            "size": [
+              6,
+              4,
+              2
+            ]
+          },
+          "minecraft:redstone_producer": {
+            "power": 0,
+            "strongly_powered_face": "south"
+          }
+        }
+      },
+      {
+        "condition": "!q.block_state('zombie:powered') && q.block_state('minecraft:block_face') == 'west'",
         "components": {
           "minecraft:transformation": {
             "rotation": [
@@ -204,35 +232,7 @@
           },
           "minecraft:redstone_producer": {
             "power": 0,
-            "strongly_powered_face": "west"
-          }
-        }
-      },
-      {
-        "condition": "!q.block_state('zombie:powered') && q.block_state('minecraft:block_face') == 'west'",
-        "components": {
-          "minecraft:transformation": {
-            "rotation": [
-              0,
-              270,
-              0
-            ]
-          },
-          "minecraft:selection_box": {
-            "origin": [
-              -3,
-              6,
-              6
-            ],
-            "size": [
-              6,
-              4,
-              2
-            ]
-          },
-          "minecraft:redstone_producer": {
-            "power": 0,
-            "strongly_powered_face": "east"
+            "strongly_powered_face": "south"
           }
         }
       },
@@ -247,10 +247,18 @@
             ],
             "size": [
               8,
-              2,
+              3,
               8
             ]
           },
+          "minecraft:tick": {
+            "interval_range": [
+              20,
+              20
+            ],
+            "looping": true
+          },
+          "zombie:button_release_tick": {},
           "minecraft:redstone_producer": {
             "power": 15,
             "strongly_powered_face": "down"
@@ -263,15 +271,23 @@
           "minecraft:selection_box": {
             "origin": [
               -4,
-              14,
+              13,
               -4
             ],
             "size": [
               8,
-              2,
+              3,
               8
             ]
           },
+          "minecraft:tick": {
+            "interval_range": [
+              20,
+              20
+            ],
+            "looping": true
+          },
+          "zombie:button_release_tick": {},
           "minecraft:redstone_producer": {
             "power": 15,
             "strongly_powered_face": "up"
@@ -292,17 +308,25 @@
             "origin": [
               -3,
               6,
-              7
+              6
             ],
             "size": [
               6,
               4,
-              1
+              2
             ]
           },
+          "minecraft:tick": {
+            "interval_range": [
+              20,
+              20
+            ],
+            "looping": true
+          },
+          "zombie:button_release_tick": {},
           "minecraft:redstone_producer": {
             "power": 15,
-            "strongly_powered_face": "south"
+            "strongly_powered_face": "north"
           }
         }
       },
@@ -320,22 +344,66 @@
             "origin": [
               -3,
               6,
-              7
+              6
             ],
             "size": [
               6,
               4,
-              1
+              2
             ]
           },
+          "minecraft:tick": {
+            "interval_range": [
+              20,
+              20
+            ],
+            "looping": true
+          },
+          "zombie:button_release_tick": {},
           "minecraft:redstone_producer": {
             "power": 15,
-            "strongly_powered_face": "north"
+            "strongly_powered_face": "south"
           }
         }
       },
       {
         "condition": "q.block_state('zombie:powered') && q.block_state('minecraft:block_face') == 'east'",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [
+              0,
+              -90,
+              0
+            ]
+          },
+          "minecraft:selection_box": {
+            "origin": [
+              -3,
+              6,
+              6
+            ],
+            "size": [
+              6,
+              4,
+              2
+            ]
+          },
+          "minecraft:tick": {
+            "interval_range": [
+              20,
+              20
+            ],
+            "looping": true
+          },
+          "zombie:button_release_tick": {},
+          "minecraft:redstone_producer": {
+            "power": 15,
+            "strongly_powered_face": "south"
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('zombie:powered') && q.block_state('minecraft:block_face') == 'west'",
         "components": {
           "minecraft:transformation": {
             "rotation": [
@@ -348,45 +416,25 @@
             "origin": [
               -3,
               6,
-              7
+              6
             ],
             "size": [
               6,
               4,
-              1
+              2
             ]
           },
-          "minecraft:redstone_producer": {
-            "power": 15,
-            "strongly_powered_face": "west"
-          }
-        }
-      },
-      {
-        "condition": "q.block_state('zombie:powered') && q.block_state('minecraft:block_face') == 'west'",
-        "components": {
-          "minecraft:transformation": {
-            "rotation": [
-              0,
-              270,
-              0
-            ]
-          },
-          "minecraft:selection_box": {
-            "origin": [
-              -3,
-              6,
-              7
+          "minecraft:tick": {
+            "interval_range": [
+              20,
+              20
             ],
-            "size": [
-              6,
-              4,
-              1
-            ]
+            "looping": true
           },
+          "zombie:button_release_tick": {},
           "minecraft:redstone_producer": {
             "power": 15,
-            "strongly_powered_face": "east"
+            "strongly_powered_face": "south"
           }
         }
       }

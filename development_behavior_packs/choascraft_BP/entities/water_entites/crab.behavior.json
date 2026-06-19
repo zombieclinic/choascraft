@@ -1,433 +1,433 @@
 {
-	"format_version": "1.26.20",
-	"minecraft:entity": {
-		"description": {
-			"identifier": "zombie:crab",
-			"is_spawnable": false,
-			"is_summonable": true,
-			"spawn_category": "misc"
-		},
-		"component_groups": {
-			"despawn": {
-				"minecraft:instant_despawn": {
-					"remove_child_entities": false
-				}
-			},
-			"crab_baby": {
-				"minecraft:is_baby": {},
-				"minecraft:scale": {
-					"value": 0.3
-				},
-				"minecraft:ageable": {
-					"duration": 1200,
-					"feed_items": [
-						{
-							"item": "minecraft:tropical_fish_bucket",
-							"growth": 0.1
-						},
-						{
-							"item": "minecraft:rotten_flesh",
-							"growth": 0.1
-						},
-						{
-							"item": "rotten_flesh",
-							"growth": 0.1
-						}
-					],
-					"grow_up": {
-						"event": "grow_up",
-						"target": "self"
-					}
-				},
-				"minecraft:behavior.follow_parent": {
-					"priority": 5,
-					"speed_multiplier": 1.1
-				}
-			},
-			"crab_adult": {
-				"minecraft:scale": {
-					"value": 1.5
-				},
-				"minecraft:experience_reward": {
-					"on_bred": "Math.Random(1,7)"
-				},
-				"minecraft:behavior.breed": {
-					"priority": 1,
-					"speed_multiplier": 1
-				},
-				"minecraft:breedable": {
-					"require_tame": false,
-					"breeds_with": {
-						"zombie:crab": {
-							"baby_type": "zombie:crab",
-							"breed_event": {
-								"event": "minecraft:entity_born",
-								"target": "baby"
-							}
-						}
-					},
-					"breed_items": [
-						"minecraft:tropical_fish_bucket"
-					]
-				}
-			},
-			"crab_treasure_ready": {
-				"minecraft:interact": {
-					"interactions": [
-						{
-							"on_interact": {
-								"filters": {
-									"all_of": [
-										{
-											"test": "is_family",
-											"subject": "other",
-											"value": "player"
-										},
-										{
-											"any_of": [
-												{
-													"test": "has_equipment",
-													"subject": "other",
-													"domain": "hand",
-													"value": "minecraft:rotten_flesh"
-												},
-												{
-													"test": "has_equipment",
-													"subject": "other",
-													"domain": "hand",
-													"value": "rotten_flesh"
-												}
-											]
-										},
-										{
-											"test": "is_variant",
-											"subject": "self",
-											"operator": "==",
-											"value": 0
-										}
-									]
-								},
-								"target": "self",
-								"event": "crab_start_digging"
-							},
-							"use_item": true,
-							"interact_text": "action.interact.feed"
-						},
-						{
-							"on_interact": {
-								"filters": {
-									"all_of": [
-										{
-											"test": "is_family",
-											"subject": "other",
-											"value": "player"
-										},
-										{
-											"test": "has_equipment",
-											"subject": "other",
-											"domain": "hand",
-											"value": "bucket"
-										}
-									]
-								},
-								"target": "self",
-								"event": "despawn"
-							},
-							"transform_to_item": "zombie:crab_bucket",
-							"use_item": true,
-							"play_sounds": "bucket.fill_fish"
-						}
-					]
-				},
-				"minecraft:variant": {
-					"value": 0
-				},
-				"minecraft:behavior.tempt": {
-					"priority": 3,
-					"speed_multiplier": 1.1,
-					"can_tempt_vertically": true,
-					"items": [
-						"minecraft:rotten_flesh",
-						"rotten_flesh"
-					]
-				}
-			},
-			"crab_treasure_cooldown": {
-				"minecraft:interact": {
-					"interactions": [
-						{
-							"on_interact": {
-								"filters": {
-									"all_of": [
-										{
-											"test": "is_family",
-											"subject": "other",
-											"value": "player"
-										},
-										{
-											"test": "has_equipment",
-											"subject": "other",
-											"domain": "hand",
-											"value": "bucket"
-										}
-									]
-								},
-								"target": "self",
-								"event": "despawn"
-							},
-							"transform_to_item": "zombie:crab_bucket",
-							"use_item": true,
-							"play_sounds": "bucket.fill_fish"
-						}
-					]
-				},
-				"minecraft:variant": {
-					"value": 1
-				},
-				"minecraft:timer": {
-					"looping": false,
-					"time": 30,
-					"time_down_event": {
-						"event": "crab_treasure_cooldown_finished",
-						"target": "self"
-					}
-				}
-			},
-			"crab_digging_for_treasure": {
-				"minecraft:behavior.random_search_and_dig": {
-					"priority": 0,
-					"speed_multiplier": 1.1,
-					"find_valid_position_retries": 12,
-					"target_blocks": [
-						"minecraft:sand",
-						"minecraft:red_sand"
-					],
-					"goal_radius": 1.5,
-					"search_range_xz": 18,
-					"search_range_y": 4,
-					"cooldown_range": {
-						"min": 0,
-						"max": 0
-					},
-					"digging_duration_range": {
-						"min": 5,
-						"max": 8
-					},
-					"item_table": "loot_tables/entities/crab/crab_digging.json",
-					"spawn_item_after_seconds": 4,
-					"spawn_item_pos_offset": 1.25,
-					"target_dig_position_offset": 1,
-					"on_success": {
-						"event": "crab_digging_finished",
-						"target": "self"
-					},
-					"on_fail_during_searching": {
-						"event": "crab_digging_finished",
-						"target": "self"
-					},
-					"on_fail_during_digging": {
-						"event": "crab_digging_finished",
-						"target": "self"
-					}
-				}
-			}
-		},
-		"components": {
-			"minecraft:type_family": {
-				"family": [
-					"crab",
-					"mob",
-					"aquatic"
-				]
-			},
-			"minecraft:loot": {
-				"table": "loot_tables/entities/crab/crab.json"
-			},
-			"minecraft:underwater_movement": {
-				"value": 0.1
-			},
-			"minecraft:collision_box": {
-				"width": 1,
-				"height": 0.42
-			},
-			"minecraft:is_hidden_when_invisible": {},
-			"minecraft:experience_reward": {
-				"on_bred": "Math.Random(1,7)"
-			},
-			"minecraft:nameable": {},
-			"minecraft:health": {
-				"value": 20,
-				"max": 20
-			},
-			"minecraft:damage_sensor": {
-				"triggers": {
-					"cause": "lightning",
-					"deals_damage": "yes",
-					"damage_multiplier": 2000
-				}
-			},
-			"minecraft:preferred_path": {
-				"preferred_path_blocks": [
-					{
-						"blocks": [
-							"minecraft:sand"
-						]
-					}
-				]
-			},
-			"minecraft:hurt_on_condition": {
-				"damage_conditions": [
-					{
-						"filters": {
-							"test": "in_lava",
-							"subject": "self",
-							"operator": "==",
-							"value": true
-						},
-						"cause": "lava",
-						"damage_per_tick": 4
-					}
-				]
-			},
-			"minecraft:behavior.melee_attack": {
-				"priority": 4
-			},
-			"minecraft:behavior.move_to_land": {
-				"priority": 6,
-				"goal_radius": 1.5,
-				"search_count": 0,
-				"search_height": 8,
-				"search_range": 24,
-				"speed_multiplier": 1.1
-			},
-			"minecraft:behavior.random_stroll": {
-				"priority": 9,
-				"speed_multiplier": 0.75,
-				"interval": 30
-			},
-			"minecraft:movement.amphibious": {},
-			"minecraft:navigation.generic": {
-				"is_amphibious": true,
-				"can_path_over_water": true,
-				"can_swim": true,
-				"can_walk": true,
-				"can_sink": false,
-				"avoid_damage_blocks": true
-			},
-			"minecraft:movement": {
-				"value": 0.2
-			},
-			"minecraft:jump.static": {},
-			"minecraft:physics": {},
-			"minecraft:leashable": {
-				"can_be_cut": true,
-				"can_be_stolen": false,
-				"presets": [
-					{
-						"soft_distance": 4,
-						"hard_distance": 6,
-						"max_distance": 10
-					}
-				]
-			},
-			"minecraft:despawn": {
-				"despawn_from_distance": {}
-			},
-			"minecraft:attack": {
-				"damage": 3
-			},
-			"minecraft:combat_regeneration": {}
-		},
-		"events": {
-			"minecraft:entity_spawned": {
-				"randomize": [
-					{
-						"weight": 2,
-						"add": {
-							"component_groups": [
-								"crab_adult",
-								"crab_treasure_ready"
-							]
-						}
-					},
-					{
-						"weight": 1,
-						"add": {
-							"component_groups": [
-								"crab_baby"
-							]
-						}
-					}
-				]
-			},
-			"minecraft:entity_born": {
-				"add": {
-					"component_groups": [
-						"crab_baby"
-					]
-				}
-			},
-			"grow_up": {
-				"remove": {
-					"component_groups": [
-						"crab_baby"
-					]
-				},
-				"add": {
-					"component_groups": [
-						"crab_adult",
-						"crab_treasure_ready"
-					]
-				}
-			},
-			"zombie:from_bucket": {
-				"add": {
-					"component_groups": [
-						"crab_adult",
-						"crab_treasure_ready"
-					]
-				}
-			},
-			"despawn": {
-				"add": {
-					"component_groups": [
-						"despawn"
-					]
-				}
-			},
-			"crab_start_digging": {
-				"remove": {
-					"component_groups": [
-						"crab_treasure_ready",
-						"crab_treasure_cooldown"
-					]
-				},
-				"add": {
-					"component_groups": [
-						"crab_digging_for_treasure",
-						"crab_treasure_cooldown"
-					]
-				}
-			},
-			"crab_digging_finished": {
-				"remove": {
-					"component_groups": [
-						"crab_digging_for_treasure"
-					]
-				}
-			},
-			"crab_treasure_cooldown_finished": {
-				"remove": {
-					"component_groups": [
-						"crab_treasure_cooldown"
-					]
-				},
-				"add": {
-					"component_groups": [
-						"crab_treasure_ready"
-					]
-				}
-			}
-		}
-	}
+  "format_version": "1.26.30",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "zombie:crab",
+      "is_spawnable": false,
+      "is_summonable": true,
+      "spawn_category": "misc"
+    },
+    "component_groups": {
+      "despawn": {
+        "minecraft:instant_despawn": {
+          "remove_child_entities": false
+        }
+      },
+      "crab_baby": {
+        "minecraft:is_baby": {},
+        "minecraft:scale": {
+          "value": 0.3
+        },
+        "minecraft:ageable": {
+          "duration": 1200,
+          "feed_items": [
+            {
+              "item": "minecraft:tropical_fish_bucket",
+              "growth": 0.1
+            },
+            {
+              "item": "minecraft:rotten_flesh",
+              "growth": 0.1
+            },
+            {
+              "item": "rotten_flesh",
+              "growth": 0.1
+            }
+          ],
+          "grow_up": {
+            "event": "grow_up",
+            "target": "self"
+          }
+        },
+        "minecraft:behavior.follow_parent": {
+          "priority": 5,
+          "speed_multiplier": 1.1
+        }
+      },
+      "crab_adult": {
+        "minecraft:scale": {
+          "value": 1.5
+        },
+        "minecraft:experience_reward": {
+          "on_bred": "Math.Random(1,7)"
+        },
+        "minecraft:behavior.breed": {
+          "priority": 1,
+          "speed_multiplier": 1
+        },
+        "minecraft:breedable": {
+          "require_tame": false,
+          "breeds_with": {
+            "zombie:crab": {
+              "baby_type": "zombie:crab",
+              "breed_event": {
+                "event": "minecraft:entity_born",
+                "target": "baby"
+              }
+            }
+          },
+          "breed_items": [
+            "minecraft:tropical_fish_bucket"
+          ]
+        }
+      },
+      "crab_treasure_ready": {
+        "minecraft:interact": {
+          "interactions": [
+            {
+              "on_interact": {
+                "filters": {
+                  "all_of": [
+                    {
+                      "test": "is_family",
+                      "subject": "other",
+                      "value": "player"
+                    },
+                    {
+                      "any_of": [
+                        {
+                          "test": "has_equipment",
+                          "subject": "other",
+                          "domain": "hand",
+                          "value": "minecraft:rotten_flesh"
+                        },
+                        {
+                          "test": "has_equipment",
+                          "subject": "other",
+                          "domain": "hand",
+                          "value": "rotten_flesh"
+                        }
+                      ]
+                    },
+                    {
+                      "test": "is_variant",
+                      "subject": "self",
+                      "operator": "==",
+                      "value": 0
+                    }
+                  ]
+                },
+                "target": "self",
+                "event": "crab_start_digging"
+              },
+              "use_item": true,
+              "interact_text": "action.interact.feed"
+            },
+            {
+              "on_interact": {
+                "filters": {
+                  "all_of": [
+                    {
+                      "test": "is_family",
+                      "subject": "other",
+                      "value": "player"
+                    },
+                    {
+                      "test": "has_equipment",
+                      "subject": "other",
+                      "domain": "hand",
+                      "value": "bucket"
+                    }
+                  ]
+                },
+                "target": "self",
+                "event": "despawn"
+              },
+              "transform_to_item": "zombie:crab_bucket",
+              "use_item": true,
+              "play_sounds": "bucket.fill_fish"
+            }
+          ]
+        },
+        "minecraft:variant": {
+          "value": 0
+        },
+        "minecraft:behavior.tempt": {
+          "priority": 3,
+          "speed_multiplier": 1.1,
+          "can_tempt_vertically": true,
+          "items": [
+            "minecraft:rotten_flesh",
+            "rotten_flesh"
+          ]
+        }
+      },
+      "crab_treasure_cooldown": {
+        "minecraft:interact": {
+          "interactions": [
+            {
+              "on_interact": {
+                "filters": {
+                  "all_of": [
+                    {
+                      "test": "is_family",
+                      "subject": "other",
+                      "value": "player"
+                    },
+                    {
+                      "test": "has_equipment",
+                      "subject": "other",
+                      "domain": "hand",
+                      "value": "bucket"
+                    }
+                  ]
+                },
+                "target": "self",
+                "event": "despawn"
+              },
+              "transform_to_item": "zombie:crab_bucket",
+              "use_item": true,
+              "play_sounds": "bucket.fill_fish"
+            }
+          ]
+        },
+        "minecraft:variant": {
+          "value": 1
+        },
+        "minecraft:timer": {
+          "looping": false,
+          "time": 30,
+          "time_down_event": {
+            "event": "crab_treasure_cooldown_finished",
+            "target": "self"
+          }
+        }
+      },
+      "crab_digging_for_treasure": {
+        "minecraft:behavior.random_search_and_dig": {
+          "priority": 0,
+          "speed_multiplier": 1.1,
+          "find_valid_position_retries": 12,
+          "target_blocks": [
+            "minecraft:sand",
+            "minecraft:red_sand"
+          ],
+          "goal_radius": 1.5,
+          "search_range_xz": 18,
+          "search_range_y": 4,
+          "cooldown_range": {
+            "min": 0,
+            "max": 0
+          },
+          "digging_duration_range": {
+            "min": 5,
+            "max": 8
+          },
+          "item_table": "loot_tables/entities/crab/crab_digging.json",
+          "spawn_item_after_seconds": 4,
+          "spawn_item_pos_offset": 1.25,
+          "target_dig_position_offset": 1,
+          "on_success": {
+            "event": "crab_digging_finished",
+            "target": "self"
+          },
+          "on_fail_during_searching": {
+            "event": "crab_digging_finished",
+            "target": "self"
+          },
+          "on_fail_during_digging": {
+            "event": "crab_digging_finished",
+            "target": "self"
+          }
+        }
+      }
+    },
+    "components": {
+      "minecraft:type_family": {
+        "family": [
+          "crab",
+          "mob",
+          "aquatic"
+        ]
+      },
+      "minecraft:loot": {
+        "table": "loot_tables/entities/crab/crab.json"
+      },
+      "minecraft:underwater_movement": {
+        "value": 0.1
+      },
+      "minecraft:collision_box": {
+        "width": 1,
+        "height": 0.42
+      },
+      "minecraft:is_hidden_when_invisible": {},
+      "minecraft:experience_reward": {
+        "on_bred": "Math.Random(1,7)"
+      },
+      "minecraft:nameable": {},
+      "minecraft:health": {
+        "value": 20,
+        "max": 20
+      },
+      "minecraft:damage_sensor": {
+        "triggers": {
+          "cause": "lightning",
+          "deals_damage": "yes",
+          "damage_multiplier": 2000
+        }
+      },
+      "minecraft:preferred_path": {
+        "preferred_path_blocks": [
+          {
+            "blocks": [
+              "minecraft:sand"
+            ]
+          }
+        ]
+      },
+      "minecraft:hurt_on_condition": {
+        "damage_conditions": [
+          {
+            "filters": {
+              "test": "in_lava",
+              "subject": "self",
+              "operator": "==",
+              "value": true
+            },
+            "cause": "lava",
+            "damage_per_tick": 4
+          }
+        ]
+      },
+      "minecraft:behavior.melee_attack": {
+        "priority": 4
+      },
+      "minecraft:behavior.move_to_land": {
+        "priority": 6,
+        "goal_radius": 1.5,
+        "search_count": 0,
+        "search_height": 8,
+        "search_range": 24,
+        "speed_multiplier": 1.1
+      },
+      "minecraft:behavior.random_stroll": {
+        "priority": 9,
+        "speed_multiplier": 0.75,
+        "interval": 30
+      },
+      "minecraft:movement.amphibious": {},
+      "minecraft:navigation.generic": {
+        "is_amphibious": true,
+        "can_path_over_water": true,
+        "can_swim": true,
+        "can_walk": true,
+        "can_sink": false,
+        "avoid_damage_blocks": true
+      },
+      "minecraft:movement": {
+        "value": 0.2
+      },
+      "minecraft:jump.static": {},
+      "minecraft:physics": {},
+      "minecraft:leashable": {
+        "can_be_cut": true,
+        "can_be_stolen": false,
+        "presets": [
+          {
+            "soft_distance": 4,
+            "hard_distance": 6,
+            "max_distance": 10
+          }
+        ]
+      },
+      "minecraft:despawn": {
+        "despawn_from_distance": {}
+      },
+      "minecraft:attack": {
+        "damage": 3
+      },
+      "minecraft:combat_regeneration": {}
+    },
+    "events": {
+      "minecraft:entity_spawned": {
+        "randomize": [
+          {
+            "weight": 2,
+            "add": {
+              "component_groups": [
+                "crab_adult",
+                "crab_treasure_ready"
+              ]
+            }
+          },
+          {
+            "weight": 1,
+            "add": {
+              "component_groups": [
+                "crab_baby"
+              ]
+            }
+          }
+        ]
+      },
+      "minecraft:entity_born": {
+        "add": {
+          "component_groups": [
+            "crab_baby"
+          ]
+        }
+      },
+      "grow_up": {
+        "remove": {
+          "component_groups": [
+            "crab_baby"
+          ]
+        },
+        "add": {
+          "component_groups": [
+            "crab_adult",
+            "crab_treasure_ready"
+          ]
+        }
+      },
+      "zombie:from_bucket": {
+        "add": {
+          "component_groups": [
+            "crab_adult",
+            "crab_treasure_ready"
+          ]
+        }
+      },
+      "despawn": {
+        "add": {
+          "component_groups": [
+            "despawn"
+          ]
+        }
+      },
+      "crab_start_digging": {
+        "remove": {
+          "component_groups": [
+            "crab_treasure_ready",
+            "crab_treasure_cooldown"
+          ]
+        },
+        "add": {
+          "component_groups": [
+            "crab_digging_for_treasure",
+            "crab_treasure_cooldown"
+          ]
+        }
+      },
+      "crab_digging_finished": {
+        "remove": {
+          "component_groups": [
+            "crab_digging_for_treasure"
+          ]
+        }
+      },
+      "crab_treasure_cooldown_finished": {
+        "remove": {
+          "component_groups": [
+            "crab_treasure_cooldown"
+          ]
+        },
+        "add": {
+          "component_groups": [
+            "crab_treasure_ready"
+          ]
+        }
+      }
+    }
+  }
 }

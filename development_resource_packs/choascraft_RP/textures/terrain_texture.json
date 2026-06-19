@@ -257,6 +257,21 @@
                          "zombie_corrupted_grass":  {
                                                         "textures":  "textures/demon/grass/corrupted_grass_5"
                                                     },
+                         "zombie_emberberry_0":  {
+                                                    "textures":  "textures/demon/plants/emberberry_0"
+                                                },
+                         "zombie_emberberry_1":  {
+                                                    "textures":  "textures/demon/plants/emberberry_1"
+                                                },
+                         "zombie_emberberry_2":  {
+                                                    "textures":  "textures/demon/plants/emberberry_2"
+                                                },
+                         "zombie_emberberry_3":  {
+                                                    "textures":  "textures/demon/plants/emberberry_3"
+                                                },
+                         "zombie_emberberry_4":  {
+                                                    "textures":  "textures/demon/plants/emberberry_4"
+                                                },
                          "zombie_demon_stone":  {
                                                     "textures":  "textures/demon/demon_stone"
                                                 },

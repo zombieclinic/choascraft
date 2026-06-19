@@ -1,137 +1,132 @@
 {
-    "format_version":  "1.26.20",
-    "minecraft:entity":  {
-                             "description":  {
-                                                 "identifier":  "zombie:demon_arrow",
-                                                 "is_summonable":  true,
-                                                 "is_spawnable":  true,
-                                                 "runtime_identifier":  "arrow",
-                                                 "animations":  {
-                                                                    "burn":  "controller.animation.zombie_demon_arrow"
-                                                                },
-                                                 "scripts":  {
-                                                                 "animate":  [
-                                                                                 "burn"
-                                                                             ]
-                                                             }
-                                             },
-                             "component_groups":  {
-                                                      "zombie":  {
-                                                                     "minecraft:skin_id":  {
-                                                                                               "value":  1
-                                                                                           }
-                                                                 },
-                                                      "despawn":  {
-                                                                      "minecraft:instant_despawn":  {
-
-                                                                                                    }
-                                                                  }
-                                                  },
-                             "components":  {
-                                                "minecraft:type_family":  {
-                                                                              "family":  [
-                                                                                             "demon_arrow"
-                                                                                         ]
-                                                                          },
-                                                "minecraft:collision_box":  {
-                                                                                "width":  1,
-                                                                                "height":  0.25
-                                                                            },
-                                                "minecraft:hurt_on_condition":  {
-                                                                                    "damage_conditions":  [
-                                                                                                              {
-                                                                                                                  "filters":  {
-                                                                                                                                  "test":  "in_lava",
-                                                                                                                                  "subject":  "self",
-                                                                                                                                  "operator":  "==",
-                                                                                                                                  "value":  true
-                                                                                                                              },
-                                                                                                                  "cause":  "lava",
-                                                                                                                  "damage_per_tick":  4
-                                                                                                              }
-                                                                                                          ]
-                                                                                },
-                                                "minecraft:environment_sensor":  {
-                                                                                     "triggers":  [
-                                                                                                      {
-                                                                                                          "event":  "zombie",
-                                                                                                          "target":  "self",
-                                                                                                          "filters":  {
-                                                                                                                          "test":  "in_water",
-                                                                                                                          "value":  true
-                                                                                                                      }
-                                                                                                      }
-                                                                                                  ]
-                                                                                 },
-                                                "minecraft:projectile":  {
-                                                                             "on_hit":  {
-                                                                                            "impact_damage":  {
-                                                                                                                  "damage":  [
-                                                                                                                                 3,
-                                                                                                                                 10
-                                                                                                                             ],
-                                                                                                                  "knockback":  true,
-                                                                                                                  "semi_random_diff_damage":  false,
-                                                                                                                  "destroy_on_hit":  false
-                                                                                                              },
-                                                                                            "mob_effect":  {
-                                                                                                               "effect":  "weaving",
-                                                                                                               "duration":  5,
-                                                                                                               "amplifier":  0
-                                                                                                           },
-                                                                                            "definition_event":  {
-                                                                                                                     "event_trigger":  {
-                                                                                                                                           "target":  "self",
-                                                                                                                                           "event":  "zombie"
-                                                                                                                                       }
-                                                                                                                 }
-                                                                                        },
-                                                                             "hit_sound":  "attack.strong",
-                                                                             "power":  1.6,
-                                                                             "gravity":  0.05,
-                                                                             "uncertainty_base":  16,
-                                                                             "uncertainty_multiplier":  4,
-                                                                             "anchor":  1,
-                                                                             "should_bounce":  false,
-                                                                             "offset":  [
-                                                                                            0,
-                                                                                            -0.1,
-                                                                                            0
-                                                                                        ]
-                                                                         },
-                                                "minecraft:physics":  {
-
-                                                                      },
-                                                "minecraft:conditional_bandwidth_optimization":  {
-                                                                                                     "default_values":  {
-                                                                                                                            "max_optimized_distance":  80,
-                                                                                                                            "max_dropped_ticks":  10,
-                                                                                                                            "use_motion_prediction_hints":  true
-                                                                                                                        }
-                                                                                                 },
-                                                "minecraft:despawn":  {
-                                                                          "despawn_from_inactivity":  true,
-                                                                          "min_range_inactivity_timer":  5,
-                                                                          "despawn_from_distance":  {
-                                                                                                        "max_distance":  25
-                                                                                                    }
-                                                                      }
-                                            },
-                             "events":  {
-                                            "zombie":  {
-                                                           "add":  {
-                                                                       "component_groups":  [
-                                                                                                "zombie"
-                                                                                            ]
-                                                                   }
-                                                       },
-                                            "despawn":  {
-                                                            "add":  {
-                                                                        "component_groups":  [
-                                                                                                 "despawn"
-                                                                                             ]
-                                                                    }
-                                                        }
-                                        }
-                         }
+  "format_version": "1.26.30",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "zombie:demon_arrow",
+      "is_summonable": true,
+      "is_spawnable": true,
+      "animations": {
+        "burn": "controller.animation.zombie_demon_arrow"
+      },
+      "scripts": {
+        "animate": [
+          "burn"
+        ]
+      }
+    },
+    "component_groups": {
+      "zombie": {
+        "minecraft:skin_id": {
+          "value": 1
+        }
+      },
+      "despawn": {
+        "minecraft:instant_despawn": {}
+      }
+    },
+    "components": {
+      "minecraft:type_family": {
+        "family": [
+          "demon_arrow"
+        ]
+      },
+      "minecraft:collision_box": {
+        "width": 1,
+        "height": 0.25
+      },
+      "minecraft:hurt_on_condition": {
+        "damage_conditions": [
+          {
+            "filters": {
+              "test": "in_lava",
+              "subject": "self",
+              "operator": "==",
+              "value": true
+            },
+            "cause": "lava",
+            "damage_per_tick": 4
+          }
+        ]
+      },
+      "minecraft:environment_sensor": {
+        "triggers": [
+          {
+            "event": "zombie",
+            "target": "self",
+            "filters": {
+              "test": "in_water",
+              "value": true
+            }
+          }
+        ]
+      },
+      "minecraft:projectile": {
+        "on_hit": {
+          "impact_damage": {
+            "damage": [
+              3,
+              10
+            ],
+            "knockback": true,
+            "semi_random_diff_damage": false,
+            "destroy_on_hit": false
+          },
+          "mob_effect": {
+            "effect": "weaving",
+            "duration": 5,
+            "amplifier": 0
+          },
+          "definition_event": {
+            "event_trigger": {
+              "target": "self",
+              "event": "zombie"
+            }
+          }
+        },
+        "hit_sound": "attack.strong",
+        "power": 1.6,
+        "gravity": 0.05,
+        "uncertainty_base": 16,
+        "uncertainty_multiplier": 4,
+        "anchor": 1,
+        "should_bounce": false,
+        "offset": [
+          0,
+          -0.1,
+          0
+        ]
+      },
+      "minecraft:physics": {},
+      "minecraft:conditional_bandwidth_optimization": {
+        "default_values": {
+          "max_optimized_distance": 80,
+          "max_dropped_ticks": 10,
+          "use_motion_prediction_hints": true
+        }
+      },
+      "minecraft:despawn": {
+        "despawn_from_inactivity": true,
+        "min_range_inactivity_timer": 5,
+        "despawn_from_distance": {
+          "max_distance": 25
+        }
+      }
+    },
+    "events": {
+      "zombie": {
+        "add": {
+          "component_groups": [
+            "zombie"
+          ]
+        }
+      },
+      "despawn": {
+        "add": {
+          "component_groups": [
+            "despawn"
+          ]
+        }
+      }
+    }
+  }
 }

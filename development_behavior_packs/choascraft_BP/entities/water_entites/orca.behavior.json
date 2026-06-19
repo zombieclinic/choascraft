@@ -1,5 +1,5 @@
 {
-  "format_version": "1.26.20",
+  "format_version": "1.26.30",
   "minecraft:entity": {
     "description": {
       "identifier": "zombie:orca",
@@ -91,23 +91,23 @@
       },
       "tamed_orca": {
         "minecraft:behavior.breed": {
-					"priority": 1,
-					"speed_multiplier": 1
-				},
+          "priority": 1,
+          "speed_multiplier": 1
+        },
         "minecraft:breedable": {
-            "require_tame": false,
-            "breeds_with": {
-                "zombie:orca": {
-                    "baby_type": "zombie:orca",
-                    "breed_event": {
-                        "event": "minecraft:entity_born",
-                        "target": "baby"
-                    }
-                }
-            },
-            "breed_items": [
-                "minecraft:salmon"
-            ]
+          "require_tame": false,
+          "breeds_with": {
+            "zombie:orca": {
+              "baby_type": "zombie:orca",
+              "breed_event": {
+                "event": "minecraft:entity_born",
+                "target": "baby"
+              }
+            }
+          },
+          "breed_items": [
+            "minecraft:salmon"
+          ]
         },
         "minecraft:interact": {
           "interactions": [
@@ -158,7 +158,7 @@
                 "target": "self"
               }
             },
-             {
+            {
               "play_sounds": "converted_to_zombified",
               "use_item": true,
               "on_interact": {
@@ -303,7 +303,7 @@
       },
       "minecraft:breathable": {
         "total_supply": 15,
-        "suffocate_time": -20,
+        "suffocate_time": 0,
         "inhale_time": 0,
         "breathes_air": false,
         "breathes_water": true,
@@ -388,7 +388,7 @@
         "max": 48
       },
       "minecraft:experience_reward": {
-        "on_death": "!query.is_baby && query.last_hit_by_player ? Math.Random(1,10) : 0"
+        "on_death": "!query.is_baby \u0026\u0026 query.last_hit_by_player ? Math.Random(1,10) : 0"
       },
       "minecraft:behavior.swim_idle": {
         "priority": 5,

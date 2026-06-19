@@ -1,0 +1,8 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:texture_set": {
+		"color": "blood_block",
+		"metalness_emissive_roughness": "blood_block_mer",
+		"normal": "blood_block_normal"
+	}
+}

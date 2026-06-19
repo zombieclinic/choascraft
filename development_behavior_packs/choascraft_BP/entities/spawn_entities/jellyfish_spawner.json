@@ -1,279 +1,279 @@
 {
-	"format_version": "1.26.20",
-	"minecraft:entity": {
-		"description": {
-			"identifier": "zombie:masterjellyfish",
-			"is_spawnable": true,
-			"is_summonable": true,
-			"is_experimental": false
-		},
-		"component_groups": {
-			"red": {
-				"minecraft:spawn_entity": {
-					"entities": [
-						{
-							"num_to_spawn": 1,
-							"min_wait_time": 0,
-							"max_wait_time": 0,
-							"single_use": true,
-							"should_leash": false,
-							"spawn_entity": "zombie:black_jelly_fish",
-							"spawn_event": "minecraft:entity_spawned"
-						}
-					]
-				},
-				"minecraft:timer": {
-					"time": [
-						0.1,
-						0.1
-					],
-					"time_down_event": {
-						"event": "despawn"
-					}
-				}
-			},
-			"blue": {
-				"minecraft:spawn_entity": {
-					"entities": [
-						{
-							"num_to_spawn": 1,
-							"min_wait_time": 0,
-							"max_wait_time": 0,
-							"single_use": true,
-							"should_leash": false,
-							"spawn_entity": "zombie:green_jelly_fish",
-							"spawn_event": "minecraft:entity_spawned"
-						}
-					]
-				},
-				"minecraft:timer": {
-					"time": [
-						0.1,
-						0.1
-					],
-					"time_down_event": {
-						"event": "despawn"
-					}
-				}
-			},
-			"yellow": {
-				"minecraft:spawn_entity": {
-					"entities": [
-						{
-							"num_to_spawn": 1,
-							"min_wait_time": 0,
-							"max_wait_time": 0,
-							"single_use": true,
-							"should_leash": false,
-							"spawn_entity": "zombie:purple_jelly_fish",
-							"spawn_event": "minecraft:entity_spawned"
-						}
-					]
-				},
-				"minecraft:timer": {
-					"time": [
-						0.1,
-						0.1
-					],
-					"time_down_event": {
-						"event": "despawn"
-					}
-				}
-			},
-			"lunar": {
-				"minecraft:spawn_entity": {
-					"entities": [
-						{
-							"num_to_spawn": 1,
-							"min_wait_time": 0,
-							"max_wait_time": 0,
-							"single_use": true,
-							"should_leash": false,
-							"spawn_entity": "zombie:yellow_jelly_fish",
-							"spawn_event": "minecraft:entity_spawned"
-						}
-					]
-				},
-				"minecraft:timer": {
-					"time": [
-						0.1,
-						0.1
-					],
-					"time_down_event": {
-						"event": "despawn"
-					}
-				}
-			},
-			"despawn": {
-				"minecraft:instant_despawn": {}
-			}
-		},
-		"components": {
-			"minecraft:type_family": {
-				"family": [
-					"mob",
-					"fish",
-					"jellyfish"
-				]
-			},
-			"minecraft:collision_box": {
-				"width": 2,
-				"height": 0.3
-			},
-			"minecraft:conditional_bandwidth_optimization": {},
-			"minecraft:follow_range": {
-				"value": 1024
-			},
-			"minecraft:damage_sensor": {
-				"triggers": {
-					"cause": "fall",
-					"deals_damage": "no"
-				}
-			},
-			"minecraft:hurt_on_condition": {
-				"damage_conditions": [
-					{
-						"filters": {
-							"test": "in_lava",
-							"subject": "self",
-							"operator": "==",
-							"value": true
-						},
-						"cause": "lava",
-						"damage_per_tick": 4
-					}
-				]
-			},
-			"minecraft:jump.static": {},
-			"minecraft:health": {
-				"value": 1,
-				"max": 1
-			},
-			"minecraft:nameable": {},
-			"minecraft:physics": {},
-			"minecraft:despawn": {
-				"despawn_from_distance": {}
-			},
-			"minecraft:scale": {
-				"value": 0
-			}
-		},
-		"events": {
-			"minecraft:entity_spawned": {
-				"sequence": [
-					{
-						"randomize": [
-							{
-								"weight": 25,
-								"add": {
-									"component_groups": [
-										"red"
-									]
-								}
-							},
-							{
-								"weight": 25,
-								"add": {
-									"component_groups": [
-										"blue"
-									]
-								}
-							},
-							{
-								"weight": 25,
-								"add": {
-									"component_groups": [
-										"yellow"
-									]
-								}
-							},
-							{
-								"weight": 25,
-								"add": {
-									"component_groups": [
-										"lunar"
-									]
-								}
-							}
-						]
-					}
-				]
-			},
-			"minecraft:entity_born": {
-				"sequence": [
-					{
-						"randomize": [
-							{
-								"weight": 25,
-								"add": {
-									"component_groups": [
-										"red"
-									]
-								}
-							},
-							{
-								"weight": 25,
-								"add": {
-									"component_groups": [
-										"blue"
-									]
-								}
-							},
-							{
-								"weight": 25,
-								"add": {
-									"component_groups": [
-										"yellow"
-									]
-								}
-							},
-							{
-								"weight": 25,
-								"add": {
-									"component_groups": [
-										"lunar"
-									]
-								}
-							}
-						]
-					}
-				]
-			},
-			"blue": {
-				"add": {
-					"component_groups": [
-						"blue"
-					]
-				}
-			},
-			"red": {
-				"add": {
-					"component_groups": [
-						"red"
-					]
-				}
-			},
-			"yellow": {
-				"add": {
-					"component_groups": [
-						"yellow"
-					]
-				}
-			},
-			"lunar": {
-				"add": {
-					"component_groups": [
-						"lunar"
-					]
-				}
-			},
-			"despawn": {
-				"add": {
-					"component_groups": [
-						"despawn"
-					]
-				}
-			}
-		}
-	}
+  "format_version": "1.26.30",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "zombie:masterjellyfish",
+      "is_spawnable": true,
+      "is_summonable": true,
+      "is_experimental": false
+    },
+    "component_groups": {
+      "red": {
+        "minecraft:spawn_entity": {
+          "entities": [
+            {
+              "num_to_spawn": 1,
+              "min_wait_time": 0,
+              "max_wait_time": 0,
+              "single_use": true,
+              "should_leash": false,
+              "spawn_entity": "zombie:black_jelly_fish",
+              "spawn_event": "minecraft:entity_spawned"
+            }
+          ]
+        },
+        "minecraft:timer": {
+          "time": [
+            0.1,
+            0.1
+          ],
+          "time_down_event": {
+            "event": "despawn"
+          }
+        }
+      },
+      "blue": {
+        "minecraft:spawn_entity": {
+          "entities": [
+            {
+              "num_to_spawn": 1,
+              "min_wait_time": 0,
+              "max_wait_time": 0,
+              "single_use": true,
+              "should_leash": false,
+              "spawn_entity": "zombie:green_jelly_fish",
+              "spawn_event": "minecraft:entity_spawned"
+            }
+          ]
+        },
+        "minecraft:timer": {
+          "time": [
+            0.1,
+            0.1
+          ],
+          "time_down_event": {
+            "event": "despawn"
+          }
+        }
+      },
+      "yellow": {
+        "minecraft:spawn_entity": {
+          "entities": [
+            {
+              "num_to_spawn": 1,
+              "min_wait_time": 0,
+              "max_wait_time": 0,
+              "single_use": true,
+              "should_leash": false,
+              "spawn_entity": "zombie:purple_jelly_fish",
+              "spawn_event": "minecraft:entity_spawned"
+            }
+          ]
+        },
+        "minecraft:timer": {
+          "time": [
+            0.1,
+            0.1
+          ],
+          "time_down_event": {
+            "event": "despawn"
+          }
+        }
+      },
+      "lunar": {
+        "minecraft:spawn_entity": {
+          "entities": [
+            {
+              "num_to_spawn": 1,
+              "min_wait_time": 0,
+              "max_wait_time": 0,
+              "single_use": true,
+              "should_leash": false,
+              "spawn_entity": "zombie:yellow_jelly_fish",
+              "spawn_event": "minecraft:entity_spawned"
+            }
+          ]
+        },
+        "minecraft:timer": {
+          "time": [
+            0.1,
+            0.1
+          ],
+          "time_down_event": {
+            "event": "despawn"
+          }
+        }
+      },
+      "despawn": {
+        "minecraft:instant_despawn": {}
+      }
+    },
+    "components": {
+      "minecraft:type_family": {
+        "family": [
+          "mob",
+          "fish",
+          "jellyfish"
+        ]
+      },
+      "minecraft:collision_box": {
+        "width": 2,
+        "height": 0.3
+      },
+      "minecraft:conditional_bandwidth_optimization": {},
+      "minecraft:follow_range": {
+        "value": 1024
+      },
+      "minecraft:damage_sensor": {
+        "triggers": {
+          "cause": "fall",
+          "deals_damage": "no"
+        }
+      },
+      "minecraft:hurt_on_condition": {
+        "damage_conditions": [
+          {
+            "filters": {
+              "test": "in_lava",
+              "subject": "self",
+              "operator": "==",
+              "value": true
+            },
+            "cause": "lava",
+            "damage_per_tick": 4
+          }
+        ]
+      },
+      "minecraft:jump.static": {},
+      "minecraft:health": {
+        "value": 1,
+        "max": 1
+      },
+      "minecraft:nameable": {},
+      "minecraft:physics": {},
+      "minecraft:despawn": {
+        "despawn_from_distance": {}
+      },
+      "minecraft:scale": {
+        "value": 0
+      }
+    },
+    "events": {
+      "minecraft:entity_spawned": {
+        "sequence": [
+          {
+            "randomize": [
+              {
+                "weight": 25,
+                "add": {
+                  "component_groups": [
+                    "red"
+                  ]
+                }
+              },
+              {
+                "weight": 25,
+                "add": {
+                  "component_groups": [
+                    "blue"
+                  ]
+                }
+              },
+              {
+                "weight": 25,
+                "add": {
+                  "component_groups": [
+                    "yellow"
+                  ]
+                }
+              },
+              {
+                "weight": 25,
+                "add": {
+                  "component_groups": [
+                    "lunar"
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "minecraft:entity_born": {
+        "sequence": [
+          {
+            "randomize": [
+              {
+                "weight": 25,
+                "add": {
+                  "component_groups": [
+                    "red"
+                  ]
+                }
+              },
+              {
+                "weight": 25,
+                "add": {
+                  "component_groups": [
+                    "blue"
+                  ]
+                }
+              },
+              {
+                "weight": 25,
+                "add": {
+                  "component_groups": [
+                    "yellow"
+                  ]
+                }
+              },
+              {
+                "weight": 25,
+                "add": {
+                  "component_groups": [
+                    "lunar"
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "blue": {
+        "add": {
+          "component_groups": [
+            "blue"
+          ]
+        }
+      },
+      "red": {
+        "add": {
+          "component_groups": [
+            "red"
+          ]
+        }
+      },
+      "yellow": {
+        "add": {
+          "component_groups": [
+            "yellow"
+          ]
+        }
+      },
+      "lunar": {
+        "add": {
+          "component_groups": [
+            "lunar"
+          ]
+        }
+      },
+      "despawn": {
+        "add": {
+          "component_groups": [
+            "despawn"
+          ]
+        }
+      }
+    }
+  }
 }

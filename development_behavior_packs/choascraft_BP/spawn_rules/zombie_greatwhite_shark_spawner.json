@@ -8,7 +8,6 @@
 		"conditions": [
 			{
 				"minecraft:difficulty_filter": {"min": "easy", "max": "hard"},
-				"minecraft:spawns_on_surface": {},
 				"minecraft:spawns_underwater": {},
 				"minecraft:weight": {
 					"default": 1

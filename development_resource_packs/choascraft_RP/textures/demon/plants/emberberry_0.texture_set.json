@@ -1,0 +1,8 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:texture_set": {
+		"color": "emberberry_0",
+		"metalness_emissive_roughness": "emberberry_0_mer",
+		"normal": "emberberry_0_normal"
+	}
+}

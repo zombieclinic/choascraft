@@ -1,200 +1,200 @@
 {
-	"format_version": "1.26.20",
-	"minecraft:entity": {
-		"description": {
-			"identifier": "zombie:zombie_greatwhite_shark",
-			"is_spawnable": false,
-			"is_summonable": true,
-			"spawn_category": "monster"
-		},
-		"component_groups": {
-			"zombie_shark_proximity_targeting": {
-				"minecraft:behavior.nearest_attackable_target": {
-					"priority": 1,
-					"must_see": true,
-					"reselect_targets": true,
-					"within_radius": 6,
-					"must_see_forget_duration": 8,
-					"entity_types": [
-						{
-							"filters": {
-								"test": "is_family",
-								"subject": "other",
-								"value": "player"
-							},
-							"max_dist": 6
-						}
-					]
-				},
-				"minecraft:on_target_acquired": {
-					"event": "zombie:start_chasing",
-					"target": "self"
-				}
-			},
-			"zombie_shark_chasing_player": {
-				"minecraft:behavior.nearest_attackable_target": {
-					"priority": 1,
-					"must_see": true,
-					"reselect_targets": true,
-					"within_radius": 10,
-					"must_see_forget_duration": 8,
-					"entity_types": [
-						{
-							"filters": {
-								"test": "is_family",
-								"subject": "other",
-								"value": "player"
-							},
-							"max_dist": 10
-						}
-					]
-				},
-				"minecraft:on_target_escape": {
-					"event": "zombie:stop_chasing",
-					"target": "self"
-				}
-			}
-		},
-		"components": {
-			"minecraft:is_hidden_when_invisible": {},
-			"minecraft:loot": {
-				"table": "loot_tables/entities/shark/greatwhite.json"
-			},
-			"minecraft:breathable": {
-				"total_supply": 15,
-				"suffocate_time": -20,
-				"inhale_time": 0,
-				"breathes_air": false,
-				"breathes_water": true,
-				"breathes_lava": false,
-				"generates_bubbles": true
-			},
-			"minecraft:behavior.melee_box_attack": {
-				"can_spread_on_fire": true,
-				"priority": 3
-			},
-			"minecraft:attack": {
-				"damage": 5
-			},
-			"minecraft:health": {
-				"value": 60,
-				"max": 60
-			},
-			"minecraft:scale": {
-				"value": 1
-			},
-			"minecraft:navigation.generic": {
-				"is_amphibious": true,
-				"can_path_over_water": false,
-				"can_swim": true,
-				"can_walk": false,
-				"can_breach": true,
-				"can_sink": false
-			},
-			"minecraft:nameable": {
-				"allow_name_tag_renaming": true,
-				"always_show": false
-			},
-			"minecraft:type_family": {
-				"family": [
-					"shark",
-					"mob",
-					"whale",
-					"aquatic",
-					"undead",
-					"monster"
-				]
-			},
-			"minecraft:collision_box": {
-				"width": 2,
-				"height": 0.5
-			},
-			"minecraft:hurt_on_condition": {
-				"damage_conditions": [
-					{
-						"filters": {
-							"test": "in_lava",
-							"subject": "self",
-							"operator": "==",
-							"value": true
-						},
-						"cause": "lava",
-						"damage_per_tick": 4
-					}
-				]
-			},
-			"minecraft:follow_range": {
-				"value": 10,
-				"max": 10
-			},
-			"minecraft:experience_reward": {
-				"on_death": "!query.is_baby && query.last_hit_by_player ? Math.Random(1,10) : 0"
-			},
-			"minecraft:behavior.swim_idle": {
-				"priority": 5,
-				"idle_time": 5,
-				"success_rate": 1.0
-			},
-			"minecraft:movement.sway": {
-				"sway_amplitude": 0.05,
-				"sway_frequency": 0.5,
-				"max_turn": 30
-			},
-			"minecraft:underwater_movement": {
-				"value": 0.14
-			},
-			"minecraft:jump.static": {
-				"jump_power": 0.25
-			},
-			"minecraft:despawn": {
-				"despawn_from_distance": {}
-			},
-			"minecraft:physics": {
-				"has_collision": true,
-				"has_gravity": true,
-				"push_towards_closest_space": true
-			},
-			"minecraft:conditional_bandwidth_optimization": {}
-		},
-		"events": {
-			"minecraft:entity_spawned": {
-				"add": {
-					"component_groups": [
-						"zombie_shark_proximity_targeting"
-					]
-				}
-			},
-			"minecraft:entity_born": {
-				"add": {
-					"component_groups": [
-						"zombie_shark_proximity_targeting"
-					]
-				}
-			},
-			"zombie:start_chasing": {
-				"remove": {
-					"component_groups": [
-						"zombie_shark_proximity_targeting"
-					]
-				},
-				"add": {
-					"component_groups": [
-						"zombie_shark_chasing_player"
-					]
-				}
-			},
-			"zombie:stop_chasing": {
-				"remove": {
-					"component_groups": [
-						"zombie_shark_chasing_player"
-					]
-				},
-				"add": {
-					"component_groups": [
-						"zombie_shark_proximity_targeting"
-					]
-				}
-			}
-		}
-	}
+  "format_version": "1.26.30",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "zombie:zombie_greatwhite_shark",
+      "is_spawnable": false,
+      "is_summonable": true,
+      "spawn_category": "monster"
+    },
+    "component_groups": {
+      "zombie_shark_proximity_targeting": {
+        "minecraft:behavior.nearest_attackable_target": {
+          "priority": 1,
+          "must_see": true,
+          "reselect_targets": true,
+          "within_radius": 6,
+          "must_see_forget_duration": 8,
+          "entity_types": [
+            {
+              "filters": {
+                "test": "is_family",
+                "subject": "other",
+                "value": "player"
+              },
+              "max_dist": 6
+            }
+          ]
+        },
+        "minecraft:on_target_acquired": {
+          "event": "zombie:start_chasing",
+          "target": "self"
+        }
+      },
+      "zombie_shark_chasing_player": {
+        "minecraft:behavior.nearest_attackable_target": {
+          "priority": 1,
+          "must_see": true,
+          "reselect_targets": true,
+          "within_radius": 10,
+          "must_see_forget_duration": 8,
+          "entity_types": [
+            {
+              "filters": {
+                "test": "is_family",
+                "subject": "other",
+                "value": "player"
+              },
+              "max_dist": 10
+            }
+          ]
+        },
+        "minecraft:on_target_escape": {
+          "event": "zombie:stop_chasing",
+          "target": "self"
+        }
+      }
+    },
+    "components": {
+      "minecraft:is_hidden_when_invisible": {},
+      "minecraft:loot": {
+        "table": "loot_tables/entities/shark/greatwhite.json"
+      },
+      "minecraft:breathable": {
+        "total_supply": 15,
+        "suffocate_time": 0,
+        "inhale_time": 0,
+        "breathes_air": false,
+        "breathes_water": true,
+        "breathes_lava": false,
+        "generates_bubbles": true
+      },
+      "minecraft:behavior.melee_box_attack": {
+        "can_spread_on_fire": true,
+        "priority": 3
+      },
+      "minecraft:attack": {
+        "damage": 5
+      },
+      "minecraft:health": {
+        "value": 60,
+        "max": 60
+      },
+      "minecraft:scale": {
+        "value": 1
+      },
+      "minecraft:navigation.generic": {
+        "is_amphibious": true,
+        "can_path_over_water": false,
+        "can_swim": true,
+        "can_walk": false,
+        "can_breach": true,
+        "can_sink": false
+      },
+      "minecraft:nameable": {
+        "allow_name_tag_renaming": true,
+        "always_show": false
+      },
+      "minecraft:type_family": {
+        "family": [
+          "shark",
+          "mob",
+          "whale",
+          "aquatic",
+          "undead",
+          "monster"
+        ]
+      },
+      "minecraft:collision_box": {
+        "width": 2,
+        "height": 0.5
+      },
+      "minecraft:hurt_on_condition": {
+        "damage_conditions": [
+          {
+            "filters": {
+              "test": "in_lava",
+              "subject": "self",
+              "operator": "==",
+              "value": true
+            },
+            "cause": "lava",
+            "damage_per_tick": 4
+          }
+        ]
+      },
+      "minecraft:follow_range": {
+        "value": 10,
+        "max": 10
+      },
+      "minecraft:experience_reward": {
+        "on_death": "!query.is_baby \u0026\u0026 query.last_hit_by_player ? Math.Random(1,10) : 0"
+      },
+      "minecraft:behavior.swim_idle": {
+        "priority": 5,
+        "idle_time": 5,
+        "success_rate": 1.0
+      },
+      "minecraft:movement.sway": {
+        "sway_amplitude": 0.05,
+        "sway_frequency": 0.5,
+        "max_turn": 30
+      },
+      "minecraft:underwater_movement": {
+        "value": 0.14
+      },
+      "minecraft:jump.static": {
+        "jump_power": 0.25
+      },
+      "minecraft:despawn": {
+        "despawn_from_distance": {}
+      },
+      "minecraft:physics": {
+        "has_collision": true,
+        "has_gravity": true,
+        "push_towards_closest_space": true
+      },
+      "minecraft:conditional_bandwidth_optimization": {}
+    },
+    "events": {
+      "minecraft:entity_spawned": {
+        "add": {
+          "component_groups": [
+            "zombie_shark_proximity_targeting"
+          ]
+        }
+      },
+      "minecraft:entity_born": {
+        "add": {
+          "component_groups": [
+            "zombie_shark_proximity_targeting"
+          ]
+        }
+      },
+      "zombie:start_chasing": {
+        "remove": {
+          "component_groups": [
+            "zombie_shark_proximity_targeting"
+          ]
+        },
+        "add": {
+          "component_groups": [
+            "zombie_shark_chasing_player"
+          ]
+        }
+      },
+      "zombie:stop_chasing": {
+        "remove": {
+          "component_groups": [
+            "zombie_shark_chasing_player"
+          ]
+        },
+        "add": {
+          "component_groups": [
+            "zombie_shark_proximity_targeting"
+          ]
+        }
+      }
+    }
+  }
 }

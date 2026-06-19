@@ -31,8 +31,8 @@
               "minecraft:desert",
               "minecraft:savanna"
             ],
-            "amount": 0.5,
-            "noise_frequency_scale": 0.25
+            "amount": 0.08,
+            "noise_frequency_scale": 0.55
           }
         ]
       },

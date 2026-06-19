@@ -1,292 +1,342 @@
 {
-	"format_version": "1.26.20",
-	"minecraft:entity": {
-	  "description": {
-		"identifier": "zombie:zombie_spawn",
-		"is_spawnable": true,
-		"is_summonable": true,
-		"is_experimental": false
-	  },
-	  "component_groups": {
-		"waiting": {
-		  "minecraft:variant": {
-			"value": 1
-		  },
-		  "minecraft:collision_box": {
-			"width": 0.1,
-			"height": 0.1
-		  },
-		  "minecraft:entity_sensor": {
-			"subsensors": [
-			  {
-				"event": "spawn_mob",
-				"minimum_count": 1,
-				"range": [4, 4],
-				"require_all": false,
-				"event_filters": {
-				  "subject": "other",
-				  "test": "is_family",
-				  "value": "player"
-				}
-			  }
-			]
-		  }
-		},
-		"spawn_walker": {
-		  "minecraft:variant": {
-			"value": 2
-		  },
-		  "minecraft:spawn_entity": {
-			"entities": [
-			  {
-				"num_to_spawn": 1,
-				"min_wait_time": 0.1,
-				"max_wait_time": 0.1,
-				"single_use": true,
-				"spawn_entity": "zombie:walker",
-				"spawn_event": "minecraft:entity_spawned"
-			  }
-			]
-		  },
-		  "minecraft:timer": {
-			"time": [2, 2],
-			"time_down_event": {
-			  "event": "despawn",
-			  "target": "self"
-			}
-		  }
-		},
-		"spawn_spitter": {
-		  "minecraft:variant": {
-			"value": 2
-		  },
-		  "minecraft:spawn_entity": {
-			"entities": [
-			  {
-				"num_to_spawn": 1,
-				"min_wait_time": 0.1,
-				"max_wait_time": 0.1,
-				"single_use": true,
-				"spawn_entity": "zombie:spitter",
-				"spawn_event": "minecraft:entity_spawned"
-			  }
-			]
-		  },
-		  "minecraft:timer": {
-			"time": [2, 2],
-			"time_down_event": {
-			  "event": "despawn",
-			  "target": "self"
-			}
-		  }
-		},
-		"spawn_scavenger": {
-		  "minecraft:variant": {
-			"value": 2
-		  },
-		  "minecraft:spawn_entity": {
-			"entities": [
-			  {
-				"num_to_spawn": 1,
-				"min_wait_time": 0.1,
-				"max_wait_time": 0.1,
-				"single_use": true,
-				"spawn_entity": "zombie:scavenger",
-				"spawn_event": "minecraft:entity_spawned"
-			  }
-			]
-		  },
-		  "minecraft:timer": {
-			"time": [2, 2],
-			"time_down_event": {
-			  "event": "despawn",
-			  "target": "self"
-			}
-		  }
-		},
-		"despawn": {
-		  "minecraft:instant_despawn": {
-			"remove_child_entities": false
-		  }
-		},
-		"spawn_runner": {
-		  "minecraft:variant": {
-			"value": 2
-		  },
-		  "minecraft:spawn_entity": {
-			"entities": [
-			  {
-				"num_to_spawn": 1,
-				"min_wait_time": 0.1,
-				"max_wait_time": 0.1,
-				"single_use": true,
-				"spawn_entity": "zombie:runner",
-				"spawn_event": "minecraft:entity_spawned"
-			  }
-			]
-		  },
-		  "minecraft:timer": {
-			"time": [2, 2],
-			"time_down_event": {
-			  "event": "despawn",
-			  "target": "self"
-			}
-		  }
-		},
-		"spawn_crusher": {
-			"minecraft:variant": {
-			  "value": 2
-			},
-			"minecraft:spawn_entity": {
-			  "entities": [
-				{
-				  "num_to_spawn": 1,
-				  "min_wait_time": 0.1,
-				  "max_wait_time": 0.1,
-				  "single_use": true,
-				  "spawn_entity": "zombie:crusher",
-				  "spawn_event": "minecraft:entity_spawned"
-				}
-			  ]
-			},
-			"minecraft:timer": {
-			  "time": [2, 2],
-			  "time_down_event": {
-				"event": "despawn",
-				"target": "self"
-			  }
-			}
-		  },
-		  "spawn_impaler": {
-			"minecraft:variant": {
-			  "value": 2
-			},
-			"minecraft:spawn_entity": {
-			  "entities": [
-				{
-				  "num_to_spawn": 1,
-				  "min_wait_time": 0.1,
-				  "max_wait_time": 0.1,
-				  "single_use": true,
-				  "spawn_entity": "zombie:impaler",
-				  "spawn_event": "minecraft:entity_spawned"
-				}
-			  ]
-			},
-			"minecraft:timer": {
-			  "time": [2, 2],
-			  "time_down_event": {
-				"event": "despawn",
-				"target": "self"
-			  }
-			}
-		  }
-	  },
-	  "components": {
-		
-		"minecraft:type_family": {
-		  "family": ["mutated_zombie", "monster"]
-		},
-		"minecraft:health": {
-		  "value": 100,
-		  "max": 100
-		},
-		"minecraft:damage_sensor": {
-		  "triggers": {
-			"cause": "all",
-			"deals_damage": "no"
-		  }
-		},
-		"minecraft:knockback_resistance": {
-		  "value": 100,
-		  "max": 100
-		},
-		"minecraft:push_through": {
-		  "value": 1
-		},
-		"minecraft:scale": {
-		  "value": 1.5
-		},
-		"minecraft:collision_box": {
-		  "width": 0,
-		  "height": 0
-		},
-		"minecraft:physics": {},
-		"minecraft:despawn": {
-			"despawn_from_simulation_edge": true,
-			"despawn_from_distance": {}
-		}
-	  },
-	  "events": {
-		"minecraft:entity_spawned": {
-		  "add": {
-			"component_groups": ["waiting"]
-		  }
-		},
-		"spawn_mob": {
-		  "randomize": [
-			{
-				"add": {
-					"component_groups": ["spawn_walker"]
-				  },
-				"remove": {
-					"component_groups": ["waiting"]
-				  },
-				  "weight": 3
-			},
-			{
-				"add": {
-					"component_groups": ["spawn_runner"]
-				  },
-				"remove": {
-					"component_groups": ["waiting"]
-				  },
-				  "weight": 3
-			},
-			{
-				"add": {
-					"component_groups": ["spawn_crusher"]
-				  },
-				"remove": {
-					"component_groups": ["waiting"]
-				  },
-				  "weight": 2
-			},
-			{
-				"add": {
-					"component_groups": ["spawn_spitter"]
-				  },
-				"remove": {
-					"component_groups": ["waiting"]
-				  },
-				  "weight": 2
-			},
-			{
-				"add": {
-					"component_groups": ["spawn_scavenger"]
-				  },
-				"remove": {
-					"component_groups": ["waiting"]
-				  },
-				  "weight": 2
-			},
-			{
-				
-				"add": {
-					"component_groups": ["spawn_impaler"]
-				  },
-				"remove": {
-					"component_groups": ["waiting"]
-				  },
-				  "weight": 2
-			}
-		  ]
-		},
-		"despawn": {
-		  "add": {
-			"component_groups": ["despawn"]
-		  }
-		}
-	  }
-	}
+  "format_version": "1.26.30",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "zombie:zombie_spawn",
+      "is_spawnable": true,
+      "is_summonable": true,
+      "is_experimental": false
+    },
+    "component_groups": {
+      "waiting": {
+        "minecraft:variant": {
+          "value": 1
+        },
+        "minecraft:collision_box": {
+          "width": 0.1,
+          "height": 0.1
+        },
+        "minecraft:entity_sensor": {
+          "subsensors": [
+            {
+              "event": "spawn_mob",
+              "minimum_count": 1,
+              "range": [
+                4,
+                4
+              ],
+              "require_all": false,
+              "event_filters": {
+                "subject": "other",
+                "test": "is_family",
+                "value": "player"
+              }
+            }
+          ]
+        }
+      },
+      "spawn_walker": {
+        "minecraft:variant": {
+          "value": 2
+        },
+        "minecraft:spawn_entity": {
+          "entities": [
+            {
+              "num_to_spawn": 1,
+              "min_wait_time": 0.1,
+              "max_wait_time": 0.1,
+              "single_use": true,
+              "spawn_entity": "zombie:walker",
+              "spawn_event": "minecraft:entity_spawned"
+            }
+          ]
+        },
+        "minecraft:timer": {
+          "time": [
+            2,
+            2
+          ],
+          "time_down_event": {
+            "event": "despawn",
+            "target": "self"
+          }
+        }
+      },
+      "spawn_spitter": {
+        "minecraft:variant": {
+          "value": 2
+        },
+        "minecraft:spawn_entity": {
+          "entities": [
+            {
+              "num_to_spawn": 1,
+              "min_wait_time": 0.1,
+              "max_wait_time": 0.1,
+              "single_use": true,
+              "spawn_entity": "zombie:spitter",
+              "spawn_event": "minecraft:entity_spawned"
+            }
+          ]
+        },
+        "minecraft:timer": {
+          "time": [
+            2,
+            2
+          ],
+          "time_down_event": {
+            "event": "despawn",
+            "target": "self"
+          }
+        }
+      },
+      "spawn_scavenger": {
+        "minecraft:variant": {
+          "value": 2
+        },
+        "minecraft:spawn_entity": {
+          "entities": [
+            {
+              "num_to_spawn": 1,
+              "min_wait_time": 0.1,
+              "max_wait_time": 0.1,
+              "single_use": true,
+              "spawn_entity": "zombie:scavenger",
+              "spawn_event": "minecraft:entity_spawned"
+            }
+          ]
+        },
+        "minecraft:timer": {
+          "time": [
+            2,
+            2
+          ],
+          "time_down_event": {
+            "event": "despawn",
+            "target": "self"
+          }
+        }
+      },
+      "despawn": {
+        "minecraft:instant_despawn": {
+          "remove_child_entities": false
+        }
+      },
+      "spawn_runner": {
+        "minecraft:variant": {
+          "value": 2
+        },
+        "minecraft:spawn_entity": {
+          "entities": [
+            {
+              "num_to_spawn": 1,
+              "min_wait_time": 0.1,
+              "max_wait_time": 0.1,
+              "single_use": true,
+              "spawn_entity": "zombie:runner",
+              "spawn_event": "minecraft:entity_spawned"
+            }
+          ]
+        },
+        "minecraft:timer": {
+          "time": [
+            2,
+            2
+          ],
+          "time_down_event": {
+            "event": "despawn",
+            "target": "self"
+          }
+        }
+      },
+      "spawn_crusher": {
+        "minecraft:variant": {
+          "value": 2
+        },
+        "minecraft:spawn_entity": {
+          "entities": [
+            {
+              "num_to_spawn": 1,
+              "min_wait_time": 0.1,
+              "max_wait_time": 0.1,
+              "single_use": true,
+              "spawn_entity": "zombie:crusher",
+              "spawn_event": "minecraft:entity_spawned"
+            }
+          ]
+        },
+        "minecraft:timer": {
+          "time": [
+            2,
+            2
+          ],
+          "time_down_event": {
+            "event": "despawn",
+            "target": "self"
+          }
+        }
+      },
+      "spawn_impaler": {
+        "minecraft:variant": {
+          "value": 2
+        },
+        "minecraft:spawn_entity": {
+          "entities": [
+            {
+              "num_to_spawn": 1,
+              "min_wait_time": 0.1,
+              "max_wait_time": 0.1,
+              "single_use": true,
+              "spawn_entity": "zombie:impaler",
+              "spawn_event": "minecraft:entity_spawned"
+            }
+          ]
+        },
+        "minecraft:timer": {
+          "time": [
+            2,
+            2
+          ],
+          "time_down_event": {
+            "event": "despawn",
+            "target": "self"
+          }
+        }
+      }
+    },
+    "components": {
+      "minecraft:type_family": {
+        "family": [
+          "mutated_zombie",
+          "monster"
+        ]
+      },
+      "minecraft:health": {
+        "value": 100,
+        "max": 100
+      },
+      "minecraft:damage_sensor": {
+        "triggers": {
+          "cause": "all",
+          "deals_damage": "no"
+        }
+      },
+      "minecraft:knockback_resistance": {
+        "value": 100,
+        "max": 100
+      },
+      "minecraft:push_through": {
+        "value": 1
+      },
+      "minecraft:scale": {
+        "value": 1.5
+      },
+      "minecraft:collision_box": {
+        "width": 0,
+        "height": 0
+      },
+      "minecraft:physics": {},
+      "minecraft:despawn": {
+        "despawn_from_simulation_edge": true,
+        "despawn_from_distance": {}
+      }
+    },
+    "events": {
+      "minecraft:entity_spawned": {
+        "add": {
+          "component_groups": [
+            "waiting"
+          ]
+        }
+      },
+      "spawn_mob": {
+        "randomize": [
+          {
+            "add": {
+              "component_groups": [
+                "spawn_walker"
+              ]
+            },
+            "remove": {
+              "component_groups": [
+                "waiting"
+              ]
+            },
+            "weight": 3
+          },
+          {
+            "add": {
+              "component_groups": [
+                "spawn_runner"
+              ]
+            },
+            "remove": {
+              "component_groups": [
+                "waiting"
+              ]
+            },
+            "weight": 3
+          },
+          {
+            "add": {
+              "component_groups": [
+                "spawn_crusher"
+              ]
+            },
+            "remove": {
+              "component_groups": [
+                "waiting"
+              ]
+            },
+            "weight": 2
+          },
+          {
+            "add": {
+              "component_groups": [
+                "spawn_spitter"
+              ]
+            },
+            "remove": {
+              "component_groups": [
+                "waiting"
+              ]
+            },
+            "weight": 2
+          },
+          {
+            "add": {
+              "component_groups": [
+                "spawn_scavenger"
+              ]
+            },
+            "remove": {
+              "component_groups": [
+                "waiting"
+              ]
+            },
+            "weight": 2
+          },
+          {
+            "add": {
+              "component_groups": [
+                "spawn_impaler"
+              ]
+            },
+            "remove": {
+              "component_groups": [
+                "waiting"
+              ]
+            },
+            "weight": 2
+          }
+        ]
+      },
+      "despawn": {
+        "add": {
+          "component_groups": [
+            "despawn"
+          ]
+        }
+      }
+    }
+  }
 }

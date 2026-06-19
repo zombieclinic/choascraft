@@ -1,0 +1,61 @@
+{
+  "format_version": "1.26.30",
+  "minecraft:biome": {
+    "description": {
+      "identifier": "zombie:demon_nether_biome"
+    },
+    "components": {
+      "minecraft:climate": {
+        "downfall": 0.0,
+        "snow_accumulation": [
+          0.0,
+          0.0
+        ],
+        "temperature": 2.0
+      },
+      "minecraft:map_tints": {
+        "grass": {
+          "type": "tint",
+          "tint": "#4c1010"
+        },
+        "foliage": "#661010"
+      },
+      "minecraft:replace_biomes": {
+        "replacements": [
+          {
+            "dimension": "minecraft:nether",
+            "targets": [
+              "minecraft:hell",
+              "minecraft:crimson_forest",
+              "minecraft:warped_forest",
+              "minecraft:soulsand_valley",
+              "minecraft:basalt_deltas"
+            ],
+            "amount": 0.35,
+            "noise_frequency_scale": 0.18
+          }
+        ]
+      },
+      "minecraft:surface_builder": {
+        "builder": {
+          "type": "minecraft:overworld",
+          "sea_floor_depth": 0,
+          "sea_floor_material": "zombie:demon_stone",
+          "foundation_material": "zombie:demon_stone",
+          "mid_material": "zombie:demon_dirt",
+          "top_material": "zombie:demon_grass_no_tick",
+          "sea_material": "minecraft:lava"
+        }
+      },
+      "minecraft:tags": {
+        "tags": [
+          "demon",
+          "demon_biome",
+          "hell",
+          "forest",
+          "nether"
+        ]
+      }
+    }
+  }
+}

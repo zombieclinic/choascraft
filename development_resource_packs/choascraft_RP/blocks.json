@@ -158,6 +158,10 @@
 		"textures": "zombie_corrupted_grass",
 		"sound": "grass"
 	},
+	"zombie:emberberry": {
+		"textures": "zombie_emberberry_4",
+		"sound": "grass"
+	},
 	"zombie:demon_stone": {
 		"textures": "zombie_demon_stone",
 		"sound": "stone"
@@ -276,6 +280,14 @@
 	},
 	"zombie:demon_alter": {
 		"textures": "zombie_demon_alter",
+		"sound": "stone"
+	},
+	"zombie:demon_skull": {
+		"textures": "zombie_demon_alter",
+		"sound": "stone"
+	},
+	"zombie:demon_pentagram": {
+		"textures": "zombie_demon_alter_top_planstar",
 		"sound": "stone"
 	},
 	"zombie:choas_chest": {
