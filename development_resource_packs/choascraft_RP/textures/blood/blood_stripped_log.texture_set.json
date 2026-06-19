@@ -1,0 +1,8 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:texture_set": {
+		"color": "blood_stripped_log",
+		"metalness_emissive_roughness": "blood_stripped_log_mer",
+		"normal": "blood_stripped_log_normal"
+	}
+}

@@ -1,0 +1,8 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:texture_set": {
+		"color": "flesh_saplin_2",
+		"metalness_emissive_roughness": "flesh_saplin_2_mer",
+		"normal": "flesh_saplin_2_normal"
+	}
+}

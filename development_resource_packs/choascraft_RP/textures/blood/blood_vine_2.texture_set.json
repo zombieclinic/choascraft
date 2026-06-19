@@ -1,0 +1,8 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:texture_set": {
+		"color": "blood_vine_2",
+		"metalness_emissive_roughness": "blood_vine_2_mer",
+		"normal": "blood_vine_2_normal"
+	}
+}

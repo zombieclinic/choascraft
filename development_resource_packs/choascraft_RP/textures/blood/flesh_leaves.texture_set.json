@@ -1,0 +1,8 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:texture_set": {
+		"color": "flesh_leaves",
+		"metalness_emissive_roughness": "flesh_leaves_mer",
+		"normal": "flesh_leaves_normal"
+	}
+}

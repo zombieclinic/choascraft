@@ -1,0 +1,8 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:texture_set": {
+		"color": "blood_saplin_0",
+		"metalness_emissive_roughness": "blood_saplin_0_mer",
+		"normal": "blood_saplin_0_normal"
+	}
+}

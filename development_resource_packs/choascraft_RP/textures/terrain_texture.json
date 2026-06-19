@@ -307,6 +307,15 @@
                                                     },
                          "zombie_demon_alter_top_planstar":  {
                                                                  "textures":  "textures/demon/demon_alter_top_planstar"
+                                             },
+                         "zombie_demon_blood_block":  {
+                                                           "textures":  "textures/demon/alter_blocks/blood_block"
+                                                       },
+                         "zombie_demon_flesh_block":  {
+                                                           "textures":  "textures/demon/alter_blocks/flesh_block"
+                                                       },
+                         "zombie_demon_blood_flesh_block":  {
+                                                                 "textures":  "textures/demon/alter_blocks/blood_flesh_block"
                                               }
                      }
 }

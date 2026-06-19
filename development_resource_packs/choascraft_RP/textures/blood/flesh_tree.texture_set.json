@@ -1,0 +1,8 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:texture_set": {
+		"color": "flesh_tree",
+		"metalness_emissive_roughness": "flesh_tree_mer",
+		"normal": "flesh_tree_normal"
+	}
+}

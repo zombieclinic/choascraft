@@ -282,6 +282,18 @@
 		"textures": "zombie_demon_alter",
 		"sound": "stone"
 	},
+	"zombie:demon_blood_block": {
+		"textures": "zombie_demon_blood_block",
+		"sound": "stone"
+	},
+	"zombie:demon_flesh_block": {
+		"textures": "zombie_demon_flesh_block",
+		"sound": "stone"
+	},
+	"zombie:demon_blood_flesh_block": {
+		"textures": "zombie_demon_blood_flesh_block",
+		"sound": "stone"
+	},
 	"zombie:demon_skull": {
 		"textures": "zombie_demon_alter",
 		"sound": "stone"

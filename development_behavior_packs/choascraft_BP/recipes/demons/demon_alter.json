@@ -9,8 +9,8 @@
     ],
     "pattern": [
       " A ",
-      "DHD",
-      "DDD"
+      "DSD",
+      "DHD"
     ],
     "key": {
       "A": {
@@ -21,6 +21,9 @@
       },
       "H": {
         "item": "zombie:demon_heart"
+      },
+      "S": {
+        "item": "minecraft:nether_star"
       }
     },
     "result": [
@@ -35,6 +38,9 @@
       },
       {
         "item": "zombie:demon_ash"
+      },
+      {
+        "item": "minecraft:nether_star"
       }
     ]
   }

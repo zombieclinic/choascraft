@@ -21,6 +21,14 @@
       "minecraft:destructible_by_mining": {
         "seconds_to_destroy": 0.5
       },
+      "minecraft:tick": {
+        "interval_range": [
+          5,
+          5
+        ],
+        "looping": true
+      },
+      "minecraft:loot": "loot_tables/blocks/demon_alter.json",
       "minecraft:geometry": "geometry.demon_alter",
       "minecraft:material_instances": {
         "*": {
@@ -35,9 +43,13 @@
         "allows_wire_to_step_down": true,
         "redstone_conductor": true
       },
+      "minecraft:redstone_consumer": {
+        "min_power": 1
+      },
       "minecraft:tags": [
         "minecraft:is_pickaxe_item_destructible"
-      ]
+      ],
+      "zombie:demon_alter": {}
     },
     "permutations": [
       {
