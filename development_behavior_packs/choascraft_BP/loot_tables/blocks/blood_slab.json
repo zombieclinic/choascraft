@@ -1,0 +1,13 @@
+﻿{
+    "pools":  [
+                  {
+                      "entries":  [
+                                      {
+                                          "name":  "zombie:blood_slab",
+                                          "type":  "item"
+                                      }
+                                  ],
+                      "rolls":  1
+                  }
+              ]
+}

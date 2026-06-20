@@ -1,0 +1,19 @@
+﻿{
+    "pools":  [
+                  {
+                      "entries":  [
+                                      {
+                                          "functions":  [
+                                                            {
+                                                                "function":  "set_count",
+                                                                "count":  2
+                                                            }
+                                                        ],
+                                          "name":  "zombie:tumor_slab",
+                                          "type":  "item"
+                                      }
+                                  ],
+                      "rolls":  1
+                  }
+              ]
+}

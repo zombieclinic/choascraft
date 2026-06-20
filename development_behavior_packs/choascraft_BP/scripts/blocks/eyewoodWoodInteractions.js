@@ -1,4 +1,4 @@
-import { BlockPermutation, EquipmentSlot, ItemStack, system, world } from "@minecraft/server";
+﻿import { BlockPermutation, EquipmentSlot, ItemStack, system, world } from "@minecraft/server";
 
 const SLAB_TAG = "zombie:slab";
 const DOOR_TAG = "zombie:door";
@@ -13,6 +13,9 @@ const SLAB_ITEM_IDS = new Set([
 	"zombie:eyewood_slab",
 	"zombie:infected_slab",
 	"zombie:redwood_slab",
+	"zombie:blood_slab",
+	"zombie:flesh_slab",
+	"zombie:tumor_slab",
 	"zombie:demon_plank_slab",
 	"zombie:demon_stone_slab",
 	"zombie:demon_steel_slab"
@@ -22,6 +25,9 @@ const STRIPPABLE_BLOCKS = {
 	"zombie:eyewood_log": "zombie:stripped_eyewood_log",
 	"zombie:infected_tree_log": "zombie:infected_tree_log_stripped",
 	"zombie:redwood_log": "zombie:stripped_redwood_log",
+	"zombie:blood_log": "zombie:stripped_blood_log",
+	"zombie:flesh_log": "zombie:stripped_flesh_log",
+	"zombie:tumor_log": "zombie:stripped_tumor_log",
 	"zombie:demon_log": "zombie:demon_log_stripped",
 	"zombie:demon_fire_log": "zombie:demon_fire_log_stripped"
 };
@@ -394,3 +400,4 @@ function isCreative(player) {
 		return false;
 	}
 }
+

@@ -21,13 +21,6 @@
       "minecraft:destructible_by_mining": {
         "seconds_to_destroy": 0.5
       },
-      "minecraft:tick": {
-        "interval_range": [
-          5,
-          5
-        ],
-        "looping": true
-      },
       "minecraft:loot": "loot_tables/blocks/demon_alter.json",
       "minecraft:geometry": "geometry.demon_alter",
       "minecraft:material_instances": {

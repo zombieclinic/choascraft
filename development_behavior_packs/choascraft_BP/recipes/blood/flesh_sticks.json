@@ -1,0 +1,31 @@
+﻿{
+    "format_version":  "1.20.10",
+    "minecraft:recipe_shaped":  {
+                                    "description":  {
+                                                        "identifier":  "zombie:flesh_sticks"
+                                                    },
+                                    "tags":  [
+                                                 "crafting_table"
+                                             ],
+                                    "pattern":  [
+                                                    "#",
+                                                    "#"
+                                                ],
+                                    "key":  {
+                                                "#":  {
+                                                          "item":  "zombie:flesh_planks"
+                                                      }
+                                            },
+                                    "result":  [
+                                                   {
+                                                       "count":  4,
+                                                       "item":  "minecraft:stick"
+                                                   }
+                                               ],
+                                    "unlock":  [
+                                                   {
+                                                       "item":  "zombie:flesh_planks"
+                                                   }
+                                               ]
+                                }
+}

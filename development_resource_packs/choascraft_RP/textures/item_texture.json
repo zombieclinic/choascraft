@@ -1,568 +1,571 @@
-{
-	"texture_data": {
-		"orca_boots": {
-			"textures": "textures/armor/orca/boots/orca_boots_icon"
-		},
-		"orcaleggings": {
-			"textures": "textures/armor/orca/leggings/orcaleggings_icon"
-		},
-		"orca_chest": {
-			"textures": "textures/armor/orca/chest/orca_chest_icon"
-		},
-		"orca_helmet": {
-			"textures": "textures/armor/orca/helmet/orca_helmet_icon"
-		},
-		"orca_sword": {
-			"textures": "textures/swords/orca_sword/orca_sword_icon"
-		},
-		"orca_core": {
-			"textures": "textures/items/water/orca/core"
-		},
-		"orca_blubber_rotten": {
-			"textures": "textures/items/water/orca/orca_blubber_rotten"
-		},
-		"orca_blubber": {
-			"textures": "textures/items/water/orca/orca_blubber"
-		},
-		"orca_bone": {
-			"textures": "textures/items/water/orca/orca_bone"
-		},
-		"orca_heart": {
-			"textures": "textures/items/water/orca/orca_heart"
-		},
-		"orca_shard": {
-			"textures": "textures/items/water/orca/orca_shard"
-		},
-		"orca_tooth": {
-			"textures": "textures/items/water/orca/orca_tooth"
-		},
-		"orca_meat":{
-			"textures": "textures/items/water/orca/orca_meat"
-		},
-		"orca_meat_cooked":{
-			"textures": "textures/items/water/orca/orca_meat_cooked"
-		},
-		"pengiun_egg": {
-			"textures": "textures/items/water/pengiuns/pengiun_egg"
-		},
-		"abyss_flower_seed": {
-			"textures": "textures/abyss/flowers/abyss_flower_seed"
-		},
-		"spore": {
-			"textures": "textures/infected/plants/sporepod/spore"
-		},
-		"infected_eye": {
-			"textures": "textures/infected/flower/eye"
-		},
-		"eye_flower_seed": {
-			"textures": "textures/infected/eyeflower/flower"
-		},
-		"eyewood_button": {
-			"textures": "textures/abyss/blocks/eye_wood_button_icon"
-		},
-		"fish_bone": {
-			"textures": "textures/items/water/pengiuns/fish_bone"
-		},
-		"pengun_blubber": {
-			"textures": "textures/items/water/pengiuns/pengun_blubber"
-		},
-		"bucket_of_oil": {
-			"textures": "textures/items/water/pengiuns/bucket_of_oil"
-		},
-		"pengiun_meat": {
-			"textures": "textures/items/water/pengiuns/pengiun_meat"
-		},
-		"pengiun_meat_cooked": {
-			"textures": "textures/items/water/pengiuns/pengiun_meat_cooked"
-		},
-		"zombie_vial": {
-			"textures": "textures/items/zombie_stuff/zombie_vial"
-		},
-		"zombie_infected_goo": {
-			"textures": "textures/items/infect_armor/infected_goo"
-		},
-		"zombie_infected_tablet": {
-			"textures": "textures/items/infect_armor/infected_tablet"
-		},
-		"zombie_infected_crystal": {
-			"textures": "textures/items/infect_armor/infected_crystal"
-		},
-		"zombie_raw_demon_steel": {
-			"textures": "textures/demon/demon_steel_raw"
-		},
-		"zombie_demon_steel_nugget": {
-			"textures": "textures/demon/demon_steel_nugget"
-		},
-		"zombie_demon_steel_ingot": {
-			"textures": "textures/demon/demon_steel_ingot"
-		},
-		"zombie_hell_sword": {
-			"textures": "textures/demon/item_mob/hell_sword"
-		},
-		"zombie_emberberrys": {
-			"textures": "textures/demon/plants/emberberrys"
-		},
-		"zombie_currupted_xp_orb": {
-			"textures": "textures/demon/drops/currupted_xp_orb"
-		},
-		"zombie_demon_ash": {
-			"textures": "textures/demon/drops/demon_ash"
-		},
-		"zombie_demon_heart": {
-			"textures": "textures/demon/drops/demon_heart"
-		},
-		"zombie_infected_sword": {
-			"textures": "textures/items/infect_armor/infected_sword"
-		},
-		"zombie_infected_axe": {
-			"textures": "textures/items/infect_armor/infected_axe"
-		},
-		"zombie_infected_helmet_icon": {
-			"textures": "textures/items/infect_armor/infected_helmet_icon"
-		},
-		"zombie_infected_chestplate_icon": {
-			"textures": "textures/items/infect_armor/infected_chestplate_icon"
-		},
-		"zombie_infected_leggings_icon": {
-			"textures": "textures/items/infect_armor/infected_leggings_icon"
-		},
-		"zombie_infected_boots_icon": {
-			"textures": "textures/items/infect_armor/infected_boots_icon"
-		},
-		"zombie_helmet_trim": {
-			"textures": "textures/items/infect_armor/infected_helmet"
-		},
-		"zombie_chestplate_trim": {
-			"textures": "textures/items/infect_armor/infected_chestplate"
-		},
-		"zombie_leggings_trim": {
-			"textures": "textures/items/infect_armor/infected_leggings"
-		},
-		"zombie_boots_trim": {
-			"textures": "textures/items/infect_armor/infected_boots"
-		},
-		"zombie_crab_helmet": {
-			"textures": "textures/armor/crab/helmet/crab_helmet_icon"
-		},
-		"zombie_crab_chest": {
-			"textures": "textures/armor/crab/chest/crab_chest_icon"
-		},
-		"zombie_crab_leggings": {
-			"textures": "textures/armor/crab/leggings/crab_leggings_icon"
-		},
-		"zombie_crab_boots": {
-			"textures": "textures/armor/crab/boots/crab_boots_icon"		
-		},
-		"zombie_crab_sword": {
-			"textures": "textures/swords/crab_sword/crab_sword"
-		},
-		"zombie_crab_claw": {
-			"textures": "textures/items/water/crab/crab_claw"
-		},
-		"zombie_crab_eyes": {
-			"textures": "textures/items/water/crab/crab_eyes"
-		},
-		"zombie_crab_orb": {
-			"textures": "textures/items/water/crab/crab_orb"
-		},
-		"zombie_crab_shell": {
-			"textures": "textures/items/water/crab/crab_shell"
-		},
-		"zombie_crab_netherite_sword": {
-			"textures": "textures/swords/crab_sword_netherite/crab_netherite_sword"
-		},
-		"zombie_orca_netherite_sword": {
-			"textures": "textures/swords/orca_blade_netherite/orca_netherite_sword"
-		},
-		"zombie_crab_bucket": {
-			"textures": "textures/items/water/crab/crab_bucket"
-		},
-		"zombie_peeper_green_bucket": {
-			"textures": "textures/items/water/peepers/peeper_green_bucket"
-		},
-		"zombie_peeper_blue_bucket": {
-			"textures": "textures/items/water/peepers/peeper_blue_bucket"
-		},
-		"zombie_peeper_purple_bucket": {
-			"textures": "textures/items/water/peepers/peeper_purple_bucket"
-		},
-		"zombie_peeper_red_bucket": {
-			"textures": "textures/items/water/peepers/peeper_red_bucket"
-		},
-		"zombie_peeper_meat": {
-			"textures": "textures/items/water/peepers/peeper_meat"
-		},
-		"zombie_peeper_meat_cooked": {
-			"textures": "textures/items/water/peepers/peeper_meat_cooked"
-		},
-		"zombie_peeper_fillet": {
-			"textures": "textures/items/water/peepers/peeper_fillet"
-		},
-		"zombie_peeper_fillet_cooked": {
-			"textures": "textures/items/water/peepers/peeper_fillet_cooked"
-		},
-		"zombie_peeper_steak": {
-			"textures": "textures/items/water/peepers/peeper_steak"
-		},
-		"zombie_peeper_steak_cooked": {
-			"textures": "textures/items/water/peepers/peeper_steak_cooked"
-		},
-		"zombie_crab_leg": {
-			"textures": "textures/items/water/crab/crab_leg"
-		},
-		"zombie_steamed_crab_leg": {
-			"textures": "textures/items/water/crab/crablegs_steamed"
-		},
-		"zombie_greatwhite_boots_icon": {
-			"textures": "textures/armor/greatwhite/boots/greatwhite_boots_icon"
-		},
-		"zombie_greatwhite_helmet_icon":{
-			"textures": "textures/armor/greatwhite/helmet/greatwhite_helmet_icon"
-		},
-		"zombie_greatwhite_chest_icon":{
-			"textures": "textures/armor/greatwhite/chest/greatwhite_chest_icon"
-		},
-		"zombie_greatwhite_leggings_icon":{
-			"textures": "textures/armor/greatwhite/leggings/greatwhite_leggings_icon"
-		},
-		"zombie_shark_eye": {
-			"textures": "textures/items/water/sharks/greatwhite/shark_eye"
-		},
-		"zombie_shark_fin": {
-			"textures": "textures/items/water/sharks/greatwhite/shark_fin"
-		},
-		"zombie_shark_fin_cooked": {
-			"textures": "textures/items/water/sharks/greatwhite/shark_fin_cooked"
-		},
-		"zombie_shark_hide": {
-			"textures": "textures/items/water/sharks/greatwhite/shark_hide"
-		},
-		"zombie_shark_meat": {
-			"textures": "textures/items/water/sharks/greatwhite/shark_meat"
-		},
-		"zombie_shark_meat_cooked": {
-			"textures": "textures/items/water/sharks/greatwhite/shark_meat_cooked"
-		},
-		"zombie_shark_sword": {
-			"textures": "textures/swords/shark_sword/shark_sword"
-		},
-		"zombie_shark_netherite_sword": {
-			"textures": "textures/swords/shark_sword_netherite/shark_sword_netherite"
-		},
-		"zombie_shark_tooth": {
-			"textures": "textures/items/water/sharks/greatwhite/shark_tooth"
-		},
-		"zombie_jellyfish_black_boots": {
-			"textures": "textures/armor/jellyfish/black/boots/jellyfin_boots_black_icon"
-		},
-		"zombie_jellyfish_black_leggings": {
-			"textures": "textures/armor/jellyfish/black/leggings/jellyfish_leggings_black_icon"
-		},
-		"zombie_jellyfish_black_helmet": {
-			"textures": "textures/armor/jellyfish/black/helmet/jellyfish_helmet_black_icon"
-		},
-		"zombie_jellyfish_black_chest": {
-			"textures": "textures/armor/jellyfish/black/chest/jellyfish_chest_black_icon"
-		},
-		"zombie_jellyfish_green_boots": {
-			"textures": "textures/armor/jellyfish/green/boots/jellyfin_boots_green_icon"
-		},
-		"zombie_jellyfish_green_leggings": {
-			"textures": "textures/armor/jellyfish/green/leggings/jelly_fin_leggings_green_icon"
-		},
-		"zombie_jellyfish_green_helmet": {
-			"textures": "textures/armor/jellyfish/green/helmet/jellyfish_helmet_green_icon"
-		},
-		"zombie_jellyfish_green_chest": {
-			"textures": "textures/armor/jellyfish/green/chest/jellyfish_chest_green_icon"
-		},
-		"zombie_jellyfish_pink_boots": {
-			"textures": "textures/armor/jellyfish/pink/boots/jellyfin_boots_pink_icon"
-		},
-		"zombie_jellyfish_pink_leggings": {
-			"textures": "textures/armor/jellyfish/pink/leggings/jelly_fin_leggings_pink_icon"
-		},
-		"zombie_jellyfish_pink_helmet": {
-			"textures": "textures/armor/jellyfish/pink/helmet/jellyfish_helmet_pink_icon"
-		},
-		"zombie_jellyfish_pink_chest": {
-			"textures": "textures/armor/jellyfish/pink/chest/jellyfish_chest_pink_icon"
-		},
-		"zombie_jellyfish_yellow_boots": {
-			"textures": "textures/armor/jellyfish/yellow/boots/jellyfin_boots_yellow_icon"
-		},
-		"zombie_jellyfish_yellow_leggings": {
-			"textures": "textures/armor/jellyfish/yellow/leggings/jelly_fin_leggings_yellow_icon"
-		},
-		"zombie_jellyfish_yellow_helmet": {
-			"textures": "textures/armor/jellyfish/yellow/helmet/jellyfish_helmet_yellow_icon"
-		},
-		"zombie_jellyfish_yellow_chest": {
-			"textures": "textures/armor/jellyfish/yellow/chest/jellyfish_chest_yellow_icon"
-		},
-		"zombie_jellyfish_jelly_black": {
-			"textures": "textures/items/water/jellyfish/black_jelly"
-		},
-		"zombie_jellyfish_jelly_green": {
-			"textures": "textures/items/water/jellyfish/jelly_green"
-		},
-		"zombie_jellyfish_jelly_yellow": {
-			"textures": "textures/items/water/jellyfish/jelly_yellow"
-		},
-		"zombie_jellyfish_jelly_pink": {
-			"textures": "textures/items/water/jellyfish/pink_jelly"
-		},
-		"zombie_jellyfish_glowing_cyst": {
-			"textures": "textures/items/water/jellyfish/glowing_cyst"
-		},
-		"zombie_jellyfish_glowing_jelly": {
-			"textures": "textures/items/water/jellyfish/jelly"
-		},
-		"zombie_jellyfish_jellyfish_pearl": {
-			"textures": "textures/items/water/jellyfish/jellyfish_pearl"
-		},
-		"zombie_jellyfish_jelly_cyst": {
-			"textures": "textures/items/water/jellyfish/glowing_cyst"
-		},
-		"zombie_jellyfish_jelly_jelly": {
-			"textures": "textures/items/water/jellyfish/jelly"
-		},
-		"zombie_jellyfish_jelly_pearl": {
-			"textures": "textures/items/water/jellyfish/jellyfish_pearl"
-		},
-		"zombie_jellyfish_jelly_sword": {
-			"textures": "textures/swords/jellysword/jellysword"
-		},
-		"zombie_jellyfish_jelly_sword_netherite": {
-			"textures": "textures/swords/jellysword_netherite/jellysword_netherite"
-		},
-		"zombie_orca_netherite_boots": {
-			"textures": "textures/armor/orca/netheriteboots/netherite_boots_icon"
-		},
-		"zombie_orca_netherite_leggings": {
-			"textures": "textures/armor/orca/netheriteleggings/netherite_leggings_icon"
-		},
-		"zombie_orca_netherite_chest": {
-			"textures": "textures/armor/orca/netheritechest/netherite_chest_icon"
-		},
-		"zombie_orca_netherite_helmet": {
-			"textures": "textures/armor/orca/netheritehelmet/netherite_helmet_icon"
-		},
-		"zombie_crab_netherite_boots": {
-			"textures": "textures/armor/crab/netheriteboots/netherite_boots_icon"
-		},
-		"zombie_crab_netherite_leggings": {
-			"textures": "textures/armor/crab/netheriteleggings/netherite_leggings_icon"
-		},
-		"zombie_crab_netherite_chest": {
-			"textures": "textures/armor/crab/netheritechest/netherite_chest_icon"
-		},
-		"zombie_crab_netherite_helmet": {
-			"textures": "textures/armor/crab/netheritehelmet/netherite_helmet_icon"
-		},
-		"zombie_greatwhite_netherite_boots_icon": {
-			"textures": "textures/armor/greatwhite/netheriteboots/netherite_boots_icon"
-		},
-		"zombie_greatwhite_netherite_leggings_icon": {
-			"textures": "textures/armor/greatwhite/netheriteleggings/netherite_leggings_icon"
-		},
-		"zombie_greatwhite_netherite_chest_icon": {
-			"textures": "textures/armor/greatwhite/netheritechest/netherite_chest_icon"
-		},
-		"zombie_greatwhite_netherite_helmet_icon": {
-			"textures": "textures/armor/greatwhite/netheritehelmet/netherite_helmet_icon"
-		},
-		"zombie_jellyfish_netherite_black_boots": {
-			"textures": "textures/armor/jellyfish/black/netheriteboots/netherite_boots_icon"
-		},
-		"zombie_jellyfish_netherite_black_leggings": {
-			"textures": "textures/armor/jellyfish/black/netheriteleggings/netherite_leggings_icon"
-		},
-		"zombie_jellyfish_netherite_black_chest": {
-			"textures": "textures/armor/jellyfish/black/netheritechest/netherite_chest_icon"
-		},
-		"zombie_jellyfish_netherite_black_helmet": {
-			"textures": "textures/armor/jellyfish/black/netheritehelmet/netherite_helmet_icon"
-		},
-		"zombie_jellyfish_netherite_green_boots": {
-			"textures": "textures/armor/jellyfish/green/netheriteboots/netherite_boots_icon"
-		},
-		"zombie_jellyfish_netherite_green_leggings": {
-			"textures": "textures/armor/jellyfish/green/netheriteleggings/netherite_leggings_icon"
-		},
-		"zombie_jellyfish_netherite_green_chest": {
-			"textures": "textures/armor/jellyfish/green/netheritechest/netherite_chest_icon"
-		},
-		"zombie_jellyfish_netherite_green_helmet": {
-			"textures": "textures/armor/jellyfish/green/netheritehelmet/netherite_helmet_icon"
-		},
-		"zombie_jellyfish_netherite_pink_boots": {
-			"textures": "textures/armor/jellyfish/pink/netheriteboots/netherite_boots_icon"
-		},
-		"zombie_jellyfish_netherite_pink_leggings": {
-			"textures": "textures/armor/jellyfish/pink/netheriteleggings/netherite_leggings_icon"
-		},
-		"zombie_jellyfish_netherite_pink_chest": {
-			"textures": "textures/armor/jellyfish/pink/netheritechest/netherite_chest_icon"
-		},
-		"zombie_jellyfish_netherite_pink_helmet": {
-			"textures": "textures/armor/jellyfish/pink/netheritehelmet/netherite_helmet_icon"
-		},
-		"zombie_jellyfish_netherite_yellow_boots": {
-			"textures": "textures/armor/jellyfish/yellow/netheriteboots/netherite_boots_icon"
-		},
-		"zombie_jellyfish_netherite_yellow_leggings": {
-			"textures": "textures/armor/jellyfish/yellow/netheriteleggings/netherite_leggings_icon"
-		},
-		"zombie_jellyfish_netherite_yellow_chest": {
-			"textures": "textures/armor/jellyfish/yellow/netheritechest/netherite_chest_icon"
-		},
-		"zombie_jellyfish_netherite_yellow_helmet": {
-			"textures": "textures/armor/jellyfish/yellow/netheritehelmet/netherite_helmet_icon"
-		},
-		"zombie_sunking_captain_helmet": {
-			"textures": "textures/armor/sunkingcaptains/helmet/sunkin_helmet_icon"
-		},
-		"zombie_sunking_captain_chestplate": {
-			"textures": "textures/armor/sunkingcaptains/chest/sunking_chest_icon"
-		},
-		"zombie_sunking_captain_leggings": {
-			"textures": "textures/armor/sunkingcaptains/leggings/sunking_leggings_icon1"
-		},
-		"zombie_sunking_captain_boots": {
-			"textures": "textures/armor/sunkingcaptains/boots/sunking_boots_icon"
-		},
-		"zombie_sunking_captain_sword": {
-			"textures": "textures/armor/sunkingcaptains/sword/captions_sunkin_sword"
-		},
-		"zombie_bear_claw": {
-			"textures": "textures/items/redwood/bears/bear_claw_item"
-		},
-		"zombie_bear_raw": {
-			"textures": "textures/items/redwood/bears/bear_raw"
-		},
-		"zombie_bear_cooked": {
-			"textures": "textures/items/redwood/bears/bear_cooked"
-		},
-		"zombie_bear_rotten": {
-			"textures": "textures/items/redwood/bears/bear_rotten"
-		},
-		"zombie_brown_bear_fur": {
-			"textures": "textures/items/redwood/bears/brown_fur"
-		},
-		"zombie_black_bear_fur": {
-			"textures": "textures/items/redwood/bears/black_fur"
-		},
-		"zombie_brown_bear_leggings": {
-			"textures": "textures/items/bear_armor/brown_leggings_icon"
-		},
-		"zombie_brown_bear_helment": {
-			"textures": "textures/items/bear_armor/brown_bear_helmet_icon"
-		},
-		"zombie_brown_bearclaw": {
-			"textures": "textures/items/bear_armor/bear_claw_icon"
-		},
-		"zombie_brown_bear_chestplate2": {
-			"textures": "textures/items/bear_armor/brown_armor_chestplate_icon"
-		},
-		"zombie_brown_bear_boots": {
-			"textures": "textures/items/bear_armor/brown_bear_boots_icon"
-		},
-		"zombie_black_bear_leggings": {
-			"textures": "textures/items/bear_armor/black_bear_leggings_icon"
-		},
-		"zombie_black_bear_helment": {
-			"textures": "textures/items/bear_armor/black_bear_helmet_icon"
-		},
-		"zombie_black_bearclaw": {
-			"textures": "textures/items/bear_armor/black_bear_claw_icon"
-		},
-		"zombie_black_bear_chestplate": {
-			"textures": "textures/items/bear_armor/black_chestplate_icon"
-		},
-		"zombie_black_bear_boots": {
-			"textures": "textures/items/bear_armor/black_bear_boots_icon"
-		},
-		"zombie_brown_bear_shield": {
-			"textures": "textures/items/bear_armor/brown_sheild_icon"
-		},
-		"zombie_black_bear_shield": {
-			"textures": "textures/items/bear_armor/black_sheild_icon"
-		},
-		"zombie_neatherite_brown_bear_helment": {
-			"textures": "textures/items/bear_armor/brown_netherite_helmet_icon"
-		},
-		"zombie_neatherite_brown_bear_leggings": {
-			"textures": "textures/items/bear_armor/brown_netherite_leggings_icon"
-		},
-		"zombie_neatherite_black_bear_leggings": {
-			"textures": "textures/items/bear_armor/black_neatherite_leggings_icon"
-		},
-		"zombie_black_bear_helmet": {
-			"textures": "textures/items/bear_armor/black_netherite_helmet_icon"
-		},
-		"zombie_chaos_shovel": {
-			"textures": "textures/demon/item_mob/pickaxe_icon"
-		},
-		"zombie_chaos_arrow": {
-			"textures": "textures/demon/item_mob/chaos_arrow_icon"
-		},
-		"zombie_chaos_axe": {
-			"textures": "textures/demon/item_mob/chaos_axe_icon"
-		},
-		"zombie_chaos_bfc_arrow": {
-			"textures": "textures/demon/item_mob/chaos_bfc_arrow_icon"
-		},
-		"zombie_ui_book": {
-			"textures": "textures/demon/item_mob/chaos_gear"
-		},
-		"zombie_chaos_bow": {
-			"textures": "textures/demon/item_mob/chaos_bow_icon"
-		},
-		"zombie_chaos_crossbow": {
-			"textures": "textures/demon/item_mob/chaos_crossbow_icon"
-		},
-		"zombie_chaos_hammer": {
-			"textures": "textures/demon/item_mob/chaos_hammer_icon"
-		},
-		"zombie_chaos_helmet": {
-			"textures": "textures/demon/item_mob/chaos_hat"
-		},
-		"zombie_chaos_hoe": {
-			"textures": "textures/demon/item_mob/chaos_hoe_icon"
-		},
-		"zombie_chaos_key": {
-			"textures": "textures/demon/item_mob/chaos_key_icon"
-		},
-		"zombie_chaos_pickaxe": {
-			"textures": "textures/demon/item_mob/pickaxe_icon"
-		},
-		"zombie_chaos_scythe": {
-			"textures": "textures/demon/item_mob/knife_icon"
-		},
-		"zombie_chaos_shield": {
-			"textures": "textures/demon/item_mob/chaos_shield_icon"
-		},
-		"zombie_chaos_spear": {
-			"textures": "textures/demon/item_mob/chaos_spear_icon"
-		},
-		"zombie_chaos_staff": {
-			"textures": "textures/demon/item_mob/chaos_staff_icon"
-		},
-		"zombie_chaos_sword": {
-			"textures": "textures/demon/item_mob/chaos_sword_icon"
-		},
-		"zombie_chaos_wings": {
-			"textures": "textures/demon/item_mob/chaos_wings_icon"
-		},
-		"zombie_coffin_backpack": {
-			"textures": "textures/demon/item_mob/coffin_backpack_icon"
-		},
-		"zombie_fishing_rod": {
-			"textures": "textures/demon/item_mob/fishing_rod_icon"
-		},
-		"zombie_fishing_casted_rod": {
-			"textures": "textures/demon/item_mob/fishing_rod_casted_icon"
-		}
-	}
+﻿{
+    "texture_data":  {
+                         "orca_boots":  {
+                                            "textures":  "textures/armor/orca/boots/orca_boots_icon"
+                                        },
+                         "orcaleggings":  {
+                                              "textures":  "textures/armor/orca/leggings/orcaleggings_icon"
+                                          },
+                         "orca_chest":  {
+                                            "textures":  "textures/armor/orca/chest/orca_chest_icon"
+                                        },
+                         "orca_helmet":  {
+                                             "textures":  "textures/armor/orca/helmet/orca_helmet_icon"
+                                         },
+                         "orca_sword":  {
+                                            "textures":  "textures/swords/orca_sword/orca_sword_icon"
+                                        },
+                         "orca_core":  {
+                                           "textures":  "textures/items/water/orca/core"
+                                       },
+                         "orca_blubber_rotten":  {
+                                                     "textures":  "textures/items/water/orca/orca_blubber_rotten"
+                                                 },
+                         "orca_blubber":  {
+                                              "textures":  "textures/items/water/orca/orca_blubber"
+                                          },
+                         "orca_bone":  {
+                                           "textures":  "textures/items/water/orca/orca_bone"
+                                       },
+                         "orca_heart":  {
+                                            "textures":  "textures/items/water/orca/orca_heart"
+                                        },
+                         "orca_shard":  {
+                                            "textures":  "textures/items/water/orca/orca_shard"
+                                        },
+                         "orca_tooth":  {
+                                            "textures":  "textures/items/water/orca/orca_tooth"
+                                        },
+                         "orca_meat":  {
+                                           "textures":  "textures/items/water/orca/orca_meat"
+                                       },
+                         "orca_meat_cooked":  {
+                                                  "textures":  "textures/items/water/orca/orca_meat_cooked"
+                                              },
+                         "pengiun_egg":  {
+                                             "textures":  "textures/items/water/pengiuns/pengiun_egg"
+                                         },
+                         "abyss_flower_seed":  {
+                                                   "textures":  "textures/abyss/flowers/abyss_flower_seed"
+                                               },
+                         "spore":  {
+                                       "textures":  "textures/infected/plants/sporepod/spore"
+                                   },
+                         "infected_eye":  {
+                                              "textures":  "textures/infected/flower/eye"
+                                          },
+                         "eye_flower_seed":  {
+                                                 "textures":  "textures/infected/eyeflower/flower"
+                                             },
+                         "eyewood_button":  {
+                                                "textures":  "textures/abyss/blocks/eye_wood_button_icon"
+                                            },
+                         "fish_bone":  {
+                                           "textures":  "textures/items/water/pengiuns/fish_bone"
+                                       },
+                         "pengun_blubber":  {
+                                                "textures":  "textures/items/water/pengiuns/pengun_blubber"
+                                            },
+                         "bucket_of_oil":  {
+                                               "textures":  "textures/items/water/pengiuns/bucket_of_oil"
+                                           },
+                         "pengiun_meat":  {
+                                              "textures":  "textures/items/water/pengiuns/pengiun_meat"
+                                          },
+                         "pengiun_meat_cooked":  {
+                                                     "textures":  "textures/items/water/pengiuns/pengiun_meat_cooked"
+                                                 },
+                         "zombie_vial":  {
+                                             "textures":  "textures/items/zombie_stuff/zombie_vial"
+                                         },
+                         "zombie_infected_goo":  {
+                                                     "textures":  "textures/items/infect_armor/infected_goo"
+                                                 },
+                         "zombie_infected_tablet":  {
+                                                        "textures":  "textures/items/infect_armor/infected_tablet"
+                                                    },
+                         "zombie_infected_crystal":  {
+                                                         "textures":  "textures/items/infect_armor/infected_crystal"
+                                                     },
+                         "zombie_raw_demon_steel":  {
+                                                        "textures":  "textures/demon/demon_steel_raw"
+                                                    },
+                         "zombie_demon_steel_nugget":  {
+                                                           "textures":  "textures/demon/demon_steel_nugget"
+                                                       },
+                         "zombie_demon_steel_ingot":  {
+                                                          "textures":  "textures/demon/demon_steel_ingot"
+                                                      },
+                         "zombie_hell_sword":  {
+                                                   "textures":  "textures/demon/item_mob/hell_sword"
+                                               },
+                         "zombie_emberberrys":  {
+                                                    "textures":  "textures/demon/plants/emberberrys"
+                                                },
+                         "zombie_currupted_xp_orb":  {
+                                                         "textures":  "textures/demon/drops/currupted_xp_orb"
+                                                     },
+                         "zombie_demon_ash":  {
+                                                  "textures":  "textures/demon/drops/demon_ash"
+                                              },
+                         "zombie_demon_heart":  {
+                                                    "textures":  "textures/demon/drops/demon_heart"
+                                                },
+                         "zombie_infected_sword":  {
+                                                       "textures":  "textures/items/infect_armor/infected_sword"
+                                                   },
+                         "zombie_infected_axe":  {
+                                                     "textures":  "textures/items/infect_armor/infected_axe"
+                                                 },
+                         "zombie_infected_helmet_icon":  {
+                                                             "textures":  "textures/items/infect_armor/infected_helmet_icon"
+                                                         },
+                         "zombie_infected_chestplate_icon":  {
+                                                                 "textures":  "textures/items/infect_armor/infected_chestplate_icon"
+                                                             },
+                         "zombie_infected_leggings_icon":  {
+                                                               "textures":  "textures/items/infect_armor/infected_leggings_icon"
+                                                           },
+                         "zombie_infected_boots_icon":  {
+                                                            "textures":  "textures/items/infect_armor/infected_boots_icon"
+                                                        },
+                         "zombie_helmet_trim":  {
+                                                    "textures":  "textures/items/infect_armor/infected_helmet"
+                                                },
+                         "zombie_chestplate_trim":  {
+                                                        "textures":  "textures/items/infect_armor/infected_chestplate"
+                                                    },
+                         "zombie_leggings_trim":  {
+                                                      "textures":  "textures/items/infect_armor/infected_leggings"
+                                                  },
+                         "zombie_boots_trim":  {
+                                                   "textures":  "textures/items/infect_armor/infected_boots"
+                                               },
+                         "zombie_crab_helmet":  {
+                                                    "textures":  "textures/armor/crab/helmet/crab_helmet_icon"
+                                                },
+                         "zombie_crab_chest":  {
+                                                   "textures":  "textures/armor/crab/chest/crab_chest_icon"
+                                               },
+                         "zombie_crab_leggings":  {
+                                                      "textures":  "textures/armor/crab/leggings/crab_leggings_icon"
+                                                  },
+                         "zombie_crab_boots":  {
+                                                   "textures":  "textures/armor/crab/boots/crab_boots_icon"
+                                               },
+                         "zombie_crab_sword":  {
+                                                   "textures":  "textures/swords/crab_sword/crab_sword"
+                                               },
+                         "zombie_crab_claw":  {
+                                                  "textures":  "textures/items/water/crab/crab_claw"
+                                              },
+                         "zombie_crab_eyes":  {
+                                                  "textures":  "textures/items/water/crab/crab_eyes"
+                                              },
+                         "zombie_crab_orb":  {
+                                                 "textures":  "textures/items/water/crab/crab_orb"
+                                             },
+                         "zombie_crab_shell":  {
+                                                   "textures":  "textures/items/water/crab/crab_shell"
+                                               },
+                         "zombie_crab_netherite_sword":  {
+                                                             "textures":  "textures/swords/crab_sword_netherite/crab_netherite_sword"
+                                                         },
+                         "zombie_orca_netherite_sword":  {
+                                                             "textures":  "textures/swords/orca_blade_netherite/orca_netherite_sword"
+                                                         },
+                         "zombie_crab_bucket":  {
+                                                    "textures":  "textures/items/water/crab/crab_bucket"
+                                                },
+                         "zombie_peeper_green_bucket":  {
+                                                            "textures":  "textures/items/water/peepers/peeper_green_bucket"
+                                                        },
+                         "zombie_peeper_blue_bucket":  {
+                                                           "textures":  "textures/items/water/peepers/peeper_blue_bucket"
+                                                       },
+                         "zombie_peeper_purple_bucket":  {
+                                                             "textures":  "textures/items/water/peepers/peeper_purple_bucket"
+                                                         },
+                         "zombie_peeper_red_bucket":  {
+                                                          "textures":  "textures/items/water/peepers/peeper_red_bucket"
+                                                      },
+                         "zombie_peeper_meat":  {
+                                                    "textures":  "textures/items/water/peepers/peeper_meat"
+                                                },
+                         "zombie_peeper_meat_cooked":  {
+                                                           "textures":  "textures/items/water/peepers/peeper_meat_cooked"
+                                                       },
+                         "zombie_peeper_fillet":  {
+                                                      "textures":  "textures/items/water/peepers/peeper_fillet"
+                                                  },
+                         "zombie_peeper_fillet_cooked":  {
+                                                             "textures":  "textures/items/water/peepers/peeper_fillet_cooked"
+                                                         },
+                         "zombie_peeper_steak":  {
+                                                     "textures":  "textures/items/water/peepers/peeper_steak"
+                                                 },
+                         "zombie_peeper_steak_cooked":  {
+                                                            "textures":  "textures/items/water/peepers/peeper_steak_cooked"
+                                                        },
+                         "zombie_crab_leg":  {
+                                                 "textures":  "textures/items/water/crab/crab_leg"
+                                             },
+                         "zombie_steamed_crab_leg":  {
+                                                         "textures":  "textures/items/water/crab/crablegs_steamed"
+                                                     },
+                         "zombie_greatwhite_boots_icon":  {
+                                                              "textures":  "textures/armor/greatwhite/boots/greatwhite_boots_icon"
+                                                          },
+                         "zombie_greatwhite_helmet_icon":  {
+                                                               "textures":  "textures/armor/greatwhite/helmet/greatwhite_helmet_icon"
+                                                           },
+                         "zombie_greatwhite_chest_icon":  {
+                                                              "textures":  "textures/armor/greatwhite/chest/greatwhite_chest_icon"
+                                                          },
+                         "zombie_greatwhite_leggings_icon":  {
+                                                                 "textures":  "textures/armor/greatwhite/leggings/greatwhite_leggings_icon"
+                                                             },
+                         "zombie_shark_eye":  {
+                                                  "textures":  "textures/items/water/sharks/greatwhite/shark_eye"
+                                              },
+                         "zombie_shark_fin":  {
+                                                  "textures":  "textures/items/water/sharks/greatwhite/shark_fin"
+                                              },
+                         "zombie_shark_fin_cooked":  {
+                                                         "textures":  "textures/items/water/sharks/greatwhite/shark_fin_cooked"
+                                                     },
+                         "zombie_shark_hide":  {
+                                                   "textures":  "textures/items/water/sharks/greatwhite/shark_hide"
+                                               },
+                         "zombie_shark_meat":  {
+                                                   "textures":  "textures/items/water/sharks/greatwhite/shark_meat"
+                                               },
+                         "zombie_shark_meat_cooked":  {
+                                                          "textures":  "textures/items/water/sharks/greatwhite/shark_meat_cooked"
+                                                      },
+                         "zombie_shark_sword":  {
+                                                    "textures":  "textures/swords/shark_sword/shark_sword"
+                                                },
+                         "zombie_shark_netherite_sword":  {
+                                                              "textures":  "textures/swords/shark_sword_netherite/shark_sword_netherite"
+                                                          },
+                         "zombie_shark_tooth":  {
+                                                    "textures":  "textures/items/water/sharks/greatwhite/shark_tooth"
+                                                },
+                         "zombie_jellyfish_black_boots":  {
+                                                              "textures":  "textures/armor/jellyfish/black/boots/jellyfin_boots_black_icon"
+                                                          },
+                         "zombie_jellyfish_black_leggings":  {
+                                                                 "textures":  "textures/armor/jellyfish/black/leggings/jellyfish_leggings_black_icon"
+                                                             },
+                         "zombie_jellyfish_black_helmet":  {
+                                                               "textures":  "textures/armor/jellyfish/black/helmet/jellyfish_helmet_black_icon"
+                                                           },
+                         "zombie_jellyfish_black_chest":  {
+                                                              "textures":  "textures/armor/jellyfish/black/chest/jellyfish_chest_black_icon"
+                                                          },
+                         "zombie_jellyfish_green_boots":  {
+                                                              "textures":  "textures/armor/jellyfish/green/boots/jellyfin_boots_green_icon"
+                                                          },
+                         "zombie_jellyfish_green_leggings":  {
+                                                                 "textures":  "textures/armor/jellyfish/green/leggings/jelly_fin_leggings_green_icon"
+                                                             },
+                         "zombie_jellyfish_green_helmet":  {
+                                                               "textures":  "textures/armor/jellyfish/green/helmet/jellyfish_helmet_green_icon"
+                                                           },
+                         "zombie_jellyfish_green_chest":  {
+                                                              "textures":  "textures/armor/jellyfish/green/chest/jellyfish_chest_green_icon"
+                                                          },
+                         "zombie_jellyfish_pink_boots":  {
+                                                             "textures":  "textures/armor/jellyfish/pink/boots/jellyfin_boots_pink_icon"
+                                                         },
+                         "zombie_jellyfish_pink_leggings":  {
+                                                                "textures":  "textures/armor/jellyfish/pink/leggings/jelly_fin_leggings_pink_icon"
+                                                            },
+                         "zombie_jellyfish_pink_helmet":  {
+                                                              "textures":  "textures/armor/jellyfish/pink/helmet/jellyfish_helmet_pink_icon"
+                                                          },
+                         "zombie_jellyfish_pink_chest":  {
+                                                             "textures":  "textures/armor/jellyfish/pink/chest/jellyfish_chest_pink_icon"
+                                                         },
+                         "zombie_jellyfish_yellow_boots":  {
+                                                               "textures":  "textures/armor/jellyfish/yellow/boots/jellyfin_boots_yellow_icon"
+                                                           },
+                         "zombie_jellyfish_yellow_leggings":  {
+                                                                  "textures":  "textures/armor/jellyfish/yellow/leggings/jelly_fin_leggings_yellow_icon"
+                                                              },
+                         "zombie_jellyfish_yellow_helmet":  {
+                                                                "textures":  "textures/armor/jellyfish/yellow/helmet/jellyfish_helmet_yellow_icon"
+                                                            },
+                         "zombie_jellyfish_yellow_chest":  {
+                                                               "textures":  "textures/armor/jellyfish/yellow/chest/jellyfish_chest_yellow_icon"
+                                                           },
+                         "zombie_jellyfish_jelly_black":  {
+                                                              "textures":  "textures/items/water/jellyfish/black_jelly"
+                                                          },
+                         "zombie_jellyfish_jelly_green":  {
+                                                              "textures":  "textures/items/water/jellyfish/jelly_green"
+                                                          },
+                         "zombie_jellyfish_jelly_yellow":  {
+                                                               "textures":  "textures/items/water/jellyfish/jelly_yellow"
+                                                           },
+                         "zombie_jellyfish_jelly_pink":  {
+                                                             "textures":  "textures/items/water/jellyfish/pink_jelly"
+                                                         },
+                         "zombie_jellyfish_glowing_cyst":  {
+                                                               "textures":  "textures/items/water/jellyfish/glowing_cyst"
+                                                           },
+                         "zombie_jellyfish_glowing_jelly":  {
+                                                                "textures":  "textures/items/water/jellyfish/jelly"
+                                                            },
+                         "zombie_jellyfish_jellyfish_pearl":  {
+                                                                  "textures":  "textures/items/water/jellyfish/jellyfish_pearl"
+                                                              },
+                         "zombie_jellyfish_jelly_cyst":  {
+                                                             "textures":  "textures/items/water/jellyfish/glowing_cyst"
+                                                         },
+                         "zombie_jellyfish_jelly_jelly":  {
+                                                              "textures":  "textures/items/water/jellyfish/jelly"
+                                                          },
+                         "zombie_jellyfish_jelly_pearl":  {
+                                                              "textures":  "textures/items/water/jellyfish/jellyfish_pearl"
+                                                          },
+                         "zombie_jellyfish_jelly_sword":  {
+                                                              "textures":  "textures/swords/jellysword/jellysword"
+                                                          },
+                         "zombie_jellyfish_jelly_sword_netherite":  {
+                                                                        "textures":  "textures/swords/jellysword_netherite/jellysword_netherite"
+                                                                    },
+                         "zombie_orca_netherite_boots":  {
+                                                             "textures":  "textures/armor/orca/netheriteboots/netherite_boots_icon"
+                                                         },
+                         "zombie_orca_netherite_leggings":  {
+                                                                "textures":  "textures/armor/orca/netheriteleggings/netherite_leggings_icon"
+                                                            },
+                         "zombie_orca_netherite_chest":  {
+                                                             "textures":  "textures/armor/orca/netheritechest/netherite_chest_icon"
+                                                         },
+                         "zombie_orca_netherite_helmet":  {
+                                                              "textures":  "textures/armor/orca/netheritehelmet/netherite_helmet_icon"
+                                                          },
+                         "zombie_crab_netherite_boots":  {
+                                                             "textures":  "textures/armor/crab/netheriteboots/netherite_boots_icon"
+                                                         },
+                         "zombie_crab_netherite_leggings":  {
+                                                                "textures":  "textures/armor/crab/netheriteleggings/netherite_leggings_icon"
+                                                            },
+                         "zombie_crab_netherite_chest":  {
+                                                             "textures":  "textures/armor/crab/netheritechest/netherite_chest_icon"
+                                                         },
+                         "zombie_crab_netherite_helmet":  {
+                                                              "textures":  "textures/armor/crab/netheritehelmet/netherite_helmet_icon"
+                                                          },
+                         "zombie_greatwhite_netherite_boots_icon":  {
+                                                                        "textures":  "textures/armor/greatwhite/netheriteboots/netherite_boots_icon"
+                                                                    },
+                         "zombie_greatwhite_netherite_leggings_icon":  {
+                                                                           "textures":  "textures/armor/greatwhite/netheriteleggings/netherite_leggings_icon"
+                                                                       },
+                         "zombie_greatwhite_netherite_chest_icon":  {
+                                                                        "textures":  "textures/armor/greatwhite/netheritechest/netherite_chest_icon"
+                                                                    },
+                         "zombie_greatwhite_netherite_helmet_icon":  {
+                                                                         "textures":  "textures/armor/greatwhite/netheritehelmet/netherite_helmet_icon"
+                                                                     },
+                         "zombie_jellyfish_netherite_black_boots":  {
+                                                                        "textures":  "textures/armor/jellyfish/black/netheriteboots/netherite_boots_icon"
+                                                                    },
+                         "zombie_jellyfish_netherite_black_leggings":  {
+                                                                           "textures":  "textures/armor/jellyfish/black/netheriteleggings/netherite_leggings_icon"
+                                                                       },
+                         "zombie_jellyfish_netherite_black_chest":  {
+                                                                        "textures":  "textures/armor/jellyfish/black/netheritechest/netherite_chest_icon"
+                                                                    },
+                         "zombie_jellyfish_netherite_black_helmet":  {
+                                                                         "textures":  "textures/armor/jellyfish/black/netheritehelmet/netherite_helmet_icon"
+                                                                     },
+                         "zombie_jellyfish_netherite_green_boots":  {
+                                                                        "textures":  "textures/armor/jellyfish/green/netheriteboots/netherite_boots_icon"
+                                                                    },
+                         "zombie_jellyfish_netherite_green_leggings":  {
+                                                                           "textures":  "textures/armor/jellyfish/green/netheriteleggings/netherite_leggings_icon"
+                                                                       },
+                         "zombie_jellyfish_netherite_green_chest":  {
+                                                                        "textures":  "textures/armor/jellyfish/green/netheritechest/netherite_chest_icon"
+                                                                    },
+                         "zombie_jellyfish_netherite_green_helmet":  {
+                                                                         "textures":  "textures/armor/jellyfish/green/netheritehelmet/netherite_helmet_icon"
+                                                                     },
+                         "zombie_jellyfish_netherite_pink_boots":  {
+                                                                       "textures":  "textures/armor/jellyfish/pink/netheriteboots/netherite_boots_icon"
+                                                                   },
+                         "zombie_jellyfish_netherite_pink_leggings":  {
+                                                                          "textures":  "textures/armor/jellyfish/pink/netheriteleggings/netherite_leggings_icon"
+                                                                      },
+                         "zombie_jellyfish_netherite_pink_chest":  {
+                                                                       "textures":  "textures/armor/jellyfish/pink/netheritechest/netherite_chest_icon"
+                                                                   },
+                         "zombie_jellyfish_netherite_pink_helmet":  {
+                                                                        "textures":  "textures/armor/jellyfish/pink/netheritehelmet/netherite_helmet_icon"
+                                                                    },
+                         "zombie_jellyfish_netherite_yellow_boots":  {
+                                                                         "textures":  "textures/armor/jellyfish/yellow/netheriteboots/netherite_boots_icon"
+                                                                     },
+                         "zombie_jellyfish_netherite_yellow_leggings":  {
+                                                                            "textures":  "textures/armor/jellyfish/yellow/netheriteleggings/netherite_leggings_icon"
+                                                                        },
+                         "zombie_jellyfish_netherite_yellow_chest":  {
+                                                                         "textures":  "textures/armor/jellyfish/yellow/netheritechest/netherite_chest_icon"
+                                                                     },
+                         "zombie_jellyfish_netherite_yellow_helmet":  {
+                                                                          "textures":  "textures/armor/jellyfish/yellow/netheritehelmet/netherite_helmet_icon"
+                                                                      },
+                         "zombie_sunking_captain_helmet":  {
+                                                               "textures":  "textures/armor/sunkingcaptains/helmet/sunkin_helmet_icon"
+                                                           },
+                         "zombie_sunking_captain_chestplate":  {
+                                                                   "textures":  "textures/armor/sunkingcaptains/chest/sunking_chest_icon"
+                                                               },
+                         "zombie_sunking_captain_leggings":  {
+                                                                 "textures":  "textures/armor/sunkingcaptains/leggings/sunking_leggings_icon1"
+                                                             },
+                         "zombie_sunking_captain_boots":  {
+                                                              "textures":  "textures/armor/sunkingcaptains/boots/sunking_boots_icon"
+                                                          },
+                         "zombie_sunking_captain_sword":  {
+                                                              "textures":  "textures/armor/sunkingcaptains/sword/captions_sunkin_sword"
+                                                          },
+                         "zombie_bear_claw":  {
+                                                  "textures":  "textures/items/redwood/bears/bear_claw_item"
+                                              },
+                         "zombie_bear_raw":  {
+                                                 "textures":  "textures/items/redwood/bears/bear_raw"
+                                             },
+                         "zombie_bear_cooked":  {
+                                                    "textures":  "textures/items/redwood/bears/bear_cooked"
+                                                },
+                         "zombie_bear_rotten":  {
+                                                    "textures":  "textures/items/redwood/bears/bear_rotten"
+                                                },
+                         "zombie_brown_bear_fur":  {
+                                                       "textures":  "textures/items/redwood/bears/brown_fur"
+                                                   },
+                         "zombie_black_bear_fur":  {
+                                                       "textures":  "textures/items/redwood/bears/black_fur"
+                                                   },
+                         "zombie_brown_bear_leggings":  {
+                                                            "textures":  "textures/items/bear_armor/brown_leggings_icon"
+                                                        },
+                         "zombie_brown_bear_helment":  {
+                                                           "textures":  "textures/items/bear_armor/brown_bear_helmet_icon"
+                                                       },
+                         "zombie_brown_bearclaw":  {
+                                                       "textures":  "textures/items/bear_armor/bear_claw_icon"
+                                                   },
+                         "zombie_brown_bear_chestplate2":  {
+                                                               "textures":  "textures/items/bear_armor/brown_armor_chestplate_icon"
+                                                           },
+                         "zombie_brown_bear_boots":  {
+                                                         "textures":  "textures/items/bear_armor/brown_bear_boots_icon"
+                                                     },
+                         "zombie_black_bear_leggings":  {
+                                                            "textures":  "textures/items/bear_armor/black_bear_leggings_icon"
+                                                        },
+                         "zombie_black_bear_helment":  {
+                                                           "textures":  "textures/items/bear_armor/black_bear_helmet_icon"
+                                                       },
+                         "zombie_black_bearclaw":  {
+                                                       "textures":  "textures/items/bear_armor/black_bear_claw_icon"
+                                                   },
+                         "zombie_black_bear_chestplate":  {
+                                                              "textures":  "textures/items/bear_armor/black_chestplate_icon"
+                                                          },
+                         "zombie_black_bear_boots":  {
+                                                         "textures":  "textures/items/bear_armor/black_bear_boots_icon"
+                                                     },
+                         "zombie_brown_bear_shield":  {
+                                                          "textures":  "textures/items/bear_armor/brown_sheild_icon"
+                                                      },
+                         "zombie_black_bear_shield":  {
+                                                          "textures":  "textures/items/bear_armor/black_sheild_icon"
+                                                      },
+                         "zombie_neatherite_brown_bear_helment":  {
+                                                                      "textures":  "textures/items/bear_armor/brown_netherite_helmet_icon"
+                                                                  },
+                         "zombie_neatherite_brown_bear_leggings":  {
+                                                                       "textures":  "textures/items/bear_armor/brown_netherite_leggings_icon"
+                                                                   },
+                         "zombie_neatherite_black_bear_leggings":  {
+                                                                       "textures":  "textures/items/bear_armor/black_neatherite_leggings_icon"
+                                                                   },
+                         "zombie_black_bear_helmet":  {
+                                                          "textures":  "textures/items/bear_armor/black_netherite_helmet_icon"
+                                                      },
+                         "zombie_chaos_shovel":  {
+                                                     "textures":  "textures/demon/item_mob/pickaxe_icon"
+                                                 },
+                         "zombie_chaos_arrow":  {
+                                                    "textures":  "textures/demon/item_mob/chaos_arrow_icon"
+                                                },
+                         "zombie_chaos_axe":  {
+                                                  "textures":  "textures/demon/item_mob/chaos_axe_icon"
+                                              },
+                         "zombie_chaos_bfc_arrow":  {
+                                                        "textures":  "textures/demon/item_mob/chaos_bfc_arrow_icon"
+                                                    },
+                         "zombie_ui_book":  {
+                                                "textures":  "textures/demon/item_mob/chaos_gear"
+                                            },
+                         "zombie_chaos_bow":  {
+                                                  "textures":  "textures/demon/item_mob/chaos_bow_icon"
+                                              },
+                         "zombie_chaos_crossbow":  {
+                                                       "textures":  "textures/demon/item_mob/chaos_crossbow_icon"
+                                                   },
+                         "zombie_chaos_hammer":  {
+                                                     "textures":  "textures/demon/item_mob/chaos_hammer_icon"
+                                                 },
+                         "zombie_chaos_helmet":  {
+                                                     "textures":  "textures/demon/item_mob/chaos_hat"
+                                                 },
+                         "zombie_chaos_hoe":  {
+                                                  "textures":  "textures/demon/item_mob/chaos_hoe_icon"
+                                              },
+                         "zombie_chaos_key":  {
+                                                  "textures":  "textures/demon/item_mob/chaos_key_icon"
+                                              },
+                         "zombie_chaos_pickaxe":  {
+                                                      "textures":  "textures/demon/item_mob/pickaxe_icon"
+                                                  },
+                         "zombie_chaos_scythe":  {
+                                                     "textures":  "textures/demon/item_mob/knife_icon"
+                                                 },
+                         "zombie_chaos_shield":  {
+                                                     "textures":  "textures/demon/item_mob/chaos_shield_icon"
+                                                 },
+                         "zombie_chaos_spear":  {
+                                                    "textures":  "textures/demon/item_mob/chaos_spear_icon"
+                                                },
+                         "zombie_chaos_staff":  {
+                                                    "textures":  "textures/demon/item_mob/chaos_staff_icon"
+                                                },
+                         "zombie_chaos_sword":  {
+                                                    "textures":  "textures/demon/item_mob/chaos_sword_icon"
+                                                },
+                         "zombie_chaos_wings":  {
+                                                    "textures":  "textures/demon/item_mob/chaos_wings_icon"
+                                                },
+                         "zombie_coffin_backpack":  {
+                                                        "textures":  "textures/demon/item_mob/coffin_backpack_icon"
+                                                    },
+                         "zombie_fishing_rod":  {
+                                                    "textures":  "textures/demon/item_mob/fishing_rod_icon"
+                                                },
+                         "zombie_fishing_casted_rod":  {
+                                                           "textures":  "textures/demon/item_mob/fishing_rod_casted_icon"
+                                                       },
+                         "hell_grass_seeds":  {
+                                                  "textures":  "textures/blood/hell_grass_seeds"
+                                              }
+                     }
 }

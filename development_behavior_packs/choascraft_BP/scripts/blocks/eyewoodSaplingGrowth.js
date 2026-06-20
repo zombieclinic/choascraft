@@ -52,7 +52,7 @@ export class EyewoodSaplingGrowthComponent {
 		if (!isOnValidBase(block, dimension, params.valid_base_blocks)) return false;
 
 		if (stage >= maxStage) {
-			return placeTreeFeature(block, dimension, params.feature ?? DEFAULT_FEATURE);
+			return placeTreeFeature(block, dimension, params.feature ?? DEFAULT_FEATURE, params);
 		}
 
 		try {
@@ -60,7 +60,7 @@ export class EyewoodSaplingGrowthComponent {
 			block.setPermutation(block.permutation.withState(stageState, nextStage));
 
 			if (nextStage >= maxStage) {
-				system.run(() => placeTreeFeature(block, dimension, params.feature ?? DEFAULT_FEATURE));
+				system.run(() => placeTreeFeature(block, dimension, params.feature ?? DEFAULT_FEATURE, params));
 			}
 
 			return true;
@@ -74,6 +74,32 @@ export class EyewoodSaplingGrowthComponent {
 		let item = equipment?.getEquipment(EquipmentSlot.Mainhand);
 
 		if (!item || item.typeId !== BONE_MEAL) return false;
+
+
+		if (params.instant_feature_on_fertilize === true) {
+			if (!isOnValidBase(block, dimension, params.valid_base_blocks)) return false;
+
+			const offset = params.placement_offset ?? [0, 1, 0];
+			const location = {
+				x: block.location.x + (offset[0] ?? 0),
+				y: block.location.y + (offset[1] ?? 0),
+				z: block.location.z + (offset[2] ?? 0)
+			};
+
+			if (!placeTreeFeatureAtLocation(dimension, location, params.feature ?? DEFAULT_FEATURE, params)) {
+				return false;
+			}
+
+			spawnGrowthEffects(block, dimension);
+
+			if (!isCreative(player)) {
+				item.amount <= 1 ? item = undefined : item.amount--;
+				equipment.setEquipment(EquipmentSlot.Mainhand, item);
+			}
+
+			return true;
+		}
+
 		if (getGrowthStage(block, params.stage_state ?? DEFAULT_STAGE_STATE) === undefined) return false;
 		if (!isOnValidBase(block, dimension, params.valid_base_blocks)) return false;
 
@@ -88,6 +114,7 @@ export class EyewoodSaplingGrowthComponent {
 	}
 }
 
+
 function getGrowthStage(block, stageState) {
 	try {
 		const stage = block.permutation.getState(stageState);
@@ -97,7 +124,7 @@ function getGrowthStage(block, stageState) {
 	}
 }
 
-function placeTreeFeature(block, dimension, feature) {
+function placeTreeFeature(block, dimension, feature, params = {}) {
 	const location = { ...block.location };
 	const saplingPermutation = block.permutation;
 	const drySapling = !isWater(block);
@@ -105,6 +132,7 @@ function placeTreeFeature(block, dimension, feature) {
 	try {
 		block.setPermutation(BlockPermutation.resolve(AIR));
 		dimension.placeFeature(feature, location, true);
+		decorateVines(dimension, location, params.vine_decoration);
 
 		if (drySapling) {
 			system.run(() => markDryTreeBlocks(dimension, location));
@@ -124,6 +152,60 @@ function placeTreeFeature(block, dimension, feature) {
 	}
 }
 
+
+
+function placeTreeFeatureAtLocation(dimension, location, feature, params = {}) {
+	try {
+		dimension.placeFeature(feature, location, true);
+		decorateVines(dimension, location, params.vine_decoration);
+
+		if (params.mark_dry_tree_blocks === true) {
+			system.run(() => markDryTreeBlocks(dimension, location));
+		}
+
+		return true;
+	} catch {
+		return false;
+	}
+}
+
+const SHUFFLED_VINE_FACES = [
+	{ state: "north", target: block => block.north() },
+	{ state: "south", target: block => block.south() },
+	{ state: "east", target: block => block.east() },
+	{ state: "west", target: block => block.west() }
+];
+
+function decorateVines(dimension, origin, decoration) {
+	if (!decoration?.block || !Array.isArray(decoration.leaves)) return;
+
+	const leafBlocks = new Set(decoration.leaves);
+	const chance = decoration.chance ?? 0.16;
+	const radius = decoration.radius ?? 8;
+	const minY = Math.max(dimension.heightRange?.min ?? -64, origin.y + 2);
+	const maxY = Math.min(dimension.heightRange?.max ?? 320, origin.y + (decoration.height ?? 18));
+
+	for (let x = origin.x - radius; x <= origin.x + radius; x++) {
+		for (let y = minY; y <= maxY; y++) {
+			for (let z = origin.z - radius; z <= origin.z + radius; z++) {
+				try {
+					const leaf = dimension.getBlock({ x, y, z });
+					if (!leafBlocks.has(leaf?.typeId) || Math.random() > chance) continue;
+
+					for (const face of SHUFFLED_VINE_FACES) {
+						const target = face.target(leaf);
+						if (!target?.isAir) continue;
+
+						target.setPermutation(BlockPermutation.resolve(decoration.block, {
+							"minecraft:block_face": face.state
+						}));
+						break;
+					}
+				} catch {}
+			}
+		}
+	}
+}
 function markDryTreeBlocks(dimension, origin) {
 	const radius = 18;
 	const minY = Math.max(dimension.heightRange?.min ?? -64, origin.y);
@@ -186,3 +268,5 @@ function isCreative(player) {
 		return false;
 	}
 }
+
+

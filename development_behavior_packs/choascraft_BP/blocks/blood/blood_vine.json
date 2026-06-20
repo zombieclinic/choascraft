@@ -1,0 +1,189 @@
+{
+  "format_version": "1.26.20",
+  "minecraft:block": {
+    "description": {
+      "identifier": "zombie:blood_vine",
+      "states": {
+        "zombie:vine_stage": [
+          "start",
+          "middle",
+          "end"
+        ],
+        "zombie:vine_growing": [
+          "yes",
+          "no"
+        ]
+      },
+      "menu_category": {
+        "category": "nature",
+        "group": "minecraft:itemGroup.name.vines"
+      },
+      "traits": {
+        "minecraft:placement_position": {
+          "enabled_states": [
+            "minecraft:block_face"
+          ]
+        }
+      }
+    },
+    "components": {
+      "minecraft:display_name": "Blood Vine",
+      "minecraft:geometry": "geometry.zombie.blood_vine",
+      "minecraft:material_instances": {
+        "*": {
+          "texture": "blood_tree_vines",
+          "render_method": "alpha_test",
+          "face_dimming": false,
+          "ambient_occlusion": 0
+        }
+      },
+      "minecraft:item_visual": {
+        "geometry": "geometry.zombie.blood_vine",
+        "material_instances": {
+          "*": {
+            "texture": "blood_tree_vines",
+            "render_method": "alpha_test",
+            "face_dimming": false,
+            "ambient_occlusion": 0
+          }
+        }
+      },
+      "minecraft:collision_box": false,
+      "minecraft:selection_box": {
+        "origin": [
+          -8,
+          0,
+          6
+        ],
+        "size": [
+          16,
+          16,
+          2
+        ]
+      },
+      "minecraft:destructible_by_mining": {
+        "seconds_to_destroy": 0.2
+      },
+      "minecraft:destructible_by_explosion": {
+        "explosion_resistance": 0
+      },
+      "minecraft:flammable": {
+        "catch_chance_modifier": 15,
+        "destroy_chance_modifier": 100
+      },
+      "minecraft:placement_filter": {
+        "conditions": [
+          {
+            "allowed_faces": [
+              "north",
+              "south",
+              "east",
+              "west"
+            ],
+            "block_filter": [
+              "zombie:blood_leaves",
+              "zombie:flesh_leaves",
+              "zombie:tumor_leaves"
+            ]
+          }
+        ]
+      },
+      "minecraft:tags": [
+        "minecraft:is_shears_item_destructible",
+        "plant",
+        "vine"
+      ]
+    },
+    "permutations": [
+      {
+        "condition": "query.block_state('zombie:vine_stage') == 'start' && query.block_state('zombie:vine_growing') == 'yes'",
+        "components": {
+          "minecraft:tick": {
+            "looping": true,
+            "interval_range": [
+              300,
+              700
+            ]
+          },
+          "zombie:blood_vine_growth": {}
+        }
+      },
+      {
+        "condition": "query.block_state('zombie:vine_stage') == 'middle'",
+        "components": {
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "blood_vine_1",
+              "render_method": "alpha_test",
+              "face_dimming": false,
+              "ambient_occlusion": 0
+            }
+          },
+          "minecraft:loot": "loot_tables/blocks/empty.json"
+        }
+      },
+      {
+        "condition": "query.block_state('zombie:vine_stage') == 'end'",
+        "components": {
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "blood_vine_2",
+              "render_method": "alpha_test",
+              "face_dimming": false,
+              "ambient_occlusion": 0
+            }
+          },
+          "minecraft:loot": "loot_tables/blocks/empty.json"
+        }
+      },
+      {
+        "condition": "query.block_state('minecraft:block_face') == 'north'",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [
+              0,
+              0,
+              0
+            ]
+          }
+        }
+      },
+      {
+        "condition": "query.block_state('minecraft:block_face') == 'south'",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [
+              0,
+              180,
+              0
+            ]
+          }
+        }
+      },
+      {
+        "condition": "query.block_state('minecraft:block_face') == 'east'",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [
+              0,
+              -90,
+              0
+            ]
+          }
+        }
+      },
+      {
+        "condition": "query.block_state('minecraft:block_face') == 'west'",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [
+              0,
+              90,
+              0
+            ]
+          }
+        }
+      }
+    ]
+  }
+}

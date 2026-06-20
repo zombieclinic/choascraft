@@ -1,0 +1,13 @@
+﻿{
+    "pools":  [
+                  {
+                      "entries":  [
+                                      {
+                                          "name":  "zombie:blood_sapling",
+                                          "type":  "item"
+                                      }
+                                  ],
+                      "rolls":  1
+                  }
+              ]
+}

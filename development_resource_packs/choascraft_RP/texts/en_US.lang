@@ -348,9 +348,9 @@ tile.zombie:demon_gate.name=Demon Fence Gate
 tile.zombie:hellfire_trapstone.name=Hellfire Trapstone
 tile.zombie:hellfire_spike.name=Hellfire Spike
 tile.zombie:demon_alter.name=Demon Alter
-tile.zombie:demon_blood_block.name=Demon Blood Block
-tile.zombie:demon_flesh_block.name=Demon Flesh Block
-tile.zombie:demon_blood_flesh_block.name=Bloodied Demon Flesh Block
+tile.zombie:demon_blood_block.name=Blood Block
+tile.zombie:demon_flesh_block.name=Flesh Block
+tile.zombie:demon_blood_flesh_block.name=Blood Flesh Block
 tile.zombie:demon_skull.name=Demon Skull
 tile.zombie:demon_pentagram.name=Demon Pentagram
 

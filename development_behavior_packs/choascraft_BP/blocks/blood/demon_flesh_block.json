@@ -2,7 +2,7 @@
   "format_version": "1.26.30",
   "minecraft:block": {
     "description": {
-      "identifier": "zombie:demon_blood_flesh_block",
+      "identifier": "zombie:demon_flesh_block",
       "menu_category": {
         "category": "nature"
       }
@@ -14,11 +14,11 @@
       "minecraft:destructible_by_mining": {
         "seconds_to_destroy": 0.5
       },
-      "minecraft:map_color": "#6B1515",
-      "minecraft:display_name": "Bloodied Demon Flesh Block",
+      "minecraft:map_color": "#8B3B38",
+      "minecraft:display_name": "Flesh Block",
       "minecraft:material_instances": {
         "*": {
-          "texture": "zombie_demon_blood_flesh_block",
+          "texture": "zombie_demon_flesh_block",
           "render_method": "opaque"
         }
       },

@@ -1,0 +1,20 @@
+﻿{
+    "pools":  [
+                  {
+                      "entries":  [
+                                      {
+                                          "weight":  1,
+                                          "name":  "zombie:tumor_sapling",
+                                          "type":  "item"
+                                      }
+                                  ],
+                      "rolls":  1,
+                      "conditions":  [
+                                         {
+                                             "condition":  "random_chance",
+                                             "chance":  0.08
+                                         }
+                                     ]
+                  }
+              ]
+}

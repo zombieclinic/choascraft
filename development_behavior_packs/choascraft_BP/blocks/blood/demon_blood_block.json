@@ -15,7 +15,7 @@
         "seconds_to_destroy": 0.5
       },
       "minecraft:map_color": "#5A0505",
-      "minecraft:display_name": "Demon Blood Block",
+      "minecraft:display_name": "Blood Block",
       "minecraft:material_instances": {
         "*": {
           "texture": "zombie_demon_blood_block",

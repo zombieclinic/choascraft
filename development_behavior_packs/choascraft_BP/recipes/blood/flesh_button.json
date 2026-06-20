@@ -1,0 +1,27 @@
+﻿{
+    "format_version":  "1.20.10",
+    "minecraft:recipe_shapeless":  {
+                                       "description":  {
+                                                           "identifier":  "zombie:flesh_button"
+                                                       },
+                                       "tags":  [
+                                                    "crafting_table"
+                                                ],
+                                       "ingredients":  [
+                                                           {
+                                                               "item":  "zombie:flesh_planks"
+                                                           }
+                                                       ],
+                                       "result":  [
+                                                      {
+                                                          "count":  1,
+                                                          "item":  "zombie:flesh_button"
+                                                      }
+                                                  ],
+                                       "unlock":  [
+                                                      {
+                                                          "item":  "zombie:flesh_planks"
+                                                      }
+                                                  ]
+                                   }
+}

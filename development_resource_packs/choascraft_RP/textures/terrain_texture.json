@@ -1,4 +1,4 @@
-{
+﻿{
     "resource_pack_name":  "choascraft",
     "texture_name":  "atlas.terrain",
     "texture_data":  {
@@ -258,20 +258,20 @@
                                                         "textures":  "textures/demon/grass/corrupted_grass_5"
                                                     },
                          "zombie_emberberry_0":  {
-                                                    "textures":  "textures/demon/plants/emberberry_0"
-                                                },
+                                                     "textures":  "textures/demon/plants/emberberry_0"
+                                                 },
                          "zombie_emberberry_1":  {
-                                                    "textures":  "textures/demon/plants/emberberry_1"
-                                                },
+                                                     "textures":  "textures/demon/plants/emberberry_1"
+                                                 },
                          "zombie_emberberry_2":  {
-                                                    "textures":  "textures/demon/plants/emberberry_2"
-                                                },
+                                                     "textures":  "textures/demon/plants/emberberry_2"
+                                                 },
                          "zombie_emberberry_3":  {
-                                                    "textures":  "textures/demon/plants/emberberry_3"
-                                                },
+                                                     "textures":  "textures/demon/plants/emberberry_3"
+                                                 },
                          "zombie_emberberry_4":  {
-                                                    "textures":  "textures/demon/plants/emberberry_4"
-                                                },
+                                                     "textures":  "textures/demon/plants/emberberry_4"
+                                                 },
                          "zombie_demon_stone":  {
                                                     "textures":  "textures/demon/demon_stone"
                                                 },
@@ -285,17 +285,17 @@
                                                                    "textures":  "textures/demon/chiseled_demon_steel_block"
                                                                },
                          "zombie_demon_steel_chiseled":  {
-                                                            "textures":  "textures/demon/chiseled_demon_steel_block"
-                                                        },
+                                                             "textures":  "textures/demon/chiseled_demon_steel_block"
+                                                         },
                          "zombie_demon_steel_ore":  {
-                                                       "textures":  "textures/demon/demon_steel_ore"
-                                                   },
+                                                        "textures":  "textures/demon/demon_steel_ore"
+                                                    },
                          "zombie_steel_ore":  {
                                                   "textures":  "textures/demon/demon_steel_ore"
                                               },
                          "zombie_demon_chest":  {
-                                                   "textures":  "textures/demon/choas_chest"
-                                               },
+                                                    "textures":  "textures/demon/choas_chest"
+                                                },
                          "zombie_hell_lamp":  {
                                                   "textures":  "textures/demon/hell_lamp"
                                               },
@@ -307,15 +307,150 @@
                                                     },
                          "zombie_demon_alter_top_planstar":  {
                                                                  "textures":  "textures/demon/demon_alter_top_planstar"
-                                             },
+                                                             },
                          "zombie_demon_blood_block":  {
-                                                           "textures":  "textures/demon/alter_blocks/blood_block"
-                                                       },
+                                                          "textures":  "textures/demon/alter_blocks/blood_block"
+                                                      },
                          "zombie_demon_flesh_block":  {
-                                                           "textures":  "textures/demon/alter_blocks/flesh_block"
-                                                       },
+                                                          "textures":  "textures/demon/alter_blocks/flesh_block"
+                                                      },
                          "zombie_demon_blood_flesh_block":  {
-                                                                 "textures":  "textures/demon/alter_blocks/blood_flesh_block"
-                                              }
+                                                                "textures":  "textures/demon/alter_blocks/blood_flesh_block"
+                                                            },
+                         "blood_log":  {
+                                           "textures":  "textures/blood/blood_log"
+                                       },
+                         "blood_log_top":  {
+                                               "textures":  "textures/blood/blood_log_top"
+                                           },
+                         "blood_stripped_log":  {
+                                                    "textures":  "textures/blood/blood_stripped_log"
+                                                },
+                         "blood_stripped_top_log":  {
+                                                        "textures":  "textures/blood/blood_stripped_top_log"
+                                                    },
+                         "blood_planks":  {
+                                              "textures":  "textures/blood/blood_planks"
+                                          },
+                         "blood_leaves":  {
+                                              "textures":  "textures/blood/blood_leaves"
+                                          },
+                         "blood_door_bottom":  {
+                                                   "textures":  "textures/blood/blood_door_bottom"
+                                               },
+                         "blood_door_top":  {
+                                                "textures":  "textures/blood/blood_door_top"
+                                            },
+                         "blood_trap_door":  {
+                                                 "textures":  "textures/blood/blood_trap_door"
+                                             },
+                         "blood_saplin_0":  {
+                                                "textures":  "textures/blood/blood_saplin_0"
+                                            },
+                         "blood_saplin_1":  {
+                                                "textures":  "textures/blood/blood_saplin_1"
+                                            },
+                         "blood_saplin_2":  {
+                                                "textures":  "textures/blood/blood_saplin_2"
+                                            },
+                         "blood_saplin_3":  {
+                                                "textures":  "textures/blood/blood_saplin_3"
+                                            },
+                         "blood_saplin_4":  {
+                                                "textures":  "textures/blood/blood_saplin_4"
+                                            },
+                         "flesh_tree":  {
+                                            "textures":  "textures/blood/flesh_tree"
+                                        },
+                         "flesh_log_top":  {
+                                               "textures":  "textures/blood/flesh_log_top"
+                                           },
+                         "flesh_log_stripped":  {
+                                                    "textures":  "textures/blood/flesh_log_stripped"
+                                                },
+                         "stripped_flesh_log_top":  {
+                                                        "textures":  "textures/blood/stripped_flesh_log_top"
+                                                    },
+                         "flesh_planks":  {
+                                              "textures":  "textures/blood/flesh_planks"
+                                          },
+                         "flesh_leaves":  {
+                                              "textures":  "textures/blood/flesh_leaves"
+                                          },
+                         "flesh_door_bottom":  {
+                                                   "textures":  "textures/blood/flesh_door_bottom"
+                                               },
+                         "flesh_door_top":  {
+                                                "textures":  "textures/blood/flesh_door_top"
+                                            },
+                         "flesh_trap_door":  {
+                                                 "textures":  "textures/blood/flesh_trap_door"
+                                             },
+                         "flesh_saplin_0":  {
+                                                "textures":  "textures/blood/flesh_saplin_0"
+                                            },
+                         "flesh_saplin_1":  {
+                                                "textures":  "textures/blood/flesh_saplin_1"
+                                            },
+                         "flesh_saplin_2":  {
+                                                "textures":  "textures/blood/flesh_saplin_2"
+                                            },
+                         "flesh_saplin_3":  {
+                                                "textures":  "textures/blood/flesh_saplin_3"
+                                            },
+                         "flesh_saplin_4":  {
+                                                "textures":  "textures/blood/flesh_saplin_4"
+                                            },
+                         "tumor_log":  {
+                                           "textures":  "textures/blood/tumor_log"
+                                       },
+                         "tumor_log_top":  {
+                                               "textures":  "textures/blood/tumor_log_top"
+                                           },
+                         "tumor_log_stripped":  {
+                                                    "textures":  "textures/blood/tumor_log_stripped"
+                                                },
+                         "tumor_log_stripped_top":  {
+                                                        "textures":  "textures/blood/tumor_log_stripped_top"
+                                                    },
+                         "tumor_planks":  {
+                                              "textures":  "textures/blood/tumor_planks"
+                                          },
+                         "tumor_leaves":  {
+                                              "textures":  "textures/blood/tumor_leaves"
+                                          },
+                         "tumor_door_bottom":  {
+                                                   "textures":  "textures/blood/tumor_door_bottom"
+                                               },
+                         "tumor_door_top":  {
+                                                "textures":  "textures/blood/tumor_door_top"
+                                            },
+                         "tumor_trap_door":  {
+                                                 "textures":  "textures/blood/tumor_trap_door"
+                                             },
+                         "tumor_saplin_0":  {
+                                                "textures":  "textures/blood/tumor_saplin_0"
+                                            },
+                         "tumor_saplin_1":  {
+                                                "textures":  "textures/blood/tumor_saplin_1"
+                                            },
+                         "tumor_saplin_2":  {
+                                                "textures":  "textures/blood/tumor_saplin_2"
+                                            },
+                         "tumor_saplin_3":  {
+                                                "textures":  "textures/blood/tumor_saplin_3"
+                                            },
+                         "tumor_saplin_4":  {
+                                                "textures":  "textures/blood/tumor_saplin_4"
+                                            },
+                         "blood_tree_vines":  {
+                                                  "textures":  "textures/blood/blood_tree_vines"
+                                              },
+                         "blood_vine_1":  {
+                                              "textures":  "textures/blood/blood_vine_1"
+                                          },
+                         "blood_vine_2":  {
+                                              "textures":  "textures/blood/blood_vine_2"
+                                          }
                      }
 }

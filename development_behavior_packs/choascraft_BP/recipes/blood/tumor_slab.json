@@ -1,0 +1,30 @@
+﻿{
+    "format_version":  "1.20.10",
+    "minecraft:recipe_shaped":  {
+                                    "description":  {
+                                                        "identifier":  "zombie:tumor_slab"
+                                                    },
+                                    "tags":  [
+                                                 "crafting_table"
+                                             ],
+                                    "pattern":  [
+                                                    "###"
+                                                ],
+                                    "key":  {
+                                                "#":  {
+                                                          "item":  "zombie:tumor_planks"
+                                                      }
+                                            },
+                                    "result":  [
+                                                   {
+                                                       "count":  6,
+                                                       "item":  "zombie:tumor_slab"
+                                                   }
+                                               ],
+                                    "unlock":  [
+                                                   {
+                                                       "item":  "zombie:tumor_planks"
+                                                   }
+                                               ]
+                                }
+}

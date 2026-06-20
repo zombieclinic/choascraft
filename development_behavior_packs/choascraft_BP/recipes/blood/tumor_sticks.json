@@ -1,0 +1,31 @@
+﻿{
+    "format_version":  "1.20.10",
+    "minecraft:recipe_shaped":  {
+                                    "description":  {
+                                                        "identifier":  "zombie:tumor_sticks"
+                                                    },
+                                    "tags":  [
+                                                 "crafting_table"
+                                             ],
+                                    "pattern":  [
+                                                    "#",
+                                                    "#"
+                                                ],
+                                    "key":  {
+                                                "#":  {
+                                                          "item":  "zombie:tumor_planks"
+                                                      }
+                                            },
+                                    "result":  [
+                                                   {
+                                                       "count":  4,
+                                                       "item":  "minecraft:stick"
+                                                   }
+                                               ],
+                                    "unlock":  [
+                                                   {
+                                                       "item":  "zombie:tumor_planks"
+                                                   }
+                                               ]
+                                }
+}

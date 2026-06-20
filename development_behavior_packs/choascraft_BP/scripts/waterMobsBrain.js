@@ -19,6 +19,8 @@ import { ConnectedStairsComponent } from "./blocks/connectedStairs.js"
 import { HellfireTrapstoneComponent } from "./blocks/hellfireTrapstone.js";
 import { DemonSteelOreDropComponent } from "./blocks/demonSteelOreDrops.js";
 import { DemonAlterComponent } from "./blocks/demonAlter.js";
+import { CorruptedGrassDropComponent } from "./blocks/corruptedGrassDrops.js";
+import { BloodVineGrowthComponent } from "./blocks/bloodVineGrowth.js";
 import {infectedAttack} from "./items/infected.js"
 import "./entities/omniusBrain.js"
 import "./entities/zombieDeathAnimations.js"
@@ -53,6 +55,8 @@ const BLOCK_COMPONENTS = [
   ["zombie:hellfire_trapstone", HellfireTrapstoneComponent],
   ["zombie:demon_steel_ore_drop", DemonSteelOreDropComponent],
   ["zombie:demon_alter", DemonAlterComponent],
+  ["zombie:corrupted_grass_drop", CorruptedGrassDropComponent],
+  ["zombie:blood_vine_growth", BloodVineGrowthComponent],
   ["arctic:connectedStairs", ConnectedStairsComponent]
 ];
 
@@ -568,3 +572,4 @@ function tree(x, y, z) {
   qFill(x - 3, y + 9, z - 3, x + 3, y + 11, z + 3, "minecraft:oak_leaves");
   qSet(x, y + 12, z, "minecraft:oak_leaves");
 }
+

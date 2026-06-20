@@ -1,0 +1,106 @@
+{
+  "format_version": "1.26.30",
+  "minecraft:biome": {
+    "description": {
+      "identifier": "zombie:blood_biome"
+    },
+    "components": {
+      "minecraft:climate": {
+        "downfall": 0.35,
+        "snow_accumulation": [
+          0,
+          0
+        ],
+        "temperature": 1.25
+      },
+      "minecraft:overworld_height": {
+        "noise_type": "default"
+      },
+      "minecraft:map_tints": {
+        "grass": {
+          "type": "tint",
+          "tint": "#5a0707"
+        },
+        "foliage": "#8b1e1e"
+      },
+      "minecraft:replace_biomes": {
+        "replacements": [
+          {
+            "dimension": "minecraft:overworld",
+            "targets": [
+              "minecraft:desert",
+              "minecraft:savanna",
+              "minecraft:plains",
+              "minecraft:forest"
+            ],
+            "amount": 0.04,
+            "noise_frequency_scale": 0.85
+          }
+        ]
+      },
+      "minecraft:surface_builder": {
+        "builder": {
+          "type": "minecraft:overworld",
+          "sea_floor_depth": 0,
+          "sea_floor_material": "zombie:demon_flesh_block",
+          "foundation_material": "zombie:demon_blood_block",
+          "mid_material": "zombie:demon_flesh_block",
+          "top_material": "zombie:demon_blood_flesh_block",
+          "sea_material": "minecraft:water"
+        }
+      },
+      "minecraft:subsurface_builder": {
+        "builder": {
+          "type": "minecraft:noise_gradient",
+          "noise_descriptor": {
+            "name": "zombie:blood_biome_subsurface",
+            "first_octave": -7,
+            "amplitudes": [
+              1,
+              0.5,
+              0.25,
+              0.125
+            ]
+          },
+          "non_replaceable_blocks": [
+            "minecraft:air",
+            "minecraft:water",
+            "minecraft:lava",
+            "minecraft:bedrock"
+          ],
+          "noise_block_specifiers": [
+            {
+              "range": {
+                "min": 0,
+                "max": 0.34
+              },
+              "block": "zombie:demon_blood_block"
+            },
+            {
+              "range": {
+                "min": 0.34,
+                "max": 0.68
+              },
+              "block": "zombie:demon_flesh_block"
+            },
+            {
+              "range": {
+                "min": 0.68,
+                "max": 1
+              },
+              "block": "zombie:demon_blood_flesh_block"
+            }
+          ]
+        }
+      },
+      "minecraft:tags": {
+        "tags": [
+          "blood",
+          "blood_biome",
+          "forest",
+          "overworld"
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:feature_rules": {
+    "distribution": {
+      "x": {
+        "distribution": "uniform",
+        "extent": [
+          0,
+          15
+        ]
+      },
+      "y": {
+        "distribution": "uniform",
+        "extent": [
+          55,
+          120
+        ]
+      },
+      "coordinate_eval_order": "zyx",
+      "z": {
+        "distribution": "uniform",
+        "extent": [
+          0,
+          15
+        ]
+      },
+      "iterations": 2
+    },
+    "description": {
+      "identifier": "zombie:blood_tree_feature_rule",
+      "places_feature": "zombie:blood_tree_floor_feature"
+    },
+    "conditions": {
+      "placement_pass": "after_surface_pass",
+      "minecraft:biome_filter": [
+        {
+          "test": "has_biome_tag",
+          "operator": "==",
+          "value": "blood"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,64 @@
+﻿{
+    "format_version":  "1.26.20",
+    "minecraft:block":  {
+                            "description":  {
+                                                "identifier":  "zombie:tumor_leaves",
+                                                "states":  {
+                                                               "zombie:player_placed":  [
+                                                                                            false,
+                                                                                            true
+                                                                                        ]
+                                                           },
+                                                "menu_category":  {
+                                                                      "category":  "nature"
+                                                                  }
+                                            },
+                            "permutations":  [
+                                                 {
+                                                     "condition":  "!query.block_state(\u0027zombie:player_placed\u0027)",
+                                                     "components":  {
+                                                                        "zombie:decayable_leaves":  {
+                                                                                                        "radius":  5
+                                                                                                    }
+                                                                    }
+                                                 }
+                                             ],
+                            "components":  {
+                                               "minecraft:display_name":  "Tumor Leaves",
+                                               "minecraft:destructible_by_mining":  {
+                                                                                        "seconds_to_destroy":  0.5
+                                                                                    },
+                                               "minecraft:destructible_by_explosion":  {
+                                                                                           "explosion_resistance":  0.5
+                                                                                       },
+                                               "minecraft:flammable":  {
+                                                                           "catch_chance_modifier":  5,
+                                                                           "destroy_chance_modifier":  20
+                                                                       },
+                                               "minecraft:geometry":  "minecraft:geometry.full_block",
+                                               "minecraft:material_instances":  {
+                                                                                    "*":  {
+                                                                                              "texture":  "tumor_leaves",
+                                                                                              "render_method":  "blend_to_opaque",
+                                                                                              "tint_method":  "default_foliage",
+                                                                                              "ambient_occlusion":  1,
+                                                                                              "face_dimming":  true,
+                                                                                              "isotropic":  true
+                                                                                          }
+                                                                                },
+                                               "minecraft:loot":  "loot_tables/blocks/tumor_leaves.json",
+                                               "minecraft:light_dampening":  2,
+                                               "minecraft:redstone_conductivity":  {
+                                                                                       "allows_wire_to_step_down":  true,
+                                                                                       "redstone_conductor":  false
+                                                                                   },
+                                               "minecraft:tags":  [
+                                                                      "minecraft:is_shears_item_destructible",
+                                                                      "minecraft:is_hoe_item_destructible",
+                                                                      "zombie:tumor_leaves",
+                                                                      "zombie:custom_leaves",
+                                                                      "leaves"
+                                                                  ]
+                                           }
+                        }
+}

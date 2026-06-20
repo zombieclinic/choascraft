@@ -1,0 +1,172 @@
+{
+  "format_version": "1.26.20",
+  "minecraft:block": {
+    "description": {
+      "identifier": "zombie:blood_sapling",
+      "states": {
+        "zombie:growth_stage": {
+          "values": {
+            "min": 0,
+            "max": 4
+          }
+        }
+      },
+      "menu_category": {
+        "category": "nature",
+        "group": "minecraft:itemGroup.name.sapling"
+      }
+    },
+    "components": {
+      "minecraft:display_name": "Blood Sapling",
+      "minecraft:destructible_by_mining": {
+        "seconds_to_destroy": 0
+      },
+      "minecraft:destructible_by_explosion": {
+        "explosion_resistance": 0
+      },
+      "minecraft:flammable": {
+        "catch_chance_modifier": 60,
+        "destroy_chance_modifier": 100
+      },
+      "minecraft:geometry": "geometry.red_wood_saplin",
+      "minecraft:material_instances": {
+        "*": {
+          "texture": "blood_saplin_0",
+          "render_method": "alpha_test",
+          "face_dimming": false,
+          "ambient_occlusion": 0
+        }
+      },
+      "minecraft:item_visual": {
+        "geometry": "geometry.red_wood_saplin",
+        "material_instances": {
+          "*": {
+            "texture": "blood_saplin_4",
+            "render_method": "alpha_test",
+            "face_dimming": false,
+            "ambient_occlusion": 0
+          }
+        }
+      },
+      "minecraft:selection_box": {
+        "origin": [
+          -6,
+          0,
+          -6
+        ],
+        "size": [
+          12,
+          16,
+          12
+        ]
+      },
+      "minecraft:collision_box": false,
+      "minecraft:loot": "loot_tables/blocks/blood_sapling.json",
+      "minecraft:light_dampening": 0,
+      "minecraft:placement_filter": {
+        "conditions": [
+          {
+            "allowed_faces": [
+              "up"
+            ],
+            "block_filter": [
+              "zombie:demon_grass_no_tick",
+              "zombie:demon_dirt",
+              "zombie:demon_stone",
+              "zombie:demon_blood_block"
+            ]
+          }
+        ]
+      },
+      "minecraft:tick": {
+        "looping": true,
+        "interval_range": [
+          600,
+          1200
+        ]
+      },
+      "zombie:eyewood_tree_sapling_growth": {
+        "stage_state": "zombie:growth_stage",
+        "max_stage": 4,
+        "feature": "zombie:blood_tree_feature",
+        "growth_chance": 0.45,
+        "valid_base_blocks": [
+          "zombie:demon_grass_no_tick",
+          "zombie:demon_dirt",
+          "zombie:demon_stone",
+          "zombie:demon_blood_block"
+        ],
+        "vine_decoration": {
+          "block": "zombie:blood_vine",
+          "leaves": [
+            "zombie:blood_leaves",
+            "zombie:flesh_leaves",
+            "zombie:tumor_leaves"
+          ],
+          "chance": 0.16,
+          "radius": 8,
+          "height": 18
+        }
+      },
+      "minecraft:tags": [
+        "zombie:blood_sapling",
+        "sapling",
+        "plant"
+      ]
+    },
+    "permutations": [
+      {
+        "condition": "query.block_state(\u0027zombie:growth_stage\u0027) == 1",
+        "components": {
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "blood_saplin_1",
+              "render_method": "alpha_test",
+              "face_dimming": false,
+              "ambient_occlusion": 0
+            }
+          }
+        }
+      },
+      {
+        "condition": "query.block_state(\u0027zombie:growth_stage\u0027) == 2",
+        "components": {
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "blood_saplin_2",
+              "render_method": "alpha_test",
+              "face_dimming": false,
+              "ambient_occlusion": 0
+            }
+          }
+        }
+      },
+      {
+        "condition": "query.block_state(\u0027zombie:growth_stage\u0027) == 3",
+        "components": {
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "blood_saplin_3",
+              "render_method": "alpha_test",
+              "face_dimming": false,
+              "ambient_occlusion": 0
+            }
+          }
+        }
+      },
+      {
+        "condition": "query.block_state(\u0027zombie:growth_stage\u0027) == 4",
+        "components": {
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "blood_saplin_4",
+              "render_method": "alpha_test",
+              "face_dimming": false,
+              "ambient_occlusion": 0
+            }
+          }
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:tree_feature": {
+    "description": {
+      "identifier": "zombie:blood_tree_feature"
+    },
+    "acacia_trunk": {
+      "trunk_width": 1,
+      "trunk_height": {
+        "min_height_for_canopy": 7,
+        "intervals": [
+          2,
+          2,
+          3
+        ],
+        "base": 9
+      },
+      "trunk_block": {
+        "name": "zombie:blood_log"
+      },
+      "trunk_lean": {
+        "allow_diagonal_growth": true,
+        "lean_height": {
+          "range_max": 6,
+          "range_min": 2
+        },
+        "lean_steps": {
+          "range_max": 2,
+          "range_min": 0
+        },
+        "lean_length": {
+          "range_max": 2,
+          "range_min": 0
+        }
+      }
+    },
+    "random_spread_canopy": {
+      "leaf_placement_attempts": 75,
+      "leaf_blocks": [
+        [
+          "zombie:blood_leaves",
+          5
+        ]
+      ],
+      "canopy_height": 5,
+      "canopy_radius": 4
+    },
+    "base_block": [
+      "zombie:demon_grass_no_tick",
+      "zombie:demon_dirt",
+      "zombie:demon_stone",
+      "zombie:demon_blood_block",
+      "zombie:demon_flesh_block",
+      "zombie:demon_blood_flesh_block"
+    ],
+    "may_grow_on": [
+      "zombie:demon_grass_no_tick",
+      "zombie:demon_dirt",
+      "zombie:demon_stone",
+      "zombie:demon_blood_block",
+      "zombie:demon_flesh_block",
+      "zombie:demon_blood_flesh_block"
+    ],
+    "may_replace": [
+      "minecraft:air",
+      "minecraft:tallgrass",
+      "minecraft:deadbush",
+      "zombie:corrupted_grass",
+      "zombie:blood_sapling",
+      "zombie:blood_leaves"
+    ],
+    "may_grow_through": [
+      "minecraft:air",
+      "minecraft:tallgrass",
+      "minecraft:deadbush",
+      "zombie:corrupted_grass",
+      "zombie:blood_sapling",
+      "zombie:blood_leaves"
+    ]
+  }
+}
