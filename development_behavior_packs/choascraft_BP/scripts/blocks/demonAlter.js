@@ -15,12 +15,22 @@ const SACRIFICE_HEIGHT = 3;
 const SPREAD_PER_SACRIFICE = 4;
 const XP_CONVERT_DELAY = 2;
 
+const ROOM_SIZE = 32;
+const ROOM_MIN_OFFSET = -16;
+const ROOM_MAX_OFFSET = 15;
+const ROOM_FLOOR_DEPTH = 4;
+const ROOM_HEIGHT = 8;
+const ROOM_BUILD_MIN = 20;
+const ROOM_BUILD_MAX = 20;
+const SUPPORT_RADIUS = 1;
+
 const SPREAD_RADIUS = 12;
 const SOURCE_TRIES = 80;
 const SPREAD_TRIES = 80;
 const MAX_SOURCES = 20;
 
 const poweredAltars = new Set();
+const altarRooms = new Map();
 
 const SPREAD_BLOCKS = [
 	DEMON_BLOOD_BLOCK,
@@ -42,6 +52,25 @@ const BLOCKED_SPREAD_BLOCKS = new Set([
 	"minecraft:structure_block",
 	"minecraft:water",
 	"minecraft:lava"
+]);
+
+const NATURAL_ROOM_BLOCKS = new Set([
+	"minecraft:air",
+	"minecraft:cave_air",
+	"minecraft:void_air",
+	"minecraft:dirt",
+	"minecraft:grass_block",
+	"minecraft:stone",
+	"minecraft:deepslate",
+	"minecraft:granite",
+	"minecraft:diorite",
+	"minecraft:andesite",
+	"minecraft:tuff",
+	"minecraft:calcite",
+	"minecraft:gravel",
+	"minecraft:sand",
+	"minecraft:red_sand",
+	"minecraft:clay"
 ]);
 
 const BLOCKED_SPREAD_KEYWORDS = [
@@ -139,10 +168,179 @@ function sacrificeAtAlter(block) {
 		convertXp(dimension, sacrificeLocation);
 	}, XP_CONVERT_DELAY);
 
-	spreadAlterBlocks(dimension, altar);
+	if (!advanceAlterRoom(dimension, altar)) {
+		spreadAlterBlocks(dimension, altar);
+	}
 	return true;
 }
 
+function advanceAlterRoom(dimension, altar) {
+	const key = altarKey(altar);
+	let room = altarRooms.get(key);
+
+	if (!room) {
+		room = createAlterRoomPlan(dimension, altar);
+		altarRooms.set(key, room);
+	}
+
+	if (room.done) return false;
+
+	let placed = 0;
+	const blocksThisSacrifice = randomInt(ROOM_BUILD_MIN, ROOM_BUILD_MAX);
+	while (room.index < room.steps.length && placed < blocksThisSacrifice) {
+		const step = room.steps[room.index++];
+		if (applyRoomStep(dimension, step)) placed++;
+	}
+
+	if (room.index >= room.steps.length) room.done = true;
+	return true;
+}
+
+function createAlterRoomPlan(dimension, altar) {
+	const steps = [];
+	const floorY = altar.y - ROOM_FLOOR_DEPTH;
+	const ceilingY = floorY + ROOM_HEIGHT;
+	const clearTopY = ceilingY - 1;
+
+	queueAlterSupportTower(steps, dimension, altar, floorY);
+	queueRoomFloor(steps, dimension, altar, floorY);
+	queueRoomClear(steps, dimension, altar, floorY + 1, clearTopY);
+	queueRoomWalls(steps, dimension, altar, floorY + 1, ceilingY - 1);
+	queueRoomCeiling(steps, dimension, altar, ceilingY);
+
+	return {
+		index: 0,
+		done: steps.length === 0,
+		steps
+	};
+}
+
+function queueAlterSupportTower(steps, dimension, altar, floorY) {
+	for (let y = floorY; y < altar.y; y++) {
+		for (let dx = -SUPPORT_RADIUS; dx <= SUPPORT_RADIUS; dx++) {
+			for (let dz = -SUPPORT_RADIUS; dz <= SUPPORT_RADIUS; dz++) {
+				const id = Math.abs(dx) === Math.abs(dz) ? DEMON_SKULL : DEMON_PENTAGRAM;
+				queueRoomSet(steps, dimension, {
+					x: altar.x + dx,
+					y,
+					z: altar.z + dz
+				}, id);
+			}
+		}
+	}
+}
+
+function queueRoomFloor(steps, dimension, altar, y) {
+	forEachRoomXZ(altar, (x, z, dx, dz) => {
+		if (isSupportColumn(dx, dz)) return;
+		queueRoomSet(steps, dimension, { x, y, z }, DEMON_BLOOD_FLESH_BLOCK);
+	});
+}
+
+function queueRoomClear(steps, dimension, altar, minY, maxY) {
+	for (let y = minY; y <= maxY; y++) {
+		forEachRoomXZ(altar, (x, z, dx, dz) => {
+			if (x === altar.x && y === altar.y && z === altar.z) return;
+			if (isRoomEdge(dx, dz)) return;
+			if (y < altar.y && isSupportColumn(dx, dz)) return;
+			queueRoomClearBlock(steps, dimension, { x, y, z });
+		});
+	}
+}
+
+function queueRoomWalls(steps, dimension, altar, minY, maxY) {
+	for (let y = minY; y <= maxY; y++) {
+		forEachRoomXZ(altar, (x, z, dx, dz) => {
+			if (!isRoomEdge(dx, dz)) return;
+			queueRoomSet(steps, dimension, { x, y, z }, DEMON_FLESH_BLOCK);
+		});
+	}
+}
+
+function queueRoomCeiling(steps, dimension, altar, y) {
+	forEachRoomXZ(altar, (x, z) => {
+		queueRoomSet(steps, dimension, { x, y, z }, DEMON_FLESH_BLOCK);
+	});
+}
+
+function queueRoomSet(steps, dimension, location, targetId) {
+	const block = getBlock(dimension, location);
+	if (!canPlanRoomChange(block)) return;
+	steps.push(roomStep(location, block.typeId, targetId));
+}
+
+function queueRoomClearBlock(steps, dimension, location) {
+	const block = getBlock(dimension, location);
+	if (!canPlanRoomClear(block)) return;
+	steps.push(roomStep(location, block.typeId, "minecraft:air"));
+}
+
+function roomStep(location, originalId, targetId) {
+	return {
+		x: location.x,
+		y: location.y,
+		z: location.z,
+		originalId,
+		targetId
+	};
+}
+
+function applyRoomStep(dimension, step) {
+	const block = getBlock(dimension, step);
+	if (!block) return false;
+	if (block.typeId === step.targetId) return false;
+	if (block.typeId !== step.originalId) return false;
+	if (block.typeId === ALTER_BLOCK_ID) return false;
+	if (step.targetId === "minecraft:air" && block.typeId.includes("air")) return false;
+
+	try {
+		block.setPermutation(BlockPermutation.resolve(step.targetId));
+		return true;
+	} catch {
+		try {
+			block.setType(step.targetId);
+			return true;
+		} catch {
+			return false;
+		}
+	}
+}
+
+function canPlanRoomChange(block) {
+	if (!block) return false;
+	if (block.typeId === ALTER_BLOCK_ID) return false;
+	if (RITUAL_SOURCE_BLOCKS.has(block.typeId)) return true;
+	if (!NATURAL_ROOM_BLOCKS.has(block.typeId)) return false;
+	return !isProtectedSpreadBlock(block);
+}
+
+function canPlanRoomClear(block) {
+	if (!block || block.typeId === ALTER_BLOCK_ID) return false;
+	if (!NATURAL_ROOM_BLOCKS.has(block.typeId)) return false;
+	if (block.typeId.includes("air")) return false;
+	return !isProtectedSpreadBlock(block);
+}
+
+function forEachRoomXZ(altar, callback) {
+	for (let dx = ROOM_MIN_OFFSET; dx <= ROOM_MAX_OFFSET; dx++) {
+		for (let dz = ROOM_MIN_OFFSET; dz <= ROOM_MAX_OFFSET; dz++) {
+			callback(altar.x + dx, altar.z + dz, dx, dz);
+		}
+	}
+}
+
+function isSupportColumn(dx, dz) {
+	return Math.abs(dx) <= SUPPORT_RADIUS && Math.abs(dz) <= SUPPORT_RADIUS;
+}
+
+function isRoomEdge(dx, dz) {
+	return dx === ROOM_MIN_OFFSET || dx === ROOM_MAX_OFFSET ||
+		dz === ROOM_MIN_OFFSET || dz === ROOM_MAX_OFFSET;
+}
+
+function altarKey(altar) {
+	return `${altar.dimensionId}:${altar.x},${altar.y},${altar.z}`;
+}
 function findSacrificeEntity(block) {
 	try {
 		const entities = block.dimension.getEntities({

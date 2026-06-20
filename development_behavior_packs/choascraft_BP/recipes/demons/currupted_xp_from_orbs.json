@@ -1,0 +1,31 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "zombie:currupted_xp_from_orbs"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "###",
+      "###",
+      "###"
+    ],
+    "key": {
+      "#": {
+        "item": "zombie:currupted_xp_orb"
+      }
+    },
+    "result": [
+      {
+        "item": "zombie:currupted_xp"
+      }
+    ],
+    "unlock": [
+      {
+        "item": "zombie:currupted_xp_orb"
+      }
+    ]
+  }
+}

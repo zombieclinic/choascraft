@@ -1,0 +1,35 @@
+{
+  "format_version": "1.26.20",
+  "minecraft:block": {
+    "description": {
+      "identifier": "zombie:currupted_xp_block",
+      "menu_category": {
+        "category": "items"
+      }
+    },
+    "components": {
+      "minecraft:collision_box": true,
+      "minecraft:selection_box": true,
+      "minecraft:destructible_by_explosion": true,
+      "minecraft:display_name": "tile.zombie:currupted_xp_block.name",
+      "minecraft:material_instances": {
+        "*": {
+          "texture": "zombie_currupted_xp_block",
+          "render_method": "opaque"
+        }
+      },
+      "minecraft:light_emission": 2,
+      "minecraft:map_color": "#7020A8",
+      "minecraft:flammable": false,
+      "minecraft:destructible_by_mining": {
+        "seconds_to_destroy": 1
+      },
+      "minecraft:geometry": {
+        "identifier": "minecraft:geometry.full_block"
+      },
+      "minecraft:tags": [
+        "minecraft:is_pickaxe_item_destructible"
+      ]
+    }
+  }
+}

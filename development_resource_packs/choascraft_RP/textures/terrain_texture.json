@@ -1,4 +1,4 @@
-﻿{
+{
     "resource_pack_name":  "choascraft",
     "texture_name":  "atlas.terrain",
     "texture_data":  {
@@ -281,6 +281,9 @@
                          "zombie_demon_steel_block":  {
                                                           "textures":  "textures/demon/demon_steel_block"
                                                       },
+                         "zombie_currupted_xp_block":  {
+                                                            "textures":  "textures/demon/drops/currupted_xp_block"
+                                                        },
                          "zombie_chiseled_demon_steel_block":  {
                                                                    "textures":  "textures/demon/chiseled_demon_steel_block"
                                                                },

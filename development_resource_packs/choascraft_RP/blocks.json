@@ -178,6 +178,10 @@
 		"textures": "zombie_demon_steel_block",
 		"sound": "metal"
 	},
+	"zombie:currupted_xp_block": {
+		"textures": "zombie_currupted_xp_block",
+		"sound": "amethyst_block"
+	},
 	"zombie:demon_steel_chiseled": {
 		"textures": "zombie_chiseled_demon_steel_block",
 		"sound": "metal"

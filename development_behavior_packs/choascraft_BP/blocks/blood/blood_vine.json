@@ -85,6 +85,14 @@
               "zombie:flesh_leaves",
               "zombie:tumor_leaves"
             ]
+          },
+          {
+            "allowed_faces": [
+              "up"
+            ],
+            "block_filter": [
+              "zombie:blood_vine"
+            ]
           }
         ]
       },

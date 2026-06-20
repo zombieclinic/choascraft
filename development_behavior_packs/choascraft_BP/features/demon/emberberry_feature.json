@@ -16,13 +16,15 @@
       "minecraft:air",
       "minecraft:tallgrass",
       "minecraft:fern",
-      "minecraft:deadbush",
-      "zombie:corrupted_grass"
+      "zombie:emberberry"
     ],
     "may_attach_to": {
       "bottom": [
         "zombie:demon_grass_no_tick",
-        "zombie:demon_dirt"
+        "zombie:demon_dirt",
+        "zombie:demon_blood_flesh_block",
+        "zombie:demon_blood_block",
+        "zombie:demon_flesh_block"
       ]
     }
   }

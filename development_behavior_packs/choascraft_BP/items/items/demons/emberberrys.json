@@ -13,12 +13,15 @@
       "minecraft:display_name": {
         "value": "item.zombie:emberberrys.name"
       },
-      "minecraft:icon": "zombie_emberberrys",
+      "minecraft:icon": "zombie_emberberry_4",
       "minecraft:block_placer": {
         "block": "zombie:emberberry",
         "use_on": [
           "zombie:demon_grass_no_tick",
-          "zombie:demon_dirt"
+          "zombie:demon_dirt",
+          "zombie:demon_blood_flesh_block",
+          "zombie:demon_blood_block",
+          "zombie:demon_flesh_block"
         ]
       },
       "minecraft:food": {

@@ -15,6 +15,15 @@
       },
       {
         "name": "zombie:demon_dirt"
+      },
+      {
+        "name": "zombie:demon_blood_flesh_block"
+      },
+      {
+        "name": "zombie:demon_blood_block"
+      },
+      {
+        "name": "zombie:demon_flesh_block"
       }
     ]
   }

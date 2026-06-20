@@ -102,9 +102,18 @@
                          "zombie_emberberrys":  {
                                                     "textures":  "textures/demon/plants/emberberrys"
                                                 },
+                         "zombie_emberberry_4":  {
+                                                     "textures":  "textures/demon/plants/emberberry_4"
+                                                 },
+                         "zombie_emberberry_stew":  {
+                                                        "textures":  "textures/demon/plants/emberberry_stew"
+                                                    },
                          "zombie_currupted_xp_orb":  {
                                                          "textures":  "textures/demon/drops/currupted_xp_orb"
                                                      },
+                         "zombie_currupted_xp":  {
+                                                     "textures":  "textures/demon/drops/currupted_xp"
+                                                 },
                          "zombie_demon_ash":  {
                                                   "textures":  "textures/demon/drops/demon_ash"
                                               },

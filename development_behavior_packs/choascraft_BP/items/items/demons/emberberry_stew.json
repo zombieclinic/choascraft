@@ -1,0 +1,30 @@
+{
+  "format_version": "1.26.30",
+  "minecraft:item": {
+    "description": {
+      "identifier": "zombie:emberberry_stew",
+      "menu_category": {
+        "category": "nature",
+        "group": "minecraft:itemGroup.name.crop"
+      }
+    },
+    "components": {
+      "minecraft:max_stack_size": 1,
+      "minecraft:display_name": {
+        "value": "item.zombie:emberberry_stew.name"
+      },
+      "minecraft:icon": "zombie_emberberry_stew",
+      "minecraft:food": {
+        "can_always_eat": false,
+        "nutrition": 6,
+        "saturation_modifier": 0.6
+      },
+      "minecraft:use_animation": "eat",
+      "minecraft:use_modifiers": {
+        "movement_modifier": 0.35,
+        "use_duration": 32
+      },
+      "zombie:emberberry_stew_food": {}
+    }
+  }
+}

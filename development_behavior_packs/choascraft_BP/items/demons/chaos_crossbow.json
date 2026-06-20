@@ -28,6 +28,7 @@
 			},
 			"minecraft:max_stack_size": 1,
 			"minecraft:should_despawn": false,
+			"zombie:bfc_bow_hold": {},
 			"minecraft:display_name": {
 				"value": "Choas Crossbow"
 			},

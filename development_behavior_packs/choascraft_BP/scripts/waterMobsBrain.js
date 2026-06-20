@@ -11,6 +11,7 @@ import {AbyssFlowerSeedFoodComponent} from "./items/abyssFlowerSeedFood.js"
 import {SporepodGrowthComponent} from "./blocks/sporepodGrowth.js"
 import {CorruptedSpireBreakComponent, CorruptedSpireGrowthComponent} from "./blocks/corruptedSpireGrowth.js"
 import {SporeFoodComponent} from "./items/sporeFood.js"
+import { EmberberryStewFoodComponent } from "./items/emberberryStewFood.js"
 import {RawFoodSicknessComponent} from "./items/rawFoodSickness.js"
 import {EyewoodDoorComponent, EyewoodFenceGateToggleComponent, EyewoodSlabPrePlaceComponent, EyewoodTrapdoorToggleComponent} from "./blocks/eyewoodWoodInteractions.js"
 import { ZcButtonComponent, ZcButtonReleaseTickComponent } from "./blocks/buttonInteractions.js";
@@ -24,8 +25,8 @@ import { BloodVineGrowthComponent } from "./blocks/bloodVineGrowth.js";
 import {infectedAttack} from "./items/infected.js"
 import "./entities/omniusBrain.js"
 import "./entities/zombieDeathAnimations.js"
-import "./blocks/emberberryDrops.js"
 import "./items/bearShield.js"
+import { BfcBowHoldComponent } from "./items/chaosBow.js"
 import {bearArmorChanceEffect} from "./items/bearattack.js"
 
 
@@ -66,7 +67,9 @@ const ITEM_COMPONENTS = [
  ["zombie:item_durability", DurabilityHandler],
  ["zombie:abyss_flower_seed_food", AbyssFlowerSeedFoodComponent],
  ["zombie:spore_food", SporeFoodComponent],
- ["zombie:raw_food_sickness", RawFoodSicknessComponent]
+ ["zombie:emberberry_stew_food", EmberberryStewFoodComponent],
+ ["zombie:raw_food_sickness", RawFoodSicknessComponent],
+ ["zombie:bfc_bow_hold", BfcBowHoldComponent]
 ];
 
 system.beforeEvents.startup.subscribe(({ blockComponentRegistry, itemComponentRegistry }) => {

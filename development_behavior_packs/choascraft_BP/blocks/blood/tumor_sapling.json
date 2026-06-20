@@ -28,7 +28,7 @@
         "catch_chance_modifier": 60,
         "destroy_chance_modifier": 100
       },
-      "minecraft:geometry": "geometry.red_wood_saplin",
+      "minecraft:geometry": "geometry.zombie_abysscrossplants",
       "minecraft:material_instances": {
         "*": {
           "texture": "tumor_saplin_0",
@@ -38,7 +38,7 @@
         }
       },
       "minecraft:item_visual": {
-        "geometry": "geometry.red_wood_saplin",
+        "geometry": "geometry.zombie_abysscrossplants",
         "material_instances": {
           "*": {
             "texture": "tumor_saplin_4",
@@ -73,7 +73,12 @@
               "zombie:demon_grass_no_tick",
               "zombie:demon_dirt",
               "zombie:demon_stone",
-              "zombie:demon_blood_flesh_block"
+              "zombie:demon_flesh_block",
+              "zombie:demon_blood_block",
+              "zombie:demon_blood_flesh_block",
+              "zombie:blood_planks",
+              "zombie:blood_log",
+              "zombie:stripped_blood_log"
             ]
           }
         ]
@@ -94,7 +99,12 @@
           "zombie:demon_grass_no_tick",
           "zombie:demon_dirt",
           "zombie:demon_stone",
-          "zombie:demon_blood_flesh_block"
+          "zombie:demon_flesh_block",
+          "zombie:demon_blood_block",
+          "zombie:demon_blood_flesh_block",
+          "zombie:blood_planks",
+          "zombie:blood_log",
+          "zombie:stripped_blood_log"
         ],
         "vine_decoration": {
           "block": "zombie:blood_vine",

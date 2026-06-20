@@ -32,7 +32,10 @@
             "max_stage": 4,
             "valid_base_blocks": [
               "zombie:demon_grass_no_tick",
-              "zombie:demon_dirt"
+              "zombie:demon_dirt",
+              "zombie:demon_blood_flesh_block",
+              "zombie:demon_blood_block",
+              "zombie:demon_flesh_block"
             ]
           }
         }
@@ -200,14 +203,17 @@
             ],
             "block_filter": [
               "zombie:demon_grass_no_tick",
-              "zombie:demon_dirt"
+              "zombie:demon_dirt",
+              "zombie:demon_blood_flesh_block",
+              "zombie:demon_blood_block",
+              "zombie:demon_flesh_block"
             ]
           }
         ]
       },
       "minecraft:light_dampening": 0,
       "minecraft:replaceable": {},
-      "minecraft:loot": "loot_tables/blocks/empty.json",
+      "minecraft:loot": "loot_tables/blocks/emberberry.json",
       "minecraft:tags": [
         "minecraft:crop",
         "plant"
