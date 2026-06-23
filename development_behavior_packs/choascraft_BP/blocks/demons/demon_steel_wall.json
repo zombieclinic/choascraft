@@ -17,7 +17,7 @@
     },
     "permutations": [
       {
-        "condition": "(query.block_state('minecraft:connection_north') || query.block_state('minecraft:connection_south')) && !query.block_state('minecraft:connection_east') && !query.block_state('minecraft:connection_west')",
+        "condition": "(query.block_state(\u0027minecraft:connection_north\u0027) || query.block_state(\u0027minecraft:connection_south\u0027)) \u0026\u0026 !query.block_state(\u0027minecraft:connection_east\u0027) \u0026\u0026 !query.block_state(\u0027minecraft:connection_west\u0027)",
         "components": {
           "minecraft:collision_box": {
             "origin": [
@@ -46,7 +46,7 @@
         }
       },
       {
-        "condition": "!query.block_state('minecraft:connection_north') && !query.block_state('minecraft:connection_south') && (query.block_state('minecraft:connection_east') || query.block_state('minecraft:connection_west'))",
+        "condition": "!query.block_state(\u0027minecraft:connection_north\u0027) \u0026\u0026 !query.block_state(\u0027minecraft:connection_south\u0027) \u0026\u0026 (query.block_state(\u0027minecraft:connection_east\u0027) || query.block_state(\u0027minecraft:connection_west\u0027))",
         "components": {
           "minecraft:collision_box": {
             "origin": [
@@ -75,7 +75,7 @@
         }
       },
       {
-        "condition": "(query.block_state('minecraft:connection_north') || query.block_state('minecraft:connection_south')) && (query.block_state('minecraft:connection_east') || query.block_state('minecraft:connection_west'))",
+        "condition": "(query.block_state(\u0027minecraft:connection_north\u0027) || query.block_state(\u0027minecraft:connection_south\u0027)) \u0026\u0026 (query.block_state(\u0027minecraft:connection_east\u0027) || query.block_state(\u0027minecraft:connection_west\u0027))",
         "components": {
           "minecraft:collision_box": [
             {
@@ -131,19 +131,19 @@
             "version": 1
           },
           "north": {
-            "expression": "query.block_state('minecraft:connection_north')",
+            "expression": "query.block_state(\u0027minecraft:connection_north\u0027)",
             "version": 1
           },
           "south": {
-            "expression": "query.block_state('minecraft:connection_south')",
+            "expression": "query.block_state(\u0027minecraft:connection_south\u0027)",
             "version": 1
           },
           "east": {
-            "expression": "query.block_state('minecraft:connection_east')",
+            "expression": "query.block_state(\u0027minecraft:connection_east\u0027)",
             "version": 1
           },
           "west": {
-            "expression": "query.block_state('minecraft:connection_west')",
+            "expression": "query.block_state(\u0027minecraft:connection_west\u0027)",
             "version": 1
           }
         }
@@ -270,11 +270,12 @@
         "seconds_to_destroy": 1
       },
       "minecraft:destructible_by_explosion": true,
-      "minecraft:loot": "loot_tables/blocks/demon_steel_wall.json",
       "minecraft:tags": [
         "minecraft:has_fence_connections",
         "minecraft:is_pickaxe_item_destructible"
-      ]
+      ],
+      "minecraft:map_color": "#2E120A"
     }
   }
 }
+

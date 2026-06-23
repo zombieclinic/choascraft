@@ -1,13 +1,14 @@
 {
-	"pools": [
-		{
-			"rolls": 1,
-			"entries": [
-				{
-					"type": "item",
-					"name": "zombie:eyewood_tree_sapling"
-				}
-			]
-		}
-	]
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "zombie:eyewood_tree_sapling"
+        }
+      ]
+    }
+  ]
 }
+

@@ -27,7 +27,9 @@
             "target": "self"
           }
         },
-        "minecraft:is_baby": {},
+        "minecraft:is_baby": {
+          
+        },
         "minecraft:scale_by_age": {
           "start_scale": 0.5,
           "end_scale": 1
@@ -86,7 +88,9 @@
         "minecraft:behavior.random_stroll": {
           "priority": 6
         },
-        "minecraft:movement.basic": {},
+        "minecraft:movement.basic": {
+          
+        },
         "minecraft:behavior.look_at_player": {
           "priority": 5,
           "look_distance": 6,
@@ -133,7 +137,9 @@
         "total_supply": 15,
         "suffocate_time": 0
       },
-      "minecraft:nameable": {},
+      "minecraft:nameable": {
+        
+      },
       "minecraft:health": {
         "value": 50
       },
@@ -155,17 +161,25 @@
         "width": 2,
         "height": 2.3
       },
-      "minecraft:is_hidden_when_invisible": {},
+      "minecraft:is_hidden_when_invisible": {
+        
+      },
       "minecraft:water_movement": {
         "drag_factor": 0.98
       },
-      "minecraft:jump.static": {},
-      "minecraft:can_climb": {},
+      "minecraft:jump.static": {
+        
+      },
+      "minecraft:can_climb": {
+        
+      },
       "minecraft:follow_range": {
         "value": 48
       },
       "minecraft:despawn": {
-        "despawn_from_distance": {}
+        "despawn_from_distance": {
+          
+        }
       },
       "minecraft:behavior.float": {
         "priority": 0
@@ -182,8 +196,12 @@
           }
         ]
       },
-      "minecraft:physics": {},
-      "minecraft:conditional_bandwidth_optimization": {},
+      "minecraft:physics": {
+        
+      },
+      "minecraft:conditional_bandwidth_optimization": {
+        
+      },
       "minecraft:behavior.tempt": {
         "speed_multiplier": 1.2,
         "priority": 4,
@@ -277,3 +295,4 @@
     }
   }
 }
+

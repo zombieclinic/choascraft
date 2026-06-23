@@ -1,8 +1,9 @@
 {
-	"format_version": "1.16.100",
-	"minecraft:texture_set": {
-		"color": "hellfire_trapstone",
-		"metalness_emissive_roughness": "hellfire_trapstone_mer",
-		"normal": "hellfire_trapstone_normal"
-	}
+  "format_version": "1.16.100",
+  "minecraft:texture_set": {
+    "color": "hellfire_trapstone",
+    "metalness_emissive_roughness": "hellfire_trapstone_mer",
+    "normal": "hellfire_trapstone_normal"
+  }
 }
+

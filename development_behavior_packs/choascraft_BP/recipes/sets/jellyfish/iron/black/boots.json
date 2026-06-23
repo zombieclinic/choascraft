@@ -4,11 +4,19 @@
     "description": {
       "identifier": "zombie:jellyfish_black_boots_recipe"
     },
-    "tags": [ "crafting_table" ],
+    "tags": [
+      "crafting_table"
+    ],
     "unlock": [
-      { "item": "minecraft:iron_ingot" },
-      { "item": "zombie:jellyfish_jelly_black" },
-      { "item": "zombie:jellyfish_jelly_pearl" }
+      {
+        "item": "minecraft:iron_ingot"
+      },
+      {
+        "item": "zombie:jellyfish_jelly_black"
+      },
+      {
+        "item": "zombie:jellyfish_jelly_pearl"
+      }
     ],
     "pattern": [
       "IJI",
@@ -16,12 +24,19 @@
       "IPI"
     ],
     "key": {
-      "I": { "item": "minecraft:iron_ingot" },
-      "J": { "item": "zombie:jellyfish_jelly_black" },
-      "P": { "item": "zombie:jellyfish_jelly_pearl" }
+      "I": {
+        "item": "minecraft:iron_ingot"
+      },
+      "J": {
+        "item": "zombie:jellyfish_jelly_black"
+      },
+      "P": {
+        "item": "zombie:jellyfish_jelly_pearl"
+      }
     },
     "result": {
       "item": "zombie:jellyfish_black_boots"
     }
   }
 }
+

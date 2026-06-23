@@ -4,11 +4,19 @@
     "description": {
       "identifier": "zombie:greatwhite_shark_sword_recipe"
     },
-    "tags": [ "crafting_table" ],
+    "tags": [
+      "crafting_table"
+    ],
     "unlock": [
-      { "item": "minecraft:iron_ingot" },
-      { "item": "zombie:shark_tooth" },
-      { "item": "zombie:shark_hide" }
+      {
+        "item": "minecraft:iron_ingot"
+      },
+      {
+        "item": "zombie:shark_tooth"
+      },
+      {
+        "item": "zombie:shark_hide"
+      }
     ],
     "pattern": [
       " T ",
@@ -16,14 +24,25 @@
       " E "
     ],
     "key": {
-      "F": { "item": "zombie:shark_fin" },
-      "H": { "item": "zombie:shark_hide" },
-      "I": { "item": "minecraft:iron_ingot" },
-      "T": { "item": "zombie:shark_tooth" },
-      "E": { "item": "zombie:shark_eye" }
+      "F": {
+        "item": "zombie:shark_fin"
+      },
+      "H": {
+        "item": "zombie:shark_hide"
+      },
+      "I": {
+        "item": "minecraft:iron_ingot"
+      },
+      "T": {
+        "item": "zombie:shark_tooth"
+      },
+      "E": {
+        "item": "zombie:shark_eye"
+      }
     },
     "result": {
       "item": "zombie:greatwhite_shark_sword"
     }
   }
 }
+

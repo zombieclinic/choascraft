@@ -1,19 +1,20 @@
-﻿{
-    "pools":  [
-                  {
-                      "entries":  [
-                                      {
-                                          "functions":  [
-                                                            {
-                                                                "function":  "set_count",
-                                                                "count":  2
-                                                            }
-                                                        ],
-                                          "name":  "zombie:blood_slab",
-                                          "type":  "item"
-                                      }
-                                  ],
-                      "rolls":  1
-                  }
-              ]
+{
+  "pools": [
+    {
+      "entries": [
+        {
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 2
+            }
+          ],
+          "name": "zombie:blood_slab",
+          "type": "item"
+        }
+      ],
+      "rolls": 1
+    }
+  ]
 }
+

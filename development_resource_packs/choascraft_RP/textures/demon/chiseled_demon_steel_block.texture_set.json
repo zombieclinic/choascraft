@@ -1,8 +1,9 @@
 {
-	"format_version": "1.16.100",
-	"minecraft:texture_set": {
-		"color": "chiseled_demon_steel_block",
-		"metalness_emissive_roughness": "chiseled_demon_steel_block_mer",
-		"normal": "chiseled_demon_steel_block_normal"
-	}
+  "format_version": "1.16.100",
+  "minecraft:texture_set": {
+    "color": "chiseled_demon_steel_block",
+    "metalness_emissive_roughness": "chiseled_demon_steel_block_mer",
+    "normal": "chiseled_demon_steel_block_normal"
+  }
 }
+

@@ -1,43 +1,44 @@
 {
-	"format_version": "1.10.0",
-	"minecraft:client_entity": {
-		"description": {
-			"identifier": "zombie:greatwhite_shark",
-			"materials": {
-				"default": "entity_alphatest"
-			},
-			"textures": {
-				"default": "textures/entity/greatwhite/greatwhite/greatwhite",
-				"saddled_and_chested": "textures/entity/greatwhite/chestsaddle/chestsaddle",
-				"nochest": "textures/entity/greatwhite/saddle/saddle",
-				"nosaddle_chest": "textures/entity/greatwhite/chest/chest",
-				"zombie": "textures/entity/greatwhite/zombie/zombie",
-				"zombie_saddle": "textures/entity/greatwhite/zombiesaddle/zombiesaddle",
-				"zombie_chest": "textures/entity/greatwhite/zombiechest/zombiechest",
-				"zombie_chest_saddle": "textures/entity/greatwhite/zombiechestsaddle/zombiechestsaddle"
-			},
-			"geometry": {
-				"default": "geometry.greatwhite"
-			},
-			"render_controllers": [
-				"controller.render.orca"
-			],
-			"spawn_egg": {
-				"base_color": "#5410f3",
-				"overlay_color": "#1a9db4"
-			},
-			"animations": {
-				"idle": "animation.greatwhite_idle",
-				"swim": "animation.greatwhite_walk",
-				"death": "animation.greatwhite_death",
-				"bite": "animation.greatwhite_bite",
-				"contoller": "controller.animation.zombie_hammerhead"
-			},
-			"scripts": {
-				"animate": [
-			"contoller"
-				]
-			}
-		}
-	}
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "zombie:greatwhite_shark",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/entity/greatwhite/greatwhite/greatwhite",
+        "saddled_and_chested": "textures/entity/greatwhite/chestsaddle/chestsaddle",
+        "nochest": "textures/entity/greatwhite/saddle/saddle",
+        "nosaddle_chest": "textures/entity/greatwhite/chest/chest",
+        "zombie": "textures/entity/greatwhite/zombie/zombie",
+        "zombie_saddle": "textures/entity/greatwhite/zombiesaddle/zombiesaddle",
+        "zombie_chest": "textures/entity/greatwhite/zombiechest/zombiechest",
+        "zombie_chest_saddle": "textures/entity/greatwhite/zombiechestsaddle/zombiechestsaddle"
+      },
+      "geometry": {
+        "default": "geometry.greatwhite"
+      },
+      "render_controllers": [
+        "controller.render.orca"
+      ],
+      "spawn_egg": {
+        "base_color": "#5410f3",
+        "overlay_color": "#1a9db4"
+      },
+      "animations": {
+        "idle": "animation.greatwhite_idle",
+        "swim": "animation.greatwhite_walk",
+        "death": "animation.greatwhite_death",
+        "bite": "animation.greatwhite_bite",
+        "contoller": "controller.animation.zombie_hammerhead"
+      },
+      "scripts": {
+        "animate": [
+          "contoller"
+        ]
+      }
+    }
+  }
 }
+

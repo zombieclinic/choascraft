@@ -1,103 +1,104 @@
 {
-	"format_version": "1.10.0",
-	"animation_controllers": {
-		"controller.animation.bear": {
-			"states": {
-				"default": {
-					"animations": [
-						"idle1"
-					],
-					"transitions": [
-						{
-							"sleep": "query.skin_id==2"
-						},
-						{
-							"roar": "query.skin_id==1"
-						},
-						{
-							"attack": "variable.attack_time>=0.01"
-						},
-						{
-							"walk": "query.ground_speed"
-						}
-					]
-				},
-				"walk": {
-					"animations": [
-						"walk1"
-					],
-					"transitions": [
-						{
-							"start_sleep": "query.skin_id==2"
-						},
-						{
-							"roar": "query.skin_id==1"
-						},
-						{
-							"attack": "variable.attack_time>=0.01"
-						},
-						{
-							"default": "!query.ground_speed"
-						}
-					]
-				},
-				"attack": {
-					"animations": [
-						"attack1"
-					],
-					"transitions": [
-						{
-							"default": "query.all_animations_finished"
-						}
-					]
-				},
-				"start_sleep": {
-					"animations": [
-						"start_sleep1"
-					],
-					"transitions": [
-						{
-							"sleep": "query.all_animations_finished"
-						}
-					]
-				},
-				"sleep": {
-					"animations": [
-						"sleep"
-					],
-					"transitions": [
-						{
-							"end_sleep": "query.skin_id==1"
-						}
-					]
-				},
-				"end_sleep": {
-					"animations": [
-						"end_sleep1"
-					],
-					"transitions": [
-						{
-							"roar": "query.all_animations_finished"
-						}
-					]
-				},
-				"roar": {
-					"animations": [
-						"roar1"
-					],
-					"transitions": [
-						{
-							"default": "query.all_animations_finished"
-						}
-					],
-					"sound_effects": [
-						{
-							"effect": "roar"
-						}
-					]
-				}
-			},
-			"initial_state": "default"
-		}
-	}
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.bear": {
+      "states": {
+        "default": {
+          "animations": [
+            "idle1"
+          ],
+          "transitions": [
+            {
+              "sleep": "query.skin_id==2"
+            },
+            {
+              "roar": "query.skin_id==1"
+            },
+            {
+              "attack": "variable.attack_time>=0.01"
+            },
+            {
+              "walk": "query.ground_speed"
+            }
+          ]
+        },
+        "walk": {
+          "animations": [
+            "walk1"
+          ],
+          "transitions": [
+            {
+              "start_sleep": "query.skin_id==2"
+            },
+            {
+              "roar": "query.skin_id==1"
+            },
+            {
+              "attack": "variable.attack_time>=0.01"
+            },
+            {
+              "default": "!query.ground_speed"
+            }
+          ]
+        },
+        "attack": {
+          "animations": [
+            "attack1"
+          ],
+          "transitions": [
+            {
+              "default": "query.all_animations_finished"
+            }
+          ]
+        },
+        "start_sleep": {
+          "animations": [
+            "start_sleep1"
+          ],
+          "transitions": [
+            {
+              "sleep": "query.all_animations_finished"
+            }
+          ]
+        },
+        "sleep": {
+          "animations": [
+            "sleep"
+          ],
+          "transitions": [
+            {
+              "end_sleep": "query.skin_id==1"
+            }
+          ]
+        },
+        "end_sleep": {
+          "animations": [
+            "end_sleep1"
+          ],
+          "transitions": [
+            {
+              "roar": "query.all_animations_finished"
+            }
+          ]
+        },
+        "roar": {
+          "animations": [
+            "roar1"
+          ],
+          "transitions": [
+            {
+              "default": "query.all_animations_finished"
+            }
+          ],
+          "sound_effects": [
+            {
+              "effect": "roar"
+            }
+          ]
+        }
+      },
+      "initial_state": "default"
+    }
+  }
 }
+

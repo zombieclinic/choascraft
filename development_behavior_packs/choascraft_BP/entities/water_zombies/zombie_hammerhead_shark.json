@@ -56,7 +56,9 @@
       }
     },
     "components": {
-      "minecraft:is_hidden_when_invisible": {},
+      "minecraft:is_hidden_when_invisible": {
+        
+      },
       "minecraft:loot": {
         "table": "loot_tables/entities/shark/hammerhead.json"
       },
@@ -147,14 +149,18 @@
         "jump_power": 0.25
       },
       "minecraft:despawn": {
-        "despawn_from_distance": {}
+        "despawn_from_distance": {
+          
+        }
       },
       "minecraft:physics": {
         "has_collision": true,
         "has_gravity": true,
         "push_towards_closest_space": true
       },
-      "minecraft:conditional_bandwidth_optimization": {}
+      "minecraft:conditional_bandwidth_optimization": {
+        
+      }
     },
     "events": {
       "minecraft:entity_spawned": {
@@ -198,3 +204,4 @@
     }
   }
 }
+

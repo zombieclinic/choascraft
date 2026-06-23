@@ -116,7 +116,9 @@
         "zombie:custom_log",
         "log",
         "wood"
-      ]
+      ],
+      "minecraft:map_color": "#492012"
     }
   }
 }
+

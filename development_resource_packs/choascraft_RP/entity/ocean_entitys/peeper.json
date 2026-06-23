@@ -1,37 +1,38 @@
 {
-	"format_version": "1.10.0",
-	"minecraft:client_entity": {
-		"description": {
-			"identifier": "zombie:peeper",
-			"materials": {
-				"default": "entity_alphatest"
-			},
-			"textures": {
-				"blue": "textures/entity/peeper/blue/blue",
-				"default": "textures/entity/peeper/green/green",
-				"purple": "textures/entity/peeper/purple/purple",
-				"red": "textures/entity/peeper/red/red"
-			},
-			"geometry": {
-				"default": "geometry.zombie_peeper"
-			},
-			"animations": {
-				"swim": "animation.zombie_peeper.swim"
-			},
-			"render_controllers": [
-				"controller.render.peeper"
-			],
-			"spawn_egg": {
-				"base_color": "#3B552D",
-				"overlay_color": "#1778D2"
-			},
-			"scripts": {
-				"animate": [
-					{
-						"swim": "query.modified_move_speed>=0.01"
-					}
-				]
-			}
-		}
-	}
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "zombie:peeper",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "blue": "textures/entity/peeper/blue/blue",
+        "default": "textures/entity/peeper/green/green",
+        "purple": "textures/entity/peeper/purple/purple",
+        "red": "textures/entity/peeper/red/red"
+      },
+      "geometry": {
+        "default": "geometry.zombie_peeper"
+      },
+      "animations": {
+        "swim": "animation.zombie_peeper.swim"
+      },
+      "render_controllers": [
+        "controller.render.peeper"
+      ],
+      "spawn_egg": {
+        "base_color": "#3B552D",
+        "overlay_color": "#1778D2"
+      },
+      "scripts": {
+        "animate": [
+          {
+            "swim": "query.modified_move_speed>=0.01"
+          }
+        ]
+      }
+    }
+  }
 }
+

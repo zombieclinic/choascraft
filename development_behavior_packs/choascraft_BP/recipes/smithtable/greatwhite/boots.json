@@ -1,18 +1,24 @@
 {
- "format_version": "1.26.10",
- "minecraft:recipe_smithing_transform": {
-  "description": {
-    "identifier": "minecraft:smithing_netherite_greatwhite_shark_boots"
-   },
-  "unlock": [
-      { "item": "minecraft:iron_ingot" },
-      { "item": "zombie:shark_fin" }
+  "format_version": "1.26.10",
+  "minecraft:recipe_smithing_transform": {
+    "description": {
+      "identifier": "minecraft:smithing_netherite_greatwhite_shark_boots"
+    },
+    "unlock": [
+      {
+        "item": "minecraft:iron_ingot"
+      },
+      {
+        "item": "zombie:shark_fin"
+      }
     ],
-  "tags": [ "smithing_table" ],
-  
-   "template": "minecraft:netherite_upgrade_smithing_template",
-   "base": "zombie:greatwhite_shark_boots",
-   "addition": "minecraft:netherite_ingot",
-   "result": "zombie:greatwhite_shark_netherite_boots"
- }
+    "tags": [
+      "smithing_table"
+    ],
+    "template": "minecraft:netherite_upgrade_smithing_template",
+    "base": "zombie:greatwhite_shark_boots",
+    "addition": "minecraft:netherite_ingot",
+    "result": "zombie:greatwhite_shark_netherite_boots"
+  }
 }
+

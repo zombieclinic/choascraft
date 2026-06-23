@@ -177,12 +177,16 @@
           }
         ]
       },
-      "zombie:slab_pre_place": {},
+      "zombie:slab_pre_place": {
+        
+      },
       "minecraft:tags": [
         "zombie:slab",
         "wood",
         "minecraft:is_axe_item_destructible"
-      ]
+      ],
+      "minecraft:map_color": "#2F1D1B"
     }
   }
 }
+

@@ -1,36 +1,37 @@
 {
-	"format_version": "1.10.0",
-	"minecraft:attachable": {
-		"description": {
-			"identifier": "zombie:black_bear_shield",
-			"render_controllers": [
-				"controller.render.brown_bear_shield"
-			],
-			"materials": {
-				"default": "entity_alphatest",
-				"enchanted": "entity_alphatest_glint"
-			},
-			"textures": {
-				"default": "textures/items/bear_armor/black_bear_shield",
-				"enchanted": "textures/misc/enchanted_item_glint"
-			},
-			"geometry": {
-				"default": "geometry.zombio_bear_shield"
-			},
-			"animations": {
-				"bear_shield_controller": "controller.animation.brown_bear_shield",
-				"block": "animation.zombio_bear_shield.rshield",
-				"r_fpp_idle": "animation.zombio_bear_shield.rshield_idle_fpp",
-				"r_fpp_use": "animation.zombio_bear_shield.rshield_use_fpp",
-				"l_fpp_idle": "animation.zombio_bear_shield.lshield_idle_fpp",
-				"l_fpp_use": "animation.zombio_bear_shield.lshield_use_fpp",
-				"lblock": "animation.zombio_bear_shield.lshield"
-			},
-			"scripts": {
-				"animate": [
-					"bear_shield_controller"
-				]
-			}
-		}
-	}
+  "format_version": "1.10.0",
+  "minecraft:attachable": {
+    "description": {
+      "identifier": "zombie:black_bear_shield",
+      "render_controllers": [
+        "controller.render.brown_bear_shield"
+      ],
+      "materials": {
+        "default": "entity_alphatest",
+        "enchanted": "entity_alphatest_glint"
+      },
+      "textures": {
+        "default": "textures/items/bear_armor/black_bear_shield",
+        "enchanted": "textures/misc/enchanted_item_glint"
+      },
+      "geometry": {
+        "default": "geometry.zombio_bear_shield"
+      },
+      "animations": {
+        "bear_shield_controller": "controller.animation.brown_bear_shield",
+        "block": "animation.zombio_bear_shield.rshield",
+        "r_fpp_idle": "animation.zombio_bear_shield.rshield_idle_fpp",
+        "r_fpp_use": "animation.zombio_bear_shield.rshield_use_fpp",
+        "l_fpp_idle": "animation.zombio_bear_shield.lshield_idle_fpp",
+        "l_fpp_use": "animation.zombio_bear_shield.lshield_use_fpp",
+        "lblock": "animation.zombio_bear_shield.lshield"
+      },
+      "scripts": {
+        "animate": [
+          "bear_shield_controller"
+        ]
+      }
+    }
+  }
 }
+

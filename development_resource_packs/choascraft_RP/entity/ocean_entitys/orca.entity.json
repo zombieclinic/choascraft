@@ -1,41 +1,40 @@
 {
-	"format_version": "1.8.0",
-	"minecraft:client_entity": {
-		"description": {
-			"identifier": "zombie:orca",
-			"materials": {
-				"default": "entity_alphatest"
-			},
-			"textures": {
-				"default": "textures/entity/orca/orca/orca",
-				"saddled_and_chested": "textures/entity/orca/chestsaddle/chestsaddle",
-				"nochest": "textures/entity/orca/saddle/saddle",
-				"nosaddle_chest": "textures/entity/orca/chest/chest",
-				"zombie": "textures/entity/orca/zombie/zombie",
-				"zombie_saddle": "textures/entity/orca/zombiesaddle/zombiesaddle",
-				"zombie_chest": "textures/entity/orca/zombiechest/zombiechest",
-				"zombie_chest_saddle": "textures/entity/orca/zombiechestsaddle/zombiechestsaddle"
-				
-				
-			},
-			"geometry": {
-				"default": "geometry.whale_orca_3"
-			},
-			"animations": {
-				"move": "animation.whale_orca_swim"
-			},
-			"animation_controllers": [
-				{
-					"general": "controller.animation.dolphin.general"
-				}
-			],
-			"render_controllers": [
-				"controller.render.orca"
-			],
-			"spawn_egg": {
-				"base_color": "#070042",
-				"overlay_color": "#025FB6"
-			}
-		}
-	}
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "zombie:orca",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/entity/orca/orca/orca",
+        "saddled_and_chested": "textures/entity/orca/chestsaddle/chestsaddle",
+        "nochest": "textures/entity/orca/saddle/saddle",
+        "nosaddle_chest": "textures/entity/orca/chest/chest",
+        "zombie": "textures/entity/orca/zombie/zombie",
+        "zombie_saddle": "textures/entity/orca/zombiesaddle/zombiesaddle",
+        "zombie_chest": "textures/entity/orca/zombiechest/zombiechest",
+        "zombie_chest_saddle": "textures/entity/orca/zombiechestsaddle/zombiechestsaddle"
+      },
+      "geometry": {
+        "default": "geometry.whale_orca_3"
+      },
+      "animations": {
+        "move": "animation.whale_orca_swim"
+      },
+      "animation_controllers": [
+        {
+          "general": "controller.animation.dolphin.general"
+        }
+      ],
+      "render_controllers": [
+        "controller.render.orca"
+      ],
+      "spawn_egg": {
+        "base_color": "#070042",
+        "overlay_color": "#025FB6"
+      }
+    }
+  }
 }
+

@@ -1,43 +1,44 @@
 {
-	"format_version": "1.8.0",
-	"render_controllers": {
-		"controller.render.bear_shield": {
-			"geometry": "Array.shield_geo[query.is_item_name_any('slot.weapon.mainhand', 0, 'zombie:brown_bear_shield', 'zombie:black_bear_shield')]",
-			"arrays": {
-				"geometries": {
-					"Array.shield_geo": [
-						"Geometry.default",
-						"Geometry.right_hand"
-					]
-				}
-			},
-			"materials": [
-				{
-					"*": "Material.default"
-				}
-			],
-			"textures": [
-				"Texture.default"
-			]
-		},
-		"controller.render.brown_bear_shield": {
-			"geometry": "Geometry.default",
-			"part_visibility": [
-				{
-					"rshield": "query.is_item_name_any('slot.weapon.mainhand', 0, 'zombie:brown_bear_shield', 'zombie:black_bear_shield') || !query.is_item_name_any('slot.weapon.offhand', 0, 'zombie:brown_bear_shield', 'zombie:black_bear_shield')"
-				},
-				{
-					"lshield": "query.is_item_name_any('slot.weapon.offhand', 0, 'zombie:brown_bear_shield', 'zombie:black_bear_shield') || !query.is_item_name_any('slot.weapon.mainhand', 0, 'zombie:brown_bear_shield', 'zombie:black_bear_shield')"
-				}
-			],
-			"materials": [
-				{
-					"*": "Material.default"
-				}
-			],
-			"textures": [
-				"Texture.default"
-			]
-		}
-	}
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.bear_shield": {
+      "geometry": "Array.shield_geo[query.is_item_name_any('slot.weapon.mainhand', 0, 'zombie:brown_bear_shield', 'zombie:black_bear_shield')]",
+      "arrays": {
+        "geometries": {
+          "Array.shield_geo": [
+            "Geometry.default",
+            "Geometry.right_hand"
+          ]
+        }
+      },
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "Texture.default"
+      ]
+    },
+    "controller.render.brown_bear_shield": {
+      "geometry": "Geometry.default",
+      "part_visibility": [
+        {
+          "rshield": "query.is_item_name_any('slot.weapon.mainhand', 0, 'zombie:brown_bear_shield', 'zombie:black_bear_shield') || !query.is_item_name_any('slot.weapon.offhand', 0, 'zombie:brown_bear_shield', 'zombie:black_bear_shield')"
+        },
+        {
+          "lshield": "query.is_item_name_any('slot.weapon.offhand', 0, 'zombie:brown_bear_shield', 'zombie:black_bear_shield') || !query.is_item_name_any('slot.weapon.mainhand', 0, 'zombie:brown_bear_shield', 'zombie:black_bear_shield')"
+        }
+      ],
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "Texture.default"
+      ]
+    }
+  }
 }
+

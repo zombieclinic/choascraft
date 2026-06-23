@@ -1,18 +1,19 @@
 {
-    "format_version": "1.26.10",
-    "minecraft:item": {
-        "description": {
-            "identifier": "zombie:zombie_vial",
-            "menu_category": {
-                "category": "items"
-            }
-        },
-        "components": {
-            "minecraft:icon": "zombie_vial",
-            "minecraft:display_name": {
-                "value": "Zombie Vial"
-            },
-            "minecraft:stacked_by_data": true
-        }
+  "format_version": "1.26.10",
+  "minecraft:item": {
+    "description": {
+      "identifier": "zombie:zombie_vial",
+      "menu_category": {
+        "category": "items"
+      }
+    },
+    "components": {
+      "minecraft:icon": "zombie_vial",
+      "minecraft:display_name": {
+        "value": "Zombie Vial"
+      },
+      "minecraft:stacked_by_data": true
     }
+  }
 }
+

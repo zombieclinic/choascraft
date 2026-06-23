@@ -1,75 +1,76 @@
 {
-    "pools":  [
-                  {
-                      "rolls":  1,
-                      "entries":  [
-                                      {
-                                          "type":  "item",
-                                          "name":  "zombie:redwood_log",
-                                          "weight":  1,
-                                          "functions":  [
-                                                            {
-                                                                "function":  "set_count",
-                                                                "count":  {
-                                                                              "min":  2,
-                                                                              "max":  5
-                                                                          }
-                                                            }
-                                                        ]
-                                      }
-                                  ]
-                  },
-                  {
-                      "rolls":  1,
-                      "entries":  [
-                                      {
-                                          "type":  "item",
-                                          "name":  "zombie:redwood_sapling",
-                                          "weight":  1,
-                                          "functions":  [
-                                                            {
-                                                                "function":  "set_count",
-                                                                "count":  {
-                                                                              "min":  0,
-                                                                              "max":  1
-                                                                          }
-                                                            }
-                                                        ]
-                                      }
-                                  ]
-                  },
-                  {
-                      "conditions":  [
-                                         {
-                                             "condition":  "random_chance",
-                                             "chance":  0.1
-                                         }
-                                     ],
-                      "rolls":  1,
-                      "entries":  [
-                                      {
-                                          "type":  "item",
-                                          "name":  "minecraft:written_book",
-                                          "functions":  [
-                                                            {
-                                                                "function":  "set_book_contents",
-                                                                "author":  "Choascraft",
-                                                                "title":  "Tree Golem Notes",
-                                                                "pages":  [
-                                                                              "Tree Golem Notes\n\nA Choascraft guide for tree golem lore, redwood drops, and the craft value of living timber.",
-                                                                              "Lore\n\nTree golems are old redwood anger shaped into walking bark. They guard places where roots remember harm.",
-                                                                              "Fact 1\n\nForests protect themselves in quiet ways: shade, roots, chemicals, and regrowth. A golem is the loud version.",
-                                                                              "Fact 2\n\nRedwood wood is tied to endurance. In Choascraft, that endurance can stand up and swing back.",
-                                                                              "Choascraft Tree Golems\n\nTree golems are redwood guardians. Their loot table gives more redwood logs than heartwood.",
-                                                                              "Drops\n\nTree golems drop Redwood Logs and can also drop a Redwood Sapling.",
-                                                                              "Crafting Uses\n\nUse redwood drops for the full redwood block set: planks, stairs, slabs, doors, trapdoors, fences, gates, buttons, sticks, and pressure plates.",
-                                                                              "Building Note\n\nA tree golem is a fight, but also a warning: if you need redwood, plant saplings after taking logs.",
-                                                                              "Field Note\n\nThe golem has no mouth, but every footstep says the same thing: leave some forest standing."
-                                                                          ]
-                                                            }
-                                                        ]
-                                      }
-                                  ]
-                  }
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "zombie:redwood_log",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 2,
+                "max": 5
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "zombie:redwood_sapling",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 0,
+                "max": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "conditions": [
+        {
+          "condition": "random_chance",
+          "chance": 0.1
+        }
+      ],
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:written_book",
+          "functions": [
+            {
+              "function": "set_book_contents",
+              "author": "Choascraft",
+              "title": "Tree Golem Notes",
+              "pages": [
+                "Tree Golem Notes\n\nA Choascraft guide for tree golem lore, redwood drops, and the craft value of living timber.",
+                "Lore\n\nTree golems are old redwood anger shaped into walking bark. They guard places where roots remember harm.",
+                "Fact 1\n\nForests protect themselves in quiet ways: shade, roots, chemicals, and regrowth. A golem is the loud version.",
+                "Fact 2\n\nRedwood wood is tied to endurance. In Choascraft, that endurance can stand up and swing back.",
+                "Choascraft Tree Golems\n\nTree golems are redwood guardians. Their loot table gives more redwood logs than heartwood.",
+                "Drops\n\nTree golems drop Redwood Logs and can also drop a Redwood Sapling.",
+                "Crafting Uses\n\nUse redwood drops for the full redwood block set: planks, stairs, slabs, doors, trapdoors, fences, gates, buttons, sticks, and pressure plates.",
+                "Building Note\n\nA tree golem is a fight, but also a warning: if you need redwood, plant saplings after taking logs.",
+                "Field Note\n\nThe golem has no mouth, but every footstep says the same thing: leave some forest standing."
               ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
 }
+

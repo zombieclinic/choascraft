@@ -1,34 +1,35 @@
-﻿{
-    "format_version":  "1.20.10",
-    "minecraft:recipe_shaped":  {
-                                    "description":  {
-                                                        "identifier":  "zombie:tumor_fence_gate"
-                                                    },
-                                    "tags":  [
-                                                 "crafting_table"
-                                             ],
-                                    "pattern":  [
-                                                    "S#S",
-                                                    "S#S"
-                                                ],
-                                    "key":  {
-                                                "#":  {
-                                                          "item":  "zombie:tumor_planks"
-                                                      },
-                                                "S":  {
-                                                          "item":  "minecraft:stick"
-                                                      }
-                                            },
-                                    "result":  [
-                                                   {
-                                                       "count":  1,
-                                                       "item":  "zombie:tumor_fence_gate"
-                                                   }
-                                               ],
-                                    "unlock":  [
-                                                   {
-                                                       "item":  "zombie:tumor_planks"
-                                                   }
-                                               ]
-                                }
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "zombie:tumor_fence_gate"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "S#S",
+      "S#S"
+    ],
+    "key": {
+      "#": {
+        "item": "zombie:tumor_planks"
+      },
+      "S": {
+        "item": "minecraft:stick"
+      }
+    },
+    "result": [
+      {
+        "count": 1,
+        "item": "zombie:tumor_fence_gate"
+      }
+    ],
+    "unlock": [
+      {
+        "item": "zombie:tumor_planks"
+      }
+    ]
+  }
 }
+

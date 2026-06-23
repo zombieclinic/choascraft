@@ -1,14 +1,23 @@
 {
-	"format_version": "1.26.20",
-	"animations": {
-		"animation.demon_fishing_pool_1.idle_fpp": {
-			"loop": true,
-			"bones": {
-				"Weapon": {
-					"rotation": [50.29213, 58.80956, -58.42427],
-					"position": [15.61578, -24.27992, 34.80851]
-				}
-			}
-		}
-	}
+  "format_version": "1.26.20",
+  "animations": {
+    "animation.demon_fishing_pool_1.idle_fpp": {
+      "loop": true,
+      "bones": {
+        "Weapon": {
+          "rotation": [
+            50.29213,
+            58.80956,
+            -58.42427
+          ],
+          "position": [
+            15.61578,
+            -24.27992,
+            34.80851
+          ]
+        }
+      }
+    }
+  }
 }
+

@@ -1,8 +1,9 @@
 {
-	"format_version": "1.16.100",
-	"minecraft:texture_set": {
-		"color": "brown_bear_saddle_chest",
-		"metalness_emissive_roughness": "brown_bear_saddle_chest_mer",
-		"normal": "brown_bear_saddle_chest_normal"
-	}
+  "format_version": "1.16.100",
+  "minecraft:texture_set": {
+    "color": "brown_bear_saddle_chest",
+    "metalness_emissive_roughness": "brown_bear_saddle_chest_mer",
+    "normal": "brown_bear_saddle_chest_normal"
+  }
 }
+

@@ -1,8 +1,9 @@
 {
-	"format_version": "1.16.100",
-	"minecraft:texture_set": {
-		"color": "jellyfish_chest",
-		"metalness_emissive_roughness": "jellyfish_chest_mer",
-		"normal": "jellyfish_chest_normal"
-	}
+  "format_version": "1.16.100",
+  "minecraft:texture_set": {
+    "color": "jellyfish_chest",
+    "metalness_emissive_roughness": "jellyfish_chest_mer",
+    "normal": "jellyfish_chest_normal"
+  }
 }
+

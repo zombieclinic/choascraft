@@ -1,0 +1,92 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.chaos_sword": {
+      "initial_state": "default",
+      "states": {
+        "default": {
+          "animations": [
+            "knife_fpp"
+          ],
+          "transitions": [
+            {
+              "fpp_swing": "query.is_using_item==true && !query.is_sneaking && !query.is_jumping"
+            },
+            {
+              "jump_attack": "query.is_using_item==true && !query.is_sneaking && query.is_jumping"
+            }
+          ]
+        },
+        "fpp_swing": {
+          "animations": [
+            "slash"
+          ],
+          "transitions": [
+            {
+              "default": "query.all_animations_finished && query.is_using_item==false"
+            }
+          ]
+        },
+        "jump_attack": {
+          "animations": [
+            "jump_attack"
+          ],
+          "blend_transition": 0.5,
+          "blend_via_shortest_path": true,
+          "transitions": [
+            {
+              "default": "query.all_animations_finished && query.is_using_item==false"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.chaos_sword_particle": {
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "tpp_swing": "query.is_using_item==true && !query.is_sneaking && !query.is_jumping"
+            },
+            {
+              "tpp_jump": "query.is_using_item==true && !query.is_sneaking && query.is_jumping"
+            }
+          ]
+        },
+        "tpp_swing": {
+          "animations": [
+            "particle"
+          ],
+          "particle_effects": [
+            {
+              "effect": "chaos",
+              "locator": "locator"
+            }
+          ],
+          "transitions": [
+            {
+              "default": "query.is_using_item==false"
+            }
+          ]
+        },
+        "tpp_jump": {
+          "animations": [
+            "particle"
+          ],
+          "particle_effects": [
+            {
+              "effect": "jump_attack",
+              "locator": "locator"
+            }
+          ],
+          "transitions": [
+            {
+              "default": "query.is_using_item==false"
+            }
+          ]
+        }
+      }
+    }
+  }
+}
+

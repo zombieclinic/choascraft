@@ -8,7 +8,9 @@
     },
     "component_groups": {
       "leashed_orca": {
-        "minecraft:persistent": {}
+        "minecraft:persistent": {
+          
+        }
       },
       "zombie_orca_proximity_targeting": {
         "minecraft:behavior.nearest_attackable_target": {
@@ -185,7 +187,9 @@
         "jump_power": 0.25
       },
       "minecraft:despawn": {
-        "despawn_from_distance": {}
+        "despawn_from_distance": {
+          
+        }
       },
       "minecraft:physics": {
         "has_collision": true,
@@ -213,7 +217,9 @@
           }
         ]
       },
-      "minecraft:conditional_bandwidth_optimization": {},
+      "minecraft:conditional_bandwidth_optimization": {
+        
+      },
       "minecraft:healable": {
         "force_use": false,
         "items": [
@@ -290,3 +296,4 @@
     }
   }
 }
+

@@ -1,8 +1,9 @@
 {
-	"format_version": "1.16.100",
-	"minecraft:texture_set": {
-		"color": "boots",
-		"metalness_emissive_roughness": "boots_mer",
-		"normal": "boots_normal"
-	}
+  "format_version": "1.16.100",
+  "minecraft:texture_set": {
+    "color": "boots",
+    "metalness_emissive_roughness": "boots_mer",
+    "normal": "boots_normal"
+  }
 }
+

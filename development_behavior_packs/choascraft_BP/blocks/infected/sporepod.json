@@ -26,7 +26,6 @@
         "condition": "query.block_state('zombie:sporepod_part') == 'bottom'",
         "components": {
           "minecraft:loot": "loot_tables/blocks/sporepod.json",
-          "zombie:sporepod_growth": {},
           "minecraft:placement_filter": {
             "conditions": [
               {
@@ -58,7 +57,6 @@
         "condition": "query.block_state('zombie:sporepod_part') == 'middle'",
         "components": {
           "minecraft:loot": "loot_tables/blocks/empty.json",
-          "zombie:sporepod_growth": {},
           "minecraft:material_instances": {
             "*": {
               "texture": "sporepod_middle",
@@ -73,7 +71,6 @@
         "condition": "query.block_state('zombie:sporepod_part') == 'top'",
         "components": {
           "minecraft:loot": "loot_tables/blocks/empty.json",
-          "zombie:sporepod_growth": {},
           "minecraft:material_instances": {
             "*": {
               "texture": "sporepod_top",
@@ -89,13 +86,6 @@
       "minecraft:display_name": "tile.zombie:sporepod.name",
       "minecraft:collision_box": false,
       "minecraft:selection_box": true,
-      "minecraft:tick": {
-        "looping": true,
-        "interval_range": [
-          1200,
-          1200
-        ]
-      },
       "minecraft:geometry": "geometry.zombie_abysscrossplants",
       "minecraft:material_instances": {
         "*": {
@@ -121,11 +111,25 @@
         ]
       },
       "minecraft:light_dampening": 0,
-      "minecraft:replaceable": {},
+      "minecraft:replaceable": {
+        
+      },
       "minecraft:tags": [
         "plant",
         "minecraft:crop"
-      ]
+      ],
+      "minecraft:tick": {
+        "looping": true,
+        "interval_range": [
+          20,
+          40
+        ]
+      },
+      "zombie:sporepod_growth": {
+        
+      },
+      "minecraft:map_color": "#25132C"
     }
   }
 }
+

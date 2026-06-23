@@ -1,102 +1,129 @@
 {
-	"format_version": "1.16.0",
-	"sound_definitions": {
-	
-		"zombie.orca.ambient": {
-			
-			"category": "neutral",
-			"sounds": [
-				"sounds/ocean_entites/orca/ambint_1",
-				"sounds/ocean_entites/orca/ambint_2",
-				"sounds/ocean_entites/orca/ambint_3",
-				"sounds/ocean_entites/orca/ambint_4"
-					]
-					
-		},
-		"zombie.orca.hurt": {
-			"category": "neutral",
-			"sounds": [
-				"sounds/ocean_entites/orca/orca_hurt",
-				"sounds/ocean_entites/orca/orca_hurt_1"
-			]
-		},
-		"zombie_walker_born": {
-			"category": "neutral",
-			"sounds": ["sounds/monsters/zombie_walker/zombie_born"]
-		},
-		"zombie.walker.hurt": {
-			"category": "neutral",
-			"sounds": ["sounds/monsters/zombie_walker/hurt"]
-		},
-		"zombie.walker.scream": {
-			"category": "neutral",
-			"sounds": ["sounds/monsters/zombie_walker/scream", "sounds/monsters/zombie_walker/scream2", "sounds/monsters/zombie_walker/scream3"]
-		},
-		"zombie.impaler.hurt": {
-			"category": "neutral",
-			"sounds": ["sounds/monsters/impaler/impaler_hurt_1", "sounds/monsters/impaler/impaler_hurt_2", "sounds/monsters/impaler/impaler_hurt_3"]
-		},
-		"zombie_impaler.scream": {
-			"category": "hostile",
-			"sounds": ["sounds/monsters/impaler/impaler_scream", "sounds/monsters/impaler/impaler_scream2", "sounds/monsters/impaler/impaler_scream3","sounds/monsters/impaler/impaler_scream4","sounds/monsters/impaler/impaler_scream_5"]
-		},
-		"zombie.crusher.charge": {
-			"category": "hostile",
-			"sounds": ["sounds/monsters/impaler/impaler_scream", "sounds/monsters/impaler/impaler_scream2", "sounds/monsters/impaler/impaler_scream3"]
-		},
-		"zombie.crusher.impact": {
-			"category": "hostile",
-			"sounds": ["sounds/monsters/zombie_walker/hurt"]
-		},
-		"mob.bear.death": {
-			"category": "hostile",
-			"sounds": [
-				"sounds/bearsounds/bearsound_death_1",
-				"sounds/bearsounds/bearsound_death_2",
-				"sounds/bearsounds/bearsound_death_3",
-				"sounds/bearsounds/bearsound_death_4"
-			]
-		},
-		"mob.bear.hurt": {
-			"category": "hostile",
-			"sounds": [
-				"sounds/bearsounds/bearsound_hurt_1",
-				"sounds/bearsounds/bearsound_hurt_2",
-				"sounds/bearsounds/bearsound_hurt_3",
-				"sounds/bearsounds/bearsound_hurt_4"
-			]
-		},
-		"mob.bear.say": {
-			"category": "hostile",
-			"sounds": [
-				"sounds/bearsounds/bearsound_say_1",
-				"sounds/bearsounds/bearsound_say_2",
-				"sounds/bearsounds/bearsound_say_3",
-				"sounds/bearsounds/bearsound_say_4",
-				"sounds/bearsounds/bearsound_say_5",
-				"sounds/bearsounds/bearsound_say_6",
-				"sounds/bearsounds/bearsound_say_7"
-			]
-		},
-		"mob.bear.roar": {
-			"category": "hostile",
-			"sounds": [
-				"sounds/bearsounds/bearsound_roar_1",
-				"sounds/bearsounds/bearsound_roar_2",
-				"sounds/bearsounds/bearsound_roar_3",
-				"sounds/bearsounds/bearsound_roar_4",
-				"sounds/bearsounds/bearsound_roar_5"
-			]
-		},
-		"mob.bear.attack": {
-			"category": "hostile",
-			"sounds": [
-				"sounds/bearsounds/bearsound_attack_1",
-				"sounds/bearsounds/bearsound_attack_2",
-				"sounds/bearsounds/bearsound_attack_3",
-				"sounds/bearsounds/bearsound_attack_4"
-			]
-		}
+  "format_version": "1.16.0",
+  "sound_definitions": {
+    "zombie.orca.ambient": {
+      "category": "neutral",
+      "sounds": [
+        "sounds/ocean_entites/orca/ambint_1",
+        "sounds/ocean_entites/orca/ambint_2",
+        "sounds/ocean_entites/orca/ambint_3",
+        "sounds/ocean_entites/orca/ambint_4"
+      ]
+    },
+    "zombie.orca.hurt": {
+      "category": "neutral",
+      "sounds": [
+        "sounds/ocean_entites/orca/orca_hurt",
+        "sounds/ocean_entites/orca/orca_hurt_1"
+      ]
+    },
+    "zombie_walker_born": {
+      "category": "neutral",
+      "sounds": [
+        "sounds/monsters/zombie_walker/zombie_born"
+      ]
+    },
+    "zombie.walker.hurt": {
+      "category": "neutral",
+      "sounds": [
+        "sounds/monsters/zombie_walker/hurt"
+      ]
+    },
+    "zombie.walker.scream": {
+      "category": "neutral",
+      "sounds": [
+        "sounds/monsters/zombie_walker/scream",
+        "sounds/monsters/zombie_walker/scream2",
+        "sounds/monsters/zombie_walker/scream3"
+      ]
+    },
+    "zombie.impaler.hurt": {
+      "category": "neutral",
+      "sounds": [
+        "sounds/monsters/impaler/impaler_hurt_1",
+        "sounds/monsters/impaler/impaler_hurt_2",
+        "sounds/monsters/impaler/impaler_hurt_3"
+      ]
+    },
+    "zombie_impaler.scream": {
+      "category": "hostile",
+      "sounds": [
+        "sounds/monsters/impaler/impaler_scream",
+        "sounds/monsters/impaler/impaler_scream2",
+        "sounds/monsters/impaler/impaler_scream3",
+        "sounds/monsters/impaler/impaler_scream4",
+        "sounds/monsters/impaler/impaler_scream_5"
+      ]
+    },
+    "zombie.crusher.charge": {
+      "category": "hostile",
+      "sounds": [
+        "sounds/monsters/impaler/impaler_scream",
+        "sounds/monsters/impaler/impaler_scream2",
+        "sounds/monsters/impaler/impaler_scream3"
+      ]
+    },
+    "zombie.crusher.impact": {
+      "category": "hostile",
+      "sounds": [
+        "sounds/monsters/zombie_walker/hurt"
+      ]
+    },
+    "mob.bear.death": {
+      "category": "hostile",
+      "sounds": [
+        "sounds/bearsounds/bearsound_death_1",
+        "sounds/bearsounds/bearsound_death_2",
+        "sounds/bearsounds/bearsound_death_3",
+        "sounds/bearsounds/bearsound_death_4"
+      ]
+    },
+    "mob.bear.hurt": {
+      "category": "hostile",
+      "sounds": [
+        "sounds/bearsounds/bearsound_hurt_1",
+        "sounds/bearsounds/bearsound_hurt_2",
+        "sounds/bearsounds/bearsound_hurt_3",
+        "sounds/bearsounds/bearsound_hurt_4"
+      ]
+    },
+    "mob.bear.say": {
+      "category": "hostile",
+      "sounds": [
+        "sounds/bearsounds/bearsound_say_1",
+        "sounds/bearsounds/bearsound_say_2",
+        "sounds/bearsounds/bearsound_say_3",
+        "sounds/bearsounds/bearsound_say_4",
+        "sounds/bearsounds/bearsound_say_5",
+        "sounds/bearsounds/bearsound_say_6",
+        "sounds/bearsounds/bearsound_say_7"
+      ]
+    },
+    "mob.bear.roar": {
+      "category": "hostile",
+      "sounds": [
+        "sounds/bearsounds/bearsound_roar_1",
+        "sounds/bearsounds/bearsound_roar_2",
+        "sounds/bearsounds/bearsound_roar_3",
+        "sounds/bearsounds/bearsound_roar_4",
+        "sounds/bearsounds/bearsound_roar_5"
+      ]
+    },
+    "mob.bear.attack": {
+      "category": "hostile",
+      "sounds": [
+        "sounds/bearsounds/bearsound_attack_1",
+        "sounds/bearsounds/bearsound_attack_2",
+        "sounds/bearsounds/bearsound_attack_3",
+        "sounds/bearsounds/bearsound_attack_4"
+      ]
+    },
+    "zombie.mimic.open": {
+      "category": "hostile",
+      "sounds": [
+        "sounds/mimic/mimic"
+      ]
+    }
   }
 }
 

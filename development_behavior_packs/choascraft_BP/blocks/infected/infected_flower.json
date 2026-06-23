@@ -22,23 +22,12 @@
     },
     "permutations": [
       {
-        "condition": "query.block_state('zombie:infected_flower_part') == 'bottom' && query.block_state('zombie:growth_stage') < 4",
-        "components": {
-          "minecraft:tick": {
-            "looping": true,
-            "interval_range": [
-              450,
-              900
-            ]
-          },
-          "zombie:infected_flower_tick": {}
-        }
-      },
-      {
         "condition": "query.block_state('zombie:infected_flower_part') == 'bottom'",
         "components": {
           "minecraft:loot": "loot_tables/blocks/infected_flower.json",
-          "zombie:infected_flower_growth": {},
+          "zombie:infected_flower_growth": {
+            
+          },
           "minecraft:placement_filter": {
             "conditions": [
               {
@@ -59,23 +48,12 @@
         }
       },
       {
-        "condition": "query.block_state('zombie:infected_flower_part') == 'bottom' && query.block_state('zombie:growth_stage') == 4",
-        "components": {
-          "minecraft:tick": {
-            "looping": false,
-            "interval_range": [
-              1,
-              1
-            ]
-          },
-          "zombie:infected_flower_tick": {}
-        }
-      },
-      {
         "condition": "query.block_state('zombie:infected_flower_part') == 'top'",
         "components": {
           "minecraft:loot": "loot_tables/blocks/empty.json",
-          "zombie:infected_flower_growth": {},
+          "zombie:infected_flower_growth": {
+            
+          },
           "minecraft:material_instances": {
             "*": {
               "texture": "infected_flower_top",
@@ -252,11 +230,25 @@
         ]
       },
       "minecraft:light_dampening": 0,
-      "minecraft:replaceable": {},
+      "minecraft:replaceable": {
+        
+      },
       "minecraft:tags": [
         "minecraft:crop",
         "plant"
-      ]
+      ],
+      "minecraft:tick": {
+        "looping": true,
+        "interval_range": [
+          20,
+          40
+        ]
+      },
+      "zombie:infected_flower_tick": {
+        
+      },
+      "minecraft:map_color": "#110E0D"
     }
   }
 }
+

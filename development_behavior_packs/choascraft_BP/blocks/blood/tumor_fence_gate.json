@@ -1,220 +1,222 @@
-﻿{
-    "format_version":  "1.26.20",
-    "minecraft:block":  {
-                            "description":  {
-                                                "identifier":  "zombie:tumor_fence_gate",
-                                                "traits":  {
-                                                               "minecraft:placement_direction":  {
-                                                                                                     "enabled_states":  [
-                                                                                                                            "minecraft:cardinal_direction"
-                                                                                                                        ]
-                                                                                                 }
-                                                           },
-                                                "states":  {
-                                                               "zombie:open":  [
-                                                                                   false,
-                                                                                   true
-                                                                               ]
-                                                           },
-                                                "menu_category":  {
-                                                                      "category":  "construction",
-                                                                      "group":  "minecraft:itemGroup.name.fenceGate"
-                                                                  }
-                                            },
-                            "permutations":  [
-                                                 {
-                                                     "condition":  "query.block_state(\u0027minecraft:cardinal_direction\u0027) == \u0027north\u0027",
-                                                     "components":  {
-                                                                        "minecraft:connection_rule":  {
-                                                                                                          "accepts_connections_from":  "only_fences",
-                                                                                                          "enabled_directions":  [
-                                                                                                                                     "east",
-                                                                                                                                     "west"
-                                                                                                                                 ]
-                                                                                                      },
-                                                                        "minecraft:transformation":  {
-                                                                                                         "rotation":  [
-                                                                                                                          0,
-                                                                                                                          0,
-                                                                                                                          0
-                                                                                                                      ]
-                                                                                                     }
-                                                                    }
-                                                 },
-                                                 {
-                                                     "condition":  "query.block_state(\u0027minecraft:cardinal_direction\u0027) == \u0027south\u0027",
-                                                     "components":  {
-                                                                        "minecraft:connection_rule":  {
-                                                                                                          "accepts_connections_from":  "only_fences",
-                                                                                                          "enabled_directions":  [
-                                                                                                                                     "east",
-                                                                                                                                     "west"
-                                                                                                                                 ]
-                                                                                                      },
-                                                                        "minecraft:transformation":  {
-                                                                                                         "rotation":  [
-                                                                                                                          0,
-                                                                                                                          180,
-                                                                                                                          0
-                                                                                                                      ]
-                                                                                                     }
-                                                                    }
-                                                 },
-                                                 {
-                                                     "condition":  "query.block_state(\u0027minecraft:cardinal_direction\u0027) == \u0027east\u0027",
-                                                     "components":  {
-                                                                        "minecraft:connection_rule":  {
-                                                                                                          "accepts_connections_from":  "only_fences",
-                                                                                                          "enabled_directions":  [
-                                                                                                                                     "north",
-                                                                                                                                     "south"
-                                                                                                                                 ]
-                                                                                                      },
-                                                                        "minecraft:transformation":  {
-                                                                                                         "rotation":  [
-                                                                                                                          0,
-                                                                                                                          -90,
-                                                                                                                          0
-                                                                                                                      ]
-                                                                                                     }
-                                                                    }
-                                                 },
-                                                 {
-                                                     "condition":  "query.block_state(\u0027minecraft:cardinal_direction\u0027) == \u0027west\u0027",
-                                                     "components":  {
-                                                                        "minecraft:connection_rule":  {
-                                                                                                          "accepts_connections_from":  "only_fences",
-                                                                                                          "enabled_directions":  [
-                                                                                                                                     "north",
-                                                                                                                                     "south"
-                                                                                                                                 ]
-                                                                                                      },
-                                                                        "minecraft:transformation":  {
-                                                                                                         "rotation":  [
-                                                                                                                          0,
-                                                                                                                          90,
-                                                                                                                          0
-                                                                                                                      ]
-                                                                                                     }
-                                                                    }
-                                                 },
-                                                 {
-                                                     "condition":  "query.block_state(\u0027zombie:open\u0027)",
-                                                     "components":  {
-                                                                        "minecraft:collision_box":  false
-                                                                    }
-                                                 }
-                                             ],
-                            "components":  {
-                                               "minecraft:display_name":  "Tumor Fence Gate",
-                                               "minecraft:support":  {
-                                                                         "shape":  "stair"
-                                                                     },
-                                               "zombie:fence_gate_toggle":  {
-                                                                                "block_state":  "zombie:open",
-                                                                                "enable_sound":  "open.fence_gate",
-                                                                                "disable_sound":  "close.fence_gate"
-                                                                            },
-                                               "minecraft:geometry":  {
-                                                                          "identifier":  "geometry.zombie.eyewood_fence_gate",
-                                                                          "bone_visibility":  {
-                                                                                                  "posts":  {
-                                                                                                                "expression":  "true",
-                                                                                                                "version":  1
-                                                                                                            },
-                                                                                                  "closed":  {
-                                                                                                                 "expression":  "!query.block_state(\u0027zombie:open\u0027)",
-                                                                                                                 "version":  1
-                                                                                                             },
-                                                                                                  "open":  {
-                                                                                                               "expression":  "query.block_state(\u0027zombie:open\u0027)",
-                                                                                                               "version":  1
-                                                                                                           }
-                                                                                              }
-                                                                      },
-                                               "minecraft:item_visual":  {
-                                                                             "geometry":  {
-                                                                                              "identifier":  "geometry.zombie.eyewood_fence_gate",
-                                                                                              "bone_visibility":  {
-                                                                                                                      "posts":  {
-                                                                                                                                    "expression":  "true",
-                                                                                                                                    "version":  1
-                                                                                                                                },
-                                                                                                                      "closed":  {
-                                                                                                                                     "expression":  "true",
-                                                                                                                                     "version":  1
-                                                                                                                                 },
-                                                                                                                      "open":  {
-                                                                                                                                   "expression":  "false",
-                                                                                                                                   "version":  1
-                                                                                                                               }
-                                                                                                                  }
-                                                                                          },
-                                                                             "material_instances":  {
-                                                                                                        "*":  {
-                                                                                                                  "texture":  "tumor_planks",
-                                                                                                                  "render_method":  "opaque"
-                                                                                                              }
-                                                                                                    }
-                                                                         },
-                                               "minecraft:material_instances":  {
-                                                                                    "*":  {
-                                                                                              "texture":  "tumor_planks",
-                                                                                              "render_method":  "opaque"
-                                                                                          }
-                                                                                },
-                                               "minecraft:collision_box":  {
-                                                                               "origin":  [
-                                                                                              -8,
-                                                                                              0,
-                                                                                              -2
-                                                                                          ],
-                                                                               "size":  [
-                                                                                            16,
-                                                                                            24,
-                                                                                            4
-                                                                                        ]
-                                                                           },
-                                               "minecraft:selection_box":  {
-                                                                               "origin":  [
-                                                                                              -8,
-                                                                                              0,
-                                                                                              -8
-                                                                                          ],
-                                                                               "size":  [
-                                                                                            16,
-                                                                                            16,
-                                                                                            16
-                                                                                        ]
-                                                                           },
-                                               "minecraft:connection_rule":  {
-                                                                                 "accepts_connections_from":  "only_fences"
-                                                                             },
-                                               "minecraft:destructible_by_mining":  {
-                                                                                        "seconds_to_destroy":  2.0
-                                                                                    },
-                                               "minecraft:destructible_by_explosion":  {
-                                                                                           "explosion_resistance":  3.0
-                                                                                       },
-                                               "minecraft:flammable":  {
-                                                                           "catch_chance_modifier":  5,
-                                                                           "destroy_chance_modifier":  20
-                                                                       },
-                                               "minecraft:liquid_detection":  {
-                                                                                  "detection_rules":  [
-                                                                                                          {
-                                                                                                              "liquid_type":  "water",
-                                                                                                              "can_contain_liquid":  true,
-                                                                                                              "on_liquid_touches":  "blocking"
-                                                                                                          }
-                                                                                                      ]
-                                                                              },
-                                               "minecraft:tags":  [
-                                                                      "minecraft:has_fence_connections",
-                                                                      "minecraft:is_axe_item_destructible",
-                                                                      "one_way_collidable",
-                                                                      "wood"
-                                                                  ]
-                                           }
-                        }
+{
+  "format_version": "1.26.20",
+  "minecraft:block": {
+    "description": {
+      "identifier": "zombie:tumor_fence_gate",
+      "traits": {
+        "minecraft:placement_direction": {
+          "enabled_states": [
+            "minecraft:cardinal_direction"
+          ]
+        }
+      },
+      "states": {
+        "zombie:open": [
+          false,
+          true
+        ]
+      },
+      "menu_category": {
+        "category": "construction",
+        "group": "minecraft:itemGroup.name.fenceGate"
+      }
+    },
+    "permutations": [
+      {
+        "condition": "query.block_state('minecraft:cardinal_direction') == 'north'",
+        "components": {
+          "minecraft:connection_rule": {
+            "accepts_connections_from": "only_fences",
+            "enabled_directions": [
+              "east",
+              "west"
+            ]
+          },
+          "minecraft:transformation": {
+            "rotation": [
+              0,
+              0,
+              0
+            ]
+          }
+        }
+      },
+      {
+        "condition": "query.block_state('minecraft:cardinal_direction') == 'south'",
+        "components": {
+          "minecraft:connection_rule": {
+            "accepts_connections_from": "only_fences",
+            "enabled_directions": [
+              "east",
+              "west"
+            ]
+          },
+          "minecraft:transformation": {
+            "rotation": [
+              0,
+              180,
+              0
+            ]
+          }
+        }
+      },
+      {
+        "condition": "query.block_state('minecraft:cardinal_direction') == 'east'",
+        "components": {
+          "minecraft:connection_rule": {
+            "accepts_connections_from": "only_fences",
+            "enabled_directions": [
+              "north",
+              "south"
+            ]
+          },
+          "minecraft:transformation": {
+            "rotation": [
+              0,
+              -90,
+              0
+            ]
+          }
+        }
+      },
+      {
+        "condition": "query.block_state('minecraft:cardinal_direction') == 'west'",
+        "components": {
+          "minecraft:connection_rule": {
+            "accepts_connections_from": "only_fences",
+            "enabled_directions": [
+              "north",
+              "south"
+            ]
+          },
+          "minecraft:transformation": {
+            "rotation": [
+              0,
+              90,
+              0
+            ]
+          }
+        }
+      },
+      {
+        "condition": "query.block_state('zombie:open')",
+        "components": {
+          "minecraft:collision_box": false
+        }
+      }
+    ],
+    "components": {
+      "minecraft:display_name": "Tumor Fence Gate",
+      "minecraft:support": {
+        "shape": "stair"
+      },
+      "zombie:fence_gate_toggle": {
+        "block_state": "zombie:open",
+        "enable_sound": "open.fence_gate",
+        "disable_sound": "close.fence_gate"
+      },
+      "minecraft:geometry": {
+        "identifier": "geometry.zombie.eyewood_fence_gate",
+        "bone_visibility": {
+          "posts": {
+            "expression": "true",
+            "version": 1
+          },
+          "closed": {
+            "expression": "!query.block_state('zombie:open')",
+            "version": 1
+          },
+          "open": {
+            "expression": "query.block_state('zombie:open')",
+            "version": 1
+          }
+        }
+      },
+      "minecraft:item_visual": {
+        "geometry": {
+          "identifier": "geometry.zombie.eyewood_fence_gate",
+          "bone_visibility": {
+            "posts": {
+              "expression": "true",
+              "version": 1
+            },
+            "closed": {
+              "expression": "true",
+              "version": 1
+            },
+            "open": {
+              "expression": "false",
+              "version": 1
+            }
+          }
+        },
+        "material_instances": {
+          "*": {
+            "texture": "tumor_planks",
+            "render_method": "opaque"
+          }
+        }
+      },
+      "minecraft:material_instances": {
+        "*": {
+          "texture": "tumor_planks",
+          "render_method": "opaque"
+        }
+      },
+      "minecraft:collision_box": {
+        "origin": [
+          -8,
+          0,
+          -2
+        ],
+        "size": [
+          16,
+          24,
+          4
+        ]
+      },
+      "minecraft:selection_box": {
+        "origin": [
+          -8,
+          0,
+          -8
+        ],
+        "size": [
+          16,
+          16,
+          16
+        ]
+      },
+      "minecraft:connection_rule": {
+        "accepts_connections_from": "only_fences"
+      },
+      "minecraft:destructible_by_mining": {
+        "seconds_to_destroy": 2.0
+      },
+      "minecraft:destructible_by_explosion": {
+        "explosion_resistance": 3.0
+      },
+      "minecraft:flammable": {
+        "catch_chance_modifier": 5,
+        "destroy_chance_modifier": 20
+      },
+      "minecraft:liquid_detection": {
+        "detection_rules": [
+          {
+            "liquid_type": "water",
+            "can_contain_liquid": true,
+            "on_liquid_touches": "blocking"
+          }
+        ]
+      },
+      "minecraft:tags": [
+        "minecraft:has_fence_connections",
+        "minecraft:is_axe_item_destructible",
+        "one_way_collidable",
+        "wood"
+      ],
+      "minecraft:map_color": "#72222A"
+    }
+  }
 }
+

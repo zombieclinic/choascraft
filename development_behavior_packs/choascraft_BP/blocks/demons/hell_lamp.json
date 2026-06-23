@@ -5,6 +5,13 @@
       "identifier": "zombie:hell_lamp",
       "menu_category": {
         "category": "items"
+      },
+      "traits": {
+        "minecraft:placement_position": {
+          "enabled_states": [
+            "minecraft:block_face"
+          ]
+        }
       }
     },
     "components": {
@@ -26,7 +33,27 @@
       "minecraft:flammable": false,
       "minecraft:tags": [
         "minecraft:is_pickaxe_item_destructible"
-      ]
-    }
+      ],
+      "minecraft:map_color": "#361103"
+    },
+    "permutations": [
+      {
+        "condition": "query.block_state('minecraft:block_face') == 'down'",
+        "components": {
+          "minecraft:geometry": "geometry.hell_lamp_ceiling",
+          "minecraft:collision_box": true,
+          "minecraft:selection_box": true
+        }
+      },
+      {
+        "condition": "query.block_state('minecraft:block_face') == 'up'",
+        "components": {
+          "minecraft:geometry": "geometry.hell_lamp",
+          "minecraft:collision_box": true,
+          "minecraft:selection_box": true
+        }
+      }
+    ]
   }
 }
+

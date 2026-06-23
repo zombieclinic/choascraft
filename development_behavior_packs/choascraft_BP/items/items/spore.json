@@ -36,8 +36,13 @@
         "movement_modifier": 0,
         "use_duration": 1
       },
-      "zombie:spore_food": {},
-      "zombie:raw_food_sickness": {}
+      "zombie:spore_food": {
+        
+      },
+      "zombie:raw_food_sickness": {
+        
+      }
     }
   }
 }
+

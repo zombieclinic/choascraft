@@ -5,8 +5,12 @@
       "identifier": "zombie:shark_meat_cooked_recipe"
     },
     "unlock": [
-      { "item": "minecraft:iron_ingot" },
-      { "item": "zombie:shark_meat" }
+      {
+        "item": "minecraft:iron_ingot"
+      },
+      {
+        "item": "zombie:shark_meat"
+      }
     ],
     "tags": [
       "furnace",
@@ -18,3 +22,4 @@
     "output": "zombie:shark_meat_cooked"
   }
 }
+

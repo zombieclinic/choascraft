@@ -1,8 +1,9 @@
 {
-	"format_version": "1.16.100",
-	"minecraft:texture_set": {
-		"color": "flesh_log_stripped",
-		"metalness_emissive_roughness": "flesh_log_stripped_mer",
-		"normal": "flesh_log_stripped_normal"
-	}
+  "format_version": "1.16.100",
+  "minecraft:texture_set": {
+    "color": "flesh_log_stripped",
+    "metalness_emissive_roughness": "flesh_log_stripped_mer",
+    "normal": "flesh_log_stripped_normal"
+  }
 }
+

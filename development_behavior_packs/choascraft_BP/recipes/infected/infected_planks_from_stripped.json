@@ -1,27 +1,28 @@
 {
-	"format_version": "1.20.10",
-	"minecraft:recipe_shapeless": {
-		"description": {
-			"identifier": "zombie:infected_planks_from_stripped"
-		},
-		"tags": [
-			"crafting_table"
-		],
-		"ingredients": [
-			{
-				"item": "zombie:infected_tree_log_stripped"
-			}
-		],
-		"result": [
-			{
-				"item": "zombie:infected_planks",
-				"count": 4
-			}
-		],
-		"unlock": [
-			{
-				"item": "zombie:infected_tree_log_stripped"
-			}
-		]
-	}
+  "format_version": "1.20.10",
+  "minecraft:recipe_shapeless": {
+    "description": {
+      "identifier": "zombie:infected_planks_from_stripped"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "ingredients": [
+      {
+        "item": "zombie:infected_tree_log_stripped"
+      }
+    ],
+    "result": [
+      {
+        "item": "zombie:infected_planks",
+        "count": 4
+      }
+    ],
+    "unlock": [
+      {
+        "item": "zombie:infected_tree_log_stripped"
+      }
+    ]
+  }
 }
+

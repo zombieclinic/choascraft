@@ -65,11 +65,15 @@
           }
         ]
       },
-      "minecraft:replaceable": {},
+      "minecraft:replaceable": {
+        
+      },
       "minecraft:tags": [
         "minecraft:is_shears_item_destructible",
         "plant"
-      ]
+      ],
+      "minecraft:map_color": "#4F304B"
     }
   }
 }
+

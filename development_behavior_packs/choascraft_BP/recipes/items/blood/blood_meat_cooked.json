@@ -1,0 +1,22 @@
+{
+  "format_version": "1.26.10",
+  "minecraft:recipe_furnace": {
+    "description": {
+      "identifier": "zombie:blood_meat_cooked_recipe"
+    },
+    "unlock": [
+      {
+        "item": "zombie:blood_meat"
+      }
+    ],
+    "tags": [
+      "furnace",
+      "smoker",
+      "campfire",
+      "soul_campfire"
+    ],
+    "input": "zombie:blood_meat",
+    "output": "zombie:blood_meat_cooked"
+  }
+}
+

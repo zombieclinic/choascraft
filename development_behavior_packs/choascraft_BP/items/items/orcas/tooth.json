@@ -1,20 +1,22 @@
 {
-    "format_version": "1.26.10",
-    "minecraft:item": {
-        "description": {
-            "identifier": "zombie:orca_tooth",
-            "menu_category": {
-                "category": "nature"}
-        },
-        "components": {
-            "minecraft:icon": "orca_tooth",
-            "minecraft:display_name": {
-                "value": "Orca Tooth"
-            },
-            "minecraft:stacked_by_data": true,
-            "minecraft:compostable": {
-                "composting_chance": 80
-            }
-        }
+  "format_version": "1.26.10",
+  "minecraft:item": {
+    "description": {
+      "identifier": "zombie:orca_tooth",
+      "menu_category": {
+        "category": "nature"
+      }
+    },
+    "components": {
+      "minecraft:icon": "orca_tooth",
+      "minecraft:display_name": {
+        "value": "Orca Tooth"
+      },
+      "minecraft:stacked_by_data": true,
+      "minecraft:compostable": {
+        "composting_chance": 80
+      }
     }
+  }
 }
+

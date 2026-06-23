@@ -16,7 +16,9 @@
       "minecraft:scale": {
         "value": 3
       },
-      "minecraft:fire_immune": {},
+      "minecraft:fire_immune": {
+        
+      },
       "minecraft:loot": {
         "table": "loot_tables/entities/demons/hell_brute.json"
       },
@@ -33,7 +35,9 @@
         "breathes_water": true
       },
       "minecraft:despawn": {
-        "despawn_from_distance": {},
+        "despawn_from_distance": {
+          
+        },
         "despawn_from_simulation_edge": true
       },
       "minecraft:behavior.melee_box_attack": {
@@ -62,15 +66,21 @@
       "minecraft:variant": {
         "value": 3
       },
-      "minecraft:movement.basic": {},
+      "minecraft:movement.basic": {
+        
+      },
       "minecraft:navigation.walk": {
         "is_amphibious": true,
         "can_pass_doors": true,
         "can_walk": true,
         "can_break_doors": true
       },
-      "minecraft:jump.static": {},
-      "minecraft:can_climb": {},
+      "minecraft:jump.static": {
+        
+      },
+      "minecraft:can_climb": {
+        
+      },
       "minecraft:health": {
         "value": 80,
         "max": 80
@@ -127,8 +137,13 @@
           }
         ]
       },
-      "minecraft:physics": {},
-      "minecraft:conditional_bandwidth_optimization": {}
+      "minecraft:physics": {
+        
+      },
+      "minecraft:conditional_bandwidth_optimization": {
+        
+      }
     }
   }
 }
+

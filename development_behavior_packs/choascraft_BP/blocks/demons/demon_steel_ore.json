@@ -18,20 +18,23 @@
         }
       },
       "minecraft:light_emission": 1,
-      "minecraft:map_color": "#000000",
       "minecraft:flammable": false,
       "minecraft:destructible_by_mining": {
         "seconds_to_destroy": 1
       },
       "minecraft:selection_box": true,
       "minecraft:loot": "loot_tables/empty.json",
-      "zombie:demon_steel_ore_drop": {},
+      "zombie:demon_steel_ore_drop": {
+        
+      },
       "minecraft:geometry": {
         "identifier": "minecraft:geometry.full_block"
       },
       "minecraft:tags": [
         "minecraft:is_pickaxe_item_destructible"
-      ]
+      ],
+      "minecraft:map_color": "#2C0C11"
     }
   }
 }
+

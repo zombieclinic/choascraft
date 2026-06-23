@@ -1,22 +1,23 @@
 {
-	"format_version": "1.26.20",
-	"minecraft:item": {
-		"description": {
-			"identifier": "zombie:chaos_bfc_arrow",
-			"menu_category": {
-				"category": "equipment",
-				"group": "minecraft:itemGroup.name.chaos"
-			}
-		},
-		"components": {
-			"minecraft:projectile": {
-				"projectile_entity": "zombie:chaos_bfc_arrow_entity",
-				"minimum_critical_power": 1
-			},
-			"minecraft:icon": "zombie_chaos_bfc_arrow",		
-			"minecraft:display_name": {
-				"value": "BFC Arrow"
-			}
-		}
-	}
+  "format_version": "1.26.20",
+  "minecraft:item": {
+    "description": {
+      "identifier": "zombie:chaos_bfc_arrow",
+      "menu_category": {
+        "category": "equipment",
+        "group": "minecraft:itemGroup.name.chaos"
+      }
+    },
+    "components": {
+      "minecraft:projectile": {
+        "projectile_entity": "zombie:chaos_bfc_arrow_entity",
+        "minimum_critical_power": 1
+      },
+      "minecraft:icon": "zombie_chaos_bfc_arrow",
+      "minecraft:display_name": {
+        "value": "BFC Arrow"
+      }
+    }
+  }
 }
+

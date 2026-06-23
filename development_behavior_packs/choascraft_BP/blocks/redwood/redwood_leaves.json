@@ -58,7 +58,9 @@
         "zombie:redwood_leaves",
         "zombie:custom_leaves",
         "leaves"
-      ]
+      ],
+      "minecraft:map_color": "#242812"
     }
   }
 }
+

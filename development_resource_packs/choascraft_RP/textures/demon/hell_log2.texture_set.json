@@ -1,8 +1,9 @@
 {
-	"format_version": "1.16.100",
-	"minecraft:texture_set": {
-		"color": "hell_log2",
-		"metalness_emissive_roughness": "hell_log2_mer",
-		"normal": "hell_log2_normal"
-	}
+  "format_version": "1.16.100",
+  "minecraft:texture_set": {
+    "color": "hell_log2",
+    "metalness_emissive_roughness": "hell_log2_mer",
+    "normal": "hell_log2_normal"
+  }
 }
+

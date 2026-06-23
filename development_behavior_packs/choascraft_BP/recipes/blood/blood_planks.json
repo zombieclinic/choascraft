@@ -1,27 +1,28 @@
-﻿{
-    "format_version":  "1.20.10",
-    "minecraft:recipe_shapeless":  {
-                                       "description":  {
-                                                           "identifier":  "zombie:blood_planks"
-                                                       },
-                                       "tags":  [
-                                                    "crafting_table"
-                                                ],
-                                       "ingredients":  [
-                                                           {
-                                                               "item":  "zombie:blood_log"
-                                                           }
-                                                       ],
-                                       "result":  [
-                                                      {
-                                                          "count":  4,
-                                                          "item":  "zombie:blood_planks"
-                                                      }
-                                                  ],
-                                       "unlock":  [
-                                                      {
-                                                          "item":  "zombie:blood_log"
-                                                      }
-                                                  ]
-                                   }
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shapeless": {
+    "description": {
+      "identifier": "zombie:blood_planks"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "ingredients": [
+      {
+        "item": "zombie:blood_log"
+      }
+    ],
+    "result": [
+      {
+        "count": 4,
+        "item": "zombie:blood_planks"
+      }
+    ],
+    "unlock": [
+      {
+        "item": "zombie:blood_log"
+      }
+    ]
+  }
 }
+

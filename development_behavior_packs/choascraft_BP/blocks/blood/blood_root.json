@@ -1,0 +1,291 @@
+{
+  "format_version": "1.26.30",
+  "minecraft:block": {
+    "description": {
+      "identifier": "zombie:blood_root",
+      "states": {
+        "zombie:growth_stage": {
+          "values": {
+            "min": 0,
+            "max": 3
+          }
+        },
+        "zombie:blood_root_part": [
+          "bottom",
+          "top"
+        ],
+        "zombie:blood_root_has_top": [
+          "false",
+          "true"
+        ]
+      },
+      "menu_category": {
+        "category": "nature",
+        "group": "minecraft:itemGroup.name.crop"
+      }
+    },
+    "permutations": [
+      {
+        "condition": "query.block_state(\u0027zombie:blood_root_part\u0027) == \u0027top\u0027",
+        "components": {
+          "minecraft:selection_box": {
+            "origin": [
+              -4,
+              0,
+              -4
+            ],
+            "size": [
+              8,
+              12,
+              8
+            ]
+          },
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "blood_root_top",
+              "render_method": "alpha_test",
+              "face_dimming": false,
+              "ambient_occlusion": 0
+            }
+          },
+          "minecraft:placement_filter": {
+            "conditions": [
+              {
+                "allowed_faces": [
+                  "up"
+                ],
+                "block_filter": [
+                  "zombie:blood_root"
+                ]
+              }
+            ]
+          }
+        }
+      },
+      {
+        "condition": "query.block_state(\u0027zombie:blood_root_part\u0027) == \u0027bottom\u0027 \u0026\u0026 query.block_state(\u0027zombie:growth_stage\u0027) == 0",
+        "components": {
+          "minecraft:selection_box": {
+            "origin": [
+              -4,
+              0,
+              -4
+            ],
+            "size": [
+              8,
+              3,
+              8
+            ]
+          },
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "blood_root_0",
+              "render_method": "alpha_test",
+              "face_dimming": false,
+              "ambient_occlusion": 0
+            }
+          }
+        }
+      },
+      {
+        "condition": "query.block_state(\u0027zombie:blood_root_part\u0027) == \u0027bottom\u0027 \u0026\u0026 query.block_state(\u0027zombie:growth_stage\u0027) == 1",
+        "components": {
+          "minecraft:selection_box": {
+            "origin": [
+              -4,
+              0,
+              -4
+            ],
+            "size": [
+              8,
+              6,
+              8
+            ]
+          },
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "blood_root_1",
+              "render_method": "alpha_test",
+              "face_dimming": false,
+              "ambient_occlusion": 0
+            }
+          }
+        }
+      },
+      {
+        "condition": "query.block_state(\u0027zombie:blood_root_part\u0027) == \u0027bottom\u0027 \u0026\u0026 query.block_state(\u0027zombie:growth_stage\u0027) == 2",
+        "components": {
+          "minecraft:selection_box": {
+            "origin": [
+              -4,
+              0,
+              -4
+            ],
+            "size": [
+              8,
+              9,
+              8
+            ]
+          },
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "blood_root_2",
+              "render_method": "alpha_test",
+              "face_dimming": false,
+              "ambient_occlusion": 0
+            }
+          }
+        }
+      },
+      {
+        "condition": "query.block_state(\u0027zombie:blood_root_part\u0027) == \u0027bottom\u0027 \u0026\u0026 query.block_state(\u0027zombie:growth_stage\u0027) == 3",
+        "components": {
+          "minecraft:selection_box": {
+            "origin": [
+              -4,
+              0,
+              -4
+            ],
+            "size": [
+              8,
+              12,
+              8
+            ]
+          },
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "blood_root_3",
+              "render_method": "alpha_test",
+              "face_dimming": false,
+              "ambient_occlusion": 0
+            }
+          }
+        }
+      },
+      {
+        "condition": "query.block_state(\u0027zombie:blood_root_part\u0027) == \u0027bottom\u0027 \u0026\u0026 query.block_state(\u0027zombie:growth_stage\u0027) \u003c 3",
+        "components": {
+          "minecraft:tick": {
+            "looping": true,
+            "interval_range": [
+              20,
+              40
+            ]
+          },
+          "zombie:blood_root_tick": {
+            "stage_state": "zombie:growth_stage",
+            "part_state": "zombie:blood_root_part",
+            "has_top_state": "zombie:blood_root_has_top",
+            "max_stage": 3,
+            "valid_base_blocks": [
+              "zombie:demon_blood_block",
+              "zombie:demon_flesh_block",
+              "zombie:demon_blood_flesh_block"
+            ]
+          }
+        }
+      },
+      {
+        "condition": "query.block_state(\u0027zombie:blood_root_part\u0027) == \u0027bottom\u0027 \u0026\u0026 query.block_state(\u0027zombie:growth_stage\u0027) == 3 \u0026\u0026 query.block_state(\u0027zombie:blood_root_has_top\u0027) == \u0027false\u0027",
+        "components": {
+          "minecraft:tick": {
+            "looping": true,
+            "interval_range": [
+              20,
+              40
+            ]
+          },
+          "zombie:blood_root_tick": {
+            "stage_state": "zombie:growth_stage",
+            "part_state": "zombie:blood_root_part",
+            "has_top_state": "zombie:blood_root_has_top",
+            "max_stage": 3,
+            "valid_base_blocks": [
+              "zombie:demon_blood_block",
+              "zombie:demon_flesh_block",
+              "zombie:demon_blood_flesh_block"
+            ]
+          }
+        }
+      }
+    ],
+    "components": {
+      "minecraft:display_name": "tile.zombie:blood_root.name",
+      "minecraft:collision_box": false,
+      "minecraft:selection_box": {
+        "origin": [
+          -4,
+          0,
+          -4
+        ],
+        "size": [
+          8,
+          12,
+          8
+        ]
+      },
+      "minecraft:geometry": "geometry.zombie_abysscrossplants",
+      "minecraft:material_instances": {
+        "*": {
+          "texture": "blood_root_0",
+          "render_method": "alpha_test",
+          "face_dimming": false,
+          "ambient_occlusion": 0
+        }
+      },
+      "minecraft:item_visual": {
+        "geometry": "geometry.zombie_abysscrossplants",
+        "material_instances": {
+          "*": {
+            "texture": "blood_root_top",
+            "render_method": "alpha_test",
+            "face_dimming": false,
+            "ambient_occlusion": 0
+          }
+        }
+      },
+      "minecraft:destructible_by_mining": {
+        "seconds_to_destroy": 0.0
+      },
+      "minecraft:destructible_by_explosion": {
+        "explosion_resistance": 0.0
+      },
+      "minecraft:placement_filter": {
+        "conditions": [
+          {
+            "allowed_faces": [
+              "up"
+            ],
+            "block_filter": [
+              "zombie:demon_blood_block",
+              "zombie:demon_flesh_block",
+              "zombie:demon_blood_flesh_block"
+            ]
+          }
+        ]
+      },
+      "minecraft:light_dampening": 0,
+      "minecraft:replaceable": {
+        
+      },
+      "minecraft:loot": "loot_tables/blocks/blood_root.json",
+      "minecraft:tags": [
+        "minecraft:crop",
+        "plant"
+      ],
+      "zombie:blood_root_growth": {
+        "stage_state": "zombie:growth_stage",
+        "part_state": "zombie:blood_root_part",
+        "has_top_state": "zombie:blood_root_has_top",
+        "max_stage": 3,
+        "valid_base_blocks": [
+          "zombie:demon_blood_block",
+          "zombie:demon_flesh_block",
+          "zombie:demon_blood_flesh_block"
+        ]
+      },
+      "minecraft:map_color": "#5B0611"
+    }
+  }
+}
+

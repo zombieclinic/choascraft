@@ -13,32 +13,33 @@
         "greatsword": "geometry.demon_greatsword"
       },
       "textures": {
-        "default":   "textures/demon/item_mob/chaos_gear",
+        "default": "textures/demon/item_mob/chaos_gear",
         "enchanted": "textures/misc/enchanted_item_glint"
       },
       "render_controllers": [
         "controller.render.chaos_sword"
       ],
-      "particle_effects":{
-                "chaos": "zombie:chaos_particle",
-                "jump_attack": "zombie:chaos_jump_attack"
+      "particle_effects": {
+        "chaos": "zombie:chaos_particle",
+        "jump_attack": "zombie:chaos_jump_attack"
       },
       "animations": {
-        "knife_fpp":       "animation.demon_knife.fpp_idle",
-         "particle": "animation.tpp_axe_particle",
-         "slash": "animation.demon_knife.slash",
-         "jump_attack": "animation.demon_knife.Jump_attack",
+        "knife_fpp": "animation.demon_knife.fpp_idle",
+        "particle": "animation.tpp_axe_particle",
+        "slash": "animation.demon_knife.slash",
+        "jump_attack": "animation.demon_knife.Jump_attack",
         "particle_controller": "controller.animation.chaos_sword_particle",
         "controller": "controller.animation.chaos_sword"
       },
       "scripts": {
         "animate": [
-            {
-                "controller": "c.is_first_person"
-            },
-            "particle_controller"
+          {
+            "controller": "c.is_first_person"
+          },
+          "particle_controller"
         ]
       }
     }
   }
 }
+

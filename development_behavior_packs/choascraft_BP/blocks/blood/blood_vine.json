@@ -100,22 +100,20 @@
         "minecraft:is_shears_item_destructible",
         "plant",
         "vine"
-      ]
+      ],
+      "minecraft:tick": {
+        "looping": true,
+        "interval_range": [
+          20,
+          40
+        ]
+      },
+      "zombie:blood_vine_growth": {
+        
+      },
+      "minecraft:map_color": "#58040C"
     },
     "permutations": [
-      {
-        "condition": "query.block_state('zombie:vine_stage') == 'start' && query.block_state('zombie:vine_growing') == 'yes'",
-        "components": {
-          "minecraft:tick": {
-            "looping": true,
-            "interval_range": [
-              300,
-              700
-            ]
-          },
-          "zombie:blood_vine_growth": {}
-        }
-      },
       {
         "condition": "query.block_state('zombie:vine_stage') == 'middle'",
         "components": {
@@ -195,3 +193,4 @@
     ]
   }
 }
+

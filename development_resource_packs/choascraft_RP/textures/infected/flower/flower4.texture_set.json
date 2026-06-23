@@ -1,8 +1,9 @@
 {
-    "format_version":  "1.16.100",
-    "minecraft:texture_set":  {
-                                  "color":  "flower4",
-                                  "metalness_emissive_roughness":  "flower4_mer",
-                                  "normal":  "flower4_normal"
-                              }
+  "format_version": "1.16.100",
+  "minecraft:texture_set": {
+    "color": "flower4",
+    "metalness_emissive_roughness": "flower4_mer",
+    "normal": "flower4_normal"
+  }
 }
+

@@ -1,8 +1,9 @@
 {
-	"format_version": "1.16.100",
-	"minecraft:texture_set": {
-		"color": "crab_leggings",
-		"metalness_emissive_roughness": "crab_leggings_mer",
-		"normal": "crab_leggings_normal"
-	}
+  "format_version": "1.16.100",
+  "minecraft:texture_set": {
+    "color": "crab_leggings",
+    "metalness_emissive_roughness": "crab_leggings_mer",
+    "normal": "crab_leggings_normal"
+  }
 }
+

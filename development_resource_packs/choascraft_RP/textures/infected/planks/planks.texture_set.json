@@ -1,8 +1,9 @@
 {
-    "format_version":  "1.16.100",
-    "minecraft:texture_set":  {
-                                  "color":  "planks",
-                                  "metalness_emissive_roughness":  "planks_mer",
-                                  "normal":  "planks_normal"
-                              }
+  "format_version": "1.16.100",
+  "minecraft:texture_set": {
+    "color": "planks",
+    "metalness_emissive_roughness": "planks_mer",
+    "normal": "planks_normal"
+  }
 }
+

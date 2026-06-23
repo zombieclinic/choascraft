@@ -1,20 +1,23 @@
 {
-	"format_version": "1.10.0",
-	"minecraft:attachable": {
-		"description": {
-			"identifier": "zombie:infected_helmet",
-			"render_controllers": ["controller.render.armor"],
-			"materials": {
-				"default": "entity_alphatest",
-				"enchanted": "entity_alphatest_glint"
-			},
-			"textures": {
-				"default": "textures/items/infect_armor/infected_helmet",
-				"enchanted": "textures/misc/enchanted_item_glint"
-			},
-			"geometry": {
-				"default": "geometry.infected_helmet"
-			}
-		}
-	}
+  "format_version": "1.10.0",
+  "minecraft:attachable": {
+    "description": {
+      "identifier": "zombie:infected_helmet",
+      "render_controllers": [
+        "controller.render.armor"
+      ],
+      "materials": {
+        "default": "entity_alphatest",
+        "enchanted": "entity_alphatest_glint"
+      },
+      "textures": {
+        "default": "textures/items/infect_armor/infected_helmet",
+        "enchanted": "textures/misc/enchanted_item_glint"
+      },
+      "geometry": {
+        "default": "geometry.infected_helmet"
+      }
+    }
+  }
 }
+

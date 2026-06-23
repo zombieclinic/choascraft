@@ -1,38 +1,38 @@
 {
-    "format_version": "1.26.20",
-    "minecraft:item": {
-        "description": {
-            "identifier": "zombie:chaos_pickaxe",
-            "menu_category": {
-                "category": "equipment",
-                "group": "minecraft:itemGroup.name.chaos"
-            }
+  "format_version": "1.26.20",
+  "minecraft:item": {
+    "description": {
+      "identifier": "zombie:chaos_pickaxe",
+      "menu_category": {
+        "category": "equipment",
+        "group": "minecraft:itemGroup.name.chaos"
+      }
+    },
+    "components": {
+      "minecraft:damage": {
+        "value": 7
+      },
+      "minecraft:cooldown": {
+        "category": "chaos_axe",
+        "duration": 1
+      },
+      "minecraft:display_name": {
+        "value": "Chaos Pickaxe"
+      },
+      "minecraft:icon": "zombie_chaos_pickaxe",
+      "minecraft:hand_equipped": true,
+      "minecraft:durability": {
+        "damage_chance": {
+          "min": 10,
+          "max": 50
         },
-        "components": {
-            "minecraft:damage": {
-                "value": 7
-            },
-            "minecraft:cooldown": {
-                "category": "chaos_axe",
-                "duration": 1
-            },
-            "minecraft:display_name": {
-                "value": "Choas Pickaxe"
-            },
-            "minecraft:icon": "zombie_chaos_pickaxe",
-            "minecraft:hand_equipped": true,
-            "minecraft:durability": {
-                "damage_chance": {
-                    "min": 10,
-                    "max": 50
-                },
-                "max_durability": 360
-            },
-            "minecraft:use_modifiers": {
-                "movement_modifier": 1,
-                "use_duration": 20
-            }
-        }
+        "max_durability": 360
+      },
+      "minecraft:use_modifiers": {
+        "movement_modifier": 1,
+        "use_duration": 20
+      }
     }
+  }
 }
 

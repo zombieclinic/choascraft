@@ -1,8 +1,9 @@
 {
-	"format_version": "1.16.100",
-	"minecraft:texture_set": {
-		"color": "infected_cobblestone",
-		"metalness_emissive_roughness": "infected_cobblestone_mer",
-		"normal": "infected_cobblestone_normal"
-	}
+  "format_version": "1.16.100",
+  "minecraft:texture_set": {
+    "color": "infected_cobblestone",
+    "metalness_emissive_roughness": "infected_cobblestone_mer",
+    "normal": "infected_cobblestone_normal"
+  }
 }
+

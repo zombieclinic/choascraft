@@ -1,8 +1,9 @@
 {
-    "format_version":  "1.16.100",
-    "minecraft:texture_set":  {
-                                  "color":  "green",
-                                  "metalness_emissive_roughness":  "green_mer",
-                                  "normal":  "green_normal"
-                              }
+  "format_version": "1.16.100",
+  "minecraft:texture_set": {
+    "color": "green",
+    "metalness_emissive_roughness": "green_mer",
+    "normal": "green_normal"
+  }
 }
+

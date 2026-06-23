@@ -4,11 +4,19 @@
     "description": {
       "identifier": "zombie:jellyfish_yellow_leggings_recipe"
     },
-    "tags": [ "crafting_table" ],
+    "tags": [
+      "crafting_table"
+    ],
     "unlock": [
-      { "item": "minecraft:iron_ingot" },
-      { "item": "zombie:jellyfish_jelly_yellow" },
-      { "item": "zombie:jellyfish_jelly_pearl" }
+      {
+        "item": "minecraft:iron_ingot"
+      },
+      {
+        "item": "zombie:jellyfish_jelly_yellow"
+      },
+      {
+        "item": "zombie:jellyfish_jelly_pearl"
+      }
     ],
     "pattern": [
       "III",
@@ -16,12 +24,19 @@
       "IJI"
     ],
     "key": {
-      "I": { "item": "minecraft:iron_ingot" },
-      "J": { "item": "zombie:jellyfish_jelly_yellow" },
-      "P": { "item": "zombie:jellyfish_jelly_pearl" }
+      "I": {
+        "item": "minecraft:iron_ingot"
+      },
+      "J": {
+        "item": "zombie:jellyfish_jelly_yellow"
+      },
+      "P": {
+        "item": "zombie:jellyfish_jelly_pearl"
+      }
     },
     "result": {
       "item": "zombie:jellyfish_yellow_leggings"
     }
   }
 }
+

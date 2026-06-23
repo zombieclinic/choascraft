@@ -1,8 +1,9 @@
 {
-	"format_version": "1.16.100",
-	"minecraft:texture_set": {
-		"color": "redwood_planks",
-		"metalness_emissive_roughness": "redwood_planks_mer",
-		"normal": "redwood_planks_normal"
-	}
+  "format_version": "1.16.100",
+  "minecraft:texture_set": {
+    "color": "redwood_planks",
+    "metalness_emissive_roughness": "redwood_planks_mer",
+    "normal": "redwood_planks_normal"
+  }
 }
+

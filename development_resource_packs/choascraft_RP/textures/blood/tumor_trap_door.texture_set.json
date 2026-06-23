@@ -1,8 +1,9 @@
 {
-	"format_version": "1.16.100",
-	"minecraft:texture_set": {
-		"color": "tumor_trap_door",
-		"metalness_emissive_roughness": "tumor_trap_door_mer",
-		"normal": "tumor_trap_door_normal"
-	}
+  "format_version": "1.16.100",
+  "minecraft:texture_set": {
+    "color": "tumor_trap_door",
+    "metalness_emissive_roughness": "tumor_trap_door_mer",
+    "normal": "tumor_trap_door_normal"
+  }
 }
+

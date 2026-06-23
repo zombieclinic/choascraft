@@ -4,10 +4,16 @@
     "description": {
       "identifier": "zombie:orca_chest_recipe"
     },
-    "tags": [ "crafting_table" ],
+    "tags": [
+      "crafting_table"
+    ],
     "unlock": [
-      { "item": "minecraft:iron_ingot" },
-      { "item": "zombie:orca_core" }
+      {
+        "item": "minecraft:iron_ingot"
+      },
+      {
+        "item": "zombie:orca_core"
+      }
     ],
     "pattern": [
       "IHI",
@@ -15,13 +21,22 @@
       "III"
     ],
     "key": {
-      "I": { "item": "minecraft:iron_ingot" },
-      "B": { "item": "zombie:orca_shard" },
-      "C": { "item": "zombie:orca_core" },
-      "H": { "item": "zombie:orca_heart" }
+      "I": {
+        "item": "minecraft:iron_ingot"
+      },
+      "B": {
+        "item": "zombie:orca_shard"
+      },
+      "C": {
+        "item": "zombie:orca_core"
+      },
+      "H": {
+        "item": "zombie:orca_heart"
+      }
     },
     "result": {
       "item": "zombie:orca_chest"
     }
   }
 }
+

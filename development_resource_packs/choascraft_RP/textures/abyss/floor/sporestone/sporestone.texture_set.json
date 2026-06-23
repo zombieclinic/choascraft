@@ -1,8 +1,9 @@
 {
-	"format_version": "1.16.100",
-	"minecraft:texture_set": {
-		"color": "sporestone",
-		"metalness_emissive_roughness": "sporestone_mer",
-		"normal": "sporestone_normal"
-	}
+  "format_version": "1.16.100",
+  "minecraft:texture_set": {
+    "color": "sporestone",
+    "metalness_emissive_roughness": "sporestone_mer",
+    "normal": "sporestone_normal"
+  }
 }
+

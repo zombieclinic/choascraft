@@ -1,32 +1,33 @@
 {
-	"format_version": "1.13.0",
-	"minecraft:ore_feature": {
-		"description": {
-			"identifier": "zombie:infected_ocean_dry_grass_patch_feature"
-		},
-		"count": 128,
-		"replace_rules": [
-			{
-				"places_block": "zombie:infected_grass_block",
-				"may_replace": [
-					"zombie:infected_dirt",
-					"zombie:infected_stone",
-					"zombie:infected_sporestone",
-					"zombie:infected_sand",
-					"zombie:infected_gravel",
-					"zombie:infected_block",
-					"minecraft:dirt",
-					"minecraft:coarse_dirt",
-					"minecraft:dirt_with_roots",
-					"minecraft:grass_block",
-					"minecraft:stone",
-					"minecraft:deepslate",
-					"minecraft:tuff",
-					"minecraft:sand",
-					"minecraft:gravel",
-					"minecraft:clay"
-				]
-			}
-		]
-	}
+  "format_version": "1.13.0",
+  "minecraft:ore_feature": {
+    "description": {
+      "identifier": "zombie:infected_ocean_dry_grass_patch_feature"
+    },
+    "count": 128,
+    "replace_rules": [
+      {
+        "places_block": "zombie:infected_grass_block",
+        "may_replace": [
+          "zombie:infected_dirt",
+          "zombie:infected_stone",
+          "zombie:infected_sporestone",
+          "zombie:infected_sand",
+          "zombie:infected_gravel",
+          "zombie:infected_block",
+          "minecraft:dirt",
+          "minecraft:coarse_dirt",
+          "minecraft:dirt_with_roots",
+          "minecraft:grass_block",
+          "minecraft:stone",
+          "minecraft:deepslate",
+          "minecraft:tuff",
+          "minecraft:sand",
+          "minecraft:gravel",
+          "minecraft:clay"
+        ]
+      }
+    ]
+  }
 }
+

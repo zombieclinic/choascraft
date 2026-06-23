@@ -1,36 +1,37 @@
 {
-	"format_version": "1.10.0",
-	"minecraft:client_entity": {
-		"description": {
-			"identifier": "zombie:zombie_hammerhead_shark",
-			"materials": {
-				"default": "entity_alphatest"
-			},
-			"textures": {
-				"default": "textures/entity/hammerhead/zombie/zombie"
-			},
-			"geometry": {
-				"default": "geometry.hammerhead"
-			},
-			"render_controllers": [
-				"controller.render.default"
-			],
-			"spawn_egg": {
-				"base_color": "#214B63",
-				"overlay_color": "#6F1414"
-			},
-			"animations": {
-				"idle": "animation.hammerhead_idle",
-				"swim": "animation.hammerhead_walk",
-				"death": "animation.hammerhead.death",
-				"bite": "animation.hammerhead_bite",
-				"contoller": "controller.animation.zombie_hammerhead"
-			},
-			"scripts": {
-				"animate": [
-					"contoller"
-				]
-			}
-		}
-	}
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "zombie:zombie_hammerhead_shark",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/entity/hammerhead/zombie/zombie"
+      },
+      "geometry": {
+        "default": "geometry.hammerhead"
+      },
+      "render_controllers": [
+        "controller.render.default"
+      ],
+      "spawn_egg": {
+        "base_color": "#214B63",
+        "overlay_color": "#6F1414"
+      },
+      "animations": {
+        "idle": "animation.hammerhead_idle",
+        "swim": "animation.hammerhead_walk",
+        "death": "animation.hammerhead.death",
+        "bite": "animation.hammerhead_bite",
+        "contoller": "controller.animation.zombie_hammerhead"
+      },
+      "scripts": {
+        "animate": [
+          "contoller"
+        ]
+      }
+    }
+  }
 }
+

@@ -1,8 +1,9 @@
 {
-	"format_version": "1.16.100",
-	"minecraft:texture_set": {
-		"color": "heartwood_oak",
-		"metalness_emissive_roughness": "heartwood_oak_mer",
-		"normal": "heartwood_oak_normal"
-	}
+  "format_version": "1.16.100",
+  "minecraft:texture_set": {
+    "color": "heartwood_oak",
+    "metalness_emissive_roughness": "heartwood_oak_mer",
+    "normal": "heartwood_oak_normal"
+  }
 }
+

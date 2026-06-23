@@ -1,14 +1,23 @@
 {
-	"format_version": "1.26.20",
-	"animations": {
-		"animation.demon_hammer.fpp_idle": {
-			"loop": true,
-			"bones": {
-				"Weapon": {
-					"rotation": [-10.21582, 61.94135, -62.58997],
-					"position": [23.86055, -16.15574, 36.54677]
-				}
-			}
-		}
-	}
+  "format_version": "1.26.20",
+  "animations": {
+    "animation.demon_hammer.fpp_idle": {
+      "loop": true,
+      "bones": {
+        "Weapon": {
+          "rotation": [
+            -10.21582,
+            61.94135,
+            -62.58997
+          ],
+          "position": [
+            23.86055,
+            -16.15574,
+            36.54677
+          ]
+        }
+      }
+    }
+  }
 }
+

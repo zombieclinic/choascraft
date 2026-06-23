@@ -44,7 +44,6 @@
           }
         ]
       },
-      "minecraft:map_color": "#3C44AA",
       "minecraft:geometry": "minecraft:geometry.full_block",
       "minecraft:material_instances": {
         "*": {
@@ -68,7 +67,9 @@
         "zombie:custom_leaves",
         "leaves",
         "minecraft:is_hoe_item_destructible"
-      ]
+      ],
+      "minecraft:map_color": "#23381F"
     }
   }
 }
+

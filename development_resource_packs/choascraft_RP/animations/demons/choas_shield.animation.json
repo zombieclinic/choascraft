@@ -1,23 +1,40 @@
 {
-	"format_version": "1.26.20",
-	"animations": {
-		"animation.demon_shield.shield_fpp": {
-			"loop": true,
-			"bones": {
-				"group": {
-					"rotation": [107.90805, 1.20452, -67.89382],
-					"position": [-9.60066, 4.38011, 9.25429]
-				}
-			}
-		},
-		"animation.demon_shield_blocking.fpp_idle": {
-			"loop": true,
-			"bones": {
-				"group": {
-					"rotation": [-178.56771, -17.43585, 105.52003],
-					"position": [-8.01076, 1.66838, 5.91982]
-				}
-			}
-		}
-	}
+  "format_version": "1.26.20",
+  "animations": {
+    "animation.demon_shield.shield_fpp": {
+      "loop": true,
+      "bones": {
+        "group": {
+          "rotation": [
+            107.90805,
+            1.20452,
+            -67.89382
+          ],
+          "position": [
+            -9.60066,
+            4.38011,
+            9.25429
+          ]
+        }
+      }
+    },
+    "animation.demon_shield_blocking.fpp_idle": {
+      "loop": true,
+      "bones": {
+        "group": {
+          "rotation": [
+            -178.56771,
+            -17.43585,
+            105.52003
+          ],
+          "position": [
+            -8.01076,
+            1.66838,
+            5.91982
+          ]
+        }
+      }
+    }
+  }
 }
+

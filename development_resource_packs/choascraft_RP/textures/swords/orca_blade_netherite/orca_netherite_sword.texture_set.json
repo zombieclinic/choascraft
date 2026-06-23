@@ -1,8 +1,9 @@
 {
-	"format_version": "1.16.100",
-	"minecraft:texture_set": {
-		"color": "orca_netherite_sword",
-		"metalness_emissive_roughness": "orca_netherite_sword_mer",
-		"normal": "orca_netherite_sword_normal"
-	}
+  "format_version": "1.16.100",
+  "minecraft:texture_set": {
+    "color": "orca_netherite_sword",
+    "metalness_emissive_roughness": "orca_netherite_sword_mer",
+    "normal": "orca_netherite_sword_normal"
+  }
 }
+

@@ -1,8 +1,9 @@
 {
-	"format_version": "1.16.100",
-	"minecraft:texture_set": {
-		"color": "tumor_log_stripped",
-		"metalness_emissive_roughness": "tumor_log_stripped_mer",
-		"normal": "tumor_log_stripped_normal"
-	}
+  "format_version": "1.16.100",
+  "minecraft:texture_set": {
+    "color": "tumor_log_stripped",
+    "metalness_emissive_roughness": "tumor_log_stripped_mer",
+    "normal": "tumor_log_stripped_normal"
+  }
 }
+

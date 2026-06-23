@@ -1,32 +1,33 @@
 {
-	"format_version": "1.10.0",
-	"animation_controllers": {
-		"controller.animation.brown_bear_shield": {
-			"initial_state": "default",
-			"states": {
-				"default": {
-					"animations": [
-						{
-							"r_fpp_use": "c.is_first_person && query.is_sneaking && query.is_item_name_any('slot.weapon.mainhand', 0, 'zombie:brown_bear_shield', 'zombie:black_bear_shield')"
-						},
-						{
-							"r_fpp_idle": "c.is_first_person && !query.is_sneaking && query.is_item_name_any('slot.weapon.mainhand', 0, 'zombie:brown_bear_shield', 'zombie:black_bear_shield')"
-						},
-						{
-							"l_fpp_use": "c.is_first_person && query.is_sneaking && query.is_item_name_any('slot.weapon.offhand', 0, 'zombie:brown_bear_shield', 'zombie:black_bear_shield')"
-						},
-						{
-							"l_fpp_idle": "c.is_first_person && !query.is_sneaking && query.is_item_name_any('slot.weapon.offhand', 0, 'zombie:brown_bear_shield', 'zombie:black_bear_shield')"
-						},
-						{
-							"block": "!c.is_first_person && query.is_sneaking && query.is_item_name_any('slot.weapon.mainhand', 0, 'zombie:brown_bear_shield', 'zombie:black_bear_shield')"
-						},
-						{
-							"lblock": "!c.is_first_person && query.is_sneaking && query.is_item_name_any('slot.weapon.offhand', 0, 'zombie:brown_bear_shield', 'zombie:black_bear_shield')"
-						}
-					]
-				}
-			}
-		}
-	}
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.brown_bear_shield": {
+      "initial_state": "default",
+      "states": {
+        "default": {
+          "animations": [
+            {
+              "r_fpp_use": "c.is_first_person && query.is_sneaking && query.is_item_name_any('slot.weapon.mainhand', 0, 'zombie:brown_bear_shield', 'zombie:black_bear_shield')"
+            },
+            {
+              "r_fpp_idle": "c.is_first_person && !query.is_sneaking && query.is_item_name_any('slot.weapon.mainhand', 0, 'zombie:brown_bear_shield', 'zombie:black_bear_shield')"
+            },
+            {
+              "l_fpp_use": "c.is_first_person && query.is_sneaking && query.is_item_name_any('slot.weapon.offhand', 0, 'zombie:brown_bear_shield', 'zombie:black_bear_shield')"
+            },
+            {
+              "l_fpp_idle": "c.is_first_person && !query.is_sneaking && query.is_item_name_any('slot.weapon.offhand', 0, 'zombie:brown_bear_shield', 'zombie:black_bear_shield')"
+            },
+            {
+              "block": "!c.is_first_person && query.is_sneaking && query.is_item_name_any('slot.weapon.mainhand', 0, 'zombie:brown_bear_shield', 'zombie:black_bear_shield')"
+            },
+            {
+              "lblock": "!c.is_first_person && query.is_sneaking && query.is_item_name_any('slot.weapon.offhand', 0, 'zombie:brown_bear_shield', 'zombie:black_bear_shield')"
+            }
+          ]
+        }
+      }
+    }
+  }
 }
+

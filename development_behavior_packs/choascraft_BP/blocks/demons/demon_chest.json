@@ -1,8 +1,8 @@
 {
-  "format_version": "1.26.20",
+  "format_version": "1.26.30",
   "minecraft:block": {
     "description": {
-      "identifier": "zombie:choas_chest",
+      "identifier": "zombie:chaos_chest",
       "menu_category": {
         "category": "items"
       },
@@ -26,8 +26,30 @@
       }
     },
     "components": {
-      "minecraft:collision_box": true,
-      "minecraft:selection_box": true,
+      "minecraft:collision_box": {
+        "origin": [
+          -6,
+          0,
+          -6
+        ],
+        "size": [
+          12,
+          14,
+          12
+        ]
+      },
+      "minecraft:selection_box": {
+        "origin": [
+          -6,
+          0,
+          -6
+        ],
+        "size": [
+          12,
+          14,
+          12
+        ]
+      },
       "minecraft:light_dampening": 0,
       "minecraft:material_instances": {
         "*": {
@@ -35,19 +57,22 @@
           "render_method": "alpha_test"
         }
       },
-      "minecraft:map_color": "#D2C91E",
       "minecraft:destructible_by_mining": {
         "seconds_to_destroy": 8
       },
-      "minecraft:display_name": "Choas_chest",
+      "minecraft:display_name": "Chaos Chest",
       "minecraft:destructible_by_explosion": {
         "explosion_resistance": 13
       },
-      "minecraft:geometry": "minecraft:geometry.full_block",
+      "minecraft:geometry": "geometry.demon_chest_closed",
       "minecraft:loot": "loot_tables/luckyblock.json",
       "minecraft:tags": [
         "christmas"
-      ]
+      ],
+      "zombie:chaos_chest": {
+        
+      },
+      "minecraft:map_color": "#271325"
     },
     "permutations": [
       {
@@ -60,7 +85,7 @@
               0
             ]
           },
-          "minecraft:geometry": "minecraft:geometry.full_block"
+          "minecraft:geometry": "geometry.demon_chest_open"
         }
       },
       {
@@ -73,7 +98,7 @@
               0
             ]
           },
-          "minecraft:geometry": "minecraft:geometry.full_block"
+          "minecraft:geometry": "geometry.demon_chest_closed"
         }
       },
       {
@@ -86,7 +111,7 @@
               0
             ]
           },
-          "minecraft:geometry": "minecraft:geometry.full_block"
+          "minecraft:geometry": "geometry.demon_chest_open"
         }
       },
       {
@@ -99,7 +124,7 @@
               0
             ]
           },
-          "minecraft:geometry": "minecraft:geometry.full_block"
+          "minecraft:geometry": "geometry.demon_chest_closed"
         }
       },
       {
@@ -112,7 +137,7 @@
               0
             ]
           },
-          "minecraft:geometry": "minecraft:geometry.full_block"
+          "minecraft:geometry": "geometry.demon_chest_open"
         }
       },
       {
@@ -125,7 +150,7 @@
               0
             ]
           },
-          "minecraft:geometry": "minecraft:geometry.full_block"
+          "minecraft:geometry": "geometry.demon_chest_closed"
         }
       },
       {
@@ -138,7 +163,7 @@
               0
             ]
           },
-          "minecraft:geometry": "minecraft:geometry.full_block"
+          "minecraft:geometry": "geometry.demon_chest_open"
         }
       },
       {
@@ -151,9 +176,10 @@
               0
             ]
           },
-          "minecraft:geometry": "minecraft:geometry.full_block"
+          "minecraft:geometry": "geometry.demon_chest_closed"
         }
       }
     ]
   }
 }
+

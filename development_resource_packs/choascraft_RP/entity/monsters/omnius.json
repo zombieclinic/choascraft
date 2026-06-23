@@ -1,48 +1,49 @@
 {
-	"format_version": "1.10.0",
-	"minecraft:client_entity": {
-		"description": {
-			"identifier": "zombie:omnius",
-			"materials": {
-				"default": "entity_alphatest"
-			},
-			"textures": {
-				"default": "textures/omnius/omnius"
-			},
-			"geometry": {
-				"default": "geometry.hv_omnius"
-			},
-			"render_controllers": [
-				"controller.render.default"
-			],
-			"spawn_egg": {
-				"base_color": "#171328",
-				"overlay_color": "#8b2fd3"
-			},
-			"animations": {
-				"controller": "controller.animation.omnius",
-				"hide_fx": "animation.omnius.hide_fx",
-				"idle": "animation.omnius_idle",
-				"walk": "animation.omnius_walk",
-				"shoot": "animation.omnius_shoot",
-				"ray": "animation.omnius_ray",
-				"book": "animation.omnius_book",
-				"jump_back": "animation.omnius_jump_back",
-				"stun": "animation.omnius_stun",
-				"grab_try": "animation.omnius_grab_try",
-				"grab": "animation.omnius_grab",
-				"book_eat": "animation.omnius_book_eat",
-				"raser": "animation.omnius_raser",
-				"spawn": "animation.omnius_spawn",
-				"death": "animation.omnius_death"
-			},
-			"scripts": {
-				"animate": [
-					{
-						"controller": "(1.0)"
-					}
-				]
-			}
-		}
-	}
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "zombie:omnius",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/omnius/omnius"
+      },
+      "geometry": {
+        "default": "geometry.hv_omnius"
+      },
+      "render_controllers": [
+        "controller.render.default"
+      ],
+      "spawn_egg": {
+        "base_color": "#171328",
+        "overlay_color": "#8b2fd3"
+      },
+      "animations": {
+        "controller": "controller.animation.omnius",
+        "hide_fx": "animation.omnius.hide_fx",
+        "idle": "animation.omnius_idle",
+        "walk": "animation.omnius_walk",
+        "shoot": "animation.omnius_shoot",
+        "ray": "animation.omnius_ray",
+        "book": "animation.omnius_book",
+        "jump_back": "animation.omnius_jump_back",
+        "stun": "animation.omnius_stun",
+        "grab_try": "animation.omnius_grab_try",
+        "grab": "animation.omnius_grab",
+        "book_eat": "animation.omnius_book_eat",
+        "raser": "animation.omnius_raser",
+        "spawn": "animation.omnius_spawn",
+        "death": "animation.omnius_death"
+      },
+      "scripts": {
+        "animate": [
+          {
+            "controller": "(1.0)"
+          }
+        ]
+      }
+    }
+  }
 }
+

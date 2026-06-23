@@ -1,75 +1,76 @@
 {
-    "pools":  [
-                  {
-                      "rolls":  1,
-                      "entries":  [
-                                      {
-                                          "type":  "item",
-                                          "name":  "zombie:redwood_log",
-                                          "weight":  1,
-                                          "functions":  [
-                                                            {
-                                                                "function":  "set_count",
-                                                                "count":  {
-                                                                              "min":  1,
-                                                                              "max":  3
-                                                                          }
-                                                            }
-                                                        ]
-                                      }
-                                  ]
-                  },
-                  {
-                      "rolls":  1,
-                      "entries":  [
-                                      {
-                                          "type":  "item",
-                                          "name":  "zombie:redwood_sapling",
-                                          "weight":  1,
-                                          "functions":  [
-                                                            {
-                                                                "function":  "set_count",
-                                                                "count":  {
-                                                                              "min":  0,
-                                                                              "max":  1
-                                                                          }
-                                                            }
-                                                        ]
-                                      }
-                                  ]
-                  },
-                  {
-                      "conditions":  [
-                                         {
-                                             "condition":  "random_chance",
-                                             "chance":  0.1
-                                         }
-                                     ],
-                      "rolls":  1,
-                      "entries":  [
-                                      {
-                                          "type":  "item",
-                                          "name":  "minecraft:written_book",
-                                          "functions":  [
-                                                            {
-                                                                "function":  "set_book_contents",
-                                                                "author":  "Choascraft",
-                                                                "title":  "Heartwood Notes",
-                                                                "pages":  [
-                                                                              "Heartwood Notes\n\nA Choascraft guide for heartwood lore, redwood drops, and the living forest creatures of the redwood biome.",
-                                                                              "Lore\n\nHeartwood is the stubborn memory of a redwood given motion. It is not quite tree, not quite animal, and not fond of axes.",
-                                                                              "Fact 1\n\nReal redwoods can live for a very long time and grow to enormous size when conditions are right.",
-                                                                              "Fact 2\n\nTree heartwood is older, inner wood. It gives strength and stores the history of growth rings.",
-                                                                              "Choascraft Heartwood\n\nHeartwood belongs to the redwood creature family and drops redwood materials.",
-                                                                              "Drops\n\nHeartwood can drop Redwood Logs and sometimes a Redwood Sapling.",
-                                                                              "Crafting Uses\n\nRedwood Logs become redwood planks, doors, trapdoors, slabs, stairs, fences, fence gates, buttons, sticks, and pressure plates.",
-                                                                              "Saplings\n\nRedwood Saplings let you bring the redwood biome home, or repair what the forest lost.",
-                                                                              "Field Note\n\nIf a tree watches you back, lower the axe and listen first."
-                                                                          ]
-                                                            }
-                                                        ]
-                                      }
-                                  ]
-                  }
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "zombie:redwood_log",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 3
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "zombie:redwood_sapling",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 0,
+                "max": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "conditions": [
+        {
+          "condition": "random_chance",
+          "chance": 0.1
+        }
+      ],
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:written_book",
+          "functions": [
+            {
+              "function": "set_book_contents",
+              "author": "Choascraft",
+              "title": "Heartwood Notes",
+              "pages": [
+                "Heartwood Notes\n\nA Choascraft guide for heartwood lore, redwood drops, and the living forest creatures of the redwood biome.",
+                "Lore\n\nHeartwood is the stubborn memory of a redwood given motion. It is not quite tree, not quite animal, and not fond of axes.",
+                "Fact 1\n\nReal redwoods can live for a very long time and grow to enormous size when conditions are right.",
+                "Fact 2\n\nTree heartwood is older, inner wood. It gives strength and stores the history of growth rings.",
+                "Choascraft Heartwood\n\nHeartwood belongs to the redwood creature family and drops redwood materials.",
+                "Drops\n\nHeartwood can drop Redwood Logs and sometimes a Redwood Sapling.",
+                "Crafting Uses\n\nRedwood Logs become redwood planks, doors, trapdoors, slabs, stairs, fences, fence gates, buttons, sticks, and pressure plates.",
+                "Saplings\n\nRedwood Saplings let you bring the redwood biome home, or repair what the forest lost.",
+                "Field Note\n\nIf a tree watches you back, lower the axe and listen first."
               ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
 }
+

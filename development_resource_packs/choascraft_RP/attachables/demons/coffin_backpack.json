@@ -1,22 +1,33 @@
 {
-    "format_version": "1.26.20",
-    "minecraft:attachable": {
-        "description": {
-            "identifier": "zombie:coffin_backpack",
-                "materials": {
-                "enchanted": "armor_enchanted",
-                "default": "entity_alphatest_glint"
-            },
-            "geometry": { "default" : "geometry.coffin_backpack"},
-            "textures": {
-                "default" : "textures/demon/item_mob/chaos_gear",
-                 "enchanted": "textures/misc/enchanted_item_glint"
-                },
-            "render_controllers": ["controller.render.item_default"],
-            "animations": { "fpp": "animation.coffin_backpack.first_person_view"},
-            "scripts": {"animate": [
-                {"fpp": "c.is_first_person"}
-            ]}
-        }
+  "format_version": "1.26.20",
+  "minecraft:attachable": {
+    "description": {
+      "identifier": "zombie:coffin_backpack",
+      "materials": {
+        "enchanted": "armor_enchanted",
+        "default": "entity_alphatest_glint"
+      },
+      "geometry": {
+        "default": "geometry.coffin_backpack"
+      },
+      "textures": {
+        "default": "textures/demon/item_mob/chaos_gear",
+        "enchanted": "textures/misc/enchanted_item_glint"
+      },
+      "render_controllers": [
+        "controller.render.item_default"
+      ],
+      "animations": {
+        "fpp": "animation.coffin_backpack.first_person_view"
+      },
+      "scripts": {
+        "animate": [
+          {
+            "fpp": "c.is_first_person"
+          }
+        ]
+      }
     }
+  }
 }
+

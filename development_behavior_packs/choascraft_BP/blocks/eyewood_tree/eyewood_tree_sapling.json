@@ -18,6 +18,18 @@
     },
     "permutations": [
       {
+        "condition": "query.block_state('zombie:growth_stage') < 4",
+        "components": {
+          "minecraft:tick": {
+            "looping": true,
+            "interval_range": [
+              20,
+              40
+            ]
+          }
+        }
+      },
+      {
         "condition": "query.block_state('zombie:growth_stage') == 0",
         "components": {
           "minecraft:geometry": "geometry.zombie.eyewood_tree_sapling_0",
@@ -230,13 +242,6 @@
           }
         ]
       },
-      "minecraft:tick": {
-        "looping": true,
-        "interval_range": [
-          600,
-          1200
-        ]
-      },
       "zombie:eyewood_tree_sapling_growth": {
         "stage_state": "zombie:growth_stage",
         "max_stage": 4,
@@ -259,7 +264,16 @@
         "zombie:eyewood_tree_sapling",
         "sapling",
         "plant"
-      ]
+      ],
+      "minecraft:tick": {
+        "looping": true,
+        "interval_range": [
+          20,
+          40
+        ]
+      },
+      "minecraft:map_color": "#391F2B"
     }
   }
 }
+

@@ -4,10 +4,16 @@
     "description": {
       "identifier": "zombie:orca_leggings_recipe"
     },
-    "tags": [ "crafting_table" ],
+    "tags": [
+      "crafting_table"
+    ],
     "unlock": [
-      { "item": "minecraft:iron_ingot" },
-      { "item": "zombie:orca_shard" }
+      {
+        "item": "minecraft:iron_ingot"
+      },
+      {
+        "item": "zombie:orca_shard"
+      }
     ],
     "pattern": [
       "III",
@@ -15,12 +21,19 @@
       "ISI"
     ],
     "key": {
-      "I": { "item": "minecraft:iron_ingot" },
-      "S": { "item": "zombie:orca_shard" },
-      "J": { "item": "zombie:orca_heart" }
+      "I": {
+        "item": "minecraft:iron_ingot"
+      },
+      "S": {
+        "item": "zombie:orca_shard"
+      },
+      "J": {
+        "item": "zombie:orca_heart"
+      }
     },
     "result": {
       "item": "zombie:orca_leggings"
     }
   }
 }
+

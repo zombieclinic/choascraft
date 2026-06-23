@@ -44,7 +44,9 @@
     },
     "components": {
       "minecraft:display_name": "Eyewood Stairs",
-      "arctic:connectedStairs": {},
+      "arctic:connectedStairs": {
+        
+      },
       "minecraft:material_instances": {
         "*": {
           "texture": "eyewood_planks",
@@ -87,7 +89,8 @@
         "minecraft:dirt",
         "custom:connected_stairs",
         "minecraft:diamond_tier_destructible"
-      ]
+      ],
+      "minecraft:map_color": "#2F1D1B"
     },
     "permutations": [
       {
@@ -1900,3 +1903,4 @@
     ]
   }
 }
+

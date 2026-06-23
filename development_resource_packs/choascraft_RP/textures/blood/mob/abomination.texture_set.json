@@ -1,0 +1,9 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:texture_set": {
+    "color": "abomination",
+    "metalness_emissive_roughness": "abomination_mer",
+    "normal": "abomination_normal"
+  }
+}
+

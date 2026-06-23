@@ -1,8 +1,9 @@
 {
-	"format_version": "1.16.100",
-	"minecraft:texture_set": {
-		"color": "netherite_chest",
-		"metalness_emissive_roughness": "netherite_chest_mer",
-		"normal": "netherite_chest_normal"
-	}
+  "format_version": "1.16.100",
+  "minecraft:texture_set": {
+    "color": "netherite_chest",
+    "metalness_emissive_roughness": "netherite_chest_mer",
+    "normal": "netherite_chest_normal"
+  }
 }
+

@@ -8,7 +8,11 @@
       "trunk_width": 2,
       "trunk_height": {
         "base": 60,
-        "intervals": [15, 15, 20],
+        "intervals": [
+          15,
+          15,
+          20
+        ],
         "min_height_for_canopy": 55
       },
       "trunk_block": {
@@ -16,9 +20,18 @@
       },
       "trunk_lean": {
         "allow_diagonal_growth": false,
-        "lean_height": { "range_min": 55, "range_max": 105 },
-        "lean_steps": { "range_min": 0, "range_max": 1 },
-        "lean_length": { "range_min": 0, "range_max": 1 }
+        "lean_height": {
+          "range_min": 55,
+          "range_max": 105
+        },
+        "lean_steps": {
+          "range_min": 0,
+          "range_max": 1
+        },
+        "lean_length": {
+          "range_min": 0,
+          "range_max": 1
+        }
       }
     },
     "random_spread_canopy": {
@@ -26,7 +39,10 @@
       "canopy_radius": 4,
       "leaf_placement_attempts": 95,
       "leaf_blocks": [
-        ["zombie:redwood_leaves", 5]
+        [
+          "zombie:redwood_leaves",
+          5
+        ]
       ]
     },
     "base_block": [
@@ -65,3 +81,4 @@
     ]
   }
 }
+

@@ -1,19 +1,19 @@
 {
-    "format_version": "1.26.20",
-    "minecraft:item": {
-        "description": {
-            "identifier": "zombie:chaos_hoe",
-            "menu_category": {
-                "category": "equipment",
-                "group": "minecraft:itemGroup.name.chaos"
-            }
-        },
-        "components": {
-            "minecraft:icon": "zombie_chaos_hoe",
-            "minecraft:display_name": {
-                "value": "Chaos Hoe"
-        }
-        }
-            
+  "format_version": "1.26.20",
+  "minecraft:item": {
+    "description": {
+      "identifier": "zombie:chaos_hoe",
+      "menu_category": {
+        "category": "equipment",
+        "group": "minecraft:itemGroup.name.chaos"
+      }
+    },
+    "components": {
+      "minecraft:icon": "zombie_chaos_hoe",
+      "minecraft:display_name": {
+        "value": "Chaos Hoe"
+      }
     }
+  }
 }
+

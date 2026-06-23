@@ -1,23 +1,26 @@
 {
-	"format_version": "1.10.0",
-	"minecraft:attachable": {
-		"description": {
-			"identifier": "zombie:crab_helmet",
-			"render_controllers": ["controller.render.armor"],
-			"materials": {
-				"default": "entity_alphatest",
-				"enchanted": "entity_alphatest_glint"
-			},
-			"textures": {
-				"default": "textures/armor/crab/helmet/crab_helmet",
-				"enchanted": "textures/misc/enchanted_item_glint"
-			},
-			"geometry": {
-				"default": "geometry.crab_helmet"
-			},
-			"scripts": {
-				"parent_setup": "variable.helmet_layer_visible = 0.0;"
-			}
-		}
-	}
+  "format_version": "1.10.0",
+  "minecraft:attachable": {
+    "description": {
+      "identifier": "zombie:crab_helmet",
+      "render_controllers": [
+        "controller.render.armor"
+      ],
+      "materials": {
+        "default": "entity_alphatest",
+        "enchanted": "entity_alphatest_glint"
+      },
+      "textures": {
+        "default": "textures/armor/crab/helmet/crab_helmet",
+        "enchanted": "textures/misc/enchanted_item_glint"
+      },
+      "geometry": {
+        "default": "geometry.crab_helmet"
+      },
+      "scripts": {
+        "parent_setup": "variable.helmet_layer_visible = 0.0;"
+      }
+    }
+  }
 }
+

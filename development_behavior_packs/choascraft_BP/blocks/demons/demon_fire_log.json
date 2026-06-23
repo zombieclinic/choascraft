@@ -35,7 +35,6 @@
       "minecraft:destructible_by_explosion": true,
       "minecraft:display_name": "Embervein Hellwood Log",
       "minecraft:light_emission": 1,
-      "minecraft:map_color": "#000000",
       "minecraft:flammable": false,
       "minecraft:destructible_by_mining": {
         "seconds_to_destroy": 1
@@ -43,7 +42,8 @@
       "minecraft:selection_box": true,
       "minecraft:tags": [
         "minecraft:is_axe_item_destructible"
-      ]
+      ],
+      "minecraft:map_color": "#2C120F"
     },
     "permutations": [
       {
@@ -73,3 +73,4 @@
     ]
   }
 }
+

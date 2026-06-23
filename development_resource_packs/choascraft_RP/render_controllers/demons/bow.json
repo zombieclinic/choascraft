@@ -13,8 +13,16 @@
         }
       },
       "geometry": "array.crossbow_geo_frames[variable.animation_frame]",
-      "materials": [ { "*": "variable.is_enchanted ? material.enchanted : material.default" } ],
-      "textures": [ "texture.default", "texture.enchanted" ]
+      "materials": [
+        {
+          "*": "variable.is_enchanted ? material.enchanted : material.default"
+        }
+      ],
+      "textures": [
+        "texture.default",
+        "texture.enchanted"
+      ]
     }
   }
 }
+

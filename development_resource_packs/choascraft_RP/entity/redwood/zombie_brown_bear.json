@@ -1,42 +1,43 @@
 {
-	"format_version": "1.10.0",
-	"minecraft:client_entity": {
-		"description": {
-			"identifier": "zombie:zombie_brown_bear",
-			"materials": {
-				"default": "entity_alphatest"
-			},
-			"textures": {
-				"default": "textures/rwmobs/bears/zombie_brown_bear"
-			},
-			"geometry": {
-				"default": "geometry.zombie_bear"
-			},
-			"render_controllers": [
-				"controller.render.default"
-			],
-			"spawn_egg": {
-				"base_color": "#4a2c1d",
-				"overlay_color": "#5f8c49"
-			},
-			"animations": {
-				"controller": "controller.animation.bear",
-				"walk1": "animation.zombbear.walk",
-				"roar1": "animation.bear.roar",
-				"attack1": "animation.zombbear.attack",
-				"idle1": "animation.zombbear.idle",
-				"start_sleep1": "animation.bear.start_sleep",
-				"sleep": "animation.bear.sleep",
-				"end_sleep1": "animation.bear.end_sleep"
-			},
-			"sound_effects": {
-				"roar": "mob.bear.roar"
-			},
-			"scripts": {
-				"animate": [
-					"controller"
-				]
-			}
-		}
-	}
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "zombie:zombie_brown_bear",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/rwmobs/bears/zombie_brown_bear"
+      },
+      "geometry": {
+        "default": "geometry.zombie_bear"
+      },
+      "render_controllers": [
+        "controller.render.default"
+      ],
+      "spawn_egg": {
+        "base_color": "#4a2c1d",
+        "overlay_color": "#5f8c49"
+      },
+      "animations": {
+        "controller": "controller.animation.bear",
+        "walk1": "animation.zombbear.walk",
+        "roar1": "animation.bear.roar",
+        "attack1": "animation.zombbear.attack",
+        "idle1": "animation.zombbear.idle",
+        "start_sleep1": "animation.bear.start_sleep",
+        "sleep": "animation.bear.sleep",
+        "end_sleep1": "animation.bear.end_sleep"
+      },
+      "sound_effects": {
+        "roar": "mob.bear.roar"
+      },
+      "scripts": {
+        "animate": [
+          "controller"
+        ]
+      }
+    }
+  }
 }
+

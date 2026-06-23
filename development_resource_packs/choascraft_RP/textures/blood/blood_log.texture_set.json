@@ -1,8 +1,9 @@
 {
-	"format_version": "1.16.100",
-	"minecraft:texture_set": {
-		"color": "blood_log",
-		"metalness_emissive_roughness": "blood_log_mer",
-		"normal": "blood_log_normal"
-	}
+  "format_version": "1.16.100",
+  "minecraft:texture_set": {
+    "color": "blood_log",
+    "metalness_emissive_roughness": "blood_log_mer",
+    "normal": "blood_log_normal"
+  }
 }
+

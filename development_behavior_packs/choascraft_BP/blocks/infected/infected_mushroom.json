@@ -28,11 +28,24 @@
       "minecraft:destructible_by_explosion": {
         "explosion_resistance": 1200
       },
-      "minecraft:map_color": "#1D1D21",
       "minecraft:redstone_conductivity": {
         "allows_wire_to_step_down": true,
         "redstone_conductor": true
+      },
+      "minecraft:map_color": "#2B3E2D",
+      "zombie:mushroom_spread": {
+        "chance": 0.2,
+        "spread_radius": 1,
+        "valid_base_blocks": [
+          "zombie:infected_grass_block",
+          "zombie:infected_dirt",
+          "zombie:infected_gravel",
+          "zombie:infected_sand",
+          "zombie:infected_sporestone",
+          "zombie:infected_stone"
+        ]
       }
     }
   }
 }
+

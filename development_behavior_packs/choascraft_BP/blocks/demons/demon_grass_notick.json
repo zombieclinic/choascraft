@@ -14,7 +14,6 @@
       "minecraft:destructible_by_mining": {
         "seconds_to_destroy": 0.5
       },
-      "minecraft:map_color": "#8B4513",
       "minecraft:display_name": "Demon Grass",
       "minecraft:material_instances": {
         "*": {
@@ -40,7 +39,9 @@
       },
       "minecraft:tags": [
         "minecraft:is_shovel_item_destructible"
-      ]
+      ],
+      "minecraft:map_color": "#361B15"
     }
   }
 }
+

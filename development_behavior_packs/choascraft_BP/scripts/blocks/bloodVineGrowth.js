@@ -47,6 +47,11 @@ function growBloodVine(block) {
 			[STAGE_STATE]: END,
 			[GROWING_STATE]: NO
 		}));
+
+		if (!canGrowInto(target.below())) {
+			stopGrowing(block);
+		}
+
 		return true;
 	} catch {
 		return false;

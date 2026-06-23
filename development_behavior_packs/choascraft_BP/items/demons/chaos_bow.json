@@ -1,63 +1,64 @@
 {
-    "format_version":  "1.26.20",
-    "minecraft:item":  {
-                           "description":  {
-                                               "identifier":  "zombie:chaos_bow",
-                                               "menu_category":  {
-                                                                     "category":  "equipment",
-                                                                     "group":  "minecraft:itemGroup.name.chaos"
-                                                                 }
-                                           },
-                           "components":  {
-                                              "minecraft:enchantable":  {
-                                                                            "slot":  "bow",
-                                                                            "value":  5
-                                                                        },
-                                              "minecraft:max_stack_size":  1,
-                                              "minecraft:should_despawn":  false,
-                                              "minecraft:display_name":  {
-                                                                             "value":  "Choas Bow"
-                                                                         },
-                                              "minecraft:use_animation":  "bow",
-                                              "minecraft:icon":  "zombie_chaos_bow",
-                                              "minecraft:cooldown":  {
-                                                                         "category":  "Choas",
-                                                                         "duration":  2
-                                                                     },
-                                              "minecraft:projectile":  {
-                                                                           "minimum_critical_power":  1.25,
-                                                                           "projectile_entity":  "zombie:chaos_arrow_entity"
-                                                                       },
-                                              "minecraft:shooter":  {
-                                                                        "charge_on_draw":  false,
-                                                                        "scale_power_by_draw_duration":  false,
-                                                                        "ammunition":  [
-                                                                                           {
-                                                                                               "item":  "zombie:chaos_arrow",
-                                                                                               "use_offhand":  true,
-                                                                                               "search_inventory":  true,
-                                                                                               "use_in_creative":  true
-                                                                                           }
-                                                                                       ],
-                                                                        "max_draw_duration":  2
-                                                                    },
-                                              "minecraft:use_modifiers":  {
-                                                                              "use_duration":  3600
-                                                                          },
-                                              "minecraft:durability":  {
-                                                                           "max_durability":  358
-                                                                       },
-                                              "minecraft:repairable":  {
-                                                                           "repair_items":  [
-                                                                                                {
-                                                                                                    "items":  [
-                                                                                                                  "gold_ingot",
-                                                                                                                  "zombie:chaos_bow"
-                                                                                                              ],
-                                                                                                    "repair_amount":  25
-                                                                                                }
-                                                                                            ]
-                                                                       }
-                                          }
-                       }
+  "format_version": "1.26.20",
+  "minecraft:item": {
+    "description": {
+      "identifier": "zombie:chaos_bow",
+      "menu_category": {
+        "category": "equipment",
+        "group": "minecraft:itemGroup.name.chaos"
+      }
+    },
+    "components": {
+      "minecraft:enchantable": {
+        "slot": "bow",
+        "value": 5
+      },
+      "minecraft:max_stack_size": 1,
+      "minecraft:should_despawn": false,
+      "minecraft:display_name": {
+        "value": "Chaos Bow"
+      },
+      "minecraft:use_animation": "bow",
+      "minecraft:icon": "zombie_chaos_bow",
+      "minecraft:cooldown": {
+        "category": "Chaos",
+        "duration": 2
+      },
+      "minecraft:projectile": {
+        "minimum_critical_power": 1.25,
+        "projectile_entity": "zombie:chaos_arrow_entity"
+      },
+      "minecraft:shooter": {
+        "charge_on_draw": false,
+        "scale_power_by_draw_duration": false,
+        "ammunition": [
+          {
+            "item": "zombie:chaos_arrow",
+            "use_offhand": true,
+            "search_inventory": true,
+            "use_in_creative": true
+          }
+        ],
+        "max_draw_duration": 2
+      },
+      "minecraft:use_modifiers": {
+        "use_duration": 3600
+      },
+      "minecraft:durability": {
+        "max_durability": 358
+      },
+      "minecraft:repairable": {
+        "repair_items": [
+          {
+            "items": [
+              "gold_ingot",
+              "zombie:chaos_bow"
+            ],
+            "repair_amount": 25
+          }
+        ]
+      }
+    }
+  }
 }
+

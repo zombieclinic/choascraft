@@ -1,73 +1,74 @@
 {
-	"format_version": "1.10.0",
-	"animation_controllers": {
-		"controller.animation.golem_tree": {
-			"states": {
-				"idle": {
-					"animations": [
-						{
-							"idle": "(1.0)"
-						}
-					],
-					"transitions": [
-						{
-							"walk": "query.ground_speed"
-						},
-						{
-							"shoot": "query.is_charged"
-						}
-					]
-				},
-				"walk": {
-					"animations": [
-						{
-							"walk": "(1.0)"
-						}
-					],
-					"transitions": [
-						{
-							"idle": "!query.ground_speed"
-						},
-						{
-							"shoot": "query.is_charged"
-						}
-					]
-				},
-				"shoot": {
-					"transitions": [
-						{
-							"walk": "query.all_animations_finished && query.ground_speed"
-						},
-						{
-							"idle": "query.all_animations_finished"
-						}
-					],
-					"animations": [
-						{
-							"shoot": "(1.0)"
-						}
-					]
-				},
-				"spawn": {
-					"animations": [
-						{
-							"spawn": "(1.0)"
-						}
-					],
-					"transitions": [
-						{
-							"idle": "query.all_animations_finished"
-						}
-					],
-					"particle_effects": [
-						{
-							"effect": "wow_this_works",
-							"locator": "spawn"
-						}
-					]
-				}
-			},
-			"initial_state": "spawn"
-		}
-	}
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.golem_tree": {
+      "states": {
+        "idle": {
+          "animations": [
+            {
+              "idle": "(1.0)"
+            }
+          ],
+          "transitions": [
+            {
+              "walk": "query.ground_speed"
+            },
+            {
+              "shoot": "query.is_charged"
+            }
+          ]
+        },
+        "walk": {
+          "animations": [
+            {
+              "walk": "(1.0)"
+            }
+          ],
+          "transitions": [
+            {
+              "idle": "!query.ground_speed"
+            },
+            {
+              "shoot": "query.is_charged"
+            }
+          ]
+        },
+        "shoot": {
+          "transitions": [
+            {
+              "walk": "query.all_animations_finished && query.ground_speed"
+            },
+            {
+              "idle": "query.all_animations_finished"
+            }
+          ],
+          "animations": [
+            {
+              "shoot": "(1.0)"
+            }
+          ]
+        },
+        "spawn": {
+          "animations": [
+            {
+              "spawn": "(1.0)"
+            }
+          ],
+          "transitions": [
+            {
+              "idle": "query.all_animations_finished"
+            }
+          ],
+          "particle_effects": [
+            {
+              "effect": "wow_this_works",
+              "locator": "spawn"
+            }
+          ]
+        }
+      },
+      "initial_state": "spawn"
+    }
+  }
 }
+

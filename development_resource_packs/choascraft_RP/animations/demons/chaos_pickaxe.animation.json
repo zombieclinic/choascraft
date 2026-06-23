@@ -1,14 +1,23 @@
 {
-	"format_version": "1.26.20",
-	"animations": {
-		"animation.demon_pickaxe.fpp_idle": {
-			"loop": true,
-			"bones": {
-				"group": {
-					"rotation": [47.03199, -12.27496, -69.29518],
-					"position": [-0.4985, -24.73115, -4.01518]
-				}
-			}
-		}
-	}
+  "format_version": "1.26.20",
+  "animations": {
+    "animation.demon_pickaxe.fpp_idle": {
+      "loop": true,
+      "bones": {
+        "group": {
+          "rotation": [
+            47.03199,
+            -12.27496,
+            -69.29518
+          ],
+          "position": [
+            -0.4985,
+            -24.73115,
+            -4.01518
+          ]
+        }
+      }
+    }
+  }
 }
+

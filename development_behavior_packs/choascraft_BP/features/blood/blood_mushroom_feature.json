@@ -1,0 +1,27 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:single_block_feature": {
+    "description": {
+      "identifier": "zombie:blood_mushroom_feature"
+    },
+    "places_block": {
+      "name": "zombie:blood_mushroom"
+    },
+    "enforce_survivability_rules": true,
+    "enforce_placement_rules": true,
+    "may_replace": [
+      "minecraft:air",
+      "minecraft:tallgrass",
+      "minecraft:fern",
+      "zombie:blood_root"
+    ],
+    "may_attach_to": {
+      "bottom": [
+        "zombie:demon_blood_block",
+        "zombie:demon_flesh_block",
+        "zombie:demon_blood_flesh_block"
+      ]
+    }
+  }
+}
+

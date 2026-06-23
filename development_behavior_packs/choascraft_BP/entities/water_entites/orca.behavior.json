@@ -9,7 +9,9 @@
     },
     "component_groups": {
       "leashed_orca": {
-        "minecraft:persistent": {}
+        "minecraft:persistent": {
+          
+        }
       },
       "zombie_skin": {
         "minecraft:mark_variant": {
@@ -200,7 +202,9 @@
             }
           ]
         },
-        "minecraft:is_tamed": {},
+        "minecraft:is_tamed": {
+          
+        },
         "minecraft:rideable": {
           "seat_count": 1,
           "crouching_skip_interact": true,
@@ -217,7 +221,9 @@
             ]
           }
         },
-        "minecraft:behavior.player_ride_tamed": {}
+        "minecraft:behavior.player_ride_tamed": {
+          
+        }
       },
       "unsaddled_orca": {
         "minecraft:variant": {
@@ -252,10 +258,14 @@
         "minecraft:skin_id": {
           "value": 1
         },
-        "minecraft:is_chested": {}
+        "minecraft:is_chested": {
+          
+        }
       },
       "baby_orca": {
-        "minecraft:is_baby": {},
+        "minecraft:is_baby": {
+          
+        },
         "minecraft:attack": {
           "damage": 2
         },
@@ -297,7 +307,9 @@
       }
     },
     "components": {
-      "minecraft:is_hidden_when_invisible": {},
+      "minecraft:is_hidden_when_invisible": {
+        
+      },
       "minecraft:loot": {
         "table": "loot_tables/entities/orca/orca.json"
       },
@@ -407,7 +419,9 @@
         "jump_power": 0.25
       },
       "minecraft:despawn": {
-        "despawn_from_distance": {}
+        "despawn_from_distance": {
+          
+        }
       },
       "minecraft:behavior.avoid_mob_type": {
         "priority": 2,
@@ -488,7 +502,9 @@
           }
         ]
       },
-      "minecraft:conditional_bandwidth_optimization": {},
+      "minecraft:conditional_bandwidth_optimization": {
+        
+      },
       "minecraft:healable": {
         "force_use": false,
         "items": [
@@ -638,3 +654,4 @@
     }
   }
 }
+

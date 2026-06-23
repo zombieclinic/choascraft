@@ -1,8 +1,9 @@
 {
-	"format_version": "1.16.100",
-	"minecraft:texture_set": {
-		"color": "blood_door_bottom",
-		"metalness_emissive_roughness": "blood_door_bottom_mer",
-		"normal": "blood_door_bottom_normal"
-	}
+  "format_version": "1.16.100",
+  "minecraft:texture_set": {
+    "color": "blood_door_bottom",
+    "metalness_emissive_roughness": "blood_door_bottom_mer",
+    "normal": "blood_door_bottom_normal"
+  }
 }
+

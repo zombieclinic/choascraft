@@ -715,7 +715,9 @@
         "minecraft:has_fence_connections",
         "minecraft:is_axe_item_destructible",
         "wood"
-      ]
+      ],
+      "minecraft:map_color": "#2F1D1B"
     }
   }
 }
+

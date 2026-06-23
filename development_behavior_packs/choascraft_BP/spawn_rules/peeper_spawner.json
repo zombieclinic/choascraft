@@ -1,15 +1,18 @@
 {
-	"format_version": "1.8.0",
-	"minecraft:spawn_rules": {
-		"description": {
-			"identifier": "zombie:peeper_spawner",
-			"population_control":"animal"
-		},
-"conditions": [
+  "format_version": "1.8.0",
+  "minecraft:spawn_rules": {
+    "description": {
+      "identifier": "zombie:peeper_spawner",
+      "population_control": "animal"
+    },
+    "conditions": [
       {
-        "minecraft:spawns_on_surface": {},
-        "minecraft:spawns_underwater": {},
-
+        "minecraft:spawns_on_surface": {
+          
+        },
+        "minecraft:spawns_underwater": {
+          
+        },
         "minecraft:weight": {
           "default": 7
         },
@@ -22,9 +25,14 @@
           "max_size": 5
         },
         "minecraft:biome_filter": [
-          { "test": "has_biome_tag", "operator": "==", "value": "ocean" }
+          {
+            "test": "has_biome_tag",
+            "operator": "==",
+            "value": "ocean"
+          }
         ]
       }
     ]
   }
 }
+

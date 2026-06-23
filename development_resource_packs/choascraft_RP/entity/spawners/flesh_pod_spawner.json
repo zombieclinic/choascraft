@@ -1,0 +1,21 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "zombie:flesh_pod_spawner",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/entity/steve"
+      },
+      "geometry": {
+        "default": "geometry.spawn_invisible"
+      },
+      "render_controllers": [
+        "controller.render.default"
+      ]
+    }
+  }
+}
+

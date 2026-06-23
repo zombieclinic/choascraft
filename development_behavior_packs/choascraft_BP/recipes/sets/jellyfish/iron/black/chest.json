@@ -4,11 +4,19 @@
     "description": {
       "identifier": "zombie:jellyfish_black_chest_recipe"
     },
-    "tags": [ "crafting_table" ],
+    "tags": [
+      "crafting_table"
+    ],
     "unlock": [
-      { "item": "minecraft:iron_ingot" },
-      { "item": "zombie:jellyfish_jelly_black" },
-      { "item": "zombie:jellyfish_jelly_cyst" }
+      {
+        "item": "minecraft:iron_ingot"
+      },
+      {
+        "item": "zombie:jellyfish_jelly_black"
+      },
+      {
+        "item": "zombie:jellyfish_jelly_cyst"
+      }
     ],
     "pattern": [
       "IPI",
@@ -16,13 +24,22 @@
       "III"
     ],
     "key": {
-      "I": { "item": "minecraft:iron_ingot" },
-      "J": { "item": "zombie:jellyfish_jelly_black" },
-      "P": { "item": "zombie:jellyfish_jelly_pearl" },
-      "C": { "item": "zombie:jellyfish_jelly_cyst" }
+      "I": {
+        "item": "minecraft:iron_ingot"
+      },
+      "J": {
+        "item": "zombie:jellyfish_jelly_black"
+      },
+      "P": {
+        "item": "zombie:jellyfish_jelly_pearl"
+      },
+      "C": {
+        "item": "zombie:jellyfish_jelly_cyst"
+      }
     },
     "result": {
       "item": "zombie:jellyfish_black_chest"
     }
   }
 }
+

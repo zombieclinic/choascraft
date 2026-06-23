@@ -14,7 +14,9 @@
         }
       },
       "crab_baby": {
-        "minecraft:is_baby": {},
+        "minecraft:is_baby": {
+          
+        },
         "minecraft:scale": {
           "value": 0.3
         },
@@ -250,11 +252,15 @@
         "width": 1,
         "height": 0.42
       },
-      "minecraft:is_hidden_when_invisible": {},
+      "minecraft:is_hidden_when_invisible": {
+        
+      },
       "minecraft:experience_reward": {
         "on_bred": "Math.Random(1,7)"
       },
-      "minecraft:nameable": {},
+      "minecraft:nameable": {
+        
+      },
       "minecraft:health": {
         "value": 20,
         "max": 20
@@ -305,7 +311,9 @@
         "speed_multiplier": 0.75,
         "interval": 30
       },
-      "minecraft:movement.amphibious": {},
+      "minecraft:movement.amphibious": {
+        
+      },
       "minecraft:navigation.generic": {
         "is_amphibious": true,
         "can_path_over_water": true,
@@ -317,8 +325,12 @@
       "minecraft:movement": {
         "value": 0.2
       },
-      "minecraft:jump.static": {},
-      "minecraft:physics": {},
+      "minecraft:jump.static": {
+        
+      },
+      "minecraft:physics": {
+        
+      },
       "minecraft:leashable": {
         "can_be_cut": true,
         "can_be_stolen": false,
@@ -331,12 +343,16 @@
         ]
       },
       "minecraft:despawn": {
-        "despawn_from_distance": {}
+        "despawn_from_distance": {
+          
+        }
       },
       "minecraft:attack": {
         "damage": 3
       },
-      "minecraft:combat_regeneration": {}
+      "minecraft:combat_regeneration": {
+        
+      }
     },
     "events": {
       "minecraft:entity_spawned": {
@@ -431,3 +447,4 @@
     }
   }
 }
+

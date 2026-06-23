@@ -39,7 +39,10 @@
         "movement_modifier": 0,
         "use_duration": 1
       },
-      "zombie:raw_food_sickness": {}
+      "zombie:raw_food_sickness": {
+        
+      }
     }
   }
 }
+

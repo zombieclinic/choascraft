@@ -8,15 +8,38 @@
     "conditions": {
       "placement_pass": "after_surface_pass",
       "minecraft:biome_filter": [
-        { "test": "has_biome_tag", "operator": "==", "value": "redwood" }
+        {
+          "test": "has_biome_tag",
+          "operator": "==",
+          "value": "redwood"
+        }
       ]
     },
     "distribution": {
       "iterations": 6,
       "coordinate_eval_order": "zyx",
-      "x": { "distribution": "uniform", "extent": [0, 15] },
-      "z": { "distribution": "uniform", "extent": [0, 15] },
-      "y": { "distribution": "uniform", "extent": [60, 130] }
+      "x": {
+        "distribution": "uniform",
+        "extent": [
+          0,
+          15
+        ]
+      },
+      "z": {
+        "distribution": "uniform",
+        "extent": [
+          0,
+          15
+        ]
+      },
+      "y": {
+        "distribution": "uniform",
+        "extent": [
+          60,
+          130
+        ]
+      }
     }
   }
 }
+

@@ -19,7 +19,6 @@
         }
       },
       "minecraft:light_emission": 2,
-      "minecraft:map_color": "#7020A8",
       "minecraft:flammable": false,
       "minecraft:destructible_by_mining": {
         "seconds_to_destroy": 1
@@ -29,7 +28,9 @@
       },
       "minecraft:tags": [
         "minecraft:is_pickaxe_item_destructible"
-      ]
+      ],
+      "minecraft:map_color": "#510717"
     }
   }
 }
+

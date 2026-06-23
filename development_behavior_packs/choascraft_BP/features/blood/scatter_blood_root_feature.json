@@ -1,0 +1,33 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:scatter_feature": {
+    "description": {
+      "identifier": "zombie:scatter_blood_root_feature"
+    },
+    "iterations": 20,
+    "x": {
+      "distribution": "triangle",
+      "extent": [
+        -5,
+        5
+      ]
+    },
+    "y": {
+      "distribution": "triangle",
+      "extent": [
+        -2,
+        2
+      ]
+    },
+    "z": {
+      "distribution": "triangle",
+      "extent": [
+        -5,
+        5
+      ]
+    },
+    "coordinate_eval_order": "zxy",
+    "places_feature": "zombie:blood_root_feature"
+  }
+}
+

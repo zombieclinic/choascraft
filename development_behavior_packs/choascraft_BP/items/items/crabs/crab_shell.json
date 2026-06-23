@@ -1,17 +1,19 @@
 {
-    "format_version": "1.26.10",
-    "minecraft:item": {
-        "description": {
-            "identifier": "zombie:crab_shell",
-            "menu_category": {"category": "items"}
-        },
-        "components": {
-            "minecraft:icon": "zombie_crab_shell",
-             "minecraft:stacked_by_data": true,
-             "minecraft:display_name": {
-                "value": "Crab Shell"
-             }
-        }
+  "format_version": "1.26.10",
+  "minecraft:item": {
+    "description": {
+      "identifier": "zombie:crab_shell",
+      "menu_category": {
+        "category": "items"
+      }
+    },
+    "components": {
+      "minecraft:icon": "zombie_crab_shell",
+      "minecraft:stacked_by_data": true,
+      "minecraft:display_name": {
+        "value": "Crab Shell"
+      }
     }
-    
+  }
 }
+

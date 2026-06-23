@@ -1,30 +1,31 @@
 {
-	"format_version": "1.16.0",
-	"minecraft:snap_to_surface_feature": {
-		"description": {
-			"identifier": "zombie:infected_willow_tree_floor_feature"
-		},
-		"feature_to_snap": "zombie:infected_willow_tree_feature",
-		"vertical_search_range": 128,
-		"surface": "floor",
-		"allow_air_placement": true,
-		"allow_underwater_placement": false,
-		"allowed_surface_blocks": [
-			{
-				"name": "zombie:infected_grass_block"
-			},
-			{
-				"name": "zombie:infected_dirt"
-			},
-			{
-				"name": "zombie:infected_sand"
-			},
-			{
-				"name": "zombie:infected_sporestone"
-			},
-			{
-				"name": "zombie:infected_block"
-			}
-		]
-	}
+  "format_version": "1.16.0",
+  "minecraft:snap_to_surface_feature": {
+    "description": {
+      "identifier": "zombie:infected_willow_tree_floor_feature"
+    },
+    "feature_to_snap": "zombie:infected_willow_tree_feature",
+    "vertical_search_range": 128,
+    "surface": "floor",
+    "allow_air_placement": true,
+    "allow_underwater_placement": false,
+    "allowed_surface_blocks": [
+      {
+        "name": "zombie:infected_grass_block"
+      },
+      {
+        "name": "zombie:infected_dirt"
+      },
+      {
+        "name": "zombie:infected_sand"
+      },
+      {
+        "name": "zombie:infected_sporestone"
+      },
+      {
+        "name": "zombie:infected_block"
+      }
+    ]
+  }
 }
+

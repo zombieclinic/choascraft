@@ -44,7 +44,9 @@
     },
     "components": {
       "minecraft:display_name": "Demon Stairs",
-      "arctic:connectedStairs": {},
+      "arctic:connectedStairs": {
+        
+      },
       "minecraft:material_instances": {
         "*": {
           "texture": "zombie_hell_plank",
@@ -80,7 +82,6 @@
       "minecraft:destructible_by_mining": {
         "seconds_to_destroy": 0.75
       },
-      "minecraft:loot": "loot_tables/blocks/demon_stairs.json",
       "minecraft:destructible_by_explosion": true,
       "minecraft:light_dampening": 0,
       "minecraft:tags": [
@@ -88,11 +89,12 @@
         "wood",
         "custom:connected_stairs",
         "minecraft:diamond_tier_destructible"
-      ]
+      ],
+      "minecraft:map_color": "#3A0A07"
     },
     "permutations": [
       {
-        "condition": "q.block_state('minecraft:cardinal_direction') == 'south' && q.block_state('minecraft:vertical_half') == 'bottom' ",
+        "condition": "q.block_state(\u0027minecraft:cardinal_direction\u0027) == \u0027south\u0027 \u0026\u0026 q.block_state(\u0027minecraft:vertical_half\u0027) == \u0027bottom\u0027 ",
         "components": {
           "minecraft:transformation": {
             "rotation": [
@@ -130,7 +132,7 @@
         }
       },
       {
-        "condition": "q.block_state('custom:west') && q.block_state('custom:north') && !q.block_state('custom:east') && !q.block_state('custom:south') && q.block_state('minecraft:cardinal_direction') == 'west' && q.block_state('minecraft:vertical_half') == 'bottom'",
+        "condition": "q.block_state(\u0027custom:west\u0027) \u0026\u0026 q.block_state(\u0027custom:north\u0027) \u0026\u0026 !q.block_state(\u0027custom:east\u0027) \u0026\u0026 !q.block_state(\u0027custom:south\u0027) \u0026\u0026 q.block_state(\u0027minecraft:cardinal_direction\u0027) == \u0027west\u0027 \u0026\u0026 q.block_state(\u0027minecraft:vertical_half\u0027) == \u0027bottom\u0027",
         "components": {
           "minecraft:collision_box": [
             {
@@ -176,7 +178,7 @@
         }
       },
       {
-        "condition": "q.block_state('custom:west') && q.block_state('custom:north') && !q.block_state('custom:east') && !q.block_state('custom:south') && q.block_state('minecraft:cardinal_direction') == 'north' && q.block_state('minecraft:vertical_half') == 'bottom'",
+        "condition": "q.block_state(\u0027custom:west\u0027) \u0026\u0026 q.block_state(\u0027custom:north\u0027) \u0026\u0026 !q.block_state(\u0027custom:east\u0027) \u0026\u0026 !q.block_state(\u0027custom:south\u0027) \u0026\u0026 q.block_state(\u0027minecraft:cardinal_direction\u0027) == \u0027north\u0027 \u0026\u0026 q.block_state(\u0027minecraft:vertical_half\u0027) == \u0027bottom\u0027",
         "components": {
           "minecraft:geometry": {
             "identifier": "geometry.staircase_outside_corner2"
@@ -222,7 +224,7 @@
         }
       },
       {
-        "condition": "q.block_state('custom:east') && q.block_state('custom:north') && !q.block_state('custom:west') && !q.block_state('custom:south') && q.block_state('minecraft:cardinal_direction') == 'east' && q.block_state('minecraft:vertical_half') == 'bottom'",
+        "condition": "q.block_state(\u0027custom:east\u0027) \u0026\u0026 q.block_state(\u0027custom:north\u0027) \u0026\u0026 !q.block_state(\u0027custom:west\u0027) \u0026\u0026 !q.block_state(\u0027custom:south\u0027) \u0026\u0026 q.block_state(\u0027minecraft:cardinal_direction\u0027) == \u0027east\u0027 \u0026\u0026 q.block_state(\u0027minecraft:vertical_half\u0027) == \u0027bottom\u0027",
         "components": {
           "minecraft:geometry": {
             "identifier": "geometry.staircase_outside_corner2"
@@ -268,7 +270,7 @@
         }
       },
       {
-        "condition": "q.block_state('custom:east') && q.block_state('custom:north') && !q.block_state('custom:west') && !q.block_state('custom:south') && q.block_state('minecraft:cardinal_direction') == 'north' && q.block_state('minecraft:vertical_half') == 'bottom'",
+        "condition": "q.block_state(\u0027custom:east\u0027) \u0026\u0026 q.block_state(\u0027custom:north\u0027) \u0026\u0026 !q.block_state(\u0027custom:west\u0027) \u0026\u0026 !q.block_state(\u0027custom:south\u0027) \u0026\u0026 q.block_state(\u0027minecraft:cardinal_direction\u0027) == \u0027north\u0027 \u0026\u0026 q.block_state(\u0027minecraft:vertical_half\u0027) == \u0027bottom\u0027",
         "components": {
           "minecraft:geometry": {
             "identifier": "geometry.staircase_outside_corner"
@@ -314,7 +316,7 @@
         }
       },
       {
-        "condition": "q.block_state('custom:east') && q.block_state('custom:south') && !q.block_state('custom:west') && !q.block_state('custom:north') && q.block_state('minecraft:cardinal_direction') == 'south' && q.block_state('minecraft:vertical_half') == 'bottom'",
+        "condition": "q.block_state(\u0027custom:east\u0027) \u0026\u0026 q.block_state(\u0027custom:south\u0027) \u0026\u0026 !q.block_state(\u0027custom:west\u0027) \u0026\u0026 !q.block_state(\u0027custom:north\u0027) \u0026\u0026 q.block_state(\u0027minecraft:cardinal_direction\u0027) == \u0027south\u0027 \u0026\u0026 q.block_state(\u0027minecraft:vertical_half\u0027) == \u0027bottom\u0027",
         "components": {
           "minecraft:geometry": {
             "identifier": "geometry.staircase_outside_corner2"
@@ -360,7 +362,7 @@
         }
       },
       {
-        "condition": "q.block_state('custom:east') && q.block_state('custom:south') && !q.block_state('custom:west') && !q.block_state('custom:north') && q.block_state('minecraft:cardinal_direction') == 'east' && q.block_state('minecraft:vertical_half') == 'bottom'",
+        "condition": "q.block_state(\u0027custom:east\u0027) \u0026\u0026 q.block_state(\u0027custom:south\u0027) \u0026\u0026 !q.block_state(\u0027custom:west\u0027) \u0026\u0026 !q.block_state(\u0027custom:north\u0027) \u0026\u0026 q.block_state(\u0027minecraft:cardinal_direction\u0027) == \u0027east\u0027 \u0026\u0026 q.block_state(\u0027minecraft:vertical_half\u0027) == \u0027bottom\u0027",
         "components": {
           "minecraft:geometry": {
             "identifier": "geometry.staircase_outside_corner"
@@ -406,7 +408,7 @@
         }
       },
       {
-        "condition": "q.block_state('custom:west') && q.block_state('custom:south') && !q.block_state('custom:east') && !q.block_state('custom:north') && q.block_state('minecraft:cardinal_direction') == 'south' && q.block_state('minecraft:vertical_half') == 'bottom'",
+        "condition": "q.block_state(\u0027custom:west\u0027) \u0026\u0026 q.block_state(\u0027custom:south\u0027) \u0026\u0026 !q.block_state(\u0027custom:east\u0027) \u0026\u0026 !q.block_state(\u0027custom:north\u0027) \u0026\u0026 q.block_state(\u0027minecraft:cardinal_direction\u0027) == \u0027south\u0027 \u0026\u0026 q.block_state(\u0027minecraft:vertical_half\u0027) == \u0027bottom\u0027",
         "components": {
           "minecraft:geometry": {
             "identifier": "geometry.staircase_outside_corner"
@@ -452,7 +454,7 @@
         }
       },
       {
-        "condition": "q.block_state('custom:west') && q.block_state('custom:south') && !q.block_state('custom:east') && !q.block_state('custom:north') && q.block_state('minecraft:cardinal_direction') == 'west' && q.block_state('minecraft:vertical_half') == 'bottom'",
+        "condition": "q.block_state(\u0027custom:west\u0027) \u0026\u0026 q.block_state(\u0027custom:south\u0027) \u0026\u0026 !q.block_state(\u0027custom:east\u0027) \u0026\u0026 !q.block_state(\u0027custom:north\u0027) \u0026\u0026 q.block_state(\u0027minecraft:cardinal_direction\u0027) == \u0027west\u0027 \u0026\u0026 q.block_state(\u0027minecraft:vertical_half\u0027) == \u0027bottom\u0027",
         "components": {
           "minecraft:geometry": {
             "identifier": "geometry.staircase_outside_corner2"
@@ -498,7 +500,7 @@
         }
       },
       {
-        "condition": "q.block_state('custom:east') && q.block_state('custom:south') && !q.block_state('custom:west') && !q.block_state('custom:north') && q.block_state('minecraft:cardinal_direction') == 'north' && q.block_state('minecraft:vertical_half') == 'bottom'",
+        "condition": "q.block_state(\u0027custom:east\u0027) \u0026\u0026 q.block_state(\u0027custom:south\u0027) \u0026\u0026 !q.block_state(\u0027custom:west\u0027) \u0026\u0026 !q.block_state(\u0027custom:north\u0027) \u0026\u0026 q.block_state(\u0027minecraft:cardinal_direction\u0027) == \u0027north\u0027 \u0026\u0026 q.block_state(\u0027minecraft:vertical_half\u0027) == \u0027bottom\u0027",
         "components": {
           "minecraft:geometry": {
             "identifier": "geometry.staircase_inside_corner2"
@@ -544,7 +546,7 @@
         }
       },
       {
-        "condition": "q.block_state('custom:east') && q.block_state('custom:south') && !q.block_state('custom:west') && !q.block_state('custom:north') && q.block_state('minecraft:cardinal_direction') == 'west' && q.block_state('minecraft:vertical_half') == 'bottom'",
+        "condition": "q.block_state(\u0027custom:east\u0027) \u0026\u0026 q.block_state(\u0027custom:south\u0027) \u0026\u0026 !q.block_state(\u0027custom:west\u0027) \u0026\u0026 !q.block_state(\u0027custom:north\u0027) \u0026\u0026 q.block_state(\u0027minecraft:cardinal_direction\u0027) == \u0027west\u0027 \u0026\u0026 q.block_state(\u0027minecraft:vertical_half\u0027) == \u0027bottom\u0027",
         "components": {
           "minecraft:geometry": {
             "identifier": "geometry.staircase_inside_corner"
@@ -590,7 +592,7 @@
         }
       },
       {
-        "condition": "q.block_state('custom:west') && q.block_state('custom:south') && !q.block_state('custom:east') && !q.block_state('custom:north') && q.block_state('minecraft:cardinal_direction') == 'north' && q.block_state('minecraft:vertical_half') == 'bottom'",
+        "condition": "q.block_state(\u0027custom:west\u0027) \u0026\u0026 q.block_state(\u0027custom:south\u0027) \u0026\u0026 !q.block_state(\u0027custom:east\u0027) \u0026\u0026 !q.block_state(\u0027custom:north\u0027) \u0026\u0026 q.block_state(\u0027minecraft:cardinal_direction\u0027) == \u0027north\u0027 \u0026\u0026 q.block_state(\u0027minecraft:vertical_half\u0027) == \u0027bottom\u0027",
         "components": {
           "minecraft:geometry": {
             "identifier": "geometry.staircase_inside_corner"
@@ -636,7 +638,7 @@
         }
       },
       {
-        "condition": "q.block_state('custom:west') && q.block_state('custom:south') && !q.block_state('custom:east') && !q.block_state('custom:north') && q.block_state('minecraft:cardinal_direction') == 'east' && q.block_state('minecraft:vertical_half') == 'bottom'",
+        "condition": "q.block_state(\u0027custom:west\u0027) \u0026\u0026 q.block_state(\u0027custom:south\u0027) \u0026\u0026 !q.block_state(\u0027custom:east\u0027) \u0026\u0026 !q.block_state(\u0027custom:north\u0027) \u0026\u0026 q.block_state(\u0027minecraft:cardinal_direction\u0027) == \u0027east\u0027 \u0026\u0026 q.block_state(\u0027minecraft:vertical_half\u0027) == \u0027bottom\u0027",
         "components": {
           "minecraft:geometry": {
             "identifier": "geometry.staircase_inside_corner2"
@@ -682,7 +684,7 @@
         }
       },
       {
-        "condition": "q.block_state('custom:west') && q.block_state('custom:north') && !q.block_state('custom:east') && !q.block_state('custom:south') && q.block_state('minecraft:cardinal_direction') == 'south' && q.block_state('minecraft:vertical_half') == 'bottom'",
+        "condition": "q.block_state(\u0027custom:west\u0027) \u0026\u0026 q.block_state(\u0027custom:north\u0027) \u0026\u0026 !q.block_state(\u0027custom:east\u0027) \u0026\u0026 !q.block_state(\u0027custom:south\u0027) \u0026\u0026 q.block_state(\u0027minecraft:cardinal_direction\u0027) == \u0027south\u0027 \u0026\u0026 q.block_state(\u0027minecraft:vertical_half\u0027) == \u0027bottom\u0027",
         "components": {
           "minecraft:geometry": {
             "identifier": "geometry.staircase_inside_corner2"
@@ -728,7 +730,7 @@
         }
       },
       {
-        "condition": "q.block_state('custom:west') && q.block_state('custom:north') && !q.block_state('custom:east') && !q.block_state('custom:south') && q.block_state('minecraft:cardinal_direction') == 'east' && q.block_state('minecraft:vertical_half') == 'bottom'",
+        "condition": "q.block_state(\u0027custom:west\u0027) \u0026\u0026 q.block_state(\u0027custom:north\u0027) \u0026\u0026 !q.block_state(\u0027custom:east\u0027) \u0026\u0026 !q.block_state(\u0027custom:south\u0027) \u0026\u0026 q.block_state(\u0027minecraft:cardinal_direction\u0027) == \u0027east\u0027 \u0026\u0026 q.block_state(\u0027minecraft:vertical_half\u0027) == \u0027bottom\u0027",
         "components": {
           "minecraft:geometry": {
             "identifier": "geometry.staircase_inside_corner"
@@ -774,7 +776,7 @@
         }
       },
       {
-        "condition": "q.block_state('custom:east') && q.block_state('custom:north') && !q.block_state('custom:west') && !q.block_state('custom:south') && q.block_state('minecraft:cardinal_direction') == 'south' && q.block_state('minecraft:vertical_half') == 'bottom'",
+        "condition": "q.block_state(\u0027custom:east\u0027) \u0026\u0026 q.block_state(\u0027custom:north\u0027) \u0026\u0026 !q.block_state(\u0027custom:west\u0027) \u0026\u0026 !q.block_state(\u0027custom:south\u0027) \u0026\u0026 q.block_state(\u0027minecraft:cardinal_direction\u0027) == \u0027south\u0027 \u0026\u0026 q.block_state(\u0027minecraft:vertical_half\u0027) == \u0027bottom\u0027",
         "components": {
           "minecraft:geometry": {
             "identifier": "geometry.staircase_inside_corner"
@@ -820,7 +822,7 @@
         }
       },
       {
-        "condition": "q.block_state('custom:east') && q.block_state('custom:north') && !q.block_state('custom:west') && !q.block_state('custom:south') && q.block_state('minecraft:cardinal_direction') == 'west' && q.block_state('minecraft:vertical_half') == 'bottom'",
+        "condition": "q.block_state(\u0027custom:east\u0027) \u0026\u0026 q.block_state(\u0027custom:north\u0027) \u0026\u0026 !q.block_state(\u0027custom:west\u0027) \u0026\u0026 !q.block_state(\u0027custom:south\u0027) \u0026\u0026 q.block_state(\u0027minecraft:cardinal_direction\u0027) == \u0027west\u0027 \u0026\u0026 q.block_state(\u0027minecraft:vertical_half\u0027) == \u0027bottom\u0027",
         "components": {
           "minecraft:geometry": {
             "identifier": "geometry.staircase_inside_corner2"
@@ -866,7 +868,7 @@
         }
       },
       {
-        "condition": "q.block_state('minecraft:cardinal_direction') == 'north' && q.block_state('minecraft:vertical_half') == 'bottom' ",
+        "condition": "q.block_state(\u0027minecraft:cardinal_direction\u0027) == \u0027north\u0027 \u0026\u0026 q.block_state(\u0027minecraft:vertical_half\u0027) == \u0027bottom\u0027 ",
         "components": {
           "minecraft:collision_box": [
             {
@@ -897,7 +899,7 @@
         }
       },
       {
-        "condition": "q.block_state('minecraft:cardinal_direction') == 'south' && q.block_state('minecraft:vertical_half') == 'bottom' && q.block_state('custom:placed')",
+        "condition": "q.block_state(\u0027minecraft:cardinal_direction\u0027) == \u0027south\u0027 \u0026\u0026 q.block_state(\u0027minecraft:vertical_half\u0027) == \u0027bottom\u0027 \u0026\u0026 q.block_state(\u0027custom:placed\u0027)",
         "components": {
           "minecraft:transformation": {
             "rotation": [
@@ -935,7 +937,7 @@
         }
       },
       {
-        "condition": "q.block_state('minecraft:cardinal_direction') == 'east' && q.block_state('minecraft:vertical_half') == 'bottom'",
+        "condition": "q.block_state(\u0027minecraft:cardinal_direction\u0027) == \u0027east\u0027 \u0026\u0026 q.block_state(\u0027minecraft:vertical_half\u0027) == \u0027bottom\u0027",
         "components": {
           "minecraft:transformation": {
             "rotation": [
@@ -973,7 +975,7 @@
         }
       },
       {
-        "condition": "q.block_state('minecraft:cardinal_direction') == 'west' && q.block_state('minecraft:vertical_half') == 'bottom'",
+        "condition": "q.block_state(\u0027minecraft:cardinal_direction\u0027) == \u0027west\u0027 \u0026\u0026 q.block_state(\u0027minecraft:vertical_half\u0027) == \u0027bottom\u0027",
         "components": {
           "minecraft:transformation": {
             "rotation": [
@@ -1011,7 +1013,7 @@
         }
       },
       {
-        "condition": "q.block_state('minecraft:cardinal_direction') == 'north' && q.block_state('minecraft:vertical_half') == 'top' ",
+        "condition": "q.block_state(\u0027minecraft:cardinal_direction\u0027) == \u0027north\u0027 \u0026\u0026 q.block_state(\u0027minecraft:vertical_half\u0027) == \u0027top\u0027 ",
         "components": {
           "minecraft:collision_box": [
             {
@@ -1049,7 +1051,7 @@
         }
       },
       {
-        "condition": "q.block_state('minecraft:cardinal_direction') == 'south' && q.block_state('minecraft:vertical_half') == 'top' ",
+        "condition": "q.block_state(\u0027minecraft:cardinal_direction\u0027) == \u0027south\u0027 \u0026\u0026 q.block_state(\u0027minecraft:vertical_half\u0027) == \u0027top\u0027 ",
         "components": {
           "minecraft:collision_box": [
             {
@@ -1087,7 +1089,7 @@
         }
       },
       {
-        "condition": "q.block_state('minecraft:cardinal_direction') == 'east' && q.block_state('minecraft:vertical_half') == 'top' ",
+        "condition": "q.block_state(\u0027minecraft:cardinal_direction\u0027) == \u0027east\u0027 \u0026\u0026 q.block_state(\u0027minecraft:vertical_half\u0027) == \u0027top\u0027 ",
         "components": {
           "minecraft:collision_box": [
             {
@@ -1125,7 +1127,7 @@
         }
       },
       {
-        "condition": "q.block_state('minecraft:cardinal_direction') == 'west' && q.block_state('minecraft:vertical_half') == 'top' ",
+        "condition": "q.block_state(\u0027minecraft:cardinal_direction\u0027) == \u0027west\u0027 \u0026\u0026 q.block_state(\u0027minecraft:vertical_half\u0027) == \u0027top\u0027 ",
         "components": {
           "minecraft:collision_box": [
             {
@@ -1163,7 +1165,7 @@
         }
       },
       {
-        "condition": "q.block_state('custom:west') && q.block_state('custom:north') && !q.block_state('custom:east') && !q.block_state('custom:south') && q.block_state('minecraft:cardinal_direction') == 'west' && q.block_state('minecraft:vertical_half') == 'top' ",
+        "condition": "q.block_state(\u0027custom:west\u0027) \u0026\u0026 q.block_state(\u0027custom:north\u0027) \u0026\u0026 !q.block_state(\u0027custom:east\u0027) \u0026\u0026 !q.block_state(\u0027custom:south\u0027) \u0026\u0026 q.block_state(\u0027minecraft:cardinal_direction\u0027) == \u0027west\u0027 \u0026\u0026 q.block_state(\u0027minecraft:vertical_half\u0027) == \u0027top\u0027 ",
         "components": {
           "minecraft:geometry": {
             "identifier": "geometry.staircase_outside_corner2"
@@ -1209,7 +1211,7 @@
         }
       },
       {
-        "condition": "q.block_state('custom:west') && q.block_state('custom:north') && !q.block_state('custom:east') && !q.block_state('custom:south') && q.block_state('minecraft:cardinal_direction') == 'north' && q.block_state('minecraft:vertical_half') == 'top' ",
+        "condition": "q.block_state(\u0027custom:west\u0027) \u0026\u0026 q.block_state(\u0027custom:north\u0027) \u0026\u0026 !q.block_state(\u0027custom:east\u0027) \u0026\u0026 !q.block_state(\u0027custom:south\u0027) \u0026\u0026 q.block_state(\u0027minecraft:cardinal_direction\u0027) == \u0027north\u0027 \u0026\u0026 q.block_state(\u0027minecraft:vertical_half\u0027) == \u0027top\u0027 ",
         "components": {
           "minecraft:geometry": {
             "identifier": "geometry.staircase_outside_corner"
@@ -1255,7 +1257,7 @@
         }
       },
       {
-        "condition": "q.block_state('custom:east') && q.block_state('custom:north') && !q.block_state('custom:west') && !q.block_state('custom:south') && q.block_state('minecraft:cardinal_direction') == 'east' && q.block_state('minecraft:vertical_half') == 'top' ",
+        "condition": "q.block_state(\u0027custom:east\u0027) \u0026\u0026 q.block_state(\u0027custom:north\u0027) \u0026\u0026 !q.block_state(\u0027custom:west\u0027) \u0026\u0026 !q.block_state(\u0027custom:south\u0027) \u0026\u0026 q.block_state(\u0027minecraft:cardinal_direction\u0027) == \u0027east\u0027 \u0026\u0026 q.block_state(\u0027minecraft:vertical_half\u0027) == \u0027top\u0027 ",
         "components": {
           "minecraft:geometry": {
             "identifier": "geometry.staircase_outside_corner"
@@ -1301,7 +1303,7 @@
         }
       },
       {
-        "condition": "q.block_state('custom:east') && q.block_state('custom:north') && !q.block_state('custom:west') && !q.block_state('custom:south') && q.block_state('minecraft:cardinal_direction') == 'north' && q.block_state('minecraft:vertical_half') == 'top' ",
+        "condition": "q.block_state(\u0027custom:east\u0027) \u0026\u0026 q.block_state(\u0027custom:north\u0027) \u0026\u0026 !q.block_state(\u0027custom:west\u0027) \u0026\u0026 !q.block_state(\u0027custom:south\u0027) \u0026\u0026 q.block_state(\u0027minecraft:cardinal_direction\u0027) == \u0027north\u0027 \u0026\u0026 q.block_state(\u0027minecraft:vertical_half\u0027) == \u0027top\u0027 ",
         "components": {
           "minecraft:geometry": {
             "identifier": "geometry.staircase_outside_corner2"
@@ -1347,7 +1349,7 @@
         }
       },
       {
-        "condition": "q.block_state('custom:east') && q.block_state('custom:south') && !q.block_state('custom:west') && !q.block_state('custom:north') && q.block_state('minecraft:cardinal_direction') == 'south' && q.block_state('minecraft:vertical_half') == 'top' ",
+        "condition": "q.block_state(\u0027custom:east\u0027) \u0026\u0026 q.block_state(\u0027custom:south\u0027) \u0026\u0026 !q.block_state(\u0027custom:west\u0027) \u0026\u0026 !q.block_state(\u0027custom:north\u0027) \u0026\u0026 q.block_state(\u0027minecraft:cardinal_direction\u0027) == \u0027south\u0027 \u0026\u0026 q.block_state(\u0027minecraft:vertical_half\u0027) == \u0027top\u0027 ",
         "components": {
           "minecraft:geometry": {
             "identifier": "geometry.staircase_outside_corner"
@@ -1393,7 +1395,7 @@
         }
       },
       {
-        "condition": "q.block_state('custom:east') && q.block_state('custom:south') && !q.block_state('custom:west') && !q.block_state('custom:north') && q.block_state('minecraft:cardinal_direction') == 'east' && q.block_state('minecraft:vertical_half') == 'top' ",
+        "condition": "q.block_state(\u0027custom:east\u0027) \u0026\u0026 q.block_state(\u0027custom:south\u0027) \u0026\u0026 !q.block_state(\u0027custom:west\u0027) \u0026\u0026 !q.block_state(\u0027custom:north\u0027) \u0026\u0026 q.block_state(\u0027minecraft:cardinal_direction\u0027) == \u0027east\u0027 \u0026\u0026 q.block_state(\u0027minecraft:vertical_half\u0027) == \u0027top\u0027 ",
         "components": {
           "minecraft:geometry": {
             "identifier": "geometry.staircase_outside_corner2"
@@ -1439,7 +1441,7 @@
         }
       },
       {
-        "condition": "q.block_state('custom:west') && q.block_state('custom:south') && !q.block_state('custom:east') && !q.block_state('custom:north') && q.block_state('minecraft:cardinal_direction') == 'south' && q.block_state('minecraft:vertical_half') == 'top' ",
+        "condition": "q.block_state(\u0027custom:west\u0027) \u0026\u0026 q.block_state(\u0027custom:south\u0027) \u0026\u0026 !q.block_state(\u0027custom:east\u0027) \u0026\u0026 !q.block_state(\u0027custom:north\u0027) \u0026\u0026 q.block_state(\u0027minecraft:cardinal_direction\u0027) == \u0027south\u0027 \u0026\u0026 q.block_state(\u0027minecraft:vertical_half\u0027) == \u0027top\u0027 ",
         "components": {
           "minecraft:geometry": {
             "identifier": "geometry.staircase_outside_corner2"
@@ -1485,7 +1487,7 @@
         }
       },
       {
-        "condition": "q.block_state('custom:west') && q.block_state('custom:south') && !q.block_state('custom:east') && !q.block_state('custom:north') && q.block_state('minecraft:cardinal_direction') == 'west' && q.block_state('minecraft:vertical_half') == 'top' ",
+        "condition": "q.block_state(\u0027custom:west\u0027) \u0026\u0026 q.block_state(\u0027custom:south\u0027) \u0026\u0026 !q.block_state(\u0027custom:east\u0027) \u0026\u0026 !q.block_state(\u0027custom:north\u0027) \u0026\u0026 q.block_state(\u0027minecraft:cardinal_direction\u0027) == \u0027west\u0027 \u0026\u0026 q.block_state(\u0027minecraft:vertical_half\u0027) == \u0027top\u0027 ",
         "components": {
           "minecraft:geometry": {
             "identifier": "geometry.staircase_outside_corner"
@@ -1531,7 +1533,7 @@
         }
       },
       {
-        "condition": "q.block_state('custom:east') && q.block_state('custom:south') && !q.block_state('custom:west') && !q.block_state('custom:north') && q.block_state('minecraft:cardinal_direction') == 'north' && q.block_state('minecraft:vertical_half') == 'top' ",
+        "condition": "q.block_state(\u0027custom:east\u0027) \u0026\u0026 q.block_state(\u0027custom:south\u0027) \u0026\u0026 !q.block_state(\u0027custom:west\u0027) \u0026\u0026 !q.block_state(\u0027custom:north\u0027) \u0026\u0026 q.block_state(\u0027minecraft:cardinal_direction\u0027) == \u0027north\u0027 \u0026\u0026 q.block_state(\u0027minecraft:vertical_half\u0027) == \u0027top\u0027 ",
         "components": {
           "minecraft:geometry": {
             "identifier": "geometry.staircase_inside_corner"
@@ -1577,7 +1579,7 @@
         }
       },
       {
-        "condition": "q.block_state('custom:east') && q.block_state('custom:south') && !q.block_state('custom:west') && !q.block_state('custom:north') && q.block_state('minecraft:cardinal_direction') == 'west' && q.block_state('minecraft:vertical_half') == 'top' ",
+        "condition": "q.block_state(\u0027custom:east\u0027) \u0026\u0026 q.block_state(\u0027custom:south\u0027) \u0026\u0026 !q.block_state(\u0027custom:west\u0027) \u0026\u0026 !q.block_state(\u0027custom:north\u0027) \u0026\u0026 q.block_state(\u0027minecraft:cardinal_direction\u0027) == \u0027west\u0027 \u0026\u0026 q.block_state(\u0027minecraft:vertical_half\u0027) == \u0027top\u0027 ",
         "components": {
           "minecraft:geometry": {
             "identifier": "geometry.staircase_inside_corner2"
@@ -1623,7 +1625,7 @@
         }
       },
       {
-        "condition": "q.block_state('custom:west') && q.block_state('custom:south') && !q.block_state('custom:east') && !q.block_state('custom:north') && q.block_state('minecraft:cardinal_direction') == 'north' && q.block_state('minecraft:vertical_half') == 'top' ",
+        "condition": "q.block_state(\u0027custom:west\u0027) \u0026\u0026 q.block_state(\u0027custom:south\u0027) \u0026\u0026 !q.block_state(\u0027custom:east\u0027) \u0026\u0026 !q.block_state(\u0027custom:north\u0027) \u0026\u0026 q.block_state(\u0027minecraft:cardinal_direction\u0027) == \u0027north\u0027 \u0026\u0026 q.block_state(\u0027minecraft:vertical_half\u0027) == \u0027top\u0027 ",
         "components": {
           "minecraft:geometry": {
             "identifier": "geometry.staircase_inside_corner2"
@@ -1669,7 +1671,7 @@
         }
       },
       {
-        "condition": "q.block_state('custom:west') && q.block_state('custom:south') && !q.block_state('custom:east') && !q.block_state('custom:north') && q.block_state('minecraft:cardinal_direction') == 'east' && q.block_state('minecraft:vertical_half') == 'top' ",
+        "condition": "q.block_state(\u0027custom:west\u0027) \u0026\u0026 q.block_state(\u0027custom:south\u0027) \u0026\u0026 !q.block_state(\u0027custom:east\u0027) \u0026\u0026 !q.block_state(\u0027custom:north\u0027) \u0026\u0026 q.block_state(\u0027minecraft:cardinal_direction\u0027) == \u0027east\u0027 \u0026\u0026 q.block_state(\u0027minecraft:vertical_half\u0027) == \u0027top\u0027 ",
         "components": {
           "minecraft:geometry": {
             "identifier": "geometry.staircase_inside_corner"
@@ -1715,7 +1717,7 @@
         }
       },
       {
-        "condition": "q.block_state('custom:west') && q.block_state('custom:north') && !q.block_state('custom:east') && !q.block_state('custom:south') && q.block_state('minecraft:cardinal_direction') == 'south' && q.block_state('minecraft:vertical_half') == 'top' ",
+        "condition": "q.block_state(\u0027custom:west\u0027) \u0026\u0026 q.block_state(\u0027custom:north\u0027) \u0026\u0026 !q.block_state(\u0027custom:east\u0027) \u0026\u0026 !q.block_state(\u0027custom:south\u0027) \u0026\u0026 q.block_state(\u0027minecraft:cardinal_direction\u0027) == \u0027south\u0027 \u0026\u0026 q.block_state(\u0027minecraft:vertical_half\u0027) == \u0027top\u0027 ",
         "components": {
           "minecraft:geometry": {
             "identifier": "geometry.staircase_inside_corner"
@@ -1761,7 +1763,7 @@
         }
       },
       {
-        "condition": "q.block_state('custom:west') && q.block_state('custom:north') && !q.block_state('custom:east') && !q.block_state('custom:south') && q.block_state('minecraft:cardinal_direction') == 'east' && q.block_state('minecraft:vertical_half') == 'top' ",
+        "condition": "q.block_state(\u0027custom:west\u0027) \u0026\u0026 q.block_state(\u0027custom:north\u0027) \u0026\u0026 !q.block_state(\u0027custom:east\u0027) \u0026\u0026 !q.block_state(\u0027custom:south\u0027) \u0026\u0026 q.block_state(\u0027minecraft:cardinal_direction\u0027) == \u0027east\u0027 \u0026\u0026 q.block_state(\u0027minecraft:vertical_half\u0027) == \u0027top\u0027 ",
         "components": {
           "minecraft:geometry": {
             "identifier": "geometry.staircase_inside_corner2"
@@ -1807,7 +1809,7 @@
         }
       },
       {
-        "condition": "q.block_state('custom:east') && q.block_state('custom:north') && !q.block_state('custom:west') && !q.block_state('custom:south') && q.block_state('minecraft:cardinal_direction') == 'south' && q.block_state('minecraft:vertical_half') == 'top' ",
+        "condition": "q.block_state(\u0027custom:east\u0027) \u0026\u0026 q.block_state(\u0027custom:north\u0027) \u0026\u0026 !q.block_state(\u0027custom:west\u0027) \u0026\u0026 !q.block_state(\u0027custom:south\u0027) \u0026\u0026 q.block_state(\u0027minecraft:cardinal_direction\u0027) == \u0027south\u0027 \u0026\u0026 q.block_state(\u0027minecraft:vertical_half\u0027) == \u0027top\u0027 ",
         "components": {
           "minecraft:geometry": {
             "identifier": "geometry.staircase_inside_corner2"
@@ -1853,7 +1855,7 @@
         }
       },
       {
-        "condition": "q.block_state('custom:east') && q.block_state('custom:north') && !q.block_state('custom:west') && !q.block_state('custom:south') && q.block_state('minecraft:cardinal_direction') == 'west' && q.block_state('minecraft:vertical_half') == 'top' ",
+        "condition": "q.block_state(\u0027custom:east\u0027) \u0026\u0026 q.block_state(\u0027custom:north\u0027) \u0026\u0026 !q.block_state(\u0027custom:west\u0027) \u0026\u0026 !q.block_state(\u0027custom:south\u0027) \u0026\u0026 q.block_state(\u0027minecraft:cardinal_direction\u0027) == \u0027west\u0027 \u0026\u0026 q.block_state(\u0027minecraft:vertical_half\u0027) == \u0027top\u0027 ",
         "components": {
           "minecraft:geometry": {
             "identifier": "geometry.staircase_inside_corner"
@@ -1901,3 +1903,4 @@
     ]
   }
 }
+

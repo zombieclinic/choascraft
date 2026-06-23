@@ -1,26 +1,26 @@
 {
-    "format_version": "1.26.20",
-    "minecraft:attachable": {
-        "description": {
-            "identifier": "zombie:chaos_wings",
-            "materials": {
-                "enchanted": "entity_alphatest_glint",
-                "default": "entity_alphatest"
-            },
-            "geometry": {
-                "default": "geometry.demon_wing"
-            },
-           "textures": {
-                "default" : "textures/demon/item_mob/chaos_gear",
-                 "enchanted": "textures/misc/enchanted_item_glint"
-            },
-            
-            "render_controllers": [
-                "controller.render.item_default"
-            ],
-             "scripts": {
-                "parent_setup": "variable.chest_layer_visible = 0.0;"
-            }
-        }
+  "format_version": "1.26.20",
+  "minecraft:attachable": {
+    "description": {
+      "identifier": "zombie:chaos_wings",
+      "materials": {
+        "enchanted": "entity_alphatest_glint",
+        "default": "entity_alphatest"
+      },
+      "geometry": {
+        "default": "geometry.demon_wing"
+      },
+      "textures": {
+        "default": "textures/demon/item_mob/chaos_gear",
+        "enchanted": "textures/misc/enchanted_item_glint"
+      },
+      "render_controllers": [
+        "controller.render.item_default"
+      ],
+      "scripts": {
+        "parent_setup": "variable.chest_layer_visible = 0.0;"
+      }
     }
+  }
 }
+

@@ -21,7 +21,6 @@
       "minecraft:destructible_by_mining": {
         "seconds_to_destroy": 0.5
       },
-      "minecraft:loot": "loot_tables/blocks/demon_alter.json",
       "minecraft:geometry": "geometry.demon_alter",
       "minecraft:material_instances": {
         "*": {
@@ -29,7 +28,6 @@
           "render_method": "opaque"
         }
       },
-      "minecraft:map_color": "#8B4513",
       "minecraft:display_name": "Demon Alter",
       "minecraft:flammable": false,
       "minecraft:redstone_conductivity": {
@@ -42,11 +40,14 @@
       "minecraft:tags": [
         "minecraft:is_pickaxe_item_destructible"
       ],
-      "zombie:demon_alter": {}
+      "zombie:demon_alter": {
+        
+      },
+      "minecraft:map_color": "#2F1819"
     },
     "permutations": [
       {
-        "condition": "q.block_state('minecraft:cardinal_direction') == 'north'",
+        "condition": "q.block_state(\u0027minecraft:cardinal_direction\u0027) == \u0027north\u0027",
         "components": {
           "minecraft:transformation": {
             "rotation": [
@@ -58,7 +59,7 @@
         }
       },
       {
-        "condition": "q.block_state('minecraft:cardinal_direction') == 'south'",
+        "condition": "q.block_state(\u0027minecraft:cardinal_direction\u0027) == \u0027south\u0027",
         "components": {
           "minecraft:transformation": {
             "rotation": [
@@ -70,7 +71,7 @@
         }
       },
       {
-        "condition": "q.block_state('minecraft:cardinal_direction') == 'east'",
+        "condition": "q.block_state(\u0027minecraft:cardinal_direction\u0027) == \u0027east\u0027",
         "components": {
           "minecraft:transformation": {
             "rotation": [
@@ -82,7 +83,7 @@
         }
       },
       {
-        "condition": "q.block_state('minecraft:cardinal_direction') == 'west'",
+        "condition": "q.block_state(\u0027minecraft:cardinal_direction\u0027) == \u0027west\u0027",
         "components": {
           "minecraft:transformation": {
             "rotation": [
@@ -96,3 +97,4 @@
     ]
   }
 }
+

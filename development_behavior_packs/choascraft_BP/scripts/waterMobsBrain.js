@@ -1,4 +1,4 @@
-import {world, system, BlockPermutation } from "@minecraft/server";
+﻿import {world, system, BlockPermutation } from "@minecraft/server";
 import {DurabilityHandler} from "./items/durability/durability.js"
 import {EggHatchTickingComponent} from "./blocks/eggs.js"
 import {CustomLeafDecayComponent} from "./blocks/leavesDecay.js"
@@ -12,6 +12,8 @@ import {SporepodGrowthComponent} from "./blocks/sporepodGrowth.js"
 import {CorruptedSpireBreakComponent, CorruptedSpireGrowthComponent} from "./blocks/corruptedSpireGrowth.js"
 import {SporeFoodComponent} from "./items/sporeFood.js"
 import { EmberberryStewFoodComponent } from "./items/emberberryStewFood.js"
+import { HemovialFoodComponent } from "./items/hemovialFood.js"
+import { ChaosFishingRodComponent } from "./items/chaosFishingRod.js"
 import {RawFoodSicknessComponent} from "./items/rawFoodSickness.js"
 import {EyewoodDoorComponent, EyewoodFenceGateToggleComponent, EyewoodSlabPrePlaceComponent, EyewoodTrapdoorToggleComponent} from "./blocks/eyewoodWoodInteractions.js"
 import { ZcButtonComponent, ZcButtonReleaseTickComponent } from "./blocks/buttonInteractions.js";
@@ -22,6 +24,9 @@ import { DemonSteelOreDropComponent } from "./blocks/demonSteelOreDrops.js";
 import { DemonAlterComponent } from "./blocks/demonAlter.js";
 import { CorruptedGrassDropComponent } from "./blocks/corruptedGrassDrops.js";
 import { BloodVineGrowthComponent } from "./blocks/bloodVineGrowth.js";
+import { BloodRootGrowthComponent, BloodRootTickComponent } from "./blocks/bloodRootGrowth.js";
+import { MushroomSpreadComponent } from "./blocks/mushroomSpread.js";
+import { ChaosChestComponent } from "./blocks/chaosChest.js";
 import {infectedAttack} from "./items/infected.js"
 import "./entities/omniusBrain.js"
 import "./entities/zombieDeathAnimations.js"
@@ -31,7 +36,7 @@ import {bearArmorChanceEffect} from "./items/bearattack.js"
 
 
 
-// ——— define your component‐lists ———
+// â€”â€”â€” define your componentâ€lists â€”â€”â€”
 const BLOCK_COMPONENTS = [
   ["zombie:pengiun_egg_hatch", EggHatchTickingComponent],
   ["zombie:decayable_leaves", CustomLeafDecayComponent],
@@ -58,6 +63,10 @@ const BLOCK_COMPONENTS = [
   ["zombie:demon_alter", DemonAlterComponent],
   ["zombie:corrupted_grass_drop", CorruptedGrassDropComponent],
   ["zombie:blood_vine_growth", BloodVineGrowthComponent],
+  ["zombie:blood_root_growth", BloodRootGrowthComponent],
+  ["zombie:blood_root_tick", BloodRootTickComponent],
+  ["zombie:mushroom_spread", MushroomSpreadComponent],
+  ["zombie:chaos_chest", ChaosChestComponent],
   ["arctic:connectedStairs", ConnectedStairsComponent]
 ];
 
@@ -68,7 +77,9 @@ const ITEM_COMPONENTS = [
  ["zombie:abyss_flower_seed_food", AbyssFlowerSeedFoodComponent],
  ["zombie:spore_food", SporeFoodComponent],
  ["zombie:emberberry_stew_food", EmberberryStewFoodComponent],
+ ["zombie:hemovial_food", HemovialFoodComponent],
  ["zombie:raw_food_sickness", RawFoodSicknessComponent],
+ ["zombie:chaos_fishing_rod", ChaosFishingRodComponent],
  ["zombie:bfc_bow_hold", BfcBowHoldComponent]
 ];
 
@@ -108,13 +119,13 @@ system.afterEvents.scriptEventReceive.subscribe((ev) => {
   if (msg === "" || msg === "start") startBuild(player);
   else if (msg === "pause") pauseBuild(player, true);
   else if (msg === "resume") pauseBuild(player, false);
-  else if (msg === "stop") stopBuild("§cZombiecraft mega hub builder stopped.");
+  else if (msg === "stop") stopBuild("Â§cZombiecraft mega hub builder stopped.");
   else if (msg === "status") status(player);
 });
 
 function startBuild(player) {
   if (builder) {
-    player.sendMessage("§cBuilder already running.");
+    player.sendMessage("Â§cBuilder already running.");
     return;
   }
 
@@ -140,22 +151,22 @@ function startBuild(player) {
     runId: undefined
   };
 
-  player.sendMessage("§aZombiecraft MEGA Hub Player-Loader started.");
-  player.sendMessage("§7You will be teleported to each section to load chunks.");
+  player.sendMessage("Â§aZombiecraft MEGA Hub Player-Loader started.");
+  player.sendMessage("Â§7You will be teleported to each section to load chunks.");
   builder.runId = system.runInterval(tick, 1);
 }
 
 function pauseBuild(player, paused) {
-  if (!builder) return player.sendMessage("§7No build running.");
+  if (!builder) return player.sendMessage("Â§7No build running.");
   builder.paused = paused;
-  player.sendMessage(paused ? "§eBuilder paused." : "§aBuilder resumed.");
+  player.sendMessage(paused ? "Â§eBuilder paused." : "Â§aBuilder resumed.");
 }
 
 function status(player) {
-  if (!builder) return player.sendMessage("§7No build running.");
-  player.sendMessage(`§eSection ${builder.sectionIndex + 1}/${builder.sections.length}`);
-  player.sendMessage(`§7State: ${builder.state}`);
-  player.sendMessage(`§7Commands: ${builder.commands.length} | Blocks left: ${Math.max(0, builder.blocks.length - builder.blockIndex)}`);
+  if (!builder) return player.sendMessage("Â§7No build running.");
+  player.sendMessage(`Â§eSection ${builder.sectionIndex + 1}/${builder.sections.length}`);
+  player.sendMessage(`Â§7State: ${builder.state}`);
+  player.sendMessage(`Â§7Commands: ${builder.commands.length} | Blocks left: ${Math.max(0, builder.blocks.length - builder.blockIndex)}`);
 }
 
 function stopBuild(message) {
@@ -177,14 +188,14 @@ function tick() {
     try {
       p.teleport({ x: o.x, y: o.y + 8, z: o.z - 18 }, { dimension: b.dim });
     } catch {}
-    stopBuild("§aZombiecraft MEGA hub complete.");
+    stopBuild("Â§aZombiecraft MEGA hub complete.");
     return;
   }
 
   const section = b.sections[b.sectionIndex];
 
   if (b.state === "teleport") {
-    b.player.sendMessage(`§eMoving to ${b.sectionIndex + 1}/${b.sections.length}: ${section.name}`);
+    b.player.sendMessage(`Â§eMoving to ${b.sectionIndex + 1}/${b.sections.length}: ${section.name}`);
 
     try {
       b.player.teleport(
@@ -212,7 +223,7 @@ function tick() {
 
   if (b.state === "build") {
     if (!b.queued) {
-      b.player.sendMessage(`§bBuilding: ${section.name}`);
+      b.player.sendMessage(`Â§bBuilding: ${section.name}`);
       section.build();
       b.queued = true;
     }
@@ -234,7 +245,7 @@ function tick() {
     }
 
     if (b.commands.length === 0 && b.blockIndex >= b.blocks.length) {
-      b.player.sendMessage(`§aFinished: ${section.name}`);
+      b.player.sendMessage(`Â§aFinished: ${section.name}`);
       b.sectionIndex++;
       b.state = "teleport";
       b.queued = false;
@@ -575,4 +586,13 @@ function tree(x, y, z) {
   qFill(x - 3, y + 9, z - 3, x + 3, y + 11, z + 3, "minecraft:oak_leaves");
   qSet(x, y + 12, z, "minecraft:oak_leaves");
 }
+
+
+
+
+
+
+
+
+
 

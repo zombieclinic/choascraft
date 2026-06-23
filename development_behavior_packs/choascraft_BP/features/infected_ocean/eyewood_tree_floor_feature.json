@@ -1,13 +1,14 @@
 {
-	"format_version": "1.13.0",
-	"minecraft:snap_to_surface_feature": {
-		"description": {
-			"identifier": "zombie:eyewood_tree_floor_feature"
-		},
-		"feature_to_snap": "zombie:eyewood_tree_feature",
-		"vertical_search_range": 80,
-		"surface": "floor",
-		"allow_air_placement": true,
-		"allow_underwater_placement": true
-	}
+  "format_version": "1.13.0",
+  "minecraft:snap_to_surface_feature": {
+    "description": {
+      "identifier": "zombie:eyewood_tree_floor_feature"
+    },
+    "feature_to_snap": "zombie:eyewood_tree_feature",
+    "vertical_search_range": 80,
+    "surface": "floor",
+    "allow_air_placement": true,
+    "allow_underwater_placement": true
+  }
 }
+

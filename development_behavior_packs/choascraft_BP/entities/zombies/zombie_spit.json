@@ -22,7 +22,9 @@
         }
       },
       "despawn": {
-        "minecraft:instant_despawn": {}
+        "minecraft:instant_despawn": {
+          
+        }
       }
     },
     "components": {
@@ -80,7 +82,9 @@
           0
         ]
       },
-      "minecraft:physics": {},
+      "minecraft:physics": {
+        
+      },
       "minecraft:conditional_bandwidth_optimization": {
         "default_values": {
           "max_optimized_distance": 80,
@@ -114,3 +118,4 @@
     }
   }
 }
+

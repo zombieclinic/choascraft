@@ -1,14 +1,23 @@
 {
-	"format_version": "1.26.20",
-	"animations": {
-		"animation.demon_shovel.fpp.idle": {
-			"loop": true,
-			"bones": {
-				"group": {
-					"rotation": [138.05676, 20.19999, 111.78393],
-					"position": [-2.74003, -18.15466, -11.35344]
-				}
-			}
-		}
-	}
+  "format_version": "1.26.20",
+  "animations": {
+    "animation.demon_shovel.fpp.idle": {
+      "loop": true,
+      "bones": {
+        "group": {
+          "rotation": [
+            138.05676,
+            20.19999,
+            111.78393
+          ],
+          "position": [
+            -2.74003,
+            -18.15466,
+            -11.35344
+          ]
+        }
+      }
+    }
+  }
 }
+

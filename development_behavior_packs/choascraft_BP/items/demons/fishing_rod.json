@@ -1,26 +1,46 @@
 {
-    "format_version":  "1.26.20",
-    "minecraft:item":  {
-                           "description":  {
-                                               "identifier":  "zombie:chaos_fishing_rod",
-                                               "menu_category":  {
-                                                                     "category":  "equipment",
-                                                                     "group":  "minecraft:itemGroup.name.chaos"
-                                                                 }
-                                           },
-                           "components":  {
-                                              "minecraft:icon":  "zombie_fishing_rod",
-                                              "minecraft:display_name":  {
-                                                                             "value":  "Choas Rod"
-                                                                         },
-                                              "minecraft:use_modifiers":  {
-                                                                              "movement_modifier":  0,
-                                                                              "use_duration":  20
-                                                                          },
-                                              "minecraft:cooldown":  {
-                                                                         "category":  "chaos_axe",
-                                                                         "duration":  1
-                                                                     }
-                                          }
-                       }
+  "format_version": "1.26.30",
+  "minecraft:item": {
+    "description": {
+      "identifier": "zombie:chaos_fishing_rod",
+      "menu_category": {
+        "category": "equipment",
+        "group": "minecraft:itemGroup.name.chaos"
+      }
+    },
+    "components": {
+      "minecraft:max_stack_size": 1,
+      "minecraft:icon": "zombie_fishing_rod",
+      "minecraft:display_name": {
+        "value": "Chaos Rod"
+      },
+      "minecraft:enchantable": {
+        "slot": "fishing_rod",
+        "value": 5
+      },
+      "minecraft:durability": {
+        "max_durability": 64
+      },
+      "minecraft:repairable": {
+        "repair_items": [
+          {
+            "items": [
+              "minecraft:string",
+              "zombie:chaos_fishing_rod"
+            ],
+            "repair_amount": 16
+          }
+        ]
+      },
+      "minecraft:use_modifiers": {
+        "movement_modifier": 0,
+        "use_duration": 8
+      },
+      "minecraft:cooldown": {
+        "category": "chaos_fishing_rod",
+        "duration": 0.25
+      },
+      "zombie:chaos_fishing_rod": {}
+    }
+  }
 }

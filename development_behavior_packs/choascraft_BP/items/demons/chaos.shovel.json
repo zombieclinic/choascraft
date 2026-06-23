@@ -1,22 +1,23 @@
 {
-    "format_version": "1.26.20",
-    "minecraft:item": {
-        "description": {
-            "identifier": "zombie:chaos_shovel",
-            "menu_category": {
-                "category": "equipment",
-                "group": "minecraft:itemGroup.name.chaos"
-            }
-        },
-        "components": {
-            "minecraft:icon": "zombie_chaos_shovel",
-            "minecraft:display_name": {
-                "value": "Choas Shovel"
-            },
-            "minecraft:use_modifiers": {
-                "movement_modifier": 0,
-                "use_duration": 3600
-            }
-        }
+  "format_version": "1.26.20",
+  "minecraft:item": {
+    "description": {
+      "identifier": "zombie:chaos_shovel",
+      "menu_category": {
+        "category": "equipment",
+        "group": "minecraft:itemGroup.name.chaos"
+      }
+    },
+    "components": {
+      "minecraft:icon": "zombie_chaos_shovel",
+      "minecraft:display_name": {
+        "value": "Chaos Shovel"
+      },
+      "minecraft:use_modifiers": {
+        "movement_modifier": 0,
+        "use_duration": 3600
+      }
     }
+  }
 }
+

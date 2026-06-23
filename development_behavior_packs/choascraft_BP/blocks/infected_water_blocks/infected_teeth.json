@@ -25,10 +25,11 @@
       "minecraft:destructible_by_explosion": {
         "explosion_resistance": 0.6
       },
-      "minecraft:map_color": "#6b6469",
       "minecraft:tags": [
         "minecraft:is_shovel_item_destructible"
-      ]
+      ],
+      "minecraft:map_color": "#322D2D"
     }
   }
 }
+

@@ -1,42 +1,43 @@
 {
-	"format_version": "1.10.0",
-	"minecraft:client_entity": {
-		"description": {
-			"identifier": "zombie:brown_bear",
-			"materials": {
-				"default": "entity_alphatest"
-			},
-			"textures": {
-				"default": "textures/rwmobs/bears/brown_bear"
-			},
-			"geometry": {
-				"default": "geometry.bear"
-			},
-			"render_controllers": [
-				"controller.render.default"
-			],
-			"spawn_egg": {
-				"base_color": "#5b3a25",
-				"overlay_color": "#2b1a10"
-			},
-			"animations": {
-				"controller": "controller.animation.bear",
-				"walk1": "animation.bear.walk",
-				"roar1": "animation.bear.roar",
-				"attack1": "animation.bear.attack",
-				"idle1": "animation.bear.idle",
-				"start_sleep1": "animation.bear.start_sleep",
-				"sleep": "animation.bear.sleep",
-				"end_sleep1": "animation.bear.end_sleep"
-			},
-			"sound_effects": {
-				"roar": "mob.bear.roar"
-			},
-			"scripts": {
-				"animate": [
-					"controller"
-				]
-			}
-		}
-	}
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "zombie:brown_bear",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/rwmobs/bears/brown_bear"
+      },
+      "geometry": {
+        "default": "geometry.bear"
+      },
+      "render_controllers": [
+        "controller.render.default"
+      ],
+      "spawn_egg": {
+        "base_color": "#5b3a25",
+        "overlay_color": "#2b1a10"
+      },
+      "animations": {
+        "controller": "controller.animation.bear",
+        "walk1": "animation.bear.walk",
+        "roar1": "animation.bear.roar",
+        "attack1": "animation.bear.attack",
+        "idle1": "animation.bear.idle",
+        "start_sleep1": "animation.bear.start_sleep",
+        "sleep": "animation.bear.sleep",
+        "end_sleep1": "animation.bear.end_sleep"
+      },
+      "sound_effects": {
+        "roar": "mob.bear.roar"
+      },
+      "scripts": {
+        "animate": [
+          "controller"
+        ]
+      }
+    }
+  }
 }
+

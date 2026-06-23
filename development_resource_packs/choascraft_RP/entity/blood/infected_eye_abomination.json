@@ -1,0 +1,36 @@
+{
+  "format_version": "1.26.20",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "zombie:infected_eye_abomination",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/blood/mob/abomination"
+      },
+      "geometry": {
+        "default": "geometry.infected_eye_abomination"
+      },
+      "animations": {
+        "idle": "animation.infected_eye_abomination.idle",
+        "attack": "animation.infected_eye_abomination.attack",
+        "controller": "controller.animation.infected_eye_abomination",
+        "move": "animation.infected_eye_abomination.move"
+      },
+      "scripts": {
+        "animate": [
+          "controller"
+        ]
+      },
+      "spawn_egg": {
+        "base_color": "#243515",
+        "overlay_color": "#B6D658"
+      },
+      "render_controllers": [
+        "controller.render.default"
+      ]
+    }
+  }
+}
+

@@ -69,7 +69,8 @@
         "zombie:custom_log",
         "log",
         "wood"
-      ]
+      ],
+      "minecraft:map_color": "#56402C"
     },
     "permutations": [
       {
@@ -123,3 +124,4 @@
     ]
   }
 }
+

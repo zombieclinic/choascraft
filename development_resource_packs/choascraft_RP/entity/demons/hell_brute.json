@@ -1,26 +1,39 @@
 {
-    "format_version": "1.26.20",
-    "minecraft:client_entity": {
-        "description": {
-            "identifier": "zombie:hell_brute",
-            "materials": {"default": "entity_alphatest"},
-            "textures": {"default": "textures/demon/item_mob/minion_melee"},
-            "geometry": {"default": "geometry.hell_brute"},
-            "render_controllers": ["controller.render.default"],
-            "spawn_egg": {
-                "base_color": "#ff0000",
-                "overlay_color": "#000000"
-            },
-            "animations": {
-                "idle": "animation.hell_brute_idle",
-                "walk": "animation.hell_brute_walk",
-                "attack_walk": "animation.attack_walk",
-                "attack_1": "animation.hell_brute_attack1",
-                "attack_2": "animation.hell_brute_attack2",
-                "death": "animation.hell_brute_death",
-                "contoller": "controller.animation.hell_brute"
-            },
-            "scripts": {"animate": ["contoller"]}
-        }
+  "format_version": "1.26.20",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "zombie:hell_brute",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/demon/item_mob/minion_melee"
+      },
+      "geometry": {
+        "default": "geometry.hell_brute"
+      },
+      "render_controllers": [
+        "controller.render.default"
+      ],
+      "spawn_egg": {
+        "base_color": "#ff0000",
+        "overlay_color": "#000000"
+      },
+      "animations": {
+        "idle": "animation.hell_brute_idle",
+        "walk": "animation.hell_brute_walk",
+        "attack_walk": "animation.attack_walk",
+        "attack_1": "animation.hell_brute_attack1",
+        "attack_2": "animation.hell_brute_attack2",
+        "death": "animation.hell_brute_death",
+        "contoller": "controller.animation.hell_brute"
+      },
+      "scripts": {
+        "animate": [
+          "contoller"
+        ]
+      }
     }
+  }
 }
+

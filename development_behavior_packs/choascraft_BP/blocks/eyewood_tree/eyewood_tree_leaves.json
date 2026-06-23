@@ -66,14 +66,18 @@
           "render_method": "opaque"
         }
       },
-      "zombie:eyewood_leaves_render": {},
+      "zombie:eyewood_leaves_render": {
+        
+      },
       "minecraft:loot": "loot_tables/blocks/eyewood_tree_leaves.json",
       "minecraft:tags": [
         "zombie:eyewood_tree_leaves",
         "zombie:custom_leaves",
         "leaves",
         "minecraft:is_hoe_item_destructible"
-      ]
+      ],
+      "minecraft:map_color": "#321433"
     }
   }
 }
+

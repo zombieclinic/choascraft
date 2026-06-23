@@ -22,19 +22,6 @@
     },
     "permutations": [
       {
-        "condition": "query.block_state('zombie:growth_stage') == 0 && !query.block_state('zombie:spire_complete')",
-        "components": {
-          "minecraft:tick": {
-            "looping": true,
-            "interval_range": [
-              3600,
-              6000
-            ]
-          },
-          "zombie:corrupted_spire_growth": {}
-        }
-      },
-      {
         "condition": "query.block_state('zombie:growth_stage') == 0",
         "components": {
           "minecraft:geometry": "geometry.zombie_corrupted_spire_0",
@@ -198,7 +185,9 @@
         }
       },
       "minecraft:loot": "loot_tables/blocks/empty.json",
-      "zombie:corrupted_spire_break": {},
+      "zombie:corrupted_spire_break": {
+        
+      },
       "minecraft:destructible_by_mining": {
         "seconds_to_destroy": 2.0
       },
@@ -217,7 +206,19 @@
       "minecraft:light_dampening": 0,
       "minecraft:tags": [
         "minecraft:is_pickaxe_item_destructible"
-      ]
+      ],
+      "minecraft:tick": {
+        "looping": true,
+        "interval_range": [
+          20,
+          40
+        ]
+      },
+      "zombie:corrupted_spire_growth": {
+        
+      },
+      "minecraft:map_color": "#625669"
     }
   }
 }
+

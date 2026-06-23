@@ -15,7 +15,6 @@
       "minecraft:destructible_by_explosion": {
         "explosion_resistance": 0.6
       },
-      "minecraft:map_color": "#556B2F",
       "minecraft:geometry": "minecraft:geometry.full_block",
       "minecraft:material_instances": {
         "*": {
@@ -34,7 +33,9 @@
       "minecraft:redstone_conductivity": {
         "allows_wire_to_step_down": true,
         "redstone_conductor": true
-      }
+      },
+      "minecraft:map_color": "#72523C"
     }
   }
 }
+

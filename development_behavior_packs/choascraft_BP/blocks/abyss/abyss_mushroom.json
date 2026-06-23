@@ -66,10 +66,28 @@
         ]
       },
       "minecraft:light_dampening": 0,
-      "minecraft:replaceable": {},
+      "minecraft:replaceable": {
+        
+      },
       "minecraft:tags": [
         "plant"
-      ]
+      ],
+      "minecraft:map_color": "#5F2843",
+      "zombie:mushroom_spread": {
+        "chance": 0.2,
+        "spread_radius": 1,
+        "valid_base_blocks": [
+          "minecraft:sand",
+          "minecraft:gravel",
+          "minecraft:clay",
+          "minecraft:dirt",
+          "zombie:infected_grass_block",
+          "zombie:infected_gravel",
+          "zombie:infected_sand",
+          "zombie:infected_stone"
+        ]
+      }
     }
   }
 }
+

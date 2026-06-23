@@ -44,7 +44,9 @@
     },
     "components": {
       "minecraft:display_name": "Redwood Stairs",
-      "arctic:connectedStairs": {},
+      "arctic:connectedStairs": {
+        
+      },
       "minecraft:material_instances": {
         "*": {
           "texture": "redwood_planks",
@@ -87,7 +89,8 @@
         "wood",
         "custom:connected_stairs",
         "minecraft:diamond_tier_destructible"
-      ]
+      ],
+      "minecraft:map_color": "#5C2415"
     },
     "permutations": [
       {
@@ -1900,3 +1903,4 @@
     ]
   }
 }
+

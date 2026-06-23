@@ -1,32 +1,33 @@
-﻿{
-    "format_version":  "1.20.10",
-    "minecraft:recipe_shaped":  {
-                                    "description":  {
-                                                        "identifier":  "zombie:flesh_stairs_reversed"
-                                                    },
-                                    "tags":  [
-                                                 "crafting_table"
-                                             ],
-                                    "pattern":  [
-                                                    "  #",
-                                                    " ##",
-                                                    "###"
-                                                ],
-                                    "key":  {
-                                                "#":  {
-                                                          "item":  "zombie:flesh_planks"
-                                                      }
-                                            },
-                                    "result":  [
-                                                   {
-                                                       "count":  4,
-                                                       "item":  "zombie:flesh_stairs"
-                                                   }
-                                               ],
-                                    "unlock":  [
-                                                   {
-                                                       "item":  "zombie:flesh_planks"
-                                                   }
-                                               ]
-                                }
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "zombie:flesh_stairs_reversed"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "  #",
+      " ##",
+      "###"
+    ],
+    "key": {
+      "#": {
+        "item": "zombie:flesh_planks"
+      }
+    },
+    "result": [
+      {
+        "count": 4,
+        "item": "zombie:flesh_stairs"
+      }
+    ],
+    "unlock": [
+      {
+        "item": "zombie:flesh_planks"
+      }
+    ]
+  }
 }
+

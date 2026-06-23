@@ -1,8 +1,9 @@
 {
-	"format_version": "1.16.100",
-	"minecraft:texture_set": {
-		"color": "tumor_leaves",
-		"metalness_emissive_roughness": "tumor_leaves_mer",
-		"normal": "tumor_leaves_normal"
-	}
+  "format_version": "1.16.100",
+  "minecraft:texture_set": {
+    "color": "tumor_leaves",
+    "metalness_emissive_roughness": "tumor_leaves_mer",
+    "normal": "tumor_leaves_normal"
+  }
 }
+

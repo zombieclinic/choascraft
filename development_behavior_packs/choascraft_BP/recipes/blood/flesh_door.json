@@ -1,32 +1,33 @@
-﻿{
-    "format_version":  "1.20.10",
-    "minecraft:recipe_shaped":  {
-                                    "description":  {
-                                                        "identifier":  "zombie:flesh_door"
-                                                    },
-                                    "tags":  [
-                                                 "crafting_table"
-                                             ],
-                                    "pattern":  [
-                                                    "##",
-                                                    "##",
-                                                    "##"
-                                                ],
-                                    "key":  {
-                                                "#":  {
-                                                          "item":  "zombie:flesh_planks"
-                                                      }
-                                            },
-                                    "result":  [
-                                                   {
-                                                       "count":  3,
-                                                       "item":  "zombie:flesh_door"
-                                                   }
-                                               ],
-                                    "unlock":  [
-                                                   {
-                                                       "item":  "zombie:flesh_planks"
-                                                   }
-                                               ]
-                                }
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "zombie:flesh_door"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "##",
+      "##",
+      "##"
+    ],
+    "key": {
+      "#": {
+        "item": "zombie:flesh_planks"
+      }
+    },
+    "result": [
+      {
+        "count": 3,
+        "item": "zombie:flesh_door"
+      }
+    ],
+    "unlock": [
+      {
+        "item": "zombie:flesh_planks"
+      }
+    ]
+  }
 }
+

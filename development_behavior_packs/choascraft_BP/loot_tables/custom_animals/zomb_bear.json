@@ -1,77 +1,78 @@
 {
-    "pools":  [
-                  {
-                      "rolls":  1,
-                      "entries":  [
-                                      {
-                                          "type":  "item",
-                                          "name":  "zombie:bear_rotten_meat",
-                                          "weight":  1,
-                                          "functions":  [
-                                                            {
-                                                                "function":  "set_count",
-                                                                "count":  {
-                                                                              "min":  1,
-                                                                              "max":  3
-                                                                          }
-                                                            }
-                                                        ]
-                                      }
-                                  ]
-                  },
-                  {
-                      "rolls":  1,
-                      "entries":  [
-                                      {
-                                          "type":  "item",
-                                          "name":  "zombie:bear_claw_item",
-                                          "weight":  1,
-                                          "functions":  [
-                                                            {
-                                                                "function":  "set_count",
-                                                                "count":  {
-                                                                              "min":  0,
-                                                                              "max":  2
-                                                                          }
-                                                            }
-                                                        ]
-                                      }
-                                  ]
-                  },
-                  {
-                      "conditions":  [
-                                         {
-                                             "condition":  "random_chance",
-                                             "chance":  0.08
-                                         }
-                                     ],
-                      "rolls":  1,
-                      "entries":  [
-                                      {
-                                          "type":  "item",
-                                          "name":  "minecraft:written_book",
-                                          "functions":  [
-                                                            {
-                                                                "function":  "set_book_contents",
-                                                                "author":  "Choascraft",
-                                                                "title":  "Zombie Bear Notes",
-                                                                "pages":  [
-                                                                              "Zombie Bear Notes\n\nA Choascraft guide for zombie bear lore, danger, drops, and how their remains fit bear crafting.",
-                                                                              "Lore\n\nSome redwood bears do not return to the soil. Infection holds the muscle, dulls the hunger, and leaves only the charge.",
-                                                                              "Fact 1\n\nReal bears rely heavily on smell. A zombie bear keeps the shape of that hunter, but the instinct is bent by rot.",
-                                                                              "Fact 2\n\nA sick or starving predator is more dangerous because its behavior becomes harder to read.",
-                                                                              "Choascraft Zombie Bears\n\nZombie brown and zombie black bears use this loot table. They are hostile redwood threats.",
-                                                                              "Combat\n\nTreat zombie bears like heavy melee enemies. They are not tameable and should not be handled like normal bears.",
-                                                                              "Drops\n\nZombie bears drop Bear Rotten Meat and Bear Claw items.",
-                                                                              "Rotten Meat\n\nBear Rotten Meat is the corrupted food drop. Keep it separate from Bear Raw Meat and Bear Cooked Meat.",
-                                                                              "Bear Claws\n\nBear Claw items still matter. Use them in bear armor and claw recipes or as repair material for bear equipment.",
-                                                                              "Gear Link\n\nNormal bear fur comes from brown and black bears. Zombie bears mainly provide rotten meat and claws.",
-                                                                              "Redwood Warning\n\nWhen a bear does not breathe but still runs, the forest has already lost that fight."
-                                                                          ]
-                                                            }
-                                                        ]
-                                      }
-                                  ]
-                  }
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "zombie:bear_rotten_meat",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 3
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "zombie:bear_claw_item",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 0,
+                "max": 2
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "conditions": [
+        {
+          "condition": "random_chance",
+          "chance": 0.08
+        }
+      ],
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:written_book",
+          "functions": [
+            {
+              "function": "set_book_contents",
+              "author": "Choascraft",
+              "title": "Zombie Bear Notes",
+              "pages": [
+                "Zombie Bear Notes\n\nA Choascraft guide for zombie bear lore, danger, drops, and how their remains fit bear crafting.",
+                "Lore\n\nSome redwood bears do not return to the soil. Infection holds the muscle, dulls the hunger, and leaves only the charge.",
+                "Fact 1\n\nReal bears rely heavily on smell. A zombie bear keeps the shape of that hunter, but the instinct is bent by rot.",
+                "Fact 2\n\nA sick or starving predator is more dangerous because its behavior becomes harder to read.",
+                "Choascraft Zombie Bears\n\nZombie brown and zombie black bears use this loot table. They are hostile redwood threats.",
+                "Combat\n\nTreat zombie bears like heavy melee enemies. They are not tameable and should not be handled like normal bears.",
+                "Drops\n\nZombie bears drop Bear Rotten Meat and Bear Claw items.",
+                "Rotten Meat\n\nBear Rotten Meat is the corrupted food drop. Keep it separate from Bear Raw Meat and Bear Cooked Meat.",
+                "Bear Claws\n\nBear Claw items still matter. Use them in bear armor and claw recipes or as repair material for bear equipment.",
+                "Gear Link\n\nNormal bear fur comes from brown and black bears. Zombie bears mainly provide rotten meat and claws.",
+                "Redwood Warning\n\nWhen a bear does not breathe but still runs, the forest has already lost that fight."
               ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
 }
+

@@ -14,7 +14,6 @@
       "minecraft:destructible_by_mining": {
         "seconds_to_destroy": 0.5
       },
-      "minecraft:map_color": "#8B4513",
       "minecraft:display_name": "Hellfire Spike",
       "minecraft:flammable": false,
       "minecraft:redstone_conductivity": {
@@ -45,7 +44,9 @@
       },
       "minecraft:tags": [
         "minecraft:is_pickaxe_item_destructible"
-      ]
+      ],
+      "minecraft:map_color": "#1B1B1F"
     }
   }
 }
+

@@ -1,25 +1,26 @@
 {
-	"format_version": "1.10.0",
-	"minecraft:attachable": {
-		"description": {
-			"identifier": "zombie:sunking_captain_boots",
-			"render_controllers": [
-				"controller.render.armor"
-			],
-			"materials": {
-				"default": "entity_alphatest",
-				"enchanted": "entity_alphatest_glint"
-			},
-			"textures": {
-				"default": "textures/armor/sunkingcaptains/boots/boots",
-				"enchanted": "textures/misc/enchanted_item_glint"
-			},
-			"geometry": {
-				"default": "geometry.sunking_boots"
-			},
-			"scripts": {
-				"parent_setup": "variable.boot_layer_visible = 0.0;"
-			}
-		}
-	}
+  "format_version": "1.10.0",
+  "minecraft:attachable": {
+    "description": {
+      "identifier": "zombie:sunking_captain_boots",
+      "render_controllers": [
+        "controller.render.armor"
+      ],
+      "materials": {
+        "default": "entity_alphatest",
+        "enchanted": "entity_alphatest_glint"
+      },
+      "textures": {
+        "default": "textures/armor/sunkingcaptains/boots/boots",
+        "enchanted": "textures/misc/enchanted_item_glint"
+      },
+      "geometry": {
+        "default": "geometry.sunking_boots"
+      },
+      "scripts": {
+        "parent_setup": "variable.boot_layer_visible = 0.0;"
+      }
+    }
+  }
 }
+

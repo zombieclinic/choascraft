@@ -114,7 +114,9 @@
         "log",
         "wood",
         "minecraft:is_axe_item_destructible"
-      ]
+      ],
+      "minecraft:map_color": "#371F2C"
     }
   }
 }
+

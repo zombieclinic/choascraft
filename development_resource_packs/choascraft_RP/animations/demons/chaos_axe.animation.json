@@ -1,265 +1,818 @@
 {
-	"format_version": "1.26.20",
-	"animations": {
-		"animation.chaos_axe.ffp": {
-			"override_previous_animation": false,
-			"blend_weight": 1,
-			"loop": true,
-			"bones": {
-				"Weapon": {
-					"rotation": [26.44013, 62.19203, -13.03309],
-					"position": [-8.66625, -10.92398, 25.4276]
-				}
-			}
-		},
-		"animation.fpp_swing_melee": {
-			"loop": "hold_on_last_frame",
-			"animation_length": 0.4667,
-			"override_previous_animation": true,
-			"bones": {
-				"particle": {
-					"rotation": [-27.5, 0, -177.5],
-					"position": [0, 22, 0]
-				},
-				"fpp": {
-					"rotation": [0, 180, 0]
-				},
-				"Weapon": {
-					"rotation": {
-						"0.0": [26.44013, 62.19203, -13.03309],
-						"0.0667": [62.64171, -34.88557, -38.26872],
-						"0.2333": [61.21126, -31.09151, -46.58638],
-						"0.3333": [25.90506, -26.28432, -28.74489],
-						"0.4667": [0, 0, 0]
-					},
-					"position": {
-						"0.0": [-8.66625, -10.92398, 25.4276],
-						"0.0667": [12.87476, -0.33847, -10.58187],
-						"0.3333": [-14.04761, -17.69659, 41.20942],
-						"0.4667": [400, 0, 0]
-					},
-					"scale": 1
-				}
-			},
-			"particle_effects": {
-				"0.0333": {
-					"effect": "chaos",
-					"locator": "locator"
-				}
-			}
-		},
-		"animation.tpp_axe_swing": {
-			"animation_length": 0.8,
-			"bones": {
-				"particle": {
-					"rotation": [-27.5, 0, -177.5],
-					"position": [0, 22, 0]
-				},
-				"bone": {
-					"rotation": {
-						"0.0": [0, 0, 0],
-						"0.0667": [0, 0, 0],
-						"0.2": [0, 0, 0],
-						"0.3": [0, 0, 0],
-						"0.4667": [0, 0, 0],
-						"0.7": [0, 0, 0],
-						"0.8": [0, 0, 0]
-					},
-					"position": {
-						"0.0": [0, 0, 0],
-						"0.0667": [0, 0, 0],
-						"0.2": [0, 0, 0],
-						"0.3": [0, 0, 0],
-						"0.4667": [0, 0, 0],
-						"0.7": [0, 0, 0],
-						"0.8": [0, 0, 0]
-					}
-				},
-				"root": {
-					"rotation": {
-						"0.0": [0, 0, 0],
-						"0.0667": [0, "v.is_first_person?0:-19.75", 0],
-						"0.2": [0, "v.is_first_person?0:26.25", 0],
-						"0.3": [0, "v.is_first_person?0:35.75", 0],
-						"0.4667": [0, "v.is_first_person?0:21", 0],
-						"0.7": [0, "v.is_first_person?0:2.1", 0],
-						"0.8": [0, 0, 0]
-					},
-					"position": {
-						"0.0": [0, 0, 0],
-						"0.0667": [0, 0, 0],
-						"0.2": [0, "v.is_first_person?0:-1.875", 0],
-						"0.3": [0, "v.is_first_person?0:-1.395", 0],
-						"0.4667": [0, "v.is_first_person?0:-1.9", 0],
-						"0.7": [0, "v.is_first_person?0:-0.19", 0],
-						"0.8": [0, 0, 0]
-					}
-				},
-				"waist": {
-					"rotation": {
-						"0.0": [0, 0, 0],
-						"0.0667": ["v.is_first_person?0:-7.25", "v.is_first_person?0:-15", "v.is_first_person?0:1"],
-						"0.1333": ["v.is_first_person?0:23.62", "v.is_first_person?0:-12.25", "v.is_first_person?0:-0.5"],
-						"0.2": ["v.is_first_person?0:18.5", "v.is_first_person?0:6", "v.is_first_person?0:7.5"],
-						"0.3": ["v.is_first_person?0:20.25", "v.is_first_person?0:10.25", "v.is_first_person?0:13"],
-						"0.4667": ["v.is_first_person?0:15.25", "v.is_first_person?0:10.25", "v.is_first_person?0:7.75"],
-						"0.7": ["v.is_first_person?0:1.53", "v.is_first_person?0:1.03", "v.is_first_person?0:0.77"],
-						"0.8": [0, 0, 0]
-					},
-					"position": {
-						"0.0": [0, 0, 0],
-						"0.0667": ["v.is_first_person?0:0.44546", "v.is_first_person?0:-0.0815", "v.is_first_person?0:0.04757"],
-						"0.2": ["v.is_first_person?0:0.1443", "v.is_first_person?0:-0.40505", "v.is_first_person?0:0.13271"],
-						"0.3": ["v.is_first_person?0:0.14", "v.is_first_person?0:-0.41", "v.is_first_person?0:0.13"],
-						"0.4667": ["v.is_first_person?0:0.14", "v.is_first_person?0:-0.41", "v.is_first_person?0:0.13"],
-						"0.7": ["v.is_first_person?0:0.01", "v.is_first_person?0:-0.04", "v.is_first_person?0:0.01"],
-						"0.8": [0, 0, 0]
-					}
-				},
-				"leftArm": {
-					"rotation": {
-						"0.0": [0, 0, 0],
-						"0.0667": ["v.is_first_person?0:-29.75", 0, "v.is_first_person?0:-58.5"],
-						"0.1333": ["v.is_first_person?0:17.75", 0, "v.is_first_person?0:-75"],
-						"0.2": ["v.is_first_person?0:36.75", 0, "v.is_first_person?0:-58.5"],
-						"0.3": ["v.is_first_person?0:48.5", 0, "v.is_first_person?0:-62.25"],
-						"0.4667": ["v.is_first_person?0:29.25", "v.is_first_person?0:-13.25", "v.is_first_person?0:-71.75"],
-						"0.7": ["v.is_first_person?0:2.93", "v.is_first_person?0:-1.32", "v.is_first_person?0:-7.17"],
-						"0.8": [0, 0, 0]
-					},
-					"position": {
-						"0.0": [0, 0, 0],
-						"0.0667": ["v.is_first_person?0:0.0845", "v.is_first_person?0:-0.05178", "v.is_first_person?0:-1.43881"],
-						"0.2": ["v.is_first_person?0:0.47373", "v.is_first_person?0:-0.29128", "v.is_first_person?0:0.42461"],
-						"0.3": ["v.is_first_person?0:0.47", "v.is_first_person?0:-0.29", "v.is_first_person?0:0.42"],
-						"0.4667": ["v.is_first_person?0:0.47", "v.is_first_person?0:-0.29", "v.is_first_person?0:0.42"],
-						"0.7": ["v.is_first_person?0:0.05", "v.is_first_person?0:-0.03", "v.is_first_person?0:0.04"],
-						"0.8": [0, 0, 0]
-					}
-				},
-				"rightArm": {
-					"rotation": {
-						"0.0": [0, 0, 0],
-						"0.0667": ["v.is_first_person?0:-114.75", "v.is_first_person?0:-14.75", "v.is_first_person?0:60"],
-						"0.1333": ["v.is_first_person?0:-99", "v.is_first_person?0:13", "v.is_first_person?0:89.25"],
-						"0.2": ["v.is_first_person?0:33.75", "v.is_first_person?0:1.75", "v.is_first_person?0:95"],
-						"0.3": ["v.is_first_person?0:30.75", "v.is_first_person?0:3", "v.is_first_person?0:93.5"],
-						"0.4667": ["v.is_first_person?0:50.75", "v.is_first_person?0:-2", "v.is_first_person?0:95.75"],
-						"0.7": ["v.is_first_person?0:5.07", "v.is_first_person?0:-0.2", "v.is_first_person?0:9.58"],
-						"0.8": [0, 0, 0]
-					},
-					"position": {
-						"0.0": [0, 0, 0],
-						"0.0667": ["v.is_first_person?0:1.12865", "v.is_first_person?0:0.46174", "v.is_first_person?0:-4.16237"],
-						"0.2": ["v.is_first_person?0:-1.27304", "v.is_first_person?0:0.47259", "v.is_first_person?0:-2.03062"],
-						"0.3": ["v.is_first_person?0:-1.91542", "v.is_first_person?0:0.28839", "v.is_first_person?0:2.18075"],
-						"0.4667": ["v.is_first_person?0:0.11683", "v.is_first_person?0:-0.00607", "v.is_first_person?0:0.16222"],
-						"0.7": ["v.is_first_person?0:0.01", 0, "v.is_first_person?0:0.02"],
-						"0.8": [0, 0, 0]
-					}
-				},
-				"rightItem": {
-					"rotation": {
-						"0.0": [0, 0, 0],
-						"0.0667": [0, 0, 0],
-						"0.1333": ["v.is_first_person?0:80.25", 0, 0],
-						"0.2": ["v.is_first_person?0:58.5", 0, 0],
-						"0.3": ["v.is_first_person?0:58.5", 0, 0],
-						"0.4667": ["v.is_first_person?0:58.5", 0, 0],
-						"0.7": ["v.is_first_person?0:5.85", 0, 0],
-						"0.8": [0, 0, 0]
-					},
-					"position": {
-						"0.0": [0, 0, 0],
-						"0.0667": [0, 0, 0],
-						"0.2": [0, 0, 0],
-						"0.3": [0, 0, 0],
-						"0.4667": [0, 0, 0],
-						"0.7": [0, 0, 0],
-						"0.8": [0, 0, 0]
-					}
-				},
-				"Weapon": {
-					"rotation": {
-						"0.0": [0, 0, 0],
-						"0.0667": [0, 0, 0],
-						"0.2": [0, 0, 0],
-						"0.3": [0, 0, 0],
-						"0.4667": [0, 0, 0],
-						"0.7": [0, 0, 0],
-						"0.8": [0, 0, 0]
-					}
-				}
-			},
-			"particle_effects": {
-				"0.0333": {
-					"effect": "chaos",
-					"locator": "locator"
-				}
-			}
-		},
-		"animation.tpp_axe_particle": {
-			"animation_length": 0.8,
-			"bones": {
-				"particle": {
-					"rotation": [-27.5, 0, -177.5],
-					"position": [0, 22, 0]
-				},
-				"bone": {
-					"rotation": {
-						"0.0": [0, 0, 0],
-						"0.0667": [0, 0, 0],
-						"0.2": [0, 0, 0],
-						"0.3": [0, 0, 0],
-						"0.4667": [0, 0, 0],
-						"0.7": [0, 0, 0],
-						"0.8": [0, 0, 0]
-					},
-					"position": {
-						"0.0": [0, 0, 0],
-						"0.0667": [0, 0, 0],
-						"0.2": [0, 0, 0],
-						"0.3": [0, 0, 0],
-						"0.4667": [0, 0, 0],
-						"0.7": [0, 0, 0],
-						"0.8": [0, 0, 0]
-					}
-				},
-				"Weapon": {
-					"rotation": {
-						"0.0": [0, 0, 0],
-						"0.0667": [0, 0, 0],
-						"0.2": [0, 0, 0],
-						"0.3": [0, 0, 0],
-						"0.4667": [0, 0, 0],
-						"0.7": [0, 0, 0],
-						"0.8": [0, 0, 0]
-					}
-				}
-			},
-			"particle_effects": {
-				"0.0333": {
-					"effect": "chaos",
-					"locator": "locator"
-				}
-			}
-		},
-		"animation.chaos_axe.fpp_melee_to_idle": {
-			"loop": "hold_on_last_frame",
-			"animation_length": 0.25,
-			"bones": {
-				"Weapon": {
-					"rotation": {
-						"0.0": [0, 0, 0],
-						"0.25": [26.44013, 62.19203, -13.03309]
-					},
-					"position": {
-						"0.0": [0, 0, 0],
-						"0.25": [-8.66625, -10.92398, 25.4276]
-					},
-					"scale": 1
-				}
-			}
-		}
-	}
+  "format_version": "1.26.20",
+  "animations": {
+    "animation.chaos_axe.ffp": {
+      "override_previous_animation": false,
+      "blend_weight": 1,
+      "loop": true,
+      "bones": {
+        "Weapon": {
+          "rotation": [
+            26.44013,
+            62.19203,
+            -13.03309
+          ],
+          "position": [
+            -8.66625,
+            -10.92398,
+            25.4276
+          ]
+        }
+      }
+    },
+    "animation.fpp_swing_melee": {
+      "loop": "hold_on_last_frame",
+      "animation_length": 0.4667,
+      "override_previous_animation": true,
+      "bones": {
+        "particle": {
+          "rotation": [
+            -27.5,
+            0,
+            -177.5
+          ],
+          "position": [
+            0,
+            22,
+            0
+          ]
+        },
+        "fpp": {
+          "rotation": [
+            0,
+            180,
+            0
+          ]
+        },
+        "Weapon": {
+          "rotation": {
+            "0.0": [
+              26.44013,
+              62.19203,
+              -13.03309
+            ],
+            "0.0667": [
+              62.64171,
+              -34.88557,
+              -38.26872
+            ],
+            "0.2333": [
+              61.21126,
+              -31.09151,
+              -46.58638
+            ],
+            "0.3333": [
+              25.90506,
+              -26.28432,
+              -28.74489
+            ],
+            "0.4667": [
+              0,
+              0,
+              0
+            ]
+          },
+          "position": {
+            "0.0": [
+              -8.66625,
+              -10.92398,
+              25.4276
+            ],
+            "0.0667": [
+              12.87476,
+              -0.33847,
+              -10.58187
+            ],
+            "0.3333": [
+              -14.04761,
+              -17.69659,
+              41.20942
+            ],
+            "0.4667": [
+              400,
+              0,
+              0
+            ]
+          },
+          "scale": 1
+        }
+      },
+      "particle_effects": {
+        "0.0333": {
+          "effect": "chaos",
+          "locator": "locator"
+        }
+      }
+    },
+    "animation.tpp_axe_swing": {
+      "animation_length": 0.8,
+      "bones": {
+        "particle": {
+          "rotation": [
+            -27.5,
+            0,
+            -177.5
+          ],
+          "position": [
+            0,
+            22,
+            0
+          ]
+        },
+        "bone": {
+          "rotation": {
+            "0.0": [
+              0,
+              0,
+              0
+            ],
+            "0.0667": [
+              0,
+              0,
+              0
+            ],
+            "0.2": [
+              0,
+              0,
+              0
+            ],
+            "0.3": [
+              0,
+              0,
+              0
+            ],
+            "0.4667": [
+              0,
+              0,
+              0
+            ],
+            "0.7": [
+              0,
+              0,
+              0
+            ],
+            "0.8": [
+              0,
+              0,
+              0
+            ]
+          },
+          "position": {
+            "0.0": [
+              0,
+              0,
+              0
+            ],
+            "0.0667": [
+              0,
+              0,
+              0
+            ],
+            "0.2": [
+              0,
+              0,
+              0
+            ],
+            "0.3": [
+              0,
+              0,
+              0
+            ],
+            "0.4667": [
+              0,
+              0,
+              0
+            ],
+            "0.7": [
+              0,
+              0,
+              0
+            ],
+            "0.8": [
+              0,
+              0,
+              0
+            ]
+          }
+        },
+        "root": {
+          "rotation": {
+            "0.0": [
+              0,
+              0,
+              0
+            ],
+            "0.0667": [
+              0,
+              "v.is_first_person?0:-19.75",
+              0
+            ],
+            "0.2": [
+              0,
+              "v.is_first_person?0:26.25",
+              0
+            ],
+            "0.3": [
+              0,
+              "v.is_first_person?0:35.75",
+              0
+            ],
+            "0.4667": [
+              0,
+              "v.is_first_person?0:21",
+              0
+            ],
+            "0.7": [
+              0,
+              "v.is_first_person?0:2.1",
+              0
+            ],
+            "0.8": [
+              0,
+              0,
+              0
+            ]
+          },
+          "position": {
+            "0.0": [
+              0,
+              0,
+              0
+            ],
+            "0.0667": [
+              0,
+              0,
+              0
+            ],
+            "0.2": [
+              0,
+              "v.is_first_person?0:-1.875",
+              0
+            ],
+            "0.3": [
+              0,
+              "v.is_first_person?0:-1.395",
+              0
+            ],
+            "0.4667": [
+              0,
+              "v.is_first_person?0:-1.9",
+              0
+            ],
+            "0.7": [
+              0,
+              "v.is_first_person?0:-0.19",
+              0
+            ],
+            "0.8": [
+              0,
+              0,
+              0
+            ]
+          }
+        },
+        "waist": {
+          "rotation": {
+            "0.0": [
+              0,
+              0,
+              0
+            ],
+            "0.0667": [
+              "v.is_first_person?0:-7.25",
+              "v.is_first_person?0:-15",
+              "v.is_first_person?0:1"
+            ],
+            "0.1333": [
+              "v.is_first_person?0:23.62",
+              "v.is_first_person?0:-12.25",
+              "v.is_first_person?0:-0.5"
+            ],
+            "0.2": [
+              "v.is_first_person?0:18.5",
+              "v.is_first_person?0:6",
+              "v.is_first_person?0:7.5"
+            ],
+            "0.3": [
+              "v.is_first_person?0:20.25",
+              "v.is_first_person?0:10.25",
+              "v.is_first_person?0:13"
+            ],
+            "0.4667": [
+              "v.is_first_person?0:15.25",
+              "v.is_first_person?0:10.25",
+              "v.is_first_person?0:7.75"
+            ],
+            "0.7": [
+              "v.is_first_person?0:1.53",
+              "v.is_first_person?0:1.03",
+              "v.is_first_person?0:0.77"
+            ],
+            "0.8": [
+              0,
+              0,
+              0
+            ]
+          },
+          "position": {
+            "0.0": [
+              0,
+              0,
+              0
+            ],
+            "0.0667": [
+              "v.is_first_person?0:0.44546",
+              "v.is_first_person?0:-0.0815",
+              "v.is_first_person?0:0.04757"
+            ],
+            "0.2": [
+              "v.is_first_person?0:0.1443",
+              "v.is_first_person?0:-0.40505",
+              "v.is_first_person?0:0.13271"
+            ],
+            "0.3": [
+              "v.is_first_person?0:0.14",
+              "v.is_first_person?0:-0.41",
+              "v.is_first_person?0:0.13"
+            ],
+            "0.4667": [
+              "v.is_first_person?0:0.14",
+              "v.is_first_person?0:-0.41",
+              "v.is_first_person?0:0.13"
+            ],
+            "0.7": [
+              "v.is_first_person?0:0.01",
+              "v.is_first_person?0:-0.04",
+              "v.is_first_person?0:0.01"
+            ],
+            "0.8": [
+              0,
+              0,
+              0
+            ]
+          }
+        },
+        "leftArm": {
+          "rotation": {
+            "0.0": [
+              0,
+              0,
+              0
+            ],
+            "0.0667": [
+              "v.is_first_person?0:-29.75",
+              0,
+              "v.is_first_person?0:-58.5"
+            ],
+            "0.1333": [
+              "v.is_first_person?0:17.75",
+              0,
+              "v.is_first_person?0:-75"
+            ],
+            "0.2": [
+              "v.is_first_person?0:36.75",
+              0,
+              "v.is_first_person?0:-58.5"
+            ],
+            "0.3": [
+              "v.is_first_person?0:48.5",
+              0,
+              "v.is_first_person?0:-62.25"
+            ],
+            "0.4667": [
+              "v.is_first_person?0:29.25",
+              "v.is_first_person?0:-13.25",
+              "v.is_first_person?0:-71.75"
+            ],
+            "0.7": [
+              "v.is_first_person?0:2.93",
+              "v.is_first_person?0:-1.32",
+              "v.is_first_person?0:-7.17"
+            ],
+            "0.8": [
+              0,
+              0,
+              0
+            ]
+          },
+          "position": {
+            "0.0": [
+              0,
+              0,
+              0
+            ],
+            "0.0667": [
+              "v.is_first_person?0:0.0845",
+              "v.is_first_person?0:-0.05178",
+              "v.is_first_person?0:-1.43881"
+            ],
+            "0.2": [
+              "v.is_first_person?0:0.47373",
+              "v.is_first_person?0:-0.29128",
+              "v.is_first_person?0:0.42461"
+            ],
+            "0.3": [
+              "v.is_first_person?0:0.47",
+              "v.is_first_person?0:-0.29",
+              "v.is_first_person?0:0.42"
+            ],
+            "0.4667": [
+              "v.is_first_person?0:0.47",
+              "v.is_first_person?0:-0.29",
+              "v.is_first_person?0:0.42"
+            ],
+            "0.7": [
+              "v.is_first_person?0:0.05",
+              "v.is_first_person?0:-0.03",
+              "v.is_first_person?0:0.04"
+            ],
+            "0.8": [
+              0,
+              0,
+              0
+            ]
+          }
+        },
+        "rightArm": {
+          "rotation": {
+            "0.0": [
+              0,
+              0,
+              0
+            ],
+            "0.0667": [
+              "v.is_first_person?0:-114.75",
+              "v.is_first_person?0:-14.75",
+              "v.is_first_person?0:60"
+            ],
+            "0.1333": [
+              "v.is_first_person?0:-99",
+              "v.is_first_person?0:13",
+              "v.is_first_person?0:89.25"
+            ],
+            "0.2": [
+              "v.is_first_person?0:33.75",
+              "v.is_first_person?0:1.75",
+              "v.is_first_person?0:95"
+            ],
+            "0.3": [
+              "v.is_first_person?0:30.75",
+              "v.is_first_person?0:3",
+              "v.is_first_person?0:93.5"
+            ],
+            "0.4667": [
+              "v.is_first_person?0:50.75",
+              "v.is_first_person?0:-2",
+              "v.is_first_person?0:95.75"
+            ],
+            "0.7": [
+              "v.is_first_person?0:5.07",
+              "v.is_first_person?0:-0.2",
+              "v.is_first_person?0:9.58"
+            ],
+            "0.8": [
+              0,
+              0,
+              0
+            ]
+          },
+          "position": {
+            "0.0": [
+              0,
+              0,
+              0
+            ],
+            "0.0667": [
+              "v.is_first_person?0:1.12865",
+              "v.is_first_person?0:0.46174",
+              "v.is_first_person?0:-4.16237"
+            ],
+            "0.2": [
+              "v.is_first_person?0:-1.27304",
+              "v.is_first_person?0:0.47259",
+              "v.is_first_person?0:-2.03062"
+            ],
+            "0.3": [
+              "v.is_first_person?0:-1.91542",
+              "v.is_first_person?0:0.28839",
+              "v.is_first_person?0:2.18075"
+            ],
+            "0.4667": [
+              "v.is_first_person?0:0.11683",
+              "v.is_first_person?0:-0.00607",
+              "v.is_first_person?0:0.16222"
+            ],
+            "0.7": [
+              "v.is_first_person?0:0.01",
+              0,
+              "v.is_first_person?0:0.02"
+            ],
+            "0.8": [
+              0,
+              0,
+              0
+            ]
+          }
+        },
+        "rightItem": {
+          "rotation": {
+            "0.0": [
+              0,
+              0,
+              0
+            ],
+            "0.0667": [
+              0,
+              0,
+              0
+            ],
+            "0.1333": [
+              "v.is_first_person?0:80.25",
+              0,
+              0
+            ],
+            "0.2": [
+              "v.is_first_person?0:58.5",
+              0,
+              0
+            ],
+            "0.3": [
+              "v.is_first_person?0:58.5",
+              0,
+              0
+            ],
+            "0.4667": [
+              "v.is_first_person?0:58.5",
+              0,
+              0
+            ],
+            "0.7": [
+              "v.is_first_person?0:5.85",
+              0,
+              0
+            ],
+            "0.8": [
+              0,
+              0,
+              0
+            ]
+          },
+          "position": {
+            "0.0": [
+              0,
+              0,
+              0
+            ],
+            "0.0667": [
+              0,
+              0,
+              0
+            ],
+            "0.2": [
+              0,
+              0,
+              0
+            ],
+            "0.3": [
+              0,
+              0,
+              0
+            ],
+            "0.4667": [
+              0,
+              0,
+              0
+            ],
+            "0.7": [
+              0,
+              0,
+              0
+            ],
+            "0.8": [
+              0,
+              0,
+              0
+            ]
+          }
+        },
+        "Weapon": {
+          "rotation": {
+            "0.0": [
+              0,
+              0,
+              0
+            ],
+            "0.0667": [
+              0,
+              0,
+              0
+            ],
+            "0.2": [
+              0,
+              0,
+              0
+            ],
+            "0.3": [
+              0,
+              0,
+              0
+            ],
+            "0.4667": [
+              0,
+              0,
+              0
+            ],
+            "0.7": [
+              0,
+              0,
+              0
+            ],
+            "0.8": [
+              0,
+              0,
+              0
+            ]
+          }
+        }
+      },
+      "particle_effects": {
+        "0.0333": {
+          "effect": "chaos",
+          "locator": "locator"
+        }
+      }
+    },
+    "animation.tpp_axe_particle": {
+      "animation_length": 0.8,
+      "bones": {
+        "particle": {
+          "rotation": [
+            -27.5,
+            0,
+            -177.5
+          ],
+          "position": [
+            0,
+            22,
+            0
+          ]
+        },
+        "bone": {
+          "rotation": {
+            "0.0": [
+              0,
+              0,
+              0
+            ],
+            "0.0667": [
+              0,
+              0,
+              0
+            ],
+            "0.2": [
+              0,
+              0,
+              0
+            ],
+            "0.3": [
+              0,
+              0,
+              0
+            ],
+            "0.4667": [
+              0,
+              0,
+              0
+            ],
+            "0.7": [
+              0,
+              0,
+              0
+            ],
+            "0.8": [
+              0,
+              0,
+              0
+            ]
+          },
+          "position": {
+            "0.0": [
+              0,
+              0,
+              0
+            ],
+            "0.0667": [
+              0,
+              0,
+              0
+            ],
+            "0.2": [
+              0,
+              0,
+              0
+            ],
+            "0.3": [
+              0,
+              0,
+              0
+            ],
+            "0.4667": [
+              0,
+              0,
+              0
+            ],
+            "0.7": [
+              0,
+              0,
+              0
+            ],
+            "0.8": [
+              0,
+              0,
+              0
+            ]
+          }
+        },
+        "Weapon": {
+          "rotation": {
+            "0.0": [
+              0,
+              0,
+              0
+            ],
+            "0.0667": [
+              0,
+              0,
+              0
+            ],
+            "0.2": [
+              0,
+              0,
+              0
+            ],
+            "0.3": [
+              0,
+              0,
+              0
+            ],
+            "0.4667": [
+              0,
+              0,
+              0
+            ],
+            "0.7": [
+              0,
+              0,
+              0
+            ],
+            "0.8": [
+              0,
+              0,
+              0
+            ]
+          }
+        }
+      },
+      "particle_effects": {
+        "0.0333": {
+          "effect": "chaos",
+          "locator": "locator"
+        }
+      }
+    },
+    "animation.chaos_axe.fpp_melee_to_idle": {
+      "loop": "hold_on_last_frame",
+      "animation_length": 0.25,
+      "bones": {
+        "Weapon": {
+          "rotation": {
+            "0.0": [
+              0,
+              0,
+              0
+            ],
+            "0.25": [
+              26.44013,
+              62.19203,
+              -13.03309
+            ]
+          },
+          "position": {
+            "0.0": [
+              0,
+              0,
+              0
+            ],
+            "0.25": [
+              -8.66625,
+              -10.92398,
+              25.4276
+            ]
+          },
+          "scale": 1
+        }
+      }
+    }
+  }
 }
+

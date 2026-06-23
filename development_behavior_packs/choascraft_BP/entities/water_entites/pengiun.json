@@ -232,7 +232,9 @@
         }
       },
       "king_penguin_tamed": {
-        "minecraft:is_tamed": {},
+        "minecraft:is_tamed": {
+          
+        },
         "minecraft:sittable": {
           "sit_event": {
             "event": "zombie:king_penguin_sit",
@@ -425,7 +427,9 @@
         }
       },
       "king_penguin_baby": {
-        "minecraft:is_baby": {},
+        "minecraft:is_baby": {
+          
+        },
         "minecraft:scale_by_age": {
           "start_scale": 0.5,
           "end_scale": 1
@@ -490,7 +494,9 @@
         "width": 0.8,
         "height": 1.55
       },
-      "minecraft:is_hidden_when_invisible": {},
+      "minecraft:is_hidden_when_invisible": {
+        
+      },
       "minecraft:loot": {
         "table": "loot_tables/entities/pengiun/pengiun.json"
       },
@@ -527,7 +533,9 @@
       "minecraft:underwater_movement": {
         "value": 0.2
       },
-      "minecraft:movement.amphibious": {},
+      "minecraft:movement.amphibious": {
+        
+      },
       "minecraft:inventory": {
         "inventory_size": 1,
         "private": true,
@@ -564,9 +572,15 @@
           "minecraft:tropical_fish"
         ]
       },
-      "minecraft:physics": {},
-      "minecraft:jump.static": {},
-      "minecraft:nameable": {},
+      "minecraft:physics": {
+        
+      },
+      "minecraft:jump.static": {
+        
+      },
+      "minecraft:nameable": {
+        
+      },
       "minecraft:leashable": {
         "can_be_cut": true,
         "can_be_stolen": false,
@@ -579,9 +593,13 @@
         ]
       },
       "minecraft:despawn": {
-        "despawn_from_distance": {}
+        "despawn_from_distance": {
+          
+        }
       },
-      "minecraft:conditional_bandwidth_optimization": {}
+      "minecraft:conditional_bandwidth_optimization": {
+        
+      }
     },
     "events": {
       "minecraft:entity_spawned": {
@@ -904,3 +922,4 @@
     }
   }
 }
+

@@ -1,8 +1,9 @@
 {
-	"format_version": "1.16.100",
-	"minecraft:texture_set": {
-		"color": "black_bear",
-		"metalness_emissive_roughness": "black_bear_mer",
-		"normal": "black_bear_normal"
-	}
+  "format_version": "1.16.100",
+  "minecraft:texture_set": {
+    "color": "black_bear",
+    "metalness_emissive_roughness": "black_bear_mer",
+    "normal": "black_bear_normal"
+  }
 }
+

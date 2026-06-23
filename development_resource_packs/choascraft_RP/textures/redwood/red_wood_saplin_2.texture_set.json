@@ -1,8 +1,9 @@
 {
-	"format_version": "1.16.100",
-	"minecraft:texture_set": {
-		"color": "red_wood_saplin_2",
-		"metalness_emissive_roughness": "red_wood_saplin_2_mer",
-		"normal": "red_wood_saplin_2_normal"
-	}
+  "format_version": "1.16.100",
+  "minecraft:texture_set": {
+    "color": "red_wood_saplin_2",
+    "metalness_emissive_roughness": "red_wood_saplin_2_mer",
+    "normal": "red_wood_saplin_2_normal"
+  }
 }
+

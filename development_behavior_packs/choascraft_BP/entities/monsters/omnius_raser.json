@@ -37,8 +37,11 @@
     },
     "component_groups": {
       "zc:despawn": {
-        "minecraft:instant_despawn": {}
+        "minecraft:instant_despawn": {
+          
+        }
       }
     }
   }
 }
+

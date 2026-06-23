@@ -24,15 +24,15 @@
         "animate": [
           "move",
           "particle"
-
         ]
       },
       "render_controllers": [
         "controller.render.arrow"
       ],
-      			"particle_effects": {
-				"chaos_arrow": "zombie:chaos_arrow"
-			}
+      "particle_effects": {
+        "chaos_arrow": "zombie:chaos_arrow"
+      }
     }
   }
 }
+

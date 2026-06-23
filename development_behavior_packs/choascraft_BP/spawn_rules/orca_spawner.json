@@ -1,14 +1,15 @@
 {
-	"format_version": "1.8.0",
-	"minecraft:spawn_rules": {
-		"description": {
-			"identifier": "zombie:orca_spawner",
-			"population_control": "animal"
-		},
-		"conditions": [
+  "format_version": "1.8.0",
+  "minecraft:spawn_rules": {
+    "description": {
+      "identifier": "zombie:orca_spawner",
+      "population_control": "animal"
+    },
+    "conditions": [
       {
-        "minecraft:spawns_underwater": {},
-
+        "minecraft:spawns_underwater": {
+          
+        },
         "minecraft:weight": {
           "default": 7
         },
@@ -21,11 +22,24 @@
           "max_size": 5
         },
         "minecraft:biome_filter": [
-          { "test": "has_biome_tag", "operator": "==", "value": "ocean" },
-          { "test": "has_biome_tag", "operator": "!=", "value": "frozen" },
-          { "test": "has_biome_tag", "operator": "!=", "value": "cold" }
+          {
+            "test": "has_biome_tag",
+            "operator": "==",
+            "value": "ocean"
+          },
+          {
+            "test": "has_biome_tag",
+            "operator": "!=",
+            "value": "frozen"
+          },
+          {
+            "test": "has_biome_tag",
+            "operator": "!=",
+            "value": "cold"
+          }
         ]
       }
     ]
   }
 }
+

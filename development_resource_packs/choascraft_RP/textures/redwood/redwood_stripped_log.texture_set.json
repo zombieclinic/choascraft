@@ -1,8 +1,9 @@
 {
-	"format_version": "1.16.100",
-	"minecraft:texture_set": {
-		"color": "redwood_stripped_log",
-		"metalness_emissive_roughness": "redwood_stripped_log_mer",
-		"normal": "redwood_stripped_log_normal"
-	}
+  "format_version": "1.16.100",
+  "minecraft:texture_set": {
+    "color": "redwood_stripped_log",
+    "metalness_emissive_roughness": "redwood_stripped_log_mer",
+    "normal": "redwood_stripped_log_normal"
+  }
 }
+

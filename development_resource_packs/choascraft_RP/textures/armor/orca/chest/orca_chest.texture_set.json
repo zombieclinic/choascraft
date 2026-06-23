@@ -1,8 +1,9 @@
 {
-	"format_version": "1.16.100",
-	"minecraft:texture_set": {
-		"color": "orca_chest",
-		"metalness_emissive_roughness": "orca_chest_mer",
-		"normal": "orca_chest_normal"
-	}
+  "format_version": "1.16.100",
+  "minecraft:texture_set": {
+    "color": "orca_chest",
+    "metalness_emissive_roughness": "orca_chest_mer",
+    "normal": "orca_chest_normal"
+  }
 }
+

@@ -1,28 +1,33 @@
 {
-    "format_version": "1.26.20",
-    "minecraft:item": {
-        "description": {
-            "identifier": "zombie:crab_claw",
-            "menu_category": {"category": "items", "group": "minecraft:itemGroup.name.rawFood"}
-        },
-        "components": {
-            "minecraft:icon": "zombie_crab_claw",
-             "minecraft:stacked_by_data": true,
-             "minecraft:display_name": {
-                "value": "Crab Claw"
-             },
-             "minecraft:food": {
-                "can_always_eat": false,
-                "nutrition": 2,
-                "saturation_modifier": 1
-             },
-             "minecraft:use_modifiers": {
-                "emit_vibrations": true,
-                "movement_modifier": 0,
-                "use_duration": 1
-             },
-             "zombie:raw_food_sickness": {}
-        }
+  "format_version": "1.26.20",
+  "minecraft:item": {
+    "description": {
+      "identifier": "zombie:crab_claw",
+      "menu_category": {
+        "category": "items",
+        "group": "minecraft:itemGroup.name.rawFood"
+      }
+    },
+    "components": {
+      "minecraft:icon": "zombie_crab_claw",
+      "minecraft:stacked_by_data": true,
+      "minecraft:display_name": {
+        "value": "Crab Claw"
+      },
+      "minecraft:food": {
+        "can_always_eat": false,
+        "nutrition": 2,
+        "saturation_modifier": 1
+      },
+      "minecraft:use_modifiers": {
+        "emit_vibrations": true,
+        "movement_modifier": 0,
+        "use_duration": 1
+      },
+      "zombie:raw_food_sickness": {
+        
+      }
     }
-    
+  }
 }
+

@@ -1,8 +1,9 @@
 {
-	"format_version": "1.16.100",
-	"minecraft:texture_set": {
-		"color": "demon_grass",
-		"metalness_emissive_roughness": "demon_grass_mer",
-		"normal": "demon_grass_normal"
-	}
+  "format_version": "1.16.100",
+  "minecraft:texture_set": {
+    "color": "demon_grass",
+    "metalness_emissive_roughness": "demon_grass_mer",
+    "normal": "demon_grass_normal"
+  }
 }
+

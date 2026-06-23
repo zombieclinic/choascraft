@@ -1,0 +1,114 @@
+{
+  "format_version": "1.26.30",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "zombie:infected_eye_abomination",
+      "is_spawnable": false,
+      "is_summonable": true
+    },
+    "components": {
+      "minecraft:type_family": {
+        "family": [
+          "infected_eye_abomination",
+          "infected",
+          "blood",
+          "monster",
+          "mob"
+        ]
+      },
+      "minecraft:health": {
+        "value": 46,
+        "max": 46
+      },
+      "minecraft:movement": {
+        "value": 0.2
+      },
+      "minecraft:movement.basic": {
+        
+      },
+      "minecraft:navigation.walk": {
+        "can_walk": true,
+        "can_pass_doors": true,
+        "can_open_doors": false,
+        "can_break_doors": false,
+        "avoid_water": false
+      },
+      "minecraft:jump.static": {
+        
+      },
+      "minecraft:can_climb": {
+        
+      },
+      "minecraft:attack": {
+        "damage": 7
+      },
+      "minecraft:behavior.hurt_by_target": {
+        "priority": 1
+      },
+      "minecraft:behavior.nearest_attackable_target": {
+        "priority": 2,
+        "must_see": true,
+        "reselect_targets": true,
+        "entity_types": [
+          {
+            "filters": {
+              "test": "is_family",
+              "subject": "other",
+              "value": "player"
+            },
+            "max_dist": 20
+          },
+          {
+            "filters": {
+              "test": "is_family",
+              "subject": "other",
+              "value": "irongolem"
+            },
+            "max_dist": 20
+          }
+        ]
+      },
+      "minecraft:behavior.melee_attack": {
+        "priority": 3,
+        "speed_multiplier": 1.15,
+        "track_target": true,
+        "reach_multiplier": 1.25
+      },
+      "minecraft:behavior.random_stroll": {
+        "priority": 7,
+        "speed_multiplier": 0.75
+      },
+      "minecraft:behavior.look_at_player": {
+        "priority": 8,
+        "look_distance": 10,
+        "probability": 0.03
+      },
+      "minecraft:behavior.random_look_around": {
+        "priority": 9
+      },
+      "minecraft:collision_box": {
+        "width": 1.25,
+        "height": 1.5
+      },
+      "minecraft:physics": {
+        "has_collision": true,
+        "has_gravity": true
+      },
+      "minecraft:nameable": {
+        
+      },
+      "minecraft:despawn": {
+        "despawn_from_distance": {
+          
+        }
+      },
+      "minecraft:experience_reward": {
+        "on_death": "query.last_hit_by_player ? 8 : 0"
+      },
+      "minecraft:loot": {
+        "table": "loot_tables/entities/blood/infected_eye_abomination.json"
+      }
+    }
+  }
+}
+

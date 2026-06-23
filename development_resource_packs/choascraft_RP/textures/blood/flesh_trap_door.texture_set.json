@@ -1,8 +1,9 @@
 {
-	"format_version": "1.16.100",
-	"minecraft:texture_set": {
-		"color": "flesh_trap_door",
-		"metalness_emissive_roughness": "flesh_trap_door_mer",
-		"normal": "flesh_trap_door_normal"
-	}
+  "format_version": "1.16.100",
+  "minecraft:texture_set": {
+    "color": "flesh_trap_door",
+    "metalness_emissive_roughness": "flesh_trap_door_mer",
+    "normal": "flesh_trap_door_normal"
+  }
 }
+

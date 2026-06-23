@@ -1,51 +1,62 @@
 {
-	"format_version": "1.26.20",
-	"minecraft:item": {
-		"description": {
-			"identifier": "zombie:orca_netherite_chest",
-			"menu_category": {
-				"category": "equipment",
-				"group": "minecraft:itemGroup.name.chestplate"
-			}
-		},
-		"components": {
-			"minecraft:display_name": {
-				"value": "Orca Netherite Chestplate"
-			},
-			"minecraft:max_stack_size": 1,
-			"minecraft:icon": "zombie_orca_netherite_chest",
-			"minecraft:wearable": {
-				"slot": "slot.armor.chest",
-				"protection": 8
-			},
-			"minecraft:enchantable": {
-				"slot": "armor_torso",
-				"value": 14
-			},
-			"minecraft:durability": {
-				"max_durability": 359,
-				 "damage_chance": {
-					"min": 20,
-					"max": 100
-				}
-			},
-			"minecraft:damage_absorption": {"absorbable_causes": ["drowning"]},
-			"minecraft:repairable": {
-				"repair_items": [
-					{
-						"items": ["iron_ingot"],
-						"repair_amount": 64
-					},
-					{
-						"items": ["zombie:orca_shard"],
-						"repair_amount": 62
-					},
-					{
-						"items": ["zombie:orca_core"],
-						"repair_amount": 130
-					}
-				]
-			}
-		}
-	}
+  "format_version": "1.26.20",
+  "minecraft:item": {
+    "description": {
+      "identifier": "zombie:orca_netherite_chest",
+      "menu_category": {
+        "category": "equipment",
+        "group": "minecraft:itemGroup.name.chestplate"
+      }
+    },
+    "components": {
+      "minecraft:display_name": {
+        "value": "Orca Netherite Chestplate"
+      },
+      "minecraft:max_stack_size": 1,
+      "minecraft:icon": "zombie_orca_netherite_chest",
+      "minecraft:wearable": {
+        "slot": "slot.armor.chest",
+        "protection": 8
+      },
+      "minecraft:enchantable": {
+        "slot": "armor_torso",
+        "value": 14
+      },
+      "minecraft:durability": {
+        "max_durability": 359,
+        "damage_chance": {
+          "min": 20,
+          "max": 100
+        }
+      },
+      "minecraft:damage_absorption": {
+        "absorbable_causes": [
+          "drowning"
+        ]
+      },
+      "minecraft:repairable": {
+        "repair_items": [
+          {
+            "items": [
+              "iron_ingot"
+            ],
+            "repair_amount": 64
+          },
+          {
+            "items": [
+              "zombie:orca_shard"
+            ],
+            "repair_amount": 62
+          },
+          {
+            "items": [
+              "zombie:orca_core"
+            ],
+            "repair_amount": 130
+          }
+        ]
+      }
+    }
+  }
 }
+

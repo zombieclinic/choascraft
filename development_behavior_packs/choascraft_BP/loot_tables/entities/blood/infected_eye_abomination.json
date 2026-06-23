@@ -1,0 +1,99 @@
+{
+  "pools": [
+    {
+      "conditions": [
+        {
+          "condition": "killed_by_player"
+        }
+      ],
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "zombie:blood_meat",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 3
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "conditions": [
+        {
+          "condition": "killed_by_player"
+        },
+        {
+          "condition": "random_chance_with_looting",
+          "chance": 0.12,
+          "looting_multiplier": 0.03
+        }
+      ],
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "zombie:abomination_eye",
+          "weight": 72,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "zombie:abomination_eye",
+          "weight": 18,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "zombie:abomination_eye",
+          "weight": 7,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "zombie:abomination_eye",
+          "weight": 2,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 4
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "zombie:abomination_eye",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 5
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
+

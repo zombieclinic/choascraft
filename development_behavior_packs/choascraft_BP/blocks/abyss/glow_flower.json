@@ -16,7 +16,7 @@
     },
     "permutations": [
       {
-        "condition": "query.block_state('zombie:dry_player_placed')",
+        "condition": "query.block_state(\u0027zombie:dry_player_placed\u0027)",
         "components": {
           "minecraft:material_instances": {
             "*": {
@@ -57,8 +57,11 @@
           "render_method": "opaque"
         }
       },
-      "zombie:eyewood_leaves_render": {},
-      "minecraft:loot": "loot_tables/blocks/glow_flower.json"
+      "zombie:eyewood_leaves_render": {
+        
+      },
+      "minecraft:map_color": "#381A46"
     }
   }
 }
+

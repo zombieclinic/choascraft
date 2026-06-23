@@ -106,7 +106,8 @@
       ],
       "minecraft:redstone_producer": {
         "power": 0
-      }
+      },
+      "minecraft:map_color": "#2F1D1B"
     },
     "permutations": [
       {
@@ -428,3 +429,4 @@
     ]
   }
 }
+

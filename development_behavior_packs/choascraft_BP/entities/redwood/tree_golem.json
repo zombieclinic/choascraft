@@ -7,9 +7,13 @@
       "is_summonable": true,
       "is_experimental": false
     },
-    "component_groups": {},
+    "component_groups": {
+      
+    },
     "components": {
-      "minecraft:is_hidden_when_invisible": {},
+      "minecraft:is_hidden_when_invisible": {
+        
+      },
       "minecraft:type_family": {
         "family": [
           "irongolem",
@@ -17,8 +21,12 @@
           "mob"
         ]
       },
-      "minecraft:nameable": {},
-      "minecraft:persistent": {},
+      "minecraft:nameable": {
+        
+      },
+      "minecraft:persistent": {
+        
+      },
       "minecraft:collision_box": {
         "width": 1,
         "height": 1.2
@@ -49,9 +57,15 @@
         "avoid_water": true,
         "avoid_damage_blocks": true
       },
-      "minecraft:movement.basic": {},
-      "minecraft:jump.static": {},
-      "minecraft:can_climb": {},
+      "minecraft:movement.basic": {
+        
+      },
+      "minecraft:jump.static": {
+        
+      },
+      "minecraft:can_climb": {
+        
+      },
       "minecraft:attack": {
         "damage": {
           "range_min": 7,
@@ -92,7 +106,9 @@
         "has_collision": true,
         "has_gravity": true
       },
-      "minecraft:conditional_bandwidth_optimization": {},
+      "minecraft:conditional_bandwidth_optimization": {
+        
+      },
       "minecraft:loot": {
         "table": "loot_tables/mobs/golem_heart.json"
       },
@@ -151,6 +167,9 @@
         "speed_multiplier": 0.1
       }
     },
-    "events": {}
+    "events": {
+      
+    }
   }
 }
+

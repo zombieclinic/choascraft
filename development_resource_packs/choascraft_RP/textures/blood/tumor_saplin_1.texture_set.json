@@ -1,8 +1,9 @@
 {
-	"format_version": "1.16.100",
-	"minecraft:texture_set": {
-		"color": "tumor_saplin_1",
-		"metalness_emissive_roughness": "tumor_saplin_1_mer",
-		"normal": "tumor_saplin_1_normal"
-	}
+  "format_version": "1.16.100",
+  "minecraft:texture_set": {
+    "color": "tumor_saplin_1",
+    "metalness_emissive_roughness": "tumor_saplin_1_mer",
+    "normal": "tumor_saplin_1_normal"
+  }
 }
+

@@ -26,7 +26,9 @@
         }
       },
       "baby": {
-        "minecraft:is_baby": {},
+        "minecraft:is_baby": {
+          
+        },
         "minecraft:scale": {
           "value": 0.1
         },
@@ -49,7 +51,9 @@
         }
       },
       "despawn": {
-        "minecraft:instant_despawn": {}
+        "minecraft:instant_despawn": {
+          
+        }
       },
       "green": {
         "minecraft:variant": {
@@ -197,7 +201,9 @@
           }
         ]
       },
-      "minecraft:is_hidden_when_invisible": {},
+      "minecraft:is_hidden_when_invisible": {
+        
+      },
       "minecraft:loot": {
         "table": "loot_tables/entities/peeper/peeper.json"
       },
@@ -274,7 +280,9 @@
         "sway_amplitude": 0
       },
       "minecraft:despawn": {
-        "despawn_from_distance": {}
+        "despawn_from_distance": {
+          
+        }
       },
       "minecraft:behavior.swim_idle": {
         "priority": 5,
@@ -330,8 +338,12 @@
         "block_distance": 2,
         "block_weight": 0.85
       },
-      "minecraft:nameable": {},
-      "minecraft:conditional_bandwidth_optimization": {},
+      "minecraft:nameable": {
+        
+      },
+      "minecraft:conditional_bandwidth_optimization": {
+        
+      },
       "minecraft:behavior.breed": {
         "priority": 2,
         "speed_multiplier": 1.1
@@ -657,3 +669,4 @@
     }
   }
 }
+

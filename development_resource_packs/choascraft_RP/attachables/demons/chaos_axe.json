@@ -1,47 +1,44 @@
 {
-    "format_version": "1.26.20",
-    "minecraft:attachable": {
-        "description": {
-            "identifier": "zombie:chaos_axe",
-            "materials": {
-                "enchanted": "entity_alphatest_glint",
-                "default": "entity_alphatest"
-            },
-            "geometry": {
-                "default": "geometry.chaos_axe"
-            },
-           "textures": {
-                "default" : "textures/demon/item_mob/chaos_gear",
-                 "enchanted": "textures/misc/enchanted_item_glint"
-            },
-            
-            "render_controllers": [
-                "controller.render.item_default"
-            ],
-             "animations": {
-				"fpp_idle": "animation.chaos_axe.ffp",
-                "fpp_swing": "animation.fpp_swing_melee",
-                "fpp_swing_to_idle": "animation.chaos_axe.fpp_melee_to_idle",
-                "contoller": "controller.animation.chaos_axe",
-                "tpp_particle": "controller.animation.chaos_axe_particle",
-                "particle": "animation.tpp_axe_particle"
-
-			},
-			"scripts": {
-                
-				"animate": [
-					{
-                        "contoller" : "c.is_first_person"
-                    },
-                    {
-                        "tpp_particle": "!c.is_first_person"
-                    }
-				]
-			},
-            "particle_effects":{
-                "chaos": "zombie:chaos_particle"
-            }
-            
-        }
+  "format_version": "1.26.20",
+  "minecraft:attachable": {
+    "description": {
+      "identifier": "zombie:chaos_axe",
+      "materials": {
+        "enchanted": "entity_alphatest_glint",
+        "default": "entity_alphatest"
+      },
+      "geometry": {
+        "default": "geometry.chaos_axe"
+      },
+      "textures": {
+        "default": "textures/demon/item_mob/chaos_gear",
+        "enchanted": "textures/misc/enchanted_item_glint"
+      },
+      "render_controllers": [
+        "controller.render.item_default"
+      ],
+      "animations": {
+        "fpp_idle": "animation.chaos_axe.ffp",
+        "fpp_swing": "animation.fpp_swing_melee",
+        "fpp_swing_to_idle": "animation.chaos_axe.fpp_melee_to_idle",
+        "contoller": "controller.animation.chaos_axe",
+        "tpp_particle": "controller.animation.chaos_axe_particle",
+        "particle": "animation.tpp_axe_particle"
+      },
+      "scripts": {
+        "animate": [
+          {
+            "contoller": "c.is_first_person"
+          },
+          {
+            "tpp_particle": "!c.is_first_person"
+          }
+        ]
+      },
+      "particle_effects": {
+        "chaos": "zombie:chaos_particle"
+      }
     }
+  }
 }
+

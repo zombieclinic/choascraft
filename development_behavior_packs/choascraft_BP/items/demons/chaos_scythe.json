@@ -1,37 +1,38 @@
 {
-    "format_version": "1.26.20",
-    "minecraft:item": {
-        "description": {
-            "identifier": "zombie:chaos_scythe",
-            "menu_category": {
-                "category": "equipment",
-                "group": "minecraft:itemGroup.name.chaos"
-            }
+  "format_version": "1.26.20",
+  "minecraft:item": {
+    "description": {
+      "identifier": "zombie:chaos_scythe",
+      "menu_category": {
+        "category": "equipment",
+        "group": "minecraft:itemGroup.name.chaos"
+      }
+    },
+    "components": {
+      "minecraft:damage": {
+        "value": 7
+      },
+      "minecraft:cooldown": {
+        "category": "chaos_scythe",
+        "duration": 1
+      },
+      "minecraft:display_name": {
+        "value": "Chaos Scythe"
+      },
+      "minecraft:icon": "zombie_chaos_scythe",
+      "minecraft:hand_equipped": true,
+      "minecraft:durability": {
+        "damage_chance": {
+          "min": 10,
+          "max": 50
         },
-        "components": {
-            "minecraft:damage": {
-                "value": 7
-            },
-            "minecraft:cooldown": {
-                "category": "chaos_scythe",
-                "duration": 1
-            },
-            "minecraft:display_name": {
-                "value": "Chaos Scythe"
-            },
-            "minecraft:icon": "zombie_chaos_scythe",
-            "minecraft:hand_equipped": true,
-            "minecraft:durability": {
-                "damage_chance": {
-                    "min": 10,
-                    "max": 50
-                },
-                "max_durability": 360
-            },
-            "minecraft:use_modifiers": {
-                "movement_modifier": 1,
-                "use_duration": 20
-            }
-        }
+        "max_durability": 360
+      },
+      "minecraft:use_modifiers": {
+        "movement_modifier": 1,
+        "use_duration": 20
+      }
     }
+  }
 }
+

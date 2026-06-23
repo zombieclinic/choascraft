@@ -1,8 +1,9 @@
 {
-	"format_version": "1.16.100",
-	"minecraft:texture_set": {
-		"color": "captions_sunkin_sword",
-		"metalness_emissive_roughness": "captions_sunkin_sword_mer",
-		"normal": "captions_sunkin_sword_normal"
-	}
+  "format_version": "1.16.100",
+  "minecraft:texture_set": {
+    "color": "captions_sunkin_sword",
+    "metalness_emissive_roughness": "captions_sunkin_sword_mer",
+    "normal": "captions_sunkin_sword_normal"
+  }
 }
+

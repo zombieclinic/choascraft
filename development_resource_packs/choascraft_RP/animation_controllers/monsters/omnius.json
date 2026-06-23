@@ -1,153 +1,154 @@
 {
-	"format_version": "1.10.0",
-	"animation_controllers": {
-		"controller.animation.omnius": {
-			"initial_state": "spawn",
-			"states": {
-				"spawn": {
-					"animations": [
-						"spawn"
-					],
-					"transitions": [
-						{
-							"idle": "query.all_animations_finished || query.variant == 1"
-						},
-						{
-							"death": "query.variant == 9"
-						}
-					]
-				},
-				"idle": {
-					"animations": [
-						"hide_fx",
-						"idle"
-					],
-					"transitions": [
-						{
-							"death": "query.variant == 9"
-						},
-						{
-							"shoot": "query.variant == 2"
-						},
-						{
-							"ray": "query.variant == 3"
-						},
-						{
-							"grab_try": "query.variant == 4"
-						},
-						{
-							"grab": "query.variant == 5"
-						},
-						{
-							"book_eat": "query.variant == 6"
-						},
-						{
-							"walk": "query.modified_move_speed > 0.03"
-						}
-					],
-					"blend_transition": 0.15
-				},
-				"walk": {
-					"animations": [
-						"hide_fx",
-						"walk"
-					],
-					"transitions": [
-						{
-							"death": "query.variant == 9"
-						},
-						{
-							"shoot": "query.variant == 2"
-						},
-						{
-							"ray": "query.variant == 3"
-						},
-						{
-							"grab_try": "query.variant == 4"
-						},
-						{
-							"grab": "query.variant == 5"
-						},
-						{
-							"book_eat": "query.variant == 6"
-						},
-						{
-							"idle": "query.modified_move_speed <= 0.03"
-						}
-					],
-					"blend_transition": 0.15
-				},
-				"shoot": {
-					"animations": [
-						"shoot"
-					],
-					"transitions": [
-						{
-							"death": "query.variant == 9"
-						},
-						{
-							"idle": "query.all_animations_finished"
-						}
-					]
-				},
-				"ray": {
-					"animations": [
-						"ray"
-					],
-					"transitions": [
-						{
-							"death": "query.variant == 9"
-						},
-						{
-							"idle": "query.all_animations_finished"
-						}
-					]
-				},
-				"grab_try": {
-					"animations": [
-						"grab_try"
-					],
-					"transitions": [
-						{
-							"death": "query.variant == 9"
-						},
-						{
-							"idle": "query.all_animations_finished"
-						}
-					]
-				},
-				"grab": {
-					"animations": [
-						"grab"
-					],
-					"transitions": [
-						{
-							"death": "query.variant == 9"
-						},
-						{
-							"idle": "query.all_animations_finished"
-						}
-					]
-				},
-				"book_eat": {
-					"animations": [
-						"book_eat"
-					],
-					"transitions": [
-						{
-							"death": "query.variant == 9"
-						},
-						{
-							"idle": "query.all_animations_finished"
-						}
-					]
-				},
-				"death": {
-					"animations": [
-						"death"
-					]
-				}
-			}
-		}
-	}
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.omnius": {
+      "initial_state": "spawn",
+      "states": {
+        "spawn": {
+          "animations": [
+            "spawn"
+          ],
+          "transitions": [
+            {
+              "idle": "query.all_animations_finished || query.variant == 1"
+            },
+            {
+              "death": "query.variant == 9"
+            }
+          ]
+        },
+        "idle": {
+          "animations": [
+            "hide_fx",
+            "idle"
+          ],
+          "transitions": [
+            {
+              "death": "query.variant == 9"
+            },
+            {
+              "shoot": "query.variant == 2"
+            },
+            {
+              "ray": "query.variant == 3"
+            },
+            {
+              "grab_try": "query.variant == 4"
+            },
+            {
+              "grab": "query.variant == 5"
+            },
+            {
+              "book_eat": "query.variant == 6"
+            },
+            {
+              "walk": "query.modified_move_speed > 0.03"
+            }
+          ],
+          "blend_transition": 0.15
+        },
+        "walk": {
+          "animations": [
+            "hide_fx",
+            "walk"
+          ],
+          "transitions": [
+            {
+              "death": "query.variant == 9"
+            },
+            {
+              "shoot": "query.variant == 2"
+            },
+            {
+              "ray": "query.variant == 3"
+            },
+            {
+              "grab_try": "query.variant == 4"
+            },
+            {
+              "grab": "query.variant == 5"
+            },
+            {
+              "book_eat": "query.variant == 6"
+            },
+            {
+              "idle": "query.modified_move_speed <= 0.03"
+            }
+          ],
+          "blend_transition": 0.15
+        },
+        "shoot": {
+          "animations": [
+            "shoot"
+          ],
+          "transitions": [
+            {
+              "death": "query.variant == 9"
+            },
+            {
+              "idle": "query.all_animations_finished"
+            }
+          ]
+        },
+        "ray": {
+          "animations": [
+            "ray"
+          ],
+          "transitions": [
+            {
+              "death": "query.variant == 9"
+            },
+            {
+              "idle": "query.all_animations_finished"
+            }
+          ]
+        },
+        "grab_try": {
+          "animations": [
+            "grab_try"
+          ],
+          "transitions": [
+            {
+              "death": "query.variant == 9"
+            },
+            {
+              "idle": "query.all_animations_finished"
+            }
+          ]
+        },
+        "grab": {
+          "animations": [
+            "grab"
+          ],
+          "transitions": [
+            {
+              "death": "query.variant == 9"
+            },
+            {
+              "idle": "query.all_animations_finished"
+            }
+          ]
+        },
+        "book_eat": {
+          "animations": [
+            "book_eat"
+          ],
+          "transitions": [
+            {
+              "death": "query.variant == 9"
+            },
+            {
+              "idle": "query.all_animations_finished"
+            }
+          ]
+        },
+        "death": {
+          "animations": [
+            "death"
+          ]
+        }
+      }
+    }
+  }
 }
+

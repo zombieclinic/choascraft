@@ -1,103 +1,104 @@
 {
-    "pools":  [
-                  {
-                      "rolls":  1,
-                      "entries":  [
-                                      {
-                                          "type":  "item",
-                                          "name":  "minecraft:rotten_flesh",
-                                          "functions":  [
-                                                            {
-                                                                "function":  "set_count",
-                                                                "count":  {
-                                                                              "min":  0,
-                                                                              "max":  2
-                                                                          }
-                                                            }
-                                                        ]
-                                      }
-                                  ]
-                  },
-                  {
-                      "rolls":  1,
-                      "conditions":  [
-                                         {
-                                             "condition":  "killed_by_player"
-                                         },
-                                         {
-                                             "condition":  "random_chance_with_looting",
-                                             "chance":  0.025,
-                                             "looting_multiplier":  0.01
-                                         }
-                                     ],
-                      "entries":  [
-                                      {
-                                          "type":  "item",
-                                          "name":  "minecraft:iron_ingot"
-                                      },
-                                      {
-                                          "type":  "item",
-                                          "name":  "minecraft:carrot"
-                                      },
-                                      {
-                                          "type":  "item",
-                                          "name":  "minecraft:potato"
-                                      }
-                                  ]
-                  },
-                  {
-                      "rolls":  1,
-                      "conditions":  [
-                                         {
-                                             "condition":  "killed_by_player"
-                                         },
-                                         {
-                                             "condition":  "random_chance_with_looting",
-                                             "chance":  0.08,
-                                             "looting_multiplier":  0.02
-                                         }
-                                     ],
-                      "entries":  [
-                                      {
-                                          "type":  "item",
-                                          "name":  "zombie:infected_crystal"
-                                      }
-                                  ]
-                  },
-                  {
-                      "conditions":  [
-                                         {
-                                             "condition":  "random_chance",
-                                             "chance":  0.04
-                                         }
-                                     ],
-                      "rolls":  1,
-                      "entries":  [
-                                      {
-                                          "type":  "item",
-                                          "name":  "minecraft:written_book",
-                                          "functions":  [
-                                                            {
-                                                                "function":  "set_book_contents",
-                                                                "author":  "Choascraft",
-                                                                "title":  "Infected Zombie Manual",
-                                                                "pages":  [
-                                                                              "Infected Zombie Manual\n\nA Choascraft guide for infected zombie variants, scavenged drops, rare gear, and the Sunking Captain legend.",
-                                                                              "The Infection\n\nInfected zombies are not one creature. Walkers, runners, spitters, scavengers, impalers, and crushers all feed this loot table.",
-                                                                              "Lore\n\nThe infection leaves tools, bones, sea things, and old treasures tangled in its wake. Every corpse is a pocket of the world it crossed.",
-                                                                              "Variants\n\nWalkers are the baseline. Runners close distance. Spitters fight at range. Impalers and crushers are heavier threats.",
-                                                                              "Common Drops\n\nThe table can roll survival scraps: rotten flesh, bones, string, coal, flint, leather, feathers, arrows, food, sticks, kelp, fish, and more.",
-                                                                              "Treasure Drops\n\nRare rolls include emeralds, diamonds, echo shards, saddles, name tags, golden apples, tridents, netherite materials, and other loot.",
-                                                                              "Sunking Captain Gear\n\nA rare player-kill roll can drop Sunking Captain armor pieces or the Sunking Captain Sword.",
-                                                                              "Sunking Lore\n\nCaptain Morvane Tideborn went below the black water in armor made for crushing depth. The infection remembers him badly.",
-                                                                              "Gear Uses\n\nSunking Captain gear is special loot, not normal crafted gear. Treat each piece as a relic from the trench wars.",
-                                                                              "Ocean Link\n\nThe infected table carries ocean items because the rot moved through drowned ships, reefs, trenches, and zombie sea beasts.",
-                                                                              "Hunter Note\n\nIf you want relics, bring Looting and patience. If you want to live, bring distance."
-                                                                          ]
-                                                            }
-                                                        ]
-                                      }
-                                  ]
-                  }
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:rotten_flesh",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 0,
+                "max": 2
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "conditions": [
+        {
+          "condition": "killed_by_player"
+        },
+        {
+          "condition": "random_chance_with_looting",
+          "chance": 0.025,
+          "looting_multiplier": 0.01
+        }
+      ],
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:iron_ingot"
+        },
+        {
+          "type": "item",
+          "name": "minecraft:carrot"
+        },
+        {
+          "type": "item",
+          "name": "minecraft:potato"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "conditions": [
+        {
+          "condition": "killed_by_player"
+        },
+        {
+          "condition": "random_chance_with_looting",
+          "chance": 0.08,
+          "looting_multiplier": 0.02
+        }
+      ],
+      "entries": [
+        {
+          "type": "item",
+          "name": "zombie:infected_crystal"
+        }
+      ]
+    },
+    {
+      "conditions": [
+        {
+          "condition": "random_chance",
+          "chance": 0.04
+        }
+      ],
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:written_book",
+          "functions": [
+            {
+              "function": "set_book_contents",
+              "author": "Choascraft",
+              "title": "Infected Zombie Manual",
+              "pages": [
+                "Infected Zombie Manual\n\nA Choascraft guide for infected zombie variants, scavenged drops, rare gear, and the Sunking Captain legend.",
+                "The Infection\n\nInfected zombies are not one creature. Walkers, runners, spitters, scavengers, impalers, and crushers all feed this loot table.",
+                "Lore\n\nThe infection leaves tools, bones, sea things, and old treasures tangled in its wake. Every corpse is a pocket of the world it crossed.",
+                "Variants\n\nWalkers are the baseline. Runners close distance. Spitters fight at range. Impalers and crushers are heavier threats.",
+                "Common Drops\n\nThe table can roll survival scraps: rotten flesh, bones, string, coal, flint, leather, feathers, arrows, food, sticks, kelp, fish, and more.",
+                "Treasure Drops\n\nRare rolls include emeralds, diamonds, echo shards, saddles, name tags, golden apples, tridents, netherite materials, and other loot.",
+                "Sunking Captain Gear\n\nA rare player-kill roll can drop Sunking Captain armor pieces or the Sunking Captain Sword.",
+                "Sunking Lore\n\nCaptain Morvane Tideborn went below the black water in armor made for crushing depth. The infection remembers him badly.",
+                "Gear Uses\n\nSunking Captain gear is special loot, not normal crafted gear. Treat each piece as a relic from the trench wars.",
+                "Ocean Link\n\nThe infected table carries ocean items because the rot moved through drowned ships, reefs, trenches, and zombie sea beasts.",
+                "Hunter Note\n\nIf you want relics, bring Looting and patience. If you want to live, bring distance."
               ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
 }
+

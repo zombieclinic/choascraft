@@ -1,0 +1,50 @@
+{
+  "format_version": "1.26.20",
+  "animation_controllers": {
+    "controller.animation.infected_eye_abomination": {
+      "initial_state": "idle",
+      "states": {
+        "idle": {
+          "animations": [
+            "idle"
+          ],
+          "transitions": [
+            {
+              "attack": "query.has_target"
+            },
+            {
+              "move": "query.ground_speed"
+            }
+          ]
+        },
+        "move": {
+          "animations": [
+            "move"
+          ],
+          "transitions": [
+            {
+              "attack": "query.has_target"
+            },
+            {
+              "idle": "!query.ground_speed"
+            }
+          ]
+        },
+        "attack": {
+          "animations": [
+            "attack"
+          ],
+          "transitions": [
+            {
+              "move": "query.all_animations_finished && query.ground_speed"
+            },
+            {
+              "idle": "query.all_animations_finished"
+            }
+          ]
+        }
+      }
+    }
+  }
+}
+

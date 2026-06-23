@@ -1,0 +1,35 @@
+{
+  "format_version": "1.26.20",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "zombie:flesh_pod",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/demon/alter_blocks/blood_flesh_block"
+      },
+      "geometry": {
+        "default": "geometry.flesh_pod"
+      },
+      "animations": {
+        "idle": "animation.flesh_pod.idle",
+        "attack": "animation.flesh_pod.attack",
+        "controller": "controller.animation.flesh_pod"
+      },
+      "scripts": {
+        "animate": [
+          "controller"
+        ]
+      },
+      "spawn_egg": {
+        "base_color": "#5B1013",
+        "overlay_color": "#C41F24"
+      },
+      "render_controllers": [
+        "controller.render.default"
+      ]
+    }
+  }
+}
+

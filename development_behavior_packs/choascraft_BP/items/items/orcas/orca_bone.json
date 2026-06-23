@@ -1,20 +1,22 @@
 {
-    "format_version": "1.26.10",
-    "minecraft:item": {
-        "description": {
-            "identifier": "zombie:orca_bone",
-            "menu_category": {
-                "category": "nature"}
-        },
-        "components": {
-            "minecraft:icon": "orca_bone",
-            "minecraft:display_name": {
-                "value": "Orca Bone"
-            },
-            "minecraft:stacked_by_data": true,
-            "minecraft:compostable": {
-                "composting_chance": 80
-            }
-        }
+  "format_version": "1.26.10",
+  "minecraft:item": {
+    "description": {
+      "identifier": "zombie:orca_bone",
+      "menu_category": {
+        "category": "nature"
+      }
+    },
+    "components": {
+      "minecraft:icon": "orca_bone",
+      "minecraft:display_name": {
+        "value": "Orca Bone"
+      },
+      "minecraft:stacked_by_data": true,
+      "minecraft:compostable": {
+        "composting_chance": 80
+      }
     }
+  }
 }
+

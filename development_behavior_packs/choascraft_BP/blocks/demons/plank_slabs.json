@@ -23,7 +23,7 @@
     },
     "permutations": [
       {
-        "condition": "query.block_state('minecraft:vertical_half') == 'bottom' && !query.block_state('zombie:double')",
+        "condition": "query.block_state(\u0027minecraft:vertical_half\u0027) == \u0027bottom\u0027 \u0026\u0026 !query.block_state(\u0027zombie:double\u0027)",
         "components": {
           "minecraft:collision_box": {
             "origin": [
@@ -52,7 +52,7 @@
         }
       },
       {
-        "condition": "query.block_state('minecraft:vertical_half') == 'top' && !query.block_state('zombie:double')",
+        "condition": "query.block_state(\u0027minecraft:vertical_half\u0027) == \u0027top\u0027 \u0026\u0026 !query.block_state(\u0027zombie:double\u0027)",
         "components": {
           "minecraft:collision_box": {
             "origin": [
@@ -81,7 +81,7 @@
         }
       },
       {
-        "condition": "query.block_state('zombie:double')",
+        "condition": "query.block_state(\u0027zombie:double\u0027)",
         "components": {
           "minecraft:geometry": "minecraft:geometry.full_block",
           "minecraft:light_dampening": 15,
@@ -121,11 +121,11 @@
         "identifier": "geometry.zombie.eyewood_slab",
         "bone_visibility": {
           "bottom_slab": {
-            "expression": "query.block_state('minecraft:vertical_half') == 'bottom'",
+            "expression": "query.block_state(\u0027minecraft:vertical_half\u0027) == \u0027bottom\u0027",
             "version": 1
           },
           "top_slab": {
-            "expression": "query.block_state('minecraft:vertical_half') == 'top'",
+            "expression": "query.block_state(\u0027minecraft:vertical_half\u0027) == \u0027top\u0027",
             "version": 1
           }
         }
@@ -163,7 +163,6 @@
       "minecraft:destructible_by_explosion": {
         "explosion_resistance": 3.0
       },
-      "minecraft:loot": "loot_tables/blocks/demon_plank_slab.json",
       "minecraft:flammable": {
         "catch_chance_modifier": 5,
         "destroy_chance_modifier": 20
@@ -178,12 +177,16 @@
           }
         ]
       },
-      "zombie:slab_pre_place": {},
+      "zombie:slab_pre_place": {
+        
+      },
       "minecraft:tags": [
         "zombie:slab",
         "wood",
         "minecraft:is_axe_item_destructible"
-      ]
+      ],
+      "minecraft:map_color": "#3A0A07"
     }
   }
 }
+

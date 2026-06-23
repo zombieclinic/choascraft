@@ -1,14 +1,23 @@
 {
-	"format_version": "1.26.20",
-	"animations": {
-		"animation.demon_crossbow.fpp_idle": {
-			"loop": true,
-			"bones": {
-				"Weapon": {
-					"rotation": [61.83011, 62.18698, -50.73547],
-					"position": [-2.53419, -14.43672, 10.20527]
-				}
-			}
-		}
-	}
+  "format_version": "1.26.20",
+  "animations": {
+    "animation.demon_crossbow.fpp_idle": {
+      "loop": true,
+      "bones": {
+        "Weapon": {
+          "rotation": [
+            61.83011,
+            62.18698,
+            -50.73547
+          ],
+          "position": [
+            -2.53419,
+            -14.43672,
+            10.20527
+          ]
+        }
+      }
+    }
+  }
 }
+

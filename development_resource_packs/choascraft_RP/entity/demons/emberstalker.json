@@ -1,25 +1,38 @@
 {
-    "format_version": "1.26.20",
-    "minecraft:client_entity": {
-        "description": {
-            "identifier": "zombie:emberstalker",
-            "materials": {"default": "entity_alphatest"},
-            "textures": {"default": "textures/demon/item_mob/minion_ranged"},
-            "geometry": {"default": "geometry.emberstalker"},
-            "animations": {
-                "idle": "animation.ember_stalker_idle",
-                "walk": "animation.ember_stalker_walk",
-                "attack_part_1": "animation.ember_stalker_attack_part_1",
-                "death": "animation.ember_stalker_death",
-                "attack_part_2": "animation.ember_stalker_attack_part_2",
-                "controller": "controller.animation.ember_stalker"
-                },
-                "scripts": {"animate": ["controller"]},
-            "spawn_egg": {
-                "base_color": "#df1d1d",
-                "overlay_color": "#000000"
-            },
-            "render_controllers": ["controller.render.default"]
-        }
+  "format_version": "1.26.20",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "zombie:emberstalker",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/demon/item_mob/minion_ranged"
+      },
+      "geometry": {
+        "default": "geometry.emberstalker"
+      },
+      "animations": {
+        "idle": "animation.ember_stalker_idle",
+        "walk": "animation.ember_stalker_walk",
+        "attack_part_1": "animation.ember_stalker_attack_part_1",
+        "death": "animation.ember_stalker_death",
+        "attack_part_2": "animation.ember_stalker_attack_part_2",
+        "controller": "controller.animation.ember_stalker"
+      },
+      "scripts": {
+        "animate": [
+          "controller"
+        ]
+      },
+      "spawn_egg": {
+        "base_color": "#df1d1d",
+        "overlay_color": "#000000"
+      },
+      "render_controllers": [
+        "controller.render.default"
+      ]
     }
+  }
 }
+

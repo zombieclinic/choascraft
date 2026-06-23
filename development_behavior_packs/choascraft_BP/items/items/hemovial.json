@@ -1,0 +1,34 @@
+{
+  "format_version": "1.26.30",
+  "minecraft:item": {
+    "description": {
+      "identifier": "zombie:hemovial",
+      "menu_category": {
+        "category": "items",
+        "group": "minecraft:itemGroup.name.potion"
+      }
+    },
+    "components": {
+      "minecraft:max_stack_size": 16,
+      "minecraft:icon": "zombie_hemovial",
+      "minecraft:display_name": {
+        "value": "item.zombie:hemovial.name"
+      },
+      "minecraft:food": {
+        "can_always_eat": true,
+        "nutrition": 0,
+        "saturation_modifier": 0
+      },
+      "minecraft:use_animation": "drink",
+      "minecraft:use_modifiers": {
+        "emit_vibrations": true,
+        "movement_modifier": 0.35,
+        "use_duration": 32
+      },
+      "zombie:hemovial_food": {
+        
+      }
+    }
+  }
+}
+

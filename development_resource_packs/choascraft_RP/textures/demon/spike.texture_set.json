@@ -1,8 +1,9 @@
 {
-	"format_version": "1.16.100",
-	"minecraft:texture_set": {
-		"color": "spike",
-		"metalness_emissive_roughness": "spike_mer",
-		"normal": "spike_normal"
-	}
+  "format_version": "1.16.100",
+  "minecraft:texture_set": {
+    "color": "spike",
+    "metalness_emissive_roughness": "spike_mer",
+    "normal": "spike_normal"
+  }
 }
+

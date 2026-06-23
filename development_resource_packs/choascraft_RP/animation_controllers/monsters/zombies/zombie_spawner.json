@@ -1,21 +1,28 @@
 {
-    "format_version": "1.10.0",
-    "animation_controllers": {
-        "controller.animation.zombie_spawner": {
-            "initial_state": "waiting",
-            "states": {
-                "waiting" : {
-                    "animations": [{"waiting" :"(1.0)"}],
-                    "transitions": [
-                        {
-                            "spawn" : "query.variant == 2"
-                        }
-                    ]
-                },
-                "spawn": {
-                    "animations": ["spawn"]
-                }
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.zombie_spawner": {
+      "initial_state": "waiting",
+      "states": {
+        "waiting": {
+          "animations": [
+            {
+              "waiting": "(1.0)"
             }
+          ],
+          "transitions": [
+            {
+              "spawn": "query.variant == 2"
+            }
+          ]
+        },
+        "spawn": {
+          "animations": [
+            "spawn"
+          ]
         }
+      }
     }
+  }
 }
+

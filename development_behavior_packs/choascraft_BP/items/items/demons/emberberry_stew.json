@@ -24,7 +24,10 @@
         "movement_modifier": 0.35,
         "use_duration": 32
       },
-      "zombie:emberberry_stew_food": {}
+      "zombie:emberberry_stew_food": {
+        
+      }
     }
   }
 }
+

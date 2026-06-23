@@ -4,51 +4,40 @@
     "description": {
       "identifier": "zombie:ashen_hellbark_tree_feature"
     },
-
     "fancy_trunk": {
       "trunk_height": {
         "base": 9,
         "variance": 10,
         "scale": 0.618
       },
-
       "trunk_width": 1,
-
       "trunk_block": {
         "name": "zombie:demon_log"
       },
-
       "branches": {
         "slope": 0.12,
         "density": 0.5,
         "min_altitude_factor": 0.08
       },
-
       "width_scale": 1.8,
       "foliage_altitude_factor": 0.08
     },
-
-    
-
     "base_block": [
       "zombie:demon_grass_no_tick",
       "zombie:demon_dirt",
       "zombie:demon_stone"
     ],
-
     "may_grow_on": [
       "zombie:demon_grass_no_tick",
       "zombie:demon_dirt",
       "zombie:demon_stone"
     ],
-
     "may_replace": [
       "minecraft:air",
       "minecraft:tallgrass",
       "minecraft:deadbush",
       "zombie:corrupted_grass"
     ],
-
     "may_grow_through": [
       "minecraft:air",
       "minecraft:tallgrass",
@@ -57,3 +46,4 @@
     ]
   }
 }
+

@@ -72,7 +72,9 @@
           "infected"
         ]
       },
-      "minecraft:nameable": {},
+      "minecraft:nameable": {
+        
+      },
       "minecraft:health": {
         "value": 500,
         "max": 500
@@ -90,13 +92,17 @@
       "minecraft:movement": {
         "value": 0.18
       },
-      "minecraft:movement.basic": {},
+      "minecraft:movement.basic": {
+        
+      },
       "minecraft:navigation.walk": {
         "can_walk": true,
         "can_path_over_water": true,
         "avoid_damage_blocks": true
       },
-      "minecraft:jump.static": {},
+      "minecraft:jump.static": {
+        
+      },
       "minecraft:breathable": {
         "total_supply": 15,
         "suffocate_time": 0,
@@ -152,11 +158,17 @@
           }
         ]
       },
-      "minecraft:physics": {},
-      "minecraft:despawn": {
-        "despawn_from_distance": {}
+      "minecraft:physics": {
+        
       },
-      "minecraft:conditional_bandwidth_optimization": {}
+      "minecraft:despawn": {
+        "despawn_from_distance": {
+          
+        }
+      },
+      "minecraft:conditional_bandwidth_optimization": {
+        
+      }
     },
     "events": {
       "minecraft:entity_spawned": {
@@ -284,3 +296,4 @@
     }
   }
 }
+

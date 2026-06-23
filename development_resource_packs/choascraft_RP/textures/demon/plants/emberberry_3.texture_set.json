@@ -1,8 +1,9 @@
 {
-	"format_version": "1.16.100",
-	"minecraft:texture_set": {
-		"color": "emberberry_3",
-		"metalness_emissive_roughness": "emberberry_3_mer",
-		"normal": "emberberry_3_normal"
-	}
+  "format_version": "1.16.100",
+  "minecraft:texture_set": {
+    "color": "emberberry_3",
+    "metalness_emissive_roughness": "emberberry_3_mer",
+    "normal": "emberberry_3_normal"
+  }
 }
+

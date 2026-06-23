@@ -4,10 +4,16 @@
     "description": {
       "identifier": "zombie:greatwhite_shark_leggings_recipe"
     },
-    "tags": [ "crafting_table" ],
+    "tags": [
+      "crafting_table"
+    ],
     "unlock": [
-      { "item": "minecraft:iron_ingot" },
-      { "item": "zombie:shark_hide" }
+      {
+        "item": "minecraft:iron_ingot"
+      },
+      {
+        "item": "zombie:shark_hide"
+      }
     ],
     "pattern": [
       "III",
@@ -15,12 +21,19 @@
       "IHI"
     ],
     "key": {
-      "I": { "item": "minecraft:iron_ingot" },
-      "E": { "item": "zombie:shark_eye" },
-      "H": { "item": "zombie:shark_hide" }
+      "I": {
+        "item": "minecraft:iron_ingot"
+      },
+      "E": {
+        "item": "zombie:shark_eye"
+      },
+      "H": {
+        "item": "zombie:shark_hide"
+      }
     },
     "result": {
       "item": "zombie:greatwhite_shark_leggings"
     }
   }
 }
+

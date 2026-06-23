@@ -34,7 +34,9 @@
         }
       },
       "despawn": {
-        "minecraft:instant_despawn": {}
+        "minecraft:instant_despawn": {
+          
+        }
       }
     },
     "components": {
@@ -43,7 +45,9 @@
         "height": 0.25
       },
       "minecraft:projectile": {
-        "on_hit": {},
+        "on_hit": {
+          
+        },
         "anchor": 0,
         "power": 1.5,
         "gravity": 0.01,
@@ -54,7 +58,9 @@
           0
         ]
       },
-      "minecraft:physics": {},
+      "minecraft:physics": {
+        
+      },
       "minecraft:conditional_bandwidth_optimization": {
         "default_values": {
           "max_optimized_distance": 100,
@@ -119,3 +125,4 @@
     }
   }
 }
+

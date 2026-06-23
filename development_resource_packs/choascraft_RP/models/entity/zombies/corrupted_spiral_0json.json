@@ -1,73 +1,338 @@
 {
-	"format_version": "1.12.0",
-	"minecraft:geometry": [
-		{
-			"description": {
-				"identifier": "geometry.zombie_corrupted_spire_0",
-				"texture_width": 128,
-				"texture_height": 128,
-				"visible_bounds_width": 3,
-				"visible_bounds_height": 3.5,
-				"visible_bounds_offset": [0, 1.25, 0]
-			},
-			"bones": [
-				{
-					"name": "bb_main",
-					"pivot": [0, 0, 0],
-					"cubes": [
-						{
-							"origin": [-7, 0, -7],
-							"size": [13, 16, 11],
-							"uv": {
-								"north": {"uv": [11, 14], "uv_size": [13, 16]},
-								"east": {"uv": [0, 14], "uv_size": [11, 16]},
-								"south": {"uv": [35, 14], "uv_size": [13, 16]},
-								"west": {"uv": [24, 14], "uv_size": [11, 16]},
-								"up": {"uv": [11, 0], "uv_size": [13, 11]},
-								"down": {"uv": [24, 11], "uv_size": [13, -11]}
-							}
-						},
-						{
-							"origin": [0, 2.90329, 1.09584],
-							"size": [8, 14, 11],
-							"pivot": [-2.00978, 26.82926, 0.75],
-							"rotation": [-22.5, 0, 0],
-							"uv": {
-								"north": {"uv": [11, 41], "uv_size": [8, 14]},
-								"east": {"uv": [0, 41], "uv_size": [11, 14]},
-								"south": {"uv": [30, 41], "uv_size": [8, 14]},
-								"west": {"uv": [19, 41], "uv_size": [11, 14]},
-								"up": {"uv": [11, 30], "uv_size": [8, 11]},
-								"down": {"uv": [19, 41], "uv_size": [8, -11]}
-							}
-						},
-						{
-							"origin": [-8.01956, 0.15851, -1],
-							"size": [8, 11, 8],
-							"uv": {
-								"north": {"uv": [8, 63], "uv_size": [8, 11]},
-								"east": {"uv": [0, 63], "uv_size": [8, 11]},
-								"south": {"uv": [24, 63], "uv_size": [8, 11]},
-								"west": {"uv": [16, 63], "uv_size": [8, 11]},
-								"up": {"uv": [8, 55], "uv_size": [8, 8]},
-								"down": {"uv": [16, 63], "uv_size": [8, -8]}
-							}
-						},
-						{
-							"origin": [-8.01956, 10.15851, 4],
-							"size": [2, 2, 2],
-							"uv": {
-								"north": {"uv": [0, 9], "uv_size": [2, 2]},
-								"east": {"uv": [2, 9], "uv_size": [2, 2]},
-								"south": {"uv": [4, 9], "uv_size": [2, 2]},
-								"west": {"uv": [6, 9], "uv_size": [2, 2]},
-								"up": {"uv": [8, 9], "uv_size": [2, 2]},
-								"down": {"uv": [6, 41], "uv_size": [2, -2]}
-							}
-						}
-					]
-				}
-			]
-		}
-	]
+  "format_version": "1.12.0",
+  "minecraft:geometry": [
+    {
+      "description": {
+        "identifier": "geometry.zombie_corrupted_spire_0",
+        "texture_width": 128,
+        "texture_height": 128,
+        "visible_bounds_width": 3,
+        "visible_bounds_height": 3.5,
+        "visible_bounds_offset": [
+          0,
+          1.25,
+          0
+        ]
+      },
+      "bones": [
+        {
+          "name": "bb_main",
+          "pivot": [
+            0,
+            0,
+            0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -7,
+                0,
+                -7
+              ],
+              "size": [
+                13,
+                16,
+                11
+              ],
+              "uv": {
+                "north": {
+                  "uv": [
+                    11,
+                    14
+                  ],
+                  "uv_size": [
+                    13,
+                    16
+                  ]
+                },
+                "east": {
+                  "uv": [
+                    0,
+                    14
+                  ],
+                  "uv_size": [
+                    11,
+                    16
+                  ]
+                },
+                "south": {
+                  "uv": [
+                    35,
+                    14
+                  ],
+                  "uv_size": [
+                    13,
+                    16
+                  ]
+                },
+                "west": {
+                  "uv": [
+                    24,
+                    14
+                  ],
+                  "uv_size": [
+                    11,
+                    16
+                  ]
+                },
+                "up": {
+                  "uv": [
+                    11,
+                    0
+                  ],
+                  "uv_size": [
+                    13,
+                    11
+                  ]
+                },
+                "down": {
+                  "uv": [
+                    24,
+                    11
+                  ],
+                  "uv_size": [
+                    13,
+                    -11
+                  ]
+                }
+              }
+            },
+            {
+              "origin": [
+                0,
+                2.90329,
+                1.09584
+              ],
+              "size": [
+                8,
+                14,
+                11
+              ],
+              "pivot": [
+                -2.00978,
+                26.82926,
+                0.75
+              ],
+              "rotation": [
+                -22.5,
+                0,
+                0
+              ],
+              "uv": {
+                "north": {
+                  "uv": [
+                    11,
+                    41
+                  ],
+                  "uv_size": [
+                    8,
+                    14
+                  ]
+                },
+                "east": {
+                  "uv": [
+                    0,
+                    41
+                  ],
+                  "uv_size": [
+                    11,
+                    14
+                  ]
+                },
+                "south": {
+                  "uv": [
+                    30,
+                    41
+                  ],
+                  "uv_size": [
+                    8,
+                    14
+                  ]
+                },
+                "west": {
+                  "uv": [
+                    19,
+                    41
+                  ],
+                  "uv_size": [
+                    11,
+                    14
+                  ]
+                },
+                "up": {
+                  "uv": [
+                    11,
+                    30
+                  ],
+                  "uv_size": [
+                    8,
+                    11
+                  ]
+                },
+                "down": {
+                  "uv": [
+                    19,
+                    41
+                  ],
+                  "uv_size": [
+                    8,
+                    -11
+                  ]
+                }
+              }
+            },
+            {
+              "origin": [
+                -8.01956,
+                0.15851,
+                -1
+              ],
+              "size": [
+                8,
+                11,
+                8
+              ],
+              "uv": {
+                "north": {
+                  "uv": [
+                    8,
+                    63
+                  ],
+                  "uv_size": [
+                    8,
+                    11
+                  ]
+                },
+                "east": {
+                  "uv": [
+                    0,
+                    63
+                  ],
+                  "uv_size": [
+                    8,
+                    11
+                  ]
+                },
+                "south": {
+                  "uv": [
+                    24,
+                    63
+                  ],
+                  "uv_size": [
+                    8,
+                    11
+                  ]
+                },
+                "west": {
+                  "uv": [
+                    16,
+                    63
+                  ],
+                  "uv_size": [
+                    8,
+                    11
+                  ]
+                },
+                "up": {
+                  "uv": [
+                    8,
+                    55
+                  ],
+                  "uv_size": [
+                    8,
+                    8
+                  ]
+                },
+                "down": {
+                  "uv": [
+                    16,
+                    63
+                  ],
+                  "uv_size": [
+                    8,
+                    -8
+                  ]
+                }
+              }
+            },
+            {
+              "origin": [
+                -8.01956,
+                10.15851,
+                4
+              ],
+              "size": [
+                2,
+                2,
+                2
+              ],
+              "uv": {
+                "north": {
+                  "uv": [
+                    0,
+                    9
+                  ],
+                  "uv_size": [
+                    2,
+                    2
+                  ]
+                },
+                "east": {
+                  "uv": [
+                    2,
+                    9
+                  ],
+                  "uv_size": [
+                    2,
+                    2
+                  ]
+                },
+                "south": {
+                  "uv": [
+                    4,
+                    9
+                  ],
+                  "uv_size": [
+                    2,
+                    2
+                  ]
+                },
+                "west": {
+                  "uv": [
+                    6,
+                    9
+                  ],
+                  "uv_size": [
+                    2,
+                    2
+                  ]
+                },
+                "up": {
+                  "uv": [
+                    8,
+                    9
+                  ],
+                  "uv_size": [
+                    2,
+                    2
+                  ]
+                },
+                "down": {
+                  "uv": [
+                    6,
+                    41
+                  ],
+                  "uv_size": [
+                    2,
+                    -2
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
 }
+

@@ -307,7 +307,9 @@
         "minecraft:is_axe_item_destructible",
         "one_way_collidable",
         "wood"
-      ]
+      ],
+      "minecraft:map_color": "#39132E"
     }
   }
 }
+

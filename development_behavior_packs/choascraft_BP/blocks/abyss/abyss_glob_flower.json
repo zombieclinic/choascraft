@@ -66,11 +66,14 @@
         ]
       },
       "minecraft:light_dampening": 0,
-      "minecraft:replaceable": {},
-      "minecraft:loot": "loot_tables/blocks/abyss_glob_flower.json",
+      "minecraft:replaceable": {
+        
+      },
       "minecraft:tags": [
         "plant"
-      ]
+      ],
+      "minecraft:map_color": "#502F39"
     }
   }
 }
+

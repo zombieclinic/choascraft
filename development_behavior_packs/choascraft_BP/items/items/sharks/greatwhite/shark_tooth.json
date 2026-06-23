@@ -1,15 +1,18 @@
 {
-    "format_version": "1.26.10",
-    "minecraft:item": {
-        "description": {
-            "identifier": "zombie:shark_tooth",
-            "menu_category": {"category": "items"}
-        },
-        "components": {
-            "minecraft:icon": "zombie_shark_tooth",
-            "minecraft:display_name": {
-                "value": "Shark Tooth"
-            }
-        }
+  "format_version": "1.26.10",
+  "minecraft:item": {
+    "description": {
+      "identifier": "zombie:shark_tooth",
+      "menu_category": {
+        "category": "items"
+      }
+    },
+    "components": {
+      "minecraft:icon": "zombie_shark_tooth",
+      "minecraft:display_name": {
+        "value": "Shark Tooth"
+      }
     }
+  }
 }
+

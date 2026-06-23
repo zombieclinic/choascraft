@@ -148,11 +148,15 @@
           }
         ]
       },
-      "zombie:slab_pre_place": {},
+      "zombie:slab_pre_place": {
+        
+      },
       "minecraft:tags": [
         "zombie:slab",
         "minecraft:is_pickaxe_item_destructible"
-      ]
+      ],
+      "minecraft:map_color": "#30141B"
     }
   }
 }
+

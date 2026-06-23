@@ -1,457 +1,459 @@
-﻿{
-    "format_version":  "1.26.20",
-    "minecraft:block":  {
-                            "description":  {
-                                                "identifier":  "zombie:blood_button",
-                                                "menu_category":  {
-                                                                      "category":  "construction"
-                                                                  },
-                                                "traits":  {
-                                                               "minecraft:placement_direction":  {
-                                                                                                     "enabled_states":  [
-                                                                                                                            "minecraft:cardinal_direction"
-                                                                                                                        ]
-                                                                                                 },
-                                                               "minecraft:placement_position":  {
-                                                                                                    "enabled_states":  [
-                                                                                                                           "minecraft:block_face"
-                                                                                                                       ]
-                                                                                                }
-                                                           },
-                                                "states":  {
-                                                               "zombie:powered":  [
-                                                                                      false,
-                                                                                      true
-                                                                                  ]
-                                                           }
-                                            },
-                            "components":  {
-                                               "minecraft:geometry":  {
-                                                                          "identifier":  "geometry.zcbutton",
-                                                                          "bone_visibility":  {
-                                                                                                  "floor_off":  {
-                                                                                                                    "expression":  "q.block_state(\u0027minecraft:block_face\u0027) == \u0027up\u0027 \u0026\u0026 !q.block_state(\u0027zombie:powered\u0027)",
-                                                                                                                    "version":  1
-                                                                                                                },
-                                                                                                  "floor_on":  {
-                                                                                                                   "expression":  "q.block_state(\u0027minecraft:block_face\u0027) == \u0027up\u0027 \u0026\u0026 q.block_state(\u0027zombie:powered\u0027)",
-                                                                                                                   "version":  1
-                                                                                                               },
-                                                                                                  "roof_off":  {
-                                                                                                                   "expression":  "q.block_state(\u0027minecraft:block_face\u0027) == \u0027down\u0027 \u0026\u0026 !q.block_state(\u0027zombie:powered\u0027)",
-                                                                                                                   "version":  1
-                                                                                                               },
-                                                                                                  "roof_on":  {
-                                                                                                                  "expression":  "q.block_state(\u0027minecraft:block_face\u0027) == \u0027down\u0027 \u0026\u0026 q.block_state(\u0027zombie:powered\u0027)",
-                                                                                                                  "version":  1
-                                                                                                              },
-                                                                                                  "wall_off":  {
-                                                                                                                   "expression":  "(q.block_state(\u0027minecraft:block_face\u0027) == \u0027north\u0027 || q.block_state(\u0027minecraft:block_face\u0027) == \u0027south\u0027 || q.block_state(\u0027minecraft:block_face\u0027) == \u0027east\u0027 || q.block_state(\u0027minecraft:block_face\u0027) == \u0027west\u0027) \u0026\u0026 !q.block_state(\u0027zombie:powered\u0027)",
-                                                                                                                   "version":  1
-                                                                                                               },
-                                                                                                  "wall_on":  {
-                                                                                                                  "expression":  "(q.block_state(\u0027minecraft:block_face\u0027) == \u0027north\u0027 || q.block_state(\u0027minecraft:block_face\u0027) == \u0027south\u0027 || q.block_state(\u0027minecraft:block_face\u0027) == \u0027east\u0027 || q.block_state(\u0027minecraft:block_face\u0027) == \u0027west\u0027) \u0026\u0026 q.block_state(\u0027zombie:powered\u0027)",
-                                                                                                                  "version":  1
-                                                                                                              }
-                                                                                              }
-                                                                      },
-                                               "minecraft:material_instances":  {
-                                                                                    "*":  {
-                                                                                              "texture":  "blood_planks",
-                                                                                              "render_method":  "opaque"
-                                                                                          }
-                                                                                },
-                                               "minecraft:collision_box":  false,
-                                               "minecraft:destructible_by_mining":  {
-                                                                                        "seconds_to_destroy":  0.3
-                                                                                    },
-                                               "minecraft:destructible_by_explosion":  {
-                                                                                           "explosion_resistance":  1
-                                                                                       },
-                                               "zombie:button_press":  {
-
-                                                                       },
-                                               "minecraft:redstone_producer":  {
-                                                                                   "power":  0
-                                                                               },
-                                               "minecraft:display_name":  "Blood Button"
-                                           },
-                            "permutations":  [
-                                                 {
-                                                     "condition":  "!q.block_state(\u0027zombie:powered\u0027) \u0026\u0026 q.block_state(\u0027minecraft:block_face\u0027) == \u0027up\u0027",
-                                                     "components":  {
-                                                                        "minecraft:selection_box":  {
-                                                                                                        "origin":  [
-                                                                                                                       -4,
-                                                                                                                       0,
-                                                                                                                       -4
-                                                                                                                   ],
-                                                                                                        "size":  [
-                                                                                                                     8,
-                                                                                                                     3,
-                                                                                                                     8
-                                                                                                                 ]
-                                                                                                    },
-                                                                        "minecraft:transformation":  {
-                                                                                                         "rotation":  [
-                                                                                                                          0,
-                                                                                                                          0,
-                                                                                                                          0
-                                                                                                                      ]
-                                                                                                     },
-                                                                        "minecraft:redstone_producer":  {
-                                                                                                            "power":  0,
-                                                                                                            "strongly_powered_face":  "down"
-                                                                                                        }
-                                                                    }
-                                                 },
-                                                 {
-                                                     "condition":  "!q.block_state(\u0027zombie:powered\u0027) \u0026\u0026 q.block_state(\u0027minecraft:block_face\u0027) == \u0027down\u0027",
-                                                     "components":  {
-                                                                        "minecraft:selection_box":  {
-                                                                                                        "origin":  [
-                                                                                                                       -4,
-                                                                                                                       13,
-                                                                                                                       -4
-                                                                                                                   ],
-                                                                                                        "size":  [
-                                                                                                                     8,
-                                                                                                                     3,
-                                                                                                                     8
-                                                                                                                 ]
-                                                                                                    },
-                                                                        "minecraft:redstone_producer":  {
-                                                                                                            "power":  0,
-                                                                                                            "strongly_powered_face":  "up"
-                                                                                                        }
-                                                                    }
-                                                 },
-                                                 {
-                                                     "condition":  "!q.block_state(\u0027zombie:powered\u0027) \u0026\u0026 q.block_state(\u0027minecraft:block_face\u0027) == \u0027north\u0027",
-                                                     "components":  {
-                                                                        "minecraft:transformation":  {
-                                                                                                         "rotation":  [
-                                                                                                                          0,
-                                                                                                                          0,
-                                                                                                                          0
-                                                                                                                      ]
-                                                                                                     },
-                                                                        "minecraft:selection_box":  {
-                                                                                                        "origin":  [
-                                                                                                                       -3,
-                                                                                                                       6,
-                                                                                                                       6
-                                                                                                                   ],
-                                                                                                        "size":  [
-                                                                                                                     6,
-                                                                                                                     4,
-                                                                                                                     2
-                                                                                                                 ]
-                                                                                                    },
-                                                                        "minecraft:redstone_producer":  {
-                                                                                                            "power":  0,
-                                                                                                            "strongly_powered_face":  "south"
-                                                                                                        }
-                                                                    }
-                                                 },
-                                                 {
-                                                     "condition":  "!q.block_state(\u0027zombie:powered\u0027) \u0026\u0026 q.block_state(\u0027minecraft:block_face\u0027) == \u0027south\u0027",
-                                                     "components":  {
-                                                                        "minecraft:transformation":  {
-                                                                                                         "rotation":  [
-                                                                                                                          0,
-                                                                                                                          180,
-                                                                                                                          0
-                                                                                                                      ]
-                                                                                                     },
-                                                                        "minecraft:selection_box":  {
-                                                                                                        "origin":  [
-                                                                                                                       -3,
-                                                                                                                       6,
-                                                                                                                       6
-                                                                                                                   ],
-                                                                                                        "size":  [
-                                                                                                                     6,
-                                                                                                                     4,
-                                                                                                                     2
-                                                                                                                 ]
-                                                                                                    },
-                                                                        "minecraft:redstone_producer":  {
-                                                                                                            "power":  0,
-                                                                                                            "strongly_powered_face":  "south"
-                                                                                                        }
-                                                                    }
-                                                 },
-                                                 {
-                                                     "condition":  "!q.block_state(\u0027zombie:powered\u0027) \u0026\u0026 q.block_state(\u0027minecraft:block_face\u0027) == \u0027east\u0027",
-                                                     "components":  {
-                                                                        "minecraft:transformation":  {
-                                                                                                         "rotation":  [
-                                                                                                                          0,
-                                                                                                                          -90,
-                                                                                                                          0
-                                                                                                                      ]
-                                                                                                     },
-                                                                        "minecraft:selection_box":  {
-                                                                                                        "origin":  [
-                                                                                                                       -3,
-                                                                                                                       6,
-                                                                                                                       6
-                                                                                                                   ],
-                                                                                                        "size":  [
-                                                                                                                     6,
-                                                                                                                     4,
-                                                                                                                     2
-                                                                                                                 ]
-                                                                                                    },
-                                                                        "minecraft:redstone_producer":  {
-                                                                                                            "power":  0,
-                                                                                                            "strongly_powered_face":  "south"
-                                                                                                        }
-                                                                    }
-                                                 },
-                                                 {
-                                                     "condition":  "!q.block_state(\u0027zombie:powered\u0027) \u0026\u0026 q.block_state(\u0027minecraft:block_face\u0027) == \u0027west\u0027",
-                                                     "components":  {
-                                                                        "minecraft:transformation":  {
-                                                                                                         "rotation":  [
-                                                                                                                          0,
-                                                                                                                          90,
-                                                                                                                          0
-                                                                                                                      ]
-                                                                                                     },
-                                                                        "minecraft:selection_box":  {
-                                                                                                        "origin":  [
-                                                                                                                       -3,
-                                                                                                                       6,
-                                                                                                                       6
-                                                                                                                   ],
-                                                                                                        "size":  [
-                                                                                                                     6,
-                                                                                                                     4,
-                                                                                                                     2
-                                                                                                                 ]
-                                                                                                    },
-                                                                        "minecraft:redstone_producer":  {
-                                                                                                            "power":  0,
-                                                                                                            "strongly_powered_face":  "south"
-                                                                                                        }
-                                                                    }
-                                                 },
-                                                 {
-                                                     "condition":  "q.block_state(\u0027zombie:powered\u0027) \u0026\u0026 q.block_state(\u0027minecraft:block_face\u0027) == \u0027up\u0027",
-                                                     "components":  {
-                                                                        "minecraft:selection_box":  {
-                                                                                                        "origin":  [
-                                                                                                                       -4,
-                                                                                                                       0,
-                                                                                                                       -4
-                                                                                                                   ],
-                                                                                                        "size":  [
-                                                                                                                     8,
-                                                                                                                     3,
-                                                                                                                     8
-                                                                                                                 ]
-                                                                                                    },
-                                                                        "minecraft:tick":  {
-                                                                                               "interval_range":  [
-                                                                                                                      20,
-                                                                                                                      20
-                                                                                                                  ],
-                                                                                               "looping":  true
-                                                                                           },
-                                                                        "zombie:button_release_tick":  {
-
-                                                                                                       },
-                                                                        "minecraft:redstone_producer":  {
-                                                                                                            "power":  15,
-                                                                                                            "strongly_powered_face":  "down"
-                                                                                                        }
-                                                                    }
-                                                 },
-                                                 {
-                                                     "condition":  "q.block_state(\u0027zombie:powered\u0027) \u0026\u0026 q.block_state(\u0027minecraft:block_face\u0027) == \u0027down\u0027",
-                                                     "components":  {
-                                                                        "minecraft:selection_box":  {
-                                                                                                        "origin":  [
-                                                                                                                       -4,
-                                                                                                                       13,
-                                                                                                                       -4
-                                                                                                                   ],
-                                                                                                        "size":  [
-                                                                                                                     8,
-                                                                                                                     3,
-                                                                                                                     8
-                                                                                                                 ]
-                                                                                                    },
-                                                                        "minecraft:tick":  {
-                                                                                               "interval_range":  [
-                                                                                                                      20,
-                                                                                                                      20
-                                                                                                                  ],
-                                                                                               "looping":  true
-                                                                                           },
-                                                                        "zombie:button_release_tick":  {
-
-                                                                                                       },
-                                                                        "minecraft:redstone_producer":  {
-                                                                                                            "power":  15,
-                                                                                                            "strongly_powered_face":  "up"
-                                                                                                        }
-                                                                    }
-                                                 },
-                                                 {
-                                                     "condition":  "q.block_state(\u0027zombie:powered\u0027) \u0026\u0026 q.block_state(\u0027minecraft:block_face\u0027) == \u0027north\u0027",
-                                                     "components":  {
-                                                                        "minecraft:transformation":  {
-                                                                                                         "rotation":  [
-                                                                                                                          0,
-                                                                                                                          0,
-                                                                                                                          0
-                                                                                                                      ]
-                                                                                                     },
-                                                                        "minecraft:selection_box":  {
-                                                                                                        "origin":  [
-                                                                                                                       -3,
-                                                                                                                       6,
-                                                                                                                       6
-                                                                                                                   ],
-                                                                                                        "size":  [
-                                                                                                                     6,
-                                                                                                                     4,
-                                                                                                                     2
-                                                                                                                 ]
-                                                                                                    },
-                                                                        "minecraft:tick":  {
-                                                                                               "interval_range":  [
-                                                                                                                      20,
-                                                                                                                      20
-                                                                                                                  ],
-                                                                                               "looping":  true
-                                                                                           },
-                                                                        "zombie:button_release_tick":  {
-
-                                                                                                       },
-                                                                        "minecraft:redstone_producer":  {
-                                                                                                            "power":  15,
-                                                                                                            "strongly_powered_face":  "north"
-                                                                                                        }
-                                                                    }
-                                                 },
-                                                 {
-                                                     "condition":  "q.block_state(\u0027zombie:powered\u0027) \u0026\u0026 q.block_state(\u0027minecraft:block_face\u0027) == \u0027south\u0027",
-                                                     "components":  {
-                                                                        "minecraft:transformation":  {
-                                                                                                         "rotation":  [
-                                                                                                                          0,
-                                                                                                                          180,
-                                                                                                                          0
-                                                                                                                      ]
-                                                                                                     },
-                                                                        "minecraft:selection_box":  {
-                                                                                                        "origin":  [
-                                                                                                                       -3,
-                                                                                                                       6,
-                                                                                                                       6
-                                                                                                                   ],
-                                                                                                        "size":  [
-                                                                                                                     6,
-                                                                                                                     4,
-                                                                                                                     2
-                                                                                                                 ]
-                                                                                                    },
-                                                                        "minecraft:tick":  {
-                                                                                               "interval_range":  [
-                                                                                                                      20,
-                                                                                                                      20
-                                                                                                                  ],
-                                                                                               "looping":  true
-                                                                                           },
-                                                                        "zombie:button_release_tick":  {
-
-                                                                                                       },
-                                                                        "minecraft:redstone_producer":  {
-                                                                                                            "power":  15,
-                                                                                                            "strongly_powered_face":  "south"
-                                                                                                        }
-                                                                    }
-                                                 },
-                                                 {
-                                                     "condition":  "q.block_state(\u0027zombie:powered\u0027) \u0026\u0026 q.block_state(\u0027minecraft:block_face\u0027) == \u0027east\u0027",
-                                                     "components":  {
-                                                                        "minecraft:transformation":  {
-                                                                                                         "rotation":  [
-                                                                                                                          0,
-                                                                                                                          -90,
-                                                                                                                          0
-                                                                                                                      ]
-                                                                                                     },
-                                                                        "minecraft:selection_box":  {
-                                                                                                        "origin":  [
-                                                                                                                       -3,
-                                                                                                                       6,
-                                                                                                                       6
-                                                                                                                   ],
-                                                                                                        "size":  [
-                                                                                                                     6,
-                                                                                                                     4,
-                                                                                                                     2
-                                                                                                                 ]
-                                                                                                    },
-                                                                        "minecraft:tick":  {
-                                                                                               "interval_range":  [
-                                                                                                                      20,
-                                                                                                                      20
-                                                                                                                  ],
-                                                                                               "looping":  true
-                                                                                           },
-                                                                        "zombie:button_release_tick":  {
-
-                                                                                                       },
-                                                                        "minecraft:redstone_producer":  {
-                                                                                                            "power":  15,
-                                                                                                            "strongly_powered_face":  "south"
-                                                                                                        }
-                                                                    }
-                                                 },
-                                                 {
-                                                     "condition":  "q.block_state(\u0027zombie:powered\u0027) \u0026\u0026 q.block_state(\u0027minecraft:block_face\u0027) == \u0027west\u0027",
-                                                     "components":  {
-                                                                        "minecraft:transformation":  {
-                                                                                                         "rotation":  [
-                                                                                                                          0,
-                                                                                                                          90,
-                                                                                                                          0
-                                                                                                                      ]
-                                                                                                     },
-                                                                        "minecraft:selection_box":  {
-                                                                                                        "origin":  [
-                                                                                                                       -3,
-                                                                                                                       6,
-                                                                                                                       6
-                                                                                                                   ],
-                                                                                                        "size":  [
-                                                                                                                     6,
-                                                                                                                     4,
-                                                                                                                     2
-                                                                                                                 ]
-                                                                                                    },
-                                                                        "minecraft:tick":  {
-                                                                                               "interval_range":  [
-                                                                                                                      20,
-                                                                                                                      20
-                                                                                                                  ],
-                                                                                               "looping":  true
-                                                                                           },
-                                                                        "zombie:button_release_tick":  {
-
-                                                                                                       },
-                                                                        "minecraft:redstone_producer":  {
-                                                                                                            "power":  15,
-                                                                                                            "strongly_powered_face":  "south"
-                                                                                                        }
-                                                                    }
-                                                 }
-                                             ]
-                        }
+{
+  "format_version": "1.26.30",
+  "minecraft:block": {
+    "description": {
+      "identifier": "zombie:blood_button",
+      "menu_category": {
+        "category": "construction"
+      },
+      "traits": {
+        "minecraft:placement_direction": {
+          "enabled_states": [
+            "minecraft:cardinal_direction"
+          ]
+        },
+        "minecraft:placement_position": {
+          "enabled_states": [
+            "minecraft:block_face"
+          ]
+        }
+      },
+      "states": {
+        "zombie:powered": [
+          false,
+          true
+        ]
+      }
+    },
+    "components": {
+      "minecraft:geometry": {
+        "identifier": "geometry.zcbutton",
+        "bone_visibility": {
+          "floor_off": {
+            "expression": "q.block_state('minecraft:block_face') == 'up' && !q.block_state('zombie:powered')",
+            "version": 1
+          },
+          "floor_on": {
+            "expression": "q.block_state('minecraft:block_face') == 'up' && q.block_state('zombie:powered')",
+            "version": 1
+          },
+          "roof_off": {
+            "expression": "q.block_state('minecraft:block_face') == 'down' && !q.block_state('zombie:powered')",
+            "version": 1
+          },
+          "roof_on": {
+            "expression": "q.block_state('minecraft:block_face') == 'down' && q.block_state('zombie:powered')",
+            "version": 1
+          },
+          "wall_off": {
+            "expression": "(q.block_state('minecraft:block_face') == 'north' || q.block_state('minecraft:block_face') == 'south' || q.block_state('minecraft:block_face') == 'east' || q.block_state('minecraft:block_face') == 'west') && !q.block_state('zombie:powered')",
+            "version": 1
+          },
+          "wall_on": {
+            "expression": "(q.block_state('minecraft:block_face') == 'north' || q.block_state('minecraft:block_face') == 'south' || q.block_state('minecraft:block_face') == 'east' || q.block_state('minecraft:block_face') == 'west') && q.block_state('zombie:powered')",
+            "version": 1
+          }
+        }
+      },
+      "minecraft:material_instances": {
+        "*": {
+          "texture": "blood_planks",
+          "render_method": "opaque"
+        }
+      },
+      "minecraft:collision_box": false,
+      "minecraft:destructible_by_mining": {
+        "seconds_to_destroy": 0.3
+      },
+      "minecraft:destructible_by_explosion": {
+        "explosion_resistance": 1
+      },
+      "zombie:button_press": {
+        
+      },
+      "minecraft:redstone_producer": {
+        "power": 0
+      },
+      "minecraft:display_name": "Blood Button",
+      "minecraft:map_color": "#78110F"
+    },
+    "permutations": [
+      {
+        "condition": "!q.block_state('zombie:powered') && q.block_state('minecraft:block_face') == 'up'",
+        "components": {
+          "minecraft:selection_box": {
+            "origin": [
+              -4,
+              0,
+              -4
+            ],
+            "size": [
+              8,
+              3,
+              8
+            ]
+          },
+          "minecraft:transformation": {
+            "rotation": [
+              0,
+              0,
+              0
+            ]
+          },
+          "minecraft:redstone_producer": {
+            "power": 0,
+            "strongly_powered_face": "down"
+          }
+        }
+      },
+      {
+        "condition": "!q.block_state('zombie:powered') && q.block_state('minecraft:block_face') == 'down'",
+        "components": {
+          "minecraft:selection_box": {
+            "origin": [
+              -4,
+              13,
+              -4
+            ],
+            "size": [
+              8,
+              3,
+              8
+            ]
+          },
+          "minecraft:redstone_producer": {
+            "power": 0,
+            "strongly_powered_face": "up"
+          }
+        }
+      },
+      {
+        "condition": "!q.block_state('zombie:powered') && q.block_state('minecraft:block_face') == 'north'",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [
+              0,
+              0,
+              0
+            ]
+          },
+          "minecraft:selection_box": {
+            "origin": [
+              -3,
+              6,
+              6
+            ],
+            "size": [
+              6,
+              4,
+              2
+            ]
+          },
+          "minecraft:redstone_producer": {
+            "power": 0,
+            "strongly_powered_face": "south"
+          }
+        }
+      },
+      {
+        "condition": "!q.block_state('zombie:powered') && q.block_state('minecraft:block_face') == 'south'",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [
+              0,
+              180,
+              0
+            ]
+          },
+          "minecraft:selection_box": {
+            "origin": [
+              -3,
+              6,
+              6
+            ],
+            "size": [
+              6,
+              4,
+              2
+            ]
+          },
+          "minecraft:redstone_producer": {
+            "power": 0,
+            "strongly_powered_face": "south"
+          }
+        }
+      },
+      {
+        "condition": "!q.block_state('zombie:powered') && q.block_state('minecraft:block_face') == 'east'",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [
+              0,
+              -90,
+              0
+            ]
+          },
+          "minecraft:selection_box": {
+            "origin": [
+              -3,
+              6,
+              6
+            ],
+            "size": [
+              6,
+              4,
+              2
+            ]
+          },
+          "minecraft:redstone_producer": {
+            "power": 0,
+            "strongly_powered_face": "south"
+          }
+        }
+      },
+      {
+        "condition": "!q.block_state('zombie:powered') && q.block_state('minecraft:block_face') == 'west'",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [
+              0,
+              90,
+              0
+            ]
+          },
+          "minecraft:selection_box": {
+            "origin": [
+              -3,
+              6,
+              6
+            ],
+            "size": [
+              6,
+              4,
+              2
+            ]
+          },
+          "minecraft:redstone_producer": {
+            "power": 0,
+            "strongly_powered_face": "south"
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('zombie:powered') && q.block_state('minecraft:block_face') == 'up'",
+        "components": {
+          "minecraft:selection_box": {
+            "origin": [
+              -4,
+              0,
+              -4
+            ],
+            "size": [
+              8,
+              3,
+              8
+            ]
+          },
+          "minecraft:tick": {
+            "interval_range": [
+              20,
+              20
+            ],
+            "looping": true
+          },
+          "zombie:button_release_tick": {
+            
+          },
+          "minecraft:redstone_producer": {
+            "power": 15,
+            "strongly_powered_face": "down"
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('zombie:powered') && q.block_state('minecraft:block_face') == 'down'",
+        "components": {
+          "minecraft:selection_box": {
+            "origin": [
+              -4,
+              13,
+              -4
+            ],
+            "size": [
+              8,
+              3,
+              8
+            ]
+          },
+          "minecraft:tick": {
+            "interval_range": [
+              20,
+              20
+            ],
+            "looping": true
+          },
+          "zombie:button_release_tick": {
+            
+          },
+          "minecraft:redstone_producer": {
+            "power": 15,
+            "strongly_powered_face": "up"
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('zombie:powered') && q.block_state('minecraft:block_face') == 'north'",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [
+              0,
+              0,
+              0
+            ]
+          },
+          "minecraft:selection_box": {
+            "origin": [
+              -3,
+              6,
+              6
+            ],
+            "size": [
+              6,
+              4,
+              2
+            ]
+          },
+          "minecraft:tick": {
+            "interval_range": [
+              20,
+              20
+            ],
+            "looping": true
+          },
+          "zombie:button_release_tick": {
+            
+          },
+          "minecraft:redstone_producer": {
+            "power": 15,
+            "strongly_powered_face": "north"
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('zombie:powered') && q.block_state('minecraft:block_face') == 'south'",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [
+              0,
+              180,
+              0
+            ]
+          },
+          "minecraft:selection_box": {
+            "origin": [
+              -3,
+              6,
+              6
+            ],
+            "size": [
+              6,
+              4,
+              2
+            ]
+          },
+          "minecraft:tick": {
+            "interval_range": [
+              20,
+              20
+            ],
+            "looping": true
+          },
+          "zombie:button_release_tick": {
+            
+          },
+          "minecraft:redstone_producer": {
+            "power": 15,
+            "strongly_powered_face": "south"
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('zombie:powered') && q.block_state('minecraft:block_face') == 'east'",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [
+              0,
+              -90,
+              0
+            ]
+          },
+          "minecraft:selection_box": {
+            "origin": [
+              -3,
+              6,
+              6
+            ],
+            "size": [
+              6,
+              4,
+              2
+            ]
+          },
+          "minecraft:tick": {
+            "interval_range": [
+              20,
+              20
+            ],
+            "looping": true
+          },
+          "zombie:button_release_tick": {
+            
+          },
+          "minecraft:redstone_producer": {
+            "power": 15,
+            "strongly_powered_face": "south"
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('zombie:powered') && q.block_state('minecraft:block_face') == 'west'",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [
+              0,
+              90,
+              0
+            ]
+          },
+          "minecraft:selection_box": {
+            "origin": [
+              -3,
+              6,
+              6
+            ],
+            "size": [
+              6,
+              4,
+              2
+            ]
+          },
+          "minecraft:tick": {
+            "interval_range": [
+              20,
+              20
+            ],
+            "looping": true
+          },
+          "zombie:button_release_tick": {
+            
+          },
+          "minecraft:redstone_producer": {
+            "power": 15,
+            "strongly_powered_face": "south"
+          }
+        }
+      }
+    ]
+  }
 }
+

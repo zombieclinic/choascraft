@@ -1,8 +1,9 @@
 {
-	"format_version": "1.16.100",
-	"minecraft:texture_set": {
-		"color": "eyewood_planks",
-		"metalness_emissive_roughness": "eyewood_planks_mer",
-		"normal": "eyewood_planks_normal"
-	}
+  "format_version": "1.16.100",
+  "minecraft:texture_set": {
+    "color": "eyewood_planks",
+    "metalness_emissive_roughness": "eyewood_planks_mer",
+    "normal": "eyewood_planks_normal"
+  }
 }
+

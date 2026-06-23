@@ -1,17 +1,19 @@
 {
-    "format_version": "1.26.10",
-    "minecraft:item": {
-        "description": {
-            "identifier": "zombie:crab_orb",
-            "menu_category": {"category": "items"}
-        },
-        "components": {
-            "minecraft:icon": "zombie_crab_orb",
-             "minecraft:stacked_by_data": true,
-             "minecraft:display_name": {
-                "value": "Crab Orb"
-             }
-        }
+  "format_version": "1.26.10",
+  "minecraft:item": {
+    "description": {
+      "identifier": "zombie:crab_orb",
+      "menu_category": {
+        "category": "items"
+      }
+    },
+    "components": {
+      "minecraft:icon": "zombie_crab_orb",
+      "minecraft:stacked_by_data": true,
+      "minecraft:display_name": {
+        "value": "Crab Orb"
+      }
     }
-    
+  }
 }
+

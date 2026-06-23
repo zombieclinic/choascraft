@@ -1,8 +1,9 @@
 {
-	"format_version": "1.16.100",
-	"minecraft:texture_set": {
-		"color": "jellyfish_boots_yellow",
-		"metalness_emissive_roughness": "jellyfish_boots_yellow_mer",
-		"normal": "jellyfish_boots_yellow_normal"
-	}
+  "format_version": "1.16.100",
+  "minecraft:texture_set": {
+    "color": "jellyfish_boots_yellow",
+    "metalness_emissive_roughness": "jellyfish_boots_yellow_mer",
+    "normal": "jellyfish_boots_yellow_normal"
+  }
 }
+

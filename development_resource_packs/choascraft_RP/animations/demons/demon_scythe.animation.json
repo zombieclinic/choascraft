@@ -1,14 +1,23 @@
 {
-	"format_version": "1.26.20",
-	"animations": {
-		"animation.demon_scythe.fpp_idle": {
-			"loop": true,
-			"bones": {
-				"group": {
-					"rotation": [60.25661, 3.47712, -68.56651],
-					"position": [-3.13602, -25.35875, -3.67222]
-				}
-			}
-		}
-	}
+  "format_version": "1.26.20",
+  "animations": {
+    "animation.demon_scythe.fpp_idle": {
+      "loop": true,
+      "bones": {
+        "group": {
+          "rotation": [
+            60.25661,
+            3.47712,
+            -68.56651
+          ],
+          "position": [
+            -3.13602,
+            -25.35875,
+            -3.67222
+          ]
+        }
+      }
+    }
+  }
 }
+

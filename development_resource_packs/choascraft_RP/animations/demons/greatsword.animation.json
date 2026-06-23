@@ -1,19 +1,36 @@
 {
-	"format_version": "1.26.20",
-	"animations": {
-		"animation.demon_greatsword.fpp_idle": {
-			"loop": true,
-			"bones": {
-				"greatsword2": {
-					"rotation": [9.92816, 60.09372, -36.17245],
-					"position": [-0.04911, -10.59174, 25.17129]
-				},
-				"greatsword": {
-					"rotation": [0, 0, 0],
-					"position": [0, 0, 0],
-					"scale": 1
-				}
-			}
-		}
-	}
+  "format_version": "1.26.20",
+  "animations": {
+    "animation.demon_greatsword.fpp_idle": {
+      "loop": true,
+      "bones": {
+        "greatsword2": {
+          "rotation": [
+            9.92816,
+            60.09372,
+            -36.17245
+          ],
+          "position": [
+            -0.04911,
+            -10.59174,
+            25.17129
+          ]
+        },
+        "greatsword": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "scale": 1
+        }
+      }
+    }
+  }
 }
+

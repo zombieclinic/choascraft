@@ -36,7 +36,9 @@
           0
         ]
       },
-      "minecraft:physics": {},
+      "minecraft:physics": {
+        
+      },
       "minecraft:despawn": {
         "despawn_from_inactivity": true,
         "min_range_inactivity_timer": 4,
@@ -47,3 +49,4 @@
     }
   }
 }
+

@@ -1,0 +1,29 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:single_block_feature": {
+    "description": {
+      "identifier": "zombie:blood_root_feature"
+    },
+    "places_block": {
+      "name": "zombie:blood_root",
+      "states": {
+        "zombie:growth_stage": 3,
+        "zombie:blood_root_part": "bottom",
+        "zombie:blood_root_has_top": "false"
+      }
+    },
+    "enforce_survivability_rules": true,
+    "enforce_placement_rules": true,
+    "may_replace": [
+      "minecraft:air"
+    ],
+    "may_attach_to": {
+      "bottom": [
+        "zombie:demon_blood_block",
+        "zombie:demon_flesh_block",
+        "zombie:demon_blood_flesh_block"
+      ]
+    }
+  }
+}
+

@@ -1,0 +1,85 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:cod",
+          "weight": 45
+        },
+        {
+          "type": "item",
+          "name": "minecraft:salmon",
+          "weight": 25
+        },
+        {
+          "type": "item",
+          "name": "minecraft:pufferfish",
+          "weight": 13
+        },
+        {
+          "type": "item",
+          "name": "minecraft:tropical_fish",
+          "weight": 12
+        },
+        {
+          "type": "item",
+          "name": "minecraft:bone",
+          "weight": 8
+        },
+        {
+          "type": "item",
+          "name": "minecraft:bowl",
+          "weight": 7
+        },
+        {
+          "type": "item",
+          "name": "minecraft:leather",
+          "weight": 7
+        },
+        {
+          "type": "item",
+          "name": "minecraft:string",
+          "weight": 7
+        },
+        {
+          "type": "item",
+          "name": "minecraft:stick",
+          "weight": 6
+        },
+        {
+          "type": "item",
+          "name": "minecraft:tripwire_hook",
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "minecraft:nautilus_shell",
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:name_tag",
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:saddle",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:bow",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:enchanted_book",
+          "weight": 1
+        }
+      ]
+    }
+  ]
+}
+

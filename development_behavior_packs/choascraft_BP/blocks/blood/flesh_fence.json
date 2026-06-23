@@ -1,722 +1,724 @@
-﻿{
-    "format_version":  "1.26.20",
-    "minecraft:block":  {
-                            "description":  {
-                                                "identifier":  "zombie:flesh_fence",
-                                                "traits":  {
-                                                               "minecraft:connection":  {
-                                                                                            "enabled_states":  [
-                                                                                                                   "minecraft:cardinal_connections"
-                                                                                                               ]
-                                                                                        }
-                                                           },
-                                                "menu_category":  {
-                                                                      "category":  "construction",
-                                                                      "group":  "minecraft:itemGroup.name.fence"
-                                                                  }
-                                            },
-                            "permutations":  [
-                                                 {
-                                                     "condition":  "query.block_state(\u0027minecraft:connection_north\u0027) \u0026\u0026 !query.block_state(\u0027minecraft:connection_south\u0027) \u0026\u0026 !query.block_state(\u0027minecraft:connection_east\u0027) \u0026\u0026 !query.block_state(\u0027minecraft:connection_west\u0027)",
-                                                     "components":  {
-                                                                        "minecraft:collision_box":  {
-                                                                                                        "origin":  [
-                                                                                                                       -2,
-                                                                                                                       0,
-                                                                                                                       -8
-                                                                                                                   ],
-                                                                                                        "size":  [
-                                                                                                                     4,
-                                                                                                                     24,
-                                                                                                                     10
-                                                                                                                 ]
-                                                                                                    },
-                                                                        "minecraft:selection_box":  {
-                                                                                                        "origin":  [
-                                                                                                                       -2,
-                                                                                                                       0,
-                                                                                                                       -8
-                                                                                                                   ],
-                                                                                                        "size":  [
-                                                                                                                     4,
-                                                                                                                     16,
-                                                                                                                     10
-                                                                                                                 ]
-                                                                                                    }
-                                                                    }
-                                                 },
-                                                 {
-                                                     "condition":  "!query.block_state(\u0027minecraft:connection_north\u0027) \u0026\u0026 query.block_state(\u0027minecraft:connection_south\u0027) \u0026\u0026 !query.block_state(\u0027minecraft:connection_east\u0027) \u0026\u0026 !query.block_state(\u0027minecraft:connection_west\u0027)",
-                                                     "components":  {
-                                                                        "minecraft:collision_box":  {
-                                                                                                        "origin":  [
-                                                                                                                       -2,
-                                                                                                                       0,
-                                                                                                                       -2
-                                                                                                                   ],
-                                                                                                        "size":  [
-                                                                                                                     4,
-                                                                                                                     24,
-                                                                                                                     10
-                                                                                                                 ]
-                                                                                                    },
-                                                                        "minecraft:selection_box":  {
-                                                                                                        "origin":  [
-                                                                                                                       -2,
-                                                                                                                       0,
-                                                                                                                       -2
-                                                                                                                   ],
-                                                                                                        "size":  [
-                                                                                                                     4,
-                                                                                                                     16,
-                                                                                                                     10
-                                                                                                                 ]
-                                                                                                    }
-                                                                    }
-                                                 },
-                                                 {
-                                                     "condition":  "!query.block_state(\u0027minecraft:connection_north\u0027) \u0026\u0026 !query.block_state(\u0027minecraft:connection_south\u0027) \u0026\u0026 query.block_state(\u0027minecraft:connection_east\u0027) \u0026\u0026 !query.block_state(\u0027minecraft:connection_west\u0027)",
-                                                     "components":  {
-                                                                        "minecraft:collision_box":  {
-                                                                                                        "origin":  [
-                                                                                                                       -8,
-                                                                                                                       0,
-                                                                                                                       -2
-                                                                                                                   ],
-                                                                                                        "size":  [
-                                                                                                                     10,
-                                                                                                                     24,
-                                                                                                                     4
-                                                                                                                 ]
-                                                                                                    },
-                                                                        "minecraft:selection_box":  {
-                                                                                                        "origin":  [
-                                                                                                                       -8,
-                                                                                                                       0,
-                                                                                                                       -2
-                                                                                                                   ],
-                                                                                                        "size":  [
-                                                                                                                     10,
-                                                                                                                     16,
-                                                                                                                     4
-                                                                                                                 ]
-                                                                                                    }
-                                                                    }
-                                                 },
-                                                 {
-                                                     "condition":  "!query.block_state(\u0027minecraft:connection_north\u0027) \u0026\u0026 !query.block_state(\u0027minecraft:connection_south\u0027) \u0026\u0026 !query.block_state(\u0027minecraft:connection_east\u0027) \u0026\u0026 query.block_state(\u0027minecraft:connection_west\u0027)",
-                                                     "components":  {
-                                                                        "minecraft:collision_box":  {
-                                                                                                        "origin":  [
-                                                                                                                       -2,
-                                                                                                                       0,
-                                                                                                                       -2
-                                                                                                                   ],
-                                                                                                        "size":  [
-                                                                                                                     10,
-                                                                                                                     24,
-                                                                                                                     4
-                                                                                                                 ]
-                                                                                                    },
-                                                                        "minecraft:selection_box":  {
-                                                                                                        "origin":  [
-                                                                                                                       -2,
-                                                                                                                       0,
-                                                                                                                       -2
-                                                                                                                   ],
-                                                                                                        "size":  [
-                                                                                                                     10,
-                                                                                                                     16,
-                                                                                                                     4
-                                                                                                                 ]
-                                                                                                    }
-                                                                    }
-                                                 },
-                                                 {
-                                                     "condition":  "query.block_state(\u0027minecraft:connection_north\u0027) \u0026\u0026 query.block_state(\u0027minecraft:connection_south\u0027) \u0026\u0026 !query.block_state(\u0027minecraft:connection_east\u0027) \u0026\u0026 !query.block_state(\u0027minecraft:connection_west\u0027)",
-                                                     "components":  {
-                                                                        "minecraft:collision_box":  {
-                                                                                                        "origin":  [
-                                                                                                                       -2,
-                                                                                                                       0,
-                                                                                                                       -8
-                                                                                                                   ],
-                                                                                                        "size":  [
-                                                                                                                     4,
-                                                                                                                     24,
-                                                                                                                     16
-                                                                                                                 ]
-                                                                                                    },
-                                                                        "minecraft:selection_box":  {
-                                                                                                        "origin":  [
-                                                                                                                       -2,
-                                                                                                                       0,
-                                                                                                                       -8
-                                                                                                                   ],
-                                                                                                        "size":  [
-                                                                                                                     4,
-                                                                                                                     16,
-                                                                                                                     16
-                                                                                                                 ]
-                                                                                                    }
-                                                                    }
-                                                 },
-                                                 {
-                                                     "condition":  "!query.block_state(\u0027minecraft:connection_north\u0027) \u0026\u0026 !query.block_state(\u0027minecraft:connection_south\u0027) \u0026\u0026 query.block_state(\u0027minecraft:connection_east\u0027) \u0026\u0026 query.block_state(\u0027minecraft:connection_west\u0027)",
-                                                     "components":  {
-                                                                        "minecraft:collision_box":  {
-                                                                                                        "origin":  [
-                                                                                                                       -8,
-                                                                                                                       0,
-                                                                                                                       -2
-                                                                                                                   ],
-                                                                                                        "size":  [
-                                                                                                                     16,
-                                                                                                                     24,
-                                                                                                                     4
-                                                                                                                 ]
-                                                                                                    },
-                                                                        "minecraft:selection_box":  {
-                                                                                                        "origin":  [
-                                                                                                                       -8,
-                                                                                                                       0,
-                                                                                                                       -2
-                                                                                                                   ],
-                                                                                                        "size":  [
-                                                                                                                     16,
-                                                                                                                     16,
-                                                                                                                     4
-                                                                                                                 ]
-                                                                                                    }
-                                                                    }
-                                                 },
-                                                 {
-                                                     "condition":  "query.block_state(\u0027minecraft:connection_north\u0027) \u0026\u0026 !query.block_state(\u0027minecraft:connection_south\u0027) \u0026\u0026 query.block_state(\u0027minecraft:connection_east\u0027) \u0026\u0026 !query.block_state(\u0027minecraft:connection_west\u0027)",
-                                                     "components":  {
-                                                                        "minecraft:collision_box":  [
-                                                                                                        {
-                                                                                                            "origin":  [
-                                                                                                                           -2,
-                                                                                                                           0,
-                                                                                                                           -8
-                                                                                                                       ],
-                                                                                                            "size":  [
-                                                                                                                         4,
-                                                                                                                         24,
-                                                                                                                         10
-                                                                                                                     ]
-                                                                                                        },
-                                                                                                        {
-                                                                                                            "origin":  [
-                                                                                                                           -8,
-                                                                                                                           0,
-                                                                                                                           -2
-                                                                                                                       ],
-                                                                                                            "size":  [
-                                                                                                                         6,
-                                                                                                                         24,
-                                                                                                                         4
-                                                                                                                     ]
-                                                                                                        }
-                                                                                                    ],
-                                                                        "minecraft:selection_box":  {
-                                                                                                        "origin":  [
-                                                                                                                       -8,
-                                                                                                                       0,
-                                                                                                                       -8
-                                                                                                                   ],
-                                                                                                        "size":  [
-                                                                                                                     10,
-                                                                                                                     16,
-                                                                                                                     10
-                                                                                                                 ]
-                                                                                                    }
-                                                                    }
-                                                 },
-                                                 {
-                                                     "condition":  "query.block_state(\u0027minecraft:connection_north\u0027) \u0026\u0026 !query.block_state(\u0027minecraft:connection_south\u0027) \u0026\u0026 !query.block_state(\u0027minecraft:connection_east\u0027) \u0026\u0026 query.block_state(\u0027minecraft:connection_west\u0027)",
-                                                     "components":  {
-                                                                        "minecraft:collision_box":  [
-                                                                                                        {
-                                                                                                            "origin":  [
-                                                                                                                           -2,
-                                                                                                                           0,
-                                                                                                                           -8
-                                                                                                                       ],
-                                                                                                            "size":  [
-                                                                                                                         4,
-                                                                                                                         24,
-                                                                                                                         10
-                                                                                                                     ]
-                                                                                                        },
-                                                                                                        {
-                                                                                                            "origin":  [
-                                                                                                                           2,
-                                                                                                                           0,
-                                                                                                                           -2
-                                                                                                                       ],
-                                                                                                            "size":  [
-                                                                                                                         6,
-                                                                                                                         24,
-                                                                                                                         4
-                                                                                                                     ]
-                                                                                                        }
-                                                                                                    ],
-                                                                        "minecraft:selection_box":  {
-                                                                                                        "origin":  [
-                                                                                                                       -2,
-                                                                                                                       0,
-                                                                                                                       -8
-                                                                                                                   ],
-                                                                                                        "size":  [
-                                                                                                                     10,
-                                                                                                                     16,
-                                                                                                                     10
-                                                                                                                 ]
-                                                                                                    }
-                                                                    }
-                                                 },
-                                                 {
-                                                     "condition":  "!query.block_state(\u0027minecraft:connection_north\u0027) \u0026\u0026 query.block_state(\u0027minecraft:connection_south\u0027) \u0026\u0026 query.block_state(\u0027minecraft:connection_east\u0027) \u0026\u0026 !query.block_state(\u0027minecraft:connection_west\u0027)",
-                                                     "components":  {
-                                                                        "minecraft:collision_box":  [
-                                                                                                        {
-                                                                                                            "origin":  [
-                                                                                                                           -2,
-                                                                                                                           0,
-                                                                                                                           -2
-                                                                                                                       ],
-                                                                                                            "size":  [
-                                                                                                                         4,
-                                                                                                                         24,
-                                                                                                                         10
-                                                                                                                     ]
-                                                                                                        },
-                                                                                                        {
-                                                                                                            "origin":  [
-                                                                                                                           -8,
-                                                                                                                           0,
-                                                                                                                           -2
-                                                                                                                       ],
-                                                                                                            "size":  [
-                                                                                                                         6,
-                                                                                                                         24,
-                                                                                                                         4
-                                                                                                                     ]
-                                                                                                        }
-                                                                                                    ],
-                                                                        "minecraft:selection_box":  {
-                                                                                                        "origin":  [
-                                                                                                                       -8,
-                                                                                                                       0,
-                                                                                                                       -2
-                                                                                                                   ],
-                                                                                                        "size":  [
-                                                                                                                     10,
-                                                                                                                     16,
-                                                                                                                     10
-                                                                                                                 ]
-                                                                                                    }
-                                                                    }
-                                                 },
-                                                 {
-                                                     "condition":  "!query.block_state(\u0027minecraft:connection_north\u0027) \u0026\u0026 query.block_state(\u0027minecraft:connection_south\u0027) \u0026\u0026 !query.block_state(\u0027minecraft:connection_east\u0027) \u0026\u0026 query.block_state(\u0027minecraft:connection_west\u0027)",
-                                                     "components":  {
-                                                                        "minecraft:collision_box":  [
-                                                                                                        {
-                                                                                                            "origin":  [
-                                                                                                                           -2,
-                                                                                                                           0,
-                                                                                                                           -2
-                                                                                                                       ],
-                                                                                                            "size":  [
-                                                                                                                         4,
-                                                                                                                         24,
-                                                                                                                         10
-                                                                                                                     ]
-                                                                                                        },
-                                                                                                        {
-                                                                                                            "origin":  [
-                                                                                                                           2,
-                                                                                                                           0,
-                                                                                                                           -2
-                                                                                                                       ],
-                                                                                                            "size":  [
-                                                                                                                         6,
-                                                                                                                         24,
-                                                                                                                         4
-                                                                                                                     ]
-                                                                                                        }
-                                                                                                    ],
-                                                                        "minecraft:selection_box":  {
-                                                                                                        "origin":  [
-                                                                                                                       -2,
-                                                                                                                       0,
-                                                                                                                       -2
-                                                                                                                   ],
-                                                                                                        "size":  [
-                                                                                                                     10,
-                                                                                                                     16,
-                                                                                                                     10
-                                                                                                                 ]
-                                                                                                    }
-                                                                    }
-                                                 },
-                                                 {
-                                                     "condition":  "query.block_state(\u0027minecraft:connection_north\u0027) \u0026\u0026 query.block_state(\u0027minecraft:connection_south\u0027) \u0026\u0026 query.block_state(\u0027minecraft:connection_east\u0027) \u0026\u0026 !query.block_state(\u0027minecraft:connection_west\u0027)",
-                                                     "components":  {
-                                                                        "minecraft:collision_box":  [
-                                                                                                        {
-                                                                                                            "origin":  [
-                                                                                                                           -2,
-                                                                                                                           0,
-                                                                                                                           -8
-                                                                                                                       ],
-                                                                                                            "size":  [
-                                                                                                                         4,
-                                                                                                                         24,
-                                                                                                                         16
-                                                                                                                     ]
-                                                                                                        },
-                                                                                                        {
-                                                                                                            "origin":  [
-                                                                                                                           -8,
-                                                                                                                           0,
-                                                                                                                           -2
-                                                                                                                       ],
-                                                                                                            "size":  [
-                                                                                                                         6,
-                                                                                                                         24,
-                                                                                                                         4
-                                                                                                                     ]
-                                                                                                        }
-                                                                                                    ],
-                                                                        "minecraft:selection_box":  {
-                                                                                                        "origin":  [
-                                                                                                                       -8,
-                                                                                                                       0,
-                                                                                                                       -8
-                                                                                                                   ],
-                                                                                                        "size":  [
-                                                                                                                     10,
-                                                                                                                     16,
-                                                                                                                     16
-                                                                                                                 ]
-                                                                                                    }
-                                                                    }
-                                                 },
-                                                 {
-                                                     "condition":  "query.block_state(\u0027minecraft:connection_north\u0027) \u0026\u0026 query.block_state(\u0027minecraft:connection_south\u0027) \u0026\u0026 !query.block_state(\u0027minecraft:connection_east\u0027) \u0026\u0026 query.block_state(\u0027minecraft:connection_west\u0027)",
-                                                     "components":  {
-                                                                        "minecraft:collision_box":  [
-                                                                                                        {
-                                                                                                            "origin":  [
-                                                                                                                           -2,
-                                                                                                                           0,
-                                                                                                                           -8
-                                                                                                                       ],
-                                                                                                            "size":  [
-                                                                                                                         4,
-                                                                                                                         24,
-                                                                                                                         16
-                                                                                                                     ]
-                                                                                                        },
-                                                                                                        {
-                                                                                                            "origin":  [
-                                                                                                                           2,
-                                                                                                                           0,
-                                                                                                                           -2
-                                                                                                                       ],
-                                                                                                            "size":  [
-                                                                                                                         6,
-                                                                                                                         24,
-                                                                                                                         4
-                                                                                                                     ]
-                                                                                                        }
-                                                                                                    ],
-                                                                        "minecraft:selection_box":  {
-                                                                                                        "origin":  [
-                                                                                                                       -2,
-                                                                                                                       0,
-                                                                                                                       -8
-                                                                                                                   ],
-                                                                                                        "size":  [
-                                                                                                                     10,
-                                                                                                                     16,
-                                                                                                                     16
-                                                                                                                 ]
-                                                                                                    }
-                                                                    }
-                                                 },
-                                                 {
-                                                     "condition":  "query.block_state(\u0027minecraft:connection_north\u0027) \u0026\u0026 !query.block_state(\u0027minecraft:connection_south\u0027) \u0026\u0026 query.block_state(\u0027minecraft:connection_east\u0027) \u0026\u0026 query.block_state(\u0027minecraft:connection_west\u0027)",
-                                                     "components":  {
-                                                                        "minecraft:collision_box":  [
-                                                                                                        {
-                                                                                                            "origin":  [
-                                                                                                                           -8,
-                                                                                                                           0,
-                                                                                                                           -2
-                                                                                                                       ],
-                                                                                                            "size":  [
-                                                                                                                         16,
-                                                                                                                         24,
-                                                                                                                         4
-                                                                                                                     ]
-                                                                                                        },
-                                                                                                        {
-                                                                                                            "origin":  [
-                                                                                                                           -2,
-                                                                                                                           0,
-                                                                                                                           -8
-                                                                                                                       ],
-                                                                                                            "size":  [
-                                                                                                                         4,
-                                                                                                                         24,
-                                                                                                                         6
-                                                                                                                     ]
-                                                                                                        }
-                                                                                                    ],
-                                                                        "minecraft:selection_box":  {
-                                                                                                        "origin":  [
-                                                                                                                       -8,
-                                                                                                                       0,
-                                                                                                                       -8
-                                                                                                                   ],
-                                                                                                        "size":  [
-                                                                                                                     16,
-                                                                                                                     16,
-                                                                                                                     10
-                                                                                                                 ]
-                                                                                                    }
-                                                                    }
-                                                 },
-                                                 {
-                                                     "condition":  "!query.block_state(\u0027minecraft:connection_north\u0027) \u0026\u0026 query.block_state(\u0027minecraft:connection_south\u0027) \u0026\u0026 query.block_state(\u0027minecraft:connection_east\u0027) \u0026\u0026 query.block_state(\u0027minecraft:connection_west\u0027)",
-                                                     "components":  {
-                                                                        "minecraft:collision_box":  [
-                                                                                                        {
-                                                                                                            "origin":  [
-                                                                                                                           -8,
-                                                                                                                           0,
-                                                                                                                           -2
-                                                                                                                       ],
-                                                                                                            "size":  [
-                                                                                                                         16,
-                                                                                                                         24,
-                                                                                                                         4
-                                                                                                                     ]
-                                                                                                        },
-                                                                                                        {
-                                                                                                            "origin":  [
-                                                                                                                           -2,
-                                                                                                                           0,
-                                                                                                                           2
-                                                                                                                       ],
-                                                                                                            "size":  [
-                                                                                                                         4,
-                                                                                                                         24,
-                                                                                                                         6
-                                                                                                                     ]
-                                                                                                        }
-                                                                                                    ],
-                                                                        "minecraft:selection_box":  {
-                                                                                                        "origin":  [
-                                                                                                                       -8,
-                                                                                                                       0,
-                                                                                                                       -2
-                                                                                                                   ],
-                                                                                                        "size":  [
-                                                                                                                     16,
-                                                                                                                     16,
-                                                                                                                     10
-                                                                                                                 ]
-                                                                                                    }
-                                                                    }
-                                                 },
-                                                 {
-                                                     "condition":  "query.block_state(\u0027minecraft:connection_north\u0027) \u0026\u0026 query.block_state(\u0027minecraft:connection_south\u0027) \u0026\u0026 query.block_state(\u0027minecraft:connection_east\u0027) \u0026\u0026 query.block_state(\u0027minecraft:connection_west\u0027)",
-                                                     "components":  {
-                                                                        "minecraft:collision_box":  [
-                                                                                                        {
-                                                                                                            "origin":  [
-                                                                                                                           -8,
-                                                                                                                           0,
-                                                                                                                           -2
-                                                                                                                       ],
-                                                                                                            "size":  [
-                                                                                                                         16,
-                                                                                                                         24,
-                                                                                                                         4
-                                                                                                                     ]
-                                                                                                        },
-                                                                                                        {
-                                                                                                            "origin":  [
-                                                                                                                           -2,
-                                                                                                                           0,
-                                                                                                                           -8
-                                                                                                                       ],
-                                                                                                            "size":  [
-                                                                                                                         4,
-                                                                                                                         24,
-                                                                                                                         6
-                                                                                                                     ]
-                                                                                                        },
-                                                                                                        {
-                                                                                                            "origin":  [
-                                                                                                                           -2,
-                                                                                                                           0,
-                                                                                                                           2
-                                                                                                                       ],
-                                                                                                            "size":  [
-                                                                                                                         4,
-                                                                                                                         24,
-                                                                                                                         6
-                                                                                                                     ]
-                                                                                                        }
-                                                                                                    ],
-                                                                        "minecraft:selection_box":  {
-                                                                                                        "origin":  [
-                                                                                                                       -8,
-                                                                                                                       0,
-                                                                                                                       -8
-                                                                                                                   ],
-                                                                                                        "size":  [
-                                                                                                                     16,
-                                                                                                                     16,
-                                                                                                                     16
-                                                                                                                 ]
-                                                                                                    }
-                                                                    }
-                                                 }
-                                             ],
-                            "components":  {
-                                               "minecraft:display_name":  "Flesh Fence",
-                                               "minecraft:support":  {
-                                                                         "shape":  "fence"
-                                                                     },
-                                               "minecraft:geometry":  {
-                                                                          "identifier":  "geometry.zombie.eyewood_fence",
-                                                                          "bone_visibility":  {
-                                                                                                  "post":  {
-                                                                                                               "expression":  "true",
-                                                                                                               "version":  1
-                                                                                                           },
-                                                                                                  "north":  {
-                                                                                                                "expression":  "query.block_state(\u0027minecraft:connection_north\u0027)",
-                                                                                                                "version":  1
-                                                                                                            },
-                                                                                                  "south":  {
-                                                                                                                "expression":  "query.block_state(\u0027minecraft:connection_south\u0027)",
-                                                                                                                "version":  1
-                                                                                                            },
-                                                                                                  "east":  {
-                                                                                                               "expression":  "query.block_state(\u0027minecraft:connection_east\u0027)",
-                                                                                                               "version":  1
-                                                                                                           },
-                                                                                                  "west":  {
-                                                                                                               "expression":  "query.block_state(\u0027minecraft:connection_west\u0027)",
-                                                                                                               "version":  1
-                                                                                                           }
-                                                                                              }
-                                                                      },
-                                               "minecraft:item_visual":  {
-                                                                             "geometry":  {
-                                                                                              "identifier":  "geometry.zombie.eyewood_fence",
-                                                                                              "bone_visibility":  {
-                                                                                                                      "post":  {
-                                                                                                                                   "expression":  "true",
-                                                                                                                                   "version":  1
-                                                                                                                               },
-                                                                                                                      "north":  {
-                                                                                                                                    "expression":  "true",
-                                                                                                                                    "version":  1
-                                                                                                                                },
-                                                                                                                      "south":  {
-                                                                                                                                    "expression":  "true",
-                                                                                                                                    "version":  1
-                                                                                                                                },
-                                                                                                                      "east":  {
-                                                                                                                                   "expression":  "false",
-                                                                                                                                   "version":  1
-                                                                                                                               },
-                                                                                                                      "west":  {
-                                                                                                                                   "expression":  "false",
-                                                                                                                                   "version":  1
-                                                                                                                               }
-                                                                                                                  }
-                                                                                          },
-                                                                             "material_instances":  {
-                                                                                                        "*":  {
-                                                                                                                  "texture":  "flesh_planks",
-                                                                                                                  "render_method":  "opaque"
-                                                                                                              }
-                                                                                                    }
-                                                                         },
-                                               "minecraft:material_instances":  {
-                                                                                    "*":  {
-                                                                                              "texture":  "flesh_planks",
-                                                                                              "render_method":  "opaque"
-                                                                                          }
-                                                                                },
-                                               "minecraft:collision_box":  {
-                                                                               "origin":  [
-                                                                                              -2,
-                                                                                              0,
-                                                                                              -2
-                                                                                          ],
-                                                                               "size":  [
-                                                                                            4,
-                                                                                            24,
-                                                                                            4
-                                                                                        ]
-                                                                           },
-                                               "minecraft:selection_box":  {
-                                                                               "origin":  [
-                                                                                              -2,
-                                                                                              0,
-                                                                                              -2
-                                                                                          ],
-                                                                               "size":  [
-                                                                                            4,
-                                                                                            16,
-                                                                                            4
-                                                                                        ]
-                                                                           },
-                                               "minecraft:connection_rule":  {
-                                                                                 "accepts_connections_from":  "only_fences"
-                                                                             },
-                                               "minecraft:leashable":  {
-                                                                           "offset":  [
-                                                                                          0,
-                                                                                          12,
-                                                                                          0
-                                                                                      ]
-                                                                       },
-                                               "minecraft:destructible_by_mining":  {
-                                                                                        "seconds_to_destroy":  2.0
-                                                                                    },
-                                               "minecraft:destructible_by_explosion":  {
-                                                                                           "explosion_resistance":  3.0
-                                                                                       },
-                                               "minecraft:flammable":  {
-                                                                           "catch_chance_modifier":  5,
-                                                                           "destroy_chance_modifier":  20
-                                                                       },
-                                               "minecraft:liquid_detection":  {
-                                                                                  "detection_rules":  [
-                                                                                                          {
-                                                                                                              "liquid_type":  "water",
-                                                                                                              "can_contain_liquid":  true,
-                                                                                                              "on_liquid_touches":  "blocking"
-                                                                                                          }
-                                                                                                      ]
-                                                                              },
-                                               "minecraft:tags":  [
-                                                                      "minecraft:has_fence_connections",
-                                                                      "minecraft:is_axe_item_destructible",
-                                                                      "wood"
-                                                                  ]
-                                           }
-                        }
+{
+  "format_version": "1.26.20",
+  "minecraft:block": {
+    "description": {
+      "identifier": "zombie:flesh_fence",
+      "traits": {
+        "minecraft:connection": {
+          "enabled_states": [
+            "minecraft:cardinal_connections"
+          ]
+        }
+      },
+      "menu_category": {
+        "category": "construction",
+        "group": "minecraft:itemGroup.name.fence"
+      }
+    },
+    "permutations": [
+      {
+        "condition": "query.block_state('minecraft:connection_north') && !query.block_state('minecraft:connection_south') && !query.block_state('minecraft:connection_east') && !query.block_state('minecraft:connection_west')",
+        "components": {
+          "minecraft:collision_box": {
+            "origin": [
+              -2,
+              0,
+              -8
+            ],
+            "size": [
+              4,
+              24,
+              10
+            ]
+          },
+          "minecraft:selection_box": {
+            "origin": [
+              -2,
+              0,
+              -8
+            ],
+            "size": [
+              4,
+              16,
+              10
+            ]
+          }
+        }
+      },
+      {
+        "condition": "!query.block_state('minecraft:connection_north') && query.block_state('minecraft:connection_south') && !query.block_state('minecraft:connection_east') && !query.block_state('minecraft:connection_west')",
+        "components": {
+          "minecraft:collision_box": {
+            "origin": [
+              -2,
+              0,
+              -2
+            ],
+            "size": [
+              4,
+              24,
+              10
+            ]
+          },
+          "minecraft:selection_box": {
+            "origin": [
+              -2,
+              0,
+              -2
+            ],
+            "size": [
+              4,
+              16,
+              10
+            ]
+          }
+        }
+      },
+      {
+        "condition": "!query.block_state('minecraft:connection_north') && !query.block_state('minecraft:connection_south') && query.block_state('minecraft:connection_east') && !query.block_state('minecraft:connection_west')",
+        "components": {
+          "minecraft:collision_box": {
+            "origin": [
+              -8,
+              0,
+              -2
+            ],
+            "size": [
+              10,
+              24,
+              4
+            ]
+          },
+          "minecraft:selection_box": {
+            "origin": [
+              -8,
+              0,
+              -2
+            ],
+            "size": [
+              10,
+              16,
+              4
+            ]
+          }
+        }
+      },
+      {
+        "condition": "!query.block_state('minecraft:connection_north') && !query.block_state('minecraft:connection_south') && !query.block_state('minecraft:connection_east') && query.block_state('minecraft:connection_west')",
+        "components": {
+          "minecraft:collision_box": {
+            "origin": [
+              -2,
+              0,
+              -2
+            ],
+            "size": [
+              10,
+              24,
+              4
+            ]
+          },
+          "minecraft:selection_box": {
+            "origin": [
+              -2,
+              0,
+              -2
+            ],
+            "size": [
+              10,
+              16,
+              4
+            ]
+          }
+        }
+      },
+      {
+        "condition": "query.block_state('minecraft:connection_north') && query.block_state('minecraft:connection_south') && !query.block_state('minecraft:connection_east') && !query.block_state('minecraft:connection_west')",
+        "components": {
+          "minecraft:collision_box": {
+            "origin": [
+              -2,
+              0,
+              -8
+            ],
+            "size": [
+              4,
+              24,
+              16
+            ]
+          },
+          "minecraft:selection_box": {
+            "origin": [
+              -2,
+              0,
+              -8
+            ],
+            "size": [
+              4,
+              16,
+              16
+            ]
+          }
+        }
+      },
+      {
+        "condition": "!query.block_state('minecraft:connection_north') && !query.block_state('minecraft:connection_south') && query.block_state('minecraft:connection_east') && query.block_state('minecraft:connection_west')",
+        "components": {
+          "minecraft:collision_box": {
+            "origin": [
+              -8,
+              0,
+              -2
+            ],
+            "size": [
+              16,
+              24,
+              4
+            ]
+          },
+          "minecraft:selection_box": {
+            "origin": [
+              -8,
+              0,
+              -2
+            ],
+            "size": [
+              16,
+              16,
+              4
+            ]
+          }
+        }
+      },
+      {
+        "condition": "query.block_state('minecraft:connection_north') && !query.block_state('minecraft:connection_south') && query.block_state('minecraft:connection_east') && !query.block_state('minecraft:connection_west')",
+        "components": {
+          "minecraft:collision_box": [
+            {
+              "origin": [
+                -2,
+                0,
+                -8
+              ],
+              "size": [
+                4,
+                24,
+                10
+              ]
+            },
+            {
+              "origin": [
+                -8,
+                0,
+                -2
+              ],
+              "size": [
+                6,
+                24,
+                4
+              ]
+            }
+          ],
+          "minecraft:selection_box": {
+            "origin": [
+              -8,
+              0,
+              -8
+            ],
+            "size": [
+              10,
+              16,
+              10
+            ]
+          }
+        }
+      },
+      {
+        "condition": "query.block_state('minecraft:connection_north') && !query.block_state('minecraft:connection_south') && !query.block_state('minecraft:connection_east') && query.block_state('minecraft:connection_west')",
+        "components": {
+          "minecraft:collision_box": [
+            {
+              "origin": [
+                -2,
+                0,
+                -8
+              ],
+              "size": [
+                4,
+                24,
+                10
+              ]
+            },
+            {
+              "origin": [
+                2,
+                0,
+                -2
+              ],
+              "size": [
+                6,
+                24,
+                4
+              ]
+            }
+          ],
+          "minecraft:selection_box": {
+            "origin": [
+              -2,
+              0,
+              -8
+            ],
+            "size": [
+              10,
+              16,
+              10
+            ]
+          }
+        }
+      },
+      {
+        "condition": "!query.block_state('minecraft:connection_north') && query.block_state('minecraft:connection_south') && query.block_state('minecraft:connection_east') && !query.block_state('minecraft:connection_west')",
+        "components": {
+          "minecraft:collision_box": [
+            {
+              "origin": [
+                -2,
+                0,
+                -2
+              ],
+              "size": [
+                4,
+                24,
+                10
+              ]
+            },
+            {
+              "origin": [
+                -8,
+                0,
+                -2
+              ],
+              "size": [
+                6,
+                24,
+                4
+              ]
+            }
+          ],
+          "minecraft:selection_box": {
+            "origin": [
+              -8,
+              0,
+              -2
+            ],
+            "size": [
+              10,
+              16,
+              10
+            ]
+          }
+        }
+      },
+      {
+        "condition": "!query.block_state('minecraft:connection_north') && query.block_state('minecraft:connection_south') && !query.block_state('minecraft:connection_east') && query.block_state('minecraft:connection_west')",
+        "components": {
+          "minecraft:collision_box": [
+            {
+              "origin": [
+                -2,
+                0,
+                -2
+              ],
+              "size": [
+                4,
+                24,
+                10
+              ]
+            },
+            {
+              "origin": [
+                2,
+                0,
+                -2
+              ],
+              "size": [
+                6,
+                24,
+                4
+              ]
+            }
+          ],
+          "minecraft:selection_box": {
+            "origin": [
+              -2,
+              0,
+              -2
+            ],
+            "size": [
+              10,
+              16,
+              10
+            ]
+          }
+        }
+      },
+      {
+        "condition": "query.block_state('minecraft:connection_north') && query.block_state('minecraft:connection_south') && query.block_state('minecraft:connection_east') && !query.block_state('minecraft:connection_west')",
+        "components": {
+          "minecraft:collision_box": [
+            {
+              "origin": [
+                -2,
+                0,
+                -8
+              ],
+              "size": [
+                4,
+                24,
+                16
+              ]
+            },
+            {
+              "origin": [
+                -8,
+                0,
+                -2
+              ],
+              "size": [
+                6,
+                24,
+                4
+              ]
+            }
+          ],
+          "minecraft:selection_box": {
+            "origin": [
+              -8,
+              0,
+              -8
+            ],
+            "size": [
+              10,
+              16,
+              16
+            ]
+          }
+        }
+      },
+      {
+        "condition": "query.block_state('minecraft:connection_north') && query.block_state('minecraft:connection_south') && !query.block_state('minecraft:connection_east') && query.block_state('minecraft:connection_west')",
+        "components": {
+          "minecraft:collision_box": [
+            {
+              "origin": [
+                -2,
+                0,
+                -8
+              ],
+              "size": [
+                4,
+                24,
+                16
+              ]
+            },
+            {
+              "origin": [
+                2,
+                0,
+                -2
+              ],
+              "size": [
+                6,
+                24,
+                4
+              ]
+            }
+          ],
+          "minecraft:selection_box": {
+            "origin": [
+              -2,
+              0,
+              -8
+            ],
+            "size": [
+              10,
+              16,
+              16
+            ]
+          }
+        }
+      },
+      {
+        "condition": "query.block_state('minecraft:connection_north') && !query.block_state('minecraft:connection_south') && query.block_state('minecraft:connection_east') && query.block_state('minecraft:connection_west')",
+        "components": {
+          "minecraft:collision_box": [
+            {
+              "origin": [
+                -8,
+                0,
+                -2
+              ],
+              "size": [
+                16,
+                24,
+                4
+              ]
+            },
+            {
+              "origin": [
+                -2,
+                0,
+                -8
+              ],
+              "size": [
+                4,
+                24,
+                6
+              ]
+            }
+          ],
+          "minecraft:selection_box": {
+            "origin": [
+              -8,
+              0,
+              -8
+            ],
+            "size": [
+              16,
+              16,
+              10
+            ]
+          }
+        }
+      },
+      {
+        "condition": "!query.block_state('minecraft:connection_north') && query.block_state('minecraft:connection_south') && query.block_state('minecraft:connection_east') && query.block_state('minecraft:connection_west')",
+        "components": {
+          "minecraft:collision_box": [
+            {
+              "origin": [
+                -8,
+                0,
+                -2
+              ],
+              "size": [
+                16,
+                24,
+                4
+              ]
+            },
+            {
+              "origin": [
+                -2,
+                0,
+                2
+              ],
+              "size": [
+                4,
+                24,
+                6
+              ]
+            }
+          ],
+          "minecraft:selection_box": {
+            "origin": [
+              -8,
+              0,
+              -2
+            ],
+            "size": [
+              16,
+              16,
+              10
+            ]
+          }
+        }
+      },
+      {
+        "condition": "query.block_state('minecraft:connection_north') && query.block_state('minecraft:connection_south') && query.block_state('minecraft:connection_east') && query.block_state('minecraft:connection_west')",
+        "components": {
+          "minecraft:collision_box": [
+            {
+              "origin": [
+                -8,
+                0,
+                -2
+              ],
+              "size": [
+                16,
+                24,
+                4
+              ]
+            },
+            {
+              "origin": [
+                -2,
+                0,
+                -8
+              ],
+              "size": [
+                4,
+                24,
+                6
+              ]
+            },
+            {
+              "origin": [
+                -2,
+                0,
+                2
+              ],
+              "size": [
+                4,
+                24,
+                6
+              ]
+            }
+          ],
+          "minecraft:selection_box": {
+            "origin": [
+              -8,
+              0,
+              -8
+            ],
+            "size": [
+              16,
+              16,
+              16
+            ]
+          }
+        }
+      }
+    ],
+    "components": {
+      "minecraft:display_name": "Flesh Fence",
+      "minecraft:support": {
+        "shape": "fence"
+      },
+      "minecraft:geometry": {
+        "identifier": "geometry.zombie.eyewood_fence",
+        "bone_visibility": {
+          "post": {
+            "expression": "true",
+            "version": 1
+          },
+          "north": {
+            "expression": "query.block_state('minecraft:connection_north')",
+            "version": 1
+          },
+          "south": {
+            "expression": "query.block_state('minecraft:connection_south')",
+            "version": 1
+          },
+          "east": {
+            "expression": "query.block_state('minecraft:connection_east')",
+            "version": 1
+          },
+          "west": {
+            "expression": "query.block_state('minecraft:connection_west')",
+            "version": 1
+          }
+        }
+      },
+      "minecraft:item_visual": {
+        "geometry": {
+          "identifier": "geometry.zombie.eyewood_fence",
+          "bone_visibility": {
+            "post": {
+              "expression": "true",
+              "version": 1
+            },
+            "north": {
+              "expression": "true",
+              "version": 1
+            },
+            "south": {
+              "expression": "true",
+              "version": 1
+            },
+            "east": {
+              "expression": "false",
+              "version": 1
+            },
+            "west": {
+              "expression": "false",
+              "version": 1
+            }
+          }
+        },
+        "material_instances": {
+          "*": {
+            "texture": "flesh_planks",
+            "render_method": "opaque"
+          }
+        }
+      },
+      "minecraft:material_instances": {
+        "*": {
+          "texture": "flesh_planks",
+          "render_method": "opaque"
+        }
+      },
+      "minecraft:collision_box": {
+        "origin": [
+          -2,
+          0,
+          -2
+        ],
+        "size": [
+          4,
+          24,
+          4
+        ]
+      },
+      "minecraft:selection_box": {
+        "origin": [
+          -2,
+          0,
+          -2
+        ],
+        "size": [
+          4,
+          16,
+          4
+        ]
+      },
+      "minecraft:connection_rule": {
+        "accepts_connections_from": "only_fences"
+      },
+      "minecraft:leashable": {
+        "offset": [
+          0,
+          12,
+          0
+        ]
+      },
+      "minecraft:destructible_by_mining": {
+        "seconds_to_destroy": 2.0
+      },
+      "minecraft:destructible_by_explosion": {
+        "explosion_resistance": 3.0
+      },
+      "minecraft:flammable": {
+        "catch_chance_modifier": 5,
+        "destroy_chance_modifier": 20
+      },
+      "minecraft:liquid_detection": {
+        "detection_rules": [
+          {
+            "liquid_type": "water",
+            "can_contain_liquid": true,
+            "on_liquid_touches": "blocking"
+          }
+        ]
+      },
+      "minecraft:tags": [
+        "minecraft:has_fence_connections",
+        "minecraft:is_axe_item_destructible",
+        "wood"
+      ],
+      "minecraft:map_color": "#A03E40"
+    }
+  }
 }
+

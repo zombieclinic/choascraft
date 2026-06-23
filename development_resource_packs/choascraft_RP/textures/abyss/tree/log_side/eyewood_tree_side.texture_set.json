@@ -1,8 +1,9 @@
 {
-	"format_version": "1.16.100",
-	"minecraft:texture_set": {
-		"color": "eyewood_tree_side",
-		"metalness_emissive_roughness": "eyewood_tree_side_mer",
-		"normal": "eyewood_tree_side_normal"
-	}
+  "format_version": "1.16.100",
+  "minecraft:texture_set": {
+    "color": "eyewood_tree_side",
+    "metalness_emissive_roughness": "eyewood_tree_side_mer",
+    "normal": "eyewood_tree_side_normal"
+  }
 }
+

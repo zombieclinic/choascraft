@@ -1,53 +1,60 @@
 {
-    "format_version": "1.26.20",
-    "animation_controllers": {
-        "controller.animation.ember_stalker": {
-            "initial_state": "idle",
-            "states": {
-                "idle": {
-                    "animations": [
-                        "idle"
-                    ],
-                    "transitions": [
-                    {
-                        "walk": "query.ground_speed"
-                    },
-                    {
-                        "attack_part_1": "query.has_target"
-                    }
-            ]
-                },
-                "walk": {
-                    "animations": ["walk"],
-                    "transitions": [
-                    {
-                        "idle" : "!query.ground_speed"
-                    },
-                    {
-                        "attack_part_1": "query.has_target"
-                    }
-                ]
-                },
-                "attack_part_1": {
-                    "animations": ["attack_part_1"],
-                    "transitions": [
-                        {
-                            "attack_part_2": "query.skin_id == 1"
-                        },
-                        {
-                            "idle": "!query.has_target"
-                        }
-                    ]
-                },
-                 "attack_part_2": {
-                    "animations": ["attack_part_2"],
-                    "transitions": [
-                        {
-                            "idle": "query.all_animations_finished"
-                        }
-                    ]
-                }
+  "format_version": "1.26.20",
+  "animation_controllers": {
+    "controller.animation.ember_stalker": {
+      "initial_state": "idle",
+      "states": {
+        "idle": {
+          "animations": [
+            "idle"
+          ],
+          "transitions": [
+            {
+              "walk": "query.ground_speed"
+            },
+            {
+              "attack_part_1": "query.has_target"
             }
+          ]
+        },
+        "walk": {
+          "animations": [
+            "walk"
+          ],
+          "transitions": [
+            {
+              "idle": "!query.ground_speed"
+            },
+            {
+              "attack_part_1": "query.has_target"
+            }
+          ]
+        },
+        "attack_part_1": {
+          "animations": [
+            "attack_part_1"
+          ],
+          "transitions": [
+            {
+              "attack_part_2": "query.skin_id == 1"
+            },
+            {
+              "idle": "!query.has_target"
+            }
+          ]
+        },
+        "attack_part_2": {
+          "animations": [
+            "attack_part_2"
+          ],
+          "transitions": [
+            {
+              "idle": "query.all_animations_finished"
+            }
+          ]
         }
+      }
     }
+  }
 }
+

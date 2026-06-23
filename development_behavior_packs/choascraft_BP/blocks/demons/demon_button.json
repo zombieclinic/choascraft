@@ -69,10 +69,13 @@
       "minecraft:destructible_by_explosion": {
         "explosion_resistance": 1
       },
-      "zombie:button_press": {},
+      "zombie:button_press": {
+        
+      },
       "minecraft:redstone_producer": {
         "power": 0
-      }
+      },
+      "minecraft:map_color": "#3A0A07"
     },
     "permutations": [
       {
@@ -258,7 +261,9 @@
             ],
             "looping": true
           },
-          "zombie:button_release_tick": {},
+          "zombie:button_release_tick": {
+            
+          },
           "minecraft:redstone_producer": {
             "power": 15,
             "strongly_powered_face": "down"
@@ -287,7 +292,9 @@
             ],
             "looping": true
           },
-          "zombie:button_release_tick": {},
+          "zombie:button_release_tick": {
+            
+          },
           "minecraft:redstone_producer": {
             "power": 15,
             "strongly_powered_face": "up"
@@ -323,7 +330,9 @@
             ],
             "looping": true
           },
-          "zombie:button_release_tick": {},
+          "zombie:button_release_tick": {
+            
+          },
           "minecraft:redstone_producer": {
             "power": 15,
             "strongly_powered_face": "north"
@@ -359,7 +368,9 @@
             ],
             "looping": true
           },
-          "zombie:button_release_tick": {},
+          "zombie:button_release_tick": {
+            
+          },
           "minecraft:redstone_producer": {
             "power": 15,
             "strongly_powered_face": "south"
@@ -395,7 +406,9 @@
             ],
             "looping": true
           },
-          "zombie:button_release_tick": {},
+          "zombie:button_release_tick": {
+            
+          },
           "minecraft:redstone_producer": {
             "power": 15,
             "strongly_powered_face": "south"
@@ -431,7 +444,9 @@
             ],
             "looping": true
           },
-          "zombie:button_release_tick": {},
+          "zombie:button_release_tick": {
+            
+          },
           "minecraft:redstone_producer": {
             "power": 15,
             "strongly_powered_face": "south"
@@ -441,3 +456,4 @@
     ]
   }
 }
+

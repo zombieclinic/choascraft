@@ -18,29 +18,6 @@
     },
     "permutations": [
       {
-        "condition": "query.block_state('zombie:growth_stage') < 4",
-        "components": {
-          "minecraft:tick": {
-            "looping": true,
-            "interval_range": [
-              2400,
-              6000
-            ]
-          },
-          "zombie:abyss_flower_crop": {
-            "stage_state": "zombie:growth_stage",
-            "max_stage": 4,
-            "valid_base_blocks": [
-              "zombie:demon_grass_no_tick",
-              "zombie:demon_dirt",
-              "zombie:demon_blood_flesh_block",
-              "zombie:demon_blood_block",
-              "zombie:demon_flesh_block"
-            ]
-          }
-        }
-      },
-      {
         "condition": "query.block_state('zombie:growth_stage') == 0",
         "components": {
           "minecraft:selection_box": {
@@ -212,12 +189,34 @@
         ]
       },
       "minecraft:light_dampening": 0,
-      "minecraft:replaceable": {},
+      "minecraft:replaceable": {
+        
+      },
       "minecraft:loot": "loot_tables/blocks/emberberry.json",
       "minecraft:tags": [
         "minecraft:crop",
         "plant"
-      ]
+      ],
+      "minecraft:tick": {
+        "looping": true,
+        "interval_range": [
+          20,
+          40
+        ]
+      },
+      "zombie:abyss_flower_crop": {
+        "stage_state": "zombie:growth_stage",
+        "max_stage": 4,
+        "valid_base_blocks": [
+          "zombie:demon_grass_no_tick",
+          "zombie:demon_dirt",
+          "zombie:demon_blood_flesh_block",
+          "zombie:demon_blood_block",
+          "zombie:demon_flesh_block"
+        ]
+      },
+      "minecraft:map_color": "#34140C"
     }
   }
 }
+

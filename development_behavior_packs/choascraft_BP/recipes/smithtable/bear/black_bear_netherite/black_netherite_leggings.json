@@ -1,20 +1,21 @@
 {
-	"format_version": "1.21.40",
-	"minecraft:recipe_smithing_transform": {
-		"description": {
-			"identifier": "zombie:black_netherite_bear_leggings_recipes"
-		},
-		"tags": [
-			"smithing_table"
-		],
-		"unlock": [
-			{
-				"item": "minecraft:netherite_ingot"
-			}
-		],
-		"template": "minecraft:netherite_upgrade_smithing_template",
-		"base": "zombie:black_bear_leggings",
-		"addition": "minecraft:netherite_ingot",
-		"result": "zombie:black_netherite_bear_leggings"
-	}
+  "format_version": "1.21.40",
+  "minecraft:recipe_smithing_transform": {
+    "description": {
+      "identifier": "zombie:black_netherite_bear_leggings_recipes"
+    },
+    "tags": [
+      "smithing_table"
+    ],
+    "unlock": [
+      {
+        "item": "minecraft:netherite_ingot"
+      }
+    ],
+    "template": "minecraft:netherite_upgrade_smithing_template",
+    "base": "zombie:black_bear_leggings",
+    "addition": "minecraft:netherite_ingot",
+    "result": "zombie:black_netherite_bear_leggings"
+  }
 }
+

@@ -1,90 +1,91 @@
 {
-	"format_version": "1.21.90",
-	"minecraft:fog_settings": {
-		"description": {
-			"identifier": "zombie:fog_infected_ocean"
-		},
-		"distance": {
-			"air": {
-				"fog_start": 0.25,
-				"fog_end": 0.85,
-				"fog_color": "#a77e15",
-				"render_distance_type": "render"
-			},
-			"water": {
-				"fog_start": 0.0,
-				"fog_end": 34.0,
-				"fog_color": "#674c08",
-				"render_distance_type": "fixed",
-				"transition_fog": {
-					"init_fog": {
-						"fog_start": 0.0,
-						"fog_end": 0.01,
-						"fog_color": "#513c07",
-						"render_distance_type": "fixed"
-					},
-					"min_percent": 0.25,
-					"mid_seconds": 4,
-					"mid_percent": 0.65,
-					"max_seconds": 18
-				}
-			},
-			"weather": {
-				"fog_start": 0.12,
-				"fog_end": 0.55,
-				"fog_color": "#a77e15",
-				"render_distance_type": "render"
-			},
-			"lava": {
-				"fog_start": 0.0,
-				"fog_end": 0.64,
-				"fog_color": "#bd15a1",
-				"render_distance_type": "fixed"
-			},
-			"lava_resistance": {
-				"fog_start": 2.0,
-				"fog_end": 4.0,
-				"fog_color": "#2cc911",
-				"render_distance_type": "fixed"
-			}
-		},
-		"volumetric": {
-			"density": {
-				"air": {
-					"max_density": 0.08,
-					"uniform": true
-				},
-				"water": {
-					"max_density": 0.16,
-					"uniform": true
-				}
-			},
-			"media_coefficients": {
-				"air": {
-					"scattering": [
-						0.050,
-						0.020,
-						0.070
-					],
-					"absorption": [
-						0.018,
-						0.008,
-						0.030
-					]
-				},
-				"water": {
-					"scattering": [
-						0.050,
-						0.020,
-						0.085
-					],
-					"absorption": [
-						0.010,
-						0.030,
-						0.020
-					]
-				}
-			}
-		}
-	}
+  "format_version": "1.21.90",
+  "minecraft:fog_settings": {
+    "description": {
+      "identifier": "zombie:fog_infected_ocean"
+    },
+    "distance": {
+      "air": {
+        "fog_start": 0.25,
+        "fog_end": 0.85,
+        "fog_color": "#a77e15",
+        "render_distance_type": "render"
+      },
+      "water": {
+        "fog_start": 0.0,
+        "fog_end": 34.0,
+        "fog_color": "#674c08",
+        "render_distance_type": "fixed",
+        "transition_fog": {
+          "init_fog": {
+            "fog_start": 0.0,
+            "fog_end": 0.01,
+            "fog_color": "#513c07",
+            "render_distance_type": "fixed"
+          },
+          "min_percent": 0.25,
+          "mid_seconds": 4,
+          "mid_percent": 0.65,
+          "max_seconds": 18
+        }
+      },
+      "weather": {
+        "fog_start": 0.12,
+        "fog_end": 0.55,
+        "fog_color": "#a77e15",
+        "render_distance_type": "render"
+      },
+      "lava": {
+        "fog_start": 0.0,
+        "fog_end": 0.64,
+        "fog_color": "#bd15a1",
+        "render_distance_type": "fixed"
+      },
+      "lava_resistance": {
+        "fog_start": 2.0,
+        "fog_end": 4.0,
+        "fog_color": "#2cc911",
+        "render_distance_type": "fixed"
+      }
+    },
+    "volumetric": {
+      "density": {
+        "air": {
+          "max_density": 0.08,
+          "uniform": true
+        },
+        "water": {
+          "max_density": 0.16,
+          "uniform": true
+        }
+      },
+      "media_coefficients": {
+        "air": {
+          "scattering": [
+            0.050,
+            0.020,
+            0.070
+          ],
+          "absorption": [
+            0.018,
+            0.008,
+            0.030
+          ]
+        },
+        "water": {
+          "scattering": [
+            0.050,
+            0.020,
+            0.085
+          ],
+          "absorption": [
+            0.010,
+            0.030,
+            0.020
+          ]
+        }
+      }
+    }
+  }
 }
+

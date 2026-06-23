@@ -1,191 +1,192 @@
-﻿{
-    "format_version":  "1.26.20",
-    "minecraft:block":  {
-                            "description":  {
-                                                "identifier":  "zombie:flesh_slab",
-                                                "traits":  {
-                                                               "minecraft:placement_position":  {
-                                                                                                    "enabled_states":  [
-                                                                                                                           "minecraft:vertical_half"
-                                                                                                                       ]
-                                                                                                }
-                                                           },
-                                                "states":  {
-                                                               "zombie:double":  [
-                                                                                     false,
-                                                                                     true
-                                                                                 ]
-                                                           },
-                                                "menu_category":  {
-                                                                      "category":  "construction",
-                                                                      "group":  "minecraft:itemGroup.name.slab"
-                                                                  }
-                                            },
-                            "permutations":  [
-                                                 {
-                                                     "condition":  "query.block_state(\u0027minecraft:vertical_half\u0027) == \u0027bottom\u0027 \u0026\u0026 !query.block_state(\u0027zombie:double\u0027)",
-                                                     "components":  {
-                                                                        "minecraft:collision_box":  {
-                                                                                                        "origin":  [
-                                                                                                                       -8,
-                                                                                                                       0,
-                                                                                                                       -8
-                                                                                                                   ],
-                                                                                                        "size":  [
-                                                                                                                     16,
-                                                                                                                     8,
-                                                                                                                     16
-                                                                                                                 ]
-                                                                                                    },
-                                                                        "minecraft:selection_box":  {
-                                                                                                        "origin":  [
-                                                                                                                       -8,
-                                                                                                                       0,
-                                                                                                                       -8
-                                                                                                                   ],
-                                                                                                        "size":  [
-                                                                                                                     16,
-                                                                                                                     8,
-                                                                                                                     16
-                                                                                                                 ]
-                                                                                                    }
-                                                                    }
-                                                 },
-                                                 {
-                                                     "condition":  "query.block_state(\u0027minecraft:vertical_half\u0027) == \u0027top\u0027 \u0026\u0026 !query.block_state(\u0027zombie:double\u0027)",
-                                                     "components":  {
-                                                                        "minecraft:collision_box":  {
-                                                                                                        "origin":  [
-                                                                                                                       -8,
-                                                                                                                       8,
-                                                                                                                       -8
-                                                                                                                   ],
-                                                                                                        "size":  [
-                                                                                                                     16,
-                                                                                                                     8,
-                                                                                                                     16
-                                                                                                                 ]
-                                                                                                    },
-                                                                        "minecraft:selection_box":  {
-                                                                                                        "origin":  [
-                                                                                                                       -8,
-                                                                                                                       8,
-                                                                                                                       -8
-                                                                                                                   ],
-                                                                                                        "size":  [
-                                                                                                                     16,
-                                                                                                                     8,
-                                                                                                                     16
-                                                                                                                 ]
-                                                                                                    }
-                                                                    }
-                                                 },
-                                                 {
-                                                     "condition":  "query.block_state(\u0027zombie:double\u0027)",
-                                                     "components":  {
-                                                                        "minecraft:geometry":  "minecraft:geometry.full_block",
-                                                                        "minecraft:light_dampening":  15,
-                                                                        "minecraft:collision_box":  {
-                                                                                                        "origin":  [
-                                                                                                                       -8,
-                                                                                                                       0,
-                                                                                                                       -8
-                                                                                                                   ],
-                                                                                                        "size":  [
-                                                                                                                     16,
-                                                                                                                     16,
-                                                                                                                     16
-                                                                                                                 ]
-                                                                                                    },
-                                                                        "minecraft:selection_box":  {
-                                                                                                        "origin":  [
-                                                                                                                       -8,
-                                                                                                                       0,
-                                                                                                                       -8
-                                                                                                                   ],
-                                                                                                        "size":  [
-                                                                                                                     16,
-                                                                                                                     16,
-                                                                                                                     16
-                                                                                                                 ]
-                                                                                                    },
-                                                                        "minecraft:redstone_conductivity":  {
-                                                                                                                "redstone_conductor":  true
-                                                                                                            },
-                                                                        "minecraft:loot":  "loot_tables/blocks/double_flesh_slab.json"
-                                                                    }
-                                                 }
-                                             ],
-                            "components":  {
-                                               "minecraft:geometry":  {
-                                                                          "identifier":  "geometry.zombie.eyewood_slab",
-                                                                          "bone_visibility":  {
-                                                                                                  "bottom_slab":  {
-                                                                                                                      "expression":  "query.block_state(\u0027minecraft:vertical_half\u0027) == \u0027bottom\u0027",
-                                                                                                                      "version":  1
-                                                                                                                  },
-                                                                                                  "top_slab":  {
-                                                                                                                   "expression":  "query.block_state(\u0027minecraft:vertical_half\u0027) == \u0027top\u0027",
-                                                                                                                   "version":  1
-                                                                                                               }
-                                                                                              }
-                                                                      },
-                                               "minecraft:item_visual":  {
-                                                                             "geometry":  {
-                                                                                              "identifier":  "geometry.zombie.eyewood_slab",
-                                                                                              "bone_visibility":  {
-                                                                                                                      "bottom_slab":  {
-                                                                                                                                          "expression":  "true",
-                                                                                                                                          "version":  1
-                                                                                                                                      },
-                                                                                                                      "top_slab":  {
-                                                                                                                                       "expression":  "false",
-                                                                                                                                       "version":  1
-                                                                                                                                   }
-                                                                                                                  }
-                                                                                          },
-                                                                             "material_instances":  {
-                                                                                                        "*":  {
-                                                                                                                  "texture":  "flesh_planks",
-                                                                                                                  "render_method":  "opaque"
-                                                                                                              }
-                                                                                                    }
-                                                                         },
-                                               "minecraft:material_instances":  {
-                                                                                    "*":  {
-                                                                                              "texture":  "flesh_planks",
-                                                                                              "render_method":  "opaque"
-                                                                                          }
-                                                                                },
-                                               "minecraft:destructible_by_mining":  {
-                                                                                        "seconds_to_destroy":  2.0
-                                                                                    },
-                                               "minecraft:destructible_by_explosion":  {
-                                                                                           "explosion_resistance":  3.0
-                                                                                       },
-                                               "minecraft:loot":  "loot_tables/blocks/flesh_slab.json",
-                                               "minecraft:flammable":  {
-                                                                           "catch_chance_modifier":  5,
-                                                                           "destroy_chance_modifier":  20
-                                                                       },
-                                               "minecraft:light_dampening":  1,
-                                               "minecraft:liquid_detection":  {
-                                                                                  "detection_rules":  [
-                                                                                                          {
-                                                                                                              "liquid_type":  "water",
-                                                                                                              "can_contain_liquid":  true,
-                                                                                                              "on_liquid_touches":  "blocking"
-                                                                                                          }
-                                                                                                      ]
-                                                                              },
-                                               "zombie:slab_pre_place":  {
-
-                                                                         },
-                                               "minecraft:tags":  [
-                                                                      "zombie:slab",
-                                                                      "wood",
-                                                                      "minecraft:is_axe_item_destructible"
-                                                                  ]
-                                           }
-                        }
+{
+  "format_version": "1.26.20",
+  "minecraft:block": {
+    "description": {
+      "identifier": "zombie:flesh_slab",
+      "traits": {
+        "minecraft:placement_position": {
+          "enabled_states": [
+            "minecraft:vertical_half"
+          ]
+        }
+      },
+      "states": {
+        "zombie:double": [
+          false,
+          true
+        ]
+      },
+      "menu_category": {
+        "category": "construction",
+        "group": "minecraft:itemGroup.name.slab"
+      }
+    },
+    "permutations": [
+      {
+        "condition": "query.block_state(\u0027minecraft:vertical_half\u0027) == \u0027bottom\u0027 \u0026\u0026 !query.block_state(\u0027zombie:double\u0027)",
+        "components": {
+          "minecraft:collision_box": {
+            "origin": [
+              -8,
+              0,
+              -8
+            ],
+            "size": [
+              16,
+              8,
+              16
+            ]
+          },
+          "minecraft:selection_box": {
+            "origin": [
+              -8,
+              0,
+              -8
+            ],
+            "size": [
+              16,
+              8,
+              16
+            ]
+          }
+        }
+      },
+      {
+        "condition": "query.block_state(\u0027minecraft:vertical_half\u0027) == \u0027top\u0027 \u0026\u0026 !query.block_state(\u0027zombie:double\u0027)",
+        "components": {
+          "minecraft:collision_box": {
+            "origin": [
+              -8,
+              8,
+              -8
+            ],
+            "size": [
+              16,
+              8,
+              16
+            ]
+          },
+          "minecraft:selection_box": {
+            "origin": [
+              -8,
+              8,
+              -8
+            ],
+            "size": [
+              16,
+              8,
+              16
+            ]
+          }
+        }
+      },
+      {
+        "condition": "query.block_state(\u0027zombie:double\u0027)",
+        "components": {
+          "minecraft:geometry": "minecraft:geometry.full_block",
+          "minecraft:light_dampening": 15,
+          "minecraft:collision_box": {
+            "origin": [
+              -8,
+              0,
+              -8
+            ],
+            "size": [
+              16,
+              16,
+              16
+            ]
+          },
+          "minecraft:selection_box": {
+            "origin": [
+              -8,
+              0,
+              -8
+            ],
+            "size": [
+              16,
+              16,
+              16
+            ]
+          },
+          "minecraft:redstone_conductivity": {
+            "redstone_conductor": true
+          },
+          "minecraft:loot": "loot_tables/blocks/double_flesh_slab.json"
+        }
+      }
+    ],
+    "components": {
+      "minecraft:geometry": {
+        "identifier": "geometry.zombie.eyewood_slab",
+        "bone_visibility": {
+          "bottom_slab": {
+            "expression": "query.block_state(\u0027minecraft:vertical_half\u0027) == \u0027bottom\u0027",
+            "version": 1
+          },
+          "top_slab": {
+            "expression": "query.block_state(\u0027minecraft:vertical_half\u0027) == \u0027top\u0027",
+            "version": 1
+          }
+        }
+      },
+      "minecraft:item_visual": {
+        "geometry": {
+          "identifier": "geometry.zombie.eyewood_slab",
+          "bone_visibility": {
+            "bottom_slab": {
+              "expression": "true",
+              "version": 1
+            },
+            "top_slab": {
+              "expression": "false",
+              "version": 1
+            }
+          }
+        },
+        "material_instances": {
+          "*": {
+            "texture": "flesh_planks",
+            "render_method": "opaque"
+          }
+        }
+      },
+      "minecraft:material_instances": {
+        "*": {
+          "texture": "flesh_planks",
+          "render_method": "opaque"
+        }
+      },
+      "minecraft:destructible_by_mining": {
+        "seconds_to_destroy": 2.0
+      },
+      "minecraft:destructible_by_explosion": {
+        "explosion_resistance": 3.0
+      },
+      "minecraft:flammable": {
+        "catch_chance_modifier": 5,
+        "destroy_chance_modifier": 20
+      },
+      "minecraft:light_dampening": 1,
+      "minecraft:liquid_detection": {
+        "detection_rules": [
+          {
+            "liquid_type": "water",
+            "can_contain_liquid": true,
+            "on_liquid_touches": "blocking"
+          }
+        ]
+      },
+      "zombie:slab_pre_place": {
+        
+      },
+      "minecraft:tags": [
+        "zombie:slab",
+        "wood",
+        "minecraft:is_axe_item_destructible"
+      ],
+      "minecraft:map_color": "#A03E40"
+    }
+  }
 }
+

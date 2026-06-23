@@ -25,11 +25,12 @@
       "minecraft:destructible_by_explosion": {
         "explosion_resistance": 6.0
       },
-      "minecraft:map_color": "#5f5963",
       "minecraft:loot": "loot_tables/blocks/infected_stone.json",
       "minecraft:tags": [
         "minecraft:is_pickaxe_item_destructible"
-      ]
+      ],
+      "minecraft:map_color": "#2F2A30"
     }
   }
 }
+

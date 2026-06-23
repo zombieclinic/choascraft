@@ -44,7 +44,9 @@
     },
     "components": {
       "minecraft:display_name": "Infected Stairs",
-      "arctic:connectedStairs": {},
+      "arctic:connectedStairs": {
+        
+      },
       "minecraft:material_instances": {
         "*": {
           "texture": "infected_planks",
@@ -87,7 +89,8 @@
         "wood",
         "custom:connected_stairs",
         "minecraft:diamond_tier_destructible"
-      ]
+      ],
+      "minecraft:map_color": "#31200E"
     },
     "permutations": [
       {
@@ -1900,3 +1903,4 @@
     ]
   }
 }
+

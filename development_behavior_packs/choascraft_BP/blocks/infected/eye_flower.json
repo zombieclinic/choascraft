@@ -22,43 +22,21 @@
     },
     "permutations": [
       {
-        "condition": "query.block_state('zombie:eye_flower_part') == 'bottom' && query.block_state('zombie:growth_stage') < 3",
-        "components": {
-          "minecraft:tick": {
-            "looping": true,
-            "interval_range": [
-              450,
-              900
-            ]
-          },
-          "zombie:eye_flower_tick": {}
-        }
-      },
-      {
         "condition": "query.block_state('zombie:eye_flower_part') == 'bottom'",
         "components": {
           "minecraft:loot": "loot_tables/blocks/eye_flower.json",
-          "zombie:eye_flower_growth": {}
-        }
-      },
-      {
-        "condition": "query.block_state('zombie:eye_flower_part') == 'bottom' && query.block_state('zombie:growth_stage') == 3",
-        "components": {
-          "minecraft:tick": {
-            "looping": false,
-            "interval_range": [
-              1,
-              1
-            ]
-          },
-          "zombie:eye_flower_tick": {}
+          "zombie:eye_flower_growth": {
+            
+          }
         }
       },
       {
         "condition": "query.block_state('zombie:eye_flower_part') == 'top'",
         "components": {
           "minecraft:loot": "loot_tables/blocks/empty.json",
-          "zombie:eye_flower_growth": {},
+          "zombie:eye_flower_growth": {
+            
+          },
           "minecraft:material_instances": {
             "*": {
               "texture": "eye_flower_top",
@@ -230,11 +208,25 @@
         ]
       },
       "minecraft:light_dampening": 0,
-      "minecraft:replaceable": {},
+      "minecraft:replaceable": {
+        
+      },
       "minecraft:tags": [
         "minecraft:crop",
         "plant"
-      ]
+      ],
+      "minecraft:tick": {
+        "looping": true,
+        "interval_range": [
+          20,
+          40
+        ]
+      },
+      "zombie:eye_flower_tick": {
+        
+      },
+      "minecraft:map_color": "#342B16"
     }
   }
 }
+

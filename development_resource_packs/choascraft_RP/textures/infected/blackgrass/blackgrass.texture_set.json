@@ -1,8 +1,9 @@
 {
-    "format_version":  "1.16.100",
-    "minecraft:texture_set":  {
-                                  "color":  "blackgrass",
-                                  "metalness_emissive_roughness":  "blackgrass_mer",
-                                  "normal":  "blackgrass_normal"
-                              }
+  "format_version": "1.16.100",
+  "minecraft:texture_set": {
+    "color": "blackgrass",
+    "metalness_emissive_roughness": "blackgrass_mer",
+    "normal": "blackgrass_normal"
+  }
 }
+

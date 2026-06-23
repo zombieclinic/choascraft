@@ -1,35 +1,38 @@
 {
-	"format_version": "1.26.20",
-	"minecraft:item": {
-		"description": {
-			"identifier": "zombie:bear_rotten_meat",
-			"menu_category": {
-				"category": "nature",
-				"group": "minecraft:itemGroup.name.rawFood"
-			}
-		},
-		"components": {
-			"minecraft:icon": "zombie_bear_rotten",
-			"minecraft:display_name": {
-				"value": "Bear Rotten Meat"
-			},
-			"minecraft:food": {
-				"can_always_eat": false,
-				"nutrition": 1,
-				"saturation_modifier": 0.2
-			},
-			"minecraft:use_modifiers": {
-				"movement_modifier": 0,
-				"use_duration": 1
-			},
-			"minecraft:tags": {
-				"tags": [
-					"minecraft:is_food",
-					"minecraft:is_meat"
-				]
-			},
-			"zombie:rottenfood": {},
-			"minecraft:use_animation": "eat"
-		}
-	}
+  "format_version": "1.26.20",
+  "minecraft:item": {
+    "description": {
+      "identifier": "zombie:bear_rotten_meat",
+      "menu_category": {
+        "category": "nature",
+        "group": "minecraft:itemGroup.name.rawFood"
+      }
+    },
+    "components": {
+      "minecraft:icon": "zombie_bear_rotten",
+      "minecraft:display_name": {
+        "value": "Bear Rotten Meat"
+      },
+      "minecraft:food": {
+        "can_always_eat": false,
+        "nutrition": 1,
+        "saturation_modifier": 0.2
+      },
+      "minecraft:use_modifiers": {
+        "movement_modifier": 0,
+        "use_duration": 1
+      },
+      "minecraft:tags": {
+        "tags": [
+          "minecraft:is_food",
+          "minecraft:is_meat"
+        ]
+      },
+      "zombie:rottenfood": {
+        
+      },
+      "minecraft:use_animation": "eat"
+    }
+  }
 }
+

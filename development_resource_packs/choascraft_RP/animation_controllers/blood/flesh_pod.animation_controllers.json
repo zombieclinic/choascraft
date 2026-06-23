@@ -1,0 +1,31 @@
+{
+  "format_version": "1.26.20",
+  "animation_controllers": {
+    "controller.animation.flesh_pod": {
+      "initial_state": "idle",
+      "states": {
+        "idle": {
+          "animations": [
+            "idle"
+          ],
+          "transitions": [
+            {
+              "attack": "query.has_target"
+            }
+          ]
+        },
+        "attack": {
+          "animations": [
+            "attack"
+          ],
+          "transitions": [
+            {
+              "idle": "query.all_animations_finished"
+            }
+          ]
+        }
+      }
+    }
+  }
+}
+

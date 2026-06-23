@@ -1,0 +1,87 @@
+{
+  "format_version": "1.26.30",
+  "minecraft:block": {
+    "description": {
+      "identifier": "zombie:blood_mushroom",
+      "menu_category": {
+        "category": "nature",
+        "group": "minecraft:itemGroup.name.mushroom"
+      }
+    },
+    "components": {
+      "minecraft:display_name": "tile.zombie:blood_mushroom.name",
+      "minecraft:collision_box": false,
+      "minecraft:selection_box": {
+        "origin": [
+          -4,
+          0,
+          -4
+        ],
+        "size": [
+          8,
+          9,
+          8
+        ]
+      },
+      "minecraft:geometry": "geometry.zombie_abysscrossplants",
+      "minecraft:material_instances": {
+        "*": {
+          "texture": "blood_mushroom",
+          "render_method": "alpha_test",
+          "face_dimming": false,
+          "ambient_occlusion": 0
+        }
+      },
+      "minecraft:item_visual": {
+        "geometry": "geometry.zombie_abysscrossplants",
+        "material_instances": {
+          "*": {
+            "texture": "blood_mushroom",
+            "render_method": "alpha_test",
+            "face_dimming": false,
+            "ambient_occlusion": 0
+          }
+        }
+      },
+      "minecraft:destructible_by_mining": {
+        "seconds_to_destroy": 0.0
+      },
+      "minecraft:destructible_by_explosion": {
+        "explosion_resistance": 0.0
+      },
+      "minecraft:placement_filter": {
+        "conditions": [
+          {
+            "allowed_faces": [
+              "up"
+            ],
+            "block_filter": [
+              "zombie:demon_blood_block",
+              "zombie:demon_flesh_block",
+              "zombie:demon_blood_flesh_block"
+            ]
+          }
+        ]
+      },
+      "minecraft:light_dampening": 0,
+      "minecraft:replaceable": {
+        
+      },
+      "minecraft:loot": "loot_tables/blocks/blood_mushroom.json",
+      "minecraft:tags": [
+        "plant"
+      ],
+      "zombie:mushroom_spread": {
+        "chance": 0.2,
+        "spread_radius": 1,
+        "valid_base_blocks": [
+          "zombie:demon_blood_block",
+          "zombie:demon_flesh_block",
+          "zombie:demon_blood_flesh_block"
+        ]
+      },
+      "minecraft:map_color": "#5B0611"
+    }
+  }
+}
+

@@ -1,15 +1,18 @@
 {
-    "format_version": "1.26.10",
-    "minecraft:item": {
-        "description": {
-            "identifier": "zombie:jellyfish_jelly_cyst",
-            "menu_category": {"category": "items"}
-        },
-        "components": {
-            "minecraft:display_name": {
-                "value": "Jelly cyst"
-            },
-            "minecraft:icon": "zombie_jellyfish_jelly_cyst"
-        }
+  "format_version": "1.26.10",
+  "minecraft:item": {
+    "description": {
+      "identifier": "zombie:jellyfish_jelly_cyst",
+      "menu_category": {
+        "category": "items"
+      }
+    },
+    "components": {
+      "minecraft:display_name": {
+        "value": "Jelly cyst"
+      },
+      "minecraft:icon": "zombie_jellyfish_jelly_cyst"
     }
+  }
 }
+

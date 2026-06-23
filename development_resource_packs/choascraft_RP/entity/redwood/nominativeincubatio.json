@@ -1,28 +1,29 @@
 {
-	"format_version": "1.10.0",
-	"minecraft:client_entity": {
-		"description": {
-			"identifier": "zombie:nominativeincubatio_e",
-			"materials": {
-				"default": "entity_alphatest"
-			},
-			"textures": {
-				"default": "textures/redwood/nominative incubatio"
-			},
-			"geometry": {
-				"default": "geometry.nominative_incubatio"
-			},
-			"animations": {
-				"third": "animation.nominative_incubatio.thrid"
-			},
-			"scripts": {
-				"animate": [
-					"third"
-				]
-			},
-			"render_controllers": [
-				"controller.render.default"
-			]
-		}
-	}
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "zombie:nominativeincubatio_e",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/redwood/nominative incubatio"
+      },
+      "geometry": {
+        "default": "geometry.nominative_incubatio"
+      },
+      "animations": {
+        "third": "animation.nominative_incubatio.thrid"
+      },
+      "scripts": {
+        "animate": [
+          "third"
+        ]
+      },
+      "render_controllers": [
+        "controller.render.default"
+      ]
+    }
+  }
 }
+

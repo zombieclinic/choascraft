@@ -1,13 +1,14 @@
-﻿{
-    "pools":  [
-                  {
-                      "entries":  [
-                                      {
-                                          "name":  "zombie:flesh_door",
-                                          "type":  "item"
-                                      }
-                                  ],
-                      "rolls":  1
-                  }
-              ]
+{
+  "pools": [
+    {
+      "entries": [
+        {
+          "name": "zombie:flesh_door",
+          "type": "item"
+        }
+      ],
+      "rolls": 1
+    }
+  ]
 }
+

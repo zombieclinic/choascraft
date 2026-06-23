@@ -1,8 +1,9 @@
 {
-	"format_version": "1.16.100",
-	"minecraft:texture_set": {
-		"color": "crab_chest",
-		"metalness_emissive_roughness": "crab_chest_mer",
-		"normal": "crab_chest_normal"
-	}
+  "format_version": "1.16.100",
+  "minecraft:texture_set": {
+    "color": "crab_chest",
+    "metalness_emissive_roughness": "crab_chest_mer",
+    "normal": "crab_chest_normal"
+  }
 }
+

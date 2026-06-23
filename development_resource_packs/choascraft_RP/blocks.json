@@ -1,313 +1,325 @@
 {
-	"format_version": [1, 0, 0],
-	"zombie:abyss_flower": {
-		"sound": "grass"
-	},
-	"zombie:abyss_glob_flower": {
-		"sound": "grass"
-	},
-	"zombie:abyss_grass": {
-		"sound": "grass"
-	},
-	"zombie:abyss_mushroom": {
-		"sound": "grass"
-	},
-	"zombie:black_grass": {
-		"sound": "grass"
-	},
-	"zombie:infected_goo_plant": {
-		"sound": "slime"
-	},
-	"zombie:sporepod": {
-		"sound": "grass"
-	},
-	"zombie:corrupted_spire": {
-		"sound": "stone"
-	},
-	"zombie:eyewood_door": {
-		"sound": "wood"
-	},
-	"zombie:eyewood_fence": {
-		"sound": "wood"
-	},
-	"zombie:eyewood_fence_gate": {
-		"sound": "wood"
-	},
-	"zombie:eyewood_log": {
-		"sound": "wood"
-	},
-	"zombie:eyewood_planks": {
-		"sound": "wood"
-	},
-	"zombie:eyewood_pressureplate": {
-		"sound": "wood"
-	},
-	"zombie:eyewood_slab": {
-		"sound": "wood"
-	},
-	"zombie:eyewood_stairs": {
-		"sound": "wood"
-	},
-	"zombie:eyewood_trapdoor": {
-		"sound": "wood"
-	},
-	"zombie:eyewood_tree_leaves": {
-		"sound": "grass"
-	},
-	"zombie:eyewood_tree_sapling": {
-		"sound": "grass"
-	},
-	"zombie:glow_flower": {
-		"sound": "grass"
-	},
-	"zombie:infected_flower": {
-		"sound": "grass"
-	},
-	"zombie:eye_flower": {
-		"sound": "grass"
-	},
-	"zombie:infected_cobblestone": {
-		"sound": "stone"
-	},
-	"zombie:infected_dirt": {
-		"sound": "gravel"
-	},
-	"zombie:infected_door": {
-		"sound": "wood"
-	},
-	"zombie:infected_gravel": {
-		"sound": "gravel"
-	},
-	"zombie:infected_sand": {
-		"sound": "sand"
-	},
-	"zombie:infected_slab": {
-		"sound": "wood"
-	},
-	"zombie:infected_sporestone": {
-		"sound": "stone"
-	},
-	"zombie:infected_stone": {
-		"sound": "stone"
-	},
-	"zombie:infected_teeth": {
-		"sound": "bone_block"
-	},
-	"zombie:pengiun_egg_block": {
-		"sound": "turtle_egg"
-	},
-	"zombie:stripped_eyewood_log": {
-		"sound": "wood"
-	},
-	"zombie:zc_button": {
-		"sound": "wood"
-	},
-	"zombie:redwood_door": {
-		"sound": "wood"
-	},
-	"zombie:redwood_button": {
-		"sound": "wood"
-	},
-	"zombie:redwood_fence": {
-		"sound": "wood"
-	},
-	"zombie:redwood_fence_gate": {
-		"sound": "wood"
-	},
-	"zombie:redwood_leaves": {
-		"sound": "grass"
-	},
-	"zombie:redwood_log": {
-		"sound": "wood"
-	},
-	"zombie:redwood_planks": {
-		"sound": "wood"
-	},
-	"zombie:redwood_pressure_plate": {
-		"sound": "wood"
-	},
-	"zombie:redwood_sapling": {
-		"sound": "grass"
-	},
-	"zombie:redwood_slab": {
-		"sound": "wood"
-	},
-	"zombie:redwood_stairs": {
-		"sound": "wood"
-	},
-	"zombie:redwood_trapdoor": {
-		"sound": "wood"
-	},
-	"zombie:stripped_redwood_log": {
-		"sound": "wood"
-	},
-	"zombie:demon_grass_no_tick": {
-		"textures": {
-			"up": "zombie_demon_grass_top",
-			"down": "zombie_demon_dirt",
-			"side": "zombie_demon_grass"
-		},
-		"brightness_gamma": 4,
-		"sound": "grass"
-	},
-	"zombie:demon_dirt": {
-		"textures": "zombie_demon_dirt",
-		"sound": "gravel"
-	},
-	"zombie:corrupted_grass": {
-		"textures": "zombie_corrupted_grass",
-		"sound": "grass"
-	},
-	"zombie:emberberry": {
-		"textures": "zombie_emberberry_4",
-		"sound": "grass"
-	},
-	"zombie:demon_stone": {
-		"textures": "zombie_demon_stone",
-		"sound": "stone"
-	},
-	"zombie:demon_stone_brick": {
-		"textures": "zombie_demon_stone_brick",
-		"sound": "stone"
-	},
-	"zombie:demon_stone_slab": {
-		"textures": "zombie_demon_stone",
-		"sound": "stone"
-	},
-	"zombie:demon_steel": {
-		"textures": "zombie_demon_steel_block",
-		"sound": "metal"
-	},
-	"zombie:currupted_xp_block": {
-		"textures": "zombie_currupted_xp_block",
-		"sound": "amethyst_block"
-	},
-	"zombie:demon_steel_chiseled": {
-		"textures": "zombie_chiseled_demon_steel_block",
-		"sound": "metal"
-	},
-	"zombie:demon_steel_ore": {
-		"textures": "zombie_demon_steel_ore",
-		"sound": "stone"
-	},
-	"zombie:demon_steel_slab": {
-		"textures": "zombie_demon_steel_block",
-		"sound": "metal"
-	},
-	"zombie:demon_steel_stairs": {
-		"textures": "zombie_demon_steel_block",
-		"sound": "metal"
-	},
-	"zombie:demon_steel_wall": {
-		"textures": "zombie_demon_steel_block",
-		"sound": "metal"
-	},
-	"zombie:hell_lamp": {
-		"textures": "zombie_hell_lamp",
-		"sound": "lantern"
-	},
-	"zombie:demon_log": {
-		"textures": {
-			"up": "zombie_demon_log_top",
-			"down": "zombie_demon_log_top",
-			"side": "zombie_hell_log"
-		},
-		"sound": "wood"
-	},
-	"zombie:demon_fire_log": {
-		"textures": {
-			"up": "zombie_demon_log_top",
-			"down": "zombie_demon_log_top",
-			"side": "zombie_hell_log2"
-		},
-		"sound": "wood"
-	},
-	"zombie:demon_log_stripped": {
-		"textures": {
-			"up": "zombie_demon_log_top",
-			"down": "zombie_demon_log_top",
-			"side": "zombie_hell_stripped_1"
-		},
-		"sound": "wood"
-	},
-	"zombie:demon_fire_log_stripped": {
-		"textures": {
-			"up": "zombie_demon_log_top",
-			"down": "zombie_demon_log_top",
-			"side": "zombie_hell_log_stripped_2"
-		},
-		"sound": "wood"
-	},
-	"zombie:demon_planks": {
-		"textures": "zombie_hell_plank",
-		"sound": "wood"
-	},
-	"zombie:demon_plank_slab": {
-		"textures": "zombie_hell_plank",
-		"sound": "wood"
-	},
-	"zombie:demon_stairs": {
-		"textures": "zombie_hell_plank",
-		"sound": "wood"
-	},
-	"zombie:demon_trapdoor": {
-		"textures": "zombie_demon_trapdoor",
-		"sound": "wood"
-	},
-	"zombie:demon_door": {
-		"textures": "zombie_demon_door_bottom",
-		"sound": "wood"
-	},
-	"zombie:demon_fence": {
-		"textures": "zombie_hell_plank",
-		"sound": "wood"
-	},
-	"zombie:demon_gate": {
-		"textures": "zombie_hell_plank",
-		"sound": "wood"
-	},
-	"zombie:demon_button": {
-		"textures": "zombie_hell_plank",
-		"sound": "wood"
-	},
-	"zombie:demon_pressure_plate": {
-		"textures": "zombie_hell_plank",
-		"sound": "wood"
-	},
-	"zombie:hellfire_trapstone": {
-		"textures": "zombie_hellfire_trapstone",
-		"sound": "stone"
-	},
-	"zombie:hellfire_spike": {
-		"textures": "zombie_hellfire_spikes",
-		"sound": "stone"
-	},
-	"zombie:demon_alter": {
-		"textures": "zombie_demon_alter",
-		"sound": "stone"
-	},
-	"zombie:demon_blood_block": {
-		"textures": "zombie_demon_blood_block",
-		"sound": "stone"
-	},
-	"zombie:demon_flesh_block": {
-		"textures": "zombie_demon_flesh_block",
-		"sound": "stone"
-	},
-	"zombie:demon_blood_flesh_block": {
-		"textures": "zombie_demon_blood_flesh_block",
-		"sound": "stone"
-	},
-	"zombie:demon_skull": {
-		"textures": "zombie_demon_alter",
-		"sound": "stone"
-	},
-	"zombie:demon_pentagram": {
-		"textures": "zombie_demon_alter_top_planstar",
-		"sound": "stone"
-	},
-	"zombie:choas_chest": {
-		"textures": "zombie_demon_chest",
-		"sound": "wood"
-	}
+  "format_version": [
+    1,
+    0,
+    0
+  ],
+  "zombie:abyss_flower": {
+    "sound": "grass"
+  },
+  "zombie:abyss_glob_flower": {
+    "sound": "grass"
+  },
+  "zombie:abyss_grass": {
+    "sound": "grass"
+  },
+  "zombie:abyss_mushroom": {
+    "sound": "grass"
+  },
+  "zombie:black_grass": {
+    "sound": "grass"
+  },
+  "zombie:infected_goo_plant": {
+    "sound": "slime"
+  },
+  "zombie:sporepod": {
+    "sound": "grass"
+  },
+  "zombie:corrupted_spire": {
+    "sound": "stone"
+  },
+  "zombie:eyewood_door": {
+    "sound": "wood"
+  },
+  "zombie:eyewood_fence": {
+    "sound": "wood"
+  },
+  "zombie:eyewood_fence_gate": {
+    "sound": "wood"
+  },
+  "zombie:eyewood_log": {
+    "sound": "wood"
+  },
+  "zombie:eyewood_planks": {
+    "sound": "wood"
+  },
+  "zombie:eyewood_pressureplate": {
+    "sound": "wood"
+  },
+  "zombie:eyewood_slab": {
+    "sound": "wood"
+  },
+  "zombie:eyewood_stairs": {
+    "sound": "wood"
+  },
+  "zombie:eyewood_trapdoor": {
+    "sound": "wood"
+  },
+  "zombie:eyewood_tree_leaves": {
+    "sound": "grass"
+  },
+  "zombie:eyewood_tree_sapling": {
+    "sound": "grass"
+  },
+  "zombie:glow_flower": {
+    "sound": "grass"
+  },
+  "zombie:infected_flower": {
+    "sound": "grass"
+  },
+  "zombie:eye_flower": {
+    "sound": "grass"
+  },
+  "zombie:infected_cobblestone": {
+    "sound": "stone"
+  },
+  "zombie:infected_dirt": {
+    "sound": "gravel"
+  },
+  "zombie:infected_door": {
+    "sound": "wood"
+  },
+  "zombie:infected_gravel": {
+    "sound": "gravel"
+  },
+  "zombie:infected_sand": {
+    "sound": "sand"
+  },
+  "zombie:infected_slab": {
+    "sound": "wood"
+  },
+  "zombie:infected_sporestone": {
+    "sound": "stone"
+  },
+  "zombie:infected_stone": {
+    "sound": "stone"
+  },
+  "zombie:infected_teeth": {
+    "sound": "bone_block"
+  },
+  "zombie:pengiun_egg_block": {
+    "sound": "turtle_egg"
+  },
+  "zombie:stripped_eyewood_log": {
+    "sound": "wood"
+  },
+  "zombie:zc_button": {
+    "sound": "wood"
+  },
+  "zombie:redwood_door": {
+    "sound": "wood"
+  },
+  "zombie:redwood_button": {
+    "sound": "wood"
+  },
+  "zombie:redwood_fence": {
+    "sound": "wood"
+  },
+  "zombie:redwood_fence_gate": {
+    "sound": "wood"
+  },
+  "zombie:redwood_leaves": {
+    "sound": "grass"
+  },
+  "zombie:redwood_log": {
+    "sound": "wood"
+  },
+  "zombie:redwood_planks": {
+    "sound": "wood"
+  },
+  "zombie:redwood_pressure_plate": {
+    "sound": "wood"
+  },
+  "zombie:redwood_sapling": {
+    "sound": "grass"
+  },
+  "zombie:redwood_slab": {
+    "sound": "wood"
+  },
+  "zombie:redwood_stairs": {
+    "sound": "wood"
+  },
+  "zombie:redwood_trapdoor": {
+    "sound": "wood"
+  },
+  "zombie:stripped_redwood_log": {
+    "sound": "wood"
+  },
+  "zombie:demon_grass_no_tick": {
+    "textures": {
+      "up": "zombie_demon_grass_top",
+      "down": "zombie_demon_dirt",
+      "side": "zombie_demon_grass"
+    },
+    "brightness_gamma": 4,
+    "sound": "grass"
+  },
+  "zombie:demon_dirt": {
+    "textures": "zombie_demon_dirt",
+    "sound": "gravel"
+  },
+  "zombie:corrupted_grass": {
+    "textures": "zombie_corrupted_grass",
+    "sound": "grass"
+  },
+  "zombie:emberberry": {
+    "textures": "zombie_emberberry_4",
+    "sound": "grass"
+  },
+  "zombie:demon_stone": {
+    "textures": "zombie_demon_stone",
+    "sound": "stone"
+  },
+  "zombie:demon_stone_brick": {
+    "textures": "zombie_demon_stone_brick",
+    "sound": "stone"
+  },
+  "zombie:demon_stone_slab": {
+    "textures": "zombie_demon_stone",
+    "sound": "stone"
+  },
+  "zombie:demon_steel": {
+    "textures": "zombie_demon_steel_block",
+    "sound": "metal"
+  },
+  "zombie:currupted_xp_block": {
+    "textures": "zombie_currupted_xp_block",
+    "sound": "amethyst_block"
+  },
+  "zombie:demon_steel_chiseled": {
+    "textures": "zombie_chiseled_demon_steel_block",
+    "sound": "metal"
+  },
+  "zombie:demon_steel_ore": {
+    "textures": "zombie_demon_steel_ore",
+    "sound": "stone"
+  },
+  "zombie:demon_steel_slab": {
+    "textures": "zombie_demon_steel_block",
+    "sound": "metal"
+  },
+  "zombie:demon_steel_stairs": {
+    "textures": "zombie_demon_steel_block",
+    "sound": "metal"
+  },
+  "zombie:demon_steel_wall": {
+    "textures": "zombie_demon_steel_block",
+    "sound": "metal"
+  },
+  "zombie:hell_lamp": {
+    "textures": "zombie_hell_lamp",
+    "sound": "lantern"
+  },
+  "zombie:demon_log": {
+    "textures": {
+      "up": "zombie_demon_log_top",
+      "down": "zombie_demon_log_top",
+      "side": "zombie_hell_log"
+    },
+    "sound": "wood"
+  },
+  "zombie:demon_fire_log": {
+    "textures": {
+      "up": "zombie_demon_log_top",
+      "down": "zombie_demon_log_top",
+      "side": "zombie_hell_log2"
+    },
+    "sound": "wood"
+  },
+  "zombie:demon_log_stripped": {
+    "textures": {
+      "up": "zombie_demon_log_top",
+      "down": "zombie_demon_log_top",
+      "side": "zombie_hell_stripped_1"
+    },
+    "sound": "wood"
+  },
+  "zombie:demon_fire_log_stripped": {
+    "textures": {
+      "up": "zombie_demon_log_top",
+      "down": "zombie_demon_log_top",
+      "side": "zombie_hell_log_stripped_2"
+    },
+    "sound": "wood"
+  },
+  "zombie:demon_planks": {
+    "textures": "zombie_hell_plank",
+    "sound": "wood"
+  },
+  "zombie:demon_plank_slab": {
+    "textures": "zombie_hell_plank",
+    "sound": "wood"
+  },
+  "zombie:demon_stairs": {
+    "textures": "zombie_hell_plank",
+    "sound": "wood"
+  },
+  "zombie:demon_trapdoor": {
+    "textures": "zombie_demon_trapdoor",
+    "sound": "wood"
+  },
+  "zombie:demon_door": {
+    "textures": "zombie_demon_door_bottom",
+    "sound": "wood"
+  },
+  "zombie:demon_fence": {
+    "textures": "zombie_hell_plank",
+    "sound": "wood"
+  },
+  "zombie:demon_gate": {
+    "textures": "zombie_hell_plank",
+    "sound": "wood"
+  },
+  "zombie:demon_button": {
+    "textures": "zombie_hell_plank",
+    "sound": "wood"
+  },
+  "zombie:demon_pressure_plate": {
+    "textures": "zombie_hell_plank",
+    "sound": "wood"
+  },
+  "zombie:hellfire_trapstone": {
+    "textures": "zombie_hellfire_trapstone",
+    "sound": "stone"
+  },
+  "zombie:hellfire_spike": {
+    "textures": "zombie_hellfire_spikes",
+    "sound": "stone"
+  },
+  "zombie:demon_alter": {
+    "textures": "zombie_demon_alter",
+    "sound": "stone"
+  },
+  "zombie:demon_blood_block": {
+    "textures": "zombie_demon_blood_block",
+    "sound": "stone"
+  },
+  "zombie:demon_flesh_block": {
+    "textures": "zombie_demon_flesh_block",
+    "sound": "stone"
+  },
+  "zombie:demon_blood_flesh_block": {
+    "textures": "zombie_demon_blood_flesh_block",
+    "sound": "stone"
+  },
+  "zombie:demon_skull": {
+    "textures": "zombie_demon_alter",
+    "sound": "stone"
+  },
+  "zombie:demon_pentagram": {
+    "textures": "zombie_demon_alter_top_planstar",
+    "sound": "stone"
+  },
+  "zombie:chaos_chest": {
+    "textures": "zombie_demon_chest",
+    "sound": "wood"
+  },
+  "zombie:blood_root": {
+    "textures": "blood_root_3",
+    "sound": "grass"
+  },
+  "zombie:blood_mushroom": {
+    "sound": "grass"
+  }
 }
+

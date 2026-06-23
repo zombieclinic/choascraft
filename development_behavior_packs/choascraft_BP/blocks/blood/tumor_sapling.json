@@ -61,7 +61,6 @@
         ]
       },
       "minecraft:collision_box": false,
-      "minecraft:loot": "loot_tables/blocks/tumor_sapling.json",
       "minecraft:light_dampening": 0,
       "minecraft:placement_filter": {
         "conditions": [
@@ -70,24 +69,11 @@
               "up"
             ],
             "block_filter": [
-              "zombie:demon_grass_no_tick",
-              "zombie:demon_dirt",
-              "zombie:demon_stone",
-              "zombie:demon_flesh_block",
               "zombie:demon_blood_block",
-              "zombie:demon_blood_flesh_block",
-              "zombie:blood_planks",
-              "zombie:blood_log",
-              "zombie:stripped_blood_log"
+              "zombie:demon_flesh_block",
+              "zombie:demon_blood_flesh_block"
             ]
           }
-        ]
-      },
-      "minecraft:tick": {
-        "looping": true,
-        "interval_range": [
-          600,
-          1200
         ]
       },
       "zombie:eyewood_tree_sapling_growth": {
@@ -96,15 +82,9 @@
         "feature": "zombie:tumor_tree_feature",
         "growth_chance": 0.45,
         "valid_base_blocks": [
-          "zombie:demon_grass_no_tick",
-          "zombie:demon_dirt",
-          "zombie:demon_stone",
-          "zombie:demon_flesh_block",
           "zombie:demon_blood_block",
-          "zombie:demon_blood_flesh_block",
-          "zombie:blood_planks",
-          "zombie:blood_log",
-          "zombie:stripped_blood_log"
+          "zombie:demon_flesh_block",
+          "zombie:demon_blood_flesh_block"
         ],
         "vine_decoration": {
           "block": "zombie:blood_vine",
@@ -122,9 +102,29 @@
         "zombie:tumor_sapling",
         "sapling",
         "plant"
-      ]
+      ],
+      "minecraft:tick": {
+        "looping": true,
+        "interval_range": [
+          20,
+          40
+        ]
+      },
+      "minecraft:map_color": "#4C0610"
     },
     "permutations": [
+      {
+        "condition": "query.block_state(\u0027zombie:growth_stage\u0027) \u003c 4",
+        "components": {
+          "minecraft:tick": {
+            "looping": true,
+            "interval_range": [
+              20,
+              40
+            ]
+          }
+        }
+      },
       {
         "condition": "query.block_state(\u0027zombie:growth_stage\u0027) == 1",
         "components": {
@@ -180,3 +180,4 @@
     ]
   }
 }
+

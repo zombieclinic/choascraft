@@ -1,21 +1,22 @@
 {
-	"format_version": "1.26.10",
-	"minecraft:recipe_furnace": {
-		"description": {
-			"identifier": "zombie:peeper_fillet_cooked_recipe"
-		},
-		"unlock": [
-			{
-				"item": "zombie:peeper_fillet"
-			}
-		],
-		"tags": [
-			"furnace",
-			"smoker",
-			"campfire",
-			"soul_campfire"
-		],
-		"input": "zombie:peeper_fillet",
-		"output": "zombie:peeper_fillet_cooked"
-	}
+  "format_version": "1.26.10",
+  "minecraft:recipe_furnace": {
+    "description": {
+      "identifier": "zombie:peeper_fillet_cooked_recipe"
+    },
+    "unlock": [
+      {
+        "item": "zombie:peeper_fillet"
+      }
+    ],
+    "tags": [
+      "furnace",
+      "smoker",
+      "campfire",
+      "soul_campfire"
+    ],
+    "input": "zombie:peeper_fillet",
+    "output": "zombie:peeper_fillet_cooked"
+  }
 }
+

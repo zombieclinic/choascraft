@@ -1,18 +1,24 @@
 {
- "format_version": "1.26.10",
- "minecraft:recipe_smithing_transform": {
-  "description": {
-    "identifier": "zombie:smithing_netherite_jellyfish_pink_boots"
-   },
-  "unlock": [
-      { "item": "minecraft:iron_ingot" },
-      { "item": "zombie:jellyfish_jelly_pink" }
+  "format_version": "1.26.10",
+  "minecraft:recipe_smithing_transform": {
+    "description": {
+      "identifier": "zombie:smithing_netherite_jellyfish_pink_boots"
+    },
+    "unlock": [
+      {
+        "item": "minecraft:iron_ingot"
+      },
+      {
+        "item": "zombie:jellyfish_jelly_pink"
+      }
     ],
-  "tags": [ "smithing_table" ],
-
-   "template": "minecraft:netherite_upgrade_smithing_template",
-   "base": "zombie:jellyfish_pink_boots",
-   "addition": "minecraft:netherite_ingot",
-   "result": "zombie:jellyfish_netherite_pink_boots"
- }
+    "tags": [
+      "smithing_table"
+    ],
+    "template": "minecraft:netherite_upgrade_smithing_template",
+    "base": "zombie:jellyfish_pink_boots",
+    "addition": "minecraft:netherite_ingot",
+    "result": "zombie:jellyfish_netherite_pink_boots"
+  }
 }
+

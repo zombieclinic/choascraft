@@ -1,13 +1,13 @@
 {
-  "format_version": "1.26.20",
+  "format_version": "1.26.30",
   "minecraft:client_entity": {
     "description": {
       "identifier": "zombie:fishing_hook",
       "materials": {
-        "default": "fishing_hook"
+        "default": "entity_alphatest"
       },
       "textures": {
-       "default": "textures/demon/item_mob/chaos_gear"
+        "default": "textures/demon/item_mob/chaos_gear"
       },
       "geometry": {
         "default": "geometry.fishing_hook"
@@ -18,3 +18,4 @@
     }
   }
 }
+

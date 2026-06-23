@@ -1,32 +1,33 @@
 {
-	"format_version": "1.20.10",
-	"minecraft:recipe_shaped": {
-		"description": {
-			"identifier": "zombie:infected_stairs"
-		},
-		"tags": [
-			"crafting_table"
-		],
-		"pattern": [
-			"#  ",
-			"## ",
-			"###"
-		],
-		"key": {
-			"#": {
-				"item": "zombie:infected_planks"
-			}
-		},
-		"result": [
-			{
-				"item": "zombie:infected_stairs",
-				"count": 4
-			}
-		],
-		"unlock": [
-			{
-				"item": "zombie:infected_planks"
-			}
-		]
-	}
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "zombie:infected_stairs"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "#  ",
+      "## ",
+      "###"
+    ],
+    "key": {
+      "#": {
+        "item": "zombie:infected_planks"
+      }
+    },
+    "result": [
+      {
+        "item": "zombie:infected_stairs",
+        "count": 4
+      }
+    ],
+    "unlock": [
+      {
+        "item": "zombie:infected_planks"
+      }
+    ]
+  }
 }
+

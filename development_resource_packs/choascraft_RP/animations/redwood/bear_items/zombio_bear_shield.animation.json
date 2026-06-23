@@ -1,67 +1,124 @@
 {
-	"format_version": "1.8.0",
-	"animations": {
-		"animation.zombio_bear_shield.rshield": {
-			"loop": true,
-			"bones": {
-				"rightItem": {
-					"rotation": [241.8382, -86.0977, -333.7564],
-					"position": [0.54594, 2.29896, -1.73429]
-				}
-			}
-		},
-		"animation.zombio_bear_shield.rshield_idle_fpp": {
-			"loop": "hold_on_last_frame",
-			"bones": {
-				"rightItem": {
-					"rotation": [-63.4347, 10.3564, -119.1165],
-					"position": [-0.82884, 10.07131, -3.81524]
-				}
-			}
-		},
-		"animation.zombio_bear_shield.rshield_use_fpp": {
-			"loop": "hold_on_last_frame",
-			"bones": {
-				"rightItem": {
-					"rotation": [-53.0884, -3.1061, -134.0369],
-					"position": [-2.80505, 9.61728, -7.2018]
-				}
-			}
-		},
-		"animation.zombio_bear_shield.lshield_idle_fpp": {
-			"loop": "hold_on_last_frame",
-			"override_previous_animation": true,
-			"bones": {
-				"lshield": {
-					"rotation": [90, 5, -92.5],
-					"position": [-16.63784, -3.43671, 10.73582]
-				}
-			}
-		},
-		"animation.zombio_bear_shield.lshield_use_fpp": {
-			"loop": "hold_on_last_frame",
-			"animation_length": 0.0833,
-			"bones": {
-				"lshield": {
-					"rotation": {
-						"0.0": [90, 5, -92.5],
-						"0.0833": [89.3526, -2.4148, -77.4863]
-					},
-					"position": {
-						"0.0": [-16.63784, -3.43671, 10.73582],
-						"0.0833": [-14.63175, -0.38315, 12.64668]
-					}
-				}
-			}
-		},
-		"animation.zombio_bear_shield.lshield": {
-			"loop": true,
-			"bones": {
-				"lshield": {
-					"rotation": [-96.6452, -5.8197, -277.3605],
-					"position": [-3.38706, 1.23381, -7.68749]
-				}
-			}
-		}
-	}
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.zombio_bear_shield.rshield": {
+      "loop": true,
+      "bones": {
+        "rightItem": {
+          "rotation": [
+            241.8382,
+            -86.0977,
+            -333.7564
+          ],
+          "position": [
+            0.54594,
+            2.29896,
+            -1.73429
+          ]
+        }
+      }
+    },
+    "animation.zombio_bear_shield.rshield_idle_fpp": {
+      "loop": "hold_on_last_frame",
+      "bones": {
+        "rightItem": {
+          "rotation": [
+            -63.4347,
+            10.3564,
+            -119.1165
+          ],
+          "position": [
+            -0.82884,
+            10.07131,
+            -3.81524
+          ]
+        }
+      }
+    },
+    "animation.zombio_bear_shield.rshield_use_fpp": {
+      "loop": "hold_on_last_frame",
+      "bones": {
+        "rightItem": {
+          "rotation": [
+            -53.0884,
+            -3.1061,
+            -134.0369
+          ],
+          "position": [
+            -2.80505,
+            9.61728,
+            -7.2018
+          ]
+        }
+      }
+    },
+    "animation.zombio_bear_shield.lshield_idle_fpp": {
+      "loop": "hold_on_last_frame",
+      "override_previous_animation": true,
+      "bones": {
+        "lshield": {
+          "rotation": [
+            90,
+            5,
+            -92.5
+          ],
+          "position": [
+            -16.63784,
+            -3.43671,
+            10.73582
+          ]
+        }
+      }
+    },
+    "animation.zombio_bear_shield.lshield_use_fpp": {
+      "loop": "hold_on_last_frame",
+      "animation_length": 0.0833,
+      "bones": {
+        "lshield": {
+          "rotation": {
+            "0.0": [
+              90,
+              5,
+              -92.5
+            ],
+            "0.0833": [
+              89.3526,
+              -2.4148,
+              -77.4863
+            ]
+          },
+          "position": {
+            "0.0": [
+              -16.63784,
+              -3.43671,
+              10.73582
+            ],
+            "0.0833": [
+              -14.63175,
+              -0.38315,
+              12.64668
+            ]
+          }
+        }
+      }
+    },
+    "animation.zombio_bear_shield.lshield": {
+      "loop": true,
+      "bones": {
+        "lshield": {
+          "rotation": [
+            -96.6452,
+            -5.8197,
+            -277.3605
+          ],
+          "position": [
+            -3.38706,
+            1.23381,
+            -7.68749
+          ]
+        }
+      }
+    }
+  }
 }
+

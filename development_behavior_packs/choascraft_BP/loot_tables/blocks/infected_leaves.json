@@ -1,28 +1,29 @@
 {
-	"pools": [
-		{
-			"rolls": 1,
-			"conditions": [
-				{
-					"condition": "match_tool",
-					"count": 1,
-					"minecraft:match_tool_filter_all": [
-						"minecraft:is_shears"
-					]
-				}
-			],
-			"entries": [
-				{
-					"type": "item",
-					"name": "zombie:infected_leaves",
-					"functions": [
-						{
-							"function": "set_count",
-							"count": 1
-						}
-					]
-				}
-			]
-		}
-	]
+  "pools": [
+    {
+      "rolls": 1,
+      "conditions": [
+        {
+          "condition": "match_tool",
+          "count": 1,
+          "minecraft:match_tool_filter_all": [
+            "minecraft:is_shears"
+          ]
+        }
+      ],
+      "entries": [
+        {
+          "type": "item",
+          "name": "zombie:infected_leaves",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            }
+          ]
+        }
+      ]
+    }
+  ]
 }
+

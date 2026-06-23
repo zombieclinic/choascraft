@@ -1,36 +1,38 @@
 {
-	"format_version": "1.26.20",
-	"minecraft:item": {
-		"description": {
-			"identifier": "zombie:bear_cooked_meat",
-			"menu_category": {
-				"category": "equipment",
-				"group": "minecraft:itemGroup.name.cookedFood"
-			}
-		},
-		"components": {
-			"minecraft:icon": "zombie_bear_cooked",
-			"minecraft:display_name": {
-				"value": "Bear Cooked Meat"
-			},
-			
-			"minecraft:food": {
-				"can_always_eat": false,
-				"nutrition": 8,
-				"saturation_modifier": 1
-			},
-			"minecraft:use_modifiers": {
-				"movement_modifier": 0.1,
-				"use_duration": 1
-			},
-			"minecraft:tags": {
-				"tags": [
-					"minecraft:is_food",
-					"minecraft:is_cooked",
-					"minecraft:is_meat"
-				]
-			},
-			"minecraft:use_animation": {"value": "eat"}
-		}
-	}
+  "format_version": "1.26.20",
+  "minecraft:item": {
+    "description": {
+      "identifier": "zombie:bear_cooked_meat",
+      "menu_category": {
+        "category": "equipment",
+        "group": "minecraft:itemGroup.name.cookedFood"
+      }
+    },
+    "components": {
+      "minecraft:icon": "zombie_bear_cooked",
+      "minecraft:display_name": {
+        "value": "Bear Cooked Meat"
+      },
+      "minecraft:food": {
+        "can_always_eat": false,
+        "nutrition": 8,
+        "saturation_modifier": 1
+      },
+      "minecraft:use_modifiers": {
+        "movement_modifier": 0.1,
+        "use_duration": 1
+      },
+      "minecraft:tags": {
+        "tags": [
+          "minecraft:is_food",
+          "minecraft:is_cooked",
+          "minecraft:is_meat"
+        ]
+      },
+      "minecraft:use_animation": {
+        "value": "eat"
+      }
+    }
+  }
 }
+

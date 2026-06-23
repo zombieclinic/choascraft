@@ -14,7 +14,6 @@
       "minecraft:destructible_by_mining": {
         "seconds_to_destroy": 0.5
       },
-      "minecraft:map_color": "#6B1515",
       "minecraft:display_name": "Blood Flesh Block",
       "minecraft:material_instances": {
         "*": {
@@ -32,7 +31,9 @@
       },
       "minecraft:tags": [
         "minecraft:is_pickaxe_item_destructible"
-      ]
+      ],
+      "minecraft:map_color": "#4F0F0E"
     }
   }
 }
+

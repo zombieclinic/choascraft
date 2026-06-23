@@ -73,14 +73,14 @@
           }
         }
       },
-      "minecraft:map_color": "#52221D",
       "minecraft:light_dampening": 0,
       "minecraft:tags": [
         "minecraft:is_axe_item_destructible",
         "no_fence_join",
         "zombie:door_top",
         "zombie:door"
-      ]
+      ],
+      "minecraft:map_color": "#59100B"
     },
     "permutations": [
       {
@@ -198,3 +198,4 @@
     ]
   }
 }
+

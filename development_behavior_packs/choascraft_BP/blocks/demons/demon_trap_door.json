@@ -118,7 +118,8 @@
         "minecraft:is_axe_item_destructible",
         "one_way_collidable",
         "trapdoors"
-      ]
+      ],
+      "minecraft:map_color": "#240802"
     },
     "permutations": [
       {
@@ -316,3 +317,4 @@
     ]
   }
 }
+

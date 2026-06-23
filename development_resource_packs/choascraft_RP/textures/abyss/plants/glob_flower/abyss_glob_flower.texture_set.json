@@ -1,8 +1,9 @@
 {
-	"format_version": "1.16.100",
-	"minecraft:texture_set": {
-		"color": "abyss_glob_flower",
-		"metalness_emissive_roughness": "abyss_glob_flower_mer",
-		"normal": "abyss_glob_flower_normal"
-	}
+  "format_version": "1.16.100",
+  "minecraft:texture_set": {
+    "color": "abyss_glob_flower",
+    "metalness_emissive_roughness": "abyss_glob_flower_mer",
+    "normal": "abyss_glob_flower_normal"
+  }
 }
+
