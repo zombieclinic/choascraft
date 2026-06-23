@@ -2,19 +2,19 @@
   "format_version": "1.26.30",
   "minecraft:entity": {
     "description": {
-      "identifier": "zombie:fishing_hook",
+      "identifier": "zombie:fishing_line_anchor",
       "is_spawnable": false,
       "is_summonable": true
     },
     "components": {
       "minecraft:type_family": {
         "family": [
-          "fishing_hook"
+          "fishing_line_anchor"
         ]
       },
       "minecraft:collision_box": {
-        "width": 0.25,
-        "height": 0.25
+        "width": 0.1,
+        "height": 0.1
       },
       "minecraft:health": {
         "value": 1,
@@ -32,16 +32,8 @@
         "has_collision": false,
         "has_gravity": false
       },
-      "minecraft:leashable": {
-        "can_be_cut": false,
-        "can_be_stolen": false,
-        "presets": [
-          {
-            "soft_distance": 24,
-            "hard_distance": 32,
-            "max_distance": 36
-          }
-        ]
+      "minecraft:scale": {
+        "value": 0
       },
       "minecraft:persistent": {},
       "minecraft:conditional_bandwidth_optimization": {
