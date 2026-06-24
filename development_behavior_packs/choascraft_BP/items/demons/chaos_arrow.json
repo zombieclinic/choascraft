@@ -17,6 +17,12 @@
       "minecraft:display_name": {
         "value": "Chaos Arrow"
       }
+      ,
+      "minecraft:tags": {
+        "tags": [
+         "zombie:chaos"
+        ]
+      }
     }
   }
 }

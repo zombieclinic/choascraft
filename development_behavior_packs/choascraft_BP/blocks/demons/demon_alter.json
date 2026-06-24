@@ -15,6 +15,10 @@
       }
     },
     "components": {
+      "minecraft:crafting_table": {
+        "table_name": "Chaos Table",
+        "crafting_tags": ["chaos_table"]
+      },
       "minecraft:destructible_by_explosion": true,
       "minecraft:collision_box": true,
       "minecraft:selection_box": true,
