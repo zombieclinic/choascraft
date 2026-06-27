@@ -12,13 +12,19 @@
             "minecraft:cardinal_direction"
           ]
         }
+      },
+      "states": {
+        "zombie:chaos_level": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
       }
     },
     "components": {
-      "minecraft:crafting_table": {
-        "table_name": "Chaos Table",
-        "crafting_tags": ["chaos_table"]
-      },
       "minecraft:destructible_by_explosion": true,
       "minecraft:collision_box": true,
       "minecraft:selection_box": true,
@@ -50,6 +56,72 @@
       "minecraft:map_color": "#2F1819"
     },
     "permutations": [
+      {
+        "condition": "q.block_state('zombie:chaos_level') == 0",
+        "components": {
+          "minecraft:crafting_table": {
+            "table_name": "Chaos Crafter",
+            "crafting_tags": [
+              "chaos_level_0"
+            ]
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('zombie:chaos_level') == 1",
+        "components": {
+          "minecraft:crafting_table": {
+            "table_name": "Chaos Crafter",
+            "crafting_tags": [
+              "chaos_level_1"
+            ]
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('zombie:chaos_level') == 2",
+        "components": {
+          "minecraft:crafting_table": {
+            "table_name": "Chaos Crafter",
+            "crafting_tags": [
+              "chaos_level_2"
+            ]
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('zombie:chaos_level') == 3",
+        "components": {
+          "minecraft:crafting_table": {
+            "table_name": "Chaos Crafter",
+            "crafting_tags": [
+              "chaos_level_3"
+            ]
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('zombie:chaos_level') == 4",
+        "components": {
+          "minecraft:crafting_table": {
+            "table_name": "Chaos Crafter",
+            "crafting_tags": [
+              "chaos_level_4"
+            ]
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('zombie:chaos_level') == 5",
+        "components": {
+          "minecraft:crafting_table": {
+            "table_name": "Chaos Crafter",
+            "crafting_tags": [
+              "chaos_level_5"
+            ]
+          }
+        }
+      },
       {
         "condition": "q.block_state(\u0027minecraft:cardinal_direction\u0027) == \u0027north\u0027",
         "components": {

@@ -20,7 +20,7 @@ export class DurabilityHandler {
     onMineBlock(event) {
         if (!event?.block) return;
 
-        damageHeldItem(event.source, event.itemStack, randomDamageAmount());
+        damageHeldItem(event.source, event.itemStack, 1);
     }
 }
 

@@ -22,15 +22,23 @@ const BFC_MAX_EXPLOSION_RADIUS = 10;
 const BFC_SOUND_RADIUS = 64;
 const PROJECTILE_DAMAGE_CAUSE = EntityDamageCause.projectile ?? "projectile";
 const BFC_EXPLOSION_DAMAGE_CAUSE = EntityDamageCause.entityExplosion ?? "entityExplosion";
+const DEFAULT_HOLD_ANIMATION = "animation.bow.tpp_fire_start";
+const DEFAULT_HOLD_STOP_EXPRESSION = "query.is_using_item == false";
 const explodedBfcArrows = new Set();
 
 export class BfcBowHoldComponent {
-	onUse(event) {
+	onUse(event, component) {
 		const player = event?.source;
 		if (!(player instanceof Player)) return;
 
+		const params = component?.params ?? {};
+		const animation = params.animation ?? DEFAULT_HOLD_ANIMATION;
+		const stopExpression = params.stop_expression ?? DEFAULT_HOLD_STOP_EXPRESSION;
 		try {
-			player.playAnimation("animation.bow.tpp_fire_start");
+			player.playAnimation(animation, {
+				stopExpression,
+				blendOutTime: 0.1
+			});
 		} catch {}
 	}
 }

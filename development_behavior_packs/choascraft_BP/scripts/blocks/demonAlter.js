@@ -8,6 +8,21 @@ const DEMON_FLESH_BLOCK = "zombie:demon_flesh_block";
 const DEMON_BLOOD_FLESH_BLOCK = "zombie:demon_blood_flesh_block";
 const CORRUPTED_XP = "zombie:currupted_xp_orb";
 const XP_ORB = "minecraft:xp_orb";
+const ALTER_LEVEL_STATE = "zombie:chaos_level";
+const ALTER_MAX_LEVEL = 5;
+const LEVEL_1_CHANCE = 20;
+const LEVEL_2_CHANCE = 50;
+const LEVEL_3_CHANCE = 150;
+const LEVEL_4_CHANCE = 250;
+const LEVEL_5_CHANCE = 350;
+
+const ALTER_LEVEL_UP_CHANCES = [
+	LEVEL_1_CHANCE,
+	LEVEL_2_CHANCE,
+	LEVEL_3_CHANCE,
+	LEVEL_4_CHANCE,
+	LEVEL_5_CHANCE
+];
 
 const SEARCH_RADIUS = 2;
 const SACRIFICE_HEIGHT = 3;
@@ -164,6 +179,8 @@ function sacrificeAtAlter(block) {
 
 	if (!killEntity(sacrifice)) return false;
 
+	tryAdvanceAlterLevel(block);
+
 	system.runTimeout(() => {
 		convertXp(dimension, sacrificeLocation);
 	}, XP_CONVERT_DELAY);
@@ -174,6 +191,29 @@ function sacrificeAtAlter(block) {
 	return true;
 }
 
+function tryAdvanceAlterLevel(block) {
+	const level = getAlterLevel(block);
+	if (level >= ALTER_MAX_LEVEL) return false;
+
+	const chance = ALTER_LEVEL_UP_CHANCES[level];
+	if (!chance || randomInt(1, chance) !== 1) return false;
+
+	try {
+		block.setPermutation(block.permutation.withState(ALTER_LEVEL_STATE, level + 1));
+		return true;
+	} catch {
+		return false;
+	}
+}
+
+function getAlterLevel(block) {
+	try {
+		const level = block.permutation.getState(ALTER_LEVEL_STATE);
+		if (typeof level === "number") return level;
+	} catch {}
+
+	return 0;
+}
 function advanceAlterRoom(dimension, altar) {
 	const key = altarKey(altar);
 	let room = altarRooms.get(key);
@@ -611,3 +651,4 @@ function blockKey(block) {
 function randomInt(min, max) {
 	return Math.floor(Math.random() * (max - min + 1)) + min;
 }
+

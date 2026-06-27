@@ -9,13 +9,46 @@
       }
     },
     "components": {
+      "zombie:item_durability": {},
+      "minecraft:max_stack_size": 1,
+      "minecraft:enchantable": {
+        "slot": "shovel",
+        "value": 15
+      },
+      "minecraft:damage": {
+        "value": 6
+      },
       "minecraft:icon": "zombie_chaos_shovel",
+      "minecraft:hand_equipped": true,
+      "minecraft:durability": {
+        "damage_chance": {
+          "min": 10,
+          "max": 50
+        },
+        "max_durability": 2031
+      },
       "minecraft:display_name": {
         "value": "Chaos Shovel"
       },
+      "minecraft:tags": {
+        "tags": [
+          "minecraft:is_shovel"
+        ]
+      },
+      "minecraft:digger": {
+        "use_efficiency": true,
+        "destroy_speeds": [
+          {
+            "block": {
+              "tags": "query.any_tag('minecraft:is_shovel_item_destructible')"
+            },
+            "speed": 9
+          }
+        ]
+      },
       "minecraft:use_modifiers": {
-        "movement_modifier": 0,
-        "use_duration": 3600
+        "movement_modifier": 1,
+        "use_duration": 20
       }
     }
   }
