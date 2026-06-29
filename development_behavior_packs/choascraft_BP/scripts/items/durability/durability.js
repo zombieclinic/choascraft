@@ -2,8 +2,25 @@ import {
     GameMode,
     EquipmentSlot,
     ItemComponentTypes,
-    Player
+    Player,
+    system
 } from "@minecraft/server";
+
+const HOE_TILLABLE_BLOCKS = new Set([
+    "minecraft:grass_block",
+    "minecraft:dirt",
+    "minecraft:coarse_dirt",
+    "minecraft:rooted_dirt",
+    "minecraft:dirt_path",
+    "minecraft:grass_path",
+    "minecraft:podzol",
+    "minecraft:mycelium"
+]);
+
+const HOE_TILLED_RESULTS = new Set([
+    "minecraft:farmland",
+    "minecraft:dirt"
+]);
 
 export class DurabilityHandler {
     onHitEntity(event) {
@@ -21,6 +38,33 @@ export class DurabilityHandler {
         if (!event?.block) return;
 
         damageHeldItem(event.source, event.itemStack, 1);
+    }
+
+    onUseOn(event) {
+        const block = event?.block;
+        const player = event?.source;
+        const itemStack = event?.itemStack ?? getMainhandItem(player);
+
+        if (!block || !isHoe(itemStack)) return;
+
+        const beforeType = block.typeId;
+        const itemTypeId = itemStack.typeId;
+        if (!HOE_TILLABLE_BLOCKS.has(beforeType)) return;
+
+        const dimension = block.dimension;
+        const location = { ...block.location };
+
+        system.runTimeout(() => {
+            const changedBlock = getBlock(dimension, location);
+            if (!changedBlock) return;
+            if (changedBlock.typeId === beforeType) return;
+            if (!HOE_TILLED_RESULTS.has(changedBlock.typeId)) return;
+
+            const heldItem = getMainhandItem(player);
+            if (heldItem?.typeId !== itemTypeId) return;
+
+            damageHeldItem(player, heldItem, 1);
+        }, 1);
     }
 }
 
@@ -72,6 +116,24 @@ function getMainhandItem(player) {
     return player
         .getComponent("minecraft:equippable")
         ?.getEquipment(EquipmentSlot.Mainhand);
+}
+
+function getBlock(dimension, location) {
+    try {
+        return dimension.getBlock(location);
+    } catch {
+        return undefined;
+    }
+}
+
+function isHoe(itemStack) {
+    if (!itemStack) return false;
+
+    try {
+        if (itemStack.hasTag?.("minecraft:is_hoe")) return true;
+    } catch {}
+
+    return itemStack.typeId?.endsWith("_hoe") === true;
 }
 
 function randomDamageAmount() {

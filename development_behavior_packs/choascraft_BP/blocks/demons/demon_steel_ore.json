@@ -23,10 +23,7 @@
         "seconds_to_destroy": 1
       },
       "minecraft:selection_box": true,
-      "minecraft:loot": "loot_tables/empty.json",
-      "zombie:demon_steel_ore_drop": {
-        
-      },
+      "minecraft:loot": "loot_tables/blocks/demon_steel_ore.json",
       "minecraft:geometry": {
         "identifier": "minecraft:geometry.full_block"
       },
@@ -37,4 +34,3 @@
     }
   }
 }
-

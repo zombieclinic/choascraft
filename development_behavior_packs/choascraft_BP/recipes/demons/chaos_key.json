@@ -1,0 +1,41 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "zombie:chaos_key_recipe"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      " D ",
+      " C ",
+      " S "
+    ],
+    "key": {
+      "D": {
+        "item": "zombie:demon_steel_ingot"
+      },
+      "C": {
+        "item": "zombie:currupted_xp_orb"
+      },
+      "S": {
+        "item": "minecraft:stick"
+      }
+    },
+    "result": [
+      {
+        "item": "zombie:chaos_key",
+        "count": 1
+      }
+    ],
+    "unlock": [
+      {
+        "item": "zombie:currupted_xp_orb"
+      },
+      {
+        "item": "zombie:demon_steel_ingot"
+      }
+    ]
+  }
+}

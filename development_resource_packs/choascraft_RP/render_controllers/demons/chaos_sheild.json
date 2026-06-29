@@ -2,14 +2,14 @@
   "format_version": "1.8.0",
   "render_controllers": {
     "controller.render.choas_sheild": {
-      "geometry": "(query.main_hand_item_use_duration>0&&query.is_item_name_any('slot.weapon.mainhand','zombie:chaos_shield'))?geometry.blocking:geometry.default",
+      "geometry": "query.is_item_name_any('slot.weapon.offhand', 0, 'zombie:chaos_shield') ? (query.is_sneaking ? Geometry.left_blocking : Geometry.left_hold) : ((query.main_hand_item_use_duration > 0 && query.is_item_name_any('slot.weapon.mainhand', 0, 'zombie:chaos_shield')) ? Geometry.blocking : Geometry.default)",
       "materials": [
         {
-          "*": "material.default"
+          "*": "Material.default"
         }
       ],
       "textures": [
-        "texture.default"
+        "Texture.default"
       ]
     }
   }

@@ -9,7 +9,9 @@
       },
       "geometry": {
         "default": "geometry.demon_shield",
-        "blocking": "geometry.demon_shield_blocking"
+        "blocking": "geometry.demon_shield_blocking",
+        "left_hold": "geometry.chaos_left_sheild_hold",
+        "left_blocking": "geometry.chaos_sheild_left_blocking"
       },
       "textures": {
         "default": "textures/demon/item_mob/chaos_gear",
@@ -25,10 +27,10 @@
       "scripts": {
         "animate": [
           {
-            "blocking_idle": "c.is_first_person && query.is_using_item == true"
+            "blocking_idle": "c.is_first_person && query.is_using_item == true && query.is_item_name_any('slot.weapon.mainhand', 0, 'zombie:chaos_shield')"
           },
           {
-            "fpp_idle": "c.is_first_person && query.is_using_item == false"
+            "fpp_idle": "c.is_first_person && query.is_using_item == false && query.is_item_name_any('slot.weapon.mainhand', 0, 'zombie:chaos_shield')"
           }
         ]
       }

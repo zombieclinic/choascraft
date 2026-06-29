@@ -9,9 +9,29 @@
       }
     },
     "components": {
+      "zombie:item_durability": {},
+      "zombie:chaos_hammer": {
+        "animation": "animation.swing_hammer.tpp_smash"
+      },
       "minecraft:icon": "zombie_chaos_hammer",
+      "minecraft:max_stack_size": 1,
+      "minecraft:hand_equipped": true,
+      "minecraft:damage": {
+        "value": 8
+      },
+      "minecraft:cooldown": {
+        "category": "attack",
+        "duration": 2
+      },
+     "minecraft:use_animation": "none",
+      "minecraft:durability": {
+        "damage_chance": {
+          "min": 10,
+          "max": 50
+        },
+        "max_durability": 480
+      },
       "minecraft:use_modifiers": {
-        "movement_modifier": 0,
         "use_duration": 3600
       },
       "minecraft:display_name": {
@@ -20,4 +40,3 @@
     }
   }
 }
-

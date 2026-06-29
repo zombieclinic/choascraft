@@ -123,7 +123,12 @@
       "sounds": [
         "sounds/mimic/mimic"
       ]
+    },
+    "choas_explosion": {
+      "category": "hostile",
+      "sounds": [
+        "sounds/demon/choas_explosion"
+      ]
     }
   }
 }
-

@@ -511,7 +511,7 @@
       "textures": "textures/items/bear_armor/black_netherite_helmet_icon"
     },
     "zombie_chaos_shovel": {
-      "textures": "textures/demon/item_mob/chaos_shovel_icon"
+      "textures": "textures/demon/item_mob/demon_shovel_icon"
     },
     "zombie_chaos_arrow": {
       "textures": "textures/demon/item_mob/chaos_arrow_icon"

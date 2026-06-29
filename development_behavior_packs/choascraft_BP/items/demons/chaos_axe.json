@@ -9,6 +9,16 @@
       }
     },
     "components": {
+      "zombie:item_durability": {},
+      "zombie:chaos_axe": {
+        "animation": "animation.tpp_axe_swing"
+      },
+      "minecraft:max_stack_size": 1,
+      "minecraft:enchantable": {
+        "slot": "axe",
+        "value": 15
+      },
+      "minecraft:use_animation": "none",
       "minecraft:damage": {
         "value": 7
       },
@@ -28,6 +38,238 @@
         },
         "max_durability": 360
       },
+      "minecraft:tags": {
+        "tags": [
+          "minecraft:is_axe"
+        ]
+      },
+      "minecraft:digger": {
+        "use_efficiency": true,
+        "destroy_speeds": [
+          {
+            "block": "minecraft:oak_planks",
+            "speed": 9
+          },
+          {
+            "block": "minecraft:spruce_planks",
+            "speed": 9
+          },
+          {
+            "block": "minecraft:birch_planks",
+            "speed": 9
+          },
+          {
+            "block": "minecraft:jungle_planks",
+            "speed": 9
+          },
+          {
+            "block": "minecraft:acacia_planks",
+            "speed": 9
+          },
+          {
+            "block": "minecraft:dark_oak_planks",
+            "speed": 9
+          },
+          {
+            "block": "minecraft:mangrove_planks",
+            "speed": 9
+          },
+          {
+            "block": "minecraft:cherry_planks",
+            "speed": 9
+          },
+          {
+            "block": "minecraft:bamboo_planks",
+            "speed": 9
+          },
+          {
+            "block": "minecraft:crimson_planks",
+            "speed": 9
+          },
+          {
+            "block": "minecraft:warped_planks",
+            "speed": 9
+          },
+          {
+            "block": "minecraft:bamboo_mosaic",
+            "speed": 9
+          },
+          {
+            "block": "minecraft:oak_log",
+            "speed": 9
+          },
+          {
+            "block": "minecraft:stripped_oak_log",
+            "speed": 9
+          },
+          {
+            "block": "minecraft:oak_wood",
+            "speed": 9
+          },
+          {
+            "block": "minecraft:stripped_oak_wood",
+            "speed": 9
+          },
+          {
+            "block": "minecraft:spruce_log",
+            "speed": 9
+          },
+          {
+            "block": "minecraft:stripped_spruce_log",
+            "speed": 9
+          },
+          {
+            "block": "minecraft:spruce_wood",
+            "speed": 9
+          },
+          {
+            "block": "minecraft:stripped_spruce_wood",
+            "speed": 9
+          },
+          {
+            "block": "minecraft:birch_log",
+            "speed": 9
+          },
+          {
+            "block": "minecraft:stripped_birch_log",
+            "speed": 9
+          },
+          {
+            "block": "minecraft:birch_wood",
+            "speed": 9
+          },
+          {
+            "block": "minecraft:stripped_birch_wood",
+            "speed": 9
+          },
+          {
+            "block": "minecraft:jungle_log",
+            "speed": 9
+          },
+          {
+            "block": "minecraft:stripped_jungle_log",
+            "speed": 9
+          },
+          {
+            "block": "minecraft:jungle_wood",
+            "speed": 9
+          },
+          {
+            "block": "minecraft:stripped_jungle_wood",
+            "speed": 9
+          },
+          {
+            "block": "minecraft:acacia_log",
+            "speed": 9
+          },
+          {
+            "block": "minecraft:stripped_acacia_log",
+            "speed": 9
+          },
+          {
+            "block": "minecraft:acacia_wood",
+            "speed": 9
+          },
+          {
+            "block": "minecraft:stripped_acacia_wood",
+            "speed": 9
+          },
+          {
+            "block": "minecraft:dark_oak_log",
+            "speed": 9
+          },
+          {
+            "block": "minecraft:stripped_dark_oak_log",
+            "speed": 9
+          },
+          {
+            "block": "minecraft:dark_oak_wood",
+            "speed": 9
+          },
+          {
+            "block": "minecraft:stripped_dark_oak_wood",
+            "speed": 9
+          },
+          {
+            "block": "minecraft:mangrove_log",
+            "speed": 9
+          },
+          {
+            "block": "minecraft:stripped_mangrove_log",
+            "speed": 9
+          },
+          {
+            "block": "minecraft:mangrove_wood",
+            "speed": 9
+          },
+          {
+            "block": "minecraft:stripped_mangrove_wood",
+            "speed": 9
+          },
+          {
+            "block": "minecraft:cherry_log",
+            "speed": 9
+          },
+          {
+            "block": "minecraft:stripped_cherry_log",
+            "speed": 9
+          },
+          {
+            "block": "minecraft:cherry_wood",
+            "speed": 9
+          },
+          {
+            "block": "minecraft:stripped_cherry_wood",
+            "speed": 9
+          },
+          {
+            "block": "minecraft:bamboo_block",
+            "speed": 9
+          },
+          {
+            "block": "minecraft:stripped_bamboo_block",
+            "speed": 9
+          },
+          {
+            "block": "minecraft:crimson_stem",
+            "speed": 9
+          },
+          {
+            "block": "minecraft:stripped_crimson_stem",
+            "speed": 9
+          },
+          {
+            "block": "minecraft:warped_stem",
+            "speed": 9
+          },
+          {
+            "block": "minecraft:stripped_warped_stem",
+            "speed": 9
+          },
+          {
+            "block": "minecraft:crimson_hyphae",
+            "speed": 9
+          },
+          {
+            "block": "minecraft:stripped_crimson_hyphae",
+            "speed": 9
+          },
+          {
+            "block": "minecraft:warped_hyphae",
+            "speed": 9
+          },
+          {
+            "block": "minecraft:stripped_warped_hyphae",
+            "speed": 9
+          },
+          {
+            "block": {
+              "tags": "query.any_tag('minecraft:is_axe_item_destructible')"
+            },
+            "speed": 9
+          }
+        ]
+      },
       "minecraft:use_modifiers": {
         "movement_modifier": 1,
         "use_duration": 20
@@ -35,4 +277,3 @@
     }
   }
 }
-

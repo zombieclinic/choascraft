@@ -65,18 +65,16 @@
         "explosion_resistance": 13
       },
       "minecraft:geometry": "geometry.demon_chest_closed",
-      "minecraft:loot": "loot_tables/luckyblock.json",
+      "minecraft:loot": "loot_tables/chaos_chest.json",
       "minecraft:tags": [
         "christmas"
       ],
-      "zombie:chaos_chest": {
-        
-      },
+      "zombie:chaos_chest": {},
       "minecraft:map_color": "#271325"
     },
     "permutations": [
       {
-        "condition": "q.block_state('minecraft:cardinal_direction') == 'north' && query.block_state('minecraft:block_face') == 'up' && query.block_state('zombie:open') == 1",
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'north' \u0026\u0026 query.block_state('minecraft:block_face') == 'up' \u0026\u0026 query.block_state('zombie:open') == 1",
         "components": {
           "minecraft:transformation": {
             "rotation": [
@@ -89,7 +87,7 @@
         }
       },
       {
-        "condition": "q.block_state('minecraft:cardinal_direction') == 'north' && query.block_state('minecraft:block_face') == 'up' && query.block_state('zombie:open') == 0",
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'north' \u0026\u0026 query.block_state('minecraft:block_face') == 'up' \u0026\u0026 query.block_state('zombie:open') == 0",
         "components": {
           "minecraft:transformation": {
             "rotation": [
@@ -102,7 +100,7 @@
         }
       },
       {
-        "condition": "q.block_state('minecraft:cardinal_direction') == 'south' && query.block_state('minecraft:block_face') == 'up' && query.block_state('zombie:open') == 1",
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'south' \u0026\u0026 query.block_state('minecraft:block_face') == 'up' \u0026\u0026 query.block_state('zombie:open') == 1",
         "components": {
           "minecraft:transformation": {
             "rotation": [
@@ -115,7 +113,7 @@
         }
       },
       {
-        "condition": "q.block_state('minecraft:cardinal_direction') == 'south' && query.block_state('minecraft:block_face') == 'up' && query.block_state('zombie:open') == 0",
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'south' \u0026\u0026 query.block_state('minecraft:block_face') == 'up' \u0026\u0026 query.block_state('zombie:open') == 0",
         "components": {
           "minecraft:transformation": {
             "rotation": [
@@ -128,7 +126,7 @@
         }
       },
       {
-        "condition": "q.block_state('minecraft:cardinal_direction') == 'east' && query.block_state('minecraft:block_face') == 'up' && query.block_state('zombie:open') == 1",
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'east' \u0026\u0026 query.block_state('minecraft:block_face') == 'up' \u0026\u0026 query.block_state('zombie:open') == 1",
         "components": {
           "minecraft:transformation": {
             "rotation": [
@@ -141,7 +139,7 @@
         }
       },
       {
-        "condition": "q.block_state('minecraft:cardinal_direction') == 'east' && query.block_state('minecraft:block_face') == 'up' && query.block_state('zombie:open') == 0",
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'east' \u0026\u0026 query.block_state('minecraft:block_face') == 'up' \u0026\u0026 query.block_state('zombie:open') == 0",
         "components": {
           "minecraft:transformation": {
             "rotation": [
@@ -154,7 +152,7 @@
         }
       },
       {
-        "condition": "q.block_state('minecraft:cardinal_direction') == 'west' && query.block_state('minecraft:block_face') == 'up' && query.block_state('zombie:open') == 1",
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'west' \u0026\u0026 query.block_state('minecraft:block_face') == 'up' \u0026\u0026 query.block_state('zombie:open') == 1",
         "components": {
           "minecraft:transformation": {
             "rotation": [
@@ -167,7 +165,7 @@
         }
       },
       {
-        "condition": "q.block_state('minecraft:cardinal_direction') == 'west' && query.block_state('minecraft:block_face') == 'up' && query.block_state('zombie:open') == 0",
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'west' \u0026\u0026 query.block_state('minecraft:block_face') == 'up' \u0026\u0026 query.block_state('zombie:open') == 0",
         "components": {
           "minecraft:transformation": {
             "rotation": [
@@ -182,4 +180,3 @@
     ]
   }
 }
-

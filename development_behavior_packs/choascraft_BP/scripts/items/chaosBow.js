@@ -19,7 +19,8 @@ const BFC_MIN_DAMAGE = 3;
 const BFC_MAX_DAMAGE = 15;
 const BFC_MIN_EXPLOSION_RADIUS = 3;
 const BFC_MAX_EXPLOSION_RADIUS = 10;
-const BFC_SOUND_RADIUS = 64;
+const BFC_SOUND_RADIUS = 54;
+const BFC_EXPLOSION_SOUND = "choas_explosion";
 const PROJECTILE_DAMAGE_CAUSE = EntityDamageCause.projectile ?? "projectile";
 const BFC_EXPLOSION_DAMAGE_CAUSE = EntityDamageCause.entityExplosion ?? "entityExplosion";
 const DEFAULT_HOLD_ANIMATION = "animation.bow.tpp_fire_start";
@@ -98,7 +99,7 @@ export function chaosCrossbowExplosion(arrow, shooter = getProjectileOwner(undef
 	runCommand(dim, `particle zombie:choas_particle22 ${origin.x} ${origin.y} ${origin.z}`);
 	runCommand(
 		dim,
-		`execute positioned ${origin.x} ${origin.y} ${origin.z} run playsound zombie.bfc.explode @a[r=${BFC_SOUND_RADIUS}] ~ ~ ~ 1 1`
+		`execute positioned ${origin.x} ${origin.y} ${origin.z} run playsound ${BFC_EXPLOSION_SOUND} @a[r=${BFC_SOUND_RADIUS}] ~ ~ ~ 1 1`
 	);
 
 	try {

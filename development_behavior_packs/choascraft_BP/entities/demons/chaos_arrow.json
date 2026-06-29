@@ -4,15 +4,7 @@
     "description": {
       "identifier": "zombie:chaos_arrow_entity",
       "is_summonable": true,
-      "is_spawnable": true,
-      "animations": {
-        "fire": "controller.animation.custom_bow_ammo"
-      },
-      "scripts": {
-        "animate": [
-          "fire"
-        ]
-      }
+      "is_spawnable": false
     },
     "component_groups": {
       "zombie": {

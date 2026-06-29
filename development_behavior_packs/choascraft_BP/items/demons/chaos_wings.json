@@ -19,13 +19,14 @@
         "allow_nested_storage_items": true,
         "max_slots": 64
       },
+      
       "minecraft:bundle_interaction": {
         "num_viewable_slots": 64
       },
       "minecraft:rarity": "rare",
       "minecraft:wearable": {
         "protection": 0,
-        "slot": "slot.weapon.offhand"
+        "slot": "slot.armor.chest"
       },
       "minecraft:hand_equipped": true,
       "minecraft:use_modifiers": {

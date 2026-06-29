@@ -4,15 +4,7 @@
     "description": {
       "identifier": "zombie:chaos_bfc_arrow_entity",
       "is_summonable": true,
-      "is_spawnable": true,
-      "animations": {
-        "fire": "controller.animation.bfc_ammo"
-      },
-      "scripts": {
-        "animate": [
-          "fire"
-        ]
-      }
+      "is_spawnable": false
     },
     "component_groups": {
       "zombie": {

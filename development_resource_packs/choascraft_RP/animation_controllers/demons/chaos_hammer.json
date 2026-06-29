@@ -1,0 +1,37 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.chaos_hammer": {
+      "initial_state": "default",
+      "states": {
+        "default": {
+          "animations": [
+            "fpp_idle"
+          ],
+          "blend_via_shortest_path": true,
+          "transitions": [
+            {
+              "fpp_smash": "query.is_using_item == true"
+            }
+          ]
+        },
+        "fpp_smash": {
+          "animations": [
+            {"fpp_smash": "query.is_using_item == true && query.all_animations_finished"
+            },
+            {
+              "fpp_idle" :"query.is_using_item == false"
+            }
+            
+          ],
+          "blend_via_shortest_path": true,
+          "transitions": [
+            {
+              "default": "query.all_animations_finished"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

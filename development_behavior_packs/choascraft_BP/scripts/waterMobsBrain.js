@@ -20,7 +20,6 @@ import { ZcButtonComponent, ZcButtonReleaseTickComponent } from "./blocks/button
 import { ZcPressurePlateComponent, ZcPressurePlateReleaseTickComponent } from "./blocks/pressurePlate.js";
 import { ConnectedStairsComponent } from "./blocks/connectedStairs.js"
 import { HellfireTrapstoneComponent } from "./blocks/hellfireTrapstone.js";
-import { DemonSteelOreDropComponent } from "./blocks/demonSteelOreDrops.js";
 import { DemonAlterComponent } from "./blocks/demonAlter.js";
 import { CorruptedGrassDropComponent } from "./blocks/corruptedGrassDrops.js";
 import { BloodVineGrowthComponent } from "./blocks/bloodVineGrowth.js";
@@ -32,7 +31,10 @@ import "./entities/omniusBrain.js"
 import "./entities/zombieDeathAnimations.js"
 import "./items/bearShield.js"
 import { BfcBowHoldComponent } from "./items/chaosBow.js"
+import { ChaosAxeComponent } from "./items/chaosAxe.js"
+import { ChaosHammerComponent } from "./items/chaosHammer.js"
 import {bearArmorChanceEffect} from "./items/bearattack.js"
+import "./items/chaosHelmetSight.js"
 
 
 
@@ -59,7 +61,6 @@ const BLOCK_COMPONENTS = [
   ["zc:pressureplate", ZcPressurePlateComponent],
   ["zc:pressureplate_release_tick", ZcPressurePlateReleaseTickComponent],
   ["zombie:hellfire_trapstone", HellfireTrapstoneComponent],
-  ["zombie:demon_steel_ore_drop", DemonSteelOreDropComponent],
   ["zombie:demon_alter", DemonAlterComponent],
   ["zombie:corrupted_grass_drop", CorruptedGrassDropComponent],
   ["zombie:blood_vine_growth", BloodVineGrowthComponent],
@@ -80,7 +81,9 @@ const ITEM_COMPONENTS = [
  ["zombie:hemovial_food", HemovialFoodComponent],
  ["zombie:raw_food_sickness", RawFoodSicknessComponent],
  ["zombie:chaos_fishing_rod", ChaosFishingRodComponent],
- ["zombie:bfc_bow_hold", BfcBowHoldComponent]
+ ["zombie:bfc_bow_hold", BfcBowHoldComponent],
+ ["zombie:chaos_axe", ChaosAxeComponent],
+ ["zombie:chaos_hammer", ChaosHammerComponent]
 ];
 
 system.beforeEvents.startup.subscribe(({ blockComponentRegistry, itemComponentRegistry }) => {
@@ -586,7 +589,6 @@ function tree(x, y, z) {
   qFill(x - 3, y + 9, z - 3, x + 3, y + 11, z + 3, "minecraft:oak_leaves");
   qSet(x, y + 12, z, "minecraft:oak_leaves");
 }
-
 
 
 

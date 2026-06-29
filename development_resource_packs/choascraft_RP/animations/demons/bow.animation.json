@@ -19,7 +19,8 @@
       }
     },
     "animation.bow.tpp_fire_start": {
-      "animation_length": 180.4,
+      "loop": "hold_on_last_frame",
+      "animation_length": 0.3,
       "bones": {
         "root": {
           "rotation": {
@@ -192,9 +193,9 @@
               "v.is_first_person?0:0"
             ],
             "0.3": [
-              "v.is_first_person?0:2.43469",
-              "v.is_first_person?0:-3.10632",
-              "v.is_first_person?0:4.11273"
+              "v.is_first_person?0:2.0",
+              "v.is_first_person?0:-2.0",
+              "v.is_first_person?0:3.0"
             ]
           },
           "position": {
@@ -204,9 +205,9 @@
               "v.is_first_person?0:0"
             ],
             "0.3": [
-              "v.is_first_person?0:-14.225",
-              "v.is_first_person?0:-1.6",
-              0
+              "v.is_first_person?0:-3.0",
+              "v.is_first_person?0:-0.6",
+              "v.is_first_person?0:0.5"
             ]
           }
         }

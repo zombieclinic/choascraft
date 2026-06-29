@@ -8,9 +8,12 @@ import {
 } from "@minecraft/server";
 
 const SHIELD_TAG = "zombie:is_shield";
+const CHAOS_SHIELD_ID = "zombie:chaos_shield";
 const HOTBAR_SIZE = 9;
 const SHIELD_DAMAGE_PERCENT = 0.90;
-const PLAYER_DAMAGE_PERCENT = 0.10;
+const CHAOS_FULL_HEALTH_BLOCK_PERCENT = 0.50;
+const CHAOS_LOW_HEALTH_BLOCK_PERCENT = 0.95;
+const CHAOS_LOW_HEALTH_CAP = 4;
 
 const reducedDamageBypass = new Set();
 
@@ -28,10 +31,46 @@ world.beforeEvents.entityHurt?.subscribe((event) => {
 
 	event.cancel = true;
 
-	const blockedDamage = Math.max(1, Math.ceil(damage * SHIELD_DAMAGE_PERCENT));
+	const shieldDamagePercent = getShieldDamagePercent(player, shieldSlot.item);
+	const playerDamagePercent = 1 - shieldDamagePercent;
+	const blockedDamage = Math.max(1, Math.ceil(damage * shieldDamagePercent));
 	system.run(() => damageShield(player, shieldSlot, blockedDamage));
-	applyReducedDamage(player, damage * PLAYER_DAMAGE_PERCENT, event.damageSource);
+	applyReducedDamage(player, damage * playerDamagePercent, event.damageSource);
 });
+
+function getShieldDamagePercent(player, shield) {
+	if (shield?.typeId !== CHAOS_SHIELD_ID) return SHIELD_DAMAGE_PERCENT;
+
+	const health = getHealth(player);
+	if (!health) return SHIELD_DAMAGE_PERCENT;
+
+	const lowHealth = Math.min(CHAOS_LOW_HEALTH_CAP, health.max);
+	if (health.current <= lowHealth) return CHAOS_LOW_HEALTH_BLOCK_PERCENT;
+	if (health.current >= health.max) return CHAOS_FULL_HEALTH_BLOCK_PERCENT;
+
+	const missingHealthRatio = (health.max - health.current) / (health.max - lowHealth);
+	return lerp(
+		CHAOS_FULL_HEALTH_BLOCK_PERCENT,
+		CHAOS_LOW_HEALTH_BLOCK_PERCENT,
+		Math.max(0, Math.min(1, missingHealthRatio))
+	);
+}
+
+function getHealth(entity) {
+	const health = entity.getComponent("minecraft:health");
+	const current = health?.currentValue ?? health?.value;
+	const max = health?.defaultValue ?? health?.effectiveMax ?? current;
+
+	if (!Number.isFinite(current) || !Number.isFinite(max) || max <= 0) {
+		return undefined;
+	}
+
+	return { current, max };
+}
+
+function lerp(min, max, ratio) {
+	return min + (max - min) * ratio;
+}
 
 function applyReducedDamage(player, amount, damageSource) {
 	if (amount <= 0) return;
