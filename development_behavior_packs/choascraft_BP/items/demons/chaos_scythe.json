@@ -9,6 +9,12 @@
       }
     },
     "components": {
+      "zombie:item_durability": {},
+      "zombie:chaos_scythe": {
+        "animation": "animation.scythe.tpp_groundattack"
+      },
+      "minecraft:max_stack_size": 1,
+      "minecraft:use_animation": "none",
       "minecraft:damage": {
         "value": 7
       },

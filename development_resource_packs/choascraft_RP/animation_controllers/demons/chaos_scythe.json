@@ -1,0 +1,36 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.chaos_scythe": {
+      "initial_state": "default",
+      "states": {
+        "default": {
+          "animations": [
+            "fpp_idle"
+          ],
+          "blend_via_shortest_path": true,
+          "transitions": [
+            {
+              "fpp_groundattack": "query.is_using_item == true"
+            }
+          ]
+        },
+        "fpp_groundattack": {
+          "animations": [
+            "fpp_groundattack"
+          ],
+          "blend_transition": 0.1,
+          "blend_via_shortest_path": true,
+          "transitions": [
+            {
+              "default": "query.is_using_item == false"
+            },
+            {
+              "default": "query.all_animations_finished"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

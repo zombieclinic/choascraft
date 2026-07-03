@@ -547,7 +547,7 @@
       "textures": "textures/demon/item_mob/pickaxe_icon"
     },
     "zombie_chaos_scythe": {
-      "textures": "textures/demon/item_mob/knife_icon"
+      "textures": "textures/demon/item_mob/hell_scythe_icon"
     },
     "zombie_chaos_shield": {
       "textures": "textures/demon/item_mob/chaos_shield_icon"

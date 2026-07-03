@@ -1,61 +1,9 @@
 {
-	"format_version": "1.26.20",
+	"format_version": "1.8.0",
 	"animations": {
-		"animation.demon_scythe.fpp_idle": {
-			"loop": true,
-			"bones": {
-				"group": {
-					"rotation": [60.25661, 3.47712, -68.56651],
-					"position": [-3.13602, -25.35875, -3.67222]
-				}
-			}
-		},
-		"animation.scythe.fpp_groundattack": {
-			"animation_length": 0.4333,
-			"override_previous_animation": true,
-			"bones": {
-				"particle": {
-					"rotation": [0, 0, 180],
-					"position": [0, 1.1, 42]
-				},
-				"group": {
-					"rotation": {
-						"0.0": [60.25661, 3.47712, -68.56651],
-						"0.1": [25.2566, 3.4771, -68.5665],
-						"0.2": [137.7566, 3.4771, -68.5665],
-						"0.3": [137.7566, 3.4771, -68.5665],
-						"0.4333": [60.25661, 3.47712, -68.56651]
-					},
-					"position": {
-						"0.0": [-3.13602, -25.35875, -3.67222],
-						"0.1": [-18.47595, -20.71173, -8.16469],
-						"0.2": [6.49044, -28.50443, -7.30924],
-						"0.3": [6.49044, -28.50443, -7.30924],
-						"0.4333": [-3.13602, -25.35875, -3.67222]
-					}
-				}
-			},
-			"particle_effects": {
-				"0.0": [
-					{
-						"effect": "necromancer_scythe_shock_1",
-						"locator": "locator"
-					},
-					{
-						"effect": "necromancer_scythe_shock_2",
-						"locator": "locator"
-					},
-					{
-						"effect": "necromancer_scythe_shock_3",
-						"locator": "locator"
-					}
-				]
-			}
-		},
 		"animation.scythe.tpp_groundattack": {
-			"loop": "hold_on_last_frame",
+			"blend_weight": "v.is_first_person?0:1",
 			"animation_length": 1,
-			"override_previous_animation": true,
 			"bones": {
 				"root": {
 					"rotation": {
@@ -268,6 +216,47 @@
 			},
 			"particle_effects": {
 				"0.2667": [
+					{
+						"effect": "necromancer_scythe_shock_1",
+						"locator": "locator"
+					},
+					{
+						"effect": "necromancer_scythe_shock_2",
+						"locator": "locator"
+					},
+					{
+						"effect": "necromancer_scythe_shock_3",
+						"locator": "locator"
+					}
+				]
+			}
+		},
+		"animation.scythe.fpp_groundattack": {
+			"animation_length": 0.4333,
+			"bones": {
+				"particle": {
+					"rotation": [0, 0, 180],
+					"position": [0, 1.1, 42]
+				},
+				"group": {
+					"rotation": {
+						"0.0": [60.25661, 3.47712, -68.56651],
+						"0.1": [25.2566, 3.4771, -68.5665],
+						"0.2": [137.7566, 3.4771, -68.5665],
+						"0.3": [137.7566, 3.4771, -68.5665],
+						"0.4333": [60.25661, 3.47712, -68.56651]
+					},
+					"position": {
+						"0.0": [-3.13602, -25.35875, -3.67222],
+						"0.1": [-18.47595, -20.71173, -8.16469],
+						"0.2": [6.49044, -28.50443, -7.30924],
+						"0.3": [6.49044, -28.50443, -7.30924],
+						"0.4333": [-3.13602, -25.35875, -3.67222]
+					}
+				}
+			},
+			"particle_effects": {
+				"0.0": [
 					{
 						"effect": "necromancer_scythe_shock_1",
 						"locator": "locator"

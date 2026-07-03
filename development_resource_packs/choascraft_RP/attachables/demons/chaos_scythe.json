@@ -18,12 +18,15 @@
         "controller.render.item_default"
       ],
       "animations": {
-        "fpp_idle": "animation.demon_scythe.fpp_idle"
+        "fpp_idle": "animation.demon_scythe.fpp_idle",
+        "fpp_groundattack": "animation.scythe.fpp_groundattack",
+        "tpp_groundattack": "animation.scythe.tpp_groundattack",
+        "controller": "controller.animation.chaos_scythe"
       },
       "scripts": {
         "animate": [
           {
-            "fpp_idle": "c.is_first_person"
+            "controller": "c.is_first_person"
           }
         ]
       }
