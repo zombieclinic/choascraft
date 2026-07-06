@@ -1,5 +1,5 @@
 {
-  "format_version": "1.26.20",
+  "format_version": "1.26.30",
   "minecraft:item": {
     "description": {
       "identifier": "zombie:chaos_axe",
@@ -271,8 +271,9 @@
         ]
       },
       "minecraft:use_modifiers": {
+        "start_using": "always",
         "movement_modifier": 1,
-        "use_duration": 20
+        "use_duration": 0.2
       }
     }
   }

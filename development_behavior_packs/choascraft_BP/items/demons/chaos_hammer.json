@@ -1,5 +1,5 @@
 {
-  "format_version": "1.26.20",
+  "format_version": "1.26.30",
   "minecraft:item": {
     "description": {
       "identifier": "zombie:chaos_hammer",
@@ -32,7 +32,8 @@
         "max_durability": 480
       },
       "minecraft:use_modifiers": {
-        "use_duration": 3600
+        "start_using": "always",
+        "use_duration": 0.2
       },
       "minecraft:display_name": {
         "value": "Chaos Hammer"

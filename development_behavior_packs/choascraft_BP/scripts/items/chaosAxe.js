@@ -13,15 +13,6 @@ import {
 const CHAOS_AXE_ANIMATION = "animation.tpp_axe_swing";
 const ANIMATION_BLEND_OUT_TIME = 0.1;
 
-/* Right-click / use ability cooldown */
-const USE_COOLDOWN_TICKS = 10;
-
-/*
-  Stops one held right-click from repeatedly activating.
-  If Minecraft keeps firing onUse while held, this gets refreshed.
-*/
-const HELD_USE_RELEASE_DELAY_TICKS = 8;
-
 /* Health scaling */
 const FULL_HEALTH = 20;
 const LOW_HEALTH_CAP = 2;
@@ -33,12 +24,6 @@ const SWEEP_MAX_DAMAGE = 10;
 /* Normal left-click melee bonus damage */
 const HIT_MIN_BONUS_DAMAGE = 1;
 const HIT_MAX_BONUS_DAMAGE = 15;
-
-/*
-  Stops one normal hit from getting extra damage twice.
-  Keep this low because normal melee already has an attack cooldown.
-*/
-const HIT_COOLDOWN_TICKS = 2;
 
 /* Sweep size / shape */
 const SWEEP_RANGE = 3.5;
@@ -62,10 +47,6 @@ const HIT_DAMAGE_CAUSE =
 
 /* ========================================================= */
 
-const recentUses = new Map();
-const heldUseTimers = new Map();
-const recentHits = new Map();
-
 export class ChaosAxeComponent {
 	onUse(event, component) {
 		const player = event?.source;
@@ -79,18 +60,6 @@ export class ChaosAxeComponent {
 		system.run(() => {
 			if (!player.isValid) return;
 
-			/*
-			  Minecraft may repeatedly call onUse while right-click
-			  is held. Refresh the hold timer, but do not attack again.
-			*/
-			if (heldUseTimers.has(player.id)) {
-				refreshHeldUseLock(player);
-				return;
-			}
-
-			if (isOnUseCooldown(player)) return;
-
-			refreshHeldUseLock(player);
 			useChaosAxe(player, params);
 		});
 	}
@@ -111,7 +80,6 @@ export class ChaosAxeComponent {
 		system.run(() => {
 			if (!player.isValid || !target.isValid) return;
 			if (!isValidMeleeTarget(player, target)) return;
-			if (isHitOnCooldown(player, target)) return;
 
 			const bonusDamage = getScaledDamage(
 				getHealth(player),
@@ -431,59 +399,4 @@ function playAttackSound(player) {
 			pitch: 0.9
 		});
 	} catch {}
-}
-
-/* =========================================================
-   COOLDOWNS / HELD-USE PROTECTION
-   ========================================================= */
-
-function isOnUseCooldown(player) {
-	const currentTick = system.currentTick;
-	const lastUseTick = recentUses.get(player.id) ?? -9999;
-
-	if (currentTick - lastUseTick < USE_COOLDOWN_TICKS) {
-		return true;
-	}
-
-	recentUses.set(player.id, currentTick);
-
-	system.runTimeout(() => {
-		recentUses.delete(player.id);
-	}, USE_COOLDOWN_TICKS + 1);
-
-	return false;
-}
-
-function refreshHeldUseLock(player) {
-	const oldTimer = heldUseTimers.get(player.id);
-
-	if (oldTimer !== undefined) {
-		try {
-			system.clearRun(oldTimer);
-		} catch {}
-	}
-
-	const timer = system.runTimeout(() => {
-		heldUseTimers.delete(player.id);
-	}, HELD_USE_RELEASE_DELAY_TICKS);
-
-	heldUseTimers.set(player.id, timer);
-}
-
-function isHitOnCooldown(player, target) {
-	const key = `${player.id}:${target.id}`;
-	const currentTick = system.currentTick;
-	const lastHitTick = recentHits.get(key) ?? -9999;
-
-	if (currentTick - lastHitTick < HIT_COOLDOWN_TICKS) {
-		return true;
-	}
-
-	recentHits.set(key, currentTick);
-
-	system.runTimeout(() => {
-		recentHits.delete(key);
-	}, HIT_COOLDOWN_TICKS + 1);
-
-	return false;
 }

@@ -1,5 +1,5 @@
 {
-  "format_version": "1.26.20",
+  "format_version": "1.26.30",
   "minecraft:item": {
     "description": {
       "identifier": "zombie:chaos_scythe",
@@ -10,9 +10,7 @@
     },
     "components": {
       "zombie:item_durability": {},
-      "zombie:chaos_scythe": {
-        "animation": "animation.scythe.tpp_groundattack"
-      },
+      "zombie:chaos_scythe": {},
       "minecraft:max_stack_size": 1,
       "minecraft:use_animation": "none",
       "minecraft:damage": {
@@ -20,7 +18,8 @@
       },
       "minecraft:cooldown": {
         "category": "chaos_scythe",
-        "duration": 1
+        "type": "use",
+        "duration": 0.25
       },
       "minecraft:display_name": {
         "value": "Chaos Scythe"
@@ -36,7 +35,7 @@
       },
       "minecraft:use_modifiers": {
         "movement_modifier": 1,
-        "use_duration": 20
+        "use_duration": 100
       }
     }
   }

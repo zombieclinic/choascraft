@@ -5,11 +5,8 @@ import {
 	system
 } from "@minecraft/server";
 
-const TPP_GROUND_ATTACK_ANIMATION = "animation.scythe.tpp_groundattack";
+const GROUND_ATTACK_ANIMATION = "animation.scythe.tpp_groundattack2";
 const ANIMATION_BLEND_OUT_TIME = 0.1;
-
-const USE_COOLDOWN_TICKS = 10;
-const HELD_USE_RELEASE_DELAY_TICKS = 8;
 
 const FULL_HEALTH = 20;
 const LOW_HEALTH_CAP = 2;
@@ -19,7 +16,6 @@ const GROUND_MAX_DAMAGE = 6;
 
 const HIT_MIN_BONUS_DAMAGE = 1;
 const HIT_MAX_BONUS_DAMAGE = 8;
-const HIT_COOLDOWN_TICKS = 2;
 
 const POISON_MIN_DURATION_TICKS = 40;
 const POISON_MAX_DURATION_TICKS = 160;
@@ -37,10 +33,6 @@ const ATTACK_SOUND = "random.attack";
 const ATTACK_DAMAGE_CAUSE =
 	EntityDamageCause.entityAttack ?? "entityAttack";
 
-const recentUses = new Map();
-const heldUseTimers = new Map();
-const recentHits = new Map();
-
 export class ChaosScytheComponent {
 	onUse(event, component) {
 		const player = event?.source;
@@ -51,14 +43,6 @@ export class ChaosScytheComponent {
 		system.run(() => {
 			if (!player.isValid) return;
 
-			if (heldUseTimers.has(player.id)) {
-				refreshHeldUseLock(player);
-				return;
-			}
-
-			if (isOnUseCooldown(player)) return;
-
-			refreshHeldUseLock(player);
 			useChaosScythe(player, params);
 		});
 	}
@@ -75,7 +59,6 @@ export class ChaosScytheComponent {
 		system.run(() => {
 			if (!player.isValid || !target.isValid) return;
 			if (!isValidTarget(player, target)) return;
-			if (isHitOnCooldown(player, target)) return;
 
 			const bonusDamage = Math.round(
 				getScaledValue(
@@ -250,7 +233,9 @@ function isSurvivalPlayer(player) {
 function playGroundAttackAnimation(player, params = {}) {
 	const animation =
 		params.animation ??
-		TPP_GROUND_ATTACK_ANIMATION;
+		GROUND_ATTACK_ANIMATION;
+
+	if (!animation) return;
 
 	try {
 		player.playAnimation(animation, {
@@ -270,55 +255,4 @@ function playAttackSound(player) {
 			pitch: 0.85
 		});
 	} catch {}
-}
-
-function isOnUseCooldown(player) {
-	const currentTick = system.currentTick;
-	const lastUseTick = recentUses.get(player.id) ?? -9999;
-
-	if (currentTick - lastUseTick < USE_COOLDOWN_TICKS) {
-		return true;
-	}
-
-	recentUses.set(player.id, currentTick);
-
-	system.runTimeout(() => {
-		recentUses.delete(player.id);
-	}, USE_COOLDOWN_TICKS + 1);
-
-	return false;
-}
-
-function refreshHeldUseLock(player) {
-	const oldTimer = heldUseTimers.get(player.id);
-
-	if (oldTimer !== undefined) {
-		try {
-			system.clearRun(oldTimer);
-		} catch {}
-	}
-
-	const timer = system.runTimeout(() => {
-		heldUseTimers.delete(player.id);
-	}, HELD_USE_RELEASE_DELAY_TICKS);
-
-	heldUseTimers.set(player.id, timer);
-}
-
-function isHitOnCooldown(player, target) {
-	const key = `${player.id}:${target.id}`;
-	const currentTick = system.currentTick;
-	const lastHitTick = recentHits.get(key) ?? -9999;
-
-	if (currentTick - lastHitTick < HIT_COOLDOWN_TICKS) {
-		return true;
-	}
-
-	recentHits.set(key, currentTick);
-
-	system.runTimeout(() => {
-		recentHits.delete(key);
-	}, HIT_COOLDOWN_TICKS + 1);
-
-	return false;
 }

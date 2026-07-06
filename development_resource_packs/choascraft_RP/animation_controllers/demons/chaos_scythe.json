@@ -5,9 +5,7 @@
       "initial_state": "default",
       "states": {
         "default": {
-          "animations": [
-            "fpp_idle"
-          ],
+         
           "blend_via_shortest_path": true,
           "transitions": [
             {
@@ -22,9 +20,6 @@
           "blend_transition": 0.1,
           "blend_via_shortest_path": true,
           "transitions": [
-            {
-              "default": "query.is_using_item == false"
-            },
             {
               "default": "query.all_animations_finished"
             }

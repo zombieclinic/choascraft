@@ -13,14 +13,6 @@ import {
 const TPP_SMASH_ANIMATION = "animation.swing_hammer.tpp_smash";
 const ANIMATION_BLEND_OUT_TIME = 0.1;
 
-/* Right-click smash cooldown */
-const USE_COOLDOWN_TICKS = 1;
-
-/*
-  Stops held right-click from firing the smash repeatedly.
-*/
-const HELD_USE_RELEASE_DELAY_TICKS = 8;
-
 /* Health scaling */
 const FULL_HEALTH = 20;
 const LOW_HEALTH_CAP = 2;
@@ -40,9 +32,6 @@ const SMASH_MAX_LIFT = 0.85;
 const HIT_MIN_BONUS_DAMAGE = 1;
 const HIT_MAX_BONUS_DAMAGE = 15;
 
-/* Prevents duplicate bonus damage from one melee hit */
-const HIT_COOLDOWN_TICKS = 2;
-
 /* Smash area */
 const SMASH_RADIUS = 4.5;
 
@@ -60,10 +49,6 @@ const ATTACK_DAMAGE_CAUSE =
 
 /* ========================================================= */
 
-const recentUses = new Map();
-const heldUseTimers = new Map();
-const recentHits = new Map();
-
 export class ChaosHammerComponent {
 	onUse(event, component) {
 		const player = event?.source;
@@ -74,18 +59,6 @@ export class ChaosHammerComponent {
 		system.run(() => {
 			if (!player.isValid) return;
 
-			/*
-			  Minecraft can call onUse repeatedly while use is held.
-			  Refresh the held lock but do not smash again.
-			*/
-			if (heldUseTimers.has(player.id)) {
-				refreshHeldUseLock(player);
-				return;
-			}
-
-			if (isOnUseCooldown(player)) return;
-
-			refreshHeldUseLock(player);
 			useChaosHammer(player, params);
 		});
 	}
@@ -103,7 +76,6 @@ export class ChaosHammerComponent {
 		system.run(() => {
 			if (!player.isValid || !target.isValid) return;
 			if (!isValidTarget(player, target)) return;
-			if (isHitOnCooldown(player, target)) return;
 
 			const bonusDamage = getScaledValue(
 				getHealth(player),
@@ -409,59 +381,4 @@ function playSmashSound(player) {
 			pitch: 0.85
 		});
 	} catch {}
-}
-
-/* =========================================================
-   COOLDOWNS / HELD USE PROTECTION
-   ========================================================= */
-
-function isOnUseCooldown(player) {
-	const currentTick = system.currentTick;
-	const lastUseTick = recentUses.get(player.id) ?? -9999;
-
-	if (currentTick - lastUseTick < USE_COOLDOWN_TICKS) {
-		return true;
-	}
-
-	recentUses.set(player.id, currentTick);
-
-	system.runTimeout(() => {
-		recentUses.delete(player.id);
-	}, USE_COOLDOWN_TICKS + 1);
-
-	return false;
-}
-
-function refreshHeldUseLock(player) {
-	const oldTimer = heldUseTimers.get(player.id);
-
-	if (oldTimer !== undefined) {
-		try {
-			system.clearRun(oldTimer);
-		} catch {}
-	}
-
-	const timer = system.runTimeout(() => {
-		heldUseTimers.delete(player.id);
-	}, HELD_USE_RELEASE_DELAY_TICKS);
-
-	heldUseTimers.set(player.id, timer);
-}
-
-function isHitOnCooldown(player, target) {
-	const key = `${player.id}:${target.id}`;
-	const currentTick = system.currentTick;
-	const lastHitTick = recentHits.get(key) ?? -9999;
-
-	if (currentTick - lastHitTick < HIT_COOLDOWN_TICKS) {
-		return true;
-	}
-
-	recentHits.set(key, currentTick);
-
-	system.runTimeout(() => {
-		recentHits.delete(key);
-	}, HIT_COOLDOWN_TICKS + 1);
-
-	return false;
 }

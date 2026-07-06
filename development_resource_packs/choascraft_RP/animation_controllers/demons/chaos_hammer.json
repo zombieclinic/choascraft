@@ -17,13 +17,9 @@
         },
         "fpp_smash": {
           "animations": [
-            {"fpp_smash": "query.is_using_item == true && query.all_animations_finished"
-            },
-            {
-              "fpp_idle" :"query.is_using_item == false"
-            }
-            
+            "fpp_smash"
           ],
+          "blend_transition": 0.1,
           "blend_via_shortest_path": true,
           "transitions": [
             {
