@@ -9,8 +9,17 @@
       }
     },
     "components": {
+      "zombie:hell_sword_evolution": {},
       "minecraft:damage": {
-        "value": 7
+        "value": 6
+      },
+      "minecraft:enchantable": {
+        "slot": "sword",
+        "value": 15
+      },
+      "minecraft:cooldown": {
+        "category": "sword_alt",
+        "duration": 2
       },
       "minecraft:display_name": {
         "value": "item.zombie:hell_sword.name"

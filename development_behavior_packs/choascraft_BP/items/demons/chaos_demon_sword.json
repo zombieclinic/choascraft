@@ -2,7 +2,7 @@
   "format_version": "1.26.20",
   "minecraft:item": {
     "description": {
-      "identifier": "zombie:chaos_sword",
+      "identifier": "zombie:chaos_demon_sword",
       "menu_category": {
         "category": "equipment",
         "group": "minecraft:itemGroup.name.chaos"
@@ -11,7 +11,7 @@
     "components": {
       "zombie:hell_sword_evolution": {},
       "minecraft:damage": {
-        "value": 7
+        "value": 8
       },
       "minecraft:enchantable": {
         "slot": "sword",
@@ -22,9 +22,9 @@
         "duration": 2
       },
       "minecraft:display_name": {
-        "value": "Chaos Sword"
+        "value": "item.zombie:chaos_demon_sword.name"
       },
-      "minecraft:icon": "zombie_chaos_sword",
+      "minecraft:icon": "zombie_chaos_demon_sword",
       "minecraft:hand_equipped": true,
       "minecraft:durability": {
         "damage_chance": {
@@ -40,4 +40,3 @@
     }
   }
 }
-

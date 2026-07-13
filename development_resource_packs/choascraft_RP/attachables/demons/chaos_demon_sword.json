@@ -2,13 +2,13 @@
   "format_version": "1.26.20",
   "minecraft:attachable": {
     "description": {
-      "identifier": "zombie:chaos_spear",
+      "identifier": "zombie:chaos_demon_sword",
       "materials": {
         "enchanted": "entity_alphatest_glint",
-        "default": "entity_alphatest"
+        "default": "item_in_hand_entity_alphatest"
       },
       "geometry": {
-        "default": "geometry.demon_spear"
+        "default": "geometry.demon_sword"
       },
       "textures": {
         "default": "textures/demon/item_mob/chaos_gear",
@@ -18,20 +18,15 @@
         "controller.render.item_default"
       ],
       "animations": {
-        "fpp_idle": "animation.demon_spear.fpp_idle",
-        "fpp_throw": "animation.demon_spear.fpp_throw"
+        "fpp_idle": "animation.demon_sword.fpp_idle"
       },
       "scripts": {
         "animate": [
           {
             "fpp_idle": "c.is_first_person"
-          },
-          {
-            "fpp_throw": "c.is_first_person && query.is_using_item"
           }
         ]
       }
     }
   }
 }
-

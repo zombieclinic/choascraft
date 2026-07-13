@@ -9,6 +9,7 @@
       }
     },
     "components": {
+      "zombie:chaos_book": {},
       "minecraft:hand_equipped": true,
       "minecraft:should_despawn": true,
       "minecraft:rarity": "rare",
@@ -18,7 +19,7 @@
       "minecraft:icon": "zombie_ui_book",
       "minecraft:use_modifiers": {
         "movement_modifier": 1,
-        "use_duration": 100
+        "use_duration": 3600
       }
     }
   }

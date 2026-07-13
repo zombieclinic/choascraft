@@ -73,6 +73,7 @@
           "minecraft:crafting_table": {
             "table_name": "Chaos Crafter",
             "crafting_tags": [
+              "chaos_level_0",
               "chaos_level_1"
             ]
           }
@@ -84,6 +85,8 @@
           "minecraft:crafting_table": {
             "table_name": "Chaos Crafter",
             "crafting_tags": [
+              "chaos_level_0",
+              "chaos_level_1",
               "chaos_level_2"
             ]
           }
@@ -95,6 +98,9 @@
           "minecraft:crafting_table": {
             "table_name": "Chaos Crafter",
             "crafting_tags": [
+              "chaos_level_0",
+              "chaos_level_1",
+              "chaos_level_2",
               "chaos_level_3"
             ]
           }
@@ -106,6 +112,10 @@
           "minecraft:crafting_table": {
             "table_name": "Chaos Crafter",
             "crafting_tags": [
+              "chaos_level_0",
+              "chaos_level_1",
+              "chaos_level_2",
+              "chaos_level_3",
               "chaos_level_4"
             ]
           }
@@ -117,7 +127,13 @@
           "minecraft:crafting_table": {
             "table_name": "Chaos Crafter",
             "crafting_tags": [
-              "chaos_level_5"
+              "chaos_level_0",
+              "chaos_level_1",
+              "chaos_level_2",
+              "chaos_level_3",
+              "chaos_level_4",
+              "chaos_level_5",
+              "crafting_table"
             ]
           }
         }

@@ -1,0 +1,33 @@
+{
+  "format_version": "1.26.20",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "zombie:chaos_spear_entity",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/demon/item_mob/chaos_gear"
+      },
+      "geometry": {
+        "default": "geometry.chaos_spear_projectile"
+      },
+      "animations": {
+        "spin": "animation.chaos_spear_projectile.spin",
+        "particle": "animation.chaos_spear_projectile.particle"
+      },
+      "scripts": {
+        "animate": [
+          "spin",
+          "particle"
+        ]
+      },
+      "render_controllers": [
+        "controller.render.default"
+      ],
+      "particle_effects": {
+        "chaos": "zombie:chaos_particle"
+      }
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "format_version": "1.10.0",
+  "render_controllers": {
+    "controller.render.chaos_book": {
+      "arrays": {
+        "geometries": {
+          "array.book_states": [
+            "geometry.closed",
+            "geometry.open"
+          ]
+        }
+      },
+      "geometry": "array.book_states[query.is_using_item ? 1 : 0]",
+      "materials": [
+        {
+          "*": "variable.is_enchanted ? material.enchanted : material.default"
+        }
+      ],
+      "textures": [
+        "texture.default",
+        "texture.enchanted"
+      ]
+    }
+  }
+}

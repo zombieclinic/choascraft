@@ -1,0 +1,15 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.chaos_book_open.fpp": {
+			"loop": true,
+			"override_previous_animation": true,
+			"bones": {
+				"chaos_book": {
+					"rotation": [-62.4574, 30.9659, -45.7281],
+					"position": [-9.18446, -2.10245, -3.3383]
+				}
+			}
+		}
+	}
+}

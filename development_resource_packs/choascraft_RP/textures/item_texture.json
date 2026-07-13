@@ -561,6 +561,12 @@
     "zombie_chaos_sword": {
       "textures": "textures/demon/item_mob/chaos_sword_icon"
     },
+    "zombie_chaos_demon_sword": {
+      "textures": "textures/demon/item_mob/chaos_sword_icon"
+    },
+    "zombie_chaos_greatsword": {
+      "textures": "textures/demon/item_mob/chaos_sword_icon"
+    },
     "zombie_chaos_wings": {
       "textures": "textures/demon/item_mob/chaos_wings_icon"
     },

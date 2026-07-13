@@ -16,7 +16,7 @@
       },
       "minecraft:icon": "zombie_coffin_backpack",
       "minecraft:storage_item": {
-        "allow_nested_storage_items": true,
+        "allow_nested_storage_items": false,
         "max_slots": 64
       },
       "minecraft:bundle_interaction": {
@@ -27,11 +27,7 @@
         "protection": 0,
         "slot": "slot.weapon.offhand"
       },
-      "minecraft:hand_equipped": true,
-      "minecraft:use_modifiers": {
-        "movement_modifier": 1,
-        "use_duration": 33
-      }
+      "minecraft:hand_equipped": true
     }
   }
 }

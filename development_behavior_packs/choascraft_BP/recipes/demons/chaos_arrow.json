@@ -5,7 +5,7 @@
       "identifier": "zombie:chaos_arrow"
     },
     "tags": [
-      "crafting_table"
+      "chaos_level_4"
     ],
     "ingredients": [
       {
@@ -20,7 +20,8 @@
     ],
     "result": [
       {
-        "item": "zombie:chaos_arrow"
+        "item": "zombie:chaos_arrow",
+        "count": 4
       }
     ],
     "unlock": [

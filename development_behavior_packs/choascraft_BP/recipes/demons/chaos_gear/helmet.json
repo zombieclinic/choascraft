@@ -1,0 +1,1 @@
+{"format_version":"1.20.10","minecraft:recipe_shaped":{"description":{"identifier":"zombie:chaos_helmet_altar_recipe"},"tags":["chaos_level_3"],"pattern":["IHI","IXI","B B"],"key":{"I":{"item":"zombie:demon_steel_ingot"},"H":{"item":"zombie:demon_heart"},"X":{"item":"zombie:currupted_xp"},"B":{"item":"zombie:blood_meat"}},"result":{"item":"zombie:chaos_helmet","count":1}}}

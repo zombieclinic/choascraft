@@ -1,0 +1,14 @@
+{
+  "format_version": "1.26.20",
+  "animations": {
+    "animation.chaos_staff_spell.particle": {
+      "loop": true,
+      "animation_length": 0.15,
+      "particle_effects": {
+        "0.0": {
+          "effect": "spell_particle"
+        }
+      }
+    }
+  }
+}

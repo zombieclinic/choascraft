@@ -1,0 +1,31 @@
+{
+  "format_version": "1.26.20",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "zombie:chaos_blast_spell",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/demon/book/chaos_book"
+      },
+      "geometry": {
+        "default": "geometry.chaos_staff_spell"
+      },
+      "animations": {
+        "particle": "animation.chaos_staff_spell.particle"
+      },
+      "scripts": {
+        "animate": [
+          "particle"
+        ]
+      },
+      "render_controllers": [
+        "controller.render.default"
+      ],
+      "particle_effects": {
+        "spell_particle": "zombie:chaos_ball"
+      }
+    }
+  }
+}

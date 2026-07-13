@@ -21,6 +21,7 @@
         "fpp": "animation.coffin_backpack.first_person_view"
       },
       "scripts": {
+        "parent_setup": "variable.chest_layer_visible = 0.0;",
         "animate": [
           {
             "fpp": "c.is_first_person"

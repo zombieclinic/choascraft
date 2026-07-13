@@ -34,6 +34,9 @@ import { BfcBowHoldComponent } from "./items/chaosBow.js"
 import { ChaosAxeComponent } from "./items/chaosAxe.js"
 import { ChaosHammerComponent } from "./items/chaosHammer.js"
 import { ChaosScytheComponent } from "./items/chaosScythe.js"
+import { ChaosSpearComponent } from "./items/chaosSpear.js"
+import { HellSwordEvolutionComponent } from "./items/hellSwordEvolution.js"
+import { ChaosBookComponent, ChaosStaffComponent } from "./items/chaosStaff.js"
 import {bearArmorChanceEffect} from "./items/bearattack.js"
 import "./items/chaosHelmetSight.js"
 
@@ -85,7 +88,11 @@ const ITEM_COMPONENTS = [
  ["zombie:bfc_bow_hold", BfcBowHoldComponent],
  ["zombie:chaos_axe", ChaosAxeComponent],
  ["zombie:chaos_hammer", ChaosHammerComponent],
- ["zombie:chaos_scythe", ChaosScytheComponent]
+ ["zombie:chaos_scythe", ChaosScytheComponent],
+ ["zombie:chaos_spear", ChaosSpearComponent],
+ ["zombie:chaos_staff", ChaosStaffComponent],
+ ["zombie:chaos_book", ChaosBookComponent],
+ ["zombie:hell_sword_evolution", HellSwordEvolutionComponent]
 ];
 
 system.beforeEvents.startup.subscribe(({ blockComponentRegistry, itemComponentRegistry }) => {
@@ -591,9 +598,6 @@ function tree(x, y, z) {
   qFill(x - 3, y + 9, z - 3, x + 3, y + 11, z + 3, "minecraft:oak_leaves");
   qSet(x, y + 12, z, "minecraft:oak_leaves");
 }
-
-
-
 
 
 

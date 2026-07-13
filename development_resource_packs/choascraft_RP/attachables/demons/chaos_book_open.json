@@ -2,36 +2,31 @@
   "format_version": "1.26.20",
   "minecraft:attachable": {
     "description": {
-      "identifier": "zombie:chaos_spear",
+      "identifier": "zombie:chaos_book_open",
       "materials": {
         "enchanted": "entity_alphatest_glint",
         "default": "entity_alphatest"
       },
       "geometry": {
-        "default": "geometry.demon_spear"
+        "default": "geometry.chaos_book_open"
       },
       "textures": {
-        "default": "textures/demon/item_mob/chaos_gear",
+        "default": "textures/demon/book/chaos_book",
         "enchanted": "textures/misc/enchanted_item_glint"
       },
       "render_controllers": [
         "controller.render.item_default"
       ],
       "animations": {
-        "fpp_idle": "animation.demon_spear.fpp_idle",
-        "fpp_throw": "animation.demon_spear.fpp_throw"
+        "fpp_open": "animation.chaos_book_open.fpp"
       },
       "scripts": {
         "animate": [
           {
-            "fpp_idle": "c.is_first_person"
-          },
-          {
-            "fpp_throw": "c.is_first_person && query.is_using_item"
+            "fpp_open": "c.is_first_person"
           }
         ]
       }
     }
   }
 }
-

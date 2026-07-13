@@ -9,6 +9,11 @@
       }
     },
     "components": {
+      "zombie:chaos_staff": {},
+      "minecraft:cooldown": {
+        "category": "chaos_staff_spell",
+        "duration": 0.5
+      },
       "minecraft:icon": "zombie_chaos_staff",
       "minecraft:use_modifiers": {
         "movement_modifier": 1,
