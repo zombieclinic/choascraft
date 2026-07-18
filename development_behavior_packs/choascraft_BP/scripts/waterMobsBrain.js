@@ -39,6 +39,7 @@ import { HellSwordEvolutionComponent } from "./items/hellSwordEvolution.js"
 import { ChaosBookComponent, ChaosStaffComponent } from "./items/chaosStaff.js"
 import {bearArmorChanceEffect} from "./items/bearattack.js"
 import "./items/chaosHelmetSight.js"
+import "./items/chaosArmor.js"
 
 
 
@@ -598,7 +599,6 @@ function tree(x, y, z) {
   qFill(x - 3, y + 9, z - 3, x + 3, y + 11, z + 3, "minecraft:oak_leaves");
   qSet(x, y + 12, z, "minecraft:oak_leaves");
 }
-
 
 
 

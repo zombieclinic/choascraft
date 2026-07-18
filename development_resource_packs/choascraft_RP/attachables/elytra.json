@@ -1,0 +1,47 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:attachable": {
+    "description": {
+      "identifier": "minecraft:elytra",
+      "materials": {
+        "default": "elytra",
+        "enchanted": "elytra_glint"
+      },
+      "textures": {
+        "default": "textures/models/armor/elytra",
+        "enchanted": "textures/misc/enchanted_actor_glint",
+        "chaos_wings": "textures/demon/item_mob/chaos_gear"
+      },
+      "geometry": {
+        "default": "geometry.elytra",
+        "chaos_wings": "geometry.demon_wing"
+      },
+      "animations": {
+        "default_controller": "controller.animation.elytra.default",
+        "default": "animation.elytra.default",
+        "gliding": "animation.elytra.gliding",
+        "demon_wing_fly": "animation.demon_wing.fly",
+        "sneaking": "animation.elytra.sneaking",
+        "sleeping": "animation.elytra.sleeping",
+        "swimming": "animation.elytra.swimming"
+      },
+      "scripts": {
+        "parent_setup": "variable.chest_layer_visible = 0.0;",
+        "animate": [
+          "default_controller",
+          {
+            "demon_wing_fly": "query.is_item_name_any('slot.armor.head', 0, 'zombie:chaos_helmet') && query.is_gliding"
+          }
+        ]
+      },
+      "render_controllers": [
+        {
+          "controller.render.armor": "!query.is_item_name_any('slot.armor.head', 0, 'zombie:chaos_helmet')"
+        },
+        {
+          "controller.render.chaos_elytra": "query.is_item_name_any('slot.armor.head', 0, 'zombie:chaos_helmet')"
+        }
+      ]
+    }
+  }
+}

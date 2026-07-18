@@ -1,0 +1,17 @@
+{
+    "format_version": "1.8.0",
+    "render_controllers": {
+        "controller.render.chaos_elytra": {
+            "materials": [
+                {
+                    "*": "variable.is_enchanted ? Material.enchanted : Material.default"
+                }
+            ],
+            "textures": [
+                "Texture.chaos_wings",
+                "Texture.enchanted"
+            ],
+            "geometry": "Geometry.chaos_wings"
+        }
+    }
+}

@@ -5,7 +5,7 @@
       "identifier": "zombie:chaos_bfc_arrow",
       "menu_category": {
         "category": "equipment",
-        "group": "minecraft:itemGroup.name.chaos"
+        "group": "minecraft:itemGroup.name.arrow"
       }
     },
     "components": {

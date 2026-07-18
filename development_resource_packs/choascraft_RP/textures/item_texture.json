@@ -537,6 +537,15 @@
     "zombie_chaos_helmet": {
       "textures": "textures/demon/item_mob/chaos_hat"
     },
+    "zombie_chaos_chestplate": {
+      "textures": "textures/demon/item_mob/chaos_chest_icon"
+    },
+    "zombie_chaos_leggings": {
+      "textures": "textures/demon/item_mob/chaos_leggings_icon"
+    },
+    "zombie_chaos_boots": {
+      "textures": "textures/demon/item_mob/chaos_boots_icon"
+    },
     "zombie_chaos_hoe": {
       "textures": "textures/demon/item_mob/chaos_hoe_icon"
     },
@@ -566,9 +575,6 @@
     },
     "zombie_chaos_greatsword": {
       "textures": "textures/demon/item_mob/chaos_sword_icon"
-    },
-    "zombie_chaos_wings": {
-      "textures": "textures/demon/item_mob/chaos_wings_icon"
     },
     "zombie_coffin_backpack": {
       "textures": "textures/demon/item_mob/coffin_backpack_icon"

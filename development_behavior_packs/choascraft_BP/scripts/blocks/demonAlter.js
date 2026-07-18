@@ -1,6 +1,13 @@
 import { BlockPermutation, ItemStack, system } from "@minecraft/server";
 
-const ALTER_BLOCK_ID = "zombie:demon_alter";
+const ALTER_BLOCK_IDS = [
+	"zombie:demon_alter",
+	"zombie:demon_alter_level_2",
+	"zombie:demon_alter_level_3",
+	"zombie:demon_alter_level_4",
+	"zombie:demon_alter_level_5"
+];
+const ALTER_BLOCK_ID_SET = new Set(ALTER_BLOCK_IDS);
 const DEMON_SKULL = "zombie:demon_skull";
 const DEMON_PENTAGRAM = "zombie:demon_pentagram";
 const DEMON_BLOOD_BLOCK = "zombie:demon_blood_block";
@@ -8,20 +15,17 @@ const DEMON_FLESH_BLOCK = "zombie:demon_flesh_block";
 const DEMON_BLOOD_FLESH_BLOCK = "zombie:demon_blood_flesh_block";
 const CORRUPTED_XP = "zombie:currupted_xp_orb";
 const XP_ORB = "minecraft:xp_orb";
-const ALTER_LEVEL_STATE = "zombie:chaos_level";
 const ALTER_MAX_LEVEL = 5;
 const LEVEL_1_CHANCE = 20;
 const LEVEL_2_CHANCE = 50;
 const LEVEL_3_CHANCE = 150;
 const LEVEL_4_CHANCE = 250;
-const LEVEL_5_CHANCE = 350;
 
 const ALTER_LEVEL_UP_CHANCES = [
 	LEVEL_1_CHANCE,
 	LEVEL_2_CHANCE,
 	LEVEL_3_CHANCE,
-	LEVEL_4_CHANCE,
-	LEVEL_5_CHANCE
+	LEVEL_4_CHANCE
 ];
 
 const SEARCH_RADIUS = 2;
@@ -55,7 +59,7 @@ const SPREAD_BLOCKS = [
 	DEMON_PENTAGRAM
 ];
 
-const RITUAL_SOURCE_BLOCKS = new Set([ALTER_BLOCK_ID, ...SPREAD_BLOCKS]);
+const RITUAL_SOURCE_BLOCKS = new Set([...ALTER_BLOCK_IDS, ...SPREAD_BLOCKS]);
 
 const BLOCKED_SPREAD_BLOCKS = new Set([
 	"minecraft:air",
@@ -140,7 +144,7 @@ const BLOCKED_SPREAD_KEYWORDS = [
 export class DemonAlterComponent {
 	onRedstoneUpdate(event) {
 		const block = event.block;
-		if (!block || block.typeId !== ALTER_BLOCK_ID) return;
+		if (!block || !ALTER_BLOCK_ID_SET.has(block.typeId)) return;
 
 		const key = blockKey(block);
 		const power = event.powerLevel ?? event.power ?? 0;
@@ -163,7 +167,7 @@ export class DemonAlterComponent {
 }
 
 function sacrificeAtAlter(block) {
-	if (!block || block.typeId !== ALTER_BLOCK_ID) return false;
+	if (!block || !ALTER_BLOCK_ID_SET.has(block.typeId)) return false;
 
 	const sacrifice = findSacrificeEntity(block);
 	if (!sacrifice) return false;
@@ -195,11 +199,15 @@ function tryAdvanceAlterLevel(block) {
 	const level = getAlterLevel(block);
 	if (level >= ALTER_MAX_LEVEL) return false;
 
-	const chance = ALTER_LEVEL_UP_CHANCES[level];
+	const chance = ALTER_LEVEL_UP_CHANCES[level - 1];
 	if (!chance || randomInt(1, chance) !== 1) return false;
 
 	try {
-		block.setPermutation(block.permutation.withState(ALTER_LEVEL_STATE, level + 1));
+		const direction = block.permutation.getState("minecraft:cardinal_direction");
+		const states = typeof direction === "string"
+			? { "minecraft:cardinal_direction": direction }
+			: undefined;
+		block.setPermutation(BlockPermutation.resolve(ALTER_BLOCK_IDS[level], states));
 		return true;
 	} catch {
 		return false;
@@ -208,11 +216,11 @@ function tryAdvanceAlterLevel(block) {
 
 function getAlterLevel(block) {
 	try {
-		const level = block.permutation.getState(ALTER_LEVEL_STATE);
-		if (typeof level === "number") return level;
+		const index = ALTER_BLOCK_IDS.indexOf(block.typeId);
+		if (index >= 0) return index + 1;
 	} catch {}
 
-	return 0;
+	return 1;
 }
 function advanceAlterRoom(dimension, altar) {
 	const key = altarKey(altar);
@@ -330,7 +338,7 @@ function applyRoomStep(dimension, step) {
 	if (!block) return false;
 	if (block.typeId === step.targetId) return false;
 	if (block.typeId !== step.originalId) return false;
-	if (block.typeId === ALTER_BLOCK_ID) return false;
+	if (ALTER_BLOCK_ID_SET.has(block.typeId)) return false;
 	if (step.targetId === "minecraft:air" && block.typeId.includes("air")) return false;
 
 	try {
@@ -348,14 +356,14 @@ function applyRoomStep(dimension, step) {
 
 function canPlanRoomChange(block) {
 	if (!block) return false;
-	if (block.typeId === ALTER_BLOCK_ID) return false;
+	if (ALTER_BLOCK_ID_SET.has(block.typeId)) return false;
 	if (RITUAL_SOURCE_BLOCKS.has(block.typeId)) return true;
 	if (!NATURAL_ROOM_BLOCKS.has(block.typeId)) return false;
 	return !isProtectedSpreadBlock(block);
 }
 
 function canPlanRoomClear(block) {
-	if (!block || block.typeId === ALTER_BLOCK_ID) return false;
+	if (!block || ALTER_BLOCK_ID_SET.has(block.typeId)) return false;
 	if (!NATURAL_ROOM_BLOCKS.has(block.typeId)) return false;
 	if (block.typeId.includes("air")) return false;
 	return !isProtectedSpreadBlock(block);
@@ -533,7 +541,7 @@ function getSpreadSourcesFast(dimension, altar) {
 
 			addSource(sources, seen, {
 				x,
-				y: block.typeId === ALTER_BLOCK_ID ? floorY : y,
+				y: ALTER_BLOCK_ID_SET.has(block.typeId) ? floorY : y,
 				z
 			});
 		}

@@ -5,7 +5,7 @@
       "identifier": "zombie:chaos_pickaxe",
       "menu_category": {
         "category": "equipment",
-        "group": "minecraft:itemGroup.name.chaos"
+        "group": "minecraft:itemGroup.name.pickaxe"
       }
     },
     "components": {

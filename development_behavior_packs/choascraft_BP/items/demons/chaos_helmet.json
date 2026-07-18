@@ -5,13 +5,13 @@
       "identifier": "zombie:chaos_helmet",
       "menu_category": {
         "category": "equipment",
-        "group": "minecraft:itemGroup.name.chaos"
+        "group": "minecraft:itemGroup.name.helmet"
       }
     },
     "components": {
       "minecraft:icon": "zombie_chaos_helmet",
       "minecraft:wearable": {
-        "protection": 4,
+        "protection": 1,
         "slot": "slot.armor.head"
       },
       "minecraft:durability": {

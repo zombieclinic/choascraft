@@ -5,7 +5,7 @@
       "identifier": "zombie:chaos_book",
       "menu_category": {
         "category": "equipment",
-        "group": "minecraft:itemGroup.name.sword"
+        "group": "zombie:itemGroup.name.book"
       }
     },
     "components": {

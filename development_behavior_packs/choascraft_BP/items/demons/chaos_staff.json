@@ -5,7 +5,7 @@
       "identifier": "zombie:chaos_staff",
       "menu_category": {
         "category": "equipment",
-        "group": "minecraft:itemGroup.name.chaos"
+        "group": "zombie:itemGroup.name.staff"
       }
     },
     "components": {

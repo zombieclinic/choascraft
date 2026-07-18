@@ -311,6 +311,21 @@
     "zombie_demon_alter_top_planstar": {
       "textures": "textures/demon/demon_alter_top_planstar"
     },
+    "zombie_demon_alter_level_0": {
+      "textures": "textures/demon/alter_blocks/demon_alter_top_level_0"
+    },
+    "zombie_demon_alter_level_1": {
+      "textures": "textures/demon/alter_blocks/demon_alter_top_level_1"
+    },
+    "zombie_demon_alter_level_2": {
+      "textures": "textures/demon/alter_blocks/demon_alter_top_level_2"
+    },
+    "zombie_demon_alter_level_3": {
+      "textures": "textures/demon/alter_blocks/demon_alter_top_level_3"
+    },
+    "zombie_demon_alter_level_4": {
+      "textures": "textures/demon/alter_blocks/demon_alter_top_level_4"
+    },
     "zombie_demon_blood_block": {
       "textures": "textures/demon/alter_blocks/blood_block"
     },

@@ -287,7 +287,23 @@
     "sound": "stone"
   },
   "zombie:demon_alter": {
-    "textures": "zombie_demon_alter",
+    "textures": "zombie_demon_alter_level_0",
+    "sound": "stone"
+  },
+  "zombie:demon_alter_level_2": {
+    "textures": "zombie_demon_alter_level_1",
+    "sound": "stone"
+  },
+  "zombie:demon_alter_level_3": {
+    "textures": "zombie_demon_alter_level_2",
+    "sound": "stone"
+  },
+  "zombie:demon_alter_level_4": {
+    "textures": "zombie_demon_alter_level_3",
+    "sound": "stone"
+  },
+  "zombie:demon_alter_level_5": {
+    "textures": "zombie_demon_alter_level_4",
     "sound": "stone"
   },
   "zombie:demon_blood_block": {

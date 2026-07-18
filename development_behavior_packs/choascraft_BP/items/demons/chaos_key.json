@@ -4,8 +4,8 @@
     "description": {
       "identifier": "zombie:chaos_key",
       "menu_category": {
-        "category": "equipment",
-        "group": "minecraft:itemGroup.name.chaos"
+        "category": "items",
+        "group": "zombie:itemGroup.name.key"
       }
     },
     "components": {

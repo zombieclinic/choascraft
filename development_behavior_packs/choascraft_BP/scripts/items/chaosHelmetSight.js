@@ -324,8 +324,11 @@ function getCustomBlockInfo(block) {
     }
   }
 
-  if (block.typeId === "zombie:demon_alter") {
-    return "\u00a7cDemon Altar\n\u00a77Power it with Redstone";
+  if (block.typeId === "zombie:demon_alter" || block.typeId.startsWith("zombie:demon_alter_level_")) {
+    const tier = block.typeId === "zombie:demon_alter"
+      ? 1
+      : Number(block.typeId.slice("zombie:demon_alter_level_".length));
+    return `\u00a7cDemon Altar - Tier ${tier}\n\u00a77Power it with Redstone`;
   }
 
   if (!block.typeId.startsWith("zombie:")) return "";

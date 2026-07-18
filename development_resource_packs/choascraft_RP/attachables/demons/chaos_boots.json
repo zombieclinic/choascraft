@@ -1,0 +1,15 @@
+{
+  "format_version": "1.26.20",
+  "minecraft:attachable": {
+    "description": {
+      "identifier": "zombie:chaos_boots",
+      "materials": { "default": "armor", "enchanted": "armor_enchanted" },
+      "geometry": { "default": "geometry.demon_boots" },
+      "textures": {
+        "default": "textures/demon/item_mob/demon_boots.json",
+        "enchanted": "textures/misc/enchanted_item_glint"
+      },
+      "render_controllers": ["controller.render.armor"]
+    }
+  }
+}

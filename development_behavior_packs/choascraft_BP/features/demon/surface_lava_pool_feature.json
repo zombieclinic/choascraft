@@ -7,7 +7,7 @@
     "count": 35,
     "replace_rules": [
       {
-        "places_block": "minecraft:lava",
+        "places_block": "minecraft:magma",
         "may_replace": [
           "zombie:demon_grass_no_tick",
           "zombie:demon_dirt"
