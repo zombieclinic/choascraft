@@ -1,0 +1,56 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.demon_lord": {
+      "initial_state": "idle",
+      "states": {
+        "idle": {
+          "animations": ["idle"],
+          "transitions": [
+            { "death": "query.variant == 10" },
+            { "second_stage": "query.variant == 2" },
+            { "choose_attack": "variable.attack_time >= 0.01" },
+            { "run": "query.variant == 3 && query.ground_speed" },
+            { "walk": "query.variant == 1 && query.ground_speed" }
+          ]
+        },
+        "walk": {
+          "animations": ["walk"],
+          "transitions": [
+            { "death": "query.variant == 10" },
+            { "second_stage": "query.variant == 2" },
+            { "choose_attack": "variable.attack_time >= 0.01" },
+            { "idle": "!query.ground_speed" },
+            { "run": "query.variant == 3" }
+          ]
+        },
+        "run": {
+          "animations": ["run"],
+          "transitions": [
+            { "death": "query.variant == 10" },
+            { "second_stage": "query.variant == 2" },
+            { "choose_attack": "variable.attack_time >= 0.01" },
+            { "idle": "!query.ground_speed" }
+          ]
+        },
+        "choose_attack": {
+          "on_entry": ["variable.demon_lord_attack = math.random_integer(1, 2);"],
+          "transitions": [
+            { "death": "query.variant == 10" },
+            { "second_stage": "query.variant == 2" },
+            { "run_attack1": "query.variant == 3 && variable.demon_lord_attack == 1" },
+            { "run_attack2": "query.variant == 3" },
+            { "attack1": "variable.demon_lord_attack == 1" },
+            { "attack2": "1.0" }
+          ]
+        },
+        "attack1": { "animations": ["attack1"], "transitions": [{ "death": "query.variant == 10" }, { "second_stage": "query.variant == 2" }, { "idle": "query.all_animations_finished" }] },
+        "attack2": { "animations": ["attack2"], "transitions": [{ "death": "query.variant == 10" }, { "second_stage": "query.variant == 2" }, { "idle": "query.all_animations_finished" }] },
+        "run_attack1": { "animations": ["run_hit"], "transitions": [{ "death": "query.variant == 10" }, { "second_stage": "query.variant == 2" }, { "idle": "query.all_animations_finished" }] },
+        "run_attack2": { "animations": ["run_hit1"], "transitions": [{ "death": "query.variant == 10" }, { "second_stage": "query.variant == 2" }, { "idle": "query.all_animations_finished" }] },
+        "second_stage": { "animations": ["second_stage"], "transitions": [{ "death": "query.variant == 10" }, { "idle": "query.variant == 3 && query.all_animations_finished" }] },
+        "death": { "animations": ["death"] }
+      }
+    }
+  }
+}

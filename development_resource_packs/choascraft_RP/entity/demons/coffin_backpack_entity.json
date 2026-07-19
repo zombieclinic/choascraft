@@ -1,0 +1,20 @@
+{
+  "format_version": "1.26.20",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "zombie:coffin_backpack_entity",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/demon/item_mob/chaos_gear"
+      },
+      "geometry": {
+        "default": "geometry.backpack_ground"
+      },
+      "render_controllers": [
+        "controller.render.default"
+      ]
+    }
+  }
+}

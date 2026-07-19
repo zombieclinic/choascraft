@@ -37,6 +37,18 @@
           "zombie:eye_flower_growth": {
             
           },
+          "minecraft:placement_filter": {
+            "conditions": [
+              {
+                "allowed_faces": [
+                  "up"
+                ],
+                "block_filter": [
+                  "zombie:eye_flower"
+                ]
+              }
+            ]
+          },
           "minecraft:material_instances": {
             "*": {
               "texture": "eye_flower_top",

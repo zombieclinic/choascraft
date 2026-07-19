@@ -1,0 +1,158 @@
+{
+  "format_version": "1.26.30",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "zombie:demon_lord",
+      "spawn_category": "monster",
+      "is_spawnable": true,
+      "is_summonable": true
+    },
+    "component_groups": {
+      "phase_one": {
+        "minecraft:variant": { "value": 1 },
+        "minecraft:damage_sensor": {
+          "triggers": [
+            {
+              "deals_damage": "no",
+              "on_damage": {
+                "filters": [
+                  {
+                    "test": "actor_health",
+                    "subject": "self",
+                    "operator": "<=",
+                    "value": 700
+                  }
+                ],
+                "event": "begin_second_stage"
+              }
+            }
+          ]
+        },
+        "minecraft:movement": { "value": 0.18 },
+        "minecraft:movement.basic": {},
+        "minecraft:navigation.walk": {
+          "is_amphibious": true,
+          "can_walk": true,
+          "can_pass_doors": true,
+          "can_break_doors": true
+        },
+        "minecraft:jump.static": {},
+        "minecraft:behavior.melee_box_attack": {
+          "priority": 3,
+          "speed_multiplier": 1,
+          "track_target": true
+        }
+      },
+      "second_stage": {
+        "minecraft:variant": { "value": 2 },
+        "minecraft:damage_sensor": {
+          "triggers": [{ "deals_damage": "no" }]
+        },
+        "minecraft:timer": {
+          "time": 6.3333,
+          "looping": false,
+          "time_down_event": { "event": "enter_fast_mode", "target": "self" }
+        }
+      },
+      "fast_mode": {
+        "minecraft:variant": { "value": 3 },
+        "minecraft:damage_sensor": {
+          "triggers": [
+            {
+              "deals_damage": "no",
+              "on_damage": {
+                "filters": [
+                  {
+                    "test": "actor_health",
+                    "subject": "self",
+                    "operator": "<=",
+                    "value": 1
+                  }
+                ],
+                "event": "begin_death"
+              }
+            }
+          ]
+        },
+        "minecraft:movement": { "value": 0.34 },
+        "minecraft:movement.basic": {},
+        "minecraft:navigation.walk": {
+          "is_amphibious": true,
+          "can_walk": true,
+          "can_pass_doors": true,
+          "can_break_doors": true
+        },
+        "minecraft:jump.static": {},
+        "minecraft:behavior.melee_box_attack": {
+          "priority": 3,
+          "speed_multiplier": 1.35,
+          "track_target": true
+        }
+      },
+      "dying": {
+        "minecraft:variant": { "value": 10 },
+        "minecraft:damage_sensor": {
+          "triggers": [{ "deals_damage": "no" }]
+        },
+        "minecraft:timer": {
+          "time": 5,
+          "looping": false,
+          "time_down_event": { "event": "finish_death", "target": "self" }
+        }
+      }
+    },
+    "components": {
+      "minecraft:health": { "value": 1500, "max": 1500 },
+      "minecraft:attack": { "damage": 20 },
+      "minecraft:collision_box": { "width": 1.4, "height": 3.4 },
+      "minecraft:scale": { "value": 1 },
+      "minecraft:fire_immune": {},
+      "minecraft:physics": {},
+      "minecraft:nameable": {},
+      "minecraft:type_family": { "family": ["demon_lord", "demon", "monster", "mob"] },
+      "minecraft:breathable": {
+        "total_supply": 15,
+        "suffocate_time": 0,
+        "breathes_air": true,
+        "breathes_water": true
+      },
+      "minecraft:behavior.hurt_by_target": { "priority": 1 },
+      "minecraft:behavior.nearest_attackable_target": {
+        "priority": 2,
+        "must_see": true,
+        "reselect_targets": true,
+        "within_radius": 40,
+        "entity_types": [{
+          "filters": { "any_of": [
+            { "test": "is_family", "subject": "other", "value": "player" },
+            { "test": "is_family", "subject": "other", "value": "irongolem" },
+            { "test": "is_family", "subject": "other", "value": "snowgolem" }
+          ]},
+          "max_dist": 40
+        }]
+      },
+      "minecraft:behavior.random_stroll": { "priority": 7, "speed_multiplier": 1 },
+      "minecraft:behavior.look_at_player": { "priority": 8, "look_distance": 12 },
+      "minecraft:behavior.random_look_around": { "priority": 9 }
+    },
+    "events": {
+      "minecraft:entity_spawned": { "add": { "component_groups": ["phase_one"] } },
+      "begin_second_stage": {
+        "remove": { "component_groups": ["phase_one"] },
+        "add": { "component_groups": ["second_stage"] }
+      },
+      "enter_fast_mode": {
+        "remove": { "component_groups": ["second_stage"] },
+        "add": { "component_groups": ["fast_mode"] }
+      },
+      "begin_death": {
+        "remove": { "component_groups": ["phase_one", "second_stage", "fast_mode"] },
+        "add": { "component_groups": ["dying"] }
+      },
+      "finish_death": {
+        "queue_command": { "command": "event entity @s despawn" }
+      },
+      "despawn": { "remove": {} }
+    }
+  }
+}

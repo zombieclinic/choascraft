@@ -54,6 +54,18 @@
           "zombie:infected_flower_growth": {
             
           },
+          "minecraft:placement_filter": {
+            "conditions": [
+              {
+                "allowed_faces": [
+                  "up"
+                ],
+                "block_filter": [
+                  "zombie:infected_flower"
+                ]
+              }
+            ]
+          },
           "minecraft:material_instances": {
             "*": {
               "texture": "infected_flower_top",

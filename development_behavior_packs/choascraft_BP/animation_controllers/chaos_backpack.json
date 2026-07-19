@@ -1,0 +1,23 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.chaos_backpack": {
+      "initial_state": "default",
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "state_1": "query.variant == 1"
+            }
+          ]
+        },
+        "state_1": {
+          "on_entry": [
+            "/scriptevent zombie:coffin_backpack_pickup"
+          ]
+        }
+      }
+    }
+  }
+}
+

@@ -1,0 +1,13 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.coffin_backpack.first_person_view": {
+			"loop": true,
+			"bones": {
+				"coffin_backpack": {
+					"position": [0, 0, -10]
+				}
+			}
+		}
+	}
+}

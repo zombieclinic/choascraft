@@ -1,0 +1,97 @@
+{
+  "format_version": "1.26.20",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "zombie:coffin_backpack_entity",
+      "is_spawnable": false,
+      "is_summonable": true,
+      "is_experimental": false,
+      "animations": {
+        "pickup": "controller.animation.chaos_backpack"
+      },
+      "scripts": {
+        "animate": [
+          "pickup"
+        ]
+      }
+    },
+    "components": {
+      "minecraft:type_family": {
+        "family": ["coffin_backpack", "inanimate"]
+      },
+      "minecraft:health": {
+        "value": 1,
+        "max": 1
+      },
+      
+     "minecraft:collision_box": {
+	      "width": 1.8,
+	      "height": 0.5
+      },
+      "minecraft:physics": {
+        "has_gravity": true,
+        "has_collision": true
+      },
+      "minecraft:persistent": {},
+      "minecraft:inventory": {
+        "container_type": "minecart_chest",
+        "inventory_size": 27,
+        "private": false,
+        "can_be_siphoned_from": false,
+        "restrict_to_owner": false
+      },
+      "minecraft:is_chested": {},
+      "minecraft:interact": {
+        "interactions": [
+          {
+            "on_interact": {
+              "filters": {
+                "all_of": [
+                  {
+                    "test": "is_family",
+                    "subject": "other",
+                    "value": "player"
+                  },
+                  {
+                    "test": "is_sneaking",
+                    "subject": "other",
+                    "value": true
+                  }
+                ]
+              },
+              "event": "zombie:set_variant_1",
+              "target": "self"
+            },
+            "swing": true
+          }
+        ]
+      },
+      "minecraft:nameable": {
+        "allow_name_tag_renaming": false,
+        "always_show": false
+      },
+      "minecraft:damage_sensor": {
+        "triggers": [{
+          "cause": "all",
+          "deals_damage": "no"
+        }]
+      }
+    },
+    "component_groups": {
+      "zombie:variant_1": {
+        "minecraft:variant": {
+          "value": 1
+        }
+      }
+    },
+    "events": {
+      "zombie:set_variant_1": {
+        "add": {
+          "component_groups": [
+            "zombie:variant_1"
+          ]
+        }
+      }
+    }
+  }
+}

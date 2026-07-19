@@ -57,6 +57,18 @@
         "condition": "query.block_state('zombie:sporepod_part') == 'middle'",
         "components": {
           "minecraft:loot": "loot_tables/blocks/empty.json",
+          "minecraft:placement_filter": {
+            "conditions": [
+              {
+                "allowed_faces": [
+                  "up"
+                ],
+                "block_filter": [
+                  "zombie:sporepod"
+                ]
+              }
+            ]
+          },
           "minecraft:material_instances": {
             "*": {
               "texture": "sporepod_middle",
@@ -71,6 +83,18 @@
         "condition": "query.block_state('zombie:sporepod_part') == 'top'",
         "components": {
           "minecraft:loot": "loot_tables/blocks/empty.json",
+          "minecraft:placement_filter": {
+            "conditions": [
+              {
+                "allowed_faces": [
+                  "up"
+                ],
+                "block_filter": [
+                  "zombie:sporepod"
+                ]
+              }
+            ]
+          },
           "minecraft:material_instances": {
             "*": {
               "texture": "sporepod_top",
@@ -121,8 +145,8 @@
       "minecraft:tick": {
         "looping": true,
         "interval_range": [
-          20,
-          40
+          600,
+          1200
         ]
       },
       "zombie:sporepod_growth": {

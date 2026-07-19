@@ -40,6 +40,7 @@ import { ChaosBookComponent, ChaosStaffComponent } from "./items/chaosStaff.js"
 import {bearArmorChanceEffect} from "./items/bearattack.js"
 import "./items/chaosHelmetSight.js"
 import "./items/chaosArmor.js"
+import { CoffinBackpackPlacementComponent } from "./items/coffinBackpackPickup.js"
 
 
 
@@ -93,7 +94,8 @@ const ITEM_COMPONENTS = [
  ["zombie:chaos_spear", ChaosSpearComponent],
  ["zombie:chaos_staff", ChaosStaffComponent],
  ["zombie:chaos_book", ChaosBookComponent],
- ["zombie:hell_sword_evolution", HellSwordEvolutionComponent]
+ ["zombie:hell_sword_evolution", HellSwordEvolutionComponent],
+ ["zombie:coffin_backpack", CoffinBackpackPlacementComponent]
 ];
 
 system.beforeEvents.startup.subscribe(({ blockComponentRegistry, itemComponentRegistry }) => {

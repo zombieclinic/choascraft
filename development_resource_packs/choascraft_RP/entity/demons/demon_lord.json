@@ -1,0 +1,27 @@
+{
+  "format_version": "1.21.70",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "zombie:demon_lord",
+      "materials": { "default": "entity_alphatest" },
+      "textures": { "default": "textures/demon/lord_demon" },
+      "geometry": { "default": "geometry.demon_lord" },
+      "spawn_egg": { "base_color": "#240008", "overlay_color": "#D42121" },
+      "animations": {
+        "cape_idle": "animation.demon_lord_cape_idle",
+        "idle": "animation.demon_lord_idle",
+        "walk": "animation.demon_lord_walk",
+        "attack1": "animation.demon_lord_attack1",
+        "attack2": "animation.demon_lord_attack2",
+        "run": "animation.demon_lord_run",
+        "run_hit": "animation.demon_lord_run_hit",
+        "run_hit1": "animation.demon_lord_run_hit1",
+        "second_stage": "animation.demon_lord_second_stage",
+        "death": "animation.demon_lord_death",
+        "controller": "controller.animation.demon_lord"
+      },
+      "scripts": { "animate": ["controller", "cape_idle"] },
+      "render_controllers": ["controller.render.default"]
+    }
+  }
+}

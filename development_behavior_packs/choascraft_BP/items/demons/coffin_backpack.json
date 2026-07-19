@@ -1,5 +1,5 @@
 {
-  "format_version": "1.26.20",
+  "format_version": "1.26.30",
   "minecraft:item": {
     "description": {
       "identifier": "zombie:coffin_backpack",
@@ -10,25 +10,16 @@
     },
     "components": {
       "minecraft:max_stack_size": 1,
-      "minecraft:allow_off_hand": true,
       "minecraft:display_name": {
         "value": "Coffin Backpack"
       },
-      "minecraft:icon": "zombie_coffin_backpack",
-      "minecraft:storage_item": {
-        "allow_nested_storage_items": false,
-        "max_slots": 64
+      "minecraft:icon": {
+        "textures": {
+          "default": "zombie_coffin_backpack"
+        }
       },
-      "minecraft:bundle_interaction": {
-        "num_viewable_slots": 64
-      },
-      "minecraft:rarity": "rare",
-      "minecraft:wearable": {
-        "protection": 0,
-        "slot": "slot.weapon.offhand"
-      },
-      "minecraft:hand_equipped": true
+      "zombie:coffin_backpack": {},
+      "minecraft:rarity": "rare"
     }
   }
 }
-
