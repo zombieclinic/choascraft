@@ -28,7 +28,7 @@
         "value": 14
       },
       "minecraft:durability": {
-        "max_durability": 359,
+        "max_durability": 718,
         "damage_chance": {
           "min": 20,
           "max": 100

@@ -1,0 +1,8 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:texture_set": {
+    "color": "lord_demon_claw",
+    "metalness_emissive_roughness": "lord_demon_claw_mer",
+    "normal": "lord_demon_claw_normal"
+  }
+}

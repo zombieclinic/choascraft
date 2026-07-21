@@ -1,0 +1,123 @@
+{
+  "format_version": "1.26.30",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "zombie:demon_lord_claw",
+      "spawn_category": "misc",
+      "is_spawnable": false,
+      "is_summonable": true
+    },
+    "component_groups": {
+      "lifetime": {
+        "minecraft:timer": {
+          "time": 6.5,
+          "looping": false,
+          "time_down_event": {
+            "event": "despawn",
+            "target": "self"
+          }
+        }
+      },
+      "despawn": {
+        "minecraft:instant_despawn": {}
+      },
+      "freeze_attack": {
+        "minecraft:mob_effect": {
+          "mob_effect": "slowness",
+          "effect_range": 1,
+          "effect_time": 1,
+          "cooldown_time": 0,
+          "entity_filter": {
+            "test": "is_family",
+            "subject": "other",
+            "value": "player"
+          }
+        },
+        "minecraft:attack": {
+          "damage": 0,
+          "effect_name": "slowness",
+          "effect_duration": 1,
+          "effect_amplifier": 255
+        },
+        "minecraft:behavior.nearest_attackable_target": {
+          "priority": 0,
+          "must_see": false,
+          "reselect_targets": true,
+          "within_radius": 1,
+          "entity_types": [
+            {
+              "filters": {
+                "test": "is_family",
+                "subject": "other",
+                "value": "player"
+              },
+              "max_dist": 1
+            }
+          ]
+        },
+        "minecraft:behavior.melee_box_attack": {
+          "priority": 1,
+          "speed_multiplier": 0,
+          "track_target": true
+        }
+      }
+    },
+    "components": {
+      "minecraft:type_family": {
+        "family": ["demon_lord_claw", "demon", "mob"]
+      },
+      "minecraft:health": {
+        "value": 1,
+        "max": 1
+      },
+      "minecraft:collision_box": {
+        "width": 1,
+        "height": 2
+      },
+      "minecraft:physics": {
+        "has_gravity": false,
+        "has_collision": true
+      },
+      "minecraft:damage_sensor": {
+        "triggers": [
+          {
+            "deals_damage": "no"
+          }
+        ]
+      },
+      "minecraft:entity_sensor": {
+        "relative_range": false,
+        "subsensors": [
+          {
+            "event": "slow_player",
+            "minimum_count": 1,
+            "range": [1, 1],
+            "require_all": false,
+            "event_filters": {
+              "subject": "other",
+              "test": "is_family",
+              "value": "player"
+            }
+          }
+        ]
+      }
+    },
+    "events": {
+      "minecraft:entity_spawned": {
+        "add": {
+          "component_groups": ["lifetime"]
+        }
+      },
+      "slow_player": {
+        "add": {
+          "component_groups": ["freeze_attack"]
+        }
+      },
+      "despawn": {
+        "add": {
+          "component_groups": ["despawn"]
+        }
+      }
+    }
+  }
+}

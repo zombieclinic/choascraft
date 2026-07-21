@@ -49,7 +49,7 @@
         "use_duration": 3600
       },
       "minecraft:durability": {
-        "max_durability": 358
+        "max_durability": 716
       },
       "minecraft:repairable": {
         "repair_items": [

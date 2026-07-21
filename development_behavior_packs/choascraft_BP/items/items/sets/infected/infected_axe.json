@@ -24,7 +24,7 @@
           "min": 10,
           "max": 50
         },
-        "max_durability": 2031
+        "max_durability": 4062
       },
       "minecraft:display_name": {
         "value": "Infected Axe"

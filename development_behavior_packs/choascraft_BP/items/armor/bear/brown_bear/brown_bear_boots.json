@@ -20,7 +20,7 @@
         "value": 15
       },
       "minecraft:durability": {
-        "max_durability": 400
+        "max_durability": 800
       },
       "minecraft:tags": {
         "tags": [

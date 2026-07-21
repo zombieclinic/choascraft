@@ -25,7 +25,7 @@
         "slot": "slot.weapon.offhand"
       },
       "minecraft:durability": {
-        "max_durability": 500
+        "max_durability": 1000
       },
       "minecraft:repairable": {
         "repair_items": [

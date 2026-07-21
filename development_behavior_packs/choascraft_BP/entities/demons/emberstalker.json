@@ -24,6 +24,8 @@
       },
       "minecraft:type_family": {
         "family": [
+          "demon_minion",
+          "emberstalker",
           "demon",
           "monster"
         ]
@@ -187,4 +189,3 @@
     }
   }
 }
-

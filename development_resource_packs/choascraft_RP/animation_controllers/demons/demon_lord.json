@@ -9,6 +9,8 @@
           "transitions": [
             { "death": "query.variant == 10" },
             { "second_stage": "query.variant == 2" },
+            { "minion_skill": "query.property('zombie:minion_skill')" },
+            { "thorn_skill": "query.property('zombie:thorn_skill')" },
             { "choose_attack": "variable.attack_time >= 0.01" },
             { "run": "query.variant == 3 && query.ground_speed" },
             { "walk": "query.variant == 1 && query.ground_speed" }
@@ -19,6 +21,8 @@
           "transitions": [
             { "death": "query.variant == 10" },
             { "second_stage": "query.variant == 2" },
+            { "minion_skill": "query.property('zombie:minion_skill')" },
+            { "thorn_skill": "query.property('zombie:thorn_skill')" },
             { "choose_attack": "variable.attack_time >= 0.01" },
             { "idle": "!query.ground_speed" },
             { "run": "query.variant == 3" }
@@ -29,6 +33,8 @@
           "transitions": [
             { "death": "query.variant == 10" },
             { "second_stage": "query.variant == 2" },
+            { "minion_skill": "query.property('zombie:minion_skill')" },
+            { "thorn_skill": "query.property('zombie:thorn_skill')" },
             { "choose_attack": "variable.attack_time >= 0.01" },
             { "idle": "!query.ground_speed" }
           ]
@@ -38,16 +44,34 @@
           "transitions": [
             { "death": "query.variant == 10" },
             { "second_stage": "query.variant == 2" },
+            { "minion_skill": "query.property('zombie:minion_skill')" },
+            { "thorn_skill": "query.property('zombie:thorn_skill')" },
             { "run_attack1": "query.variant == 3 && variable.demon_lord_attack == 1" },
             { "run_attack2": "query.variant == 3" },
             { "attack1": "variable.demon_lord_attack == 1" },
             { "attack2": "1.0" }
           ]
         },
-        "attack1": { "animations": ["attack1"], "transitions": [{ "death": "query.variant == 10" }, { "second_stage": "query.variant == 2" }, { "idle": "query.all_animations_finished" }] },
-        "attack2": { "animations": ["attack2"], "transitions": [{ "death": "query.variant == 10" }, { "second_stage": "query.variant == 2" }, { "idle": "query.all_animations_finished" }] },
-        "run_attack1": { "animations": ["run_hit"], "transitions": [{ "death": "query.variant == 10" }, { "second_stage": "query.variant == 2" }, { "idle": "query.all_animations_finished" }] },
-        "run_attack2": { "animations": ["run_hit1"], "transitions": [{ "death": "query.variant == 10" }, { "second_stage": "query.variant == 2" }, { "idle": "query.all_animations_finished" }] },
+        "attack1": { "animations": ["attack1"], "transitions": [{ "death": "query.variant == 10" }, { "second_stage": "query.variant == 2" }, { "minion_skill": "query.property('zombie:minion_skill')" }, { "thorn_skill": "query.property('zombie:thorn_skill')" }, { "idle": "query.all_animations_finished" }] },
+        "attack2": { "animations": ["attack2"], "transitions": [{ "death": "query.variant == 10" }, { "second_stage": "query.variant == 2" }, { "minion_skill": "query.property('zombie:minion_skill')" }, { "thorn_skill": "query.property('zombie:thorn_skill')" }, { "idle": "query.all_animations_finished" }] },
+        "run_attack1": { "animations": ["run_hit"], "transitions": [{ "death": "query.variant == 10" }, { "second_stage": "query.variant == 2" }, { "minion_skill": "query.property('zombie:minion_skill')" }, { "thorn_skill": "query.property('zombie:thorn_skill')" }, { "idle": "query.all_animations_finished" }] },
+        "run_attack2": { "animations": ["run_hit1"], "transitions": [{ "death": "query.variant == 10" }, { "second_stage": "query.variant == 2" }, { "minion_skill": "query.property('zombie:minion_skill')" }, { "thorn_skill": "query.property('zombie:thorn_skill')" }, { "idle": "query.all_animations_finished" }] },
+        "thorn_skill": {
+          "animations": ["thorn_skill"],
+          "transitions": [
+            { "death": "query.variant == 10" },
+            { "second_stage": "query.variant == 2" },
+            { "idle": "!query.property('zombie:thorn_skill') || query.all_animations_finished" }
+          ]
+        },
+        "minion_skill": {
+          "animations": ["minion_skill"],
+          "transitions": [
+            { "death": "query.variant == 10" },
+            { "second_stage": "query.variant == 2" },
+            { "idle": "!query.property('zombie:minion_skill') || query.all_animations_finished" }
+          ]
+        },
         "second_stage": { "animations": ["second_stage"], "transitions": [{ "death": "query.variant == 10" }, { "idle": "query.variant == 3 && query.all_animations_finished" }] },
         "death": { "animations": ["death"] }
       }

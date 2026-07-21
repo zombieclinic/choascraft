@@ -24,6 +24,8 @@
       },
       "minecraft:type_family": {
         "family": [
+          "demon_minion",
+          "hell_brute",
           "demon",
           "monster"
         ]
@@ -146,4 +148,3 @@
     }
   }
 }
-

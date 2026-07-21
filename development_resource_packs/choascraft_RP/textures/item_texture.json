@@ -385,7 +385,7 @@
       "textures": "textures/armor/jellyfish/black/netheriteboots/netherite_boots_icon"
     },
     "zombie_jellyfish_netherite_black_leggings": {
-      "textures": "textures/armor/jellyfish/black/netheriteleggings/netherite_leggings_icon"
+      "textures": "textures/armor/jellyfish/black/netheriteleggings/leggings_icon"
     },
     "zombie_jellyfish_netherite_black_chest": {
       "textures": "textures/armor/jellyfish/black/netheritechest/netherite_chest_icon"
@@ -397,7 +397,7 @@
       "textures": "textures/armor/jellyfish/green/netheriteboots/netherite_boots_icon"
     },
     "zombie_jellyfish_netherite_green_leggings": {
-      "textures": "textures/armor/jellyfish/green/netheriteleggings/netherite_leggings_icon"
+      "textures": "textures/armor/jellyfish/green/netheriteleggings/leggings_icon"
     },
     "zombie_jellyfish_netherite_green_chest": {
       "textures": "textures/armor/jellyfish/green/netheritechest/netherite_chest_icon"
@@ -409,7 +409,7 @@
       "textures": "textures/armor/jellyfish/pink/netheriteboots/netherite_boots_icon"
     },
     "zombie_jellyfish_netherite_pink_leggings": {
-      "textures": "textures/armor/jellyfish/pink/netheriteleggings/netherite_leggings_icon"
+      "textures": "textures/armor/jellyfish/pink/netheriteleggings/leggings_icon"
     },
     "zombie_jellyfish_netherite_pink_chest": {
       "textures": "textures/armor/jellyfish/pink/netheritechest/netherite_chest_icon"
@@ -421,13 +421,13 @@
       "textures": "textures/armor/jellyfish/yellow/netheriteboots/netherite_boots_icon"
     },
     "zombie_jellyfish_netherite_yellow_leggings": {
-      "textures": "textures/armor/jellyfish/yellow/netheriteleggings/netherite_leggings_icon"
+      "textures": "textures/armor/jellyfish/yellow/netheriteleggings/leggings_icon"
     },
     "zombie_jellyfish_netherite_yellow_chest": {
       "textures": "textures/armor/jellyfish/yellow/netheritechest/netherite_chest_icon"
     },
     "zombie_jellyfish_netherite_yellow_helmet": {
-      "textures": "textures/armor/jellyfish/yellow/netheritehelmet/netherite_helmet_icon"
+      "textures": "textures/armor/jellyfish/yellow/netheritehelmet/helmet_icon"
     },
     "zombie_sunking_captain_helmet": {
       "textures": "textures/armor/sunkingcaptains/helmet/sunkin_helmet_icon"
@@ -605,4 +605,3 @@
     }
   }
 }
-

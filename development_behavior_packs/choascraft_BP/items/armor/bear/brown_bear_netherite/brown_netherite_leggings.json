@@ -24,7 +24,7 @@
         "value": 15
       },
       "minecraft:durability": {
-        "max_durability": 1000
+        "max_durability": 2000
       },
       "minecraft:hover_text_color": "light_purple",
       "minecraft:tags": {

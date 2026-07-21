@@ -3,11 +3,11 @@
   "header": {
     "name": "choascraft",
     "description": "update 8.24.25 ",
-    "uuid": "0908a176-1bbd-48dd-b0b5-87c5d5ec26c2",
+    "uuid": "3ba56d14-82cb-495b-8a5c-e421182462dc",
     "version": [
       1,
-      2,
-      1
+      0,
+      0
     ],
     "min_engine_version": [
       1,
@@ -18,31 +18,31 @@
   "modules": [
     {
       "type": "data",
-      "uuid": "6ff64f9a-5c92-4d5e-bc37-bb63bb540710",
+      "uuid": "9fa2056c-dcc8-4ed4-bc1f-80bb72f7f09f",
       "version": [
         1,
         0,
-        1
+        0
       ]
     },
     {
       "type": "script",
-      "uuid": "f739816e-9822-4473-8393-93b5d3dbfaf5",
+      "uuid": "9a24eb1e-745d-45d8-b431-b75e015470b8",
       "version": [
         1,
         0,
-        1
+        0
       ],
       "entry": "scripts/waterMobsBrain.js"
     }
   ],
   "dependencies": [
     {
-      "uuid": "78eff29f-e236-4251-88d6-fefea597f006",
+      "uuid": "a9d65f2b-c372-4582-a334-8abf81f6cefc",
       "version": [
         1,
         0,
-        1
+        0
       ]
     },
     {

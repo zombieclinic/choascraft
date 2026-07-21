@@ -19,7 +19,6 @@
       ],
       "animations": {
         "fpp_idle": "animation.demon_hammer.fpp_idle",
-        "tpp_smash": "animation.swing_hammer.tpp_smash",
         "fpp_smash": "animation.swing_hammer.fpp_smash",
         "controller": "controller.animation.chaos_hammer"
       },

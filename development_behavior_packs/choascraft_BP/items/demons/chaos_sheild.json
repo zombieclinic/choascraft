@@ -30,7 +30,7 @@
           "min": 10,
           "max": 50
         },
-        "max_durability": 36
+        "max_durability": 72
       },
       "minecraft:display_name": {
         "value": "Chaos Shield"

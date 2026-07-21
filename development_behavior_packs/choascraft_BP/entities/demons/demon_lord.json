@@ -5,7 +5,24 @@
       "identifier": "zombie:demon_lord",
       "spawn_category": "monster",
       "is_spawnable": true,
-      "is_summonable": true
+      "is_summonable": true,
+      "properties": {
+        "zombie:thorn_skill": {
+          "type": "bool",
+          "default": false,
+          "client_sync": true
+        },
+        "zombie:ranged_mode": {
+          "type": "bool",
+          "default": false,
+          "client_sync": false
+        },
+        "zombie:minion_skill": {
+          "type": "bool",
+          "default": false,
+          "client_sync": true
+        }
+      }
     },
     "component_groups": {
       "phase_one": {
@@ -36,12 +53,7 @@
           "can_pass_doors": true,
           "can_break_doors": true
         },
-        "minecraft:jump.static": {},
-        "minecraft:behavior.melee_box_attack": {
-          "priority": 3,
-          "speed_multiplier": 1,
-          "track_target": true
-        }
+        "minecraft:jump.static": {}
       },
       "second_stage": {
         "minecraft:variant": { "value": 2 },
@@ -82,11 +94,22 @@
           "can_pass_doors": true,
           "can_break_doors": true
         },
-        "minecraft:jump.static": {},
+        "minecraft:jump.static": {}
+      },
+      "melee_mode": {
         "minecraft:behavior.melee_box_attack": {
           "priority": 3,
           "speed_multiplier": 1.35,
           "track_target": true
+        },
+        "minecraft:target_nearby_sensor": {
+          "inside_range": 4,
+          "outside_range": 4,
+          "must_see": false,
+          "on_outside_range": {
+            "event": "enter_ranged_mode",
+            "target": "self"
+          }
         }
       },
       "dying": {
@@ -98,6 +121,160 @@
           "time": 5,
           "looping": false,
           "time_down_event": { "event": "finish_death", "target": "self" }
+        }
+      },
+      "despawn_now": {
+        "minecraft:instant_despawn": {
+          "remove_child_entities": true
+        }
+      },
+      "thorn_cast": {
+        "minecraft:behavior.summon_entity": {
+          "priority": 0,
+          "control_flags": ["look", "move"],
+          "summon_choices": [
+            {
+              "weight": 1,
+              "do_casting": true,
+              "cooldown_time": 0,
+              "cast_duration": 2.25,
+              "min_activation_range": 4,
+              "max_activation_range": 40,
+              "sequence": [
+                {
+                  "shape": "circle",
+                  "target": "target",
+                  "base_delay": 0.75,
+                  "num_entities_spawned": 1,
+                  "entity_type": "zombie:demon_lord_claw",
+                  "summon_cap": 1,
+                  "summon_cap_radius": 2,
+                  "size": 0
+                }
+              ]
+            }
+          ]
+        },
+        "minecraft:target_nearby_sensor": {
+          "inside_range": 4,
+          "outside_range": 4,
+          "must_see": false,
+          "on_inside_range": {
+            "event": "enter_melee_mode",
+            "target": "self"
+          }
+        },
+        "minecraft:timer": {
+          "time": 2.25,
+          "looping": false,
+          "time_down_event": {
+            "event": "finish_thorn_skill",
+            "target": "self"
+          }
+        }
+      },
+      "minion_check": {
+        "minecraft:entity_sensor": {
+          "relative_range": false,
+          "subsensors": [
+            {
+              "event": "skip_minion_summon",
+              "minimum_count": 1,
+              "range": [20, 20],
+              "require_all": false,
+              "event_filters": {
+                "test": "is_family",
+                "subject": "other",
+                "value": "demon_minion"
+              }
+            },
+            {
+              "event": "summon_minion",
+              "minimum_count": 0,
+              "maximum_count": 0,
+              "range": [20, 20],
+              "require_all": false,
+              "event_filters": {
+                "test": "is_family",
+                "subject": "other",
+                "value": "demon_minion"
+              }
+            }
+          ]
+        },
+        "minecraft:target_nearby_sensor": {
+          "inside_range": 4,
+          "outside_range": 4,
+          "must_see": false,
+          "on_inside_range": {
+            "event": "enter_melee_mode",
+            "target": "self"
+          }
+        }
+      },
+      "minion_cast": {
+        "minecraft:behavior.summon_entity": {
+          "priority": 0,
+          "control_flags": ["look", "move"],
+          "summon_choices": [
+            {
+              "weight": 1,
+              "do_casting": true,
+              "cooldown_time": 0,
+              "cast_duration": 3.0417,
+              "min_activation_range": 0,
+              "max_activation_range": 40,
+              "sequence": [
+                {
+                  "shape": "circle",
+                  "target": "self",
+                  "base_delay": 1.5,
+                  "num_entities_spawned": 1,
+                  "entity_type": "zombie:hell_brute",
+                  "summon_cap": 1,
+                  "summon_cap_radius": 20,
+                  "size": 2
+                }
+              ]
+            },
+            {
+              "weight": 1,
+              "do_casting": true,
+              "cooldown_time": 0,
+              "cast_duration": 3.0417,
+              "min_activation_range": 0,
+              "max_activation_range": 40,
+              "sequence": [
+                {
+                  "shape": "circle",
+                  "target": "self",
+                  "base_delay": 1.5,
+                  "num_entities_spawned": 1,
+                  "entity_type": "zombie:emberstalker",
+                  "summon_cap": 1,
+                  "summon_cap_radius": 20,
+                  "size": 2
+                }
+              ]
+            }
+          ]
+        },
+        "minecraft:target_nearby_sensor": {
+          "inside_range": 4,
+          "outside_range": 4,
+          "must_see": false,
+          "on_inside_range": {
+            "event": "enter_melee_mode",
+            "target": "self"
+          }
+        },
+        "minecraft:timer": {
+          "time": 3.0417,
+          "looping": false,
+          "time_down_event": {
+            "event": "finish_minion_skill",
+            "target": "self"
+          }
         }
       }
     },
@@ -136,23 +313,175 @@
       "minecraft:behavior.random_look_around": { "priority": 9 }
     },
     "events": {
-      "minecraft:entity_spawned": { "add": { "component_groups": ["phase_one"] } },
+      "minecraft:entity_spawned": { "add": { "component_groups": ["phase_one", "melee_mode"] } },
+      "enter_melee_mode": {
+        "sequence": [
+          {
+            "set_property": {
+              "zombie:ranged_mode": false,
+              "zombie:thorn_skill": false,
+              "zombie:minion_skill": false
+            }
+          },
+          {
+            "remove": {
+              "component_groups": ["thorn_cast", "minion_check", "minion_cast"]
+            }
+          },
+          {
+            "add": {
+              "component_groups": ["melee_mode"]
+            }
+          }
+        ]
+      },
+      "enter_ranged_mode": {
+        "sequence": [
+          {
+            "set_property": {
+              "zombie:ranged_mode": true,
+              "zombie:thorn_skill": true,
+              "zombie:minion_skill": false
+            }
+          },
+          {
+            "remove": {
+              "component_groups": ["melee_mode"]
+            }
+          },
+          {
+            "add": {
+              "component_groups": ["thorn_cast"]
+            }
+          }
+        ]
+      },
       "begin_second_stage": {
-        "remove": { "component_groups": ["phase_one"] },
-        "add": { "component_groups": ["second_stage"] }
+        "sequence": [
+          {
+            "set_property": {
+              "zombie:ranged_mode": false,
+              "zombie:thorn_skill": false,
+              "zombie:minion_skill": false
+            }
+          },
+          {
+            "remove": { "component_groups": ["phase_one", "melee_mode", "thorn_cast", "minion_check", "minion_cast"] }
+          },
+          {
+            "add": { "component_groups": ["second_stage"] }
+          }
+        ]
       },
       "enter_fast_mode": {
         "remove": { "component_groups": ["second_stage"] },
-        "add": { "component_groups": ["fast_mode"] }
+        "add": { "component_groups": ["fast_mode", "melee_mode"] }
       },
       "begin_death": {
-        "remove": { "component_groups": ["phase_one", "second_stage", "fast_mode"] },
-        "add": { "component_groups": ["dying"] }
+        "sequence": [
+          {
+            "set_property": {
+              "zombie:ranged_mode": false,
+              "zombie:thorn_skill": false,
+              "zombie:minion_skill": false
+            }
+          },
+          {
+            "remove": {
+              "component_groups": ["phase_one", "second_stage", "fast_mode", "melee_mode", "thorn_cast", "minion_check", "minion_cast"]
+            }
+          },
+          {
+            "add": {
+              "component_groups": ["dying"]
+            }
+          }
+        ]
+      },
+      "finish_thorn_skill": {
+        "sequence": [
+          {
+            "set_property": {
+              "zombie:thorn_skill": false
+            }
+          },
+          {
+            "remove": {
+              "component_groups": ["thorn_cast"]
+            }
+          },
+          {
+            "add": {
+              "component_groups": ["minion_check"]
+            }
+          }
+        ]
+      },
+      "skip_minion_summon": {
+        "sequence": [
+          {
+            "set_property": {
+              "zombie:ranged_mode": false,
+              "zombie:thorn_skill": false,
+              "zombie:minion_skill": false
+            }
+          },
+          {
+            "remove": {
+              "component_groups": ["thorn_cast", "minion_check", "minion_cast"]
+            }
+          },
+          {
+            "add": {
+              "component_groups": ["melee_mode"]
+            }
+          }
+        ]
+      },
+      "summon_minion": {
+        "sequence": [
+          {
+            "set_property": {
+              "zombie:minion_skill": true
+            }
+          },
+          {
+            "remove": {
+              "component_groups": ["minion_check"]
+            }
+          },
+          {
+            "add": {
+              "component_groups": ["minion_cast"]
+            }
+          }
+        ]
+      },
+      "finish_minion_skill": {
+        "sequence": [
+          {
+            "set_property": {
+              "zombie:ranged_mode": false,
+              "zombie:thorn_skill": false,
+              "zombie:minion_skill": false
+            }
+          },
+          {
+            "remove": {
+              "component_groups": ["thorn_cast", "minion_check", "minion_cast"]
+            }
+          },
+          {
+            "add": {
+              "component_groups": ["melee_mode"]
+            }
+          }
+        ]
       },
       "finish_death": {
-        "queue_command": { "command": "event entity @s despawn" }
+        "add": { "component_groups": ["despawn_now"] }
       },
-      "despawn": { "remove": {} }
+      "despawn": { "add": { "component_groups": ["despawn_now"] } }
     }
   }
 }

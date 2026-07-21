@@ -20,7 +20,7 @@
         ]
       },
       "minecraft:durability": {
-        "max_durability": 1200
+        "max_durability": 2400
       },
       "minecraft:enchantable": {
         "slot": "bow",

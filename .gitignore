@@ -9,3 +9,5 @@
 !development_resource_packs/choascraft_RP/**
 
 !.gitignore
+
+**/.xdp-*

@@ -19,7 +19,7 @@
         "value": 15
       },
       "minecraft:durability": {
-        "max_durability": 500
+        "max_durability": 1000
       },
       "minecraft:fuel": {
         "duration": 115

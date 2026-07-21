@@ -1,0 +1,24 @@
+{
+  "format_version": "1.21.70",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "zombie:demon_lord_claw",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/demon/lord_demon_claw"
+      },
+      "geometry": {
+        "default": "geometry.lord_demon_claw"
+      },
+      "animations": {
+        "spawn": "animation.demon_claw_spawn"
+      },
+      "scripts": {
+        "animate": ["spawn"]
+      },
+      "render_controllers": ["controller.render.default"]
+    }
+  }
+}
