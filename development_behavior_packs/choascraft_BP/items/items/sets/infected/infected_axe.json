@@ -37,9 +37,6 @@
           "minecraft:is_axe"
         ]
       },
-      "zombie:onhitdamage": {
-        
-      },
       "minecraft:digger": {
         "use_efficiency": true,
         "destroy_speeds": [
@@ -264,4 +261,3 @@
     }
   }
 }
-

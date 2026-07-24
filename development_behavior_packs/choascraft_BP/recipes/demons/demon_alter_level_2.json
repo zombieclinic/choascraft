@@ -1,0 +1,19 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "zombie:demon_alter_level_2_upgrade"
+    },
+    "tags": ["chaos_level_1"],
+    "pattern": ["ASA", "HDH", "III"],
+    "key": {
+      "A": { "item": "zombie:demon_ash" },
+      "S": { "item": "zombie:corrupted_nether_star" },
+      "H": { "item": "zombie:demon_heart" },
+      "D": { "item": "zombie:demon_alter" },
+      "I": { "item": "zombie:demon_steel_ingot" }
+    },
+    "result": { "item": "zombie:demon_alter_level_2", "count": 1 },
+    "unlock": [{ "item": "zombie:corrupted_nether_star" }]
+  }
+}

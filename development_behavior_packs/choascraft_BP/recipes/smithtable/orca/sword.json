@@ -1,0 +1,12 @@
+{
+  "format_version": "1.26.10",
+  "minecraft:recipe_smithing_transform": {
+    "description": { "identifier": "zombie:smithing_netherite_orca_sword" },
+    "unlock": [{ "item": "zombie:orca_sword" }],
+    "tags": ["smithing_table"],
+    "template": "minecraft:netherite_upgrade_smithing_template",
+    "base": "zombie:orca_sword",
+    "addition": "minecraft:netherite_ingot",
+    "result": "zombie:orca_netherite_sword"
+  }
+}

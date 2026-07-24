@@ -1,0 +1,22 @@
+{
+  "format_version": "1.21.100",
+  "minecraft:recipe_shaped": {
+    "description": { "identifier": "zombie:jelly_sword_recipe" },
+    "tags": ["crafting_table"],
+    "pattern": [" J ", "JIJ", " S "],
+    "key": {
+      "J": { "tag": "zombie:jellyfish_jelly" },
+      "I": { "item": "minecraft:iron_ingot" },
+      "S": { "item": "minecraft:stick" }
+    },
+    "result": { "item": "zombie:jelly_sword", "count": 1 },
+    "unlock": [
+      { "item": "minecraft:iron_ingot" },
+      { "item": "zombie:jellyfish_jelly_jelly" },
+      { "item": "zombie:jellyfish_jelly_black" },
+      { "item": "zombie:jellyfish_jelly_green" },
+      { "item": "zombie:jellyfish_jelly_pink" },
+      { "item": "zombie:jellyfish_jelly_yellow" }
+    ]
+  }
+}

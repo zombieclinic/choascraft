@@ -1,0 +1,17 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": { "identifier": "zombie:coffin_backpack_altar_recipe" },
+    "tags": ["chaos_level_4"],
+    "pattern": ["FHF", "ICI", "FBF"],
+    "key": {
+      "F": { "item": "zombie:demon_flesh_block" },
+      "H": { "item": "zombie:demon_heart" },
+      "I": { "item": "zombie:demon_steel_ingot" },
+      "C": { "item": "minecraft:chest" },
+      "B": { "item": "zombie:demon_blood_flesh_block" }
+    },
+    "result": { "item": "zombie:coffin_backpack", "count": 1 },
+    "unlock": [{ "item": "zombie:demon_heart" }]
+  }
+}

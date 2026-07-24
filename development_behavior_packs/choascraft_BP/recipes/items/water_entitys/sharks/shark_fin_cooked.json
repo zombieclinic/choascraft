@@ -1,0 +1,10 @@
+{
+  "format_version": "1.26.10",
+  "minecraft:recipe_furnace": {
+    "description": { "identifier": "zombie:shark_fin_cooked_recipe" },
+    "unlock": [{ "item": "zombie:shark_fin" }],
+    "tags": ["furnace", "smoker", "campfire", "soul_campfire"],
+    "input": "zombie:shark_fin",
+    "output": "zombie:shark_fin_cooked"
+  }
+}

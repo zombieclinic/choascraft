@@ -1,0 +1,10 @@
+{
+  "format_version": "1.26.10",
+  "minecraft:recipe_furnace": {
+    "description": { "identifier": "zombie:bear_cooked_meat_recipe" },
+    "unlock": [{ "item": "zombie:bear_raw_meat" }],
+    "tags": ["furnace", "smoker", "campfire", "soul_campfire"],
+    "input": "zombie:bear_raw_meat",
+    "output": "zombie:bear_cooked_meat"
+  }
+}

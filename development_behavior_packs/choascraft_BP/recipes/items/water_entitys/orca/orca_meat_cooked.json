@@ -1,0 +1,10 @@
+{
+  "format_version": "1.26.10",
+  "minecraft:recipe_furnace": {
+    "description": { "identifier": "zombie:orca_meat_cooked_recipe" },
+    "unlock": [{ "item": "zombie:orca_meat" }],
+    "tags": ["furnace", "smoker", "campfire", "soul_campfire"],
+    "input": "zombie:orca_meat",
+    "output": "zombie:orca_meat_cooked"
+  }
+}

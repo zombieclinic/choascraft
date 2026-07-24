@@ -16,8 +16,25 @@
             ]
           }
         ]
+      },
+      {
+        "category_name": "construction",
+        "groups": [
+          {
+            "group_identifier": {
+              "icon": "zombie:demon_alter",
+              "name": "zombie:itemGroup.name.chaos_alter"
+            },
+            "items": [
+              "zombie:demon_alter",
+              "zombie:demon_alter_level_2",
+              "zombie:demon_alter_level_3",
+              "zombie:demon_alter_level_4",
+              "zombie:demon_alter_level_5"
+            ]
+          }
+        ]
       }
     ]
   }
 }
-

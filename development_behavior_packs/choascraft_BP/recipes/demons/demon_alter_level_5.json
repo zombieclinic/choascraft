@@ -1,0 +1,18 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "zombie:demon_alter_level_5_upgrade"
+    },
+    "tags": ["chaos_level_4"],
+    "pattern": ["SHS", "HDH", "SXS"],
+    "key": {
+      "S": { "item": "zombie:corrupted_nether_star" },
+      "H": { "item": "zombie:demon_heart" },
+      "D": { "item": "zombie:demon_alter_level_4" },
+      "X": { "item": "zombie:currupted_xp_block" }
+    },
+    "result": { "item": "zombie:demon_alter_level_5", "count": 1 },
+    "unlock": [{ "item": "zombie:demon_alter_level_4" }]
+  }
+}

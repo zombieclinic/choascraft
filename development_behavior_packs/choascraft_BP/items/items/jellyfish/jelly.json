@@ -23,10 +23,12 @@
         "movement_modifier": 1,
         "use_duration": 1
       },
+      "minecraft:tags": {
+        "tags": ["zombie:jellyfish_jelly"]
+      },
       "zombie:raw_food_sickness": {
         
       }
     }
   }
 }
-

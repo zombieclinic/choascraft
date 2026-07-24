@@ -1,0 +1,31 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shapeless": {
+    "description": {
+      "identifier": "zombie:echoheart_totem_recipe"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "ingredients": [
+      {
+        "item": "minecraft:echo_shard"
+      },
+      {
+        "item": "minecraft:totem_of_undying"
+      }
+    ],
+    "result": {
+      "item": "zombie:echoheart_totem",
+      "count": 1
+    },
+    "unlock": [
+      {
+        "item": "minecraft:echo_shard"
+      },
+      {
+        "item": "minecraft:totem_of_undying"
+      }
+    ]
+  }
+}

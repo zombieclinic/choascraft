@@ -1,0 +1,16 @@
+{
+  "format_version": "1.21.100",
+  "minecraft:recipe_shaped": {
+    "description": { "identifier": "zombie:infected_sword_recipe" },
+    "tags": ["crafting_table"],
+    "pattern": [" G ", "ETE", " I "],
+    "key": {
+      "G": { "item": "zombie:infected_goo" },
+      "E": { "item": "zombie:infected_eye" },
+      "T": { "item": "zombie:infected_tablet" },
+      "I": { "item": "minecraft:iron_sword" }
+    },
+    "result": { "item": "zombie:infected_sword", "count": 1 },
+    "unlock": [{ "item": "zombie:infected_tablet" }]
+  }
+}

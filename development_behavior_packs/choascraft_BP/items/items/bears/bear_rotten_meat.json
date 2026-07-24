@@ -28,11 +28,10 @@
           "minecraft:is_meat"
         ]
       },
-      "zombie:rottenfood": {
+      "zombie:raw_food_sickness": {
         
       },
       "minecraft:use_animation": "eat"
     }
   }
 }
-

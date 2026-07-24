@@ -4,8 +4,7 @@
     "description": {
       "identifier": "zombie:chaos_sword",
       "menu_category": {
-        "category": "equipment",
-        "group": "minecraft:itemGroup.name.sword"
+        "category": "none"
       }
     },
     "components": {
@@ -24,7 +23,7 @@
       "minecraft:display_name": {
         "value": "Chaos Sword"
       },
-      "minecraft:icon": "zombie_chaos_sword",
+      "minecraft:icon": "zombie_hell_sword",
       "minecraft:hand_equipped": true,
       "minecraft:durability": {
         "damage_chance": {

@@ -4,8 +4,7 @@
     "description": {
       "identifier": "zombie:chaos_greatsword",
       "menu_category": {
-        "category": "equipment",
-        "group": "minecraft:itemGroup.name.sword"
+        "category": "none"
       }
     },
     "components": {
@@ -24,7 +23,7 @@
       "minecraft:display_name": {
         "value": "item.zombie:chaos_greatsword.name"
       },
-      "minecraft:icon": "zombie_chaos_greatsword",
+      "minecraft:icon": "zombie_hell_sword",
       "minecraft:hand_equipped": true,
       "minecraft:durability": {
         "damage_chance": {

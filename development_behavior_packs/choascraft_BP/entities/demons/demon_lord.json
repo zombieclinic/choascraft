@@ -6,6 +6,14 @@
       "spawn_category": "monster",
       "is_spawnable": true,
       "is_summonable": true,
+            "animations": {
+        "death": "controller.animation.chaos_demon_lord"
+      },
+      "scripts": {
+        "animate": [
+          "death"
+        ]
+      },
       "properties": {
         "zombie:thorn_skill": {
           "type": "bool",
@@ -124,8 +132,8 @@
         }
       },
       "despawn_now": {
-        "minecraft:instant_despawn": {
-          "remove_child_entities": true
+        "minecraft:skin_id": {
+          "value": 2
         }
       },
       "thorn_cast": {
@@ -286,6 +294,9 @@
       "minecraft:fire_immune": {},
       "minecraft:physics": {},
       "minecraft:nameable": {},
+      "minecraft:loot": {
+        "table": "loot_tables/entities/demons/demon_lord.json"
+      },
       "minecraft:type_family": { "family": ["demon_lord", "demon", "monster", "mob"] },
       "minecraft:breathable": {
         "total_supply": 15,

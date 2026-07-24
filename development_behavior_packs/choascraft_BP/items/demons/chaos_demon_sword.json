@@ -3,9 +3,8 @@
   "minecraft:item": {
     "description": {
       "identifier": "zombie:chaos_demon_sword",
-      "menu_category": {
-        "category": "equipment",
-        "group": "minecraft:itemGroup.name.sword"
+       "menu_category": {
+        "category": "none"
       }
     },
     "components": {
@@ -24,7 +23,7 @@
       "minecraft:display_name": {
         "value": "item.zombie:chaos_demon_sword.name"
       },
-      "minecraft:icon": "zombie_chaos_demon_sword",
+      "minecraft:icon": "zombie_hell_sword",
       "minecraft:hand_equipped": true,
       "minecraft:durability": {
         "damage_chance": {

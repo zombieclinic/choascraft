@@ -1,0 +1,22 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.chaos_demon_lord": {
+      "initial_state": "default",
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "state_1": "query.skin_id == 2"
+            }
+          ]
+        },
+        "state_1": {
+          "on_entry": [
+            "/kill @s"
+          ]
+        }
+      }
+    }
+  }
+}

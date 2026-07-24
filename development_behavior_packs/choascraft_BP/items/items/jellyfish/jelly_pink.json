@@ -11,8 +11,10 @@
       "minecraft:display_name": {
         "value": "Jelly Pink"
       },
-      "minecraft:icon": "zombie_jellyfish_jelly_pink"
+      "minecraft:icon": "zombie_jellyfish_jelly_pink",
+      "minecraft:tags": {
+        "tags": ["zombie:jellyfish_jelly"]
+      }
     }
   }
 }
-

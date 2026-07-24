@@ -3,25 +3,89 @@
   "minecraft:block": {
     "description": {
       "identifier": "zombie:demon_alter_level_2",
-      "menu_category": { "category": "construction", "group": "minecraft:itemGroup.name.chaosAltars" },
-      "traits": { "minecraft:placement_direction": { "enabled_states": ["minecraft:cardinal_direction"] } }
+      "menu_category": {
+        "category": "construction",
+        "group": "zombie:itemGroup.name.chaos_alter"
+      },
+      "traits": {
+        "minecraft:placement_direction": {
+          "enabled_states": [
+            "minecraft:cardinal_direction"
+          ]
+        }
+      }
     },
     "components": {
       "minecraft:destructible_by_explosion": true,
-      "minecraft:destructible_by_mining": { "seconds_to_destroy": 0.75 },
+      "minecraft:destructible_by_mining": {
+        "seconds_to_destroy": 0.75
+      },
       "minecraft:geometry": "geometry.demon_alter",
-      "minecraft:material_instances": { "*": { "texture": "zombie_demon_alter_level_1", "render_method": "opaque" } },
+      "minecraft:material_instances": {
+        "*": {
+          "texture": "zombie_demon_alter_level_1",
+          "render_method": "opaque"
+        }
+      },
       "minecraft:display_name": "Demon Altar - Tier 2",
       "minecraft:flammable": false,
-      "minecraft:redstone_conductivity": { "allows_wire_to_step_down": true, "redstone_conductor": true },
-      "minecraft:redstone_consumer": { "min_power": 1 },
-      "minecraft:crafting_table": { "table_name": "Chaos Altar - Tier 2", "crafting_tags": ["chaos_level_1", "chaos_level_2"] },
-      "minecraft:tags": ["minecraft:is_pickaxe_item_destructible"], "zombie:demon_alter": {}, "minecraft:map_color": "#421D22"
+      "minecraft:redstone_conductivity": {
+        "allows_wire_to_step_down": true,
+        "redstone_conductor": true
+      },
+      "minecraft:redstone_consumer": {
+        "min_power": 1
+      },
+      "minecraft:crafting_table": {
+        "table_name": "Chaos Crafter",
+        "crafting_tags": [
+          "chaos_level_1",
+          "chaos_level_2"
+        ]
+      },
+      "minecraft:tags": [
+        "minecraft:is_pickaxe_item_destructible"
+      ],
+      "zombie:demon_alter": {},
+      "minecraft:map_color": "#421D22"
     },
     "permutations": [
-      { "condition": "q.block_state('minecraft:cardinal_direction') == 'south'", "components": { "minecraft:transformation": { "rotation": [0, 180, 0] } } },
-      { "condition": "q.block_state('minecraft:cardinal_direction') == 'east'", "components": { "minecraft:transformation": { "rotation": [0, 90, 0] } } },
-      { "condition": "q.block_state('minecraft:cardinal_direction') == 'west'", "components": { "minecraft:transformation": { "rotation": [0, 270, 0] } } }
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'south'",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [
+              0,
+              180,
+              0
+            ]
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'east'",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [
+              0,
+              90,
+              0
+            ]
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'west'",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [
+              0,
+              270,
+              0
+            ]
+          }
+        }
+      }
     ]
   }
 }
