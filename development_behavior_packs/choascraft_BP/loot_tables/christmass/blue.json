@@ -1,0 +1,493 @@
+{
+	"pools": [
+		{
+			"rolls": {
+				"min": 1,
+				"max": 5
+			},
+			"entries": [
+				{
+					"type": "item",
+					"name": "zombie:gingerbread_cookie",
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 15,
+								"max": 32
+							}
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "zombie:ortimate_cookie",
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 15,
+								"max": 32
+							}
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "zombie:ribbon_cookie",
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 15,
+								"max": 32
+							}
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "zombie:santa_cookie",
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 15,
+								"max": 32
+							}
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "zombie:stocking_cookie",
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 15,
+								"max": 32
+							}
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "zombie:tree_cookie",
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 15,
+								"max": 32
+							}
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "zombie:gingerbread_iceing",
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 15,
+								"max": 32
+							}
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "zombie:gingerbread_window",
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 15,
+								"max": 32
+							}
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "zombie:gingerbread",
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 15,
+								"max": 32
+							}
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "zombie:gingerbreadballs",
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 15,
+								"max": 32
+							}
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "zombie:gingerbreadplandot",
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 15,
+								"max": 32
+							}
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "zombie:gingerbreadtreeplain",
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 15,
+								"max": 32
+							}
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "zombie:gingerbreadtreeicing",
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 15,
+								"max": 32
+							}
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "zombie:gingerbread_window1",
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 15,
+								"max": 32
+							}
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "zombie:christmas_light_blue",
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 15,
+								"max": 32
+							}
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "zombie:christmas_light_multicolor",
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 15,
+								"max": 32
+							}
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "zombie:christmas_light_cyan",
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 15,
+								"max": 32
+							}
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "zombie:christmas_light_green",
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 15,
+								"max": 32
+							}
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "zombie:christmas_light_light_blue",
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 15,
+								"max": 32
+							}
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "zombie:christmas_light_magenta",
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 15,
+								"max": 32
+							}
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "zombie:christmas_light_pink",
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 15,
+								"max": 32
+							}
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "zombie:christmas_light_purple",
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 15,
+								"max": 32
+							}
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "zombie:christmas_light_red",
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 15,
+								"max": 32
+							}
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "zombie:christmas_light_yellow",
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 15,
+								"max": 32
+							}
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "zombie:santa_sign",
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 15,
+								"max": 32
+							}
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "zombie:mistletoe_cheer_stocking",
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 15,
+								"max": 32
+							}
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "zombie:christmas_tree",
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 15,
+								"max": 32
+							}
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "zombie:magicsnow",
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 15,
+								"max": 32
+							}
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "zombie:bluecandycane_seeds",
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 15,
+								"max": 32
+							}
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "zombie:purplecandycane_seeds",
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 15,
+								"max": 32
+							}
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "zombie:redcandycane_seeds",
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 15,
+								"max": 32
+							}
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "zombie:decorated_blue_present",
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 15,
+								"max": 32
+							}
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "zombie:decorated_green_present",
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 15,
+								"max": 32
+							}
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "zombie:decorated_lucky_present",
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 15,
+								"max": 32
+							}
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "zombie:decorated_pink_present",
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 15,
+								"max": 32
+							}
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "zombie:decorated_purple_present",
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 15,
+								"max": 32
+							}
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "zombie:decorated_red_present",
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 15,
+								"max": 32
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

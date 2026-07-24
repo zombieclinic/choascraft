@@ -1,0 +1,39 @@
+{
+	"format_version": "1.21.40",
+	"minecraft:recipe_shapeless": {
+		"description": {
+			"identifier": "zombie:candycane_dust_recipe"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"unlock": [
+			{
+				"item": "zombie:bluecandycane_item"
+			},
+			{
+				"item": "zombie:purplecandycane_item"
+			},
+			{
+				"item": "zombie:redcandycane_item"
+			}
+		],
+		"ingredients": [
+			{
+				"item": "zombie:bluecandycane_item"
+			},
+			{
+				"item": "zombie:purplecandycane_item"
+			},
+			{
+				"item": "zombie:redcandycane_item"
+			}
+		],
+		"result": [
+			{
+				"item": "zombie:candycane_dust",
+				"count": 3
+			}
+		]
+	}
+}

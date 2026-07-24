@@ -1,0 +1,49 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.santa_zombie_hard": {
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"swing": "variable.attack_time>=0.01"
+						},
+						{
+							"walking": "query.ground_speed"
+						}
+					],
+					"animations": [
+						"humanoid_base_pose",
+						"bob"
+					]
+				},
+				"swing": {
+					"animations": [
+						"swing"
+					],
+					"transitions": [
+						{
+							"default": "query.all_animations_finished"
+						},
+						{
+							"walking": "query.ground_speed&&query.all_animations_finished"
+						}
+					]
+				},
+				"walking": {
+					"animations": [
+						"move"
+					],
+					"transitions": [
+						{
+							"default": "!query.ground_speed"
+						},
+						{
+							"swing": "variable.attack_time>=0.01"
+						}
+					]
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,11 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:weighted_random_feature": {
+    "description": { "identifier": "zombie:candycane_mix_feature" },
+    "features": [
+      ["zombie:red_candycane_feature", 4],
+      ["zombie:blue_candycane_feature", 3],
+      ["zombie:purple_candycane_feature", 2]
+    ]
+  }
+}

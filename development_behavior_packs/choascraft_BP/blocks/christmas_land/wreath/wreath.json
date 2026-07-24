@@ -1,0 +1,487 @@
+{
+	"format_version": "1.20.40",
+	"minecraft:block": {
+		"description": {
+			"identifier": "zombie:christmas_wreath",
+			"menu_category": {
+				"category": "construction"
+			},
+			"traits": {
+				"minecraft:placement_direction": {
+					"enabled_states": [
+						"minecraft:cardinal_direction"
+					]
+				},
+				"minecraft:placement_position": {
+					"enabled_states": [
+						"minecraft:block_face"
+					]
+				}
+			}
+		},
+		"components": {
+			"tag:custom": {},
+			"minecraft:light_dampening": 0,
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "christmas_wreath",
+					"render_method": "alpha_test"
+				}
+			},
+			"minecraft:map_color": "#0AFB52",
+			"minecraft:destructible_by_mining": {
+				"seconds_to_destroy": 1
+			},
+			"minecraft:display_name": "Christmas Wreath",
+			"minecraft:destructible_by_explosion": {
+				"explosion_resistance": 13
+			}
+		},
+		"permutations": [
+			{
+				"condition": "query.block_state('minecraft:block_face') == 'north'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							0,
+							0
+						]
+					},
+					"minecraft:geometry": "geometry.wreath.wall",
+					"minecraft:selection_box": {
+						"origin": [
+							-5.25,
+							1.6,
+							6.7
+						],
+						"size": [
+							10.5,
+							9.2,
+							1
+						]
+					},
+					"minecraft:collision_box": {
+						"origin": [
+							-5.25,
+							1.6,
+							6.7
+						],
+						"size": [
+							10.5,
+							9.2,
+							1
+						]
+					}
+				}
+			},
+			{
+				"condition": "query.block_state('minecraft:block_face') == 'south'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							180,
+							0
+						]
+					},
+					"minecraft:geometry": "geometry.wreath.wall",
+					"minecraft:selection_box": {
+						"origin": [
+							-5.25,
+							1.6,
+							6.7
+						],
+						"size": [
+							10.5,
+							9.2,
+							1
+						]
+					},
+					"minecraft:collision_box": {
+						"origin": [
+							-5.25,
+							1.6,
+							6.7
+						],
+						"size": [
+							10.5,
+							9.2,
+							1
+						]
+					}
+				}
+			},
+			{
+				"condition": "query.block_state('minecraft:block_face') == 'east'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							-90,
+							0
+						]
+					},
+					"minecraft:geometry": "geometry.wreath.wall",
+					"minecraft:selection_box": {
+						"origin": [
+							-5.25,
+							1.6,
+							6.7
+						],
+						"size": [
+							10.5,
+							9.2,
+							1
+						]
+					},
+					"minecraft:collision_box": {
+						"origin": [
+							-5.25,
+							1.6,
+							6.7
+						],
+						"size": [
+							10.5,
+							9.2,
+							1
+						]
+					}
+				}
+			},
+			{
+				"condition": "query.block_state('minecraft:block_face') == 'west'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							90,
+							0
+						]
+					},
+					"minecraft:geometry": "geometry.wreath.wall",
+					"minecraft:selection_box": {
+						"origin": [
+							-5.25,
+							1.6,
+							6.7
+						],
+						"size": [
+							10.5,
+							9.2,
+							1
+						]
+					},
+					"minecraft:collision_box": {
+						"origin": [
+							-5.25,
+							1.6,
+							6.7
+						],
+						"size": [
+							10.5,
+							9.2,
+							1
+						]
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('minecraft:cardinal_direction') == 'north' && query.block_state('minecraft:block_face') == 'down'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							180,
+							0
+						]
+					},
+					"minecraft:collision_box": {
+						"origin": [
+							-5.25,
+							6.8,
+							-0.5
+						],
+						"size": [
+							10.5,
+							9.2,
+							1
+						]
+					},
+					"minecraft:selection_box": {
+						"origin": [
+							-5.25,
+							6.8,
+							-0.5
+						],
+						"size": [
+							10.5,
+							9.2,
+							1
+						]
+					},
+					"minecraft:geometry": "geometry.wreath.roof"
+				}
+			},
+			{
+				"condition": "q.block_state('minecraft:cardinal_direction') == 'south' && query.block_state('minecraft:block_face') == 'down'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							0,
+							0
+						]
+					},
+					"minecraft:geometry": "geometry.wreath.roof",
+					"minecraft:collision_box": {
+						"origin": [
+							-5.25,
+							6.8,
+							-0.5
+						],
+						"size": [
+							10.5,
+							9.2,
+							1
+						]
+					},
+					"minecraft:selection_box": {
+						"origin": [
+							-5.25,
+							6.8,
+							-0.5
+						],
+						"size": [
+							10.5,
+							9.2,
+							1
+						]
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('minecraft:cardinal_direction') == 'east' && query.block_state('minecraft:block_face') == 'down'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							90,
+							0
+						]
+					},
+					"minecraft:geometry": "geometry.wreath.roof",
+					"minecraft:collision_box": {
+						"origin": [
+							-5.25,
+							6.8,
+							-0.5
+						],
+						"size": [
+							10.5,
+							9.2,
+							1
+						]
+					},
+					"minecraft:selection_box": {
+						"origin": [
+							-5.25,
+							6.8,
+							-0.5
+						],
+						"size": [
+							10.5,
+							9.2,
+							1
+						]
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('minecraft:cardinal_direction') == 'west' && query.block_state('minecraft:block_face') == 'down'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							270,
+							0
+						]
+					},
+					"minecraft:geometry": "geometry.wreath.roof",
+					"minecraft:collision_box": {
+						"origin": [
+							-5.25,
+							6.8,
+							-0.5
+						],
+						"size": [
+							10.5,
+							9.2,
+							1
+						]
+					},
+					"minecraft:selection_box": {
+						"origin": [
+							-5.25,
+							6.8,
+							-0.5
+						],
+						"size": [
+							10.5,
+							9.2,
+							1
+						]
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('minecraft:cardinal_direction') == 'north' && query.block_state('minecraft:block_face') == 'up'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							180,
+							0
+						]
+					},
+					"minecraft:geometry": "geometry.wreath",
+					"minecraft:collision_box": {
+						"origin": [
+							-5.25,
+							0,
+							-4.75
+						],
+						"size": [
+							10.5,
+							1,
+							9.5
+						]
+					},
+					"minecraft:selection_box": {
+						"origin": [
+							-5.25,
+							0,
+							-4.75
+						],
+						"size": [
+							10.5,
+							1,
+							9.5
+						]
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('minecraft:cardinal_direction') == 'south' && query.block_state('minecraft:block_face') == 'up'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							0,
+							0
+						]
+					},
+					"minecraft:geometry": "geometry.wreath",
+					"minecraft:collision_box": {
+						"origin": [
+							-5.25,
+							0,
+							-4.75
+						],
+						"size": [
+							10.5,
+							1,
+							9.5
+						]
+					},
+					"minecraft:selection_box": {
+						"origin": [
+							-5.25,
+							0,
+							-4.75
+						],
+						"size": [
+							10.5,
+							1,
+							9.5
+						]
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('minecraft:cardinal_direction') == 'east' && query.block_state('minecraft:block_face') == 'up'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							90,
+							0
+						]
+					},
+					"minecraft:geometry": "geometry.wreath",
+					"minecraft:collision_box": {
+						"origin": [
+							-5.25,
+							0,
+							-4.75
+						],
+						"size": [
+							10.5,
+							1,
+							9.5
+						]
+					},
+					"minecraft:selection_box": {
+						"origin": [
+							-5.25,
+							0,
+							-4.75
+						],
+						"size": [
+							10.5,
+							1,
+							9.5
+						]
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('minecraft:cardinal_direction') == 'west' && query.block_state('minecraft:block_face') == 'up'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							270,
+							0
+						]
+					},
+					"minecraft:geometry": "geometry.wreath",
+					"minecraft:collision_box": {
+						"origin": [
+							-5.25,
+							0,
+							-4.75
+						],
+						"size": [
+							10.5,
+							1,
+							9.5
+						]
+					},
+					"minecraft:selection_box": {
+						"origin": [
+							-5.25,
+							0,
+							-4.75
+						],
+						"size": [
+							10.5,
+							1,
+							9.5
+						]
+					}
+				}
+			}
+		]
+	}
+}

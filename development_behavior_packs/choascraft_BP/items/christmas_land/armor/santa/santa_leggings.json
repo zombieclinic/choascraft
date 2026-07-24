@@ -1,0 +1,64 @@
+{
+	"format_version": "1.21.40",
+	"minecraft:item": {
+		"description": {
+			"identifier": "zombie:santa_leggins",
+			"menu_category": {
+				"category": "equipment",
+				"group": "itemGroup.name.leggings"
+			}
+		},
+		"components": {
+			"minecraft:wearable": {
+				"protection": 6,
+				"slot": "slot.armor.legs"
+			},
+			"minecraft:tags": {
+				"tags": [
+					"minecraft:is_armor",
+					"minecraft:trimmable_armors"
+				]
+			},
+			"minecraft:icon": "santa_leggins",
+			"minecraft:display_name": {
+				"value": "Santa Leggings"
+			},
+			"minecraft:hover_text_color": "red",
+			"minecraft:repairable": {
+				"repair_items": [
+					{
+						"items": [
+							"zombie:santa_leggins"
+						],
+						"repair_amount": 50
+					},
+					{
+						"items": [
+							"zombie:candycane_dust"
+						],
+						"repair_amount": "math.random(4,25)"
+					}
+				]
+			},
+			"minecraft:enchantable": {
+				"slot": "armor_legs",
+				"value": 15
+			},
+			"minecraft:damage_absorption": {
+				"absorbable_causes": [
+					"freezing",
+					"fire_tick",
+					"lightning",
+					"fly_into_wall"
+				]
+			},
+			"minecraft:durability": {
+				"max_durability": 900,
+				"damage_chance": {
+					"min": 60,
+					"max": 100
+				}
+			}
+		}
+	}
+}

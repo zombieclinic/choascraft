@@ -32,8 +32,8 @@
       "minecraft:tags": [
         "minecraft:is_pickaxe_item_destructible"
       ],
+      "zombie:demon_lord_ritual": {},
       "minecraft:map_color": "#2D0F13"
     }
   }
 }
-

@@ -1,0 +1,15 @@
+{
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "item",
+					"name": "zombie:zombie_santa_mask"
+				}
+			]
+		}
+	]
+}
+
+

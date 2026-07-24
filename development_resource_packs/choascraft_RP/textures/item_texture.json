@@ -608,6 +608,69 @@
     },
     "zombie_hemovial": {
       "textures": "textures/blood/items/Hemovial"
+    },
+    "zombie_christmas_book": {
+      "textures": "textures/christmas/items/christmass/christmas_book"
+    },
+    "zombie_redcandycane_item": {
+      "textures": "textures/christmas/items/christmass/candycane_red"
+    },
+    "zombie_bluecandycane_item": {
+      "textures": "textures/christmas/items/christmass/candycane_blue"
+    },
+    "zombie_purplecandycane_item": {
+      "textures": "textures/christmas/items/christmass/candycane_purple"
+    },
+    "zombie_redcandycane_item_seeds": {
+      "textures": "textures/christmas/items/christmass/candycane_red_seeds"
+    },
+    "zombie_bluecandycane_item_seeds": {
+      "textures": "textures/christmas/items/christmass/candycane_blue_seeds"
+    },
+    "zombie_purplecandycane_item_seeds": {
+      "textures": "textures/christmas/items/christmass/candycane_purple_seeds"
+    },
+    "zombie_candycane_dust": {
+      "textures": "textures/christmas/items/christmass/candycane_dust"
+    },
+    "santa_chest": {
+      "textures": "textures/christmas/items/christmass/armor_wepions/santas_chest"
+    },
+    "santa_leggins": {
+      "textures": "textures/christmas/items/christmass/armor_wepions/santa_leggings"
+    },
+    "santa_boots": {
+      "textures": "textures/christmas/items/christmass/armor_wepions/santas_boots"
+    },
+    "santa_hat_mask": {
+      "textures": "textures/christmas/items/christmass/armor_wepions/Santas_hat_icon"
+    },
+    "zombie_santa_sword_icon": {
+      "textures": "textures/christmas/items/christmass/armor_wepions/santa_sword_icon"
+    },
+    "zombie_santa_mask": {
+      "textures": "textures/christmas/items/christmass/armor_wepions/zombie_santa_mask_icon"
+    },
+    "zombie_gingerbread_cookie": {
+      "textures": "textures/christmas/particles/christmas/gingerbread"
+    },
+    "zombie_ortimate_cookie": {
+      "textures": "textures/christmas/particles/christmas/ortimate"
+    },
+    "zombie_ribbion_cookie": {
+      "textures": "textures/christmas/particles/christmas/ribbion_cookie"
+    },
+    "zombie_santa_cookie": {
+      "textures": "textures/christmas/particles/christmas/santa"
+    },
+    "snow_cookie": {
+      "textures": "textures/christmas/particles/christmas/snow"
+    },
+    "stocking_cookie": {
+      "textures": "textures/christmas/particles/christmas/stocking"
+    },
+    "tree_cookie": {
+      "textures": "textures/christmas/particles/christmas/tree"
     }
   }
 }

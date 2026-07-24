@@ -43,6 +43,41 @@
           "weight": 1
         }
       ]
+    },
+    {
+      "conditions": [
+        { "condition": "killed_by_player" },
+        { "condition": "random_chance", "chance": 0.05 }
+      ],
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:written_book",
+          "functions": [
+            {
+              "function": "set_book_contents",
+              "author": "Kael'Vorr",
+              "title": "The Flesh Without Form",
+              "pages": [
+                "The Flesh Without Form\n\nNotes on Flesh Pods, living blood, and growth without a body.",
+                "Origin\n\nKael'Vorr found a dimension where flesh survived after every animal had vanished. It no longer remembered what shape it belonged to.",
+                "The Pod\n\nA Flesh Pod is an answer without a question: tissue that grows, feeds, and protects itself without organs or identity.",
+                "Arrival\n\nHe transported a single sample to the Overworld. Stable soil gave it structure; rain gave it reach; nearby life gave it examples.",
+                "Not a Plant\n\nIt may root and spread, but it is not vegetation. It imitates the useful behavior of plants while remaining living flesh.",
+                "Blood Growth\n\nBlood blocks, flesh blocks, vines, and roots are parts of one adaptable system. Separate them and each tries to become the whole.",
+                "Flesh Pod Behavior\n\nPods defend their growth and supply Blood Meat. Approach as though the ground itself has noticed you.",
+                "Blood Meat\n\nIt can be cooked in a furnace, smoker, campfire, or soul campfire. Cooking makes it safer, not less unsettling.",
+                "Chaos Material\n\nLiving flesh repairs itself. Kael'Vorr uses that property in Chaos equipment and the Coffin Backpack.",
+                "Coffin Backpack\n\nAt a Tier IV Chaos Altar, combine demon flesh, a Demon Heart, Demon Steel, a chest, and blood-flesh material.",
+                "Chaos Keys\n\nA rare Flesh Pod may hold a Chaos Key. Kael'Vorr enjoys placing doors inside things that should not have pockets.",
+                "Containment\n\nFire slows growth. Clean borders help. Curiosity is not containment.",
+                "Kael'Vorr's Note\n\nA body is merely flesh agreeing on a direction. I removed the agreement."
+              ]
+            }
+          ]
+        }
+      ]
     }
   ]
 }

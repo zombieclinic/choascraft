@@ -31,7 +31,7 @@
               "minecraft:soulsand_valley",
               "minecraft:basalt_deltas"
             ],
-            "amount": 0.35,
+            "amount": 0.25,
             "noise_frequency_scale": 0.18
           }
         ]

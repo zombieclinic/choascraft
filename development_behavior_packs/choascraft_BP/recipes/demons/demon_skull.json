@@ -1,0 +1,23 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "zombie:demon_skull_recipe"
+    },
+    "tags": ["crafting_table"],
+    "pattern": ["ABA", "BHB", "AAA"],
+    "key": {
+      "A": { "item": "zombie:demon_ash" },
+      "B": { "item": "minecraft:bone_block" },
+      "H": { "item": "zombie:demon_heart" }
+    },
+    "result": {
+      "item": "zombie:demon_skull",
+      "count": 1
+    },
+    "unlock": [
+      { "item": "zombie:demon_ash" },
+      { "item": "zombie:demon_heart" }
+    ]
+  }
+}

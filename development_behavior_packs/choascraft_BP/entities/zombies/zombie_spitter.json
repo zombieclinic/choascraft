@@ -5,7 +5,13 @@
       "identifier": "zombie:spitter",
       "spawn_category": "monster",
       "is_spawnable": false,
-      "is_summonable": true
+      "is_summonable": true,
+      "animations": {
+        "delayed_death": "controller.animation.infected_zombie_death"
+      },
+      "scripts": {
+        "animate": ["delayed_death"]
+      }
     },
     "component_groups": {
       "range": {
@@ -163,6 +169,20 @@
                 ],
                 "event": "stage_3"
               }
+            },
+            {
+              "deals_damage": "no",
+              "on_damage": {
+                "filters": [
+                  {
+                    "test": "actor_health",
+                    "subject": "self",
+                    "operator": "<=",
+                    "value": 1
+                  }
+                ],
+                "event": "death"
+              }
             }
           ]
         }
@@ -209,13 +229,6 @@
               "deals_damage": "no"
             }
           ]
-        },
-        "minecraft:timer": {
-          "time": 2,
-          "time_down_event": {
-            "event": "finish_death_animation",
-            "target": "self"
-          }
         }
       },
       "minecraft:zombie_baby": {
@@ -236,6 +249,24 @@
       }
     },
     "components": {
+      "minecraft:damage_sensor": {
+        "triggers": [
+          {
+            "deals_damage": "no",
+            "on_damage": {
+              "filters": [
+                {
+                  "test": "actor_health",
+                  "subject": "self",
+                  "operator": "<=",
+                  "value": 1
+                }
+              ],
+              "event": "death"
+            }
+          }
+        ]
+      },
       "minecraft:annotation.break_door": {
         
       },
@@ -364,11 +395,6 @@
           ]
         }
       },
-      "finish_death_animation": {
-        "queue_command": {
-          "command": "kill @s"
-        }
-      },
       "stage_2": {
         "add": {
           "component_groups": [
@@ -448,4 +474,3 @@
     }
   }
 }
-

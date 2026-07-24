@@ -1,0 +1,31 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.santa_sword": {
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"swing": "query.main_hand_item_use_duration>0"
+						}
+					],
+					"animations": [
+						{
+							"idle": "c.is_first_person"
+						}
+					]
+				},
+				"swing": {
+					"animations": [
+						"swing"
+					],
+					"transitions": [
+						{
+							"default": "query.all_animations_finished"
+						}
+					]
+				}
+			}
+		}
+	}
+}

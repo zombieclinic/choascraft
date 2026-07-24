@@ -1,0 +1,491 @@
+{
+	"format_version": "1.20.40",
+	"minecraft:block": {
+		"description": {
+			"identifier": "zombie:zombie_santa_head",
+			"menu_category": {
+				"category": "construction"
+			},
+			"traits": {
+				"minecraft:placement_direction": {
+					"enabled_states": [
+						"minecraft:cardinal_direction"
+					]
+				},
+				"minecraft:placement_position": {
+					"enabled_states": [
+						"minecraft:block_face"
+					]
+				}
+			}
+		},
+		"components": {
+			"tag:custom": {},
+			"minecraft:light_dampening": 0,
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "zombie_santa_head",
+					"render_method": "alpha_test"
+				}
+			},
+			"minecraft:map_color": "#FB0A0A",
+			"minecraft:destructible_by_mining": {
+				"seconds_to_destroy": 1
+			},
+			"minecraft:display_name": "Zombie Santa Block",
+			"minecraft:destructible_by_explosion": {
+				"explosion_resistance": 13
+			},
+			"minecraft:loot": "loot_tables/christmass/zombie_santa_mask.json"
+		},
+		"permutations": [
+			{
+				"condition": "query.block_state('minecraft:block_face') == 'north'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							0,
+							0
+						]
+					},
+					"minecraft:geometry": "geometry.zombiesanta_head_wall",
+					"minecraft:selection_box": {
+						"origin": [
+							-5.4,
+							2.5,
+							-3.2
+						],
+						"size": [
+							10.8,
+							10.8,
+							11.2
+						]
+					},
+					"minecraft:collision_box": {
+						"origin": [
+							-5.4,
+							2.5,
+							-3.2
+						],
+						"size": [
+							10.8,
+							10.8,
+							11.2
+						]
+					}
+				}
+			},
+			{
+				"condition": "query.block_state('minecraft:block_face') == 'south'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							180,
+							0
+						]
+					},
+					"minecraft:geometry": "geometry.zombiesanta_head_wall",
+					"minecraft:selection_box": {
+						"origin": [
+							-5.4,
+							2.5,
+							-3.2
+						],
+						"size": [
+							10.8,
+							10.8,
+							11.2
+						]
+					},
+					"minecraft:collision_box": {
+						"origin": [
+							-5.4,
+							2.5,
+							-3.2
+						],
+						"size": [
+							10.8,
+							10.8,
+							11.2
+						]
+					}
+				}
+			},
+			{
+				"condition": "query.block_state('minecraft:block_face') == 'east'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							-90,
+							0
+						]
+					},
+					"minecraft:geometry": "geometry.zombiesanta_head_wall",
+					"minecraft:selection_box": {
+						"origin": [
+							-5.4,
+							2.5,
+							-3.2
+						],
+						"size": [
+							10.8,
+							10.8,
+							11.2
+						]
+					},
+					"minecraft:collision_box": {
+						"origin": [
+							-5.4,
+							2.5,
+							-3.2
+						],
+						"size": [
+							10.8,
+							10.8,
+							11.2
+						]
+					}
+				}
+			},
+			{
+				"condition": "query.block_state('minecraft:block_face') == 'west'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							90,
+							0
+						]
+					},
+					"minecraft:geometry": "geometry.zombiesanta_head_wall",
+					"minecraft:selection_box": {
+						"origin": [
+							-5.4,
+							2.5,
+							-3.2
+						],
+						"size": [
+							10.8,
+							10.8,
+							11.2
+						]
+					},
+					"minecraft:collision_box": {
+						"origin": [
+							-5.4,
+							2.5,
+							-3.2
+						],
+						"size": [
+							10.8,
+							10.8,
+							11.2
+						]
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('minecraft:cardinal_direction') == 'north' && query.block_state('minecraft:block_face') == 'down'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							180,
+							0
+						]
+					},
+					"minecraft:collision_box": {
+						"origin": [
+							-5.4,
+							5.2,
+							-5.6
+						],
+						"size": [
+							10.8,
+							10.8,
+							11.2
+						]
+					},
+					"minecraft:selection_box": {
+						"origin": [
+							-5.4,
+							5.2,
+							-5.6
+						],
+						"size": [
+							10.8,
+							10.8,
+							11.2
+						]
+					},
+					"minecraft:geometry": "geometry.zombiesanta_head_roof"
+				}
+			},
+			{
+				"condition": "q.block_state('minecraft:cardinal_direction') == 'south' && query.block_state('minecraft:block_face') == 'down'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							0,
+							0
+						]
+					},
+					"minecraft:geometry": "geometry.zombiesanta_head_roof",
+					"minecraft:collision_box": {
+						"origin": [
+							-5.4,
+							5.2,
+							-5.6
+						],
+						"size": [
+							10.8,
+							10.8,
+							11.2
+						]
+					},
+					"minecraft:selection_box": {
+						"origin": [
+							-5.4,
+							5.2,
+							-5.6
+						],
+						"size": [
+							10.8,
+							10.8,
+							11.2
+						]
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('minecraft:cardinal_direction') == 'east' && query.block_state('minecraft:block_face') == 'down'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							90,
+							0
+						]
+					},
+					"minecraft:geometry": "geometry.zombiesanta_head_roof",
+					"minecraft:collision_box": {
+						"origin": [
+							-5.4,
+							5.2,
+							-5.6
+						],
+						"size": [
+							10.8,
+							10.8,
+							11.2
+						]
+					},
+					"minecraft:selection_box": {
+						"origin": [
+							-5.4,
+							5.2,
+							-5.6
+						],
+						"size": [
+							10.8,
+							10.8,
+							11.2
+						]
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('minecraft:cardinal_direction') == 'west' && query.block_state('minecraft:block_face') == 'down'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							270,
+							0
+						]
+					},
+					"minecraft:geometry": "geometry.zombiesanta_head_roof",
+					"minecraft:collision_box": {
+						"origin": [
+							-5.4,
+							5.2,
+							-5.6
+						],
+						"size": [
+							10.8,
+							10.8,
+							11.2
+						]
+					},
+					"minecraft:selection_box": {
+						"origin": [
+							-5.4,
+							5.2,
+							-5.6
+						],
+						"size": [
+							10.8,
+							10.8,
+							11.2
+						]
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('minecraft:cardinal_direction') == 'north' && query.block_state('minecraft:block_face') == 'up'",
+				"components": {
+					"minecraft:light_emission": 12,
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							180,
+							0
+						]
+					},
+					"minecraft:geometry": "geometry.zombiesanta_head",
+					"minecraft:collision_box": {
+						"origin": [
+							-5.4,
+							0,
+							-5.6
+						],
+						"size": [
+							10.8,
+							10.8,
+							11.2
+						]
+					},
+					"minecraft:selection_box": {
+						"origin": [
+							-5.4,
+							0,
+							-5.6
+						],
+						"size": [
+							10.8,
+							10.8,
+							11.2
+						]
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('minecraft:cardinal_direction') == 'south' && query.block_state('minecraft:block_face') == 'up'",
+				"components": {
+					"minecraft:light_emission": 12,
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							0,
+							0
+						]
+					},
+					"minecraft:geometry": "geometry.zombiesanta_head",
+					"minecraft:collision_box": {
+						"origin": [
+							-5.4,
+							0,
+							-5.6
+						],
+						"size": [
+							10.8,
+							10.8,
+							11.2
+						]
+					},
+					"minecraft:selection_box": {
+						"origin": [
+							-5.4,
+							0,
+							-5.6
+						],
+						"size": [
+							10.8,
+							10.8,
+							11.2
+						]
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('minecraft:cardinal_direction') == 'east' && query.block_state('minecraft:block_face') == 'up'",
+				"components": {
+					"minecraft:light_emission": 12,
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							90,
+							0
+						]
+					},
+					"minecraft:geometry": "geometry.zombiesanta_head",
+					"minecraft:collision_box": {
+						"origin": [
+							-5.4,
+							0,
+							-5.6
+						],
+						"size": [
+							10.8,
+							10.8,
+							11.2
+						]
+					},
+					"minecraft:selection_box": {
+						"origin": [
+							-5.4,
+							0,
+							-5.6
+						],
+						"size": [
+							10.8,
+							10.8,
+							11.2
+						]
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('minecraft:cardinal_direction') == 'west' && query.block_state('minecraft:block_face') == 'up'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							270,
+							0
+						]
+					},
+					"minecraft:geometry": "geometry.zombiesanta_head",
+					"minecraft:collision_box": {
+						"origin": [
+							-5.4,
+							0,
+							-5.6
+						],
+						"size": [
+							10.8,
+							10.8,
+							11.2
+						]
+					},
+					"minecraft:selection_box": {
+						"origin": [
+							-5.4,
+							0,
+							-5.6
+						],
+						"size": [
+							10.8,
+							10.8,
+							11.2
+						]
+					}
+				}
+			}
+		]
+	}
+}

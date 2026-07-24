@@ -1,0 +1,36 @@
+{
+	"format_version": "1.21.40",
+	"minecraft:item": {
+		"description": {
+			"identifier": "zombie:gingerbread_cookie",
+			"menu_category": {
+				"category": "items",
+				"group": "itemGroup.name.cookedFood"
+			}
+		},
+		"components": {
+			"minecraft:tags": {
+				"tags": [
+					"minecraft:is_food"
+				]
+			},
+			"minecraft:icon": "zombie_gingerbread_cookie",
+			"minecraft:display_name": {
+				"value": "Gingerbread Cookie"
+			},
+			"minecraft:food": {
+				"can_always_eat": false,
+				"nutrition": 6,
+				"saturation_modifier": 10
+			},
+			"minecraft:use_animation": "eat",
+			"minecraft:use_modifiers": {
+				"movement_modifier": 1,
+				"use_duration": 1
+			},
+			"minecraft:custom_components": [
+				"zombie:cookie"
+			]
+		}
+	}
+}

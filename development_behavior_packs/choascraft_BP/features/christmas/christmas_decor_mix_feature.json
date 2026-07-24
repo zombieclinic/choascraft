@@ -1,0 +1,12 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:weighted_random_feature": {
+    "description": { "identifier": "zombie:christmas_decor_mix_feature" },
+    "features": [
+      ["zombie:christmas_tree_feature", 8],
+      ["zombie:red_present_feature", 4],
+      ["zombie:green_present_feature", 4],
+      ["zombie:lucky_present_feature", 1]
+    ]
+  }
+}

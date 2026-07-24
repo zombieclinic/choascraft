@@ -1,0 +1,29 @@
+{
+	"format_version": "1.8.0",
+	"render_controllers": {
+		"controller.render.6_frames": {
+			"geometry": "geometry.default",
+			"materials": [
+				{
+					"*": "variable.is_enchanted?material.enchanted:material.default"
+				}
+			],
+			"textures": [
+				"temp.life_time=query.life_time*8;return array.item_frames[temp.life_time];",
+				"texture.enchanted"
+			],
+			"arrays": {
+				"textures": {
+					"array.item_frames": [
+						"Texture.frame_0",
+						"Texture.frame_1",
+						"Texture.frame_2",
+						"Texture.frame_3",
+						"Texture.frame_4",
+						"Texture.frame_5"
+					]
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,32 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.infected_zombie_death": {
+      "initial_state": "alive",
+      "states": {
+        "alive": {
+          "transitions": [
+            {
+              "dying": "query.variant == 4"
+            }
+          ]
+        },
+        "dying": {
+          "on_entry": [
+            "variable.death_started = query.life_time;"
+          ],
+          "transitions": [
+            {
+              "finish": "query.life_time >= variable.death_started + 2.0"
+            }
+          ]
+        },
+        "finish": {
+          "on_entry": [
+            "/kill @s"
+          ]
+        }
+      }
+    }
+  }
+}

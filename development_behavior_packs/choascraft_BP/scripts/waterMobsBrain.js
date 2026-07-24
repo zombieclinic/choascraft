@@ -26,13 +26,13 @@ import { ZcPressurePlateComponent, ZcPressurePlateReleaseTickComponent } from ".
 import { ConnectedStairsComponent } from "./blocks/connectedStairs.js";
 import { HellfireTrapstoneComponent } from "./blocks/hellfireTrapstone.js";
 import { DemonAlterComponent } from "./blocks/demonAlter.js";
+import { DemonLordRitualComponent } from "./blocks/demonLordRitual.js";
 import { CorruptedGrassDropComponent } from "./blocks/corruptedGrassDrops.js";
 import { BloodVineGrowthComponent } from "./blocks/bloodVineGrowth.js";
 import { BloodRootGrowthComponent, BloodRootTickComponent } from "./blocks/bloodRootGrowth.js";
 import { MushroomSpreadComponent } from "./blocks/mushroomSpread.js";
 import { ChaosChestComponent } from "./blocks/chaosChest.js";
 import { infectedAttack } from "./items/infected.js";
-import "./entities/zombieDeathAnimations.js";
 import "./items/bearShield.js";
 import { BfcBowHoldComponent } from "./items/chaosBow.js";
 import { ChaosAxeComponent } from "./items/chaosAxe.js";
@@ -45,6 +45,7 @@ import { bearArmorChanceEffect } from "./items/bearattack.js";
 import "./items/chaosHelmetSight.js";
 import "./items/chaosArmor.js";
 import "./items/echoheartTotem.js";
+import "./christmas/index.js";
 import { CoffinBackpackPlacementComponent } from "./items/coffinBackpackPickup.js";
 
 const BLOCK_COMPONENTS = [
@@ -70,6 +71,7 @@ const BLOCK_COMPONENTS = [
   ["zc:pressureplate_release_tick", ZcPressurePlateReleaseTickComponent],
   ["zombie:hellfire_trapstone", HellfireTrapstoneComponent],
   ["zombie:demon_alter", DemonAlterComponent],
+  ["zombie:demon_lord_ritual", DemonLordRitualComponent],
   ["zombie:corrupted_grass_drop", CorruptedGrassDropComponent],
   ["zombie:blood_vine_growth", BloodVineGrowthComponent],
   ["zombie:blood_root_growth", BloodRootGrowthComponent],

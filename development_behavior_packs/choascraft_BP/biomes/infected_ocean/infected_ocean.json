@@ -32,7 +32,7 @@
 							"minecraft:deep_lukewarm_ocean",
 							"minecraft:deep_warm_ocean"
 						],
-						"amount": 0.2,
+						"amount": 0.25,
 						"noise_frequency_scale": 0.025
 					}
 				]

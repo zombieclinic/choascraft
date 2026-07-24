@@ -1,0 +1,19 @@
+{
+    "format_version": "1.21.100",
+    
+    "minecraft:item": {
+        "description": {
+            "identifier": "zombie:christmas_book",
+            "menu_category": {
+                "category": "items"
+            }
+        },
+        "components": {
+            "minecraft:display_name": {
+                "value": "Christmas Land Book"
+            },
+            "minecraft:icon": "zombie_christmas_book",
+            "zombie:guide_book": {}
+        }
+    }
+}

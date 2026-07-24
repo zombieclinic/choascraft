@@ -113,6 +113,43 @@
           "weight": 1
         }
       ]
+    },
+    {
+      "conditions": [
+        { "condition": "killed_by_player" },
+        { "condition": "random_chance", "chance": 0.05 }
+      ],
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:written_book",
+          "functions": [
+            {
+              "function": "set_book_contents",
+              "author": "Kael'Vorr",
+              "title": "The Watching Infection",
+              "pages": [
+                "The Watching Infection\n\nA record of the Eye Abomination and the hive mind behind it.",
+                "Origin\n\nThe infection came from a world consumed by one living intelligence. Nothing there was alone because nothing remained separate.",
+                "Kael'Vorr's Interest\n\nHe wondered whether a hive mind could understand individuality by consuming a world full of individuals.",
+                "The Eye\n\nThe Eye Abomination is a sensory organ grown far beyond its original purpose. It watches for the hive, attacks for the hive, and dies as the hive.",
+                "Adaptation\n\nInfected tissue studies damage. Surviving samples change, which is why infected materials feel disturbingly responsive in the hand.",
+                "Infected Goo\n\nGoo binds organic and mineral material. It is used with Infected Eyes, crystals, tablets, and iron equipment.",
+                "Infected Crystal\n\nThe crystal stores adaptation in a rigid form. Nine crystals craft an Infected Tablet.",
+                "Infected Tablet\n\nThe tablet stabilizes infection long enough to shape armor, an Infected Sword, or an Infected Axe.",
+                "Infected Gear\n\nCombine iron gear with the tablet, Infected Goo, and Infected Eyes. The result keeps learning after it is equipped.",
+                "Abomination Eye\n\nThe rare preserved eye is concentrated perception. More eyes may drop from luckier kills.",
+                "Flesh Connection\n\nFlesh Pods are not part of the hive, but the infection attempts to recruit them. The result is growth that watches back.",
+                "Chaos Weapons\n\nKael'Vorr combines adaptive crystal with demon steel, living flesh, Corrupted XP, echo energy, and ancient fragments.",
+                "Why It Works\n\nThese materials should reject one another. Kael'Vorr considers forced coexistence the invention.",
+                "Field Advice\n\nBreak line of sight, destroy supporting growth, and never leave samples where roots can reach them.",
+                "Kael'Vorr's Note\n\nIt sees through a thousand eyes and still cannot imagine surprise. Let us teach it."
+              ]
+            }
+          ]
+        }
+      ]
     }
   ]
 }

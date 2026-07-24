@@ -78,6 +78,42 @@
           "weight": 1
         }
       ]
+    },
+    {
+      "conditions": [
+        { "condition": "killed_by_player" },
+        { "condition": "random_chance", "chance": 0.05 }
+      ],
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:written_book",
+          "functions": [
+            {
+              "function": "set_book_contents",
+              "author": "Kael'Vorr",
+              "title": "Anatomy of a Brute",
+              "pages": [
+                "Anatomy of a Brute\n\nA practical guide to the infernal siege creature called the Hell Brute.",
+                "Origin\n\nHell Brutes guarded fortresses in a realm where walls grew back. Their answer was to become stronger than regeneration.",
+                "Selection\n\nKael'Vorr chose them because they solve problems without changing methods. He considers this limitation scientifically useful.",
+                "Body\n\nDense flesh surrounds a furnace-hot core. Demon steel fragments grow through the body like a second skeleton.",
+                "Temperament\n\nA Brute is not mindless. It simply considers subtlety an inefficient distance between itself and a target.",
+                "Combat\n\nKeep space, use terrain, and never assume one stagger has ended its charge. A Brute's momentum is part of the weapon.",
+                "Demon Ash\n\nBrutes shed more ash than Emberstalkers. Their constant internal heat consumes tissue even while they fight.",
+                "Demon Hearts\n\nTheir hearts are rare, durable catalysts used throughout demon crafting and Chaos Altar recipes.",
+                "Corrupted XP\n\nThe Brute can drop Corrupted XP Orbs. A powered Demon Altar can also make them from sacrifices.",
+                "Demon Skull\n\nCraft with Demon Ash, Bone Blocks, and a Demon Heart. Three skulls are required in the Demon Lord ritual.",
+                "Pentagram\n\nCraft with Demon Ash, Redstone, and a Demon Heart. Two pentagrams complete the ritual frame.",
+                "Lord Ritual\n\nBuild a cross with a central Pentagram, another below, and Skulls above and on both sides.",
+                "Chaos Craft\n\nDemon Steel remembers impact. Kael'Vorr uses that memory in weapons that become more dangerous through use.",
+                "Kael'Vorr's Note\n\nElegant? No. Repeatable? Extremely."
+              ]
+            }
+          ]
+        }
+      ]
     }
   ]
 }

@@ -51,6 +51,77 @@
           ]
         }
       ]
+    },
+    {
+      "conditions": [
+        { "condition": "random_chance", "chance": 0.05 }
+      ],
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:written_book",
+          "functions": [
+            {
+              "function": "set_book_contents",
+              "author": "Kael'Vorr",
+              "title": "Codex of Chaos",
+              "pages": [
+                "Codex of Chaos\n\nA field guide to Kael'Vorr, the Demon Lord, the Demon Altar, and inventions that should never have worked.",
+                "Kael'Vorr\n\nHe has crossed countless dimensions collecting creatures, materials, energies, and ideas. Every impossible encounter is a question waiting to be asked.",
+                "The Overworld\n\nIts forests grew normally, oceans followed rules, and even monsters fit a natural order. Kael'Vorr admired that stability until admiration became boredom.",
+                "The Experiment\n\nHe introduced pieces of other realities: a living infection, a demonic hellscape, bodiless flesh, altered predators, and trees born under alien laws.",
+                "His Question\n\nWhere others see danger, Kael'Vorr sees possibility:\n\nWhat happens when this meets something it was never meant to encounter?",
+                "The Demon Lord\n\nA ruler taken from a collapsing infernal realm. Kael'Vorr did not enslave it. He gave it a door, an audience, and reasons to keep fighting.",
+                "Hell Brutes\n\nLiving siege engines shaped by pressure, rage, and demon steel. They protect territory by turning every approach into a test of endurance.",
+                "Emberstalkers\n\nHunters adapted to ash and flame. They follow heat, movement, and fear with equal patience.",
+                "Demon Drops\n\nDemon Ash, Demon Hearts, Demon Steel, and Corrupted XP are the working materials of infernal craft.",
+                "Corrupted XP\n\nExperience remembers action. The altar twists that memory into physical power, producing Corrupted XP Orbs from a successful sacrifice.",
+                "Demon Altar\n\nCraft the first altar with Demon Ash, Demon Steel Ingots, a Demon Heart, and a Nether Star. Power it with redstone while a sacrifice stands upon it.",
+                "Altar Function\n\nA powered altar sacrifices the creature above it and converts nearby experience into Corrupted XP Orbs. It no longer spreads corruption into terrain.",
+                "Ritual Blocks\n\nDemon Skulls and Demon Pentagrams are crafted from demon drops. They are also keys to calling the Demon Lord.",
+                "Demon Skull\n\nPattern:\nABA\nBHB\nAAA\n\nA = Demon Ash\nB = Bone Block\nH = Demon Heart",
+                "Demon Pentagram\n\nPattern:\nARA\nRHR\nARA\n\nA = Demon Ash\nR = Redstone\nH = Demon Heart",
+                "Lord Ritual\n\nBuild vertically:\n  Skull\nSkull Pentagram Skull\n  Pentagram\n\nCompleting the five blocks consumes them and summons the Demon Lord.",
+                "Corrupted Star\n\nThe Demon Lord has a rare chance to drop a Corrupted Nether Star. It is the core catalyst for forced altar upgrades.",
+                "Altar Tier II\n\nCombine a Tier I altar with a Corrupted Nether Star, Demon Ash, Demon Hearts, and Demon Steel in its Chaos crafting tier.",
+                "Altar Tier III\n\nUpgrade Tier II using another Corrupted Nether Star, ash, hearts, Corrupted XP, and Demon Steel.",
+                "Altar Tier IV\n\nUpgrade Tier III with two Corrupted Nether Stars, ash, hearts, blood-flesh blocks, and a Corrupted XP Block.",
+                "Altar Tier V\n\nThe rarest altar requires Tier IV, four Corrupted Nether Stars, two Demon Hearts, and a Corrupted XP Block.",
+                "Chaos Weapons\n\nDemon steel remembers violence. Infected crystal adapts. Living flesh repairs. Corrupted experience supplies raw intent. Kael'Vorr forced them to coexist.",
+                "Unfinished Work\n\nEvery Chaos Weapon is unstable and partly alive. Its wielder's health, emotion, and action may change how it behaves.",
+                "Recipe Symbols\n\nI = Demon Steel Ingot\nH = Demon Heart\nX = Corrupted XP\nF = Demon Flesh material\nS = Stick/String or listed handle\nA = Demon Ash",
+                "Tier I Tools\n\nThe first altar tier unlocks the Chaos Axe, Shovel, Hoe, and Fishing Rod. These establish the basic Demon Steel tool family.",
+                "Chaos Axe\n\nPattern:\nIH.\nIS.\n.S.\n\nI = Demon Steel\nH = Demon Heart\nS = Stick",
+                "Chaos Shovel\n\nPattern:\nHIH\n.S.\n.S.\n\nI = Demon Steel\nH = Demon Heart\nS = Stick",
+                "Chaos Hoe\n\nPattern:\nIH.\n.S.\n.S.\n\nS = Blood Root Seed for the living handle.",
+                "Fishing Rod\n\nPattern:\n..I\n.IS\nH.S\n\nI = Demon Steel\nH = Demon Heart\nS = String",
+                "Tier II Arms\n\nTier II unlocks the Chaos Sword, Pickaxe, Shield, and Bow.",
+                "Chaos Sword\n\nPattern:\n.H.\n.I.\n.S.\n\nHeart, Demon Steel, and Stick.",
+                "Chaos Pickaxe\n\nPattern:\nIHI\n.S.\n.S.\n\nDemon Steel, Heart, and Sticks.",
+                "Chaos Shield\n\nPattern:\nIHI\nIFI\n.I.\n\nF = Demon Flesh Block.",
+                "Chaos Bow\n\nPattern:\n.IS\nH.S\n.IS\n\nI = Demon Steel\nH = Demon Heart\nS = String",
+                "Tier III Arms\n\nTier III unlocks Chaos Boots, Leggings, Scythe, and Hammer.",
+                "Chaos Hammer\n\nPattern:\nIHI\nISI\n.S.\n\nI = Demon Steel\nH = Demon Heart\nS = Stick",
+                "Chaos Scythe\n\nPattern:\nIIH\n..I\n.S.\n\nForged for reach, harvesting, and violence.",
+                "Tier III Armor\n\nBoots and Leggings combine Demon Steel, Demon Hearts, Corrupted XP, and Demon Blood-Flesh Blocks.",
+                "Tier IV Arms\n\nTier IV unlocks the Demon Sword, Crossbow, Greatsword, Chestplate, Chaos Arrow, and Coffin Backpack.",
+                "Demon Sword\n\nPattern:\nHXH\n.I.\n.S.\n\nX = Corrupted XP Block.",
+                "Chaos Crossbow\n\nPattern:\nIHI\nSXS\n.I.\n\nS = String\nX = Corrupted XP Block",
+                "Chaos Greatsword\n\nPattern:\nIHI\n.I.\n.S.\n\nS = Demon Flesh Block, forming a living grip.",
+                "Coffin Backpack\n\nPattern:\nFHF\nICI\nFBF\n\nC = Chest\nB = Blood-Flesh Block\nF = Demon Flesh\nH = Heart\nI = Steel",
+                "Tier V Relics\n\nTier V unlocks the Chaos Helmet, Staff, Spear, Chaos Book, and BFC Arrow.",
+                "Chaos Staff\n\nPattern:\n.X.\n.HI\nS.F\n\nX = Corrupted XP Block\nS = Stick\nF = Blood-Flesh Block",
+                "Chaos Spear\n\nPattern:\n..H\n.I.\nS..\n\nS = Blood Root",
+                "Chaos Book\n\nPattern:\nFXF\nHBH\nFAF\n\nB = Book\nA = Demon Ash\nF = Demon Flesh\nX = Corrupted XP Block",
+                "BFC Arrow\n\nPattern:\n.A.\nXHX\n.F.\n\nA = Chaos Arrow\nX = Corrupted XP Block\nF = Blood-Flesh Block",
+                "The Inventor\n\nKael'Vorr may help heroes defeat an experiment, then improve that same creature and release it elsewhere. Results matter more than sides.",
+                "Final Note\n\nCreation without risk is decoration. Let us make something uncertain.\n\n—Kael'Vorr"
+              ]
+            }
+          ]
+        }
+      ]
     }
   ]
 }

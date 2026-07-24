@@ -34,10 +34,10 @@
           }
         },
         "minecraft:attack": {
-          "damage": 0,
+          "damage": 2,
           "effect_name": "slowness",
-          "effect_duration": 1,
-          "effect_amplifier": 255
+          "effect_duration": 40,
+          "effect_amplifier": 4
         },
         "minecraft:behavior.nearest_attackable_target": {
           "priority": 0,

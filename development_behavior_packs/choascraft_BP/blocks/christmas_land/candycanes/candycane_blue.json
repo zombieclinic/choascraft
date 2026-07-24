@@ -1,0 +1,488 @@
+{
+	"format_version": "1.21.100",
+	"minecraft:block": {
+		"description": {
+			"identifier": "zombie:candycane_blue",
+							"menu_category": {
+				"category": "none"
+			},
+			"traits": {
+				"minecraft:placement_direction": {
+					"enabled_states": [
+						"minecraft:cardinal_direction"
+					]
+				},
+				"minecraft:placement_position": {
+					"enabled_states": [
+						"minecraft:block_face"
+					]
+				}
+			}
+		},
+		"components": {
+			"tag:christmas": {},
+			"minecraft:light_dampening": 0,
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "zombie_candycane_blue_6"
+				}
+			},
+			"minecraft:map_color": "#421ED2",
+			"minecraft:destructible_by_mining": {
+				"seconds_to_destroy": 0.5
+			},
+			"minecraft:display_name": "Candycane Blue",
+			"minecraft:destructible_by_explosion": {
+				"explosion_resistance": 13
+			},
+			"minecraft:geometry": "geometry.candycane",
+			"minecraft:loot": "loot_tables/christmass/blocks/christmas_loot/blue_candycane_block.json"
+		},
+		"permutations": [
+			{
+				"condition": "query.block_state('minecraft:block_face') == 'north'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							0,
+							0
+						]
+					},
+					"minecraft:geometry": "geometry.candycane.wall",
+					"minecraft:collision_box": {
+						"origin": [
+							-2,
+							0,
+							0
+						],
+						"size": [
+							4,
+							16,
+							7
+						]
+					},
+					"minecraft:selection_box": {
+						"origin": [
+							-2,
+							0,
+							0
+						],
+						"size": [
+							4,
+							16,
+							7
+						]
+					}
+				}
+			},
+			{
+				"condition": "query.block_state('minecraft:block_face') == 'south'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							180,
+							0
+						]
+					},
+					"minecraft:geometry": "geometry.candycane.wall",
+					"minecraft:collision_box": {
+						"origin": [
+							-2,
+							0,
+							0
+						],
+						"size": [
+							4,
+							16,
+							7
+						]
+					},
+					"minecraft:selection_box": {
+						"origin": [
+							-2,
+							0,
+							0
+						],
+						"size": [
+							4,
+							16,
+							7
+						]
+					}
+				}
+			},
+			{
+				"condition": "query.block_state('minecraft:block_face') == 'east'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							-90,
+							0
+						]
+					},
+					"minecraft:geometry": "geometry.candycane.wall",
+					"minecraft:collision_box": {
+						"origin": [
+							-2,
+							0,
+							0
+						],
+						"size": [
+							4,
+							16,
+							7
+						]
+					},
+					"minecraft:selection_box": {
+						"origin": [
+							-2,
+							0,
+							0
+						],
+						"size": [
+							4,
+							16,
+							7
+						]
+					}
+				}
+			},
+			{
+				"condition": "query.block_state('minecraft:block_face') == 'west'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							90,
+							0
+						]
+					},
+					"minecraft:geometry": "geometry.candycane.wall",
+					"minecraft:selection_box": {
+						"origin": [
+							-2,
+							0,
+							0
+						],
+						"size": [
+							4,
+							16,
+							7
+						]
+					},
+					"minecraft:collision_box": {
+						"origin": [
+							-2,
+							0,
+							0
+						],
+						"size": [
+							4,
+							16,
+							7
+						]
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('minecraft:cardinal_direction') == 'north' && query.block_state('minecraft:block_face') == 'down' ",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							180,
+							0
+						]
+					},
+					"minecraft:geometry": "geometry.candycane.roof",
+					"minecraft:collision_box": {
+						"origin": [
+							-2,
+							0,
+							-6
+						],
+						"size": [
+							4,
+							16,
+							7
+						]
+					},
+					"minecraft:selection_box": {
+						"origin": [
+							-2,
+							0,
+							-6
+						],
+						"size": [
+							4,
+							16,
+							7
+						]
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('minecraft:cardinal_direction') == 'south' && query.block_state('minecraft:block_face') == 'down' ",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							0,
+							0
+						]
+					},
+					"minecraft:geometry": "geometry.candycane.roof",
+					"minecraft:collision_box": {
+						"origin": [
+							-2,
+							0,
+							-6
+						],
+						"size": [
+							4,
+							16,
+							7
+						]
+					},
+					"minecraft:selection_box": {
+						"origin": [
+							-2,
+							0,
+							-6
+						],
+						"size": [
+							4,
+							16,
+							7
+						]
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('minecraft:cardinal_direction') == 'east' && query.block_state('minecraft:block_face') == 'down' ",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							90,
+							0
+						]
+					},
+					"minecraft:geometry": "geometry.candycane.roof",
+					"minecraft:collision_box": {
+						"origin": [
+							-2,
+							0,
+							-6
+						],
+						"size": [
+							4,
+							16,
+							7
+						]
+					},
+					"minecraft:selection_box": {
+						"origin": [
+							-2,
+							0,
+							-6
+						],
+						"size": [
+							4,
+							16,
+							7
+						]
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('minecraft:cardinal_direction') == 'west' && query.block_state('minecraft:block_face') == 'down'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							270,
+							0
+						]
+					},
+					"minecraft:geometry": "geometry.candycane.roof",
+					"minecraft:selection_box": {
+						"origin": [
+							-2,
+							0,
+							-6
+						],
+						"size": [
+							4,
+							16,
+							7
+						]
+					},
+					"minecraft:collision_box": {
+						"origin": [
+							-2,
+							0,
+							-6
+						],
+						"size": [
+							4,
+							16,
+							7
+						]
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('minecraft:cardinal_direction') == 'north' && query.block_state('minecraft:block_face') == 'up' ",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							180,
+							0
+						]
+					},
+					"minecraft:geometry": "geometry.candycane",
+					"minecraft:collision_box": {
+						"origin": [
+							-2,
+							0,
+							-6
+						],
+						"size": [
+							4,
+							16,
+							7
+						]
+					},
+					"minecraft:selection_box": {
+						"origin": [
+							-2,
+							0,
+							-6
+						],
+						"size": [
+							4,
+							16,
+							7
+						]
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('minecraft:cardinal_direction') == 'south' && query.block_state('minecraft:block_face') == 'up' ",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							0,
+							0
+						]
+					},
+					"minecraft:geometry": "geometry.candycane",
+					"minecraft:collision_box": {
+						"origin": [
+							-2,
+							0,
+							-6
+						],
+						"size": [
+							4,
+							16,
+							7
+						]
+					},
+					"minecraft:selection_box": {
+						"origin": [
+							-2,
+							0,
+							-6
+						],
+						"size": [
+							4,
+							16,
+							7
+						]
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('minecraft:cardinal_direction') == 'east' && query.block_state('minecraft:block_face') == 'up' ",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							90,
+							0
+						]
+					},
+					"minecraft:geometry": "geometry.candycane",
+					"minecraft:collision_box": {
+						"origin": [
+							-2,
+							0,
+							-6
+						],
+						"size": [
+							4,
+							16,
+							7
+						]
+					},
+					"minecraft:selection_box": {
+						"origin": [
+							-2,
+							0,
+							-6
+						],
+						"size": [
+							4,
+							16,
+							7
+						]
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('minecraft:cardinal_direction') == 'west' && query.block_state('minecraft:block_face') == 'up'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							270,
+							0
+						]
+					},
+					"minecraft:collision_box": {
+						"origin": [
+							-2,
+							0,
+							-6
+						],
+						"size": [
+							4,
+							16,
+							7
+						]
+					},
+					"minecraft:selection_box": {
+						"origin": [
+							-2,
+							0,
+							-6
+						],
+						"size": [
+							4,
+							16,
+							7
+						]
+					},
+					"minecraft:geometry": "geometry.candycane"
+				}
+			}
+		]
+	}
+}

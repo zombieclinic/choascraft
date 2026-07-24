@@ -1,0 +1,201 @@
+{
+	"format_version": "1.21.100",
+	"minecraft:block": {
+		"description": {
+			"identifier": "zombie:candycane_red_Crop",
+			"states": {
+				"zombie:crop_age": [
+					0,
+					1,
+					2,
+					3,
+					4,
+					5
+				]
+			}
+		},
+		"permutations": [
+			{
+				"condition": "query.block_state('zombie:crop_age') == 0",
+				"components": {
+					"minecraft:geometry": "geometry.candycane",
+					"zombie:christmas_crops": {},
+					"minecraft:loot": "loot_tables/christmass/blocks/christmas_loot/red_candycane_seeds.json",
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "zombie_candycane_red_1",
+							"render_method": "alpha_test"
+						}
+					},
+					"minecraft:selection_box": {
+						"origin": [
+							-1,
+							0,
+							-1
+						],
+						"size": [
+							2,
+							1.86,
+							2
+						]
+					}
+				}
+			},
+			{
+				"condition": "query.block_state('zombie:crop_age') == 1",
+				"components": {
+					"minecraft:geometry": "geometry.candycane",
+					"zombie:christmas_crops": {},
+					"minecraft:loot": "loot_tables/christmass/blocks/christmas_loot/red_candycane_seeds.json",
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "zombie_candycane_red_2",
+							"render_method": "alpha_test"
+						}
+					},
+					"minecraft:selection_box": {
+						"origin": [
+							-1,
+							0,
+							-1
+						],
+						"size": [
+							2,
+							5.57,
+							2
+						]
+					}
+				}
+			},
+			{
+				"condition": "query.block_state('zombie:crop_age') == 2",
+				"components": {
+					"minecraft:geometry": "geometry.candycane",
+					"zombie:christmas_crops": {},
+					"minecraft:loot": "loot_tables/christmass/blocks/christmas_loot/red_candycane_seeds.json",
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "zombie_candycane_red_3",
+							"render_method": "alpha_test"
+						}
+					},
+					"minecraft:selection_box": {
+						"origin": [
+							-1,
+							0,
+							-1
+						],
+						"size": [
+							2,
+							9.3,
+							2
+						]
+					}
+				}
+			},
+			{
+				"condition": "query.block_state('zombie:crop_age') == 3",
+				"components": {
+					"minecraft:geometry": "geometry.candycane",
+					"zombie:christmas_crops": {},
+					"minecraft:loot": "loot_tables/christmass/blocks/christmas_loot/red_candycane_seeds.json",
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "zombie_candycane_red_4",
+							"render_method": "alpha_test"
+						}
+					},
+					"minecraft:selection_box": {
+						"origin": [
+							-1,
+							0,
+							-1
+						],
+						"size": [
+							2,
+							13,
+							2
+						]
+					}
+				}
+			},
+			{
+				"condition": "query.block_state('zombie:crop_age') == 4",
+				"components": {
+					"minecraft:geometry": "geometry.candycane",
+					"zombie:christmas_crops": {},
+					"minecraft:loot": "loot_tables/christmass/blocks/christmas_loot/red_candycane_seeds.json",
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "zombie_candycane_red_5",
+							"render_method": "alpha_test"
+						}
+					},
+					"minecraft:selection_box": {
+						"origin": [
+							-1,
+							0,
+							-2.4
+						],
+						"size": [
+							2,
+							16,
+							3.4
+						]
+					}
+				}
+			},
+			{
+				"condition": "query.block_state('zombie:crop_age') == 5",
+				"components": {
+					"minecraft:geometry": "geometry.candycane",
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "zombie_candycane_red_6",
+							"render_method": "alpha_test"
+						}
+					},
+					"minecraft:selection_box": {
+						"origin": [
+							-1,
+							0,
+							-5.275
+						],
+						"size": [
+							2,
+							16,
+							6.25
+						]
+					},
+					"minecraft:loot": "loot_tables/christmass/blocks/christmas_loot/red_candycane.json"
+				}
+			}
+		],
+		"components": {
+			"minecraft:geometry": "geometry.candycane",
+			"minecraft:destructible_by_mining": {
+				"seconds_to_destroy": 0
+			},
+			"minecraft:material_instances": {
+						"*": {
+							"texture": "zombie_candycane_red_1",
+							"render_method": "alpha_test"
+						}
+					},
+			"minecraft:collision_box": false,
+			"minecraft:placement_filter": {
+				"conditions": [
+					{
+						"allowed_faces": [
+							"up"
+						],
+						"block_filter": [
+							"zombie:magicsnow"
+						]
+					}
+				]
+			},
+			"tag:minecraft:crop": {}
+		}
+	}
+}

@@ -1,0 +1,115 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.santa_carpet_wall",
+				"texture_width": 32,
+				"texture_height": 32,
+				"visible_bounds_width": 3,
+				"visible_bounds_height": 2.5,
+				"visible_bounds_offset": [
+					0,
+					0.75,
+					0
+				]
+			},
+			"bones": [
+				{
+					"name": "bb_main",
+					"pivot": [
+						0,
+						0,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-7.975,
+								6.8,
+								-16.05
+							],
+							"size": [
+								15.925,
+								1,
+								16.025
+							],
+							"pivot": [
+								0,
+								0,
+								0
+							],
+							"rotation": [
+								-90,
+								0,
+								0
+							],
+							"uv": {
+								"north": {
+									"uv": [
+										32,
+										32
+									],
+									"uv_size": [
+										-2,
+										-1
+									]
+								},
+								"east": {
+									"uv": [
+										32,
+										32
+									],
+									"uv_size": [
+										-2,
+										-1
+									]
+								},
+								"south": {
+									"uv": [
+										32,
+										32
+									],
+									"uv_size": [
+										-2,
+										-1
+									]
+								},
+								"west": {
+									"uv": [
+										32,
+										32
+									],
+									"uv_size": [
+										-2,
+										-1
+									]
+								},
+								"up": {
+									"uv": [
+										0,
+										0
+									],
+									"uv_size": [
+										32,
+										32
+									]
+								},
+								"down": {
+									"uv": [
+										0,
+										0
+									],
+									"uv_size": [
+										32,
+										32
+									]
+								}
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,41 @@
+{
+    "format_version": "1.21.10",
+    "minecraft:attachable": {
+        "description": {
+            "identifier": "zombie:santa_sword",
+            "materials": {
+                "default": "entity_alphatest",
+                "enchanted": "entity_alphatest_glint"
+            },
+            "textures": {
+                "frame_0": "textures/christmas/items/christmass/armor_wepions/christmas_sword",
+                "frame_1": "textures/christmas/items/christmass/armor_wepions/christmas_sword_1",
+                "frame_2": "textures/christmas/items/christmass/armor_wepions/christmas_sword_2",
+                "frame_3": "textures/christmas/items/christmass/armor_wepions/christmas_sword_3",
+                "frame_4": "textures/christmas/items/christmass/armor_wepions/christmas_sword_4",
+                "frame_5": "textures/christmas/items/christmass/armor_wepions/christmas_sword_5",
+                "enchanted": "textures/misc/enchanted_item_glint"
+            },
+            "geometry": {
+                "default": "geometry.christmas_sword"
+            },
+            "render_controllers": [
+                "controller.render.6_frames"
+            ],
+            "animations": {
+                "idle": "animation.santasword.fpp_idle",
+                "swing": "animation.santasword_particle.tpp_swing_melee2",
+                "contoller": "controller.animation.santa_sword"
+            },
+            "scripts": {
+                "animate": [
+                    "contoller"
+                ]
+            },
+            "particle_effects": {
+                "santa_sword": "zombie:santa_sword",
+                "santasword": "zombie:santa_sword"
+            }
+        }
+    }
+}

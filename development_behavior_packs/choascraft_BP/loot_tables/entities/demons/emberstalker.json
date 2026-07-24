@@ -78,6 +78,41 @@
           "weight": 1
         }
       ]
+    },
+    {
+      "conditions": [
+        { "condition": "killed_by_player" },
+        { "condition": "random_chance", "chance": 0.05 }
+      ],
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:written_book",
+          "functions": [
+            {
+              "function": "set_book_contents",
+              "author": "Kael'Vorr",
+              "title": "Emberstalker Notes",
+              "pages": [
+                "Emberstalker Notes\n\nObservations from the ash paths where flame learned patience.",
+                "Origin\n\nEmberstalkers came from a realm without sunrise. Heat moved through black dust like weather, and predators learned to follow it.",
+                "The Collection\n\nKael'Vorr watched one stalk a cooling meteor for nine days. He opened a gate before it reached the crater.",
+                "In the Overworld\n\nHere, every torch, furnace, and living body is a bright trail. The creature finds this abundance delightful.",
+                "Behavior\n\nAn Emberstalker is faster than its silhouette suggests. Open ground favors the hunter; barriers and prepared terrain favor you.",
+                "Ash\n\nIts Demon Ash is not ordinary soot. It carries a weak memory of the fire that made it.",
+                "Heart\n\nA Demon Heart is rare because most infernal bodies burn theirs completely. An intact one can stabilize impossible crafting.",
+                "Corrupted XP\n\nSome Emberstalkers carry experience warped by dimensional travel. The substance is valuable at a Demon Altar.",
+                "Chaos Keys\n\nA very rare kill may produce a Chaos Key, proof that Kael'Vorr occasionally hides rewards inside the danger itself.",
+                "Altar Use\n\nPower a Demon Altar with redstone while a sacrifice stands above it. The altar converts released experience into Corrupted XP Orbs.",
+                "Crafting\n\nAsh, hearts, and demon steel form the foundation of Chaos gear. Higher altar tiers reveal stronger recipes.",
+                "Field Advice\n\nDo not mistake stillness for confusion. Emberstalkers wait because the warm thing always moves eventually.",
+                "Kael'Vorr's Note\n\nA flame that only burns is useful. A flame that hunts is an idea."
+              ]
+            }
+          ]
+        }
+      ]
     }
   ]
 }

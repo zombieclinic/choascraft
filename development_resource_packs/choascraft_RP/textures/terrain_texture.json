@@ -487,7 +487,162 @@
     },
     "blood_mushroom": {
       "textures": "textures/blood/plants/blood_mushroom"
+    },
+    "zombie_magic_snow": {
+      "textures": "textures/christmas/blocks/christmas_land/magic_snow"
+    },
+    "zombie_lucky_present": {
+      "textures": "textures/christmas/christmas_blocks/lucky_present"
+    },
+    "blue_present": {
+      "textures": "textures/christmas/christmas_blocks/blue_present"
+    },
+    "green_present": {
+      "textures": "textures/christmas/christmas_blocks/green_present"
+    },
+    "pink_present": {
+      "textures": "textures/christmas/christmas_blocks/pink_present"
+    },
+    "purple_present": {
+      "textures": "textures/christmas/christmas_blocks/purple_present"
+    },
+    "red_present": {
+      "textures": "textures/christmas/christmas_blocks/red_present"
+    },
+    "christmas_tree": {
+      "textures": "textures/christmas/blocks/christmas_land/christmas_tree"
+    },
+    "christmas_wreath": {
+      "textures": "textures/christmas/blocks/christmas_land/wreath"
+    },
+    "zombie_mistletoe_stocking": {
+      "textures": "textures/christmas/blocks/christmas_land/zombie_stocking"
+    },
+    "santa_sign": {
+      "textures": "textures/christmas/blocks/christmas_land/zombiesign"
+    },
+    "santa_carpet": {
+      "textures": "textures/christmas/blocks/christmas_land/santa_carpet"
+    },
+    "snowflakes_carpet": {
+      "textures": "textures/christmas/blocks/christmas_land/snowflakes"
+    },
+    "zombiecraft": {
+      "textures": "textures/christmas/blocks/christmas_land/zombiecraft"
+    },
+    "zombie_santa_carpet": {
+      "textures": "textures/christmas/blocks/christmas_land/zombie_santa"
+    },
+    "zombie_santa_head": {
+      "textures": "textures/christmas/blocks/christmas_land/zombie_santa"
+    },
+    "gingerbreadballs": {
+      "textures": "textures/christmas/blocks/christmas_land/gingerbreadballs"
+    },
+    "gingerbreadicingtop": {
+      "textures": "textures/christmas/blocks/christmas_land/gingertop"
+    },
+    "gingerbreadnormal": {
+      "textures": "textures/christmas/blocks/christmas_land/gingerbreadnormal"
+    },
+    "gingerbreadplan": {
+      "textures": "textures/christmas/blocks/christmas_land/gingerbreadplan"
+    },
+    "gingerbreadplanball": {
+      "textures": "textures/christmas/blocks/christmas_land/gingerbreadplanball"
+    },
+    "gingerbreadtree": {
+      "textures": "textures/christmas/blocks/christmas_land/gingerbreadtree"
+    },
+    "gingerbreadtreeplan": {
+      "textures": "textures/christmas/blocks/christmas_land/gingerbreadtreeplan"
+    },
+    "gingerbreadwindow": {
+      "textures": "textures/christmas/blocks/christmas_land/gingerbreadwindow"
+    },
+    "gingerbreadwindow1": {
+      "textures": "textures/christmas/blocks/christmas_land/gingerbreadwindow1"
+    },
+    "zombie_christmas_light_blue": {
+      "textures": "textures/christmas/blocks/christmas_land/lights/christmas_lights_blue"
+    },
+    "zombie_christmas_light_cyan": {
+      "textures": "textures/christmas/blocks/christmas_land/lights/christmas_lights_cyan"
+    },
+    "zombie_christmas_light_green": {
+      "textures": "textures/christmas/blocks/christmas_land/lights/christmas_lights_green"
+    },
+    "zombie_christmas_light_light_blue": {
+      "textures": "textures/christmas/blocks/christmas_land/lights/christmas_lights_light_blue"
+    },
+    "zombie_christmas_light_magenta": {
+      "textures": "textures/christmas/blocks/christmas_land/lights/christmas_lights_magenta"
+    },
+    "zombie_christmas_light_pink": {
+      "textures": "textures/christmas/blocks/christmas_land/lights/christmas_lights_pink"
+    },
+    "zombie_christmas_light_purple": {
+      "textures": "textures/christmas/blocks/christmas_land/lights/christmas_lights_purple"
+    },
+    "zombie_christmas_light_red": {
+      "textures": "textures/christmas/blocks/christmas_land/lights/christmas_lights_red"
+    },
+    "zombie_christmas_light_yellow": {
+      "textures": "textures/christmas/blocks/christmas_land/lights/christmas_lights_yellow"
+    },
+    "zombie_candycane_blue_1": {
+      "textures": "textures/christmas/blocks/christmas_land/candy_cane/blue/candycane_blue_1"
+    },
+    "zombie_candycane_blue_2": {
+      "textures": "textures/christmas/blocks/christmas_land/candy_cane/blue/candycane_blue_2"
+    },
+    "zombie_candycane_blue_3": {
+      "textures": "textures/christmas/blocks/christmas_land/candy_cane/blue/candycane_blue_3"
+    },
+    "zombie_candycane_blue_4": {
+      "textures": "textures/christmas/blocks/christmas_land/candy_cane/blue/candycane_blue_4"
+    },
+    "zombie_candycane_blue_5": {
+      "textures": "textures/christmas/blocks/christmas_land/candy_cane/blue/candycane_blue_5"
+    },
+    "zombie_candycane_blue_6": {
+      "textures": "textures/christmas/blocks/christmas_land/candy_cane/blue/candycane_blue_6"
+    },
+    "zombie_candycane_purple_1": {
+      "textures": "textures/christmas/blocks/christmas_land/candy_cane/purple/candycane_purple_1"
+    },
+    "zombie_candycane_purple_2": {
+      "textures": "textures/christmas/blocks/christmas_land/candy_cane/purple/candycane_purple_2"
+    },
+    "zombie_candycane_purple_3": {
+      "textures": "textures/christmas/blocks/christmas_land/candy_cane/purple/candycane_purple_3"
+    },
+    "zombie_candycane_purple_4": {
+      "textures": "textures/christmas/blocks/christmas_land/candy_cane/purple/candycane_purple_4"
+    },
+    "zombie_candycane_purple_5": {
+      "textures": "textures/christmas/blocks/christmas_land/candy_cane/purple/candycane_purple_5"
+    },
+    "zombie_candycane_purple_6": {
+      "textures": "textures/christmas/blocks/christmas_land/candy_cane/purple/candycane_purple_6"
+    },
+    "zombie_candycane_red_1": {
+      "textures": "textures/christmas/blocks/christmas_land/candy_cane/redcandycane/candycane_red_1"
+    },
+    "zombie_candycane_red_2": {
+      "textures": "textures/christmas/blocks/christmas_land/candy_cane/redcandycane/candycane_red_2"
+    },
+    "zombie_candycane_red_3": {
+      "textures": "textures/christmas/blocks/christmas_land/candy_cane/redcandycane/candycane_red_3"
+    },
+    "zombie_candycane_red_4": {
+      "textures": "textures/christmas/blocks/christmas_land/candy_cane/redcandycane/candycane_red_4"
+    },
+    "zombie_candycane_red_5": {
+      "textures": "textures/christmas/blocks/christmas_land/candy_cane/redcandycane/candycane_red_5"
+    },
+    "zombie_candycane_red_6": {
+      "textures": "textures/christmas/blocks/christmas_land/candy_cane/redcandycane/candycane_red_6"
     }
   }
 }
-
