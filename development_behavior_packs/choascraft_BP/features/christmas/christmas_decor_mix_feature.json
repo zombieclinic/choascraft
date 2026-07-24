@@ -6,7 +6,24 @@
       ["zombie:christmas_tree_feature", 8],
       ["zombie:red_present_feature", 4],
       ["zombie:green_present_feature", 4],
-      ["zombie:lucky_present_feature", 1]
+      ["zombie:gingerbread_feature", 4],
+      ["zombie:gingerbread_icing_feature", 3],
+      ["zombie:gingerbread_dots_feature", 3],
+      ["zombie:gingerbread_dots_icing_feature", 2],
+      ["zombie:gingerbread_tree_feature", 3],
+      ["zombie:gingerbread_tree_icing_feature", 2],
+      ["zombie:gingerbread_window_feature", 3],
+      ["zombie:gingerbread_window_icing_feature", 2],
+      ["zombie:christmas_light_blue_feature", 2],
+      ["zombie:christmas_light_cyan_feature", 2],
+      ["zombie:christmas_light_green_feature", 2],
+      ["zombie:christmas_light_light_blue_feature", 2],
+      ["zombie:christmas_light_magenta_feature", 2],
+      ["zombie:christmas_light_pink_feature", 2],
+      ["zombie:christmas_light_purple_feature", 2],
+      ["zombie:christmas_light_red_feature", 2],
+      ["zombie:christmas_light_yellow_feature", 2],
+      ["zombie:christmas_light_multicolor_feature", 1]
     ]
   }
 }

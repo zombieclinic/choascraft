@@ -1,0 +1,33 @@
+{
+  "format_version": "1.21.40",
+  "minecraft:recipe_shapeless": {
+    "description": {
+      "identifier": "zombie:colored_amethyst_light_blue_recipe"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "ingredients": [
+      {
+        "item": "minecraft:amethyst_block"
+      },
+      {
+        "item": "minecraft:light_blue_dye"
+      }
+    ],
+    "result": [
+      {
+        "item": "zombie:colored_amethyst_light_blue",
+        "count": 1
+      }
+    ],
+    "unlock": [
+      {
+        "item": "minecraft:amethyst_block"
+      },
+      {
+        "item": "minecraft:light_blue_dye"
+      }
+    ]
+  }
+}

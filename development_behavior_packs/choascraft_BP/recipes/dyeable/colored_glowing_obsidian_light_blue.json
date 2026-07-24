@@ -1,0 +1,36 @@
+{
+  "format_version": "1.21.40",
+  "minecraft:recipe_shapeless": {
+    "description": {
+      "identifier": "zombie:colored_glowing_obsidian_light_blue_recipe"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "ingredients": [
+      {
+        "item": "minecraft:obsidian"
+      },
+      {
+        "item": "minecraft:glowstone_dust"
+      },
+      {
+        "item": "minecraft:light_blue_dye"
+      }
+    ],
+    "result": [
+      {
+        "item": "zombie:colored_glowing_obsidian_light_blue",
+        "count": 1
+      }
+    ],
+    "unlock": [
+      {
+        "item": "minecraft:obsidian"
+      },
+      {
+        "item": "minecraft:light_blue_dye"
+      }
+    ]
+  }
+}

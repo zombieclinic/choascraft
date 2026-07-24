@@ -1,0 +1,33 @@
+{
+  "format_version": "1.21.40",
+  "minecraft:recipe_shapeless": {
+    "description": {
+      "identifier": "zombie:colored_gilded_blackstone_light_gray_recipe"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "ingredients": [
+      {
+        "item": "minecraft:gilded_blackstone"
+      },
+      {
+        "item": "minecraft:light_gray_dye"
+      }
+    ],
+    "result": [
+      {
+        "item": "zombie:colored_gilded_blackstone_light_gray",
+        "count": 1
+      }
+    ],
+    "unlock": [
+      {
+        "item": "minecraft:gilded_blackstone"
+      },
+      {
+        "item": "minecraft:light_gray_dye"
+      }
+    ]
+  }
+}

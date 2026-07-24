@@ -1,0 +1,33 @@
+{
+  "format_version": "1.21.40",
+  "minecraft:recipe_shapeless": {
+    "description": {
+      "identifier": "zombie:colored_sea_lantern_lime_recipe"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "ingredients": [
+      {
+        "item": "minecraft:sea_lantern"
+      },
+      {
+        "item": "minecraft:lime_dye"
+      }
+    ],
+    "result": [
+      {
+        "item": "zombie:colored_sea_lantern_lime",
+        "count": 1
+      }
+    ],
+    "unlock": [
+      {
+        "item": "minecraft:sea_lantern"
+      },
+      {
+        "item": "minecraft:lime_dye"
+      }
+    ]
+  }
+}

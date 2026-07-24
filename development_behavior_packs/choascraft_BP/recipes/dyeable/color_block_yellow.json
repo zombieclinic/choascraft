@@ -1,0 +1,33 @@
+{
+  "format_version": "1.21.40",
+  "minecraft:recipe_shapeless": {
+    "description": {
+      "identifier": "zombie:color_block_yellow_recipe"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "ingredients": [
+      {
+        "item": "minecraft:white_concrete"
+      },
+      {
+        "item": "minecraft:yellow_dye"
+      }
+    ],
+    "result": [
+      {
+        "item": "zombie:color_block_yellow",
+        "count": 1
+      }
+    ],
+    "unlock": [
+      {
+        "item": "minecraft:white_concrete"
+      },
+      {
+        "item": "minecraft:yellow_dye"
+      }
+    ]
+  }
+}

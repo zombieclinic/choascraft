@@ -1,0 +1,30 @@
+{
+  "format_version": "1.21.100",
+  "minecraft:block": {
+    "description": {
+      "identifier": "zombie:colored_amethyst_green",
+      "menu_category": {
+        "category": "construction"
+      }
+    },
+    "components": {
+      "minecraft:display_name": "Green Amethyst Block",
+      "minecraft:material_instances": {
+        "*": {
+          "texture": "zombie_colored_amethyst_green",
+          "render_method": "opaque"
+        }
+      },
+      "minecraft:destructible_by_mining": {
+        "seconds_to_destroy": 1.5
+      },
+      "minecraft:destructible_by_explosion": {
+        "explosion_resistance": 6
+      },
+      "minecraft:loot": "loot_tables/blocks/dyeable/colored_amethyst/green.json",
+      "minecraft:custom_components": [
+        "zombie:dyeable_colored_block"
+      ]
+    }
+  }
+}

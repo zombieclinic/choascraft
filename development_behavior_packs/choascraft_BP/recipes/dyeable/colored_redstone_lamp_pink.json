@@ -1,0 +1,33 @@
+{
+  "format_version": "1.21.40",
+  "minecraft:recipe_shapeless": {
+    "description": {
+      "identifier": "zombie:colored_redstone_lamp_pink_recipe"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "ingredients": [
+      {
+        "item": "minecraft:redstone_lamp"
+      },
+      {
+        "item": "minecraft:pink_dye"
+      }
+    ],
+    "result": [
+      {
+        "item": "zombie:colored_redstone_lamp_pink",
+        "count": 1
+      }
+    ],
+    "unlock": [
+      {
+        "item": "minecraft:redstone_lamp"
+      },
+      {
+        "item": "minecraft:pink_dye"
+      }
+    ]
+  }
+}

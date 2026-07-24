@@ -1,0 +1,8 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:texture_set": {
+		"color": "pink_redstone_lamp_on",
+		"metalness_emissive_roughness": "pink_redstone_lamp_on_mer",
+		"heightmap": "pink_redstone_lamp_on_height"
+	}
+}

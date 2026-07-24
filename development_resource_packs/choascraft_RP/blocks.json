@@ -336,6 +336,525 @@
   },
   "zombie:blood_mushroom": {
     "sound": "grass"
+  },
+  "zombie:magicsnow": {
+    "textures": {
+      "up": "zombie_snow",
+      "down": "zombie_magic_snow",
+      "side": "zombie_magic_snow"
+    },
+    "sound": "snow"
+  },
+  "zombie:colored_amethyst_black": {
+    "textures": "zombie_colored_amethyst_black",
+    "sound": "amethyst_block"
+  },
+  "zombie:colored_amethyst_blue": {
+    "textures": "zombie_colored_amethyst_blue",
+    "sound": "amethyst_block"
+  },
+  "zombie:colored_amethyst_brown": {
+    "textures": "zombie_colored_amethyst_brown",
+    "sound": "amethyst_block"
+  },
+  "zombie:colored_amethyst_cyan": {
+    "textures": "zombie_colored_amethyst_cyan",
+    "sound": "amethyst_block"
+  },
+  "zombie:colored_amethyst_gray": {
+    "textures": "zombie_colored_amethyst_gray",
+    "sound": "amethyst_block"
+  },
+  "zombie:colored_amethyst_green": {
+    "textures": "zombie_colored_amethyst_green",
+    "sound": "amethyst_block"
+  },
+  "zombie:colored_amethyst_light_blue": {
+    "textures": "zombie_colored_amethyst_light_blue",
+    "sound": "amethyst_block"
+  },
+  "zombie:colored_amethyst_light_gray": {
+    "textures": "zombie_colored_amethyst_light_gray",
+    "sound": "amethyst_block"
+  },
+  "zombie:colored_amethyst_lime": {
+    "textures": "zombie_colored_amethyst_lime",
+    "sound": "amethyst_block"
+  },
+  "zombie:colored_amethyst_magenta": {
+    "textures": "zombie_colored_amethyst_magenta",
+    "sound": "amethyst_block"
+  },
+  "zombie:colored_amethyst_orange": {
+    "textures": "zombie_colored_amethyst_orange",
+    "sound": "amethyst_block"
+  },
+  "zombie:colored_amethyst_pink": {
+    "textures": "zombie_colored_amethyst_pink",
+    "sound": "amethyst_block"
+  },
+  "zombie:colored_amethyst_purple": {
+    "textures": "zombie_colored_amethyst_purple",
+    "sound": "amethyst_block"
+  },
+  "zombie:colored_amethyst_red": {
+    "textures": "zombie_colored_amethyst_red",
+    "sound": "amethyst_block"
+  },
+  "zombie:colored_amethyst_white": {
+    "textures": "zombie_colored_amethyst_white",
+    "sound": "amethyst_block"
+  },
+  "zombie:colored_amethyst_yellow": {
+    "textures": "zombie_colored_amethyst_yellow",
+    "sound": "amethyst_block"
+  },
+  "zombie:colored_crying_obsidian_black": {
+    "textures": "zombie_colored_crying_obsidian_black",
+    "sound": "stone"
+  },
+  "zombie:colored_crying_obsidian_blue": {
+    "textures": "zombie_colored_crying_obsidian_blue",
+    "sound": "stone"
+  },
+  "zombie:colored_crying_obsidian_brown": {
+    "textures": "zombie_colored_crying_obsidian_brown",
+    "sound": "stone"
+  },
+  "zombie:colored_crying_obsidian_cyan": {
+    "textures": "zombie_colored_crying_obsidian_cyan",
+    "sound": "stone"
+  },
+  "zombie:colored_crying_obsidian_gray": {
+    "textures": "zombie_colored_crying_obsidian_gray",
+    "sound": "stone"
+  },
+  "zombie:colored_crying_obsidian_green": {
+    "textures": "zombie_colored_crying_obsidian_green",
+    "sound": "stone"
+  },
+  "zombie:colored_crying_obsidian_light_blue": {
+    "textures": "zombie_colored_crying_obsidian_light_blue",
+    "sound": "stone"
+  },
+  "zombie:colored_crying_obsidian_light_gray": {
+    "textures": "zombie_colored_crying_obsidian_light_gray",
+    "sound": "stone"
+  },
+  "zombie:colored_crying_obsidian_lime": {
+    "textures": "zombie_colored_crying_obsidian_lime",
+    "sound": "stone"
+  },
+  "zombie:colored_crying_obsidian_magenta": {
+    "textures": "zombie_colored_crying_obsidian_magenta",
+    "sound": "stone"
+  },
+  "zombie:colored_crying_obsidian_orange": {
+    "textures": "zombie_colored_crying_obsidian_orange",
+    "sound": "stone"
+  },
+  "zombie:colored_crying_obsidian_pink": {
+    "textures": "zombie_colored_crying_obsidian_pink",
+    "sound": "stone"
+  },
+  "zombie:colored_crying_obsidian_purple": {
+    "textures": "zombie_colored_crying_obsidian_purple",
+    "sound": "stone"
+  },
+  "zombie:colored_crying_obsidian_red": {
+    "textures": "zombie_colored_crying_obsidian_red",
+    "sound": "stone"
+  },
+  "zombie:colored_crying_obsidian_white": {
+    "textures": "zombie_colored_crying_obsidian_white",
+    "sound": "stone"
+  },
+  "zombie:colored_crying_obsidian_yellow": {
+    "textures": "zombie_colored_crying_obsidian_yellow",
+    "sound": "stone"
+  },
+  "zombie:colored_gilded_blackstone_black": {
+    "textures": "zombie_colored_gilded_blackstone_black",
+    "sound": "stone"
+  },
+  "zombie:colored_gilded_blackstone_blue": {
+    "textures": "zombie_colored_gilded_blackstone_blue",
+    "sound": "stone"
+  },
+  "zombie:colored_gilded_blackstone_brown": {
+    "textures": "zombie_colored_gilded_blackstone_brown",
+    "sound": "stone"
+  },
+  "zombie:colored_gilded_blackstone_cyan": {
+    "textures": "zombie_colored_gilded_blackstone_cyan",
+    "sound": "stone"
+  },
+  "zombie:colored_gilded_blackstone_gray": {
+    "textures": "zombie_colored_gilded_blackstone_gray",
+    "sound": "stone"
+  },
+  "zombie:colored_gilded_blackstone_green": {
+    "textures": "zombie_colored_gilded_blackstone_green",
+    "sound": "stone"
+  },
+  "zombie:colored_gilded_blackstone_light_blue": {
+    "textures": "zombie_colored_gilded_blackstone_light_blue",
+    "sound": "stone"
+  },
+  "zombie:colored_gilded_blackstone_light_gray": {
+    "textures": "zombie_colored_gilded_blackstone_light_gray",
+    "sound": "stone"
+  },
+  "zombie:colored_gilded_blackstone_lime": {
+    "textures": "zombie_colored_gilded_blackstone_lime",
+    "sound": "stone"
+  },
+  "zombie:colored_gilded_blackstone_magenta": {
+    "textures": "zombie_colored_gilded_blackstone_magenta",
+    "sound": "stone"
+  },
+  "zombie:colored_gilded_blackstone_orange": {
+    "textures": "zombie_colored_gilded_blackstone_orange",
+    "sound": "stone"
+  },
+  "zombie:colored_gilded_blackstone_pink": {
+    "textures": "zombie_colored_gilded_blackstone_pink",
+    "sound": "stone"
+  },
+  "zombie:colored_gilded_blackstone_purple": {
+    "textures": "zombie_colored_gilded_blackstone_purple",
+    "sound": "stone"
+  },
+  "zombie:colored_gilded_blackstone_red": {
+    "textures": "zombie_colored_gilded_blackstone_red",
+    "sound": "stone"
+  },
+  "zombie:colored_gilded_blackstone_white": {
+    "textures": "zombie_colored_gilded_blackstone_white",
+    "sound": "stone"
+  },
+  "zombie:colored_gilded_blackstone_yellow": {
+    "textures": "zombie_colored_gilded_blackstone_yellow",
+    "sound": "stone"
+  },
+  "zombie:colored_glowing_obsidian_black": {
+    "textures": "zombie_colored_glowing_obsidian_black",
+    "sound": "stone"
+  },
+  "zombie:colored_glowing_obsidian_blue": {
+    "textures": "zombie_colored_glowing_obsidian_blue",
+    "sound": "stone"
+  },
+  "zombie:colored_glowing_obsidian_brown": {
+    "textures": "zombie_colored_glowing_obsidian_brown",
+    "sound": "stone"
+  },
+  "zombie:colored_glowing_obsidian_cyan": {
+    "textures": "zombie_colored_glowing_obsidian_cyan",
+    "sound": "stone"
+  },
+  "zombie:colored_glowing_obsidian_gray": {
+    "textures": "zombie_colored_glowing_obsidian_gray",
+    "sound": "stone"
+  },
+  "zombie:colored_glowing_obsidian_green": {
+    "textures": "zombie_colored_glowing_obsidian_green",
+    "sound": "stone"
+  },
+  "zombie:colored_glowing_obsidian_light_blue": {
+    "textures": "zombie_colored_glowing_obsidian_light_blue",
+    "sound": "stone"
+  },
+  "zombie:colored_glowing_obsidian_light_gray": {
+    "textures": "zombie_colored_glowing_obsidian_light_gray",
+    "sound": "stone"
+  },
+  "zombie:colored_glowing_obsidian_lime": {
+    "textures": "zombie_colored_glowing_obsidian_lime",
+    "sound": "stone"
+  },
+  "zombie:colored_glowing_obsidian_magenta": {
+    "textures": "zombie_colored_glowing_obsidian_magenta",
+    "sound": "stone"
+  },
+  "zombie:colored_glowing_obsidian_orange": {
+    "textures": "zombie_colored_glowing_obsidian_orange",
+    "sound": "stone"
+  },
+  "zombie:colored_glowing_obsidian_pink": {
+    "textures": "zombie_colored_glowing_obsidian_pink",
+    "sound": "stone"
+  },
+  "zombie:colored_glowing_obsidian_purple": {
+    "textures": "zombie_colored_glowing_obsidian_purple",
+    "sound": "stone"
+  },
+  "zombie:colored_glowing_obsidian_red": {
+    "textures": "zombie_colored_glowing_obsidian_red",
+    "sound": "stone"
+  },
+  "zombie:colored_glowing_obsidian_white": {
+    "textures": "zombie_colored_glowing_obsidian_white",
+    "sound": "stone"
+  },
+  "zombie:colored_glowing_obsidian_yellow": {
+    "textures": "zombie_colored_glowing_obsidian_yellow",
+    "sound": "stone"
+  },
+  "zombie:colored_obsidian_black": {
+    "textures": "zombie_colored_obsidian_black",
+    "sound": "stone"
+  },
+  "zombie:colored_obsidian_blue": {
+    "textures": "zombie_colored_obsidian_blue",
+    "sound": "stone"
+  },
+  "zombie:colored_obsidian_brown": {
+    "textures": "zombie_colored_obsidian_brown",
+    "sound": "stone"
+  },
+  "zombie:colored_obsidian_cyan": {
+    "textures": "zombie_colored_obsidian_cyan",
+    "sound": "stone"
+  },
+  "zombie:colored_obsidian_gray": {
+    "textures": "zombie_colored_obsidian_gray",
+    "sound": "stone"
+  },
+  "zombie:colored_obsidian_green": {
+    "textures": "zombie_colored_obsidian_green",
+    "sound": "stone"
+  },
+  "zombie:colored_obsidian_light_blue": {
+    "textures": "zombie_colored_obsidian_light_blue",
+    "sound": "stone"
+  },
+  "zombie:colored_obsidian_light_gray": {
+    "textures": "zombie_colored_obsidian_light_gray",
+    "sound": "stone"
+  },
+  "zombie:colored_obsidian_lime": {
+    "textures": "zombie_colored_obsidian_lime",
+    "sound": "stone"
+  },
+  "zombie:colored_obsidian_magenta": {
+    "textures": "zombie_colored_obsidian_magenta",
+    "sound": "stone"
+  },
+  "zombie:colored_obsidian_orange": {
+    "textures": "zombie_colored_obsidian_orange",
+    "sound": "stone"
+  },
+  "zombie:colored_obsidian_pink": {
+    "textures": "zombie_colored_obsidian_pink",
+    "sound": "stone"
+  },
+  "zombie:colored_obsidian_purple": {
+    "textures": "zombie_colored_obsidian_purple",
+    "sound": "stone"
+  },
+  "zombie:colored_obsidian_red": {
+    "textures": "zombie_colored_obsidian_red",
+    "sound": "stone"
+  },
+  "zombie:colored_obsidian_white": {
+    "textures": "zombie_colored_obsidian_white",
+    "sound": "stone"
+  },
+  "zombie:colored_obsidian_yellow": {
+    "textures": "zombie_colored_obsidian_yellow",
+    "sound": "stone"
+  },
+  "zombie:colored_sea_lantern_black": {
+    "textures": "zombie_colored_sea_lantern_black",
+    "sound": "glass"
+  },
+  "zombie:colored_sea_lantern_blue": {
+    "textures": "zombie_colored_sea_lantern_blue",
+    "sound": "glass"
+  },
+  "zombie:colored_sea_lantern_brown": {
+    "textures": "zombie_colored_sea_lantern_brown",
+    "sound": "glass"
+  },
+  "zombie:colored_sea_lantern_cyan": {
+    "textures": "zombie_colored_sea_lantern_cyan",
+    "sound": "glass"
+  },
+  "zombie:colored_sea_lantern_gray": {
+    "textures": "zombie_colored_sea_lantern_gray",
+    "sound": "glass"
+  },
+  "zombie:colored_sea_lantern_green": {
+    "textures": "zombie_colored_sea_lantern_green",
+    "sound": "glass"
+  },
+  "zombie:colored_sea_lantern_light_blue": {
+    "textures": "zombie_colored_sea_lantern_light_blue",
+    "sound": "glass"
+  },
+  "zombie:colored_sea_lantern_light_gray": {
+    "textures": "zombie_colored_sea_lantern_light_gray",
+    "sound": "glass"
+  },
+  "zombie:colored_sea_lantern_lime": {
+    "textures": "zombie_colored_sea_lantern_lime",
+    "sound": "glass"
+  },
+  "zombie:colored_sea_lantern_magenta": {
+    "textures": "zombie_colored_sea_lantern_magenta",
+    "sound": "glass"
+  },
+  "zombie:colored_sea_lantern_orange": {
+    "textures": "zombie_colored_sea_lantern_orange",
+    "sound": "glass"
+  },
+  "zombie:colored_sea_lantern_pink": {
+    "textures": "zombie_colored_sea_lantern_pink",
+    "sound": "glass"
+  },
+  "zombie:colored_sea_lantern_purple": {
+    "textures": "zombie_colored_sea_lantern_purple",
+    "sound": "glass"
+  },
+  "zombie:colored_sea_lantern_red": {
+    "textures": "zombie_colored_sea_lantern_red",
+    "sound": "glass"
+  },
+  "zombie:colored_sea_lantern_white": {
+    "textures": "zombie_colored_sea_lantern_white",
+    "sound": "glass"
+  },
+  "zombie:colored_sea_lantern_yellow": {
+    "textures": "zombie_colored_sea_lantern_yellow",
+    "sound": "glass"
+  },
+  "zombie:colored_redstone_lamp_black": {
+    "textures": "zombie_colored_redstone_lamp_black",
+    "sound": "glass"
+  },
+  "zombie:colored_redstone_lamp_blue": {
+    "textures": "zombie_colored_redstone_lamp_blue",
+    "sound": "glass"
+  },
+  "zombie:colored_redstone_lamp_brown": {
+    "textures": "zombie_colored_redstone_lamp_brown",
+    "sound": "glass"
+  },
+  "zombie:colored_redstone_lamp_cyan": {
+    "textures": "zombie_colored_redstone_lamp_cyan",
+    "sound": "glass"
+  },
+  "zombie:colored_redstone_lamp_gray": {
+    "textures": "zombie_colored_redstone_lamp_gray",
+    "sound": "glass"
+  },
+  "zombie:colored_redstone_lamp_green": {
+    "textures": "zombie_colored_redstone_lamp_green",
+    "sound": "glass"
+  },
+  "zombie:colored_redstone_lamp_light_blue": {
+    "textures": "zombie_colored_redstone_lamp_light_blue",
+    "sound": "glass"
+  },
+  "zombie:colored_redstone_lamp_light_gray": {
+    "textures": "zombie_colored_redstone_lamp_light_gray",
+    "sound": "glass"
+  },
+  "zombie:colored_redstone_lamp_lime": {
+    "textures": "zombie_colored_redstone_lamp_lime",
+    "sound": "glass"
+  },
+  "zombie:colored_redstone_lamp_magenta": {
+    "textures": "zombie_colored_redstone_lamp_magenta",
+    "sound": "glass"
+  },
+  "zombie:colored_redstone_lamp_orange": {
+    "textures": "zombie_colored_redstone_lamp_orange",
+    "sound": "glass"
+  },
+  "zombie:colored_redstone_lamp_pink": {
+    "textures": "zombie_colored_redstone_lamp_pink",
+    "sound": "glass"
+  },
+  "zombie:colored_redstone_lamp_purple": {
+    "textures": "zombie_colored_redstone_lamp_purple",
+    "sound": "glass"
+  },
+  "zombie:colored_redstone_lamp_red": {
+    "textures": "zombie_colored_redstone_lamp_red",
+    "sound": "glass"
+  },
+  "zombie:colored_redstone_lamp_white": {
+    "textures": "zombie_colored_redstone_lamp_white",
+    "sound": "glass"
+  },
+  "zombie:colored_redstone_lamp_yellow": {
+    "textures": "zombie_colored_redstone_lamp_yellow",
+    "sound": "glass"
+  },
+  "zombie:color_block_true_black": {
+    "textures": "zombie_color_block_true_black",
+    "sound": "stone"
+  },
+  "zombie:color_block_aqua": {
+    "textures": "zombie_color_block_aqua",
+    "sound": "stone"
+  },
+  "zombie:color_block_blue": {
+    "textures": "zombie_color_block_blue",
+    "sound": "stone"
+  },
+  "zombie:color_block_dark_aqua": {
+    "textures": "zombie_color_block_dark_aqua",
+    "sound": "stone"
+  },
+  "zombie:color_block_dark_blue": {
+    "textures": "zombie_color_block_dark_blue",
+    "sound": "stone"
+  },
+  "zombie:color_block_dark_gray": {
+    "textures": "zombie_color_block_dark_gray",
+    "sound": "stone"
+  },
+  "zombie:color_block_dark_green": {
+    "textures": "zombie_color_block_dark_green",
+    "sound": "stone"
+  },
+  "zombie:color_block_dark_purple": {
+    "textures": "zombie_color_block_dark_purple",
+    "sound": "stone"
+  },
+  "zombie:color_block_dark_red": {
+    "textures": "zombie_color_block_dark_red",
+    "sound": "stone"
+  },
+  "zombie:color_block_gold": {
+    "textures": "zombie_color_block_gold",
+    "sound": "stone"
+  },
+  "zombie:color_block_gray": {
+    "textures": "zombie_color_block_gray",
+    "sound": "stone"
+  },
+  "zombie:color_block_green": {
+    "textures": "zombie_color_block_green",
+    "sound": "stone"
+  },
+  "zombie:color_block_light_purple": {
+    "textures": "zombie_color_block_light_purple",
+    "sound": "stone"
+  },
+  "zombie:color_block_red": {
+    "textures": "zombie_color_block_red",
+    "sound": "stone"
+  },
+  "zombie:color_block_white": {
+    "textures": "zombie_color_block_white",
+    "sound": "stone"
+  },
+  "zombie:color_block_yellow": {
+    "textures": "zombie_color_block_yellow",
+    "sound": "stone"
   }
 }
-

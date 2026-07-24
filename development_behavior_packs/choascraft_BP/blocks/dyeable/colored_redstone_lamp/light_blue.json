@@ -1,0 +1,58 @@
+{
+  "format_version": "1.21.100",
+  "minecraft:block": {
+    "description": {
+      "identifier": "zombie:colored_redstone_lamp_light_blue",
+      "menu_category": {
+        "category": "construction"
+      },
+      "states": {
+        "zombie:lit": [
+          0,
+          1
+        ]
+      }
+    },
+    "components": {
+      "minecraft:display_name": "Light Blue Redstone Lamp",
+      "minecraft:material_instances": {
+        "*": {
+          "texture": "zombie_colored_redstone_lamp_light_blue",
+          "render_method": "opaque"
+        }
+      },
+      "minecraft:destructible_by_mining": {
+        "seconds_to_destroy": 0.3
+      },
+      "minecraft:destructible_by_explosion": {
+        "explosion_resistance": 6
+      },
+      "minecraft:loot": "loot_tables/blocks/dyeable/colored_redstone_lamp/light_blue.json",
+      "minecraft:custom_components": [
+        "zombie:dyeable_colored_block",
+        "zombie:dyeable_redstone_lamp"
+      ],
+      "minecraft:tick": {
+        "interval_range": [
+          20,
+          20
+        ],
+        "looping": true
+      }
+    },
+    "permutations": [
+      {
+        "condition": "query.block_state('zombie:lit') == 1",
+        "components": {
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "zombie_colored_redstone_lamp_light_blue_on",
+              "render_method": "opaque"
+            }
+          },
+          "minecraft:light_emission": 15
+        }
+      }
+    ]
+  }
+}

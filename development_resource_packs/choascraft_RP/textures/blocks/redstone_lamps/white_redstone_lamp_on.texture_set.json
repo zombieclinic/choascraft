@@ -1,0 +1,8 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:texture_set": {
+		"color": "white_redstone_lamp_on",
+		"metalness_emissive_roughness": "white_redstone_lamp_on_mer",
+		"heightmap": "white_redstone_lamp_on_height"
+	}
+}

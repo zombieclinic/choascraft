@@ -1,0 +1,31 @@
+{
+  "format_version": "1.21.100",
+  "minecraft:block": {
+    "description": {
+      "identifier": "zombie:colored_glowing_obsidian_white",
+      "menu_category": {
+        "category": "construction"
+      }
+    },
+    "components": {
+      "minecraft:display_name": "White Glowing Obsidian",
+      "minecraft:material_instances": {
+        "*": {
+          "texture": "zombie_colored_glowing_obsidian_white",
+          "render_method": "opaque"
+        }
+      },
+      "minecraft:destructible_by_mining": {
+        "seconds_to_destroy": 25
+      },
+      "minecraft:destructible_by_explosion": {
+        "explosion_resistance": 1200
+      },
+      "minecraft:loot": "loot_tables/blocks/dyeable/colored_glowing_obsidian/white.json",
+      "minecraft:custom_components": [
+        "zombie:dyeable_colored_block"
+      ],
+      "minecraft:light_emission": 12
+    }
+  }
+}

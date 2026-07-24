@@ -1,0 +1,7 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:texture_set": {
+		"color": "light_purple_albedo",
+		"metalness_emissive_roughness": "light_purple_albedo_mer"
+	}
+}

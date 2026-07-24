@@ -119,12 +119,41 @@ export class Openbox {
 
 
 
-function receivedRedstonePower(block) {
+const REDSTONE_NEIGHBOR_OFFSETS = [
+  { x: 1, y: 0, z: 0 },
+  { x: -1, y: 0, z: 0 },
+  { x: 0, y: 1, z: 0 },
+  { x: 0, y: -1, z: 0 },
+  { x: 0, y: 0, z: 1 },
+  { x: 0, y: 0, z: -1 }
+];
+
+function blockRedstonePower(block) {
   try {
     return block.getRedstonePower() ?? 0;
   } catch {
     return 0;
   }
+}
+
+function receivedRedstonePower(block) {
+  const directPower = blockRedstonePower(block);
+  if (directPower > 0) return directPower;
+
+  const { x, y, z } = block.location;
+  for (const offset of REDSTONE_NEIGHBOR_OFFSETS) {
+    try {
+      const neighbor = block.dimension.getBlock({
+        x: x + offset.x,
+        y: y + offset.y,
+        z: z + offset.z
+      });
+      const neighborPower = neighbor ? blockRedstonePower(neighbor) : 0;
+      if (neighborPower > 0) return neighborPower;
+    } catch {}
+  }
+
+  return 0;
 }
 
 function setLightState(block, state) {

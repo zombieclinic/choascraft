@@ -1,0 +1,9 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:single_block_feature": {
+    "description": { "identifier": "zombie:christmas_light_magenta_feature" },
+    "places_block": { "name": "zombie:christmas_light_magenta", "states": { "zombie:light": 0, "minecraft:block_face": "up", "minecraft:cardinal_direction": "north" } },
+    "enforce_survivability_rules": false, "enforce_placement_rules": false,
+    "may_replace": ["minecraft:air"], "may_attach_to": { "bottom": ["zombie:magicsnow"] }
+  }
+}

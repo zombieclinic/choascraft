@@ -1,0 +1,33 @@
+{
+  "format_version": "1.21.40",
+  "minecraft:recipe_shapeless": {
+    "description": {
+      "identifier": "zombie:colored_crying_obsidian_gray_recipe"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "ingredients": [
+      {
+        "item": "minecraft:crying_obsidian"
+      },
+      {
+        "item": "minecraft:gray_dye"
+      }
+    ],
+    "result": [
+      {
+        "item": "zombie:colored_crying_obsidian_gray",
+        "count": 1
+      }
+    ],
+    "unlock": [
+      {
+        "item": "minecraft:crying_obsidian"
+      },
+      {
+        "item": "minecraft:gray_dye"
+      }
+    ]
+  }
+}

@@ -19,7 +19,12 @@
 			"minecraft:display_name": "Magic Snow",
 			"minecraft:material_instances": {
 				"*": {
-					"texture": "zombie_magic_snow"
+					"texture": "zombie_magic_snow",
+					"render_method": "opaque"
+				},
+				"up": {
+					"texture": "zombie_snow",
+					"render_method": "opaque"
 				}
 			},
 			"tag:christmas": {}

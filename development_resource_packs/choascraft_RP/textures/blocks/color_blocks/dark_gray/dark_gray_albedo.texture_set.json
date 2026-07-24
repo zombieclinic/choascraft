@@ -1,0 +1,7 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:texture_set": {
+		"color": "dark_gray_albedo",
+		"metalness_emissive_roughness": "dark_gray_albedo_mer"
+	}
+}

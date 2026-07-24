@@ -1,0 +1,30 @@
+{
+  "format_version": "1.21.100",
+  "minecraft:block": {
+    "description": {
+      "identifier": "zombie:color_block_dark_blue",
+      "menu_category": {
+        "category": "construction"
+      }
+    },
+    "components": {
+      "minecraft:display_name": "Dark Blue Color Block",
+      "minecraft:material_instances": {
+        "*": {
+          "texture": "zombie_color_block_dark_blue",
+          "render_method": "opaque"
+        }
+      },
+      "minecraft:destructible_by_mining": {
+        "seconds_to_destroy": 1.5
+      },
+      "minecraft:destructible_by_explosion": {
+        "explosion_resistance": 6
+      },
+      "minecraft:loot": "loot_tables/blocks/dyeable/color_block/dark_blue.json",
+      "minecraft:custom_components": [
+        "zombie:dyeable_colored_block"
+      ]
+    }
+  }
+}
